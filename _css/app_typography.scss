@@ -1,0 +1,28 @@
+/*hanging quote*/
+blockquote:before {
+    content: '\201C';
+  	font-size: 1.3em;
+  	text-indent: -.5em;
+  	float: left;
+}
+
+blockquote {
+	color: $blue;
+	font-style: italic;
+	font-size: 3rem;
+	line-height: 3.4rem;
+	margin-bottom: 0.667rem;
+	border-left: none;
+	padding: 0;
+	margin-left:.5em;
+		@media screen and (max-width:$screen-md-min) {
+			font-size: 1.5rem;
+			margin-bottom: .5rem;
+			line-height: 2rem;
+		}
+	&.nested-block {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+
