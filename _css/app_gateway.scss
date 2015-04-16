@@ -1,0 +1,57 @@
+
+// Image Thumbnails
+.image-thumb {
+    position: relative;
+    display: block;
+}
+// div
+.image-text-overlay-container {
+  //display: table;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  -ms-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+// Span
+.image-text-overlay {
+  color: $white;
+  line-height: 1em;
+  text-transform: uppercase;
+  @include LeHavre(22px);
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 .5em;
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 680px) {
+    font-size: 11px;
+  }
+}
+
+  .hero-btn {
+    -webkit-animation-delay: 1s;
+    @include fadeIn( 3s );
+    @media screen and (max-width: 500px) {
+      // margin-left: 20px;
+    }
+    // Styles group of 3 buttons on Gateway Header
+    &.btn-group .btn-primary {
+      @media screen and (max-width: 500px) {
+          font-size: 12px;
+          padding: 15px 15px;
+          &:last-child {
+            margin-top: 1em;
+            // margin-left: 6em;
+          }  
+      }
+    }
+  }
+

@@ -1,0 +1,45 @@
+@media print {
+
+body { margin-top:20px; }
+
+.page-container .row {
+	margin-bottom:1.5rem;
+}
+
+.page-hero-container {
+	background-image:none!important;
+	height:auto;
+	.page-hero {
+		padding-top:40px!important;
+	}
+}
+#hero-video-container {
+	max-height:300px;
+}
+
+.side-nav,
+video,
+#student-life_carousel,
+#rockers,
+#events_carousel,
+#trigger1,
+.page-hero a.btn,
+#intro_arrow_down,
+.video--container,
+.callout-box
+{ display:none; }
+
+.intro-paragraph {
+	font-size:2.5rem;
+	line-height:2.9rem;
+}
+
+blockquote {
+	border:0;
+}
+
+* {
+	font-family:Arial, sans-serif !important;
+}
+
+} /* end @media print */

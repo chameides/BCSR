@@ -1,0 +1,112 @@
+// .full-row-with-video {
+//   min-height: 529px;
+//   margin-bottom: 40px;
+// }
+// #header-video_html5_api {
+//   position: fixed;
+// } 
+#student-life_carousel {
+  margin: 50px 0 0px 0;
+  @media screen and (max-width: $screen-md-min) {
+    margin: 0;
+  }
+
+  .student-life_carousel-row {
+    position:relative;
+    overflow:hidden;
+    overflow-x:scroll;
+    height:252px;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media screen and (min-width: $screen-md-min) {
+      height:486px;
+      overflow-x:hidden;
+      max-width:inherit!important;
+    }
+    .row-inner {
+      position:absolute;
+    }
+  }
+
+  a.student-life-carousel-item {
+    position:relative;
+    display: block;
+    float:left;
+    width: 238px;
+    height: 486px;
+    margin: 0 1px;
+    text-align: center;
+    background: 100% no-repeat;
+    @media screen and (max-width: $screen-md-min) {
+      margin: 0;
+      width: 178px;
+      height: 252px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    > .overlay {
+      width:100%;
+      height:100%;
+      position:absolute;
+      background-color:#000;
+      background-position: center center;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;  
+         -moz-transition: all 0.3s ease-out; 
+           -o-transition: all 0.3s ease-out;
+              transition: all 0.3s ease-out;  
+      @media screen and (max-width: $screen-md-min) {
+        opacity: 0.25;
+      }
+    }
+    &:hover > .overlay {
+      opacity: 0.25;
+    }
+    &.daniel-arts-center{
+      background-image: url('../_images/student-life/daniel-arts-center.jpg');
+    }
+    &.fisher-science-and-academic-center{
+      background-image: url('../_images/student-life/fisher-science-and-academic-center.jpg');
+    }
+    &.kilpatrick-athletic-center{
+      background-image: url('../_images/student-life/kilpatrick-athletic-center.jpg');
+    }
+    &.livingston-hall-student-union{
+      background-image: url('../_images/student-life/livingston-hall-student-union.jpg');
+    }
+    &.liebowitz-center{
+      background-image: url('../_images/student-life/liebowitz-center.jpg');
+    }
+    &.alumni-library{
+      background-image: url('../_images/student-life/alumni-library.jpg');
+    }
+    &.kellogg-music-center{
+      background-image: url('../_images/student-life/kellogg-music-center.jpg');
+    }
+
+    h4 {
+      position:absolute;
+      top: 62%;
+      left:0;
+      right:0;
+      color: #fff;
+      font-size: 20px;
+      padding: 0 12%;
+      z-index: 1;
+      @media screen and (max-width: $screen-md-min) {
+        top: 40%;
+        font-size: 1em;
+      }
+    }
+  }
+  .rockers_btn{
+    z-index: 15;
+    top: 37%;
+    &.leftbtn {
+      @media screen and (min-width: $screen-md-min) {
+        left: 35px;
+      }
+    }
+  }
+}

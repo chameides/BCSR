@@ -1,0 +1,183 @@
+// Information boxes on Campus Landing (other boxes match academics called .box and .box-text)
+.info-box-list {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */ 
+  	//justify-content: space-between;	
+	@media screen and (max-width:$screen-xs-min) {
+		width: 100%;
+		display: block;
+	}
+}
+.info-box-item {
+	width: 32%;
+	padding: 20px;
+  	float: left;
+	// Info Box Colors
+	&.hours {
+		background: $dark-gray;
+		margin-right:1.75%
+	}
+	&.contact {
+		background: $yellow;
+		margin-right:1.75%
+	}
+	&.rental {
+		background: $orange;
+	}
+		@media screen and (max-width:$screen-sm-min) {
+			width: 100%;
+			display: block;
+		}
+}
+.info-box-text {
+    // width: 225px;
+    margin: auto;
+	color: $white;
+	font-size: 16px;
+	line-height: 1.5em;
+		@media screen and (max-width:$screen-sm-min) {
+			p {
+				font-size: 14px;
+			}
+		}
+	h4 {
+		//@include LeHavre(16px);
+		margin-top: 0;
+	}
+	& h4,
+	& p {
+		margin-bottom: .5em;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: $red;
+		}
+	}
+}
+// Make Info boxed full width for mobile
+.info-box-section.row {
+	@media screen and (max-width:$screen-md-min) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+// Accordion styles
+.accordion-container {
+	position: relative;
+	height: 560px;
+	background: $light-gray;
+	@media screen and (max-width: $pagegrid-break-high) {
+		height: 435px;
+	}
+	@media screen and (max-width:$screen-sm-min) {
+		height: auto;
+		width: 100%;
+	}
+	.panel-group .panel {
+		margin: 0;
+		border: 0;
+	}
+
+	.panel-heading {
+		padding: 0;
+		display: block;
+		font-size: 16px;
+		margin: 0;
+		background: $dark-gray;
+		position: relative;
+		a {
+			color: $white;
+			display: block;
+			padding: 7px 15px;
+			&:hover {
+				color: $white;
+				text-decoration: none;
+				background: $red;
+			}
+		}
+		&.active {
+			background: $red;
+			&:after {
+			    font-family: 'FontAwesome';
+			    content: '\f104';
+			    font-weight: bold;
+			    position: absolute;
+			    right: 2px;
+			    display: block;
+			    top: 13px;
+			    height: 22px;
+			    width: 10px;
+			    margin-top: -8px;
+			    color: #fff;
+				@media screen and (max-width:$screen-sm-min) {
+					display: none;
+				}
+			}
+		}
+		@media screen and (min-width: 769px) {
+			width: 30%;
+		}
+
+	}
+
+	.panel-collapse {
+		width: 70%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		@media screen and (max-width:$screen-sm-min) {
+			width: 100%;
+			height: auto;
+			position: static;
+		}
+	}
+
+}
+		#accordion div .accordion-overlay-container {
+			position: relative;
+			height: auto;
+			width: 100%;
+			background: $light-gray;
+		}
+			#accordion div .accordion-overlay {
+				@include LeHavre(20px);
+				display: table-cell;
+				position: absolute;
+				top: auto;
+				width: 100%;
+				bottom: 0;
+				padding: .5em;
+				line-height: 1em;
+				background: rgba( $dark-gray, .5);
+				color: $white;
+				p {
+					margin-bottom: 0;
+						@media screen and (max-width:$screen-md-min) {
+							font-size: 1rem;
+						}
+				}
+
+					@media screen and (max-width:$screen-sm-min) {
+						@include LeHavre(12px);
+						// bottom: 30%;
+					}
+			}
+				.accordion-text {
+					text-align: center;
+				}
+				#accordion img {
+					height: auto;
+					@media screen and (max-width:$screen-sm-min) {
+						width: 100%;
+						height: auto;
+					}
+				}
+
+
+
+

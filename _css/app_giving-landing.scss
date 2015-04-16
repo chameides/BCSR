@@ -1,0 +1,145 @@
+blockquote {
+	color: $blue;
+	font-style: italic;
+	font-size: 3rem;
+	line-height: 3.4rem;
+	margin-bottom: 0.667rem;
+	border-left: none;
+	padding: 0;
+		@media screen and (max-width:$screen-md-min) {
+			font-size: 1.5rem;
+			margin-bottom: .5rem;
+			line-height: 2rem;
+		}
+	&.nested-block {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+.caption-copy,
+.thumbnail-copy {
+	line-height: 2rem;
+	@include LeHavre(20px);
+		@media screen and (max-width:$screen-md-min) {
+			font-size: 12px;
+			line-height: 1.2rem;
+		}
+}
+.thumbnail-copy {
+	text-align: center;
+	@media screen and (max-width:$screen-md-min) {
+		text-align: left;
+	}
+}
+// professor name and title next to small image
+.image-name {
+	margin-bottom: 0;
+	@include LeHavre(20px);
+	color: $medium-gray;
+		@media screen and (max-width:$screen-md-min) {
+			font-size: 1rem;
+			margin-bottom: 0;
+		}
+}
+.image-title {
+	margin-bottom: 0;
+	font-size: 20px;
+		@media screen and (max-width:$screen-md-min) {
+			font-size: 1.167rem;
+			margin-bottom: 0;
+			&.image-title-with-margin {
+				margin-bottom: 1.25rem;
+			}
+		}
+}
+
+a.circle-heading {
+	color: $white;
+}
+
+// Bar bg at bottom of page
+.solid-bar {
+	color: $white;
+	padding: 25px 0;
+	background: $yellow;
+}
+
+.circle-container {
+    width: 100%;
+	&:after {
+	    content: "";
+	    display: block;
+	    width: 100%;
+	    height: 0;
+		background: #4679BD;
+	    padding-bottom: 100%;
+	    -moz-border-radius: 50%; 
+	    -webkit-border-radius: 50%; 
+	    border-radius: 50%;
+	    -webkit-transition: all 0.3s ease-out;  
+	       -moz-transition: all 0.3s ease-out; 
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out; 
+		}
+		// Giving Landing Circles
+		&.why-give:after {
+			background: $yellow;
+		}
+		&.ways-give:after {
+			background: $dark-gray;
+		}
+		&.get-involved:after {
+			background: $orange;
+		}
+		&.contact:after {
+			background: $blue;
+		}
+	    // Student Life Circles
+		&.life-campus:after {
+			background: $blue;
+		}
+		&.clubs:after {
+			background: $red;
+		}
+		&.community:after {
+			background: $dark-gray;
+		}
+		&.barrington:after {
+			background: $yellow;
+		}
+		 	&:hover:after  {
+		    	background: $red;
+		    	cursor: pointer;
+		    }
+		    &:hover a {
+		    	text-decoration: none;
+		    }
+			@media screen and (max-width:$screen-sm-min) {
+				margin-bottom: 6px;
+			}
+}
+	// div
+	.circle-heading {
+	    float:left;
+	    width: 100%;
+	    padding-top: 50%;
+	    line-height: 1em;
+	    margin-top: -0.5em;
+	    text-align: center;
+		@include LeHavre(20px);
+		@media screen and (max-width:$screen-sm-min) {
+			font-size: 12px;
+		}
+		// Two Lines
+		.clubs &,
+		.community & {
+			margin-top: -1em;
+		}
+		// Three Lines
+		.barrington & {
+			margin-top: -1.7em;
+		}
+	}
+
+
+

@@ -1,0 +1,282 @@
+/*
+	
+	BCSR SCSS file, TOC:
+	
+	First, we'll define all of the global styles and Boostrap overrides.
+	
+	Rather than creating long media queries, let's specify mobile first,
+	and then write exceptions for bigger screens in media queries nested 
+	within each style declaration.
+	
+	The TOC is not meant to be a static structure for this document, but
+	the framework for building it out. Sections will be added - you may need,
+	for instance, to declare a set of globally-available classes that can
+	be applied to buttons or to links that should appear like buttons, 
+	which would be section I-6.
+	
+	Let's take care not to paint outselves into the corner of making the 
+	navigation and homepage styles be the globals, such that the H1, as it 
+	appears on every page BUT the home page, needs to be written as an
+	exception rule ( ie, 'body.nothome h1' ).
+	
+	The Sass-lang website offers this pithy observation that should be 
+	one of our guiding principles:
+	
+		Sass will let you nest your CSS selectors in a way that
+		follows the same visual hierarchy of your HTML. Be aware that
+		overly nested rules will result in over-qualified CSS that
+		could prove hard to maintain and is generally considered bad
+		practice.
+		
+	And, given that we're handing this off to a development team that might
+	need to rename containers, or add classes to containers, or change IDs
+	in order to integrate them into their custom CMS, let's not hand over
+	a stylesheet that requires too much de-nesting to make the site work once
+	it's out of our hands, and be judicious in our assignation of IDs. 
+	In other words, every time you define a paragraph style like this:
+	
+		body.about {
+			div#main_container {
+				&.container {
+					div.row {
+						div.col-8 {
+							p {
+								font-size:14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	
+	Domo eats a kitten.
+	
+	
+	I'm using this handy tool to generate my rem font sizes:
+	
+	
+	
+	I. Globals
+	
+		1. Global color variables
+	
+		2. Global font variable families
+	
+		3. Bootstrap and other template base styles
+	
+		4. Global font-size settings
+	
+		5. Global link styling
+		
+	II. Per-page/element locals
+	
+		1. Top navigation
+		
+		2. Footer
+		
+		3. Home-page styles
+		
+*/
+
+
+
+/*
+	I-1. Global color variables
+*/
+/* Simon's Rock Red
+Simon's Rock color palette is defined by the red. 
+This color is the action color. 
+It should only be used for CTAs. It can be
+used as text color or as background color. */
+
+$red:#be2126;
+
+/* Neutral Pallette
+This palette should be used for interface items 
+within secondary navigation, text color and backgrounds. */
+
+$white:#ffffff;
+$light-gray:#efefef;
+$medium-gray:#6e675f;
+$dark-gray:#262421; // but not black - there should be no #000000 in the palette except in the footer background 
+
+/* Secondary Pallette
+This palette is used to represent different subcatagories 
+at Simon's Rock that need attention drawn to them. This palette
+should not be added to. */
+
+$orange:#ec6a1e;
+$blue:#5cb7b7;
+$yellow:#e2be00;
+
+
+/*
+	I-2. Global font variable families
+*/
+@import "MyFontsWebfontsKit.scss";
+@import "font-awesome.min.css";
+$helvetica:'Helvetica Neue 55 Roman',Helvetica,Arial,sans-serif !default;
+$helvetica-cond:'HelveticaNeueLT-Condensed',Helvetica,Arial,sans-serif; 
+$helvetica-md-cond:'HelveticaNeueLT-MediumCond',Helvetica,Arial,sans-serif; 
+$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif; 
+
+@mixin Helvetica($fontsize) {
+	font-family:$helvetica;
+	font-size:$fontsize;
+}
+@mixin HelveticaCond($fontsize) {
+	font-family:$helvetica-cond;
+	font-size:$fontsize;
+}
+@mixin HelveticaCondMed($fontsize) {
+	font-family:$helvetica-md-cond;
+	font-size:$fontsize;
+}
+@mixin LeHavre($fontsize) {
+	font-family:$lehavre;
+	font-size:$fontsize;
+	letter-spacing: -0.08em;
+}
+
+
+/*
+	I-3. Bootstrap and other template base styles
+*/
+@import "_bootstrap.scss";
+
+body { 
+	background-color:$white;
+}
+
+$pagegrid-break-high: 1570px;
+$pagegrid-break-med: 1370px;
+$pagegrid-break-low: 990px;
+
+/*
+	I-4. Global font, font-size settings
+*/
+
+body {
+	@include HelveticaCond(1.5rem);
+	color:$medium-gray; 
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight:normal;
+	font-style:normal;
+	text-rendering:optimizelegibility;
+}
+h1 {
+	color:$dark-gray;
+	@include LeHavre(2.5rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(5rem);
+		line-height:1.1;
+	}
+}
+h2 {
+	@include LeHavre(2rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(4rem);
+		line-height:1.1;
+	}
+}
+h3 {
+	@include LeHavre(1.75rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(3rem);
+		line-height:1.1;
+	}
+}
+h4 {
+	@include LeHavre(1.75rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(2rem);
+		line-height:1.1;
+	}
+}
+h5 {
+	@include LeHavre(1.55rem);
+	letter-spacing: -0.05em;
+}
+h6 {
+	@include LeHavre(1.3rem);
+	letter-spacing: -0.05em;
+}
+
+
+
+
+/*
+	I-5. Global link styling
+*/
+a, a:link, a:visited {
+	color:$medium-gray;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:$red;
+	text-decoration:underline;
+}
+
+a.btn { color:$white; }
+
+
+/*
+	II-1. Top navigation
+*/
+@import "app_nav.scss";
+
+/*
+	II-2. Footer
+*/
+@import "app_footer.scss";
+
+
+
+
+/*
+	II-3. Home page
+*/
+@import "app_home.scss";
+
+
+
+
+/*
+	II-4. Per-page classes
+*/
+@import "app_global.scss",
+		"app_mixed-media.scss",
+		"app_academics.scss",
+		"app_gateway.scss",
+		"app_master-section-landing.scss",
+		"app_giving-landing.scss",
+		"app_campus-landing.scss",
+		"app_areas-of-study.scss",
+		"app_profile.scss",
+		"app_basic-profile.scss",
+		"app_student-life.scss",
+		"app_campus-landing.scss",
+		"app_campus-map.scss";
+
+@import "app_why.scss";
+
+
+
+/*
+	II-5. Global, modular elements
+*/
+@import "app_modals.scss";
+
+
+/*
+	II-5. Global, modular elements
+*/
+@import "app_print.scss";
+
+

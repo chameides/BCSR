@@ -1,0 +1,6 @@
+h2.subhead {
+  	margin: 1em 0 .5em 0;
+	@media screen and (min-width: $screen-sm-min) {
+		font-size: 4rem;
+	}
+}

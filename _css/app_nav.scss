@@ -1,0 +1,512 @@
+.level-1-alert {
+	position:absolute;
+	z-index:10000;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+.level-2-alert {
+	margin-top:0px;
+}
+body.has-hero .level-2-alert {
+	margin-top: 0px;
+	padding-top: 120px;
+}
+@media (min-width: $screen-sm-min) {
+	.level-2-alert {
+		margin-top:-35px;
+	}
+	body.has-hero .level-2-alert {
+		margin-top: 40px;
+		padding-top: 120px;
+	}
+}
+nav#mainnav {
+	/*
+	let's give the top nav an ID of 'mainnav', and scope all of
+	its styles under that.
+	*/
+	a, a:hover {
+		text-decoration:none;
+	}
+	>.container-fluid {
+		padding-left:0;
+		padding-right:0;
+	}
+	.container {
+		max-width:970px;
+		width:auto;
+	}
+	.navbar-header {
+		position:relative;
+	}
+	button.navbar-toggle {
+		z-index:4;
+		&:hover .icon-bar {
+			//background-color:$dark-gray;
+		}
+	}
+	#navbar {
+		z-index:2;
+		background-color:$dark-gray;
+		position:absolute;
+		@media (min-width: $screen-sm-min) {
+			position:fixed;
+		}
+		top:0px;
+		margin:0;
+		border-width:0px;
+		width:100%;
+		overflow-x:hidden;
+		@media (max-width: $screen-sm-max) {
+			max-height: 100vh;
+		}
+	}
+	.info-for-mobile {
+		float: none; 
+		clear: both;
+		padding:15px;
+		background-color:$medium-gray;
+		color:$dark-gray;
+		.left-me {
+			float: left;
+			width: 50%;
+		}
+		a {
+			color:$light-gray;
+			padding:5px 0px 5px 15px;
+			line-height:1.42857;
+			display:block;
+		}
+	}
+	.navbar-mobile-header {
+		background-image:url(/_images/bcsr-logo-sprite.png);
+		background-repeat:no-repeat;
+		background-position: center 15px;
+		background-size: 250px auto;
+		height: 100px;
+		margin: auto;
+		@media (min-width: $screen-sm-min) {
+			background-position: center 16px;
+			background-size: auto 190px;
+		}
+		@media (min-width: $screen-md-min) {
+			display:none; 
+		}
+	}
+	.navbar-brand {
+		height:100px;
+		background-image:url(/_images/bcsr-logo-sprite.png);
+		background-repeat:no-repeat;
+		background-position:center 15px;
+		background-size:250px auto;
+		position:absolute;
+		z-index:2;
+		top:-110px;
+		left:0px;
+		right:0px;
+		margin:auto;
+		background-color:$red;
+		body.has-hero & {
+			background-color:transparent;
+		}
+		transition-property:top;
+		transition-duration:0.5s;
+		&.initial {
+			z-index:2;
+			position:absolute;
+			top:0px;
+			transition-property:top;
+			transition-duration:0.5s;
+			body.no-mobile-nav & {
+				display:none;
+			}
+		}
+		@media (min-width: $screen-md-min) {
+			width:390px;
+			height:40px;
+			background-color:transparent;
+			background-image:url(/_images/bcsr-logo-sprite-leftaligned.png);
+			background-size:390px auto;
+			background-repeat:no-repeat;
+			background-position:0px -153px;
+			position:absolute;
+			z-index:3;
+			top:4px;
+			transition-property:top, background-position;
+			transition-duration:0s, 0s;
+			transition-delay:0s,0s;
+			&.initial {
+				width:242px;
+				height:104px;
+				background-size:390px auto;
+				background-position:0px 0px;
+				z-index:3;
+				position:absolute;
+				top:47px;
+				left:-15px;
+				@media (min-width: $screen-lg-min) {
+					left:-25px;
+				}
+				right:auto;
+				transition-duration:0.5s, 0s;
+				transition-delay:0s,0s;
+			}
+		}
+	}
+	.supernav {
+		@media (max-width: $screen-sm-max) {
+			padding:0;
+			margin-top:55px;
+			width:50%;
+			float:right;
+		}
+		a,button.btn-link {
+			color:$white;
+			&:hover {
+				background-color:$dark-gray;
+			}
+		}
+		#showsearch {
+			display:none;
+		}
+		li.nav-search {
+			@media (max-width: $screen-sm-max) {
+				position:absolute;
+				top:105px;
+				left:15px;
+				right:15px;
+			}
+			.input-group-btn {
+				@media (max-width: $screen-sm-max) {
+					width:1%;
+					background-color:$red;
+				}
+			}
+		}
+		li.dropdown {
+			@media (max-width: $screen-sm-max) {
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+				right: 0;
+				background: $medium-gray;
+				padding-left: 5px;
+
+				a.dropdown-toggle {
+					font-style: italic;
+					color: $white !important;
+				}
+			}
+			ul.dropdown-menu {
+				@media (max-width: $screen-sm-max) {
+					display:block;
+					background-color: $medium-gray;
+					border:0px;
+					box-shadow:none;
+					width: 100%;
+					padding:0;
+
+
+					li {
+						a {
+							padding: 5px 0 5px 15px;
+							white-space: normal;
+							display: block;
+
+							&:hover {
+								background-color: $dark-gray;
+							}
+						}
+					}
+				}
+			}
+		}
+		@media (min-width: $screen-md-min) {
+			background-color:$white;
+			z-index:2;
+			position:fixed;
+			left:0px;
+			right:0px;
+			@include HelveticaCond(15px);
+			text-transform:uppercase;
+			a,button.btn-link {
+				transition: color 0.25s, background-color 0.25s;
+				color:$dark-gray;
+				background-color:$white;
+				padding-top:    $navbar-super-padding-vertical;
+				padding-bottom: $navbar-super-padding-vertical;
+				border-width:0;
+				&:hover {
+					color:$white;
+					background-color:$red;
+				}
+			}
+			li.nav-search {
+				position:relative;
+				#showsearch {
+					display:inline-block;
+				}
+				#navsearchform {
+					position:absolute;
+					z-index:2;
+					width:300px;
+					left:-229px;
+					top:0px;
+					border:0; margin:0; padding:0;
+					background-color:transparent;
+					box-shadow:none;
+					display:none;
+					.form-control {
+						border:solid 1px $dark-gray;
+						background-color:$dark-gray;
+						color:$white;
+						height:40px;
+						padding-top:4px;
+						padding-bottom:4px;
+						font-size:18px;
+						&:focus {
+							box-shadow:none;
+						}
+					}
+					.input-group {
+						width:279px;
+					}
+					button.btn-link {
+						padding-top:9px;
+						padding-bottom:9px;
+						background-color:$red;
+						border:solid 1px $red;
+						color:$white;
+						&:hover {
+							color:$red;
+							background-color:$white;
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-nav {
+		@media (max-width: $screen-sm-max) {
+			padding:0;
+			margin:55px 0 20px 0;
+			width:50%;
+			float:left;
+			a,button.btn-link {
+				color:$white;
+			}
+			a {
+				padding: 10px 14px;
+			}
+		} 
+		@media (min-width: $screen-md-min) {
+			transition-property: top, background-color;
+			transition-duration:0.5s, 0.5s;
+			transition-delay:0s,0.6s;
+			position:fixed;
+			left:0px;
+			right:0px;
+			top:40px;
+			z-index:1;
+			@include HelveticaCondMed(22px);
+			&.initial {
+				background-color:$red;
+				body.has-hero & {
+					background-color:transparent;
+				}
+				height:125px;
+				transition-delay:0s,0s;
+			}	
+			&.tucked {
+				//top:-20px;
+			}	
+			&.shaded {
+				background-color:$dark-gray;
+				transition-delay:0s,0.25s;
+			}
+			a,button.btn-link {
+				transition: background-color 0.25s;
+				color:$white;
+				&:hover {
+					color:$white;
+					background-color:$red;
+				}
+			}
+			li {
+				position:static;
+				&.dropdown > a {
+					z-index:1001;
+				}
+			}
+			li.dropdown.open .dropdown-menu {
+				opacity:1;
+				top:0;
+				transition:opacity 0.75s;
+			}
+			.dropdown-menu {
+				font-family:$helvetica-cond;
+				top:-750px;
+				left:0px;
+				right:0px;
+				background-color:$dark-gray;
+				border:0;
+				padding-top:45px;
+				display:block!important;
+				transition-property:opacity, top;
+				transition-duration:0.25s, 0.75s;
+				opacity:0;
+				.col-md-9,
+				.col-md-4 {
+					padding-left:0;
+				}
+				.col-md-4 {
+					width:31%;
+				}
+				a.cta {
+					display:block;
+					padding:20px 15px 20px 30px;
+					color:$yellow;
+					@include LeHavre(2.25rem);
+					position:relative;
+					&:hover {
+						color:$dark-gray;
+						background-color:$yellow;
+					}
+					&::before {
+						font-family: FontAwesome;
+						font-weight: normal;
+						font-style: normal;
+						font-size:1.5rem;
+						display: inline-block;
+						text-decoration: inherit;
+						content:'\f0da';
+						position:absolute;
+						left:15px;
+						top:33%;
+					}
+				}
+				ul { 
+					margin:0;
+					padding-left:0;
+					display:-webkit-flex;
+					display:flex;
+					-webkit-flex-direction: row;
+					-webkit-flex-wrap: wrap;
+					flex-flow:row wrap;
+				}
+				li {
+					
+					display:flex;
+					float:left;
+					list-style-type:none;
+					padding-right:0px;
+					border-bottom:solid 1px $medium-gray;
+					margin-right:2%;
+					a {
+						display:block;
+						padding:20px 7.5px;						
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+	.open > a, 
+	.open > a:hover, 
+	.open > a:focus {
+		color:$white;
+		background-color:$red;
+	}
+	.section-nav.initial {
+		a,button.btn-link {
+			&:hover {
+				background-color:$dark-gray;
+			}
+		}
+		.dropdown-menu {
+			padding-top:125px;
+			background-color:$red;
+			body.has-hero & {
+				background-color:$dark-gray;
+				li > a {
+					&:hover {
+						background-color:$red;
+					}
+				}
+			}
+		}
+		.open > a, 
+		.open > a:hover, 
+		.open > a:focus {
+			color:$white;
+			background-color:$dark-gray;
+			body.has-hero & {
+				background-color:$red;
+			}
+		}
+	}
+	.dark-gray {
+		background-color:$dark-gray;
+	}
+	.fa-caret-down::before {
+		@media (max-width: $screen-sm-max) {
+			content:":";
+		}
+	}
+	.fa-caret-down {
+		@media (min-width: $screen-md-min) {
+			display:inline-block;
+			 transform:scale(0.7, 2.25); /* W3C */
+			-webkit-transform:scale(0.7, 2.25); /* Safari and Chrome */
+			-moz-transform:scale(0.7, 2.25); /* Firefox */
+			-ms-transform:scale(0.7, 2.25); /* IE 9 */
+			-o-transform:scale(0.7, 2.25); /* Opera */
+			line-height:1;
+		}
+	}
+	@media (min-width: $screen-sm-min) {
+		.mbo {
+			display:none;
+		}
+	}
+}
+@media (max-width: $screen-sm-max) {
+	.navbar-brand {
+		height:100px;
+		background-image:url(/_images/bcsr-logo-sprite.png);
+		background-repeat:no-repeat;
+		background-position:center 15px;
+		background-size:250px auto;
+		position:absolute;
+		z-index:2;
+		top:-110px;
+		left:0px;
+		right:0px;
+		margin:auto;
+		background-color:$red;
+		body.has-hero & {
+			background-color:transparent;
+		}
+		transition-property:top;
+		transition-duration:0.15s;
+		&.initial {
+			z-index:2;
+			position:absolute;
+			top:0px;
+			transition-property:top;
+			transition-duration:0.15s;
+			body.no-mobile-nav & {
+				display:none;
+			}
+		}
+	}
+}
+body.no-mobile-nav .section-nav .initial {
+	height:44px;
+}
+@media (max-width: $screen-sm-max) {
+	.hide-for-small {
+		display:none;
+	}
+}

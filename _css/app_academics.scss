@@ -1,0 +1,310 @@
+// #form-academics {
+//   .row {
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+// }
+
+
+// Category Colors
+.areas-of-study,
+.special-programs{
+  background: $medium-gray;
+  @include transition(background-color, 0.2s, ease-out);
+}
+.social-political {
+	background: $red;
+	&:hover {
+		background: darken( $red, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+}
+.languages {
+	background: $yellow;
+	&:hover {
+		background: darken( $yellow, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+
+}
+.performing-arts {
+	background: $orange;
+	&:hover {
+		background: darken( $orange, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+}
+.science {
+	background: $blue;
+	&:hover {
+		background: darken( $blue, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+}
+.interdisciplinary {
+	background: $dark-gray;
+	&:hover {
+		background: lighten( $dark-gray, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+}
+
+// Colors with hover to apply as a bg
+.red-bg {
+	background: $red;
+}
+.yellow-bg {
+	background: $yellow;
+}
+.orange-bg {
+	background: $orange;
+}
+.blue-bg {
+	background: $blue;
+}
+.black-bg {
+	background: $dark-gray;
+}
+
+// Deciding best way to make color classes
+.mixed-media-box {
+	background: $orange;
+}
+
+#form-academics h5 {
+  margin-left: 0.5rem;
+  @media screen and (max-width:$screen-xs-min) {
+    font-size: 16px;
+  }
+}
+
+div.filter-item {
+  display: table;
+  width: 100%;
+  margin-bottom: 0.25em;
+  @media screen and (max-width:$screen-xs-min) {
+    margin-bottom: 0.5em;
+  }
+}
+
+.label-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 46px;
+}
+
+label.filter-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size : 24px;
+  @media screen and (max-width:$screen-md-min) {
+    font-size : 18px;
+    line-height: 24px;
+  }
+  @media screen and (max-width:$screen-xs-min) {
+    font-size : 16px;
+    line-height: 20px;
+  }
+  font-weight: normal;
+}
+
+
+// Filter
+.filter-title {
+  @include HelveticaCond(36px);
+  letter-spacing: 0;
+}
+.form-academics {
+  font-size: 0.8em;
+}
+.form-academics-border {
+  border-left: 1px solid $dark-gray;
+  padding-left: 15px;
+}
+// Custom Checkbox 
+#academics_page input[type=checkbox]:not(old),
+#academics_page input[type=radio   ]:not(old) {
+   width     : 28px;
+   margin    : 0;
+   padding   : 0;
+   font-size : 24px;
+   opacity   : 0;
+   // margin-left: -30px;
+}
+#academics_page input[type=checkbox]:not(old) + label,
+#academics_page input[type=radio   ]:not(old) + label {
+    // font-size: 1.6rem;
+    display: inline-block;
+    margin-left: -28px;
+    line-height: 36px;
+    // font-weight: normal;
+}
+#academics_page input[type=checkbox]:not(old) + label > span,
+#academics_page input[type=radio   ]:not(old) + label > span {
+    display          : inline-block;
+    width            : 21px;
+    height           : 21px;
+    margin           : 6px 12px 6px 6px;
+    border           : none;
+    vertical-align   : bottom;
+}
+// .long-text {
+//   display: inline-block;
+//   position: absolute;
+// }
+#academics_page input[type=checkbox]:not(old):checked + label > span:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  display: block;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: none;
+  // margin-top: .3em;
+ }
+
+// Grid
+.program-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+  @media screen and (max-width:951px) {
+    max-width: 702px;
+  } 
+  @media screen and (max-width:721px) {
+    max-width: 100%;
+  } 
+  // @media screen and (max-width:992px) {
+  //   max-width: 932px;
+  // } 
+}
+
+.program-grid li {
+	display: inline-block;
+	margin: 10px 0px 0 10px;
+	vertical-align: top;
+	height: 117px;
+  @media screen and (max-width:721px) {
+    width: 47%;
+    margin: 2% 0 0 2%;
+  } 
+  @media screen and (max-width: 490px) {
+  	display: block;
+    width: 100%;
+    height: 50px;
+  	margin: 0;
+  }
+}
+
+.program-grid li > a,
+.program-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+.active-program, .active-program:hover {
+	background-image: url('../_images/academics-triangle.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+  @media screen and (max-width: 490px) {
+    background-image: none;
+  }
+}
+
+// .last-in-row .box-text {
+// 	color: red;
+// }
+
+#expanded-content {
+  display:none;
+  opacity:0;
+	width: 100%;
+  max-width: 922px;
+	height: auto;
+	text-align: left;
+	overflow: hidden;
+	background-color:#fff;
+	padding-bottom:15px;
+  @media screen and (max-width:951px) {
+    max-width: 689px;
+  } 
+  @media screen and (max-width:721px) {
+    width: 92%;
+  } 
+  @media screen and (max-width: 490px) {
+    width: 92%;
+    margin: 5%;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+	img {
+		max-width: 100%;
+    @media screen and (max-width:721px) {
+      width: auto;
+      max-height:200px;
+    } 
+    @media screen and (max-width: 490px) {
+      width: auto;
+      max-height:100px;
+    }
+	}
+  h2 {
+		max-width: 90%;
+    margin-top: 0;
+    @media screen and (max-width:$screen-xs-min) {
+      display: none;
+  	}
+  }
+	.btn-primary {
+		font-size: 0.6em;
+		padding: 0.5em 1em;
+	}
+  #expander-close {
+    float: right;
+    padding-right: 1em;
+    z-index: 100;
+    @include transition(color, 0.5s, ease-out);
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+
+.box {
+	width: 205px;
+	height: 115px;
+	color: $white;
+	display: table;
+	&.study-box {
+		width: 100%;
+	}
+  @media screen and (max-width:721px) {
+    width: 100%;
+  } 
+  @media screen and (max-width: 490px) {
+    height: 50px;
+  }
+}
+.box-text {
+	@include LeHavre(19px);
+	display: table-cell;
+	line-height: 20px;
+	vertical-align: middle;
+	padding: .5em;
+	&.study-text a {
+		display: block;
+		color: $white;
+	}
+}
+body>p#testfortransforms{
+	margin-top: -1.5rem;
+	margin-bottom:0;
+}

@@ -1,0 +1,41 @@
+Academics Page Readme
+
+
+FILTER CLASSES
+
+Each element in the grid is given one or more classes.  The class "program-item" gives it the needed style.  There are
+additional classes that correspond to the filter names; areas-of-study, special-programs, languages, performing-arts,
+science, social-political, and interdisciplinary.
+
+
+PROGRAM EXPANDED CONTENT
+
+When a user clicks on a program an ajax request is made to a file called academics-expander.php.  The ID of the program
+box is passed to that URL in a query string which can be used to customize the returned content.
+
+Currently there are no IDs applied to the program elements and placeholder IDs are added by the javascript code in the
+academics.js file (lines 12 through 16).  When IDs are added by the CMS automatically this block of code can be removed.
+
+You can use the format of the academics-expander.php file as a guide for feeding real content from the CMS.  Line 105 of
+academics.js constructs the URL and can be customized to match the needed format.
+
+
+LAST-IN-ROW and SORT ORDER
+
+In order to get the expanded content to show up in the right part of the grid, two key factors are needed.  The last
+element in the selected row is needed in order to determine the element that the expander should be inserted after (e.g.
+between the current line and the following line).  This is enabled through a function called setLastRows() in the
+academics.js file.  That function scans through the visible programs and adds a class of "last-in-row" to all
+corresponding elements.  This is run only as needed (i.e. when a user clicks on one of the programs).
+
+A sort order data attribute is added to each of the program elements upon page load.  These are set in increments of 10.
+ Once we know the position that we want to add the expander after, the sort attribute of the expander element is set to
+that element's sort order plus 5.  The isotope animation plugin requires this in order for us to sort the elements in
+the needed manner.
+
+
+PROGRAM ORDER
+
+The order that the programs appear in the code is the one that dictates the order that they will appear in. The
+filtering functionality doesn't require the programs to be ordered by type or category. It's probably best to order the
+programs alphabetically.
