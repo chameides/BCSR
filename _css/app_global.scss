@@ -979,10 +979,10 @@ th {
 }
   a.right-arrow,
   a:link.right-arrow  {
-    @include LeHavre(15px);
+    @include LeHavre(16px);
     color: $red;
       @media screen and (max-width:$screen-md-min) {
-        font-size: 0.9em;
+        font-size: .9em;
       }
       &:hover{
         color: $dark-gray;
