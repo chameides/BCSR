@@ -1,0 +1,51 @@
+/*responsive images*/
+img {
+  width: 100%;
+}
+
+.pull-left, .pull-right, .pull-left-responsive, .pull-right-responsive {
+	margin-bottom:15px;
+}
+
+/*fixed-width images*/
+.pull-left, .pull-right {
+	width:auto;
+}
+
+/*right margin on left floated images*/
+.pull-left, .pull-left-responsive {
+	margin-right:15px;
+}
+
+/*left margin on right floated images*/
+.pull-right, .pull-right-responsive {
+	margin-left:15px;
+}
+
+/*width varies based on screen size*/
+.pull-left-responsive, .pull-right-responsive {
+	max-width: 125px;
+	@media screen and (min-width:$screen-sm) {
+		max-width: 200px;
+	}
+	@media screen and (min-width:$screen-md) {
+		max-width: 275px;
+	}
+	@media screen and (min-width:$screen-lg) {
+		max-width: 325px;
+	}    
+}
+
+/*increase margin on larger images*/
+$pull-image-margin-md: 25px;
+
+.pull-left-responsive {
+	@media screen and (min-width:$screen-md) {
+		margin-right: $pull-image-margin-md;
+	}
+}
+.pull-right-responsive {
+	@media screen and (min-width:$screen-md) {
+		margin-left: $pull-image-margin-md;
+	}
+}
