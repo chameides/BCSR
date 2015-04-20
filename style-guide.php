@@ -793,19 +793,31 @@ for (i = 0; i < divs.length; ++i) {
 
 
 <h1>Michael's Notes</h1>
-<h2>Blockquotes</h2>
+<h2>Blockquotes/Pullquotes</h2>
 <blockquote>
- 	<p class="blockquote-last">Use a blockquotes to break up the uniformity of the text.</p>
+ 	<p class="blockquote-last">Use blockquotes to break up the uniformity of the text.</p>
 	<cite>-Michael Chameides,<br>Website Manager, Bard College at Simon's Rock</cite>
 </blockquote>
 <ul>
 	<li>Inside the blockquote element, put the quote in a p tag and the citation in a cite tag.</li>
 	<li>The opening quote is added automatically, do not include in copy</li>
 	<li>Add a large closing quote, by adding a class blockquote-last to the final p</li>
+	<li>The blockquotes look clunky if they are long. They look best as short, pull quotes rather than an extended quote.</li>
+	<li>Consider breaking up the citation onto two lines, one for the name and the other on the title. An unforced linebreak may look errant because of the right-align - and this is likely on small screens. Forcing a line break will give a more controlled design.</li>
 </ul> 
-
-
-        </div>
+<h2>Images</h2>
+<p><img src="//placehold.it/125/125" class="pull-left-responsive">The pull-left-responsive image changes width based on screen size. It floats to the left. The max-width is 325px.  
+<p><img src="//placehold.it/125/125" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
+<div style="clear: both">
+	<h2>CTA</h2>
+	<p>More on this section after LH completes the style guide</p>
+	<div class="text-center">
+		<a class="btn btn-primary" href="#">Apply Now</a>
+	</div>
+	<div class="text-center page--link">
+		<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Get Updates</a>
+	</div>
+</div>
 
 
       </section>
