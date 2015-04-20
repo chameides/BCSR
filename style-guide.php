@@ -792,6 +792,19 @@ for (i = 0; i < divs.length; ++i) {
 </div>
 
 
+<h1>Michael's Notes</h1>
+<h2>Blockquotes</h2>
+<blockquote>
+ 	<p class="blockquote-last">Use a blockquotes to break up the uniformity of the text.</p>
+	<cite>-Michael Chameides,<br>Website Manager, Bard College at Simon's Rock</cite>
+</blockquote>
+<ul>
+	<li>Inside the blockquote element, put the quote in a p tag and the citation in a cite tag.</li>
+	<li>The opening quote is added automatically, do not include in copy</li>
+	<li>Add a large closing quote, by adding a class blockquote-last to the final p</li>
+</ul> 
+
+
         </div>
 
 
