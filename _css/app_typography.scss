@@ -1,6 +1,6 @@
 /*hanging block quote*/
 blockquote:before, blockquote p.blockquote-last:after {
-	@media screen and (min-width:$screen-md-min) {
+	@media screen and (min-width:$screen-md) {
 		color: lighten($blue, 18%); /*lighten the hanging quotes when larger font-size is used */
 	}
 }
@@ -11,10 +11,10 @@ blockquote:before {
   	font-size: 4.3em;
   	text-indent: -.5em;
   	float: left;
-  	@media screen and (max-width:$screen-md-min) {
+  	@media screen and (max-width:$screen-md) {
 		font-size: 3rem;
 	}
-	@media screen and (min-width:$screen-md-min) {
+	@media screen and (min-width:$screen-md) {
 		font-size: 4em;
 		text-indent: -.4em;	
 		position: relative; 
@@ -30,13 +30,13 @@ blockquote p.blockquote-last:after {
 	font-size: 1.8em;
 	position: relative; 
 	line-height: 0;
-  	@media screen and (min-width:$screen-lg-min) {
+  	@media screen and (min-width:$screen-lg) {
   		top: 1.3rem;
   	}
-  	@media screen and (min-width:$screen-md-min) {
+  	@media screen and (min-width:$screen-md) {
   		top: 1.3rem;
   	}
-  	@media screen and (max-width:$screen-md-min) {
+  	@media screen and (max-width:$screen-md) {
   		top: .5rem;
   	}
 }
@@ -46,12 +46,12 @@ blockquote {
 	border-left: none;
 	margin-left:.3em;
 	color: $blue;
-		@media screen and (max-width:$screen-md-min) {
+		@media screen and (max-width:$screen-md) {
 			font-size: 1.5rem;
 			margin-bottom: .5rem;
 			line-height: 2rem;
 		}
-		@media screen and (min-width:$screen-md-min) {
+		@media screen and (min-width:$screen-md) {
 			margin-left: 3em;
 			margin-right: 3em;
 			margin-top: 2rem;
@@ -69,7 +69,7 @@ blockquote p {
 	line-height: 3.4rem;
 	margin-bottom: 0.667rem;
 	padding: 0;
-		@media screen and (max-width:$screen-md-min) {
+		@media screen and (max-width:$screen-md) {
 			font-size: 1.5rem;
 			margin-bottom: .2rem;
 			line-height: 2rem;
@@ -85,7 +85,7 @@ cite {
 	font-style: none;
 	text-align: right;
 	line-height: 1.3em;
-	@media screen and (max-width:$screen-md-min) {
+	@media screen and (max-width:$screen-md) {
 		font-size: 1.2rem;
 	}
 }
