@@ -810,7 +810,7 @@ for (i = 0; i < divs.length; ++i) {
 <p><img src="//placehold.it/125/125" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
 <div style="clear: both">
 	<h2>CTA</h2>
-	<p>More on this section after LH completes the style guide</p>
+	<p>More on this section after LH completes the style guide.</p>
 	<div class="text-center">
 		<a class="btn btn-primary" href="#">Apply Now</a>
 	</div>
