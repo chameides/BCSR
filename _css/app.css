@@ -9030,28 +9030,17 @@ img {
 /*width varies based on screen size*/
 /* line 26, app_images.scss */
 .pull-left-responsive, .pull-right-responsive {
-  max-width: 125px; }
-  @media screen and (min-width: 768px) {
-    /* line 26, app_images.scss */
-    .pull-left-responsive, .pull-right-responsive {
-      max-width: 200px; } }
-  @media screen and (min-width: 992px) {
-    /* line 26, app_images.scss */
-    .pull-left-responsive, .pull-right-responsive {
-      max-width: 275px; } }
-  @media screen and (min-width: 1200px) {
-    /* line 26, app_images.scss */
-    .pull-left-responsive, .pull-right-responsive {
-      max-width: 325px; } }
+  min-width: 125px;
+  width: 35%; }
 
 /*increase margin on larger images*/
 @media screen and (min-width: 992px) {
-  /* line 42, app_images.scss */
+  /* line 34, app_images.scss */
   .pull-left-responsive {
     margin-right: 25px; } }
 
 @media screen and (min-width: 992px) {
-  /* line 47, app_images.scss */
+  /* line 39, app_images.scss */
   .pull-right-responsive {
     margin-left: 25px; } }
 
@@ -9656,7 +9645,33 @@ cite {
   @media screen and (max-width: 992px) {
     /* line 80, app_typography.scss */
     cite {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      text-align: left;
+      /*long citation on small screen will line break and look weird if right aligned*/ } }
+
+/*secondary CTA*/
+/* line 96, app_typography.scss */
+.cta-bullet, a.right-arrow, a.right-arrow:link, a.right-arrow-primary {
+  color: #be2126;
+  font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.08em; }
+  /* line 99, app_typography.scss */
+  .cta-bullet:hover, a.right-arrow:hover, a.right-arrow-primary:hover {
+    color: #262421;
+    text-decoration: none; }
+
+@media screen and (max-width: 992px) {
+  /* line 106, app_typography.scss */
+  a.right-arrow, a:link.right-arrow {
+    font-size: .9em; } }
+
+@media screen and (min-width: 992px) {
+  /* line 113, app_typography.scss */
+  a.right-arrow-primary {
+    font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.08em; } }
 
 /* line 1, app_giving-landing.scss */
 .caption-copy,
