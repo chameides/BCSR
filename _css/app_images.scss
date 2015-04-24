@@ -24,16 +24,8 @@ img {
 
 /*width varies based on screen size*/
 .pull-left-responsive, .pull-right-responsive {
-	max-width: 125px;
-	@media screen and (min-width:$screen-sm) {
-		max-width: 200px;
-	}
-	@media screen and (min-width:$screen-md) {
-		max-width: 275px;
-	}
-	@media screen and (min-width:$screen-lg) {
-		max-width: 325px;
-	}    
+	min-width: 125px;
+	width: 35%;
 }
 
 /*increase margin on larger images*/
