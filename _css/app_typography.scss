@@ -87,5 +87,32 @@ cite {
 	line-height: 1.3em;
 	@media screen and (max-width:$screen-md) {
 		font-size: 1.2rem;
+        text-align: left; /*long citation on small screen will line break and look weird if right aligned*/
 	}
+}
+
+
+/*secondary CTA*/
+.cta-bullet {
+    color: $red;
+    @include LeHavre(16px);
+      &:hover{
+        color: $dark-gray;
+        text-decoration: none;
+      }
+}
+
+
+a.right-arrow, a:link.right-arrow  {
+    @extend .cta-bullet;
+    @media screen and (max-width:$screen-md-min) {
+        font-size: .9em;
+      }
+  }
+
+a.right-arrow-primary {
+    @extend .cta-bullet;
+    @media screen and (min-width:$screen-md) {
+        @include LeHavre(25px);
+    }
 }
