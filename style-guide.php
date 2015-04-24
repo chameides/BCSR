@@ -47,6 +47,11 @@
 	</div>
 </div>
 
+<h2>Page Examples</h2>
+<ul>
+	<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
+</ul>
+
 <h2>Alert System:</h2>
 <div class="row">
 	<div class="col-md-3">
@@ -793,13 +798,14 @@ for (i = 0; i < divs.length; ++i) {
 
 
 <h1>Michael's Notes</h1>
-<h2>Blockquotes/Pullquotes</h2>
+<h2>Pullquotes</h2>
 <blockquote>
- 	<p class="blockquote-last">Use blockquotes to break up the uniformity of the text.</p>
+ 	<p class="blockquote-last">Use pullquotes to break up the uniformity of the text.</p>
 	<cite>-Michael Chameides,<br>Website Manager, Bard College at Simon's Rock</cite>
 </blockquote>
 <ul>
-	<li>Inside the blockquote element, put the quote in a p tag and the citation in a cite tag.</li>
+	<li>This is a semantic blockquote, but used as a pull quote</li>
+	<li>Put the quote in a p tag and the citation in a cite tag - all within a blockquote.</li>
 	<li>The opening quote is added automatically, do not include in copy</li>
 	<li>Add a large closing quote, by adding a class blockquote-last to the final p</li>
 	<li>The blockquotes look clunky if they are long. They look best as short, pull quotes rather than an extended quote.</li>
@@ -812,10 +818,14 @@ for (i = 0; i < divs.length; ++i) {
 	<h2>CTA</h2>
 	<p>More on this section after LH completes the style guide.</p>
 	<div class="text-center">
-		<a class="btn btn-primary" href="#">Apply Now</a>
+		<a class="btn btn-primary" href="#">Primary</a>
 	</div>
 	<div class="text-center page--link">
-		<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Get Updates</a>
+		<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Secondary CTA</a>
+	</div>
+	<p>There is also a bullet CTA that can be used without the primary.</p>
+	<div class="text-center page--link">
+		<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
 	</div>
 </div>
 
