@@ -50,6 +50,7 @@
 <h2>Page Examples</h2>
 <ul>
 	<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
+	<li><a href="content-early-college.php">Early College</a></li>
 </ul>
 
 <h2>Alert System:</h2>
@@ -828,7 +829,7 @@ for (i = 0; i < divs.length; ++i) {
 		<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
 	</div>
 </div>
-
+Our <a href="students">students</a> join a diverse, tight-knit community of their intellectual and chronological peers. We’re a community of individuals, but nobody is an outlier here because of their age, or their decision to seek greater academic challenges. 
 
       </section>
 
