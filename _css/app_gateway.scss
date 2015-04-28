@@ -1,9 +1,17 @@
-
 // Image Thumbnails
 .image-thumb {
     position: relative;
     display: block;
+    background: black; // set background to black so that image darkens on hover
 }
+
+// images get darker on hover
+.image-thumb:hover{
+  img {
+    opacity: .8;
+  }
+}
+
 // div
 .image-text-overlay-container {
   //display: table;

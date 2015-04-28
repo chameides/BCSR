@@ -9400,12 +9400,17 @@ body > p#testfortransforms {
   margin-top: -1.5rem;
   margin-bottom: 0; }
 
-/* line 3, app_gateway.scss */
+/* line 2, app_gateway.scss */
 .image-thumb {
   position: relative;
-  display: block; }
+  display: block;
+  background: black; }
 
-/* line 8, app_gateway.scss */
+/* line 10, app_gateway.scss */
+.image-thumb:hover img {
+  opacity: .8; }
+
+/* line 16, app_gateway.scss */
 .image-text-overlay-container {
   position: absolute;
   top: 50%;
@@ -9417,7 +9422,7 @@ body > p#testfortransforms {
   -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%); }
 
-/* line 21, app_gateway.scss */
+/* line 29, app_gateway.scss */
 .image-text-overlay {
   color: #ffffff;
   line-height: 1em;
@@ -9431,15 +9436,15 @@ body > p#testfortransforms {
   text-align: center;
   padding: 0 .5em; }
   @media screen and (max-width: 800px) {
-    /* line 21, app_gateway.scss */
+    /* line 29, app_gateway.scss */
     .image-text-overlay {
       font-size: 16px; } }
   @media screen and (max-width: 680px) {
-    /* line 21, app_gateway.scss */
+    /* line 29, app_gateway.scss */
     .image-text-overlay {
       font-size: 11px; } }
 
-/* line 39, app_gateway.scss */
+/* line 47, app_gateway.scss */
 .hero-btn {
   -webkit-animation-delay: 1s;
   -moz-animation: fadeIn 3s;
@@ -9448,11 +9453,11 @@ body > p#testfortransforms {
   -ms-animation: fadeIn 3s;
   animation: fadeIn 3s; }
   @media screen and (max-width: 500px) {
-    /* line 46, app_gateway.scss */
+    /* line 54, app_gateway.scss */
     .hero-btn.btn-group .btn-primary {
       font-size: 12px;
       padding: 15px 15px; }
-      /* line 50, app_gateway.scss */
+      /* line 58, app_gateway.scss */
       .hero-btn.btn-group .btn-primary:last-child {
         margin-top: 1em; } }
 
