@@ -9401,13 +9401,13 @@ body > p#testfortransforms {
   margin-bottom: 0; }
 
 /* line 2, app_gateway.scss */
-.image-thumb {
+a.image-thumb {
   position: relative;
   display: block;
   background: black; }
 
 /* line 10, app_gateway.scss */
-.image-thumb:hover img {
+a.image-thumb:hover img {
   opacity: .8; }
 
 /* line 16, app_gateway.scss */
