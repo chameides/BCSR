@@ -10320,6 +10320,55 @@ h2.subhead {
       width: 100%;
       height: auto; } }
 
+/* 
+Google Search Overrides 
+
+The search page uses Google Custom Search. The custom search includes Google-created formatting. The following rules override the GSC rules.  
+
+*/
+/* line 9, app_search.scss */
+.cse form.gsc-search-box, form.gsc-search-box {
+  padding: .7rem 0 0 0;
+  max-width: 584px; }
+
+/* line 14, app_search.scss */
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: .5em; }
+
+/* line 18, app_search.scss */
+.gsc-selected-option-container {
+  min-width: 80px !important; }
+
+/*display descenders on larger screens */
+@media screen and (min-width: 992px) {
+  /* line 24, app_search.scss */
+  .gsc-result .gs-title {
+    height: 1.5em !important; } }
+/* line 30, app_search.scss */
+.gs-title, .gs-title b {
+  color: #be2126 !important;
+  text-decoration: none !important; }
+  /* line 33, app_search.scss */
+  .gs-title :hover, .gs-title b :hover {
+    text-decoration: underline !important; }
+
+/* line 38, app_search.scss */
+.cse .gs-webResult .gs-snippet, .gs-webResult .gs-snippet, .gs-fileFormatType, .gs-imageResult .gs-snippet {
+  font-family: "Helvetica Neue 55 Roman", Helvetica, Arial, sans-serif !important; }
+  /* line 40, app_search.scss */
+  .cse .gs-webResult .gs-snippet b, .gs-webResult .gs-snippet b, .gs-fileFormatType b, .gs-imageResult .gs-snippet b {
+    color: #333333 !important; }
+
+/* line 45, app_search.scss */
+.gsc-url-bottom, .cse .gs-webResult .gs-visibleUrl, .gs-webResult .gs-visibleUrl, .cse .gs-webResult .gs-visibleUrl-short, .gs-webResult .gs-visibleUrl-short, .gs-imageResult .gs-visibleUrl, .gs-imageResult .gs-visibleUrl-short {
+  color: #6e675f !important;
+  line-height: 1.6em; }
+
+@media screen and (min-width: 992px) {
+  /*vertically align search text with button*/
+  /* line 52, app_search.scss */
+  input[type="button"].gsc-search-button {
+    min-height: 33px; } }
 /* line 1, app_campus-map.scss */
 body.no-mobile-nav nav#mainnav .section-nav.initial {
   height: auto; }

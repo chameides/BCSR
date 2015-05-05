@@ -51,6 +51,7 @@
 <ul>
 	<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
 	<li><a href="content-early-college.php">Early College</a></li>
+	<li><a href="search.php">Search</a></li>
 </ul>
 
 <h2>Alert System:</h2>
