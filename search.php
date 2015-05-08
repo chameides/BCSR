@@ -60,8 +60,7 @@
               })();
             </script>
             <gcse:searchbox-only resultsUrl="/search.php" data-queryParameterName="gs"></gcse:searchbox-only>
-            <gcse:searchresults-only></gcse:searchresults-only>
-            
+            <gcse:searchresults-only></gcse:searchresults-only> 
           </div>
 
 
