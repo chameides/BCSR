@@ -5879,7 +5879,7 @@ button.close {
   float: right !important; }
 
 /* line 18, bootstrap/_utilities.scss */
-.pull-left, .pull-left-responsive {
+.pull-left, .pull-left-responsive, .image-news {
   float: left !important; }
 
 /* line 27, bootstrap/_utilities.scss */
@@ -9009,7 +9009,7 @@ img {
   width: 100%; }
 
 /* line 6, app_images.scss */
-.pull-left, .pull-right, .pull-left-responsive, .pull-right-responsive {
+.pull-left, .pull-right, .pull-left-responsive, .image-news, .pull-right-responsive {
   margin-bottom: 15px; }
 
 /*fixed-width images*/
@@ -9019,7 +9019,7 @@ img {
 
 /*right margin on left floated images*/
 /* line 16, app_images.scss */
-.pull-left, .pull-left-responsive {
+.pull-left, .pull-left-responsive, .image-news {
   margin-right: 15px; }
 
 /*left margin on right floated images*/
@@ -9029,14 +9029,14 @@ img {
 
 /*width varies based on screen size*/
 /* line 26, app_images.scss */
-.pull-left-responsive, .pull-right-responsive {
+.pull-left-responsive, .image-news, .pull-right-responsive {
   min-width: 125px;
   width: 35%; }
 
 /*increase margin on larger images*/
 @media screen and (min-width: 992px) {
   /* line 34, app_images.scss */
-  .pull-left-responsive {
+  .pull-left-responsive, .image-news {
     margin-right: 25px; } }
 
 @media screen and (min-width: 992px) {
@@ -10369,6 +10369,23 @@ The search page uses Google Custom Search. The custom search includes Google-cre
   /* line 52, app_search.scss */
   input[type="button"].gsc-search-button {
     min-height: 33px; } }
+/* line 1, app_news.scss */
+.news-article {
+  margin-bottom: 3rem; }
+
+/* line 5, app_news.scss */
+h2.squeeze {
+  margin-bottom: 0; }
+
+/* line 9, app_news.scss */
+.image-news {
+  width: auto;
+  max-width: 35%; }
+
+/* line 16, app_news.scss */
+.news-article, .news-more {
+  clear: both; }
+
 /* line 1, app_campus-map.scss */
 body.no-mobile-nav nav#mainnav .section-nav.initial {
   height: auto; }

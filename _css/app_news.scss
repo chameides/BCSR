@@ -1,0 +1,18 @@
+.news-article {
+  margin-bottom: 3rem;
+}
+
+h2.squeeze {
+  margin-bottom: 0; //reduce margin between header and date
+}
+
+.image-news {
+  @extend .pull-left-responsive;
+  width: auto; //if no image, width goes to zero
+  max-width: 35%; 
+}
+
+
+.news-article, .news-more {
+  clear: both; //ensure centered content, centeres on page-width
+}
