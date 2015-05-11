@@ -49,7 +49,7 @@
           <div class="news-listings">
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/300/cats/" class="image-news"></a>
+              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/300/cats/" class="image-news" alt="alt copy goes here"></a>
               <a class="link-news-header" href="#"><h3 class="squeeze">Rockers, Roommates, Best Friends and Fulbright Scholars</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
               <div class="news-content-container"> 
@@ -66,7 +66,7 @@
             
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news"></a>
+              <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news" alt="#"></a>
               <a class="link-news-header" href="#"><h3 class="squeeze">Simon's Rock Loses Beloved Dance Professor Wendy Shifrin</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
               <div class="news-content-container"> 
@@ -84,7 +84,7 @@
 
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news"></a>
+              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news" alt="alt copy goes here2"></a>
               <a class="link-news-header" href="#"><h3 class="squeeze">H3 Article Title</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">Date</h5></a>
               <div class="news-content-container"> 
@@ -113,7 +113,7 @@
         <!-- RIGHT COLUMN -->
       </div>
       <!-- << /Section One >> -->
-
+      </div>
 
       <!-- << Section Two >> -->
       <div class="row-full-width">
@@ -152,17 +152,11 @@
       <div class="side-nav-mobile">
         <!-- Subnav -->
         <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
-            <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
+          <li><div class="list-group-item active section-header">News</div></li>
+            <li><a href="#" class="list-group-item">Link 1</a></li>
+            <li><a href="#" class="list-group-item">Link 2</a>
             </li>
-            <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
-            <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
+            <li><a href="#" class="list-group-item">Link 3 FPO</a></li>
         </ul>
         <!-- /Subnav -->
       </div>
