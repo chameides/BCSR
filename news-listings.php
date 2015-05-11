@@ -20,8 +20,22 @@
 
     <div class="container-fluid page-container"> 
 
-      <!-- << Section One >> -->
+     <!-- << Section One >> -->
       <div class="row-full-width">
+        <!-- LEFT COLUMN -->
+        <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
+          <div class="reveal-side-nav"></div>
+          <!-- Subnav -->
+          <ul class="flat-list list-group">
+            <li><div class="list-group-item active section-header">News</div></li>
+            <li><a href="#" class="list-group-item">Media Contacts</a></li>
+            <li><a href="#" class="list-group-item">Submit News Tips</a></li>
+            <li><a href="#" class="list-group-item">Additional Links FPO</a></li>
+          </ul>
+          <!-- /Subnav -->
+        </div>
+        <!-- /LEFT COLUMN-->
+
         
 
         <!-- CENTER COLUMN -->
@@ -35,32 +49,51 @@
           <div class="news-listings">
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-header" href="#"><h2 class="text-center squeeze">Article Headline</h2></a>
-              <a class="link-news-header" href="#"><h5 style="text-align: center;">March 16, 2015</h5></a>
-              <div class="news-content-container">
-                <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news"></a>
+              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/300/cats/" class="image-news"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">Rockers, Roommates, Best Friends and Fulbright Scholars</h3></a>
+              <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
+              <div class="news-content-container"> 
                 <div class="news-content">
-                  Marisa Benitez ‘11 and Zara Anwarzai ’11 have always been ambassadors of culture. It’s just what they do. Zara hails from Indianapolis—a quintessential all-American city—and yet her mother is Russian and her father Afghani. Marisa is an L.A. woman and second generation American, raised by a single mother and strongly steeped in Cuban culture. Each came to Bard College at Simon’s Rock ready for the challenge of early college,  and both were nurtured in their academic pursuits—French and German philosophy, political theory, the cultural inferences of translation.
+                  Marisa Benitez ‘11 and Zara Anwarzai ’11 have always been ambassadors of culture. It’s just what they do. Zara hails from Indianapolis—a quintessential all-American city—and yet her mother is Russian and her father Afghani. Marisa is an L.A.
+                </div>
+                <div class="news-more">
+                  <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
                 </div>
               </div>
-              <div class="text-center page--link news-more">
-                <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
+              
+            </div>
+            <!-- Article End -->
+            
+            <!-- Article Start -->
+            <div class="news-article">
+              <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">Simon's Rock Loses Beloved Dance Professor Wendy Shifrin</h3></a>
+              <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
+              <div class="news-content-container"> 
+                <div class="news-content">
+                  Wendy Shifrin, beloved colleague, teacher, and friend, died on Wednesday morning after a long illness. A member of the Simon’s Rock faculty since 1984, Wendy was not only an accomplished dancer and choreographer but also a dedicated, compassionate, and gifted teacher. Her devotion to the College was legendary, and her door was always open to the many students -- including over 150 advisees during her career at Simon’s Rock -- who found her a caring mentor and guide and who remained in touch with her long after graduating.
+                </div>
+                <div class="news-more">
+                  <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
+                </div>
               </div>
+              
             </div>
             <!-- Article End -->
 
+
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-header" href="#"><h2 class="text-center squeeze">Article Headline</h2></a>
-              <a class="link-news-header" href="#"><h5 style="text-align: center;">March 16, 2015</h5></a>
-              <div class="news-content-container">
-                <a class="link-news-image" href="#"><img src="" class="image-news"></a>
+              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">H3 Article Title</h3></a>
+              <a class="link-news-header" href="#"><h5 class="squeeze">Date</h5></a>
+              <div class="news-content-container"> 
                 <div class="news-content">
-                  This article doesn't have an image. Marisa Benitez ‘11 and Zara Anwarzai ’11 have always been ambassadors of culture. It’s just what they do. Zara hails from Indianapolis—a quintessential all-American city—and yet her mother is Russian and her father Afghani. Marisa is an L.A. woman and second generation American, raised by a single mother and strongly steeped in Cuban culture. Each came to Bard College at Simon’s Rock ready for the challenge of early college,  and both were nurtured in their academic pursuits—French and German philosophy, political theory, the cultural inferences of translation.
+                  The content goes here. Image floats right is optional. Aspect ratio depends on image used. 
                 </div>
-              </div>
-              <div class="text-center page--link news-more">
-                <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
+                <div class="news-more">
+                  <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
+                </div>
               </div>
             </div>
             <!-- Article End -->

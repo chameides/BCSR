@@ -1,18 +1,20 @@
 .news-article {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
 }
 
-h2.squeeze {
-  margin-bottom: 0; //reduce margin between header and date
+h3.squeeze, h5.squeeze {
+    margin-bottom: 0; //reduce margin between header and date
+    margin-top: 0; //reduce margin between header and date
+}
+
+.news-content-container {
+    margin-top: 1rem;
 }
 
 .image-news {
-  @extend .pull-left-responsive;
+  @extend .pull-right-responsive;
+  min-width: 0px;
   width: auto; //if no image, width goes to zero
   max-width: 35%; 
-}
-
-
-.news-article, .news-more {
-  clear: both; //ensure centered content, centeres on page-width
 }

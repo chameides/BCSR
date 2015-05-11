@@ -5875,11 +5875,11 @@ button.close {
   margin-right: auto; }
 
 /* line 15, bootstrap/_utilities.scss */
-.pull-right, .pull-right-responsive {
+.pull-right, .pull-right-responsive, .image-news {
   float: right !important; }
 
 /* line 18, bootstrap/_utilities.scss */
-.pull-left, .pull-left-responsive, .image-news {
+.pull-left, .pull-left-responsive {
   float: left !important; }
 
 /* line 27, bootstrap/_utilities.scss */
@@ -9009,7 +9009,7 @@ img {
   width: 100%; }
 
 /* line 6, app_images.scss */
-.pull-left, .pull-right, .pull-left-responsive, .image-news, .pull-right-responsive {
+.pull-left, .pull-right, .pull-left-responsive, .pull-right-responsive, .image-news {
   margin-bottom: 15px; }
 
 /*fixed-width images*/
@@ -9019,29 +9019,29 @@ img {
 
 /*right margin on left floated images*/
 /* line 16, app_images.scss */
-.pull-left, .pull-left-responsive, .image-news {
+.pull-left, .pull-left-responsive {
   margin-right: 15px; }
 
 /*left margin on right floated images*/
 /* line 21, app_images.scss */
-.pull-right, .pull-right-responsive {
+.pull-right, .pull-right-responsive, .image-news {
   margin-left: 15px; }
 
 /*width varies based on screen size*/
 /* line 26, app_images.scss */
-.pull-left-responsive, .image-news, .pull-right-responsive {
+.pull-left-responsive, .pull-right-responsive, .image-news {
   min-width: 125px;
   width: 35%; }
 
 /*increase margin on larger images*/
 @media screen and (min-width: 992px) {
   /* line 34, app_images.scss */
-  .pull-left-responsive, .image-news {
+  .pull-left-responsive {
     margin-right: 25px; } }
 
 @media screen and (min-width: 992px) {
   /* line 39, app_images.scss */
-  .pull-right-responsive {
+  .pull-right-responsive, .image-news {
     margin-left: 25px; } }
 
 /* line 1, app_mixed-media.scss */
@@ -10371,20 +10371,23 @@ The search page uses Google Custom Search. The custom search includes Google-cre
     min-height: 33px; } }
 /* line 1, app_news.scss */
 .news-article {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem;
+  margin-top: 2.5rem; }
 
-/* line 5, app_news.scss */
-h2.squeeze {
-  margin-bottom: 0; }
+/* line 6, app_news.scss */
+h3.squeeze, h5.squeeze {
+  margin-bottom: 0;
+  margin-top: 0; }
 
-/* line 9, app_news.scss */
+/* line 11, app_news.scss */
+.news-content-container {
+  margin-top: 1rem; }
+
+/* line 15, app_news.scss */
 .image-news {
+  min-width: 0px;
   width: auto;
   max-width: 35%; }
-
-/* line 16, app_news.scss */
-.news-article, .news-more {
-  clear: both; }
 
 /* line 1, app_campus-map.scss */
 body.no-mobile-nav nav#mainnav .section-nav.initial {
