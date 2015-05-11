@@ -60,10 +60,8 @@
                   <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
                 </div>
               </div>
-              
             </div>
-            <!-- Article End -->
-            
+            <!-- Article End -->        
             <!-- Article Start -->
             <div class="news-article">
               <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news" alt="#"></a>
@@ -77,11 +75,8 @@
                   <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Read More</a>
                 </div>
               </div>
-              
             </div>
             <!-- Article End -->
-
-
             <!-- Article Start -->
             <div class="news-article">
               <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news" alt="alt copy goes here2"></a>
@@ -96,10 +91,7 @@
                 </div>
               </div>
             </div>
-            <!-- Article End -->
-
-
-        
+            <!-- Article End -->        
           </div>
           <!-- End of News Listings -->
           
