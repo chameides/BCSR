@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mixed Media</title>
+    <title>News</title>
 
 <?php include '_inc/head-js-css.php'; ?>
 
@@ -20,7 +20,20 @@
 
     <div class="container-fluid page-container"> 
 
-     <!-- << Section One >> -->
+    <!-- Colored columns for testing grid
+      <div class="row-full-width">
+        <div class="column-left" style="background: grey;">
+          left column
+        </div>
+        <div class="column-center" style="background: green;">
+          center column
+        </div>
+        <div class="column-right" style="background: yellow;">
+          right column
+        </div>
+      </div>
+    -->
+      <!-- << Section One >> -->
       <div class="row-full-width">
         <!-- LEFT COLUMN -->
         <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
@@ -94,10 +107,6 @@
             <!-- Article End -->        
           </div>
           <!-- End of News Listings -->
-          
-
-
-         
         <!-- /CENTER COLUMN -->
 
         <!-- RIGHT COLUMN -->
@@ -106,36 +115,6 @@
       </div>
       <!-- << /Section One >> -->
       </div>
-
-      <!-- << Section Two >> -->
-      <div class="row-full-width">
-        <!-- LEFT COLUMN -->
-        <div class="column-left">
-        </div>
-        <!-- /LEFT COLUMN-->
-
-        <!-- CENTER COLUMN -->
-        <div class="column-center">
-          <!-- Steps to Getting Aid -->
-         
-        
-
-          
-
-         
-
-         
-
-         
-
-        </div>
-
-        <!-- RIGHT COLUMN-->
-        <div class="column-right">
-        </div>  
-        <!-- /RIGHT COLUMN -->
-      </div>
-      <!-- << /Section Two >> -->
 
     </div><!-- /container-fluid -->
 
