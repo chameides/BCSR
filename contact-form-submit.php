@@ -36,7 +36,7 @@ $fields["Preferred methods of contact"] = $prefContactMethod;
 
 
 /* Determine where to put phone number based on phone type */
-switch($_POST['drpState']) {
+switch($_POST['drpPhoneType']) {
 	case 'Home':
 		$fields["Phone"] = $_POST['txtPhone'];
 		break;
