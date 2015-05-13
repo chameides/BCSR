@@ -48,27 +48,22 @@ label.error {
 
 	<div class="col-md-6">
 		<div class="row"><!-- row inside the col -->
-		  	<div class="form-group col-md-12">			
+		  	<div class="form-group col-md-12">
+		  		<h3>I'm a future:</h3>			
 				<div class="radio">
-			 		<h3>I'm a future:</h3>
-			 		<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						Student
-			  		</label>
+				  <label>
+					<input type="radio" name="userRole" id="userRoleStudent" value="Student" checked="checked">
+					Student
+				  </label>
 				</div>
 				<div class="radio">
-				 	<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						Parent
-				  	</label>
+				  <label>
+					<input type="radio" name="userRole" id="userRoleParent" value="Parent" >
+					Parent
+				  </label>
 				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						Other
-					</label>
-				</div>
-		  </div>
+		 	</div>
+		  
 		  <div class="form-group col-md-6">
 				<label for="txtFirstName">First Name:</label>
 				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" required>
@@ -491,15 +486,24 @@ label.error {
 			<div class="form-group checkbox-sub col-sm-6" id="grpZip">
 				<label for="txtZipOrPostal"><span id="lblZipCode">Zip Code:</span><span id="lblPostalCode">Postal Code:</span></label>
 				<input type="text" class="form-control" name="txtZipOrPostal" id="txtZipOrPostal" />
-		  </div>
+		  	</div>
+		  	<div id="contactParent">	
+			  	<div class="checkbox col-sm-12">	
+				 	<label>
+						<input type="checkbox" class="chxInfoBy" name="contactParentInput2" id="contactParentInput" value="Phone">
+						Contact my parent
+				  	</label>
+				</div>
+			  	<div class="form-group checkbox-sub col-sm-12" id="parentEmailContainer">
+					<label for="parentEmail">Parent email address</label>
+					<input type="text" class="form-control" id="parentEmail" name="parentEmail" placeholder="Enter email" >
+				</div>
+			</div>
 	
 		  <div class="form-group col-sm-12">
 			  <input class="btn btn-primary" id="RFI_btn_submit" type="submit" value="Submit">
 			</div>
- 
 		</div><!-- /row inside the col -->
-
-
 	</div><!-- col-md-6 -->
 </div><!-- row -->
 
@@ -649,6 +653,19 @@ $( document ).ready(function() {
 
 	$('.checkbox-sub, #lblPostalCode').hide();
 	
+	
+	//reveal Parent contact if Student is selected
+	$('input:radio[name="userRole"]').change(
+	    function(){
+	        if ($(this).is(':checked') && $(this).val() == 'Student') {
+	            $('#contactParent').fadeIn();
+			} else {
+				$('#contactParent').fadeOut();
+			}
+	    }
+	);
+
+
 	$('#chxInfoByPhone').click(function(){
 		if ( $(this).is(':checked') ) {
 			$('#grpPhone').fadeIn();
@@ -678,9 +695,15 @@ $( document ).ready(function() {
 		}
 	
 	});
-	
-	
 
+	//reveal parent contact email if contact my parent is checked
+	$('#contactParentInput').click(function(){
+		if ( $(this).is(':checked') ) {
+			$('#parentEmailContainer').fadeIn();
+		} else {
+			$('#parentEmailContainer').fadeOut();
+		}
+	});	
 });
 </script>
 
