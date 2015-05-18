@@ -1,4 +1,4 @@
-<?
+<?php
 	// Pass JSON to web server
 	$ch = curl_init($url_curl);
 	curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
