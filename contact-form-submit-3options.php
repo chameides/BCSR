@@ -14,6 +14,14 @@ $fields = array(
 	"Primary State Code" => $_POST['drpState'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
 );
+
+
+//determine graduation year based on gradelevel
+$gradeLevel = $_POST['gradeLevel']; //pull data from form
+$YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in July
+$graduationYear =  date("Y") + $YearsToGraduation; //calculate value
+$fields["High School Graduation Year"] = $graduationYear; //add to array
+
 			
 /*
 	Determine preferred method of contact.
@@ -174,10 +182,8 @@ switch($_POST['drpState']) {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
-if($_POST['contactParentInput'] == 'ContactParent'){
-	$fields["Parent 1 Email"] = $_POST['parentEmail'];
-};
-
+//if($_POST['contactParentInput'] == 'ContactParent'){ };
+$fields["Parent 1 Email"] = $_POST['parentEmail'];
 
 
 			

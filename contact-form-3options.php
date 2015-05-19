@@ -65,15 +65,15 @@ label.error {
 		 	</div>
 		  
 		  <div class="form-group col-md-6">
-				<label for="txtFirstName">First Name:</label>
+				<label for="txtFirstName">First Name*</label>
 				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" required>
 		  </div>
 		  <div class="form-group col-md-6">
-				<label for="txtLastName">Last Name:</label>
+				<label for="txtLastName">Last Name*</label>
 				<input type="text" class="form-control" name="txtLastName" id="txtLastName" required>
 		  </div>
 		  <div class="form-group col-md-12">
-				<label for="txtEmail">Email address</label>
+				<label for="txtEmail">Email address*</label>
 				<input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Enter email" required>
 		  </div>
 
@@ -341,6 +341,39 @@ label.error {
 				
 			  </select>
 		</div>
+		<div class="form-group col-md-12">
+				<label for="gradeLevel">Grade Level</label>
+				<select class="form-control" id="gradeLevel" name="gradeLevel">
+					<option value="">
+					  Select Grade Completing in 2015
+					</option>
+	
+					<option value="7">
+					  7<sub>th</sub> Grade
+					</option>
+
+					<option value="8">
+					  8<sub>th</sub> Grade
+					</option>
+
+					<option value="9">
+					  9<sub>th</sub> Grade
+					</option>
+
+					<option value="10">
+					  10<sub>th</sub> Grade
+					</option>
+
+					<option value="11">
+					  11<sub>th</sub> Grade
+					</option>
+
+					<option value="12">
+					  12<sub>th</sub> Grade
+					</option>
+					
+				  </select>
+		  </div>
 
 			<div class="col-sm-12" id="chxInfoByErr">
 				<label>I'd like to receive information by:</label>
@@ -348,7 +381,7 @@ label.error {
 			
 			<div class="checkbox col-sm-12">
 			  <label>
-				<input type="checkbox" class="chxInfoBy" name="chxInfoByEmail" id="chxInfoByEmail" value="Email">
+				<input type="checkbox" class="chxInfoBy" name="chxInfoByEmail" id="chxInfoByEmail" value="Email" checked>
 				Email
 			  </label>
 			</div>
