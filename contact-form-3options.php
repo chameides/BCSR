@@ -490,7 +490,7 @@ label.error {
 		  	<div id="contactParent">	
 			  	<div class="checkbox col-sm-12">	
 				 	<label>
-						<input type="checkbox" class="chxInfoBy" name="contactParentInput2" id="contactParentInput" value="Phone">
+						<input type="checkbox" class="chxInfoBy" name="contactParentInput" id="contactParentInput" value="ContactParent">
 						Contact my parent
 				  	</label>
 				</div>
@@ -573,7 +573,7 @@ $( document ).ready(function() {
 		
 		    // Fire off the request to /form.php
 		    request = $.ajax({
-		        url: "/contact-form-submit.php",
+		        url: "/contact-form-submit-3options.php",
 		        type: "post",
 		        data: serializedData
 		    });
@@ -633,6 +633,9 @@ $( document ).ready(function() {
 			chxInfoBy: {
 				required: true,
 				minlength: 1
+			},
+			parentEmail: {
+				email: true
 			}
 		},
 		messages: {
