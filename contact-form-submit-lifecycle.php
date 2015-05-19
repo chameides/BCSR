@@ -1,8 +1,5 @@
 <?php
 
-/* Request URL for Contacts module */
-$url = 'https://api.hobsonsradius.com/crm/webservice/modules/Contacts';
-
 
 /* Assemble field data to pass to web server */
 $fields = array(
