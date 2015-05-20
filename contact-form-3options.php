@@ -62,23 +62,43 @@ label.error {
 					Parent
 				  </label>
 				</div>
+				<div class="radio">
+				   <label>
+					<input type="radio" name="userRole" id="userRoleOther" value="Other" >
+					Other
+				  </label>
+				</div>
 		 	</div>
-		  
-		  <div class="form-group col-md-6">
-				<label for="txtFirstName">First Name*</label>
+		 	<div id="parentName">
+			   	<div class="form-group col-md-6">
+					<label for="parentFirstName">First Name*</label>
+					<input type="text" class="form-control" name="parentFirstName" id="parentFirstName" required>
+			  	</div>
+			  	<div class="form-group col-md-6">
+					<label for="parentLastName">Last Name*</label>
+					<input type="text" class="form-control" name="parentLastName" id="parentLastName" required>
+			  	</div>
+			  	<div class="form-group col-md-12">
+					<label for="txtEmail">Email address*</label>
+					<input type="email" class="form-control" name="parentEmailSelf" id="parentEmailSelf" placeholder="Enter email" required>
+			  	</div>
+		  	</div>
+
+		  	<div class="form-group col-md-6">
+				<label for="txtFirstName"><span id="childFirst">Child&rsquo;s </span>First Name*</label>
 				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" required>
-		  </div>
-		  <div class="form-group col-md-6">
-				<label for="txtLastName">Last Name*</label>
+		  	</div>
+		  	<div class="form-group col-md-6">
+				<label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label>
 				<input type="text" class="form-control" name="txtLastName" id="txtLastName" required>
-		  </div>
-		  <div class="form-group col-md-12">
+		  	</div>
+		  	<div class="form-group col-md-12" id="emailAddress">
 				<label for="txtEmail">Email address*</label>
 				<input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Enter email" required>
-		  </div>
+		  	</div>
 
 			<div class="form-group col-sm-6">
-			  <label for="birth_month">Date of Birth* <span class="sr-only">(Month)</span></label> 
+			  <label for="birth_month"><span id="childDOB">Child&rsquo;s </span>Date of Birth* <span class="sr-only">(Month)</span></label> 
 			  <select class="form-control" id="birth_month" name="birth_month" required>
 			
 				<option value="">
@@ -669,7 +689,11 @@ $( document ).ready(function() {
 			},
 			parentEmail: {
 				email: true
+			},
+			parentEmail: {
+				email: true
 			}
+			
 		},
 		messages: {
 			chxInfoBy: 'Please select a preferred contact method'
@@ -687,19 +711,32 @@ $( document ).ready(function() {
         
 	});
 
-	$('.checkbox-sub, #lblPostalCode').hide();
+	$('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB').hide();
 	
 	
-	//reveal Parent contact if Student is selected
+	
 	$('input:radio[name="userRole"]').change(
 	    function(){
+	    	//reveal Parent contact if Student is selected
 	        if ($(this).is(':checked') && $(this).val() == 'Student') {
 	            $('#contactParent').fadeIn();
 			} else {
 				$('#contactParent').fadeOut();
 			}
+			//reveal Parent name if Parent is selected
+			if ($(this).is(':checked') && $(this).val() == 'Parent') {
+	            $('#parentName, #childFirst, #childLast, #childDOB').fadeIn();
+	            $('#emailAddress').fadeOut();
+			} else {
+				$('#parentName, #childFirst, #childLast, #childDOB').fadeOut();
+				$('#emailAddress').fadeIn();
+
+			}
 	    }
 	);
+	
+
+
 
 
 	$('#chxInfoByPhone').click(function(){
