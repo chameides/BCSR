@@ -1,0 +1,55 @@
+/* 
+Google Search Overrides 
+
+The search page uses Google Custom Search. The custom search includes Google-created formatting. The following rules override the GSC rules.  
+
+*/
+
+//format search box
+.cse form.gsc-search-box, form.gsc-search-box {
+	padding: .7rem 0 0 0;
+	max-width: 584px;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: .5em; //align search results with search box
+}
+
+.gsc-selected-option-container {
+	min-width: 80px !important; //*extend sort by box to fit "relevance"
+}
+
+/*display descenders on larger screens */
+@media screen and (min-width:$screen-md) {
+	.gsc-result .gs-title {
+		height: 1.5em !important; 
+	}
+}
+
+
+.gs-title, .gs-title b { //results title
+	color: $brand-primary !important;
+	text-decoration: none !important;
+	:hover {
+		text-decoration: underline !important;
+	}
+}
+
+.cse .gs-webResult .gs-snippet, .gs-webResult .gs-snippet, .gs-fileFormatType, .gs-imageResult .gs-snippet { //results text	
+	font-family: $font-family-sans-serif !important;
+	b { //word that matches search gets bolded
+		color: $text-color !important;
+	}
+}
+
+.gsc-url-bottom, .cse .gs-webResult .gs-visibleUrl, .gs-webResult .gs-visibleUrl, .cse .gs-webResult .gs-visibleUrl-short, .gs-webResult .gs-visibleUrl-short, .gs-imageResult .gs-visibleUrl, .gs-imageResult .gs-visibleUrl-short  { //url text at bottom of results
+	color:$medium-gray !important;
+	line-height: 1.6em 
+}
+
+@media screen and (min-width:$screen-md) {
+	/*vertically align search text with button*/
+	input[type="button"].gsc-search-button {
+		min-height: 33px;
+	}  		
+}

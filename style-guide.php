@@ -51,6 +51,11 @@
 <ul>
 	<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
 	<li><a href="content-early-college.php">Early College</a></li>
+	<li><a href="search.php">Search</a></li>
+	<li><a href="news-listings.php">News Listings</a></li>
+	<li><a href="/contact-form.php">Contact Form</a></li>
+	<li><a href="/contact-form-3options.php">Contact Form with User Type</a></li>
+	<li><a href="/contact-form-lifecycle.php">Contact Form with Lifecycle</a></li>
 </ul>
 
 <h2>Alert System:</h2>

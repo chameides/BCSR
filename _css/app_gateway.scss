@@ -1,12 +1,12 @@
-// Image Thumbnails
-.image-thumb {
+// Image Thumbnails, could reduce CSS specificity if HTML classes are more specific
+a.image-thumb {
     position: relative;
     display: block;
     background: black; // set background to black so that image darkens on hover
 }
 
 // images get darker on hover
-.image-thumb:hover{
+a.image-thumb:hover{
   img {
     opacity: .8;
   }
