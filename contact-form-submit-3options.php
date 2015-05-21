@@ -5,50 +5,77 @@
 $fields = array(
 	"First Name" => $_POST['txtFirstName'],
 	"Last Name" => 'delete_' . time() . '_' . $_POST['txtLastName'],
-	"Email" => 'delete_' . time() . '_' . $_POST['txtEmail'],
-	"Date of Birth" => $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'],
-	"Preferred Phone" => $_POST['drpPhoneType'],
 	"Country Name" => $_POST['drpCountry'],
 	"Contact Street" => $_POST['txtAddress1'],
 	"Contact Street 2" => $_POST['txtAddress2'],
 	"Primary State Code" => $_POST['drpState'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
+	"Parent 1 First Name" => $_POST['parentFirstName'],
+	"Parent 1 Last Name" => $_POST['parentLastName'],					
 );
 
+if ($_POST['birth_month'] > 0 ) {
+	$fields["Date of Birth"] = $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'];
+};
 
-//determine graduation year based on gradelevel
-$gradeLevel = $_POST['gradeLevel']; //pull data from form
-$YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in July
-$graduationYear =  date("Y") + $YearsToGraduation; //calculate value
-$fields["High School Graduation Year"] = $graduationYear; //add to array
 
-			
-/*
+//determine user type in order to select which fields to map to contact data 
+if ($_POST['userRole'] == 'Parent') {
+	$fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
+	$fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
+	$fields["Parent 1 Email"] = 'delete_' . $_POST['parentEmailSelf'];
+	$fields["Description"] = 'Source: Parent RFI Form';
+}
+else {
+	$fields["Preferred Phone"] = $_POST['drpPhoneType'];
+	$fields["Email"] = 'delete_' . time() . '_' . $_POST['txtEmail'];
+	//if($_POST['contactParentInput'] == 'ContactParent'){ };
+	$fields["Parent 1 Email"] = $_POST['parentEmail'];
+	/*
 	Determine preferred method of contact.
 	Email trumps phone, phone trumps mail.
 */
-$prefContactMethod = array();
-if($_POST['chxInfoByEmail'] == 'Email'){
-	array_push($prefContactMethod, 'Email');
+	$prefContactMethod = array();
+	if($_POST['chxInfoByEmail'] == 'Email'){
+		array_push($prefContactMethod, 'Email');
+	}
+	if($_POST['chxInfoByPhone'] == 'Phone'){
+		array_push($prefContactMethod, 'Phone');
+	}
+	if($_POST['chxInfoByMail'] == 'Mail'){
+		array_push($prefContactMethod, 'Mail');
+	}
+	$fields["Preferred methods of contact"] = $prefContactMethod;
+	/* Determine where to put phone number based on phone type */
+	switch($_POST['drpPhoneType']) {
+		case 'Home':
+			$fields["Phone"] = $_POST['txtPhone'];
+			break;
+		case 'Mobile';
+			$fields["Mobile"] = $_POST['txtPhone'];
+			break;
+	}
 }
-if($_POST['chxInfoByPhone'] == 'Phone'){
-	array_push($prefContactMethod, 'Phone');
+if ($_POST['userRole'] == 'Other') {
+	$fields["Description"] = 'Source: Other RFI Form.' . $_POST['note'];
 }
-if($_POST['chxInfoByMail'] == 'Mail'){
-	array_push($prefContactMethod, 'Mail');
+elseif ($_POST['userRole'] == 'Parent') {
+	$fields["Description"] = 'Source: Parent RFI Form.' . $_POST['note'];
 }
-$fields["Preferred methods of contact"] = $prefContactMethod;
 
 
-/* Determine where to put phone number based on phone type */
-switch($_POST['drpPhoneType']) {
-	case 'Home':
-		$fields["Phone"] = $_POST['txtPhone'];
-		break;
-	case 'Mobile';
-		$fields["Mobile"] = $_POST['txtPhone'];
-		break;
+//determine graduation year based on gradelevel
+if ($_POST['gradeLevel'] > 0) {
+	$gradeLevel = $_POST['gradeLevel']; //pull data from form
+	$YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in July
+	$graduationYear =  date("Y") + $YearsToGraduation; //calculate value
+	$fields["High School Graduation Year"] = $graduationYear; //add to array
 }
+			
+
+
+
+
 
 
 /* User Entity IDs */
@@ -182,8 +209,7 @@ switch($_POST['drpState']) {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
-//if($_POST['contactParentInput'] == 'ContactParent'){ };
-$fields["Parent 1 Email"] = $_POST['parentEmail'];
+
 
 
 			
@@ -205,33 +231,38 @@ $url_curl = $url_contacts;
 //send data to Hobson via curl
 include 'contact-curl.php';
 
-//trim return string
-function get_string_between($string, $start, $end){
-    $string = " ".$string;
-    $ini = strpos($string,$start);
-    if ($ini == 0) return "";
-    $ini += strlen($start);
-    $len = strpos($string,$end,$ini) - $ini;
-    return substr($string,$ini,$len);
+if ($_POST['userRole'] !== 'Other') {
+	//trim return string
+	function get_string_between($string, $start, $end){
+	    $string = " ".$string;
+	    $ini = strpos($string,$start);
+	    if ($ini == 0) return "";
+	    $ini += strlen($start);
+	    $len = strpos($string,$end,$ini) - $ini;
+	    return substr($string,$ini,$len);
+	}
+
+
+	if ($_POST['userRole'] !== 'Other') {
+
+		//get entity id from return string
+		$entityID = get_string_between($return, 'Entity ID":', '}');
+
+		$data_lifecycle = array("createFields" => array(
+			"Contact" => $entityID,
+			"Lifecycle Role" => 'Inquirer',
+			"Lifecycle Stage" => 'Open',
+			"Primary Role" => 'True',
+		));
+
+		//define variables for specic curl event
+		$content = json_encode($data_lifecycle);
+		$url_curl = $url_lifecycles;
+
+		//send data to Hobson via curl
+		include 'contact-curl.php';
+	}
 }
-
-//get entity id from return string
-$entityID = get_string_between($return, 'Entity ID":', '}');
-
-$data_lifecycle = array("createFields" => array(
-	"Contact" => $entityID,
-	"Lifecycle Role" => 'Inquirer',
-	"Lifecycle Stage" => 'Open',
-	"Primary Role" => 'True',
-));
-
-//define variables for specic curl event
-$content = json_encode($data_lifecycle);
-$url_curl = $url_lifecycles;
-
-//send data to Hobson via curl
-include 'contact-curl.php';
-
 ?>
 
 

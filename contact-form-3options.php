@@ -46,6 +46,7 @@ label.error {
 		and we will get in touch with you.</p>
 	</div>
 
+
 	<div class="col-md-6">
 		<div class="row"><!-- row inside the col -->
 		  	<div class="form-group col-md-12">
@@ -395,9 +396,9 @@ label.error {
 					  </select>
 				  </div>
 			</div>
-			<div class="col-sm-12 form-group" id="note">
+			<div class="col-sm-12 form-group" id="note-container">
 				<label for="text_area">Tell us about yourself</label>
-				<textarea id="text_area" class="form-control"></textarea>
+				<textarea id="note" name="note" class="form-control"></textarea>
 			</div>
 
 			<div class="col-sm-12" id="chxInfoByErr">
@@ -716,7 +717,7 @@ $( document ).ready(function() {
         
 	});
 
-	$('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB, #note').hide();
+	$('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB, #note-container').hide();
 	
 	
 	
@@ -739,11 +740,11 @@ $( document ).ready(function() {
 			//reveal and hide fields if Other is selected
 			if ($(this).is(':checked') && $(this).val() == 'Other') {
 	            $('#DOB').fadeOut();
-	            $('#note').fadeIn();
+	            $('#note-container').fadeIn();
 	           
 			} else {
 				$('#DOB').fadeIn();
-				$('#note').fadeOut();
+				$('#note-container').fadeOut();
 				
 			}
 
