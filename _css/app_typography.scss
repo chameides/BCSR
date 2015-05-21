@@ -1,3 +1,25 @@
+.aside {    
+    background: #efefef;
+    padding-bottom: 1em;
+    @media screen and (min-width:$screen-sm) {
+        background: none;
+        border:1px solid #999;
+    }
+    p {
+        padding-top: 1em;
+        margin-bottom: $line-height-computed / 3;
+        @media screen and (min-width:$screen-sm) {
+            font-weight: 600;
+            font-size: 1em; 
+        }
+         @media screen and (min-width:$screen-md) {
+            font-size: .85em;
+            line-height: 1.4em;
+        }
+    } 
+}
+
+
 /*hanging block quote*/
 blockquote:before, blockquote p.blockquote-last:after {
 	@media screen and (min-width:$screen-md) {
@@ -110,9 +132,17 @@ a.right-arrow, a:link.right-arrow  {
       }
   }
 
+/*Use larger bullet CTA when no box link CTA is present*/
 a.right-arrow-primary {
     @extend .cta-bullet;
     @media screen and (min-width:$screen-md) {
         @include LeHavre(25px);
     }
+}
+
+/*when used in aside, use a slightly larger bullet CTA*/
+a.right-arrow-aside {
+    @extend .cta-bullet;
+    @include LeHavre(20px);
+
 }
