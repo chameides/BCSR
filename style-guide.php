@@ -53,8 +53,6 @@
 	<li><a href="content-early-college.php">Early College</a></li>
 	<li><a href="search.php">Search</a></li>
 	<li><a href="news-listings.php">News Listings</a></li>
-	<li><a href="/contact-form.php">Contact Form</a></li>
-	<li><a href="/contact-form-3options.php">Contact Form with User Type</a></li>
 	<li><a href="/contact-form-lifecycle.php">Contact Form with Lifecycle</a></li>
 </ul>
 
@@ -829,12 +827,30 @@ for (i = 0; i < divs.length; ++i) {
 	<div class="text-center page--link">
 		<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Secondary CTA</a>
 	</div>
+	<p></p>
 	<p>There is also a bullet CTA that can be used without the primary.</p>
 	<div class="text-center page--link">
 		<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
 	</div>
-</div>
-Our <a href="students">students</a> join a diverse, tight-knit community of their intellectual and chronological peers. We’re a community of individuals, but nobody is an outlier here because of their age, or their decision to seek greater academic challenges. 
+	<p></p>
+	
+	
+          <div class="row stacked-content">
+            <div class="col-sm-8">
+            <h3>Aside CTA</h3>
+              <p>There is also an aside CTA for longer text connected to CTA that is not linearly connected to the rest of the copy.</p>
+            </div>
+            <!-- <div class="col-sm-4" style="> -->
+            <div class="col-sm-4 aside">
+              <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
+              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
+              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
+              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories</a>
+            </div>
+          </div>
+		</div>
+		<p></p>
+
 
       </section>
 
