@@ -656,11 +656,13 @@ $( document ).ready(function() {
 			$('#lblZipCode').hide();
 			$('#lblPostalCode').fadeIn();
 		}
+		if ( countryval == 'United States' | countryval == 'Canada' ) {
+			$('#grpState').fadeIn();
+		} else {
+			$('#grpState').hide();
+		}
 	
-	});
-	
-	
-
+	});	
 });
 </script>
 
