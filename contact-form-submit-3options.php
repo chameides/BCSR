@@ -5,9 +5,9 @@
 $fields = array(
 	"First Name" => $_POST['txtFirstName'],
 	"Last Name" => 'delete_' . time() . '_' . $_POST['txtLastName'],
+	"Country Name" => $_POST['drpCountry'],
 	"Contact Street" => $_POST['txtAddress1'],
 	"Contact Street 2" => $_POST['txtAddress2'],
-	"Contact City" => $_POST['city'],
 	"Primary State Code" => $_POST['drpState'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
 	"Parent 1 First Name" => $_POST['parentFirstName'],
@@ -16,11 +16,6 @@ $fields = array(
 
 if ($_POST['birth_month'] > 0 ) {
 	$fields["Date of Birth"] = $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'];
-};
-
-//only post country, if country is not US
-if ($_POST['drpCountry'] !== 'United States' ) {
-	$fields["Country Name"] = $_POST['drpCountry'] ;
 };
 
 
@@ -269,7 +264,3 @@ if ($_POST['userRole'] !== 'Other') {
 	}
 }
 ?>
-
-
-
-
