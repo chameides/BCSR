@@ -53,7 +53,7 @@
 	<li><a href="content-early-college.php">Early College</a></li>
 	<li><a href="search.php">Search</a></li>
 	<li><a href="news-listings.php">News Listings</a></li>
-	<li><a href="/contact-form-lifecycle.php">Contact Form with Lifecycle</a></li>
+	<li><a href="/contact-form-3options.php">Contact Form</a></li>
 </ul>
 
 <h2>Alert System:</h2>

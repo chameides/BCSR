@@ -7,6 +7,7 @@ $fields = array(
 	"Last Name" => 'delete_' . time() . '_' . $_POST['txtLastName'],
 	"Contact Street" => $_POST['txtAddress1'],
 	"Contact Street 2" => $_POST['txtAddress2'],
+	"Contact City" => $_POST['city'],
 	"Primary State Code" => $_POST['drpState'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
 	"Parent 1 First Name" => $_POST['parentFirstName'],
