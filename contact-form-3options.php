@@ -549,7 +549,7 @@ $( document ).ready(function() {
 		
 		    // Fire off the request to /form.php
 		    request = $.ajax({
-		        url: "/contact-form-submit-lifecycle.php",
+		        url: "/contact-form-submit-3options.php",
 		        type: "post",
 		        data: serializedData
 		    });
