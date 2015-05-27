@@ -231,6 +231,7 @@ $url_curl = $url_contacts;
 include 'contact-curl.php';
 
 //if ($_POST['userRole'] !== 'Other') {
+  if ($_POST['userRole'] == 'Student') {
 	//trim return string
 	function get_string_between($string, $start, $end){
 	    $string = " ".$string;
@@ -258,7 +259,7 @@ include 'contact-curl.php';
 	//send data to Hobson via curl
 	include 'contact-curl.php';
 	
-//}
+}
 
 ?>
 
