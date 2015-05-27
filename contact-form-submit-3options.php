@@ -230,7 +230,7 @@ $url_curl = $url_contacts;
 //send data to Hobson via curl
 include 'contact-curl.php';
 
-if ($_POST['userRole'] !== 'Other') {
+//if ($_POST['userRole'] !== 'Other') {
 	//trim return string
 	function get_string_between($string, $start, $end){
 	    $string = " ".$string;
@@ -240,7 +240,6 @@ if ($_POST['userRole'] !== 'Other') {
 	    $len = strpos($string,$end,$ini) - $ini;
 	    return substr($string,$ini,$len);
 	}
-
 
 	//get entity id from return string
 	$entityID = get_string_between($return, 'Entity ID":', '}');
@@ -259,7 +258,7 @@ if ($_POST['userRole'] !== 'Other') {
 	//send data to Hobson via curl
 	include 'contact-curl.php';
 	
-}
+//}
 
 ?>
 
