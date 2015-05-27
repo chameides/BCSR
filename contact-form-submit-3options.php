@@ -8,7 +8,6 @@ $fields = array(
 	"Contact Street" => $_POST['txtAddress1'],
 	"Contact Street 2" => $_POST['txtAddress2'],
 	"Contact City" => $_POST['city'],
-	"Primary State Code" => $_POST['drpState'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
 	"Parent 1 First Name" => $_POST['parentFirstName'],
 	"Parent 1 Last Name" => $_POST['parentLastName'],					
@@ -22,6 +21,12 @@ if ($_POST['birth_month'] > 0 ) {
 if ($_POST['drpCountry'] !== 'United States' ) {
 	$fields["Country Name"] = $_POST['drpCountry'] ;
 };
+
+//only post state, if country is US or Canada
+if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
+	$fields["Primary State Code"] = $_POST['drpState'] ;
+};
+
 			
 //determine user type in order to select which fields to map to contact data 
 if ($_POST['userRole'] == 'Parent') {
