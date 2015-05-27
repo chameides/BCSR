@@ -64,14 +64,20 @@ else {
 $fields["Preferred methods of contact"] = $prefContactMethod;
 
 
-/* Determine where to put phone number based on phone type */
-switch($_POST['drpPhoneType']) {
-	case 'Home':
-		$fields["Phone"] = $_POST['txtPhone'];
-		break;
-	case 'Mobile';
-		$fields["Mobile"] = $_POST['txtPhone'];
-		break;
+if ($_POST['userRole'] == 'Other') {
+	$fields["Description"] = 'Source: Other RFI Form.' . $_POST['note'];
+}
+elseif ($_POST['userRole'] == 'Parent') {
+	$fields["Description"] = 'Source: Parent RFI Form.' . $_POST['note'];
+}
+
+
+//determine graduation year based on gradelevel
+if ($_POST['gradeLevel'] > 0) {
+	$gradeLevel = $_POST['gradeLevel']; //pull data from form
+	$YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in July
+	$graduationYear =  date("Y") + $YearsToGraduation; //calculate value
+	$fields["High School Graduation Year"] = $graduationYear; //add to array
 }
 
 
