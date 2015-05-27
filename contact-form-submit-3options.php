@@ -22,11 +22,8 @@ if ($_POST['birth_month'] > 0 ) {
 if ($_POST['drpCountry'] !== 'United States' ) {
 	$fields["Country Name"] = $_POST['drpCountry'] ;
 };
-
-//define variable so value can be used for second post			
-$userRole = $_POST['userRole'];
-
-//determine user type in order to select which fields to map to contact data
+			
+//determine user type in order to select which fields to map to contact data 
 if ($_POST['userRole'] == 'Parent') {
 	$fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
 	$fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
@@ -234,7 +231,6 @@ $url_curl = $url_contacts;
 include 'contact-curl.php';
 
 //if ($_POST['userRole'] !== 'Other') {
-  if ($userRole == 'Student') {
 	//trim return string
 	function get_string_between($string, $start, $end){
 	    $string = " ".$string;
@@ -248,10 +244,20 @@ include 'contact-curl.php';
 	//get entity id from return string
 	$entityID = get_string_between($return, 'Entity ID":', '}');
 
+if ($_POST['userRole'] !== 'Other') {
+	$userRole = 'NotOther';
+}
+elseif (($_POST['userRole'] == 'Student')) {
+	$userRole = 'Student';
+}
+else {
+	$userRole = 'Option3';
+}
+
 	$data_lifecycle = array("createFields" => array(
 		"Contact" => $entityID,
 		"Lifecycle Role" => 'Inquirer',
-		"Lifecycle Stage" => 'Open',
+		"Lifecycle Stage" => $userRole,
 		"Primary Role" => 'True',
 	));
 
@@ -262,7 +268,7 @@ include 'contact-curl.php';
 	//send data to Hobson via curl
 	include 'contact-curl.php';
 	
-}
+//}
 
 ?>
 
