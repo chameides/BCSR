@@ -17,21 +17,50 @@ $fields = array(
 if ($_POST['birth_month'] > 0 ) {
 	$fields["Date of Birth"] = $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'];
 };
+
+//only post country, if country is not US
+if ($_POST['drpCountry'] !== 'United States' ) {
+	$fields["Country Name"] = $_POST['drpCountry'] ;
+};
 			
-/*
+//determine user type in order to select which fields to map to contact data 
+if ($_POST['userRole'] == 'Parent') {
+	$fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
+	$fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
+	$fields["Parent 1 Email"] = 'delete_' . $_POST['parentEmailSelf'];
+	$fields["Description"] = 'Source: Parent RFI Form';
+}
+else {
+	$fields["Preferred Phone"] = $_POST['drpPhoneType'];
+	$fields["Email"] = 'delete_' . time() . '_' . $_POST['txtEmail'];
+	//if($_POST['contactParentInput'] == 'ContactParent'){ };
+	$fields["Parent 1 Email"] = $_POST['parentEmail'];
+	/*
 	Determine preferred method of contact.
 	Email trumps phone, phone trumps mail.
 */
-$prefContactMethod = array();
-if($_POST['chxInfoByEmail'] == 'Email'){
-	array_push($prefContactMethod, 'Email');
+	$prefContactMethod = array();
+	if($_POST['chxInfoByEmail'] == 'Email'){
+		array_push($prefContactMethod, 'Email');
+	}
+	if($_POST['chxInfoByPhone'] == 'Phone'){
+		array_push($prefContactMethod, 'Phone');
+	}
+	if($_POST['chxInfoByMail'] == 'Mail'){
+		array_push($prefContactMethod, 'Mail');
+	}
+	$fields["Preferred methods of contact"] = $prefContactMethod;
+	/* Determine where to put phone number based on phone type */
+	switch($_POST['drpPhoneType']) {
+		case 'Home':
+			$fields["Phone"] = $_POST['txtPhone'];
+			break;
+		case 'Mobile';
+			$fields["Mobile"] = $_POST['txtPhone'];
+			break;
+	}
 }
-if($_POST['chxInfoByPhone'] == 'Phone'){
-	array_push($prefContactMethod, 'Phone');
-}
-if($_POST['chxInfoByMail'] == 'Mail'){
-	array_push($prefContactMethod, 'Mail');
-}
+
 $fields["Preferred methods of contact"] = $prefContactMethod;
 
 
