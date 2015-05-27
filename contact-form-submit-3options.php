@@ -244,20 +244,10 @@ include 'contact-curl.php';
 	//get entity id from return string
 	$entityID = get_string_between($return, 'Entity ID":', '}');
 
-if ($_POST['userRole'] !== 'Other') {
-	$userRole = 'NotOther';
-}
-elseif (($_POST['userRole'] == 'Student')) {
-	$userRole = 'Student';
-}
-else {
-	$userRole = 'Option3';
-}
-
 	$data_lifecycle = array("createFields" => array(
 		"Contact" => $entityID,
 		"Lifecycle Role" => 'Inquirer',
-		"Lifecycle Stage" => $userRole,
+		"Lifecycle Stage" => 'Open',
 		"Primary Role" => 'True',
 	));
 
@@ -265,8 +255,14 @@ else {
 	$content = json_encode($data_lifecycle);
 	$url_curl = $url_lifecycles;
 
+
+if ($_POST['userRole'] !== 'Other') {
 	//send data to Hobson via curl
 	include 'contact-curl.php';
+}
+
+
+	
 	
 //}
 
