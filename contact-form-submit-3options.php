@@ -22,8 +22,11 @@ if ($_POST['birth_month'] > 0 ) {
 if ($_POST['drpCountry'] !== 'United States' ) {
 	$fields["Country Name"] = $_POST['drpCountry'] ;
 };
-			
-//determine user type in order to select which fields to map to contact data 
+
+//define variable so value can be used for second post			
+$userRole = $_POST['userRole'];
+
+//determine user type in order to select which fields to map to contact data
 if ($_POST['userRole'] == 'Parent') {
 	$fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
 	$fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
@@ -231,7 +234,7 @@ $url_curl = $url_contacts;
 include 'contact-curl.php';
 
 //if ($_POST['userRole'] !== 'Other') {
-  if ($_POST['userRole'] == 'Student') {
+  if ($userRole == 'Student') {
 	//trim return string
 	function get_string_between($string, $start, $end){
 	    $string = " ".$string;
