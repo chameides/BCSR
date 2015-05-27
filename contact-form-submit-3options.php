@@ -210,7 +210,8 @@ switch($_POST['drpState']) {
 		break;
 }
 $fields["Contact Owner"] = $contactOwnerID;
-			
+
+
 /* Create creatFields array per web service requirement */
 $data_contact = array("createFields" => $fields);
 
@@ -229,32 +230,36 @@ $url_curl = $url_contacts;
 //send data to Hobson via curl
 include 'contact-curl.php';
 
-//trim return string
-function get_string_between($string, $start, $end){
-    $string = " ".$string;
-    $ini = strpos($string,$start);
-    if ($ini == 0) return "";
-    $ini += strlen($start);
-    $len = strpos($string,$end,$ini) - $ini;
-    return substr($string,$ini,$len);
+if ($_POST['userRole'] !== 'Other') {
+	//trim return string
+	function get_string_between($string, $start, $end){
+	    $string = " ".$string;
+	    $ini = strpos($string,$start);
+	    if ($ini == 0) return "";
+	    $ini += strlen($start);
+	    $len = strpos($string,$end,$ini) - $ini;
+	    return substr($string,$ini,$len);
+	}
+
+
+	//get entity id from return string
+	$entityID = get_string_between($return, 'Entity ID":', '}');
+
+	$data_lifecycle = array("createFields" => array(
+		"Contact" => $entityID,
+		"Lifecycle Role" => 'Inquirer',
+		"Lifecycle Stage" => 'Open',
+		"Primary Role" => 'True',
+	));
+
+	//define variables for specic curl event
+	$content = json_encode($data_lifecycle);
+	$url_curl = $url_lifecycles;
+
+	//send data to Hobson via curl
+	include 'contact-curl.php';
+	
 }
-
-//get entity id from return string
-$entityID = get_string_between($return, 'Entity ID":', '}');
-
-$data_lifecycle = array("createFields" => array(
-	"Contact" => $entityID,
-	"Lifecycle Role" => 'Inquirer',
-	"Lifecycle Stage" => 'Open',
-	"Primary Role" => 'True',
-));
-
-//define variables for specic curl event
-$content = json_encode($data_lifecycle);
-$url_curl = $url_lifecycles;
-
-//send data to Hobson via curl
-include 'contact-curl.php';
 
 ?>
 
