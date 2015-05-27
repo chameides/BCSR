@@ -214,16 +214,8 @@ h6 {
 /*
 	I-5. Global link styling
 */
-a, a:link, a:visited {
-	color:$medium-gray;
-	text-decoration:none;
-}
-a:hover, a:active {
-	color:$red;
-	text-decoration:underline;
-}
+@import "app_links.scss";
 
-a.btn { color:$white; }
 
 
 /*

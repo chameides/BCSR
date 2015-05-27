@@ -230,7 +230,8 @@ $url_curl = $url_contacts;
 //send data to Hobson via curl
 include 'contact-curl.php';
 
-//if ($_POST['userRole'] !== 'Other') {
+
+if ($_POST['userRole'] !== 'Other') {
 	//trim return string
 	function get_string_between($string, $start, $end){
 	    $string = " ".$string;
@@ -254,17 +255,9 @@ include 'contact-curl.php';
 	//define variables for specic curl event
 	$content = json_encode($data_lifecycle);
 	$url_curl = $url_lifecycles;
-
-
-if ($_POST['userRole'] !== 'Other') {
 	//send data to Hobson via curl
 	include 'contact-curl.php';
 }
-
-
-	
-	
-//}
 
 ?>
 

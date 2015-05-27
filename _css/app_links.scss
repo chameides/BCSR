@@ -1,0 +1,25 @@
+/*
+	I-5. Global link styling
+*/
+a, a:link, a:visited {
+	color:$medium-gray;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:$red;
+	text-decoration:underline;
+}
+
+a.btn { color:$white; }
+
+
+//link for in-text accordion overlays on campus gateway, background is dark
+.accordion-overlay {
+	a {
+		color: white;
+		text-decoration:underline;
+	}
+	a:hover, a:active {
+		color:$yellow;
+	}
+}
