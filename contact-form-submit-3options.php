@@ -10,7 +10,7 @@ $fields = array(
 	"Contact City" => $_POST['city'],
 	"Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
 	"Parent 1 First Name" => $_POST['parentFirstName'],
-	"Parent 1 Last Name" => $_POST['parentLastName'],					
+	"Parent 1 Last Name" => $_POST['parentLastName']					
 );
 
 if ($_POST['birth_month'] > 0 ) {
@@ -65,8 +65,6 @@ else {
 			break;
 	}
 }
-
-$fields["Preferred methods of contact"] = $prefContactMethod;
 
 
 if ($_POST['userRole'] == 'Other') {
