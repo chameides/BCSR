@@ -73,29 +73,29 @@ label.error {
 		 	<div id="parentName">
 			   	<div class="form-group col-md-6">
 					<label for="parentFirstName">First Name*</label>
-					<input type="text" class="form-control" name="parentFirstName" id="parentFirstName" required>
+					<input type="text" class="form-control" name="parentFirstName" id="parentFirstName" maxlength="40" required> <!-- use max-length based on CRM import limits-->
 			  	</div>
 			  	<div class="form-group col-md-6">
 					<label for="parentLastName">Last Name*</label>
-					<input type="text" class="form-control" name="parentLastName" id="parentLastName" required>
+					<input type="text" class="form-control" name="parentLastName" id="parentLastName" maxlength="80" required>
 			  	</div>
 			  	<div class="form-group col-md-12">
 					<label for="txtEmail">Email address*</label>
-					<input type="email" class="form-control" name="parentEmailSelf" id="parentEmailSelf" placeholder="Enter email" required>
+					<input type="email" class="form-control" name="parentEmailSelf" id="parentEmailSelf" placeholder="Enter email" maxlength="100" required>
 			  	</div>
 		  	</div>
 
 		  	<div class="form-group col-md-6">
 				<label for="txtFirstName"><span id="childFirst">Child&rsquo;s </span>First Name*</label>
-				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" required>
+				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" maxlength="40" required>
 		  	</div>
 		  	<div class="form-group col-md-6">
 				<label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label>
-				<input type="text" class="form-control" name="txtLastName" id="txtLastName" required>
+				<input type="text" class="form-control" name="txtLastName" id="txtLastName" maxlength="80" required>
 		  	</div>
 		  	<div class="form-group col-md-12" id="emailAddress">
 				<label for="txtEmail">Email address*</label>
-				<input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Enter email" required>
+				<input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Enter email" maxlength="100" required>
 		  	</div>
 		  	<div id="DOB">
 				<div class="form-group col-sm-6">
@@ -669,14 +669,14 @@ label.error {
 		  </div>
 		  <div class="form-group checkbox-sub col-sm-12" id="grpAddress1">
 				<label for="txtAddress1">Address</label>
-				<input type="text" class="form-control" name="txtAddress1" id="txtAddress1" />
+				<input type="text" class="form-control" name="txtAddress1" id="txtAddress1" maxlength="250" />
 		  </div>
 		  <div class="form-group checkbox-sub col-sm-12" id="grpAddress2">
-				<input type="text" class="form-control" name="txtAddress2" id="txtAddress2" />
+				<input type="text" class="form-control" name="txtAddress2" id="txtAddress2" maxlength="60"/>
 		  </div>
 		  <div class="form-group checkbox-sub col-sm-12" id="cityContainer">
 				<label for="city">City</label>
-				<input type="text" class="form-control" name="city" id="city" />
+				<input type="text" class="form-control" name="city" id="city" maxlength="30"/>
 		  </div>
 		  <div class="form-group checkbox-sub col-sm-6" id="grpState">
 			  <label for="drpState">State/Province</label> 
@@ -755,7 +755,7 @@ label.error {
 			</div>
 			<div class="form-group checkbox-sub col-sm-6" id="grpZip">
 				<label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label>
-				<input type="text" class="form-control" name="txtZipOrPostal" id="txtZipOrPostal" />
+				<input type="text" class="form-control" name="txtZipOrPostal" id="txtZipOrPostal" maxlength="15" />
 		  	</div>
 		  	<div id="contactParent">	
 			  	<div class="checkbox col-sm-12">	
@@ -766,7 +766,7 @@ label.error {
 				</div>
 			  	<div class="form-group checkbox-sub col-sm-12" id="parentEmailContainer">
 					<label for="parentEmail">Parent email address</label>
-					<input type="text" class="form-control" id="parentEmail" name="parentEmail" placeholder="Enter email" >
+					<input type="text" class="form-control" id="parentEmail" name="parentEmail" placeholder="Enter email" maxlength="100">
 				</div>
 			</div>
 	
