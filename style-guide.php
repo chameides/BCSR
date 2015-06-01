@@ -47,7 +47,6 @@
 			<div class="row">
 				<div class="col-md-4">
 					<ul>
-						<li><a href="404.php">404</a></li>
 						<li><a href="academics.php">Academics</a></li>
 						<li><a href="areas-of-study.php">Areas of Study</a></li>
 						<li><a href="campus-landing.php">Campus Landing</a></li>
@@ -75,6 +74,7 @@
 								<li><a href="search.php">Search</a></li>
 								<li><a href="news-listings.php">News Listings</a></li>
 								<li><a href="/contact-form-3options.php">Contact Form</a></li>
+								<li><a href="404.php">404</a></li>
 							</ul>
 						</li>
 						
@@ -850,6 +850,10 @@
 	<p>The standard image goes to the full width of the column</p>
 	<p><img src="//placehold.it/325/325" class="pull-left-responsive">The pull-left-responsive image changes width based on screen size. It floats to the left. The max-width is 325px.  
 	<p><img src="//placehold.it/325/325" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
+		<div class="col-md-12">
+			<p><img src="//placehold.it/125/125" class="pull-left"><strong>img.pull-left </strong> is fixed width. ras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<p><img src="//placehold.it/125/125" class="pull-right">as is <strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+		</div>
 	</div>
 	<a name="cta"></a>
 	<div class="col-md-12">
