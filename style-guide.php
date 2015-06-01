@@ -215,24 +215,19 @@
 		</div>
 
 	</div>
+	
+	<a name="headings"></a>	
 	<div class="col-md-12">
-	<a name="headings"></a>
-	<h1 id="headings" class="sg-heading">Headings</h1>
-
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
+	<h1 class="text-center">Heading 1</h1>
+	<h2 class="text-center">Heading 2</h2>
 	<h3>Heading 3</h3>
 	<h4>Heading 4</h4>
 	<h5>Heading 5</h5>
 	<h6>Heading 6</h6>
 
-	<hr />
-
-	<h1 id="headings" class="sg-heading">Headings with Text</h1>
-
-	<h1>Heading 1</h1>
+	<h1 class="text-center">Heading 1</h1>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-	<h2>Heading 2</h2>
+	<h2 class="text-center">Heading 2</h2>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 	<h3>Heading 3</h3>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -244,23 +239,18 @@
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 	</div>
 
-	<hr />
+	
 	<a name="paragraph"></a>
-	<h1 id="paragraph" class="sg-heading">Paragraph</h1>
+	<div class="col-md-12">
+	<h2 class="text-center" id="paragraph">Text Elements</h2>
+	<h3>paragraph</h3>
 
 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 	<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
-
-	<p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
-
 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+	
 
-	<blockquote>
-	  "This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
-	</blockquote>
-
-	<h1 id="text-elements" class="sg-heading"> Text Elements</h1>
-
+	<h3> Additional Text Elements</h3>
 	<p>The <a href="#">a element</a> example</p>
 	<!-- <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p> -->
 	<!-- <p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example -->
@@ -285,8 +275,7 @@
 	<p>The <sup>sup element</sup> example</p>
 	<p>The <u>u element</u> example</p>
 	<!-- <p>The <var>var element</var> example</p> -->
-
-	<hr />
+	</div>
 
 	<!--
 	<h1 id="monospace" class="sg-heading">Monospace / Preformatted</h1>
@@ -307,7 +296,8 @@
 	<hr />
 	-->
 	<a name="lists"></a>
-	<h1 id="list_types" class="sg-heading">List Types</h1>
+	<div class="col-md-12">
+	<h2 id="list_types" class="text-center">List Types</h2>
 
 	<h3>Custom Unordered (bullet) List</h3>
 
@@ -355,9 +345,11 @@
 	  <dd>This is a definition list description.</dd>
 	</dl>
 
-	<hr />
+	</div>
+
 	<a name="tables"></a>
-	<h1 id="tables" class="sg-heading">Tables</h1>
+	<div class="col-md-12">
+	<h2 id="tables" class="text-center">Tables</h2>
 
 		<table class="table table-striped">
 		  <thead class="table__head">
@@ -401,11 +393,12 @@
 		  </tbody>
 		</table>
 
-	<hr />
+	</div>
 	<a name="forms"></a>
-	<h1 id="form_elements" class="sg-heading">Media and Form Elements</h1>
+	<div class="col-md-12">
+	<h2 id="form_elements" class="text-center">Media and Form Elements</h2>
 
-	<h2>Media</h2>
+	<h3>Media</h3>
 
 	<p>The Audio Element:</p>
 	<audio controls>
@@ -421,13 +414,11 @@
 	  Your browser does not support the video tag.
 	</video>
 
-	<h2>Form Elements</h2>
+	<h3>Form Elements</h3>
 
 	<div class="row">
 	<form>
 		<div class="col-md-6">
-		
-
 			  <div class="form-group">
 				<label for="exampleInputEmail1">Email address</label>
 				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -773,106 +764,114 @@
 	</div>
 
 
-
+	</div>
 	<a name="accordion"></a>
-	<h1>Bootstrap Accordion</h1>
+	<div clas="col-md-12"</div>
+		<h2 class="text-center">Bootstrap Accordion</h2>
 
-	<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-	  <div class="panel panel-default">
-	    <div class="panel-heading" role="tab" id="headingOne">
-	      <h4 class="panel-title">
-	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-	          Collapsible Group Item #1
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-	      <div class="panel-body">
-	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="panel panel-default">
-	    <div class="panel-heading" role="tab" id="headingTwo">
-	      <h4 class="panel-title">
-	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-	          Collapsible Group Item #2
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-	      <div class="panel-body">
-			<p>
-			Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-			Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-			ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-			lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-			</p>
-			<ul>
-			  <li>List item one</li>
-			  <li>List item two</li>
-			  <li>List item three</li>
-			</ul>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="panel panel-default">
-	    <div class="panel-heading" role="tab" id="headingThree">
-	      <h4 class="panel-title">
-	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-	          Collapsible Group Item #3
-	        </a>
-	      </h4>
-	    </div>
-	    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-	      <div class="panel-body">
-	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-	      </div>
-	    </div>
-	  </div>
+		<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Collapsible Group Item #1
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          Collapsible Group Item #2
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+				<p>
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+				Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+				ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+				lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				</p>
+				<ul>
+				  <li>List item one</li>
+				  <li>List item two</li>
+				  <li>List item three</li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingThree">
+		      <h4 class="panel-title">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          Collapsible Group Item #3
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+		      <div class="panel-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
 
 
 	<a name="pull"></a>
-	<h1>Pullquotes</h1>
-	<blockquote>
-	 	<p class="blockquote-last">Use pullquotes to break up the uniformity of the text.</p>
-		<cite>-Michael Chameides,<br>Website Manager, Bard College at Simon's Rock</cite>
-	</blockquote>
-	<ul>
-		<li>This is a semantic blockquote, but used as a pull quote</li>
-		<li>Put the quote in a p tag and the citation in a cite tag - all within a blockquote.</li>
-		<li>The opening quote is added automatically, do not include in copy</li>
-		<li>Add a large closing quote, by adding a class blockquote-last to the final p</li>
-		<li>The blockquotes look clunky if they are long. They look best as short, pull quotes rather than an extended quote.</li>
-		<li>Consider breaking up the citation onto two lines, one for the name and the other on the title. An unforced linebreak may look errant because of the right-align - and this is likely on small screens. Forcing a line break will give a more controlled design.</li>
-	</ul>
+	<div class="col-md-12">
+		<h2 class="text-center">Pullquotes</h2>
+		<blockquote>
+		 	<p class="blockquote-last">Use pullquotes to break up the uniformity of the text.</p>
+			<cite>-Michael Chameides,<br>Website Manager, Bard College at Simon's Rock</cite>
+		</blockquote>
+		<ul>
+			<li>This is a semantic blockquote, but used as a pull quote</li>
+			<li>Put the quote in a p tag and the citation in a cite tag - all within a blockquote.</li>
+			<li>The opening quote is added automatically, do not include in copy</li>
+			<li>Add a large closing quote, by adding a class blockquote-last to the final p</li>
+			<li>The blockquotes look clunky if they are long. They look best as short, pull quotes rather than an extended quote.</li>
+			<li>Consider breaking up the citation onto two lines, one for the name and the other on the title. An unforced linebreak may look errant because of the right-align - and this is likely on small screens. Forcing a line break will give a more controlled design.</li>
+		</ul>
+		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+	</div>
 	<a name="images"></a> 
-	<h1>Images</h1>
-	<p><img src="//placehold.it/125/125" class="pull-left-responsive">The pull-left-responsive image changes width based on screen size. It floats to the left. The max-width is 325px.  
-	<p><img src="//placehold.it/125/125" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
+	<div class="col-md-12">
+	<h2 class="text-center">Images</h2>	
+	<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
+	<p>The standard image goes to the full width of the column</p>
+	<p><img src="//placehold.it/325/325" class="pull-left-responsive">The pull-left-responsive image changes width based on screen size. It floats to the left. The max-width is 325px.  
+	<p><img src="//placehold.it/325/325" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
+	</div>
 	<a name="cta"></a>
-	<div style="clear: both">
-		<h2>CTA</h2>
-		<p>More on this section after LH completes the style guide.</p>
+	<div class="col-md-12">
+		<h2 class="text-center">CTA</h2>
+		<p>Primary CTA should be short, scannable. Verb Object (Visit Campus). If it is longer, consider the bullet CTA. Only use the Secondary CTA in conjunction with the Primary CTA. 
 		<div class="text-center">
 			<a class="btn btn-primary" href="#">Primary</a>
 		</div>
 		<div class="text-center page--link">
 			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Secondary CTA</a>
 		</div>
-		<p></p>
-		<p>There is also a bullet CTA that can be used without the primary.</p>
-		<div class="text-center page--link">
-			<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
+		<div class="col-md-12">
+			<p>There is also a bullet CTA that can be used without the primary.</p>
+			<div class="text-center page--link">
+				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
+			</div>
 		</div>
-		<p></p>
-		
-		
-	          <div class="row stacked-content">
+		<div class="col-md-12">
+	        <div class="row stacked-content">
 	            <div class="col-sm-8">
-	            <h3>Aside CTA</h3>
-	              <p>There is also an aside CTA for longer text connected to CTA that is not linearly connected to the rest of the copy.</p>
+		            <h3>Aside CTA</h3>
+		              <p>There is also an aside CTA for longer text connected to CTA that is not linearly connected to the rest of the copy.</p>
 	            </div>
 	            <!-- <div class="col-sm-4" style="> -->
 	            <div class="col-sm-4 aside">
@@ -881,12 +880,15 @@
 	              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
 	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories</a>
 	            </div>
-	          </div>
-			</div>
-			<p></p>
-
-
-	      </section>
+	         </div>
+		</div>
+		<div class="col-md-12">
+			<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+			<p>CTAs associated with H3’s and below match their alignment (left).</p>
+		</div>
+	</div>
+		
+	</section>
 
 
 
