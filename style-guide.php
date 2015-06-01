@@ -20,7 +20,6 @@
     	<div class="col-md-4">
     		<ul>
 	    		<li><a href="#templates">Templates</a></li>
-		    	<li><a href="#page">Page Examples</a></li>
 		    	<li><a href="#alert">Alert</a></li>
 		    	<li><a href="#columns">Columns</a></li>
 	    	</ul>
@@ -43,7 +42,7 @@
     	</div>
     	<a name="templates"></a>
 		<div class="col-md-12">
-			<h2 class="text-center">Templates</h2>
+			<h2 class="text-center">Templates &amp; Examples</h2>
 			<p>View samples of distinct page layouts.</p>
 			<div class="row">
 				<div class="col-md-4">
@@ -53,6 +52,8 @@
 						<li><a href="areas-of-study.php">Areas of Study</a></li>
 						<li><a href="campus-landing.php">Campus Landing</a></li>
 						<li><a href="campus-map.php">Map</a></li>
+						<li><a href="student-life.php">Student Life</a></li>
+						<li><a href="why-simons-rock.php">Why Simon's Rock</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">
@@ -61,101 +62,98 @@
 						<li><a href="giving-landing.php">Giving Landing</a></li>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="master-section-landing.php">Master Section Landing</a></li>
+						<li><a href="profile.php">Profile</a></li>
+						<li><a href="basic-profile.php">Profile (basic)</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul>
-						<li><a href="mixed-media.php">Mixed Media</a></li>
-						<li><a href="profile.php">Profile</a></li>
-						<li><a href="basic-profile.php">Profile (basic)</a></li>
-						<li><a href="student-life.php">Student Life</a></li>
-						<li><a href="why-simons-rock.php">Why Simon's Rock</a></li>
+						<li><a href="mixed-media.php">Mixed Media</a>
+							<ul>
+								<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
+								<li><a href="content-early-college.php">Early College</a></li>
+								<li><a href="search.php">Search</a></li>
+								<li><a href="news-listings.php">News Listings</a></li>
+								<li><a href="/contact-form-3options.php">Contact Form</a></li>
+							</ul>
+						</li>
+						
+						
 					</ul>
 				</div>
 			</div>
 		</div>
-	<a name="page"></a>
-	<h2>Page Examples</h2>
-	<ul>
-		<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
-		<li><a href="content-early-college.php">Early College</a></li>
-		<li><a href="search.php">Search</a></li>
-		<li><a href="news-listings.php">News Listings</a></li>
-		<li><a href="/contact-form-3options.php">Contact Form</a></li>
-	</ul>
-
-	<a name="alert"></a>
-	<h2>Alert System</h2>
-	<div class="row">
-		<div class="col-md-3">
-			<p>
-				Preview any page with a warning-level alert by adding <em>"?alert=warning"</em> to the end of 
-				its url. Add <em>"?alert=danger"</em> to see level-2 warnings demonstrated; <em>"?alert=info"</em>
-				to see an info alert, or use the sample links 
-				that follow:
-			</p>
+		<div class="col-md-12">
+			<a name="alert"></a>
+			<h2 class="text-center">Alert System</h2>
+			<div class="row">
+				<p>
+					Preview any page with a warning-level alert by adding <em>"?alert=warning"</em> to the end of 
+					its url. Add <em>"?alert=danger"</em> to see level-2 warnings demonstrated; <em>"?alert=info"</em>
+					to see an info alert, or use the sample links 
+					that follow:
+				</p>
+				<div class="col-md-4">
+					<ul>
+						<li><a href="index.php?alert=warning">Home page with warning-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="mixed-media.php?alert=warning">Mixed Media with warning-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="campus-landing.php?alert=warning">Campus Landing with warning-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="areas-of-study.php?alert=warning">Areas of Study with warning-level alert <i class="fa fa-flag"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li><a href="index.php?alert=danger">Home page with danger-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="mixed-media.php?alert=danger">Mixed Media with danger-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="campus-landing.php?alert=danger">Campus Landing with danger-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="areas-of-study.php?alert=danger">Areas of Study with danger-level alert <i class="fa fa-flag"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li><a href="index.php?alert=info">Home page with info-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="mixed-media.php?alert=info">Mixed Media with info-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="campus-landing.php?alert=info">Campus Landing with info-level alert <i class="fa fa-flag"></i></a></li>
+						<li><a href="areas-of-study.php?alert=info">Areas of Study with info-level alert <i class="fa fa-flag"></i></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-3">
-			<ul>
-				<li><a href="index.php?alert=warning">Home page with warning-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="mixed-media.php?alert=warning">Mixed Media with warning-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="campus-landing.php?alert=warning">Campus Landing with warning-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="areas-of-study.php?alert=warning">Areas of Study with warning-level alert <i class="fa fa-flag"></i></a></li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul>
-				<li><a href="index.php?alert=danger">Home page with danger-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="mixed-media.php?alert=danger">Mixed Media with danger-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="campus-landing.php?alert=danger">Campus Landing with danger-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="areas-of-study.php?alert=danger">Areas of Study with danger-level alert <i class="fa fa-flag"></i></a></li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul>
-				<li><a href="index.php?alert=info">Home page with info-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="mixed-media.php?alert=info">Mixed Media with info-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="campus-landing.php?alert=info">Campus Landing with info-level alert <i class="fa fa-flag"></i></a></li>
-				<li><a href="areas-of-study.php?alert=info">Areas of Study with info-level alert <i class="fa fa-flag"></i></a></li>
-			</ul>
-		</div>
-	</div>
 	<a name="columns"></a>
-	<div class="row">
-		
-		<div class="col-md-12">
+	<div class="col-md-12">
+		<h2 class="text-center">Columns</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>This is an h3 over a two-col layout</h3>
+			</div>
+			<div class="col-md-6">
 				
-			<h2>This is an h2 over a two-col layout</h2>
+				<p class="intro-paragraph">
+				This is a p.intro-paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
+				mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
+				pulvinar efficitur. 
+				</p>
+			</div>
 			
-		</div>
+			<div class="col-md-6">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
+				mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
+				pulvinar efficitur. Donec suscipit lacus felis, egestas commodo quam ultricies ac. Nam elementum sapien eu tellus
+				ultrices, in mollis diam convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+				Curae;
+				</p>
 
-		<div class="col-md-6">
-			
-			<p class="intro-paragraph">
-			This is a p.intro-paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
-			mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
-			pulvinar efficitur. 
-			</p>
-		</div>
-		
-		<div class="col-md-6">
-			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
-			mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
-			pulvinar efficitur. Donec suscipit lacus felis, egestas commodo quam ultricies ac. Nam elementum sapien eu tellus
-			ultrices, in mollis diam convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-			Curae;
-			</p>
+				<p><img src="//placehold.it/125/125" class="pull-left"><strong>img.pull-left</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+				<p><img src="//placehold.it/125/125" class="pull-right"><strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			</div>
 
-			<p><img src="//placehold.it/125/125" class="pull-left"><strong>img.pull-left</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-			<p><img src="//placehold.it/125/125" class="pull-right"><strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 		</div>
-
 	</div>
 	<div class="row">
 		<div class="col-md-12">
 				
-			<h2>This is an h2 over a three-col layout</h2>
+			<h3>This is an h3 over a three-col layout</h3>
 			
 		</div>
 
@@ -217,6 +215,7 @@
 		</div>
 
 	</div>
+	<div class="col-md-12">
 	<a name="headings"></a>
 	<h1 id="headings" class="sg-heading">Headings</h1>
 
@@ -243,6 +242,7 @@
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 	<h6>Heading 6</h6>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+	</div>
 
 	<hr />
 	<a name="paragraph"></a>
