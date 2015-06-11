@@ -167,6 +167,13 @@ p {
       }
     }
   }
+  //
+  .row-margin-bottom-none {
+    margin-bottom: 0rem;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: 0rem;
+    }
+  } 
   .row.thumb-set {
     .col-md-12 {
       // @media screen and (min-width: $screen-sm-min) {
