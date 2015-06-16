@@ -21,7 +21,7 @@
 
 
 /*hanging block quote*/
-blockquote:before, blockquote p.blockquote-last:after {
+blockquote:before, blockquote p.blockquote-last:after, .blockquote-mark {
 	@media screen and (min-width:$screen-md) {
 		color: lighten($blue, 18%); /*lighten the hanging quotes when larger font-size is used */
 	}
@@ -46,21 +46,27 @@ blockquote:before {
 	}
 }
 
+
 /*add a large quote at end of blockquote*/
 blockquote p.blockquote-last:after {
 	content: '\201D';
-	font-size: 1.8em;
-	position: relative; 
-	line-height: 0;
-  	@media screen and (min-width:$screen-lg) {
-  		top: 1.3rem;
-  	}
-  	@media screen and (min-width:$screen-md) {
-  		top: 1.3rem;
-  	}
-  	@media screen and (max-width:$screen-md) {
-  		top: .5rem;
-  	}
+}
+
+/*style quote*/
+blockquote p.blockquote-last:after, .blockquote-mark {
+  content: '\201D';
+  font-size: 1.8em;
+  position: relative; 
+  line-height: 0;
+    @media screen and (min-width:$screen-lg) {
+      top: 1.3rem;
+    }
+    @media screen and (min-width:$screen-md) {
+      top: 1.3rem;
+    }
+    @media screen and (max-width:$screen-md) {
+      top: .5rem;
+    }
 }
 
 /*inset margin*/
@@ -113,6 +119,7 @@ cite {
 	}
 }
 
+//see app_home for blockquote overrides
 
 /*secondary CTA*/
 .cta-bullet {
