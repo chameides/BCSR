@@ -246,16 +246,23 @@ body#home {
 			background-size:36px auto;
 			display:table-cell;
 			vertical-align:middle;
+			blockquote:before {
+			    content: none; //override blockquote styling
+			}
 			blockquote {
+				margin: 0; //override blockquote styling
+			    padding:0; //override blockquote styling
+			    text-align: center; //override blockquote styling
 				border:0px none;
 				line-height:1.2;
 				font-size:1.2rem;
-				margin-bottom:0;
 				color:inherit;
 				font-style:inherit;
 			}
 			figcaption {
 				cite {
+					text-align: center; //override blockquote styling
+		    		display: inline; //override blockquote styling
 					font-style:normal;
 					@include LeHavre(1.2rem);
 				}
