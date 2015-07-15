@@ -487,7 +487,6 @@ nav#mainnav {
 		background-color:$red;
 		body.has-hero & {
 			background-color:transparent;
-			z-index: 13; //ensure link is clickable
 		}
 		transition-property:top;
 		transition-duration:0.15s;

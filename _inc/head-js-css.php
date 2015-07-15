@@ -3,9 +3,10 @@
 <meta name="google-site-verification" content="URa0nbYkyf6MKbE6FeYFywbz0bIoceyAfhIYpYIGHFM" />
 
 <!-- Change URLs to wherever Video.js files will be hosted -->
-<link href="/_css/video-js.min.css" rel="stylesheet" type="text/css">
+<link href="_css/video-js.min.css" rel="stylesheet" type="text/css">
 <!-- Bootstrap -->
-<link href="/_css/app.css" rel="stylesheet">
+<link href="_css/app.css" rel="stylesheet">
+<link rel='stylesheet' href='sectional.css' />
 
 <style>
 .page-hero-container.gateway-bg {

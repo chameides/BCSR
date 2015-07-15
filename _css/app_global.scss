@@ -167,13 +167,6 @@ p {
       }
     }
   }
-  //
-  .row-margin-bottom-none {
-    margin-bottom: 0rem;
-    @media screen and (min-width: $screen-sm-min) {
-      margin-bottom: 0rem;
-    }
-  } 
   .row.thumb-set {
     .col-md-12 {
       // @media screen and (min-width: $screen-sm-min) {
@@ -1200,16 +1193,13 @@ a.link-wrap {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     h4 {
-      font-size: .967rem; //fit related programs
+      font-size: 1.667rem;
       padding: .5em; 
       margin-bottom: 1.5rem;   
       @media screen and (max-width: 475px) {
         font-size: 1rem;
         padding: 0 2px;
-      }
-      @media screen and (min-width:$screen-md) {
-        font-size: 1.367rem;
-      }
+      } 
     }
   }
 }
