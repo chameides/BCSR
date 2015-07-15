@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "jbdejoya.com Statistics"
+AuthUserFile /var/chroot/home/content/01/7157801/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

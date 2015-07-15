@@ -52,7 +52,7 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
     -webkit-appearance: none;
     color: #000;
     overflow: hidden;
-    background: url('/_images/drop-btn.jpg') no-repeat right #fff;
+    background: url('../_images/drop-btn.jpg') no-repeat right #fff;
     -webkit-transition: all 0.3s ease-out;  
        -moz-transition: all 0.3s ease-out; 
          -o-transition: all 0.3s ease-out;
@@ -68,7 +68,7 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
       }
       &:hover {
         cursor: pointer;
-        background: url('/_images/drop-btn-hover.jpg') no-repeat right #fff;
+        background: url('../_images/drop-btn-hover.jpg') no-repeat right #fff;
         -webkit-transition: all 0.3s ease-out;  
            -moz-transition: all 0.3s ease-out; 
              -o-transition: all 0.3s ease-out;
