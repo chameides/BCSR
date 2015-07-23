@@ -8,23 +8,6 @@
 
 <?php include '_inc/head-js-css.php'; ?>
 
-<style>
-.checkbox-sub {
-	padding-left:35px;
-}
-.checkbox-sub + .checkbox {
-	margin-top:-5px;
-}
-label.error {
-	color:red;
-	font-size:12px;
-	font-weight: normal;
-	line-height: 130%;
-	margin-top: 5px;
-	display: block;
-}
-</style>
-
   </head>
   <body>
 
@@ -787,11 +770,8 @@ label.error {
     
 <?php include '_inc/bottom-js.php' ?>
 
-<script src="_js/validation/jquery.validate.min.js"></script>
-
-<script src="_js/validation/additional-methods.min.js"></script>
-<script src="_js/validation/validation-custom.js"></script>
-
-
+<script src="/_resources/js/forms/validation/jquery.validate.min.js"></script>
+<script src="/_resources/js/forms/validation/additional-methods.min.js"></script>
+<script src="/_resources/js/forms/rfi-custom.js"></script>
 </body>
 </html>
