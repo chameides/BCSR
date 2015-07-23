@@ -770,8 +770,6 @@
     
 <?php include '_inc/bottom-js.php' ?>
 
-<script src="/_resources/js/forms/validation/jquery.validate.min.js"></script>
-<script src="/_resources/js/forms/validation/additional-methods.min.js"></script>
-<script src="/_resources/js/forms/rfi-custom.js"></script>
+<script src="/_resources/js/forms/rfi-combine-min.js"></script>
 </body>
 </html>

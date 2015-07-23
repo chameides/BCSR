@@ -114,9 +114,6 @@ $( document ).ready(function() {
             parentEmail: {
                 email: true
             },
-            parentEmail: {
-                email: true
-            }
             
         },
         messages: {
