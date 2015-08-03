@@ -349,7 +349,7 @@
 					<label for="gradeLevel">Grade Level</label>
 					<select class="form-control" id="gradeLevel" name="gradeLevel">
 						<option value="">
-						  Select Grade Completing in 2015
+						  Select your Current Grade Level
 						</option>
 		
 						<option value="7">
