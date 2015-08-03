@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /*.inc$
 Disallow: /*.html$
-Disallow: /_resources/
 Disallow: /_test/
 Disallow: /guide/
 Disallow: /training/
