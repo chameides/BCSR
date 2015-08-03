@@ -1,6 +1,6 @@
 <?php
 
-/*remove to commented for email error error check 
+/*remove comment for email error error check 
         //set email variables
         $to = 'mchameides@simons-rock.edu';
         $subject ='Script Connect - Forms';
@@ -83,19 +83,17 @@ else {
 }
 
 
-if ($_POST['userRole'] == 'Other') {
-    $fields["Description"] = 'Source: Other RFI Form.' . $_POST['note'];
-}
-elseif ($_POST['userRole'] == 'Parent') {
-    $fields["Description"] = 'Source: Parent RFI Form.' . $_POST['note'];
-}
+$fields["Description"] = 'Source: RFI Form | ' . 'Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
 
 //determine graduation year based on gradelevel
 if ($_POST['gradeLevel'] > 0) {
     $gradeLevel = $_POST['gradeLevel']; //pull data from form
-    $YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in July
+    $YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in January
     $graduationYear =  date("Y") + $YearsToGraduation; //calculate value
+    if (date("m")>7) { //if change this calculation, make sure to change the helper text
+        $graduationYear = $graduationYear + 1;
+    }
     $fields["High School Graduation Year"] = $graduationYear; //add to array
 }
 

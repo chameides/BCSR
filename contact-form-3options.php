@@ -349,7 +349,17 @@
 					<label for="gradeLevel">Grade Level</label>
 					<select class="form-control" id="gradeLevel" name="gradeLevel">
 						<option value="">
-						  Select your Current Grade Level
+							<?php
+								//Helper text based on current month. During the summer, are we asking prospectives to use previous grade or next grade? If change the month, make sure to adjust the math in the form-sumbit script
+								if (date("m")>8) {
+							        echo "Select your Current Grade Level";
+							    }
+								else {
+									$year = date('Y');
+							        echo "Select Grade Completing in $year";
+							    }
+							?>
+						  
 						</option>
 		
 						<option value="7">
@@ -752,8 +762,14 @@
 					<input type="text" class="form-control" id="parentEmail" name="parentEmail" placeholder="Enter email" maxlength="100">
 				</div>
 			</div>
-	
-		  <div class="form-group col-sm-12">
+			<input type="hidden" name="url" id="url" value="
+				<?php 
+					$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+					echo $actual_link;
+				?>" 
+			>
+			
+		  	<div class="form-group col-sm-12">
 			  <input class="btn btn-primary" id="RFI_btn_submit" type="submit" value="Submit">
 			</div>
 		</div><!-- /row inside the col -->
