@@ -8757,6 +8757,10 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
     #our-faculty .icon {
       margin-top: 30px; } }
 
+#smartest-colleges {
+  background-color: #efefef;
+  padding: 30px 0 66px; }
+
 body#why {
   overflow-x: hidden !important;
   color: white;

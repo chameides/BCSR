@@ -82,31 +82,31 @@ Simon’s Rock.</p>
           <div class="col-xs-6 col-sm-4">
             <div class="row">
               <h2 class="stat blue col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>400</span></h2>
-              <h5 class="stat-description col-xs-12">Full-Time Students</h5>
+              <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Full-Time Students</h5>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4">
             <div class="row">
               <h2 class="stat red col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>16.5</span></h2>
-              <h5 class="stat-description col-xs-12">Average Age of Entering Students</h5>
+              <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Average Age of Entering Students</h5>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4">
             <div class="row">
               <h2 class="stat orange col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>11</span></h2>
-              <h5 class="stat-description col-xs-12">Average Class Size</h5>
+              <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Average Class Size</h5>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4 col-sm-push-2">
             <div class="row">
               <h2 class="stat yellow col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>45</span></h2>
-              <h5 class="stat-description col-xs-12">Number of States our Students Come From</h5>
+              <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Number of States our Students Come From</h5>
             </div>
           </div>
           <div class="col-xs-6 col-xs-push-3 col-sm-4 col-sm-push-2">
             <div class="row">
               <h2 class="stat yellow col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>27</span></h2>
-              <h5 class="stat-description col-xs-12">Number of Countries our Students Come From</h5>
+              <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Number of Countries our Students Come From</h5>
             </div>
           </div>
         </div>
