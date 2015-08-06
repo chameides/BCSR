@@ -43,6 +43,7 @@
 
       <div class="container" id="concentrations">
         <div class="no-margin row text-center">
+          <div class="ribbon"><span>40+ Concentrations</span></div>
 
           <h4>Our Top Majors Include:</h4>
 
