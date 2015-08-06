@@ -8698,40 +8698,39 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
   .map-info-window .read-more a:hover {
     color: #262421; }
 
-.page-hero-container.at-a-glance-bg {
+.at-a-glance .row.no-margin {
   margin-bottom: 0; }
-
-#location {
+.at-a-glance .page-hero-container.at-a-glance-bg {
+  margin-bottom: 0; }
+.at-a-glance #location {
   background-image: url(/_images/at-a-glance-location.jpg);
   background-position: center bottom;
   background-size: cover;
   padding: 30px 0 0; }
-
-#concentrations .major {
+.at-a-glance #concentrations .major {
   background-position: center top;
   padding-top: 90px;
   margin-bottom: 40px; }
-
-#our-students {
+.at-a-glance #our-students {
   background-color: #6e675f;
   color: white; }
-  #our-students .stat {
+  .at-a-glance #our-students .stat {
     border-radius: 300px;
     padding: 0; }
-    #our-students .stat.red {
+    .at-a-glance #our-students .stat.red {
       background-color: #be2126; }
-    #our-students .stat.blue {
+    .at-a-glance #our-students .stat.blue {
       background-color: #5cb7b7; }
-    #our-students .stat.orange {
+    .at-a-glance #our-students .stat.orange {
       background-color: #ec6a1e; }
-    #our-students .stat.yellow {
+    .at-a-glance #our-students .stat.yellow {
       background-color: #e2be00; }
-    #our-students .stat:before {
+    .at-a-glance #our-students .stat:before {
       content: '';
       display: block;
       margin-top: 100%;
       box-sizing: content-box; }
-    #our-students .stat span {
+    .at-a-glance #our-students .stat span {
       display: block;
       position: absolute;
       top: 50%;
@@ -8740,35 +8739,33 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
       width: 100%;
       height: 48px;
       font-size: 48px; }
-  #our-students .stat-description {
+  .at-a-glance #our-students .stat-description {
     height: 60px; }
-
-#our-faculty .stat h2 {
+.at-a-glance #our-faculty .stat h2 {
   border-bottom: 5px solid transparent; }
-#our-faculty .stat.red h2 {
+.at-a-glance #our-faculty .stat.red h2 {
   color: #be2126;
   border-bottom-color: #be2126; }
-#our-faculty .stat.blue h2 {
+.at-a-glance #our-faculty .stat.blue h2 {
   color: #5cb7b7;
   border-bottom-color: #5cb7b7; }
-#our-faculty .stat.orange h2 {
+.at-a-glance #our-faculty .stat.orange h2 {
   color: #ec6a1e;
   border-bottom-color: #ec6a1e; }
-#our-faculty .stat.yellow h2 {
+.at-a-glance #our-faculty .stat.yellow h2 {
   color: #e2be00;
   border-bottom-color: #e2be00; }
-#our-faculty .icon {
+.at-a-glance #our-faculty .icon {
   height: 98px;
   margin-top: 42px;
   background-position: center top;
   background-size: contain; }
   @media screen and (max-width: 480px) {
-    #our-faculty .icon {
+    .at-a-glance #our-faculty .icon {
       margin-top: 30px; } }
-
-#smartest-colleges {
+.at-a-glance #smartest-colleges {
   background-color: #efefef;
-  padding: 30px 0 66px; }
+  padding: 30px 0 15px; }
 
 body#why {
   overflow-x: hidden !important;

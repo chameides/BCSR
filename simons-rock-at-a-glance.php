@@ -13,14 +13,12 @@
   <body class="has-hero">
     <?php include '_inc/nav.php'; ?>
 
-    <div class="container-fluid page-container">
+    <div class="container-fluid page-container at-a-glance">
       <div class="row-full-width">
         <div class="page-hero-container at-a-glance-bg">
           <div class="page-hero page-hero-gateway-alt text-center">
             <h1 class="hero-title">Simon's Rock at a Glance</h1>
-            <p class="hero-text">A collection of pithy, impressive, and occasionally idiosyncratic stats
-that begins to capture everything wonderful and life-changing about
-Simon’s Rock.</p>
+            <p class="hero-text">A collection of pithy, impressive, and occasionally idiosyncratic stats that begins to capture everything wonderful and life-changing about Simon’s Rock.</p>
 
             <i id="intro_arrow_down" class="fa fa-angle-down"></i>
           </div>
@@ -44,7 +42,7 @@ Simon’s Rock.</p>
       </div>
 
       <div class="container" id="concentrations">
-        <div class="row text-center">
+        <div class="no-margin row text-center">
 
           <h4>Our Top Majors Include:</h4>
 
@@ -87,39 +85,41 @@ Simon’s Rock.</p>
       <div id="our-students">
         <div class="container">
           <div class="row text-center">
+            <h2>Our Students</h2>
+
             <div class="col-xs-6 col-sm-4">
-              <div class="row">
+              <div class="no-margin row">
                 <h2 class="stat blue col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>400</span></h2>
                 <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Full-Time Students</h5>
               </div>
             </div>
             <div class="col-xs-6 col-sm-4">
-              <div class="row">
+              <div class="no-margin row">
                 <h2 class="stat red col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>16.5</span></h2>
                 <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Average Age of Entering Students</h5>
               </div>
             </div>
             <div class="col-xs-6 col-sm-4">
-              <div class="row">
+              <div class="no-margin row">
                 <h2 class="stat orange col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>11</span></h2>
                 <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Average Class Size</h5>
               </div>
             </div>
             <div class="col-xs-6 col-sm-4 col-sm-push-2">
-              <div class="row">
+              <div class="no-margin row">
                 <h2 class="stat yellow col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>45</span></h2>
                 <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Number of States our Students Come From</h5>
               </div>
             </div>
             <div class="col-xs-6 col-xs-push-3 col-sm-4 col-sm-push-2">
-              <div class="row">
+              <div class="no-margin row">
                 <h2 class="stat yellow col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-3"><span>27</span></h2>
                 <h5 class="stat-description col-xs-12 col-lg-8 col-lg-push-2">Number of Countries our Students Come From</h5>
               </div>
             </div>
           </div>
 
-          <div class="row">
+          <div class="no-margin row">
             <div class="col-sm-4 col-sm-push-2">
               <h4>Students Who Live On Campus</h4>
             </div>
@@ -128,7 +128,7 @@ Simon’s Rock.</p>
             </div>
           </div>
 
-          <div class="row">
+          <div class="no-margin row">
             <div class="col-sm-4 col-sm-push-2">
               <h4>Male Students</h4>
             </div>
@@ -137,7 +137,7 @@ Simon’s Rock.</p>
             </div>
           </div>
 
-          <div class="row">
+          <div class="no-margin row">
             <div class="col-sm-4 col-sm-push-2">
               <h4>Students Receiving Financial Aid</h4>
             </div>
@@ -212,8 +212,6 @@ Simon’s Rock.</p>
         </div>
       </div>
     </div>
-
-
 
     <?php include '_inc/footer.php'; ?>
 
