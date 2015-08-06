@@ -8698,6 +8698,15 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
   .map-info-window .read-more a:hover {
     color: #262421; }
 
+.page-hero-container.at-a-glance-bg {
+  margin-bottom: 0; }
+
+#location {
+  background-image: url(/_images/at-a-glance-location.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  padding: 30px 0 0; }
+
 #concentrations .major {
   background-position: center top;
   padding-top: 90px;
