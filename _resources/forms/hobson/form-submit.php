@@ -49,7 +49,6 @@ if ($_POST['userRole'] == 'Parent') {
     $fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
     $fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
     $fields["Parent 1 Email"] = $_POST['parentEmailSelf'];
-    $fields["Description"] = 'Source: Parent RFI Form';
 }
 else {
     $fields["Preferred Phone"] = $_POST['drpPhoneType'];
