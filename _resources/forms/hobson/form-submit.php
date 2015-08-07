@@ -1,5 +1,15 @@
 <?php
 
+/*
+Table of Contents
+1. Error Check
+2. Includes
+3. Assebmle Field Data
+4. Create Array
+5. Send Data to Hobson
+*/
+
+//1. Error Check
 /*remove comment for email error error check 
         //set email variables
         $to = 'mchameides@simons-rock.edu';
@@ -11,11 +21,11 @@
         mail ( $to , $subject , $message, $headers );
 */
 
-
+//2. Includes
 include 'config.php';
 include 'functions.php';
 
-/* Assemble field data to pass to web server */
+/* 3. Assemble field data to pass to web server */
 $fields = array(
     "First Name" => $_POST['txtFirstName'],
     "Last Name" => $_POST['txtLastName'],
@@ -224,14 +234,14 @@ switch($_POST['drpState']) {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
-/* Create creatFields array per web service requirement */
+/* 4. Create creatFields array per web service requirement */
 $data_contact = array("createFields" => $fields);
 
 //define variables for specic curl event
 $content = json_encode($data_contact);
 $url_curl = $url_contacts;
 
-//send data to Hobson
+//5. send data to Hobson
 sendData();
 
 

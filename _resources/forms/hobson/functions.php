@@ -1,4 +1,5 @@
 <?php
+//This PHP script has reusable functions for the Form Submit. This includes sending data and error checking. If the there is an error, an email will be sent with the error details as well as the submission data.
 
 //trim return string to get specific value
 function get_string_between($string, $start, $end){
@@ -18,7 +19,9 @@ function begins_with($haystack, $needle) {
 function sendData() {
     global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify;
     
-    // Pass JSON to web server
+    /* Pass JSON to web server
+        If the data is a new record use, Hobson requires the Post Method. If it is exisiting record, Hobson requires the Put Method
+    */
     $ch = curl_init($url_curl);
         curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
     if ($modify == 'True') {
@@ -59,15 +62,18 @@ function sendData() {
     errorCheck();
 };
 function errorCheck() { 
-    //check for error
-    
+    /*check for error
+    Hobson returns a string after form submission. We need to parse the string to determine the error. 
+    */
     global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID;
     
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
+    //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
+            //The record already exists in the database, prepare to resubmit using the Modify/Put Method. 
             $modify = 'True';
             //if contacts table
             if ($url_curl == $url_contacts) {
@@ -77,7 +83,7 @@ function errorCheck() {
             sendData();
         }
         else {
-        //set email variables
+        //prepare variables for email
         $subject ='Error: Hobson Radius Form';
         $message = 'There has been an error on the Hobson Radious Form Submission
             
