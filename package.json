@@ -1,0 +1,10 @@
+{
+  "name": "BCSR",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-svgmin": "^2.0.1",
+    "grunt-grunticon": "^2.1.7",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}

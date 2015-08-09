@@ -1,3 +1,5 @@
 contact-api.php
 config.php
 .DS_Store
+node_modules
+.sass-cache
