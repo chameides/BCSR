@@ -30,6 +30,33 @@ module.exports = (grunt) ->
             white: '#ffffff'
             black: '#000000'
 
-  require('load-grunt-tasks')(grunt, pattern: 'grunt-*')
+    sass:
+      dist:
+        options:
+          style: 'compressed'
+          noCache: true
+        files:
+          '_css/app.css': '_css/app.scss'
 
-  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
+    autoprefixer:
+      dist:
+        options:
+          browsers: ['last 2 versions', 'ie 8', 'ie 9']
+        src: '_css/app.css'
+        dest: '_css/app.css'
+
+    watch:
+      styles:
+        files: ['_css/**/*.scss']
+        tasks: ['sass', 'autoprefixer']
+        options:
+          spawn: false
+      grunticon:
+        files: ['_images/_grunticon/*.svg', '_images/_grunticon/*.png']
+        tasks: ['svgmin:bcsrIcons', 'grunticon:bcsrIcons']
+        options:
+          spawn: false
+
+  require('load-grunt-tasks')(grunt)
+
+  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'sass', 'autoprefixer'])
