@@ -1,0 +1,316 @@
+/* Customized css for Animation Graph */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400+700);
+
+#chart {
+  width: 650px;
+  height: 300px;
+  margin: 60px auto 0;
+  display: block;
+ overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+
+
+#chart #bars {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+  
+}
+#chart #bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #be2126;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar:hover {
+  background: #e2be00;
+  cursor: pointer;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar:hover:before {
+  color: white;
+  content: attr(data-percentage) '%';
+  position: relative;
+  bottom: 20px;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li span {
+  color: #efefef;
+  width: 100%;
+  position: absolute;
+ bottom: -2em;
+  left: 10px;
+  text-align: center;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar1   {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #5cb7b7;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+   
+#bar2  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #ec6a1e;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    
+       
+}
+
+#bar3  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #e2be00;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar4  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #efefef;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar5  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #262421;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar6  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #be2126;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+ 
+/*  */
+
+img {
+    height:80px;
+    width: auto;
+}
+
+
+@media only screen and (min-width : 480px)  {
+    
+    #chart {
+  width:none !important;
+  height: 300px;
+  margin: 60px auto 0;
+  display: block;
+ overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+
+
+#chart #bars {
+  display: inline-block;
+  width: none;
+  height: auto;
+  padding: 0;
+  margin: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+  
+}
+#chart #bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #be2126;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar:hover {
+  background: #e2be00;
+  cursor: pointer;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li .bar:hover:before {
+  color: white;
+  content: attr(data-percentage) '%';
+  position: relative;
+  bottom: 20px;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#chart #bars li span {
+  color: #efefef;
+  width: 100%;
+  position: absolute;
+  bottom: -2em;
+  left: 10px;
+  text-align: center;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar1   {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #5cb7b7;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+   
+#bar2  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #ec6a1e;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    
+       
+}
+
+#bar3  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #e2be00;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar4  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #efefef;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar5  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #262421;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+#bar6  {
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  background: #be2126;
+  position: absolute;
+  bottom: 0;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+ 
+/*  */
+
+
+
+
+
+}
+

@@ -1,0 +1,367 @@
+@media screen and (min-device-width: 768px){
+.jName {
+    font-size: 1.6rem;
+}
+
+/* Customized CSS for the two new pages -Peter */
+
+@media only screen and (max-width: 40em) { 
+    .page-container {
+        overflow-x: inherit !important;
+    }
+} 
+
+@media only screen and (max-width: 40em) { 
+    body h2 {
+        font-size: 3rem !important;
+    }
+}
+
+.intro {
+    padding-top: 50px !important;
+    max-width: 100% !important;
+}
+
+@media only screen and (max-width: 40em) { 
+    .intro {
+        margin: 0px !important;
+    }
+}
+
+.text-bg {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    line-height: 43px;
+}
+
+
+@media only screen and (max-width: 40em) { 
+    .intro-paragraph {
+        line-height: 3rem;
+    }
+}
+
+ul li {
+   
+}
+
+.hero2 {
+    background: url(../_images/hero2.jpg) no-repeat bottom center !important;
+    background-size: 190% !important;
+    height: 450px;
+    width: auto;
+   
+}
+@media only screen and (max-width: 40em) { 
+.hero2 {
+    background: url(../_images/hero2.jpg) no-repeat bottom center !important;
+    background-size: 350% !important;
+    height: 400px;
+    width: auto;
+   
+}
+}
+.hero2 h3 {
+	color: white !important;
+}
+
+.page-hero {
+	max-width: 1080px !important;
+}
+
+.factoid1 {
+    background: #5cb7b7 url(../_images/diplomas.png); 
+    background-position: left 100px center; 
+    background-size: 350px;
+    background-repeat:no-repeat; 
+    padding: 78px 0 !important;
+    margin-bottom: 0px !important;
+    max-width: 100% !important; 
+    margin-left: none !important;
+    margin-right: none !important;
+}
+
+@media only screen and (max-width: 40em) { 
+    .factoid1 {
+        background-size: 100px;
+        background-position: 200px 30px;
+        padding-bottom: 30px !important;
+        margin-left: none !important;
+        margin-right: none !important;
+        
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .factoid1 {
+        background-size: 178px;
+    }
+}
+
+@media only screen and (min-width: 39.125em) and (max-width: 46.938em) { 
+    .factoid1 {
+        padding-left: 300px !important;
+    }  
+}
+
+.factoid1 h2 {
+    font-size: 7rem;
+} 
+
+.factoid2 {
+    background: white url(../_images/world-map2.png) no-repeat center !important;
+    background-size: 78% !important;
+    padding: 78px 0 !important;
+    margin-bottom: 0px !important;
+   
+}
+
+@media only screen and (max-width: 40em) { 
+    .factoid2 {
+        padding-top: 30px !important;
+        padding-bottom: 178px !important;
+        
+    }
+    .factoid2 .ul .li {
+        font-size:20px;
+        
+    }
+}
+
+.factoid2 h2 {
+    font-size: 7rem;
+    color: #6e675f;
+}
+
+.factoid2 p {
+    color: #6e675f;
+}
+
+.factoid3 {
+	padding: 50px 0 78px;
+	background: #ec6a1e url(http://i926.photobucket.com/albums/ad106/jbdejoya/sappling_zpsv3ri56qk.png) no-repeat 1000px center;
+    background-size: 290px !important;
+    max-width: 100% !important; 
+    margin-bottom: 0px !important;
+}
+
+.factoid3 .row {
+    max-width: 100% !important;
+}
+
+@media only screen and (max-width: 40em) { 
+    .factoid3 {
+        padding-bottom: 50px !important;
+        font-size: 25px !important;
+    }
+    .factoid3 ul {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .factoid3 {
+        background-position: 350px 300px;
+    }
+    .factoid3 ul { margin-bottom: 0px; }
+}
+
+.factoid3 h2 {
+    font-size: 7rem;
+	margin-bottom: 30px;
+}
+
+.factoid3 ul li {
+     font-size:16px;
+    
+}
+.factoid4 {
+    background: #00447C url(../_images/nsse-logo.png) no-repeat 78px center;
+    background-repeat:no-repeat; 
+    padding: 50px;
+    max-width: 100% !important; 
+    margin-bottom: 0px !important; 
+}
+
+@media only screen and (min-width: 63.125em) and (max-width: 87.813em) { 
+    .factoid4 p {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .factoid4 { background-size: 33px; background-position: 50px 78px; }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .factoid4 { background-size: 78px; background-position: 78px 48px ;}
+}
+
+.factoid4 h2 {
+    font-size: 7rem;
+    color: white;
+    margin-bottom: 0px !important; 
+}
+
+.factoid5{
+    background: #E2BE00 url(http://i926.photobucket.com/albums/ad106/jbdejoya/sappling_zpsv3ri56qk.png) no-repeat 1000px center;
+    background-size: 290px !important;
+    
+    padding: 50px;
+    max-width: 100% !important; 
+    margin-bottom: 0px !important; 
+}
+
+@media only screen and (max-width: 64em) { 
+    .factoid5 ul {
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .factoid5 {
+        background-position: 350px 500px;
+    }
+}
+
+
+
+.factoid5 h2 {
+    font-size: 7rem;
+    color: #ffffff;
+    margin-bottom: 30px !important; 
+}
+
+body > div.factoid5 > div > div > div.col-md-12 > p {
+    color: #ffffff;
+}
+
+.factoid5 ul li {
+    color: #ffffff;
+    font-size:16px;
+}
+
+#factoid6 {
+    padding: 50px;
+    max-width: 100% !important; 
+    margin-bottom: 0px !important;
+	margin-bottom: 0px;
+}
+
+.factoid4 h2 {
+    font-size: 7rem;
+	color: white;
+	margin-bottom: 30px !important; 
+}
+
+.factoid4 p {
+	color: white;
+}
+
+.factoidFont {
+	font-size: 7rem;
+	
+}
+
+body > div.container-fluid.page-container > div.row.factoid4 {
+	margin-bottom: none !important;
+    margin-left: none !important;
+    margin-right: none !important;
+	
+	
+}
+
+.speaker {
+    position: absolute;
+    width: 110px !important;
+    right: 100px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 39.125em) { 
+    .speaker {
+        position: absolute;
+        width: 78px !important;
+        right: 117px;
+    }
+}
+
+@media only screen and (min-width: 39.125em) and (max-width: 47.000em) { 
+    .speaker {
+        position: absolute;
+        width: 78px !important;
+        right: 0px;
+        margin-top: -150px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 47.063em) and (max-width: 64em) { 
+    .speaker { right: 0px; }
+}
+
+
+.they-went-here {
+    padding-top: 50px !important;
+}
+
+.they-went-here p {
+	font-size: 15px;
+	line-height: normal;
+}
+
+.they-went-here .image-title {
+	margin-bottom: 7px;
+}
+
+.alumni span {
+    font-size: 15px;
+    margin: 5px 0 13px;
+    text-transform: capitalize;
+}
+
+.alumniImage {
+	background: #efefef;
+	padding: 5px;
+    height: 125px;
+    width: 125px !important;
+    border: 1px solid #be2126;
+    border-radius: 50% !important;
+    width: auto;
+    box-shadow: 3px 3px 3px #ddd;
+}
+
+.image-name h3 {
+    font-size: 3rem !important;
+}
+
+body > div.factoid1 > .noRmargin {
+    margin-left:none !important;
+    margin-right: none !important;
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+.jName {
+    font-size: 1.5rem !Important;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width:568px){
+.jName {
+    font-size: 1.5rem !Important;
+}
+}
+
+@media only screen and (min-width: 47.063em) and (max-width: 50.813em){
+.jName {
+    font-size: 1.5rem !Important;
+}
+}
+    
+@media only screen and (min-width: 39.125em) and (max-width: 47.000em){
+.jName {
+    font-size: 1.5rem !Important;
+}

@@ -1,0 +1,696 @@
+/* Customized CSS for the two new pages -Jerome */
+
+#bar1::before {
+	position: absolute;
+	content: url(../_images/school-house.png) absolute;
+	display: block;
+	width: 50px;
+	height: auto;
+	margin-top: -75px;
+	margin-left: 5px;
+    overflow: visible !important;
+    
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar1 {
+    position: absolute;
+;
+	display: block;
+	width: 50px;
+	height: auto;
+	margin-top: -75px;
+	margin-left: 5px;
+    overflow: visible !important;
+    
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    
+    
+}
+#bar2::before {
+	position: absolute;
+	content: url(../_images/man.png);
+	display: block;
+	width: 100px;
+
+	margin-top: -85px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+#bar2{
+	position: absolute;
+	
+	display: block;
+	width: 100px;
+	
+	margin-top: -85px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    
+}
+
+#bar3::before {
+	position: absolute;
+	content: url(../_images/girl.png);
+	display: block;
+	width: 100px;
+	
+	margin-top: -85px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar3{
+position: absolute;
+
+	display: block;
+	width: 100px;
+	
+	margin-top: -85px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    
+}
+
+#bar4::before {
+	position: absolute;
+	content: url(../_images/piggy.png);
+	display: block;
+	width: 100px;
+	
+	margin-top: -55px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar4{
+	position: absolute;
+
+	display: block;
+	width: 100px;
+	
+	margin-top: -55px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar5::before {
+	position: absolute;
+	content: url(../_images/Diverse.png);
+	display: block;
+	width: 100px;
+	
+	margin-top: -78px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar5{
+	position: absolute;
+	
+	display: block;
+	width: 100px;
+	
+	margin-top: -78px;
+	margin-left: -15px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    
+}
+
+#bar6::before {
+	position: absolute;
+	content: url(../_images/flag.png);
+	display: block;
+	width: 100px;
+	
+	margin-top: -60px;
+	margin-left: 10px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+#bar6{
+position: absolute;
+	
+	display: block;
+	width: 100px;
+	
+	margin-top: -60px;
+	margin-left: 10px;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+    
+
+/*  
+
+
+#dotMap {
+	height: 50px !important;
+}
+*/
+.pulse {
+  width: 10px;
+  height: 10px;
+  border: 5px solid #f7f14c;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: red;
+  z-index: 10;
+  position: absolute;
+  border: 10px solid #fff601;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: pulse 3s ease-out;
+  -moz-animation: pulse 3s ease-out;
+  animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  opacity: 0;
+}
+
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@media only screen and (max-width: 39.063em) { 
+	.boston {
+		margin-left: 78px;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.boston {
+		margin-left: 178px;
+	}
+}	
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.new-york {
+		margin-left: -100px;
+	}
+}	
+
+
+
+/* */
+
+.heros {
+	background: #5cb7b7 url(../_images/hero.png) no-repeat bottom center;
+	height: 578px;
+}
+
+@media only screen and (max-width: 40em) { 
+	.heros { 
+		background-size: 113%; 
+		height: 450px;
+	}
+    .hero2 {
+        background-size: 113%; 
+		height: 450px;
+        
+    }
+}
+
+
+.location {
+	background: #E0EFEF url(../_images/map.teal.jpg) no-repeat center -197px;
+	background-size: 100%;
+	padding: 50px 0;
+}
+
+@media only screen and (max-width: 28.250em) { 
+	.location {
+		background-size: 170%;
+		background-position: center 50px;
+	}
+}
+
+@media only screen and (min-width: 28.313em) and (max-width: 39.063em) { 
+	.location {
+		background-size: 165%;
+		background-position: center -50px;
+	}
+}
+
+
+
+@media only screen and (min-width: 39.125em) and (max-width: 47.000em) { 
+	.location {
+		background-size: 170%;
+		background-position: center -178px;
+	}
+}
+
+@media only screen and (min-width: 47.063em) and (max-width: 50.813em) { 
+	.location {
+		background-position: center -111px;
+		background-size: 150%;
+	}
+}
+
+@media only screen and (min-width: 50.875em) and (max-width: 78.438em) { 
+	.location {
+		background-position: center -50px;
+	}
+}
+
+/* Large Screens */
+@media only screen and (min-width: 90.063em) { 
+	.location {
+		background-position: center -300px;
+	}
+} 
+
+.academics {
+	padding: 78px 0 0 !important;
+}
+
+@media only screen and (max-width: 64em) {
+	.academics .stacked-content {
+		padding: 0 21px;
+	}
+}
+
+#ribbon {
+	margin-top: -78px !important;
+	background: #BE2126 !important;
+}
+
+@media only screen and (max-width: 40em) {
+	#ribbon {
+		margin-top: inherit !important;
+        font-size: 22px !important;
+	}
+}
+
+#ribbon:before {
+	margin-left: 7px !important;
+}
+
+#ribbon:after {
+	margin-right: 7px !important;
+}
+
+#icon {
+	height: 78px !important;
+}
+
+.students {
+	background: #6e675f url(../_images/bg_grid.png) !important;
+	padding: 130px 0 10px;
+}
+
+@media only screen and (max-width: 39.063em) {
+	.students {
+		padding-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width: 39.125em) and (max-width: 47.000em) { 
+	.students .left-padding {
+		padding: 0px !important;
+		margin: 0px;
+	}
+}
+
+@media only screen and (min-width: 47.063em) and (max-width: 64em) { 
+	.students .left-padding {
+		padding: 30px !important;
+		margin: 0px 30px;
+	}
+	
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.students .legend {
+		padding-left: 0px !important;
+	}
+}
+
+
+.circle-wrap {
+	background: #efefef;
+	border-radius: 50% !important;
+	pointer-events: none;
+   	cursor: default;
+margin-bottom: 78px !important;
+}
+
+*/
+
+@media only screen and (max-width: 40em) {
+	.circle-wrap {
+		margin-bottom: 78px !important;
+	}
+}
+
+.red {
+	background: #be2126;
+}
+
+.teal {
+	background: #5cb7b7;
+}
+
+.orange {
+	background: #ec6a1e;
+}
+
+.yellow {
+	background: #e2b000;
+}
+/*
+.circle-wrap:hover {
+	background: inherit !important
+}
+*/
+.inner h2 {
+	
+	margin-top: 0px;
+}
+
+@media only screen and (max-width: 40em) { 
+	.inner h2 {
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.inner h2 {
+		font-size: 2.5em;
+		margin: -5px 5px 0px 0px !important;
+	}
+}
+.graph-legend {
+	margin-bottom: 15px !important;
+	margin-left: 53px;
+}
+
+.graph-legend h4 {
+	color: white;
+}
+
+.graph-legend .first:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #5cb7b7;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .first:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+.graph-legend .third:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #ec6a1e;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .third:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+.graph-legend .fourth:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #e2be00;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .fourth:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+.graph-legend .fifth:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #efefef;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .fifth:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {	
+	.graph-legend .fifth:before {
+		margin-bottom: 10px;
+	}
+} 
+
+.graph-legend .second:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #262421;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .second:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+.graph-legend .sixth:before {
+	float: left;
+	content:"";
+	display: block;
+	background: #be2126;
+	margin: -10px 10px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.graph-legend .sixth:before {
+		margin-right: 200px;
+		margin-bottom: 10px;
+	}
+}
+
+.hero-title {
+	margin-top: -50px;
+}
+
+.map {
+	background: url(../_images/world-map.points.png) no-repeat center;
+	background-size: 100%;
+}
+
+.faculty {
+	padding: 30px 0 !important; 
+}
+
+@media only screen and (max-width: 40em) { 
+	.faculty {
+		padding: 30px 0 !important;
+	}
+}
+
+.ratio {
+	background: url(../_images/ratio.png) no-repeat right center;
+	background-size: 110px;
+	padding-right: 130px;
+    padding-bottom:30px;
+	margin-bottom: 0px;
+}
+
+.ratio h3 {
+	color: #5cb7b7;
+	font-size: 5rem;
+	margin-bottom: -19px !important;
+	border-bottom: 5px solid;
+}
+
+.professional {
+	background: url(../_images/books-diploma.png) no-repeat right center;
+	background-size: 110px;
+	padding-right: 130px;
+	margin-bottom: 0px;
+}
+
+.professional h3 {
+	color: #ec6a1e;
+	font-size: 5rem;
+	margin-bottom: -19px !important;
+	border-bottom: 5px solid;
+}
+
+.services {
+	background: url(../_images/lamp.png) no-repeat right center;
+	background-size: 110px;
+	padding-right: 130px;
+	margin-bottom: 0px;
+}
+
+.services h3 {
+	color: #e2b000;
+	font-size: 5rem;
+	margin-bottom: -19px !important;
+	border-bottom: 5px solid;
+}
+
+.week {    
+	background: url(../_images/once.png) no-repeat right center;
+	background-size: 110px;
+	padding-right: 130px;
+	margin-bottom: 0px;
+}
+
+.we-do {
+	background: url(../_images/sapling.png) no-repeat right center;
+	background-size: 110px;
+	padding-right: 130px;
+	margin-bottom: 0px;
+	min-height: 110px;
+}
+
+.we-do h3 {
+	color: #5cb7b7;
+	font-size: 5rem;
+	margin-bottom: -19px !important;
+	border-bottom: 5px solid;
+}
+
+.week h3 {
+	color: #be2126;
+	font-size: 5rem;
+	margin-bottom: -19px !important;
+	border-bottom: 5px solid;
+}
+.container-callout {
+	background: #efefef;
+	padding: 30px 30px 30px;
+}
+
+.container-callout a {
+	color: #be2126 !important;
+}
+
+@media only screen and (max-width: 40em) {
+    
+    .left-padding {
+        padding-left: 0px !important;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .left-padding {
+        padding-left: 100px !important;
+        
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:568px) {
+
+    #sMall {
+    font-size: 15px !important;
+}
