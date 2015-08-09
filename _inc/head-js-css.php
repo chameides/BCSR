@@ -27,6 +27,9 @@
 .page-hero-container.at-a-glance-bg {
     background-image: url(_images/at-a-glance-bg.jpg);
 }
+.page-hero-container.reputations-and-outcomes-bg {
+    background-image: url(_images/reputations-and-outcomes-bg.jpg);
+}
 
 @media screen and (min-width: 768px) {
   .page-hero-container.gateway-bg {
