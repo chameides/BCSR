@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="_js/modernizr.custom.js"></script>
-    <title>Gateway</title>
+    <title>Simon's Rock at a Glance</title>
     <?php include '_inc/head-js-css.php'; ?>
     <?php include '_inc/icon-loader.php'; ?>
   </head>
