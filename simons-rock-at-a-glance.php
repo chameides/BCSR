@@ -121,30 +121,75 @@
               </div>
             </div>
 
-            <div class="no-margin row">
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>Students Who Live On Campus</h4>
+            <div class="graph-container">
+              <div class="row">
+                <div class="col-md-8 col-md-push-2">
+                  <div class="row graph no-margin">
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="blue icon-graph-building--before" data-percentage="90"></div>
+                      </div>
+                      <h5>90%</h5>
+                    </div>
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="orange icon-graph-male--before" data-percentage="41"></div>
+                      </div>
+                      <h5>41%</h5>
+                    </div>
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="yellow icon-graph-female--before" data-percentage="59"></div>
+                      </div>
+                      <h5>59%</h5>
+                    </div>
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="white icon-graph-piggy-bank--before" data-percentage="85"></div>
+                      </div>
+                      <h5>85%</h5>
+                    </div>
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="charcoal icon-graph-people--before" data-percentage="30"></div>
+                      </div>
+                      <h5>30%</h5>
+                    </div>
+                    <div class="col-xs-2 bar-wrapper">
+                      <div class="bar">
+                        <div class="red icon-graph-flag--before" data-percentage="14"></div>
+                      </div>
+                      <h5>14%</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>Students Of Color</h4>
-              </div>
-            </div>
 
-            <div class="no-margin row">
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>Male Students</h4>
+              <div class="no-margin row">
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="blue">Students Who Live On Campus</h4>
+                </div>
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="charcoal">Students Of Color</h4>
+                </div>
               </div>
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>Female Students</h4>
-              </div>
-            </div>
 
-            <div class="no-margin row">
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>Students Receiving Financial Aid</h4>
+              <div class="no-margin row">
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="orange">Male Students</h4>
+                </div>
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="yellow">Female Students</h4>
+                </div>
               </div>
-              <div class="col-sm-4 col-sm-push-2">
-                <h4>International Students</h4>
+
+              <div class="no-margin row">
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="white">Students Receiving Financial Aid</h4>
+                </div>
+                <div class="col-xs-6 col-md-4 col-md-push-2">
+                  <h4 class="red">International Students</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -221,8 +266,8 @@
     <?php include '_inc/bottom-js.php' ?>
 
     <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
-    <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
-    <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>
+    <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.min.js"></script>
+    <script type="text/javascript" src="/_js/at-a-glance.js"></script>
 
     <script>
       var controller;

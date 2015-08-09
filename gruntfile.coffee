@@ -34,7 +34,6 @@ module.exports = (grunt) ->
       dist:
         options:
           style: 'compressed'
-          noCache: true
         files:
           '_css/app.css': '_css/app.scss'
 
