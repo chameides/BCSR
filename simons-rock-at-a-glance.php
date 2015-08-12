@@ -14,18 +14,18 @@
     <?php include '_inc/nav.php'; ?>
 
     <div class="container-fluid page-container">
-      <div class="at-a-glance">
-        <div class="row-full-width">
-          <div class="page-hero-container at-a-glance-bg">
-            <div class="page-hero page-hero-gateway-alt text-center">
-              <h1 class="hero-title">Simon's Rock at a Glance</h1>
-              <p class="hero-text">A collection of pithy, impressive, and occasionally idiosyncratic stats that begins to capture everything wonderful and life-changing about Simon’s Rock.</p>
+      <div class="row-full-width">
+        <div class="page-hero-container at-a-glance-bg">
+          <div class="page-hero page-hero-gateway-alt text-center">
+            <h1 class="hero-title">Simon's Rock at a Glance</h1>
+            <p class="hero-text">A collection of pithy, impressive, and occasionally idiosyncratic stats that begins to capture everything wonderful and life-changing about Simon’s Rock.</p>
 
-              <i id="intro_arrow_down" class="fa fa-angle-down"></i>
-            </div>
+            <i id="intro_arrow_down" class="fa fa-angle-down"></i>
           </div>
         </div>
+      </div>
 
+      <div class="at-a-glance">
         <div id="location">
           <div class="container">
             <div class="row">

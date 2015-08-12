@@ -7,6 +7,10 @@
 		background: $blue;
 		padding: 3em 0 0;
 
+		@media screen and (max-width: $screen-sm-min) {
+			text-align: center;
+		}
+
 		.icon-diplomas {
 			background-size: contain;
 
@@ -153,6 +157,13 @@
 
 			@media screen and (max-width: $screen-md-min) {
 				text-align: center;
+
+				&:first-child {
+					h3, p { padding-left: 3%; }
+				}
+				&:last-child {
+					h3, p { padding-right: 3%; }
+				}
 
 				img {
 					float: none;

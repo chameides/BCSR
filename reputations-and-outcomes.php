@@ -14,17 +14,17 @@
     <?php include '_inc/nav.php'; ?>
 
     <div class="container-fluid page-container">
-      <div class="reputations-and-outcomes">
-        <div class="row-full-width">
-          <div class="page-hero-container reputations-and-outcomes-bg">
-            <div class="page-hero page-hero-gateway-alt text-center">
-              <h1 class="hero-title">Reputations and Outcomes</h1>
+      <div class="row-full-width">
+        <div class="page-hero-container reputations-and-outcomes-bg">
+          <div class="page-hero page-hero-gateway-alt text-center">
+            <h1 class="hero-title">Reputations and Outcomes</h1>
 
-              <i id="intro_arrow_down" class="fa fa-angle-down"></i>
-            </div>
+            <i id="intro_arrow_down" class="fa fa-angle-down"></i>
           </div>
         </div>
+      </div>
 
+      <div class="reputations-and-outcomes">
         <div class="container">
           <div class="row">
             <p class="col-xs-12 col-md-10 col-md-push-1 text-center">It’s hard to quantify the Simon’s Rock experience or express our reputation as a number, but we can try: the <em>Princeton Review</em> has given us a 99 percent Academic Rating—higher than Yale, Harvard, and Princeton—for the third straight year. (They also ranked us #6 for quality of campus food.)</p>
@@ -38,7 +38,7 @@
               <div class="col-sm-4 col-sm-push-1 icon-diplomas"></div>
               <div class="col-sm-5 col-sm-push-2">
                 <h1 class="hero-title">Top 15</h1>
-                <p class="intro-paragraph hero-text">Our ranking among all US colleges/universities in terms of percentage of alumni who complete their PhD</p>
+                <p class="intro-paragraph hero-text">Our ranking among all US colleges/universities in terms of percentage of alumni who complete their&nbsp;PhD</p>
               </div>
             </div>
           </div>
