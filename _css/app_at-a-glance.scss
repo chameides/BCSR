@@ -1,0 +1,237 @@
+.page-hero-container.at-a-glance-bg {
+	margin-bottom: 0;
+}
+
+.at-a-glance {
+	.row.no-margin {
+		margin-bottom: 0;
+	}
+
+	.ribbon {
+		padding: 0.34em 1em;
+		margin: 0;
+		position: relative;
+		color: $white;
+		text-align: center;
+		font-size: 25px;
+		letter-spacing: 0.1em;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.4);
+		display: inline-block;
+		background: #BE2126;
+
+		&:before, &:after { content: ""; display: block; width: 0.2em; bottom: -0.5em; position: absolute; border: 0.9em solid $red; box-shadow: 0 1px 0 rgba(0,0, 0, 0.4); }
+		&:before { left: -1.35em; border-right-width: 0.75em; border-left-color: transparent; margin-left: 7px; }
+		&:after { right: -1.35em; border-left-width: 0.75em; border-right-color: transparent; margin-right: 7px; }
+
+		span {
+			&:before, &:after { content: ""; display: block; position: absolute; bottom: -0.5em; border-style: solid; border-width: 0.25em; z-index: 1; }
+			&:before { left: 0; border-color: #881820 #881820 transparent transparent; }
+			&:after { right: 0; border-color: #881820 transparent transparent #881820; }
+		}
+	}
+
+	#location {
+		background-image: url("/_images/at-a-glance-location.jpg");
+		background-position: center bottom;
+		background-size: cover;
+		padding: 30px 0 0;
+
+		@media screen and (max-width: $screen-md-min) {
+			padding: 0;
+		}
+
+		@media screen and (max-width: $screen-xs-min) {
+			background-image: url("/_images/at-a-glance-location-mobile.jpg");
+		}
+	}
+
+	#concentrations {
+		padding: 4em 0 0;
+
+		.ribbon + h4 { margin: 2em 0; }
+
+		.major {
+			background-position: center top;
+			padding-top: 90px;
+			margin-bottom: 40px;
+		}
+	}
+
+	#our-students {
+		background-color: $medium-gray;
+		color: $white;
+		padding: 2em 0;
+
+		.stat {
+			border-radius: 300px;
+			padding: 0;
+			margin-bottom: 0;
+			transform: scale(0.7);
+			transition: transform 600ms ease-out;
+
+			&.active {
+				transform: scale(1);
+			}
+
+			&.red { background-color: $red; }
+			&.blue { background-color: $blue; }
+			&.orange { background-color: $orange; }
+			&.yellow { background-color: $yellow; }
+
+			// neat trick to make the height match the width, even without content
+			&:before { content: ''; display: block; margin-top: 100%; box-sizing: content-box; }
+			span {
+				display: block;
+				position: absolute;
+				top: 50%;
+				margin-top: -24px;
+				left: 0;
+				width: 100%;
+				height: 48px;
+				font-size: 48px;
+
+				@media screen and (max-width: $screen-xs-min) {
+					height: 36px;
+					font-size: 36px;
+					margin-top: -18px;
+				}
+			}
+		}
+
+		.stat-description {
+			margin-top: 1em;
+			min-height: 60px;
+		}
+
+		.graph-container {
+			.graph {
+
+				.bar {
+					height: 15em;
+					position: relative;
+					width: 80%;
+					margin-left: 10%;
+
+					> div {
+						height: 10%;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						overflow: visible !important; // override jQuery animation hiding outside pseudo elements
+
+						&:before {
+							display: block;
+							width: 60%;
+							background-size: contain;
+							position: absolute;
+							bottom: 100%;
+							left: 20%;
+							background-position: center bottom;
+						}
+
+						&.blue { background-color: $blue; }
+						&.orange { background-color: $orange; }
+						&.yellow { background-color: $yellow; }
+						&.white { background-color: $light-gray; }
+						&.charcoal { background-color: $dark-gray; }
+						&.red { background-color: $red; }
+					}
+				}
+
+				h5 {
+					text-align: center;
+					margin-top: 0.6em;
+				}
+
+				@media screen and (max-width: $screen-sm-min) {
+					.bar-wrapper {
+						padding-left: 5px;
+						padding-right: 5px;
+					}
+
+					h5 {
+						font-size: 14px;
+					}
+				}
+			}
+
+			h4 {
+				position: relative;
+				padding-left: 54px;
+
+				&:before {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -21px;
+					width: 42px;
+					height: 42px;
+					border-radius: 42px;
+				}
+
+				&.blue:before { background-color: $blue; }
+				&.charcoal:before { background-color: $dark-gray; }
+				&.orange:before { background-color: $orange; }
+				&.yellow:before { background-color: $yellow; }
+				&.white:before { background-color: $light-gray; }
+				&.red:before { background-color: $red; }
+
+				@media screen and (max-width: $screen-xs-min) {
+					text-align: center;
+					padding-left: 0;
+
+					&:before {
+						position: relative;
+						margin: 0 auto 0.3em;
+					}
+				}
+			}
+		}
+	}
+
+	#our-faculty {
+		padding: 2em 0;
+
+		.stat {
+			h2 { border-bottom: 5px solid transparent; }
+
+			&.red {
+				h2 { color: $red; border-bottom-color: $red; }
+			}
+			&.blue {
+				h2 { color: $blue; border-bottom-color: $blue; }
+			}
+			&.orange {
+				h2 { color: $orange; border-bottom-color: $orange; }
+			}
+			&.yellow {
+				h2 { color: $yellow; border-bottom-color: $yellow; }
+			}
+		}
+
+		.icon {
+			height: 98px;
+			margin-top: 42px;
+			background-position: center top;
+			background-size: contain;
+
+			@media screen and (max-width: $screen-xs-min) {
+				margin-top: 30px;
+			}
+
+			@media screen and (max-width: $screen-sm-min) {
+				background-size: 80%;
+				background-position: left top;
+			}
+		}
+	}
+
+	#smartest-colleges {
+		background-color: $light-gray;
+		padding: 30px 0 15px;
+	}
+}
