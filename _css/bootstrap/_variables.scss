@@ -287,6 +287,8 @@ $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
 $screen-phone:               $screen-xs-min !default;
 
+$screen-xs2: 630px; //this value exists throughout code and this is an effort to variabalize it. 
+
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
 $screen-sm:                  768px !default;

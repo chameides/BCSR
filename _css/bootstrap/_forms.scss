@@ -230,8 +230,11 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
+  margin-left: -17px;
+  margin-top: 2px; //align radio buttons with label
+  @media (min-width: $screen-md) {  
+    margin-top: 6px;
+  }
 }
 
 .radio + .radio,
@@ -242,17 +245,22 @@ input[type="search"] {
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
-  display: inline-block;
-  padding-left: 20px;
+  padding-left: 15px;
   margin-bottom: 0;
   vertical-align: middle;
   font-weight: normal;
   cursor: pointer;
+  @media (min-width: $screen-md) {  
+    display: inline-block;
+    padding-left: 20px;
+  }
 }
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
-  margin-left: 10px; // space out consecutive inline controls
+  @media (min-width: $screen-md) {  
+    margin-left: 10px; // space out consecutive inline controls
+  }
 }
 
 // Apply same disabled cursor tweak as for inputs
@@ -570,3 +578,26 @@ input[type="checkbox"] {
     }
   }
 }
+
+.input-and-button-wrapper{
+  input[type=text] {
+    margin-bottom: 2%;
+    height: 38px; //magic number to match button height
+    @media (min-width: $screen-xs2) {  
+      height: 52px; 
+    }
+  }
+}
+
+.input-and-button-container { 
+  max-width: 550px; 
+  margin: 0 auto;
+}
+.input-container {
+  display: inline-block; 
+  width: 67%;
+}
+
+
+
+
