@@ -27,18 +27,13 @@
 
 
 <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
-
 <div>
-
-
-
-<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
-  <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1"/>
-  <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8994393&amp;groupid=main&amp;profid=eds&amp;mode=and&amp;lang=en&amp;authtype=ip,guest,uid"/>
-  <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db"/>
-  <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+"/>
-  <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value=""/>
-  <div>
+  <form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+    <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1"/>
+    <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8994393&amp;groupid=main&amp;profid=eds&amp;mode=and&amp;lang=en&amp;authtype=ip,guest,uid"/>
+    <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db"/>
+    <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+"/>
+    <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value=""/>
     <div class="form-group col-md-12 input-and-button-wrapper">
       <div class="input-and-button-container">
         <div class="input-container">
@@ -62,15 +57,12 @@
               Author
               </label>
             </div>
-          </div><!--close inline -->
+          </div><!--close guided field selectors -->
         </div><!--close input-container -->
         <input type="submit" value="Search" class="btn btn-primary" style="display: inline-block; float: right;"/>
-    </div><!--close container -->
-  </div><!--close wrapper -->
-</form>
-
-
-
+      </div><!--close input-and-button container -->
+    </div><!--close wrapper -->
+  </form>
 </div>
 
 
