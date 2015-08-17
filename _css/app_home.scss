@@ -262,7 +262,7 @@ body#home {
 			figcaption {
 				cite {
 					text-align: center; //override blockquote styling
-		    		display: inline; //override blockquote styling
+					display: inline; //override blockquote styling
 					font-style:normal;
 					@include LeHavre(1.2rem);
 				}
