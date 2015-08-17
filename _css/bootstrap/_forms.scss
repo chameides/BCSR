@@ -579,6 +579,7 @@ input[type="checkbox"] {
   }
 }
 
+//inline input and button
 .input-and-button-wrapper{
   input[type=text] {
     margin-bottom: 2%;
@@ -589,10 +590,12 @@ input[type="checkbox"] {
   }
 }
 
+//container within the wrapper
 .input-and-button-container { 
   max-width: 550px; 
   margin: 0 auto;
 }
+//inputs or several inputs for the input-and-button-wrapper
 .input-container {
   display: inline-block; 
   width: 67%;
