@@ -1,0 +1,189 @@
+/*
+	
+	OVERVIEW
+
+		The CSS was initially built by Lipman-Hearne in collaboration with the BCSR team. They used Bootstrap as the basis. Then created additional partials beginning with app_. 
+
+		Overtime, I have modified files and added new partials. 
+
+		app_reputation-and-outomes and app_at-a-glance was added by Octopus. 
+
+		-Michael Chameides, August 2015
+
+	GUIDELINES
+
+		Principles
+
+			"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+			
+			Don't try to prematurely optimize your code; keep it readable and understandable.
+
+			All code in any code-base should look like a single person typed it, even when many people are contributing to it.
+
+			If in doubt when deciding upon a style use existing, common patterns.	
+
+		Comments
+
+			Well commented code is extremely important. Take time to describe components, how they work, their limitations, and the way they are constructed. Don't leave others in the team guessing as to the purpose of uncommon or non-obvious code.
+
+			When introducing ideas and sections, place comments on a new line above their subject.
+
+			Put aside comments describing the specific use of a value to the side with a //
+
+			Example:
+
+			/* 
+			   Section comment block
+			*/
+
+			// Basic comment example
+
+			/*aside comment example: 
+
+				figcaption {
+					cite {
+						text-align: center; 
+			    	display: inline; //override blockquote styling
+						font-style:normal;
+						@include LeHavre(1.2rem);
+					}
+				}
+				
+
+
+		Spacing
+
+			// Example of good basic formatting practices
+			.styleguide-format {
+			  color: #000;
+			  background-color: rgba(0, 0, 0, .5);
+			  border: 1px solid #0f0;
+			}
+
+			Use a two space indent.
+
+			Put spaces after : in property declarations.
+
+			Put spaces before { in rule declarations.
+
+			Put line breaks between rulesets.
+
+			Place closing braces of declaration blocks on a new line in the same column as the first character of the ruleset.
+
+			Each declaration should appear on its own line for more accurate error reporting.
+
+			When grouping selectors, keep individual selectors to a single line.
+
+				// Example of individual selectors getting their own lines (for error reporting)
+				.multiple,
+				.classes,
+				.get-new-lines {
+				  display: block;
+				}
+
+		Formatting
+
+			Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;.
+		
+
+			Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values.
+
+				// Avoid unnecessary shorthand declarations
+				.not-so-good {
+				  margin: 0 0 20px;
+				}
+				.good {
+				  margin-bottom: 20px;
+				}
+
+		Misc
+
+			As a rule of thumb, avoid unnecessary nesting in SCSS. At most, aim for three levels. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
+
+		Bundles
+			
+			_css
+			|
+			|-- bootrap (Use /boostrap to modify the original bootstrap rules)
+			|
+			app_[file] Use these files modify existing files and to add new rules
+
+			The app_files could be more modular. Consider breaking these up more as we modify them. 
+				
+
+
+	June 2015, LH writes: 
+
+	First, we'll define all of the global styles and Boostrap overrides.
+	
+	Rather than creating long media queries, let's specify mobile first,
+	and then write exceptions for bigger screens in media queries nested 
+	within each style declaration.
+	
+	The TOC is not meant to be a static structure for this document, but
+	the framework for building it out. Sections will be added - you may need,
+	for instance, to declare a set of globally-available classes that can
+	be applied to buttons or to links that should appear like buttons, 
+	which would be section I-6.
+	
+	Let's take care not to paint ourselves into the corner of making the 
+	navigation and homepage styles be the globals, such that the H1, as it 
+	appears on every page BUT the home page, needs to be written as an
+	exception rule ( ie, 'body.nothome h1' ).
+	
+	The Sass-lang website offers this pithy observation that should be 
+	one of our guiding principles:
+	
+		Sass will let you nest your CSS selectors in a way that
+		follows the same visual hierarchy of your HTML. Be aware that
+		overly nested rules will result in over-qualified CSS that
+		could prove hard to maintain and is generally considered bad
+		practice.
+		
+	And, given that we're handing this off to a development team that might
+	need to rename containers, or add classes to containers, or change IDs
+	in order to integrate them into their custom CMS, let's not hand over
+	a stylesheet that requires too much de-nesting to make the site work once
+	it's out of our hands, and be judicious in our assignation of IDs. 
+	In other words, every time you define a paragraph style like this:
+	
+		body.about {
+			div#main_container {
+				&.container {
+					div.row {
+						div.col-8 {
+							p {
+								font-size:14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	
+	Domo eats a kitten.
+	
+	
+	
+	
+	
+	I. Globals
+	
+		1. Global color variables
+	
+		2. Global font variable families
+	
+		3. Bootstrap and other template base styles
+	
+		4. Global font-size settings
+	
+		5. Global link styling
+		
+	II. Per-page/element locals
+	
+		1. Top navigation
+		
+		2. Footer
+		
+		3. Home-page styles
+*/
