@@ -1,0 +1,28 @@
+/*
+	I-1. Global color variables
+*/
+/* Simon's Rock Red
+Simon's Rock color palette is defined by the red. 
+This color is the action color. 
+It should only be used for CTAs. It can be
+used as text color or as background color. */
+
+$red:#be2126;
+
+/* Neutral Pallette
+This palette should be used for interface items 
+within secondary navigation, text color and backgrounds. */
+
+$white:#ffffff;
+$light-gray:#efefef;
+$medium-gray:#6e675f;
+$dark-gray:#262421; // but not black - there should be no #000000 in the palette except in the footer background 
+
+/* Secondary Pallette
+This palette is used to represent different subcatagories 
+at Simon's Rock that need attention drawn to them. This palette
+should not be added to. */
+
+$orange:#ec6a1e;
+$blue:#5cb7b7;
+$yellow:#e2be00;

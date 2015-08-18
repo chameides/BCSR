@@ -1,0 +1,68 @@
+/*
+	I-3. Bootstrap and other template base styles
+*/
+
+
+body { 
+	background-color:$white;
+}
+
+$pagegrid-break-high: 1570px;
+$pagegrid-break-med: 1370px;
+$pagegrid-break-low: 990px;
+
+/*
+	I-4. Global font, font-size settings
+*/
+
+body {
+	@include HelveticaCond(1.5rem);
+	color:$medium-gray; 
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight:normal;
+	font-style:normal;
+	text-rendering:optimizelegibility;
+}
+h1 {
+	color:$dark-gray;
+	@include LeHavre(2.5rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(5rem);
+		line-height:1.1;
+	}
+}
+h2 {
+	@include LeHavre(2rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(4rem);
+		line-height:1.1;
+	}
+}
+h3 {
+	@include LeHavre(1.75rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(3rem);
+		line-height:1.1;
+	}
+}
+h4 {
+	@include LeHavre(1.75rem);
+	line-height:1;
+	@media (min-width: $screen-sm-min) {
+		@include LeHavre(2rem);
+		line-height:1.1;
+	}
+}
+h5 {
+	@include LeHavre(1.55rem);
+	letter-spacing: -0.05em;
+}
+h6 {
+	@include LeHavre(1.3rem);
+	letter-spacing: -0.05em;
+}

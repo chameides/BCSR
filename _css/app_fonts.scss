@@ -1,0 +1,27 @@
+/*
+	I-2. Global font variable families
+*/
+@import "MyFontsWebfontsKit.scss";
+@import "font-awesome.min.css";
+$helvetica:'Helvetica Neue 55 Roman',Helvetica,Arial,sans-serif !default;
+$helvetica-cond:'HelveticaNeueLT-Condensed',Helvetica,Arial,sans-serif; 
+$helvetica-md-cond:'HelveticaNeueLT-MediumCond',Helvetica,Arial,sans-serif; 
+$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif; 
+
+@mixin Helvetica($fontsize) {
+	font-family:$helvetica;
+	font-size:$fontsize;
+}
+@mixin HelveticaCond($fontsize) {
+	font-family:$helvetica-cond;
+	font-size:$fontsize;
+}
+@mixin HelveticaCondMed($fontsize) {
+	font-family:$helvetica-md-cond;
+	font-size:$fontsize;
+}
+@mixin LeHavre($fontsize) {
+	font-family:$lehavre;
+	font-size:$fontsize;
+	letter-spacing: -0.08em;
+}
