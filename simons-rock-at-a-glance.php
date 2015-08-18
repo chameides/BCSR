@@ -7,7 +7,7 @@
     <script src="_js/modernizr.custom.js"></script>
     <title>Simon's Rock at a Glance</title>
     <?php include '_inc/head-js-css.php'; ?>
-    <?php include '_inc/icon-loader.php'; ?>
+    <?php include '_resources/php/icon-loader.php'; ?>
   </head>
 
   <body class="has-hero">
