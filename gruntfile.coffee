@@ -17,11 +17,11 @@ module.exports = (grunt) ->
           expand: true
           cwd: '_images/_grunticon'
           src: ['*.svg', '*.png']
-          dest: '_css'
+          dest: '_resources/css/icons'
         }]
         options:
-          loadersnippet: '../_js/grunticon.loader.js'
-          pngfolder: '../_images/png-fallback-icons'
+          loadersnippet: '../../../_js/grunticon.loader.js'
+          pngfolder: '../../../_images/why-simons-rock/at-a-glance/png-fallback-icons'
           template: '_images/_grunticon/css.hbs'
           enhanceSVG: true
           customselectors:
@@ -37,12 +37,6 @@ module.exports = (grunt) ->
         files:
           '_css/app.css': '_css/app.scss'
 
-    autoprefixer:
-      dist:
-        options:
-          browsers: ['last 2 versions', 'ie 8', 'ie 9']
-        src: '_css/app.css'
-        dest: '_css/app.css'
 
     watch:
       styles:
@@ -58,4 +52,4 @@ module.exports = (grunt) ->
 
   require('load-grunt-tasks')(grunt)
 
-  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'sass', 'autoprefixer'])
+  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'sass'])
