@@ -60,7 +60,7 @@
 			<div id="detail_left_nostyle">
 				<h4 class="date"><?php echo $myEvnt['Date'];?></h4>
 				<time itemprop="startDate" content="<?php echo $myEvnt['Timestamp'];?>"><?php echo $myEvnt['Time'];?></time>
-                <h4 itemprop="name" class="locname"><i class="fa fa-map-marker"></i>  <?php echo ($myEvnt['Venue_URL'] != '') ? ' <a href="'.$myEvnt['Venue_URL'].'" target="_blank">'.$myEvnt['Venue_Name'].'</a>' : $myEvnt['Venue_Name'];?></h4>			
+                <h4 itemprop="name" class="locname"><i class="fa fa-map-marker"></i>  <?php echo ($myEvnt['Venue_URL'] != '') ? ' <a href="'.$myEvnt['Venue_URL'].'" target="_blank">'. $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '') .'</a>' : $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '')?></h4>			
 			</div>
 
 					<br />

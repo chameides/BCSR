@@ -21,7 +21,6 @@
 
 		<!-- <p>Theme: <?php select_theme();?></p> -->
 		
-		<h2>&nbsp;</h2>
 		<?php theme_links();?>
 		
 	</aside>
