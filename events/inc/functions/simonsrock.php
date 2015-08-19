@@ -95,7 +95,11 @@
             <legend>'.$hc_lang_submit['EventDetails'].'</legend>
             <label for="eventTitle">'.$hc_lang_submit['Title'].'</label>
             <input name="eventTitle" id="eventTitle" type="text" size="65" maxlength="150" required="required" placeholder="'.$hc_lang_submit['PlaceTitle'].'" value="" />
-            <label for="eventDescription">'.$hc_lang_submit['Description'].'</label>
+            <div class="col-md-12 row">
+                <p></p>
+                <p><strong>'.$hc_lang_submit['Description'].'</strong></p>
+                <p>'.$hc_lang_submit['DescriptionHelper'].'</p>
+            </div>  
             <textarea name="eventDescription" id="eventDescription" rows="20" placeholder="'.$hc_lang_submit['PlaceDesc'].'" class="mce_edit"></textarea>
             <label for="cost">'.$hc_lang_submit['Cost'].'</label>
             <input name="cost" id="cost" type="text" size="25" maxlength="50" placeholder="'.$hc_lang_submit['PlaceCost'].'" value="" />
@@ -314,7 +318,11 @@
             <legend>'.$hc_lang_submit['MessageLabel'].'</legend>
             <label for="goadminmessage">'.$hc_lang_submit['Include'].'</label>
             <input name="goadminmessage" id="goadminmessage" type="checkbox" value="" onclick="togThis(this,document.getElementById(\'adminmessage\'));" />
-            <label for="adminmessage">'.$hc_lang_submit['Message'].'</label>
+            <div class="col-md-12 row">
+                <p></p>
+                <p><strong>'.$hc_lang_submit['Message'].'</strong></p>
+                <p>'.$hc_lang_submit['MessageHelper'].'</p>
+            </div>
             <textarea name="adminmessage" id="adminmessage" rows="7" disabled="disabled" required="required" placeholder="'.$hc_lang_submit['PlaceMsgAdmin'].'"></textarea>
         </fieldset>
         <input name="submit" id="submit" type="submit" value="'.$hc_lang_submit['SubmitEvent'].'" />
