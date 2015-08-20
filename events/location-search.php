@@ -43,7 +43,7 @@
 			$hl = ($x % 2 == 0) ? ' class="hl_frm"' : '';
 			echo '
 				<label'.$hl.' for="locValue_'.$row[0].'"><input name="locValue" id="locValue_'.$row[0].'" type="radio" onclick="setLocation('.$row[0].',\''.htmlentities(str_replace('\'','\\\'',$row[1]),ENT_QUOTES) . '\', 1);" />';
-			echo ($hc_cfg[52] != '' && ($row[8] != '' && $row[9] != '')) ? '<a href="'.$hc_cfg[52].'maps?q='.$row[8].','.$row[9].'" target="_blank"><img src="'.CalRoot.'/img/icons/map.png" width="16" height="16" alt="' . $hc_lang_search['Map'] . '" /></a>' : '';
+			echo ($hc_cfg[52] != '' && ($row[8] != '' && $row[9] != '')) ? '<a href="'.$hc_cfg[52].'maps?q='.$row[8].','.$row[9].'" target="_blank"><img src="'.CalRoot.'/img/icons/map.png" width="16" height="16" class="pull-left" alt="' . $hc_lang_search['Map'] . '" /></a>' : '';
 			echo ($po == 0 && isset($_SESSION['AdminLoggedIn'])) ? '<a href="' . AdminRoot . '/index.php?com=addlocation&amp;lID=' . $row[0] . '" target="_blank"><img src="' . AdminRoot . '/img/icons/edit.png" width="16" height="16" alt=""  /></a>' : '';
 			echo '
 				<span class="loc_name">'.htmlentities($row[1],ENT_QUOTES).'</span>
