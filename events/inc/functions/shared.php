@@ -591,7 +591,7 @@
 				break;
 		}
 		echo '
-		<div'.($type == 1 ? ' id="hc_dialog"':'').' class="feedback '.$fType.'" style="opacity:1;"><img src="'.CalRoot.'/img/feedback/'.$fType.'.png" alt="" />&nbsp;'.$fmessage.'</div>';
+		<div'.($type == 1 ? ' id="hc_dialog"':'').' class="feedback '.$fType.'" style="opacity:1;"><img src="'.CalRoot.'/img/feedback/'.$fType.'.png" alt="" class="pull-left" />&nbsp;'.$fmessage.'</div>';
 	}
 	/**
 	 * Convert MySQL date (YYYY-MM-DD) or timestamp (YYYY-MM-DD HH:MM:SS) to passed format.
