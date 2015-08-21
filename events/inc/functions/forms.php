@@ -593,8 +593,10 @@
 		}
 		echo '
 		<p>' . $hc_lang_submit['Notice'] . '</p>
-		<p>(<span class="req2">*</span>) = '.$hc_lang_submit['Required2'].'<br />
-		(<span class="req3">*</span>) = '.$hc_lang_submit['Required3'].'</p>
+		<p>
+		<span class="req1">*</span>'.$hc_lang_submit['Required1'].'<br />
+		<span class="req2">*</span>'.$hc_lang_submit['Required2'].'<br />
+		<span class="req3">*</span>'.$hc_lang_submit['Required3'].'</p>
 		
 		<form id="frmEventSubmit" name="frmEventSubmit" method="post" action="'.CalRoot.'/event-submit.php" onsubmit="return validate();">';
 		
@@ -812,8 +814,7 @@
 		if($hc_cfg[29] == 1){
 		echo '
 		<fieldset>
-			<legend>'.$hc_lang_submit['EventCat'].'</legend>
-			<label>'.$hc_lang_submit['Categories'].'</label>';
+			<legend>'.$hc_lang_submit['EventCat'].'</legend>';
 		
 			$query = (($user_categories != '') ? "SELECT c.PkID, c.CategoryName, c.ParentID, c.CategoryName as Sort, NULL as Selected
 					FROM " . HC_TblPrefix . "categories c 
