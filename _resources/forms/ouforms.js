@@ -18,7 +18,7 @@ $(window).load(function () {
         var skid = bid.replace(toRemove, '');
         var form_data = $("#forms_" + skid).serialize();
         //set variable for google analytics event.
-        var gaEvent = $("#id_gaevent1").attr('placeholder'); 
+        var gaEvent = $("#id_gaevent").attr('placeholder'); 
         $("#form_" + skid).off('submit').on('submit', function (e) {
             e.preventDefault();
             $("#btn_"+skid).hide(); 
