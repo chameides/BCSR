@@ -1,4 +1,4 @@
-$(window).load(function () {
+$(window).load(function () {    
     
     $("input:text").on('input', function () {
         $(this).next('.label-important:first').remove();
@@ -76,8 +76,9 @@ $(window).load(function () {
                             $("#form_" + skid).remove();
                             $("#status_" + skid).html('<h1 id="form_elements" class="sg-heading">Thank You</h1><p>' + resultObj.message + "</p>");
                             if (gaEvent) {
+                                var gtmLabel = 'formInquiry' + gaEvent;
                                 dataLayer.push({
-                                    'event':'formInquiryName'
+                                    'event': gtmLabel
                                 });
                             }
                             else {
