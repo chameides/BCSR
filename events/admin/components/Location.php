@@ -78,7 +78,7 @@
 			'.(($term != '') ? '<label>&nbsp;</label><span class="output"><a href="'.AdminRoot.'/index.php?com=location&p=0&a='.$resLimit.'">'.$hc_lang_locations['AllLink'].'</a></span>' : '').'
 		</fieldset>';
 	
-	$result = doQuery("SELECT PkID, Name, IsPublic FROM " . HC_TblPrefix  . "locations WHERE IsActive = 1 $queryS ORDER BY IsPublic, Name LIMIT " . $resLimit . " OFFSET " . ($resOffset * $resLimit));
+	$result = doQuery("SELECT PkID, Name, IsPublic, Address2 FROM " . HC_TblPrefix  . "locations WHERE IsActive = 1 $queryS ORDER BY IsPublic, Name LIMIT " . $resLimit . " OFFSET " . ($resOffset * $resLimit));
 	if(hasRows($result)){
 		echo '
 		<ul class="data">
@@ -94,7 +94,9 @@
 			
 			echo '
 			<li class="row'.$hl.'">
-				<div class="txt" style="width:75%;">'.cOut($row[1]).'</div>
+				<div class="txt" style="width:50%;">'.cOut($row[1]).'</div>
+				<div class="txt" style="width:15%;">'.cOut($row[3]).'</div>
+
 				<div class="txt" style="width:15%;">'.(($row[2] == 1) ? $hc_lang_locations['Public'] : $hc_lang_locations['AdminOnly']).'</div>
 				<div class="tools" style="width:10%;">
 					<a href="'.AdminRoot.'/index.php?com=addlocation&amp;lID='.$row[0].'"><img src="'.AdminRoot.'/img/icons/edit.png" width="16" height="16" alt="" /></a>
