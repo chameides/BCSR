@@ -18,7 +18,8 @@ $(window).load(function () {
         var skid = bid.replace(toRemove, '');
         var form_data = $("#forms_" + skid).serialize();
         //set variable for google analytics event.
-        var gaEvent = $("#id_gaevent").attr('placeholder'); 
+        var gaEventInquiry = $("#id_gaEventInquiry").attr('placeholder');
+        var gaEventNonInquiry = $("#id_gaEventNonInquiry").attr('placeholder'); 
         $("#form_" + skid).off('submit').on('submit', function (e) {
             e.preventDefault();
             $("#btn_"+skid).hide(); 
@@ -75,14 +76,19 @@ $(window).load(function () {
 
                             $("#form_" + skid).remove();
                             $("#status_" + skid).html('<h1 id="form_elements" class="sg-heading">Thank You</h1><p>' + resultObj.message + "</p>");
-                            if (gaEvent) {
-                                var gtmLabel = 'formInquiry' + gaEvent;
+                            if (gaEventInquiry) {
+                                var gtmLabel = 'formInquiry' + gaEventInquiry;
                                 dataLayer.push({
                                     'event': gtmLabel
                                 });
                             }
                             else {
-                                dataLayer.push({'event':'Form Submit'});//generic analytics form event
+                                var gtmLabel = 'formNonInquiry' + gaEventNonInquiry;
+                                dataLayer.push({
+                                    'event': gtmLabel
+                                });
+                                //generic analytics form event    
+                                //dataLayer.push({'event':'Form Submit'});
                             }
                             
                             $(document).scrollTop($("#status_" + skid).offset().top);
