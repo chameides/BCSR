@@ -84,7 +84,7 @@
 		<option value="1990">1990</option>
 		</select></div>
 		<div class="form-group col-md-12">
-			<label for="gradeLevel">Grade Level</label>
+			<label for="gradeLevel">Grade Level*</label>
 			<select class="form-control" name="gradeLevel" required="required">
 				<option value="">
 					<?php
