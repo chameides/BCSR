@@ -1,3 +1,6 @@
+//turn parameter into variable
+//var name = document.getElementById("hobson-form-submit").getAttribute("data-name");
+
 /*
 1. Dummy Data
 2. Submit
@@ -8,10 +11,10 @@
 $( document ).ready(function() {
 
     // 1. Dummy data   
-    /*
+    
         $('#txtFirstName').val('firstName');
-        $('#txtLastName').val('lastName');
-        $('#txtEmail').val('test@test.com');
+        $('#txtLastName').val('delete_lastName');
+        $('#txtEmail').val('delete_test@test.com');
         $('#birth_month').val('07');
         $('#birth_day').val('18');
         $('#birth_year').val('1995');
@@ -20,7 +23,9 @@ $( document ).ready(function() {
         $('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
-    */
+
+
+    
      
     //2. Submit
     // Variable to hold request
@@ -89,6 +94,9 @@ $( document ).ready(function() {
     //3. Validate
     $("#contactForm").validate({
         rules: {
+            attendanceDate: {
+                required: true
+            },
             txtFirstName: {
                 required: true
             },
@@ -99,6 +107,9 @@ $( document ).ready(function() {
                 required: true,
                 email: true
             },
+            txtPhoneRequired: {
+                required: true
+            }, 
             txtPhone: {
                 required: '#chxInfoByPhone:checked'
             },
@@ -140,7 +151,9 @@ $( document ).ready(function() {
     });
     
     //4. Conditional Display
-    $('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB, #note-container').hide();  
+
+
+    $('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB, #note-container, #dateHeadlineParent, #interviewParent').hide();  
     $('input:radio[name="userRole"]').change(
         function(){
             //reveal Parent contact if Student is selected
@@ -151,11 +164,11 @@ $( document ).ready(function() {
             }
             //reveal and hide fields if Parent is selected
             if ($(this).is(':checked') && $(this).val() == 'Parent') {
-                $('#parentName, #childFirst, #childLast, #childDOB').fadeIn();
-                $('#emailAddress').fadeOut();
+                $('#parentName, #childFirst, #childLast, #childDOB, #dateHeadlineParent, #interviewParent').fadeIn();
+                $('#emailAddress, #dateHeadlineDefault, #interviewDefault').fadeOut();
             } else {
-                $('#parentName, #childFirst, #childLast, #childDOB').fadeOut();
-                $('#emailAddress').fadeIn();
+                $('#parentName, #childFirst, #childLast, #childDOB, #dateHeadlineParent, #interviewParent').fadeOut();
+                $('#emailAddress, #dateHeadlineDefault, #interviewDefault').fadeIn();
             }
             //reveal and hide fields if Other is selected
             if ($(this).is(':checked') && $(this).val() == 'Other') {
