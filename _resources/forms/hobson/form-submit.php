@@ -26,6 +26,19 @@ include 'config.php';
 include 'functions.php';
 
 /* 3. Assemble field data to pass to web server */
+
+
+if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
+    $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
+    $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
+}
+else { //not discovery day form
+    $formSource = 'RFI Form'; 
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
+};
+
+
+
 $fields = array(
     "First Name" => $_POST['txtFirstName'],
     "Last Name" => $_POST['txtLastName'],
@@ -57,7 +70,7 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
 //determine user type in order to select which fields to map to contact data 
 if ($_POST['userRole'] == 'Parent') {
     $fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
-    $fields["Parent 1 Preferred Phone"] = $_POST['txtPhone'];
+    $fields["Parent 1 Preferred Phone"] = $phone;
     $fields["Parent 1 Email"] = $_POST['parentEmailSelf'];
 }
 else {
@@ -83,16 +96,16 @@ else {
     /* Determine where to put phone number based on phone type */
     switch($_POST['drpPhoneType']) {
         case 'Home':
-            $fields["Phone"] = $_POST['txtPhone'];
+            $fields["Phone"] = $phone;
             break;
         case 'Mobile';
-            $fields["Mobile"] = $_POST['txtPhone'];
+            $fields["Mobile"] = $phone;
             break;
     }
 }
 
 
-$fields["Description"] = 'Source: RFI Form | ' . 'Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+$fields["Description"] = 'Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
 
 //determine graduation year based on gradelevel
@@ -263,5 +276,4 @@ if ($_POST['userRole'] !== 'Other') {
     //send data to Hobson
     sendData();
 }
-
 ?>
