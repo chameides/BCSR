@@ -248,7 +248,15 @@ $fields["Contact Owner"] = $contactOwnerID;
 
 
 /* 4. Create creatFields array per web service requirement */
-$data_contact = array("createFields" => $fields);
+$data_contact = 
+    array(
+        "createFields" => $fields,
+        "returnFields" => array(
+                "Entity ID",
+                "Last Name",
+                "Description",
+            )
+    );
 
 //define variables for specic curl event
 $content = json_encode($data_contact);
@@ -275,5 +283,6 @@ if ($_POST['userRole'] !== 'Other') {
     $url_curl = $url_lifecycles;
     //send data to Hobson
     sendData();
+
 }
 ?>
