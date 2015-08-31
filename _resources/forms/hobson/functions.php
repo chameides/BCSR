@@ -45,6 +45,7 @@ function sendData() {
     curl_close($ch);
     var_dump($return);
     
+    
     /*
     $ch = curl_init($url_curl);
     curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
@@ -107,6 +108,27 @@ function errorCheck() {
         mail ( $to_error , $subject , $message, $headers );
         };
     };
+    $subject ='Test: Hobson Radius Form';
+        $message = 'There has been an error on the Hobson Radious Form Submission
+            
+            Status: ' . $status .
+            '
+            ***Modify: ' . $modify .
+            '
+            ***Error: ' . $errorMessage .
+            '
+            ***url:' . $url_curl .
+            '
+            ***entityID:' . $entityID .
+            
+            '
+            ***error return:' . $return  . 
+            '
+            
+            data send:' . print_r( $data_contact, true ) 
+        ;
+        //send email
+        mail ( $to_error , $subject , $message, $headers );
 }
 
 ?>
