@@ -71,6 +71,8 @@ function errorCheck() {
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
+    $description = get_string_between($return, 'description":"', '","Entity');
+    $description2 = $fields["Description"] . $description;
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
@@ -79,8 +81,6 @@ function errorCheck() {
             //if contacts table
             if ($url_curl == $url_contacts) {
                 $entityID = filter_var($errorMessage, FILTER_SANITIZE_NUMBER_INT);
-                $description = get_string_between($return, 'description":"', '","Entity');
-                $description2 = $fields["Description"] . $description;
             };
             $url_curl = $url_curl . '/' . $entityID;
             sendData();
@@ -110,6 +110,7 @@ function errorCheck() {
         mail ( $to_error , $subject , $message, $headers );
         };
     };
+
     $subject ='Test: Hobson Radius Form';
         $message = 'There has been an error on the Hobson Radious Form Submission
             
