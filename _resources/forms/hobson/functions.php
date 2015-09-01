@@ -11,7 +11,7 @@ function get_string_between($string, $start, $end){
     return substr($string,$ini,$len);
 };
 
-//return interger
+//return integer
 function begins_with($haystack, $needle) {
     return strpos($haystack, $needle) === 0;
 }
@@ -79,6 +79,8 @@ function errorCheck() {
             //if contacts table
             if ($url_curl == $url_contacts) {
                 $entityID = filter_var($errorMessage, FILTER_SANITIZE_NUMBER_INT);
+                $description = get_string_between($return, 'description":"', '","Entity');
+                $description2 = $fields["Description"] . $description;
             };
             $url_curl = $url_curl . '/' . $entityID;
             sendData();
@@ -120,6 +122,12 @@ function errorCheck() {
             ***url:' . $url_curl .
             '
             ***entityID:' . $entityID .
+            
+            '
+            ***Description:' . $description .
+            
+            '
+            ***Description2:' . $description2 .
             
             '
             ***error return:' . $return  . 

@@ -105,7 +105,7 @@ else {
 }
 
 
-$fields["Description"] = 'Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
 
 //determine graduation year based on gradelevel
@@ -253,7 +253,6 @@ $data_contact =
         "createFields" => $fields,
         "returnFields" => array(
                 "Entity ID",
-                "Last Name",
                 "Description",
             )
     );
