@@ -72,7 +72,7 @@ function errorCheck() {
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
     $description = get_string_between($return, 'Description":"', '","Entity');
-    $description2 = $fields["Description"] . $description;
+    $description2 = $descriptionAppend . ' ### ' .$description;
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
@@ -128,6 +128,10 @@ function errorCheck() {
             ***Description:' . $description .
             
             '
+            ***Description Append:' . $descriptionAppend .
+            
+            '
+            
             ***Description2:' . $description2 .
             
             '

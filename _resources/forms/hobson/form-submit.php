@@ -104,8 +104,8 @@ else {
     }
 }
 
-
-$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+$descriptionAppend = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+$fields["Description"] = $descriptionAppend;
 
 
 //determine graduation year based on gradelevel
