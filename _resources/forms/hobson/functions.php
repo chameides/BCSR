@@ -66,13 +66,11 @@ function errorCheck() {
     /*check for error
     Hobson returns a string after form submission. We need to parse the string to determine the error. 
     */
-    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID, $descriptionAppend;
+    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID;
     
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
-    $description = get_string_between($return, 'Description":"', '","Entity');
-    $description2 = $descriptionAppend . ' ### ' .$description;
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
@@ -110,38 +108,8 @@ function errorCheck() {
         mail ( $to_error , $subject , $message, $headers );
         };
     };
-
-    $subject ='Test: Hobson Radius Form';
-        $message = 'There has been an error on the Hobson Radious Form Submission
-            
-            Status: ' . $status .
-            '
-            ***Modify: ' . $modify .
-            '
-            ***Error: ' . $errorMessage .
-            '
-            ***url:' . $url_curl .
-            '
-            ***entityID:' . $entityID .
-            
-            '
-            ***Description:' . $description .
-            
-            '
-            ***Description Append:' . $descriptionAppend .
-            
-            '
-            
-            ***Description2:' . $description2 .
-            
-            '
-            ***error return:' . $return  . 
-            '
-            
-            data send:' . print_r( $data_contact, true ) 
-        ;
-        //send email
-        mail ( $to_error , $subject , $message, $headers );
+    //send email
+    mail ( $to_error , $subject , $message, $headers );
 }
 
 ?>
