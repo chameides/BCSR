@@ -71,7 +71,7 @@ function errorCheck() {
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
-    $description = get_string_between($return, 'description":"', '","Entity');
+    $description = get_string_between($return, 'Description":"', '","Entity');
     $description2 = $fields["Description"] . $description;
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
