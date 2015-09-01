@@ -104,8 +104,7 @@ else {
     }
 }
 
-$descriptionAppend = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
-$fields["Description"] = $descriptionAppend;
+$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
 
 //determine graduation year based on gradelevel
@@ -247,7 +246,7 @@ switch($_POST['drpState']) {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
-/* 4. Create creatFields array per web service requirement */
+/* 4. Create createFields array per web service requirement */
 $data_contact = 
     array(
         "createFields" => $fields,
