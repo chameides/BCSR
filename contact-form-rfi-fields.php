@@ -103,7 +103,7 @@
 			</select>
 		</div>
 		</div>
-		<div id="note-container" class="col-sm-12 form-group"><label for="text_area">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea></div>
+		<div id="note-container" class="col-sm-12 form-group"><label for="note">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea></div>
 		<div id="chxInfoByErr" class="col-sm-12"><label>I'd like to receive information by</label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
