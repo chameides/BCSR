@@ -16,7 +16,7 @@
     
     
     <div class="container">
-	<form id="contactForm">
+	
 
 
 <h1 id="form_elements" class="sg-heading">Request for Info</h1>
