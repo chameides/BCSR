@@ -93,7 +93,7 @@
 		</div>
 		<div class="form-group col-md-12">
 			<label for="gradeLevel">Grade Level*</label>
-			<select class="form-control" id="gradelevel" name="gradeLevel" required="required">
+			<select class="form-control" id="gradeLevel" name="gradeLevel" required="required">
 				<option value="">
 					<?php
 						// replace php with xsl-freindly code in CMS <php>
