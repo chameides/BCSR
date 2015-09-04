@@ -1,6 +1,7 @@
 //turn parameter into variable
-//var name = document.getElementById("hobson-form-submit").getAttribute("data-name");
-
+if ($('#hobson-form-submit').length > 0) {
+  var formName = document.getElementById("hobson-form-submit").getAttribute("data-name");  
+}
 /*
 1. Dummy Data
 2. Submit
@@ -64,10 +65,18 @@ $( document ).ready(function() {
             // Callback handler that will be called on success
             request.done(function (response, textStatus, jqXHR){
                 // Log a message to the console
+                if (formName == 'discovery') {
+                    var nextPage = 'discovery-day-thank-you.php';
+                    var gtmLabel = 'Discovery Day Request';
+                }
+                else {
+                    var nextPage = 'contact-form-thanks.php';
+                    var gtmLabel = 'Request Info';
+                }
                 //console.log("Hooray, it worked!");
-                window.location.replace('contact-form-thanks.php');
+                window.location.replace(nextPage);
                 //add event for gta
-                dataLayer.push({'event':'Request Info'});
+                dataLayer.push({'event': gtmLabel });
             });
         
             // Callback handler that will be called on failure
