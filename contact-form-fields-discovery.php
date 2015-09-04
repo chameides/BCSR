@@ -40,22 +40,6 @@
 			<option value="Mobile">Mobile</option>
 			</select>
 		</div>
-		<div id="PhoneType2" class="form-group">
-			<label for="drpPhoneType2">Phone Type2</label>
-			<select id="drpPhoneType2" class="form-control" name="drpPhoneType2">
-			<option value="">- Select Phone Type -</option>
-			<option value="Home">Home</option>
-			<option value="Mobile">Mobile</option>
-			</select>
-		</div>
-		<div id="PhoneType3" class="form-group">
-			<label for="drpPhoneType3">Phone Type3</label>
-			<select id="drpPhoneType3" class="form-control" name="drpPhoneType3">
-			<option value="test">- Select Phone Type -</option>
-			<option value="Home">Home</option>
-			<option value="Mobile">Mobile</option>
-			</select>
-		</div>
 		<div id="DOB">
 		<div class="form-group col-sm-6"><label for="birth_month"><span id="childDOB">Child&rsquo;s </span>Date of Birth* <span class="sr-only">(Month)</span></label><select id="birth_month" class="form-control" name="birth_month" required="required">
 		<option value="">Month</option>
