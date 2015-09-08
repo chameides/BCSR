@@ -66,8 +66,8 @@ $( document ).ready(function() {
             request.done(function (response, textStatus, jqXHR){
                 // Log a message to the console
                 if (formName == 'discovery') {
-                    var nextPage = 'discovery-day-thank-you.php';
-                    var gtmLabel = 'Discovery Day Request';
+                    var nextPage = 'discovery-day-thank-you.php'; 
+                    var gtmLabel = 'formInquiryDiscoveryDayRequest';
                 }
                 else {
                     var nextPage = 'contact-form-thanks.php';
