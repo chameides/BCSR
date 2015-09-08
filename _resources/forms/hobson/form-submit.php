@@ -4,7 +4,7 @@
 Table of Contents
 1. Error Check
 2. Includes
-3. Assebmle Field Data
+3. Assemble Field Data
 4. Create Array
 5. Send Data to Hobson
 */
