@@ -63,9 +63,13 @@ if ($_POST['drpCountry'] !== 'United States' ) {
 
 //only post state, if country is US or Canada
 if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
-    $fields["Primary State Code"] = $_POST['drpState'] ;
+    $fields["Primary State Code"] = $_POST['drpState'];
+}
+// else, prep contact assignments
+else {
+    $countryLength = strlen($_POST['drpCountry']);
 };
-
+ 
             
 //determine user type in order to select which fields to map to contact data 
 if ($_POST['userRole'] == 'Parent') {
@@ -126,122 +130,133 @@ $chandraJoosdeKovenID   = 685000017194351;
 $joelPittID             = 685000000121843;
 $mollyGreeneID          = 685000022393324;
 $sophieMettlerGroveID   = 685000023022766;
+$coleenCoxID            = 685000002082963;
 
 
-/* Assign Contact Owner based on State/Province */
-switch($_POST['drpState']) {
-    /* Amanda Dubrowski */
-    case 'AL':
-    case 'AB':
-    case 'AR':
-    case 'DE':
-    case 'DC':
-    case 'FL':
-    case 'GA':
-    case 'IL':
-    case 'IN':
-    case 'KY':
-    case 'LA':
-    case 'MD':
-    case 'MI':
-    case 'MS':
-    case 'MO':
-    case 'NC':
-    case 'OH':
-    case 'SC':
-    case 'TN':
-    case 'VA':
-    case 'WV':
-        $contactOwnerID = $amandaDubrowskiID;
-        break;
-    /* Chandra Joos deKoven */
-    case 'AZ':
-    case 'CA':
-    case 'CO':
-    case 'ID':
-    case 'KS':
-    case 'MT':
-    case 'NE':
-    case 'NV':
-    case 'NM':
-    case 'OK':
-    case 'OR':
-    case 'UT':
-    case 'WA':
-    case 'WY':
-    case 'BC':
-    case 'IA':
-    case 'MB':
-    case 'MN':
-    case 'NB':
-    case 'NF':
-    case 'ND':
-    case 'NT':
-    case 'NS':
-    case 'ON':
-    case 'PE':
-    case 'QC':
-    case 'SK':
-    case 'SD':
-    case 'WI':
-    case 'YT':
-        $contactOwnerID = $chandraJoosdeKovenID;
-        break;
-    /* Joel Pitt */
-    case 'ME':
-    case 'NH':
-    case 'VT':
-        $contactOwnerID = $joelPittID;
-        break;
-    /* Molly Greene */
-    case 'CT':
-    case 'MA':
-    case 'NJ':
-    case 'PA':
-    case 'RI':
-    case 'TX':
-        $contactOwnerID = $mollyGreeneID;
-        break;
-    /* Sophie Mettler-Grove */
-    case 'AK':
-    case 'AS':
-    case 'CNMI':
-    case 'GU':
-    case 'HI':
-    case 'MH':
-    case 'PR':
-    case 'VI':
-        $contactOwnerID = $sophieMettlerGroveID;
-        break;
-    /* NY, broken up by zip codes (first 3 digits) */
-    case 'NY':
-        switch(substr($_POST['txtZipOrPostal'], 0, 3)){
-            case '100':
-            case '101':
-            case '102':
-            case '103':
-            case '104':
-            case '110':
-            case '111':
-            case '112':
-            case '113':
-            case '114':
-            case '116':
-            case '115':
-            case '117':
-            case '118':
-            case '119':
-                $contactOwnerID = $chandraJoosdeKovenID;
-                break;
-            default:
-                $contactOwnerID = $sophieMettlerGroveID;
-                break;
-        }
-        break;
-    default:
-        $contactOwnerID = $sophieMettlerGroveID;
-        break;
+/* Assign Contact Owner based on Country, State/Province, and Zip */
+if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
+    switch($_POST['drpState']) {
+        /* Amanda Dubrowski */
+        case 'AL':
+        case 'AB':
+        case 'AR':
+        case 'DE':
+        case 'DC':
+        case 'FL':
+        case 'GA':
+        case 'IL':
+        case 'IN':
+        case 'KY':
+        case 'LA':
+        case 'MD':
+        case 'MI':
+        case 'MS':
+        case 'MO':
+        case 'NC':
+        case 'OH':
+        case 'SC':
+        case 'TN':
+        case 'VA':
+        case 'WV':
+            $contactOwnerID = $amandaDubrowskiID;
+            break;
+        /* Chandra Joos deKoven */
+        case 'AZ':
+        case 'CA':
+        case 'CO':
+        case 'ID':
+        case 'KS':
+        case 'MT':
+        case 'NE':
+        case 'NV':
+        case 'NM':
+        case 'OK':
+        case 'OR':
+        case 'UT':
+        case 'WA':
+        case 'WY':
+        case 'BC':
+        case 'IA':
+        case 'MB':
+        case 'MN':
+        case 'NB':
+        case 'NF':
+        case 'ND':
+        case 'NT':
+        case 'NS':
+        case 'ON':
+        case 'PE':
+        case 'QC':
+        case 'SK':
+        case 'SD':
+        case 'WI':
+        case 'YT':
+            $contactOwnerID = $chandraJoosdeKovenID;
+            break;
+        /* Joel Pitt */
+        case 'ME':
+        case 'NH':
+        case 'VT':
+            $contactOwnerID = $joelPittID;
+            break;
+        /* Molly Greene */
+        case 'CT':
+        case 'MA':
+        case 'NJ':
+        case 'PA':
+        case 'RI':
+        case 'TX':
+            $contactOwnerID = $mollyGreeneID;
+            break;
+        /* Sophie Mettler-Grove */
+        case 'AK':
+        case 'AS':
+        case 'CNMI':
+        case 'GU':
+        case 'HI':
+        case 'MH':
+        case 'PR':
+        case 'VI':
+            $contactOwnerID = $sophieMettlerGroveID;
+            break;
+        /* NY, broken up by zip codes (first 3 digits) */
+        case 'NY':
+            switch(substr($_POST['txtZipOrPostal'], 0, 3)){
+                case '100':
+                case '101':
+                case '102':
+                case '103':
+                case '104':
+                case '110':
+                case '111':
+                case '112':
+                case '113':
+                case '114':
+                case '116':
+                case '115':
+                case '117':
+                case '118':
+                case '119':
+                    $contactOwnerID = $chandraJoosdeKovenID;
+                    break;
+                default:
+                    $contactOwnerID = $sophieMettlerGroveID;
+                    break;
+            }
+            break;
+        default:
+            $contactOwnerID = $coleenCoxID;
+            break;
+    }
 }
+//international country
+elseif ($countryLength >= 1) {
+    $contactOwnerID = $sophieMettlerGroveID;
+}
+//no address
+else {
+    $contactOwnerID = $coleenCoxID;
+};
 
 $fields["Contact Owner"] = $contactOwnerID;
 
