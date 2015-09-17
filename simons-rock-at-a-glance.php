@@ -127,37 +127,37 @@
                   <div class="row graph no-margin">
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="blue icon-graph-building--before" data-percentage="90"></div>
+                        <div class="blue icon-graph-building--before" data-percentage="90">&nbsp;</div>
                       </div>
                       <h5>90%</h5>
                     </div>
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="orange icon-graph-male--before" data-percentage="41"></div>
+                        <div class="orange icon-graph-male--before" data-percentage="41">&nbsp;</div>
                       </div>
                       <h5>41%</h5>
                     </div>
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="yellow icon-graph-female--before" data-percentage="59"></div>
+                        <div class="yellow icon-graph-female--before" data-percentage="59">&nbsp;</div>
                       </div>
                       <h5>59%</h5>
                     </div>
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="white icon-graph-piggy-bank--before" data-percentage="85"></div>
+                        <div class="white icon-graph-piggy-bank--before" data-percentage="85">&nbsp;</div>
                       </div>
                       <h5>85%</h5>
                     </div>
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="charcoal icon-graph-people--before" data-percentage="30"></div>
+                        <div class="charcoal icon-graph-people--before" data-percentage="30">&nbsp;</div>
                       </div>
                       <h5>30%</h5>
                     </div>
                     <div class="col-xs-2 bar-wrapper">
                       <div class="bar">
-                        <div class="red icon-graph-flag--before" data-percentage="14"></div>
+                        <div class="red icon-graph-flag--before" data-percentage="14">&nbsp;</div>
                       </div>
                       <h5>14%</h5>
                     </div>
@@ -267,7 +267,7 @@
 
     <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.min.js"></script>
-    <script type="text/javascript" src="/_js/at-a-glance.js"></script>
+    <script type="text/javascript" src="/_resources/js/at-a-glance-min.js"></script>
 
     <script>
       var controller;
