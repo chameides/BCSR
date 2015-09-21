@@ -95,6 +95,7 @@ $hc_lang_submit = array(
 'Website'			=>	'Website:',
 'EventCat'			=>	'Categories*',
 'Categories'		=>	'Categories:',
+'CategoriesHelper'		=>	'Use Student Activity for events not open to the public.',
 'MessageLabel'		=>	'Message for Administrator (Not Displayed on Calendar)',
 'Include'			=>	'Send Message:',
 'Message'			=>	'Message',

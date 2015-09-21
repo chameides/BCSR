@@ -94,7 +94,7 @@
         <fieldset>
             <legend>'.$hc_lang_submit['EventDetails'].'</legend>
             <label for="eventTitle">'.$hc_lang_submit['Title'].'</label>
-            <input name="eventTitle" id="eventTitle" type="text" size="65" maxlength="150" required="required" placeholder="'.$hc_lang_submit['PlaceTitle'].'" value="" />
+            <input name="eventTitle" id="eventTitle" type="text" size="55" maxlength="42" required="required" placeholder="'.$hc_lang_submit['PlaceTitle'].'" value="" />
             <div class="col-md-12 row">
                 <p></p>
                 <p><strong>'.$hc_lang_submit['Description'].'</strong></p>
@@ -212,42 +212,14 @@
             </div>
         </fieldset>';
         
-        if($hc_cfg['IsRSVP'] == 1){
-            echo '
-        <fieldset>
-            <legend>'.$hc_lang_submit['RegTitle'].'</legend>
-            <label for="rsvp_type">'.$hc_lang_submit['Registration'].'</label>
-            <select name="rsvp_type" id="rsvp_type" onchange="togRegistration();">
-                <option value="0">'.$hc_lang_submit['Reg0'].'</option>
-                <option value="1">'.$hc_lang_submit['Reg1'].'</option>
-            </select>
-            <div id="rsvp" style="display:none;">
-                <label for="rsvp_space">'.$hc_lang_submit['Limit'].'</label>
-                <input name="rsvp_space" id="rsvp_space" type="number" min="0" max="9999" size="5" maxlength="4" value="0" disabled="disabled" required="required" />
-                <span class="output">'.$hc_lang_submit['LimitLabel'].'</span>
-                <label>'.$hc_lang_submit['Allow'].'</label>
-                <input name="openDate" id="openDate" type="text" size="12" maxlength="10" value="'.strftime($hc_cfg[24],strtotime(SYSDATE)).'" disabled="disabled" required="required" />
-                <a href="javascript:;" onclick="calx.select(document.getElementById(\'openDate\'),\'cal3\',\''.$hc_cfg[51].'\');return false;" id="cal3" class="ds calendar" tabindex="-1"></a>
-                <span class="output">&nbsp;&nbsp;'.$hc_lang_submit['To'].'&nbsp;&nbsp;</span>
-                <input name="closeDate" id="closeDate" type="text" size="12" maxlength="10" value="'.strftime($hc_cfg[24],strtotime(SYSDATE)).'" disabled="disabled" required="required" />
-                <a href="javascript:;" onclick="calx.select(document.getElementById(\'closeDate\'),\'cal4\',\''.$hc_cfg[51].'\');return false;" id="cal4" class="ds calendar" tabindex="-1"></a>
-                '.((isset($_SESSION['UserLoggedIn']) && $_SESSION['UserLoggedIn'] == 1) ? '
-                <label for="rsvpEmail">'.$hc_lang_submit['EmailNotice'].'</label>
-                <select name="rsvpEmail" id="rsvpEmail">
-                    <option value="0">'.$hc_lang_submit['EmailNotice0'].'</option>
-                    <option value="1">'.$hc_lang_submit['EmailNotice1'].'</option>
-                </select>
-                <label>&nbsp;</label><span class="output onote">'.$hc_lang_submit['RSVPDownload'].'</span>':'<input type="hidden" name="rsvpEmail" id="rsvpEmail" value="1" /><label>&nbsp;</label><span class="output onote">'.$hc_lang_submit['RSVPDownloadNo'].'</span>').'
-            </div>
-        </fieldset>';
-        } else {
-            echo '
-        <input type="hidden" name="rsvp_type" id="rsvp_type" value="0" />';}
+        
         if($hc_cfg[29] == 1){
         echo '
         <fieldset>
             <legend>'.$hc_lang_submit['EventCat'].'</legend>
-            <label>'.$hc_lang_submit['Categories'].'</label>';
+            <div class="col-md-12 row">
+                <p>'.$hc_lang_submit['CategoriesHelper'].'</p>
+            </div>';
         
             $query = (($user_categories != '') ? "SELECT c.PkID, c.CategoryName, c.ParentID, c.CategoryName as Sort, NULL as Selected
                     FROM " . HC_TblPrefix . "categories c 
