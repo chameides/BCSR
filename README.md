@@ -32,7 +32,7 @@ When introducing ideas and sections, place comments on a new line above their su
 ###Bundles
 
 _css  
-|
+|<br>
 |--bootsrap (Use /boostrap to modify the original bootstrap rules)
 |-- font video js 
 |-- app_[file] Scss files to modify existing files and to add new rules
