@@ -15,7 +15,8 @@ All code in any code-base should look like a single person typed it, even when m
 
 If in doubt when deciding upon a style use existing, common patterns.	
 
-###The app.css has it's own guidelines and background in app_readme.scss
+###CSS
+The app.css has it's own guidelines and background in app_readme.scss
 
 ###Comments
 
@@ -32,7 +33,7 @@ When introducing ideas and sections, place comments on a new line above their su
 
 _css  
 |
-|-- bootsrap (Use /boostrap to modify the original bootstrap rules)
+|--bootsrap (Use /boostrap to modify the original bootstrap rules)
 |-- font video js 
 |-- app_[file] Scss files to modify existing files and to add new rules
 |
