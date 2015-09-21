@@ -38,7 +38,7 @@ input[type="submit"], input[type="button"], input[type="reset"] {margin:5px 10px
 .frm_ctrls label input, #loc_results input {margin:3px 5px 3px 0;}
 .frm_grp label {float:left;width:100%;text-align:left;padding:5px 0 10px 5px;margin:0;}
 #loc_results{float:left;}
-#loc_results label {float:left;width:100%;text-align:left;padding:4px 0 0 2px;margin:5px 0 0 0;height:40px;text-indent:0;}
+#loc_results label {float:left;width:100%;text-align:left;padding:4px 0 0 2px;margin:5px 0 0 0;text-indent:0;}/*height:40px;*/
 #loc_results label img {vertical-align:top;float:right;padding:5px 5px 0 0;}
  #loc_results .loc_name, #loc_results .loc_add {display:block;}
 #loc_results #pages {clear:both;text-align:center;}

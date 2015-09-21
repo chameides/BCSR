@@ -259,7 +259,7 @@ footer {clear:both;width:100%;display:block;}
 .breadbox li:first-child a {padding:0 10px 0 15px;}
 .breadbox li:second-child a {padding:0 10px 0 15px;}
 .breadbox li:last-child a {}
-.breadbox li .arrow {}
+.breadbox li:last-child .arrow {display:none;}
 .breadbox li .arrow:after {content:">";}
 .breadbox li .arrow span {}
 #bread_top {display:none;float:right;width:25px;}
