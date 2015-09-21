@@ -33,19 +33,19 @@ When introducing ideas and sections, place comments on a new line above their su
 
 _css  
 |<br>
-|--bootsrap (Use /boostrap to modify the original bootstrap rules)
-|-- font video js 
-|-- app_[file] Scss files to modify existing files and to add new rules
-|
-_fonts 
-|--webfonts from myfonts
-_images
-_inc includes for server side content in templates (testing only)
-_js JavaScript in templates (testing only)
-_resources CMS location of include files. No automatic syncing to live site. 
-archive stuff that might be nice to access, but not sure
-events Markup for Events CMS. No automatic syncing to live site.
-[page] sample pages used for testing purposes
+|-- bootsrap (Use /boostrap to modify the original bootstrap rules)<br>
+|-- font video js<br> 
+|-- app_[file] Scss files to modify existing files and to add new rules<br>
+|<br>
+_fonts<br> 
+|--webfonts from myfonts<br>
+_images<br>
+_inc includes for server side content in templates (testing only)<br>
+_js JavaScript in templates (testing only)<br>
+_resources CMS location of include files, no automatic syncing to live site.<br>
+archive stuff that might be nice to access, but not sure<br>
+events Markup for Events CMS, no automatic syncing to live site<br>
+[page] sample pages used for testing purposes<br>
 
 
 ## Contributors
