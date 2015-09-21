@@ -47,6 +47,17 @@ archive stuff that might be nice to access, but not sure<br>
 events Markup for Events CMS, no automatic syncing to live site<br>
 [page] sample pages used for testing purposes<br>
 
+## Compile
+
+###SCSS and CodeKit
+app.css is written in Sass and I use CodeKit to compile. It would be fairly easy to use grunt instead. 
+
+###JS and CodeKit
+External scripts should be minified and combined in order to improve page speed. I use CodeKit. It would be fairly easy to use grunt instead.
+
+###Icons and Grunt
+The icons for the At-A-Glance are compiled using Grunt and GruntIcon.  
+
 
 ## Contributors
 
