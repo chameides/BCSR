@@ -58,6 +58,15 @@ External scripts should be minified and combined in order to improve page speed.
 ###Icons and Grunt
 The icons for the At-A-Glance are compiled using Grunt and GruntIcon.  
 
+##CMS Deployment
+
+* _fonts
+* _images
+* _resources
+* events
+
+Files listed above are consistent with the OU CMS file structure. These files are generally added one-by-one through the CMS interface. The CMS interface also allows for bulk uploads with a zip file. Files can also be transferred with scp. 
+
 
 ## Contributors
 
