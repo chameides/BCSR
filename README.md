@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is a collection of sample templates Bard College at Simon’s Rock (BCSR). The initial templates were created by an agency in collaboration with BCSR. Now these templates are used to update designs, features, and functionality.
+This is a collection of sample templates for Bard College at Simon’s Rock (BCSR). The initial templates were created by an agency in collaboration with BCSR. Now these templates are used to update designs, features, and functionality.
 
 The readme focus on coding and deployment of the testing environment. <a href="http://simons-rock.edu">The Guide</a> provides more detailed patterns, governance, foundations. 
 
@@ -8,7 +8,8 @@ The readme focus on coding and deployment of the testing environment. <a href="h
 
 ###Principles
 
-"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+<blockquote>"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."</blockquote>
+<cite>-Idan Gazit</cite>
 
 Don't try to prematurely optimize your code; keep it readable and understandable.
 
