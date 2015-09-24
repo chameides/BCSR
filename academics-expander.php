@@ -5,7 +5,7 @@
                     <div class="col-xs-9 col-sm-6">
                       <a id="expander-close" href="#close"><i class="fa fa-times"></i></a>
                       <h2>Lorum Omnis Natus Ipsum <?php echo $_GET['id']; ?></h2>
-                      <p>Omnis iste natus error sit voluptatem accusantium doloremque veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
+                      <p>Immerse yourself in the great range of African American experiences, both historical and contemporary. You’ll think critically about the concept of race, and you’ll be challenged to analyze history, theory, and cultural representations in order to increase your understanding of both black achievement and black oppression.</p>
                       <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>

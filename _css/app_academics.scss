@@ -228,7 +228,7 @@ label.filter-text {
   max-width: 922px;
 	height: auto;
 	text-align: left;
-	overflow: hidden;
+	//overflow: hidden;
 	background-color:#fff;
 	padding-bottom:15px;
   @media screen and (max-width:951px) {
@@ -237,12 +237,15 @@ label.filter-text {
   @media screen and (max-width:721px) {
     width: 92%;
   } 
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: $screen-xs1) {
     width: 92%;
     margin: 5%;
   }
   .row {
     margin-bottom: 0;
+    @media screen and (min-width:$screen-xs1) and (max-width: $screen-xs2) {
+      margin-left: -5px;
+    }
   }
 	img {
 		max-width: 100%;
