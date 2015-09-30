@@ -99,7 +99,6 @@ $( document ).ready(function() {
             //event.preventDefault();
         }
     });
-    
     //3. Validate
     $("#contactForm").validate({
         rules: {
@@ -122,17 +121,22 @@ $( document ).ready(function() {
             txtPhone: {
                 required: '#chxInfoByPhone:checked'
             },
+            drpPhoneType: {
+                required: function(element) {
+                    return $("#txtPhone").val() > 0;
+                  }
+            },
             drpCountry: {
                 required: '#chxInfoByMail:checked'
             },
             txtAddress1: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='rfiRequired','#chxInfoByMail:checked']
             },
             city: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='rfiRequired','#chxInfoByMail:checked']
             },
             txtZipOrPostal: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='rfiRequired','#chxInfoByMail:checked']
             },
             chxInfoBy: {
                 required: true,
@@ -156,13 +160,12 @@ $( document ).ready(function() {
                 error.insertAfter(element); // default error placement.
             }
         }
-        
     });
     
     //4. Conditional Display
 
 
-    $('.checkbox-sub, #lblPostalCode, #parentName, #childFirst, #childLast, #childDOB, #note-container, #dateHeadlineParent, #interviewParent').hide();  
+    $('.checkbox-sub, #parentName, #childFirst, #childLast, #childDOB, #note-container, #dateHeadlineParent, #interviewParent, #lblPostalCode').hide();    
     $('input:radio[name="userRole"]').change(
         function(){
             //reveal Parent contact if Student is selected

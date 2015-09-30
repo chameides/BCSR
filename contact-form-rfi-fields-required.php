@@ -113,18 +113,7 @@
 		<div id="note-container" class="col-sm-12 form-group">
 			<label for="note">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea>
 		</div>
-		<div id="chxInfoByErr" class="col-sm-12"><label>I'd like to receive information by</label></div>
-		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
-		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
-		<div id="grpPhone" class="form-group checkbox-sub col-sm-6"><label for="txtPhone">Primary Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
-		<div id="grpPhoneType" class="form-group checkbox-sub col-sm-6"><label for="drpPhoneType">Phone Type</label>
-			<select id="drpPhoneType" class="form-control" name="drpPhoneType" required="required">
-				<option value="">- Select Phone Type -</option>
-				<option value="Home">Home</option>
-				<option value="Mobile">Mobile</option>
-				</select></div>
-				<div class="checkbox col-sm-12"><label> <input id="chxInfoByMail" class="chxInfoBy" name="chxInfoByMail" type="checkbox" value="Mail" /> Mail </label></div>
-				<div id="grpCountry" class="form-group checkbox-sub col-sm-12"><label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
+				<div id="grpCountry" class="form-group col-sm-12"><label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
 				<option value="">- Select Your Country -</option>
 				<option value="United States">United States</option>
 				<option value="Canada">Canada</option>
@@ -343,10 +332,10 @@
 				<option value="Other">Other</option>
 			</select>
 		</div>
-		<div id="grpAddress1" class="form-group checkbox-sub col-sm-12"><label for="txtAddress1">Address</label> <input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" /></div>
-		<div id="grpAddress2" class="form-group checkbox-sub col-sm-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
-		<div id="cityContainer" class="form-group checkbox-sub col-sm-12"><label for="city">City</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" /></div>
-		<div id="grpState" class="form-group checkbox-sub col-sm-6"><label for="drpState">State/Province</label>
+		<div id="grpAddress1" class="form-group col-sm-12"><label for="txtAddress1">Address*</label> <input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" /></div>
+		<div id="grpAddress2" class="form-group col-sm-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
+		<div id="cityContainer" class="form-group col-sm-12"><label for="city">City*</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" /></div>
+		<div id="grpState" class="form-group col-sm-6"><label for="drpState">State/Province*</label>
 			<select id="drpState" class="form-control" name="drpState" required="required">
 				<option value="">- Select State/Province -</option>
 				<option value="AL">Alabama</option>
@@ -420,7 +409,16 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpZip" class="form-group  col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code*</span><span id="lblPostalCode">Postal Code*</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpPhone" class="form-group col-sm-6"><label for="txtPhone">Primary Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
+		<div id="grpPhoneType" class="form-group col-sm-6">
+			<label for="drpPhoneType">Phone Type</label>
+			<select id="drpPhoneType" class="form-control" name="drpPhoneType">
+				<option value="">- Select Phone Type -</option>
+				<option value="Home">Home</option>
+				<option value="Mobile">Mobile</option>
+			</select>
+		</div>
 		<div id="contactParent">
 			<div class="checkbox col-sm-12"><label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label></div>
 			<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12"><label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" placeholder="Enter email" /></div>
