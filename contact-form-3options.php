@@ -49,6 +49,6 @@
     
 <?php include '_inc/bottom-js.php' ?>
 
-<script src="/_resources/js/forms/rfi-combine-min.js"></script>
+<script id="hobson-form-submit" data-name="rfiInitial" src="/_resources/js/forms/rfi-combine-min.js" ></script>
 </body>
 </html>

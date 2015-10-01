@@ -71,7 +71,19 @@ $( document ).ready(function() {
                 }
                 else {
                     var nextPage = 'contact-form-thanks.php';
-                    var gtmLabel = 'Request Info';
+                    if (formName == 'rfiInitial'){
+                        //check if address is used by looking for zip code
+                        var txtZipOrPostal = $("#txtZipOrPostal").val();
+                        if (txtZipOrPostal > '1') {
+                            var gtmLabel = 'Request Info Address';
+                        }
+                        else {
+                            var gtmLabel = 'Request Info No Address';
+                        }
+                    }
+                    else {
+                        var gtmLabel = 'Request Info';
+                    }
                 }
                 //console.log("Hooray, it worked!");
                 window.location.replace(nextPage);

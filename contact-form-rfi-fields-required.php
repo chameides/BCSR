@@ -13,7 +13,6 @@
 		</div>
 		<div class="form-group col-md-6"><label for="txtFirstName"><span id="childFirst">Child&rsquo;s </span>First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
-		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email" placeholder="Enter email" /></div>
 		<div id="DOB">
 			<div class="form-group col-sm-6"><label for="birth_month"><span id="childDOB">Child&rsquo;s </span>Date of Birth* <span class="sr-only">(Month)</span></label><select id="birth_month" class="form-control" name="birth_month" required="required">
 				<option value="">Month</option>
@@ -110,6 +109,7 @@
 				<option value="12">12th Grade</option>
 			</select>
 		</div>
+		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email" placeholder="Enter email" /></div>
 		<div id="note-container" class="col-sm-12 form-group">
 			<label for="note">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea>
 		</div>
