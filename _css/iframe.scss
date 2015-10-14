@@ -1,0 +1,7 @@
+//CSS rules for iframes, used in addition to app.css
+
+@import "MyFontsWebFontsKit.scss"; //web fonts, fonts won't load from outside server, need to include files on host
+
+body.iframe {
+	margin-top: 1em;	
+}
