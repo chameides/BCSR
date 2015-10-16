@@ -69,6 +69,10 @@ $( document ).ready(function() {
                     var nextPage = 'discovery-day-thank-you.php'; 
                     var gtmLabel = 'formInquiryDiscoveryDayRequest';
                 }
+                else if (formName == '5signs') {
+                    var nextPage = '5-signs-checklist.php'; 
+                    var gtmLabel = 'formInquiry5signs';
+                }
                 else {
                     var nextPage = 'contact-form-thanks.php';
                     var gtmLabel = 'Request Info';
