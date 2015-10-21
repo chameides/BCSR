@@ -28,26 +28,19 @@
                   <li>Offices And Departments</li>
                </ol>
                <h1 class="header-page text-center">Offices And Departments</h1>
-               
-                  
-                  <div class="embed-wrapper">
-                    <div class='embed-container' style="height: 4100px;">
-                      <iframe src='/family-weekend.php'></iframe>
-                    </div>
-                  </div>
-
-
                   <p>One of the best things about our administration and support offices is their dedication
                      to our mission and our students. Below, you’ll find main phone numbers and links to
                      individual departments on campus, where you can connect with staff members and learn
                      more about services provided by each office.
                   </p>
-                  <p class="text-center"><strong>Looking for a specific person?</strong></p>
                   <div class="embed-wrapper">
-                    <div class='embed-container'>
-                      <iframe src='/directory-iframe.php'></iframe>
+                    <div class='embed-container' style="height: 300px;">
+                      <iframe src='directory-iframe-search.php'></iframe>
                     </div>
                   </div>
+                  
+                  <p class="text-center"><strong>Looking for a specific person?</strong></p>
+                 
                   <div class="text-center margin-bottom"><a class="right-arrow-primary" href="https://lock.simons-rock.edu/fsdir/index.php?state=search&amp;input=all&amp;atoz=1"><i class="fa fa-angle-right bold"></i>&nbsp;A-Z Faculty/Staff Directory</a></div>
                   <h2>Connect with campus departments</h2>
                   <div class="row margin-bottom">
