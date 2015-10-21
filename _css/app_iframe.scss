@@ -17,7 +17,7 @@
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 981px) /*target larger than 'touch device'*/{
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1025px) /*target larger than 'touch device'*/{
   .embed-container  {
     overflow: hidden; /*two scroll bars in chrome for windows, so hide on larger screens, */
   }
