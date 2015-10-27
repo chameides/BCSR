@@ -15,19 +15,25 @@
 			<div class="radio"><label> <input name="attendanceDate" type="radio" value="4-23-16" /> Saturday, April 23, 2016 </label></div>
 		</div>
 		<div>
-			<div id="interviewParent" class="checkbox col-sm-12"><label> <input name="interview" type="checkbox" value="Request Interview" /> I'd like my child to interview during the visit </label></div>
-			<div id="interviewDefault" class="checkbox col-sm-12"><label> <input name="interview" type="checkbox" value="Request Interview" /> I'd like to interview during my visit </label></div>
+			<div id="interviewParent" class="checkbox col-md-12"><label> <input name="interview" type="checkbox" value="Request Interview" /> I'd like my child to interview during the visit </label></div>
+			<div id="interviewDefault" class="checkbox col-md-12"><label> <input name="interview" type="checkbox" value="Request Interview" /> I'd like to interview during my visit </label></div>
 		</div>
 
 		
 		<div id="parentName">
-		<div class="form-group col-md-6"><label for="parentFirstName">First Name*</label> <input id="parentFirstName" class="form-control" maxlength="40" name="parentFirstName" required="required" type="text" /> <!-- use max-length based on CRM import limits--></div>
-		<div class="form-group col-md-6"><label for="parentLastName">Last Name*</label> <input id="parentLastName" class="form-control" maxlength="80" name="parentLastName" required="required" type="text" /></div>
-		<div class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="parentEmailSelf" class="form-control" maxlength="100" name="parentEmailSelf" required="required" type="email" placeholder="Enter email" /></div>
+			<div class="form-group col-md-6">
+				<label for="parentFirstName">First Name*</label> <input id="parentFirstName" class="form-control" maxlength="40" name="parentFirstName" required="required" type="text" /> <!-- use max-length based on CRM import limits-->
+			</div>
+			<div class="form-group col-md-6">
+				<label for="parentLastName">Last Name*</label> <input id="parentLastName" class="form-control" maxlength="80" name="parentLastName" required="required" type="text" />
+			</div>
+			<div class="form-group col-md-12">
+				<label for="txtEmail">Email address*</label> <input id="parentEmailSelf" class="form-control" maxlength="100" name="parentEmailSelf" required="required" type="email" />
+			</div>
 		</div>
 		<div class="form-group col-md-6"><label for="txtFirstName"><span id="childFirst">Child&rsquo;s </span>First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
-		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email" placeholder="Enter email" /></div>
+		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email" /></div>
 		<div id="Phone" class="form-group col-sm-7">
 			<label for="txtPhone">Primary Phone Number*</label>
 			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" type="text" required="required"/>
@@ -109,7 +115,7 @@
 		<option value="1991">1991</option>
 		<option value="1990">1990</option>
 		</select></div>
-		<div class="form-group col-sm-12">
+		<div class="form-group col-sm-12 col-md-12">
 			<label for="gradeLevel">Grade Level*</label>
 			<select class="form-control" name="gradeLevel" required="required">
 				<option value="">
@@ -129,8 +135,8 @@
 			</select>
 		</div>
 		</div>
-		<div id="note-container" class="col-sm-12 form-group"><label for="text_area">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea></div>
-		<div id="chxInfoByErr" class="col-sm-12"><label>I'd like to receive information by</label></div>
+		<div id="note-container" class="col-sm-12 col-md-12 form-group"><label for="text_area">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea></div>
+		<div id="chxInfoByErr" class="col-sm-12 col-md-12"><label>I'd like to receive information by</label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByMail" class="chxInfoBy" name="chxInfoByMail" type="checkbox" value="Mail" /> Mail </label></div>
@@ -429,8 +435,12 @@
 		</select></div>
 		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 		<div id="contactParent">
-		<div class="checkbox col-sm-12"><label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label></div>
-		<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12"><label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" placeholder="Enter email" /></div>
+			<div class="checkbox col-sm-12">
+				<label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label>
+			</div>
+			<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12">
+				<label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" />
+			</div>
 		</div>
 		
 			<?php
