@@ -908,7 +908,9 @@ function sr_theme_mini_search($holder = '',$button = 0){
     echo '
     <form name="hc_search" id="hc_search" method="post" action="'.CalRoot.'/index.php?com=searchresult"><input type="search" name="hc_search_keyword" id="hc_search_keyword" value=""'.(($holder != '') ? ' placeholder="'.$holder.'"':'').' required="required" speech x-webkit-speech />'
         .(($button == 1) ? '<input type="submit" name="hc_search_submit" id="hc_search_submit" value="'.$hc_lang_core['GoSearch'].'" />':'').
-        '<span><a href="'.CalRoot.'/index.php?com=search" rel="nofollow">'.$hc_lang_core['AdvSearch'].'</a> | <a class="red" href="http://simons-rock.edu/events/index.php?com=submit">Submit an Event</a></span>
+        '<span>
+            <a href="'.CalRoot.'/index.php?com=search" rel="nofollow">'.$hc_lang_core['AdvSearch'].'</a> | <a class="red" href="http://simons-rock.edu/events/index.php?com=submit">Submit an Event</a> | <a href="https://app.smartsheet.com/b/form?EQBCT=42788f3942f34b2ea032b700b9dbfa94">Event Change Request</a>
+            </span>
     </form>';
 }
 
