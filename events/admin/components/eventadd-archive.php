@@ -109,10 +109,7 @@
 		<legend>'.$hc_lang_event['EventDetail'].'</legend>
 		<label for="eventTitle">'.$hc_lang_event['Title'].'</label>
 		<input onblur="buildT();buildF();" name="eventTitle" id="eventTitle" type="text" size="90" maxlength="150" required="required" value="'.$eventTitle.'" />
-		<div class="col-md-12">
-			<p><strong>'.$hc_lang_event['Description'].'</strong></p>
-			<p>'.$hc_lang_event['DescriptionHelper'].'</p>
-		</div>		
+		<label for="eventDescription">'.$hc_lang_event['Description'].'</label>
 		<textarea name="eventDescription" id="eventDescription" rows="20" class="mce_edit">'.$eventDesc.'</textarea>
 		<label for="cost">'.$hc_lang_event['Cost'].'</label>
 		<input name="cost" id="cost" type="text" size="25" maxlength="50" value="'.$cost.'" />

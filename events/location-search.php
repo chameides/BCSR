@@ -38,7 +38,7 @@
 	if(isset($result) && hasRows($result)){
 		$x = 0;
 		while($row = mysql_fetch_row($result)){
-			$locAddress = buildAddress(htmlentities($row[2],ENT_QUOTES),htmlentities($row[3],ENT_QUOTES),htmlentities($row[4],ENT_QUOTES),htmlentities($row[5],ENT_QUOTES),htmlentities($row[6],ENT_QUOTES),htmlentities($row[7],ENT_QUOTES),$hc_lang_config['AddressType']);
+			$locAddress = buildAddress(htmlentities($row[3],ENT_QUOTES), htmlentities($row[2],ENT_QUOTES),htmlentities($row[4],ENT_QUOTES),htmlentities($row[5],ENT_QUOTES),htmlentities($row[6],ENT_QUOTES),htmlentities($row[7],ENT_QUOTES),$hc_lang_config['AddressType']);
 			$locAddress = str_replace('<br />',',&nbsp;',$locAddress);
 			$hl = ($x % 2 == 0) ? ' class="hl_frm"' : '';
 			echo '
