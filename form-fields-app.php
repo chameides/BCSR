@@ -7,7 +7,7 @@
 				<label> <input id="userRoleStudent"  name="startDate" type="radio" value="January" /> January 2016 </label></div>
 			<div class="radio">
 				<label> <input id="userRoleParent" checked="checked" name="startDate" type="radio" value="August" /> August 2016 </label></div>
-			<h3 class="subheadline">English Proficiency</h3>
+			<h3>English Proficiency</h3>
 			<div class="radio">
 				<label> <input name="english" checked="checked" type="radio" value="fluent" /> I'm a fluent English speaker  </label>
 			</div>
