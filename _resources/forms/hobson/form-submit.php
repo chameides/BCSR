@@ -26,14 +26,17 @@ include 'config.php';
 include 'functions.php';
 
 /* 3. Assemble field data to pass to web server */
-
-
 if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
     $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
 }
-else { //not discovery day form
-    $formSource = 'RFI Form'; 
+else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form contains cty:
+    $formSource = 'CTY Inquiry '; 
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
+}
+
+else { //default
+    $formSource = 'RFI Form '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
