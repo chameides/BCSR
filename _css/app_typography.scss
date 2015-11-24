@@ -19,6 +19,14 @@
     } 
 }
 
+.h3-subheadline {
+  //originally in nested global setting and moved here to apply to contact form oustide of page-container
+  margin-bottom: .5rem;
+  margin-top: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    margin-bottom: 1.25rem;
+  }
+}
 
 /*hanging block quote*/
 blockquote:before, blockquote p.blockquote-last:after, .blockquote-mark {
