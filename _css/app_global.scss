@@ -111,11 +111,7 @@ p {
   }
 
   h3.subheadline {
-    margin-bottom: .5rem;
-    margin-top: 0;
-    @media screen and (min-width: $screen-sm-min) {
-      margin-bottom: 1.25rem;
-    }
+    @extend .h3-subheadline 
   }
 
   .row {

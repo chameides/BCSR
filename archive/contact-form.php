@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simon's Rock: Contact Form</title>
 
-<?php include '_inc/head-js-css.php'; ?>
+<?php include '../_inc/head-js-css.php'; ?>
 
 <style>
 .checkbox-sub {
@@ -29,7 +29,7 @@ label.error {
   <body>
 
   
-<?php include '_inc/nav.php'; ?>
+<?php include '../_inc/nav.php'; ?>
     
     
     <div class="container">
@@ -49,6 +49,7 @@ label.error {
 	<div class="col-md-6">
 	
 		<div class="row"><!-- row inside the col -->
+			<h3 class="subheadline">example heading</h3>
 		  <div class="form-group col-md-6">
 				<label for="txtFirstName">First Name:</label>
 				<input type="text" class="form-control" name="txtFirstName" id="txtFirstName" required>
