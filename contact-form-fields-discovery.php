@@ -9,8 +9,6 @@
 		<div class="form-group col-md-12">
 			<h3 id="dateHeadlineParent" class="subheadline">My child is attending Discovery Day On:</h3>
 			<h3 id="dateHeadlineDefault" class="subheadline">I'm attending Discovery Day On:</h3>
-			<div class="radio"><label> <input name="attendanceDate" type="radio" value="10-24-15" /> Saturday, October 24, 2015  </label></div>
-			<div class="radio"><label> <input name="attendanceDate" type="radio" value="11-14-15" /> Saturday, November 14, 2015 </label></div>
 			<div class="radio"><label> <input name="attendanceDate" type="radio" value="1-30-16" /> Saturday, January 30, 2016 </label></div>
 			<div class="radio"><label> <input name="attendanceDate" type="radio" value="4-23-16" /> Saturday, April 23, 2016 </label></div>
 		</div>
@@ -448,6 +446,6 @@
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
 					?>
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="submit" value="Submit" /></div>
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="submit" value="Register" /></div>
 	</form>
 </div>
