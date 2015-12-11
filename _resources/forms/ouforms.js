@@ -19,6 +19,7 @@ $(window).load(function () {
         var form_data = $("#forms_" + skid).serialize();
         //set variable for google analytics event.
         var gaEventInquiry = $("#id_gaEventInquiry").attr('placeholder');
+        var gaEventReferral = $("#id_gaEventReferral").attr('placeholder');
         var gaEventNonInquiry = $("#id_gaEventNonInquiry").attr('placeholder'); 
         $("#form_" + skid).off('submit').on('submit', function (e) {
             e.preventDefault();
@@ -78,6 +79,12 @@ $(window).load(function () {
                             $("#status_" + skid).html('<h1 id="form_elements" class="sg-heading">Thank You</h1><p>' + resultObj.message + "</p>");
                             if (gaEventInquiry) {
                                 var gtmLabel = 'formInquiry' + gaEventInquiry;
+                                dataLayer.push({
+                                    'event': gtmLabel
+                                });
+                            }
+                            else if (gaEventReferral) {
+                                var gtmLabel = 'formReferral' + gaEventReferral;
                                 dataLayer.push({
                                     'event': gtmLabel
                                 });
