@@ -6,3 +6,7 @@ node_modules
 events/cache
 DateSelect.js.old
 _images/email
+email-workflow.sublime-project
+email-workflow.sublime-workspace
+rpi-giving-archive.sublime-workspace
+rpi-giving-archive.sublime-project

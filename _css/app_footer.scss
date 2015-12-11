@@ -94,3 +94,15 @@ footer#globalfooter {
 		}
 	}
 }
+
+
+//gatekeeper pages have minimal text footer instead of global footer
+#footer-gatekeeper {
+	font-size: .9em;
+	line-height: 1.4em;
+	text-align: center;
+	padding-bottom: $padding-large-vertical*2;
+	@media (min-width:$screen-md-min) {
+		font-size: .6em;
+	}
+}
