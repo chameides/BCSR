@@ -55,144 +55,21 @@
 
         <!-- CENTER COLUMN -->
         <div class="column-center">
+          <div class="row">
 
-          <!-- Class News -->
-          <div class="row image-list-section">
-            <div class="col-xs-3 col-sm-3">
-              <a href="#" class="image-thumb">
-                <img src="../_images/class-news.jpg" alt="class news">
-                <div class="image-text-overlay-container">
-                  <span class="image-text-overlay text-center">Class News!</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-9 col-sm-9">
-              <div class="col-sm-12">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /Class News -->
-          <!-- Get Involved -->
-          <div class="row image-list-section">
-            <div class="col-xs-3">
-              <a href="#" class="image-thumb">
-                <img src="../_images/get-involved.jpg" alt="get involved">
-                <div class="image-text-overlay-container">
-                  <span class="image-text-overlay text-center">Get Involved</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-9">
-              <div class="col-sm-12">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-              </div>
-            </div>
-          </div>
-          <!-- Get Involved -->
-          <!-- Resources -->
-          <div class="row image-list-section">
-            <div class="col-xs-3">
-              <a href="#" class="image-thumb">
-                <img src="../_images/resources.jpg" alt="recources">
-                <div class="image-text-overlay-container">
-                  <span class="image-text-overlay text-center">Resources for Alumni</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-9">
-              <div class="col-sm-12">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /Resources -->
-          <!-- Give Back -->
-          <div class="row image-list-section">
-            <div class="col-xs-3">
-              <a href="#" class="image-thumb">
-                <img src="../_images/give-back.jpg" alt="give back">
-                <div class="image-text-overlay-container">
-                  <span class="image-text-overlay text-center">Give Back</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-9">
-              <div class="col-sm-12">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-              </div>
-            </div>
-          </div>
-          <!-- /Give Back -->
-          <!-- Connect -->
-          <div class="row image-list-section">
-            <div class="col-xs-3">
-              <a href="#" class="image-thumb">
-                <img src="../_images/connect.jpg" alt="connect">
-                <div class="image-text-overlay-container">
-                  <span class="image-text-overlay text-center">Connect on Social Media</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-9">
-              <div class="col-sm-12">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul class="arrow-list">
-                  <li><a href="#">Natus error sit voluptatem</a></li>
-                  <li><a href="#">Doloremque laudantium</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /Connect -->
+  <div class="col-md-6">
+    <p>We're so glad you would like to know
+    more about Simon's Rock and Bard
+    Academy. Please fill out the form on this page
+    and we will get in touch with you.</p>
+  </div>
+
+
+  <div class="col-md-6">
+    <?php include 'contact-form-rfi-fields.php'; ?>
+  </div><!-- col-md-6 -->
+</div><!-- row -->
+              
 
         </div>
         <!-- /CENTER COLUMN -->
@@ -218,6 +95,7 @@
 
     
 <?php include '_inc/bottom-js.php' ?>
+<script src="/_resources/js/forms/rfi-combine-min.js"></script>
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
