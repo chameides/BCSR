@@ -64,10 +64,16 @@
             <li> > </li>
             <li class="active">This Page</li>
           </ol>
-          <div class='text-center'>
-          <a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i>&nbsp;Get Updates</a>
-          </div>
+          
           <h1 class="header-page text-center">Affording Simon’s Rock H1</h1>
+         
+            <div class="embed-container-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/nhkY_WsqKNM" frameborder="0" allowfullscreen></iframe>
+            </div>
+          
+
+          
+
           <div class="video--container text-center">
             <div class="">
             
