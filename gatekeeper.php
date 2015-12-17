@@ -22,7 +22,7 @@
   <body class="has-hero">
 
 
-
+    <?php include '_inc/nav-gatekeeper.php'; ?>
     <div class="container-fluid page-container">
 
       <!-- Page Hero -->
