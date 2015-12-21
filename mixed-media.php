@@ -67,7 +67,7 @@
           
           <h1 class="header-page text-center">Affording Simon’s Rock H1</h1>
          
-            <div class=".embed-container embed-container-16x9">
+            <div class="embed-container-16x9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/nhkY_WsqKNM" frameborder="0" allowfullscreen></iframe>
             </div>
           
