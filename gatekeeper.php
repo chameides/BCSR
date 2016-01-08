@@ -1,6 +1,6 @@
 <!--change log
 1. Start with Gateway
-2. Remove php include '_inc/nav.php'; 
+2. Replace include '_inc/nav.php'; 
 3. Remove Secondary Nav (left)
 4. Remove Calendar Header and Carousel
 5. Remove Footer
@@ -27,9 +27,9 @@
 
       <!-- Page Hero -->
       <div class="row-full-width">
-      <div class="navbar-brand-gateway">
+      <div class="navbar-brand-gatekeeper">
         <a href="/" title="Bard College at Simon's Rock">
-          <img src="/_images/logos/logo_2012_primary_unstacked_mediumRED.png" alt="Bard College at Simon's Rock, the Early College">
+          <img src="/_images/logos/bcsr-unstacked-red-130w.gif" alt="Bard College at Simon's Rock, the Early College">
         </a>
       </div>
 
@@ -82,11 +82,11 @@
       </div>
       <!-- << /Section One >> -->
     
-      <footer class="container-fluid" id="footer-gatekeeper" >
+      <footer class="container-fluid" id="footer-gatekeeper">
         <div class="container">
-          Accredited by the New England Association of Schools and Colleges (NEASC) | <a href="/student-life/map-and-directions/index.php" id="Footer_AddressMap">84 Alford Rd., Great Barrington, MA 01230</a> | <a href="mailto:info@simons-rock.edu" id="Footer_Connect_InfoEmail">info@simons-rock.edu</a> | <a href="tel:413-644-"4400">413-644-4400</a> | Copyright © 2015 Bard College at Simon's Rock
+          Accredited by the New England Association of Schools and Colleges (NEASC) | <a href="/student-life/map-and-directions/index.php" id="Footer_AddressMap">84 Alford Rd., Great Barrington, MA 01230</a> | <a href="mailto:info@simons-rock.edu" id="Footer_Connect_InfoEmail">info@simons-rock.edu</a> | <a href="tel:413-644-4400">413-644-4400</a> | Copyright © 2015 Bard College at Simon's Rock
         </div>
-      </footer
+      </footer>
 
     </div><!-- /container-fluid -->
 
