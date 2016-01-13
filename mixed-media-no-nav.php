@@ -48,7 +48,7 @@
       <div class="row-full-width">
         <div class="navbar-brand-gatekeeper">
           <a href="/" title="Bard College at Simon's Rock">
-            <img src="/_images/logos/bcsr-unstacked-red-130w.gif" alt="Bard College at Simon's Rock, the Early College">
+            <img src="/_images/logos/bcsr-primary-163w.png" alt="Bard College at Simon's Rock, the Early College">
           </a>
         </div>
         
