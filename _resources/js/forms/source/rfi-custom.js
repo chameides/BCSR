@@ -73,6 +73,10 @@ $( document ).ready(function() {
                     var nextPage = '5-signs-checklist.php'; 
                     var gtmLabel = 'formInquiry5signs';
                 }
+                else if (formName == 'cty') {
+                    var nextPage = 'cty-form-thanks.php'; 
+                    var gtmLabel = 'formInquiryCTY';
+                }
                 else {
                     var nextPage = 'contact-form-thanks.php';
                     var gtmLabel = 'Request Info';

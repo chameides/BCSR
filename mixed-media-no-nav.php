@@ -1,3 +1,14 @@
+<!--change log
+1. Start with Mixed Media
+2. Replace include '_inc/nav.php'; 
+3. Remove Secondary Nav (left)
+4. Remove Breadcrumb
+5. Add <body class="has-hero">
+6. Remove Footer and replace
+6. Add navbar-brand-gateway
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,10 +24,10 @@
 </style>
 
   </head>
-  <body>
+  <body class="gatekeeper">
 
   
-<?php include '_inc/nav.php'; ?>
+<?php include '_inc/nav-gatekeeper.php'; ?>
 
     <div class="container-fluid page-container"> 
 
@@ -35,45 +46,17 @@
     -->
       <!-- << Section One >> -->
       <div class="row-full-width">
-        <!-- LEFT COLUMN -->
-        <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
-          <div class="reveal-side-nav"></div>
-          <!-- Subnav -->
-          <ul class="flat-list list-group">
-            <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
-            <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
-            </li>
-            <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
-            <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
-          </ul>
-          <!-- /Subnav -->
+        <div class="navbar-brand-gatekeeper">
+          <a href="/" title="Bard College at Simon's Rock">
+            <img src="/_images/logos/bcsr-primary-163w.png" alt="Bard College at Simon's Rock, the Early College">
+          </a>
         </div>
-        <!-- /LEFT COLUMN-->
+        
 
         <!-- CENTER COLUMN -->
         <div class="column-center">
           <!-- Video Header -->
-          <ol class="flat-list crumb">
-            <li><a href="#">Home</a></li>
-            <li> > </li>
-            <li class="active">This Page</li>
-          </ol>
-          
           <h1 class="header-page text-center">Affording Simon’s Rock H1</h1>
-         
-            <div class="embed-container-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/nhkY_WsqKNM" frameborder="0" allowfullscreen></iframe>
-            </div>
-          
-
-          
-
           <div class="video--container text-center">
             <div class="">
             
@@ -284,29 +267,13 @@
 
     </div><!-- /container-fluid -->
 
-    <div class="row-full-width">
-      <!-- Sidbar Mobile Nav -->
-      <div class="side-nav-mobile">
-        <!-- Subnav -->
-        <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
-            <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
-            </li>
-            <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
-            <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
-        </ul>
-        <!-- /Subnav -->
-      </div>
-      <!-- /Sidbar Mobile Nav-->
-    </div>
+   
 
-<?php include '_inc/footer.php'; ?>
+    <footer class="container-fluid" id="footer-gatekeeper">
+      <div class="container">
+        Accredited by the New England Association of Schools and Colleges (NEASC) | <a href="/student-life/map-and-directions/index.php" id="Footer_AddressMap">84 Alford Rd., Great Barrington, MA 01230</a> | <a href="mailto:info@simons-rock.edu" id="Footer_Connect_InfoEmail">info@simons-rock.edu</a> | <a href="tel:413-644-4400">413-644-4400</a> | Copyright © 2015 Bard College at Simon's Rock
+      </div>
+    </footer>
     
 <?php include '_inc/bottom-js.php' ?>
 
