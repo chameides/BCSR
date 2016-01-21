@@ -134,23 +134,23 @@ $joelPittID             = 685000000121843;
 $mollyGreeneID          = 685000022393324;
 $sophieMettlerGroveID   = 685000023022766;
 $coleenCoxID            = 685000002082963;
+$kirinTerniID           = 685000030899633;
 
 
 /* Assign Contact Owner based on Country, State/Province, and Zip */
 if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
     switch($_POST['drpState']) {
         /* Amanda Dubrowski */
-        case 'AL':
-        case 'AB':
+        case 'AL': 
         case 'AR':
         case 'DE':
         case 'DC':
         case 'FL':
         case 'GA':
-        case 'IL':
-        case 'IN':
+        case 'IN': 
         case 'KY':
         case 'LA':
+        case 'MA':
         case 'MD':
         case 'MI':
         case 'MS':
@@ -164,28 +164,19 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
             $contactOwnerID = $amandaDubrowskiID;
             break;
         /* Chandra Joos deKoven */
-        case 'AZ':
-        case 'CA':
-        case 'CO':
-        case 'ID':
-        case 'KS':
-        case 'MT':
-        case 'NE':
-        case 'NV':
-        case 'NM':
-        case 'OK':
-        case 'OR':
-        case 'UT':
-        case 'WA':
-        case 'WY':
+        case 'AB':
         case 'BC':
+        case 'CT':
         case 'IA':
+        case 'IL':
         case 'MB':
         case 'MN':
         case 'NB':
         case 'NF':
         case 'ND':
+        case 'NL':
         case 'NT':
+        case 'NU':
         case 'NS':
         case 'ON':
         case 'PE':
@@ -196,51 +187,69 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'YT':
             $contactOwnerID = $chandraJoosdeKovenID;
             break;
+         /* Kirin */
+        case 'AZ':
+        case 'CA':
+        case 'CO':
+        case 'ID': 
+        case 'KS':
+        case 'MT':
+        case 'NE':
+        case 'NJ':
+        case 'NV':
+        case 'NM':
+        case 'OK':
+        case 'OR':
+        case 'UT':
+        case 'WA':
+        case 'WY':
+        $contactOwnerID = $kirinTerniID; 
+            break;
         /* Joel Pitt */
         case 'ME':
         case 'NH':
+        case 'PA':
         case 'VT':
             $contactOwnerID = $joelPittID;
             break;
-        /* Molly Greene */
-        case 'CT':
-        case 'MA':
-        case 'NJ':
-        case 'PA':
-        case 'RI':
-        case 'TX':
-            $contactOwnerID = $mollyGreeneID;
-            break;
         /* Sophie Mettler-Grove */
+        case 'AA':
+        case 'AE':
         case 'AK':
+        case 'AP':
         case 'AS':
         case 'CNMI':
         case 'GU':
         case 'HI':
         case 'MH':
         case 'PR':
+        case 'RI':
+        case 'TX':
         case 'VI':
             $contactOwnerID = $sophieMettlerGroveID;
             break;
         /* NY, broken up by zip codes (first 3 digits) */
         case 'NY':
             switch(substr($_POST['txtZipOrPostal'], 0, 3)){
-                case '100':
-                case '101':
-                case '102':
-                case '103':
-                case '104':
+               
                 case '110':
-                case '111':
-                case '112':
-                case '113':
-                case '114':
-                case '116':
                 case '115':
                 case '117':
                 case '118':
                 case '119':
                     $contactOwnerID = $chandraJoosdeKovenID;
+                    break;
+                case '100':
+                case '101':
+                case '102':
+                case '103':
+                case '104':
+                case '111':
+                case '112':
+                case '113':
+                case '114':
+                case '116':
+                    $contactOwnerID = $kirinTerniID;
                     break;
                 default:
                     $contactOwnerID = $sophieMettlerGroveID;
