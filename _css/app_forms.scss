@@ -8,7 +8,7 @@ label.error {
   display: block;
 }
 
-.page-container #contactForm {
+#contactForm {
   .col-md-7, .col-sm-7, .col-md-6, .col-sm-6, .col-md-5, .col-sm-5, .col-sm-3{
     padding-left: 10px;
   }
@@ -17,7 +17,14 @@ label.error {
 #contactForm {
   .checkbox-sub {
     padding-left:35px;
+    //eliminate margin on second column
+    @media screen and (min-width: $screen-sm-min) {
+      &.col-sub-trailing-sm {
+        padding-left: 0;
+      }
+    }
   }
+
 
   .checkbox-sub + .checkbox {
     margin-top:-5px;
