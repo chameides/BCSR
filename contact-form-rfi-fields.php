@@ -117,7 +117,7 @@
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
 		<div id="grpPhone" class="form-group checkbox-sub col-sm-6"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
-		<div id="grpPhoneType" class="form-group checkbox-sub col-sm-6"><label for="drpPhoneType">Phone Type</label>
+		<div id="grpPhoneType" class="form-group checkbox-sub col-sm-6 col-sub-trailing-sm"><label for="drpPhoneType">Phone Type</label>
 			<select id="drpPhoneType" class="form-control" name="drpPhoneType" required="required">
 				<option value="">- Select Phone Type -</option>
 				<option value="Home">Home</option>
@@ -420,7 +420,7 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpZip" class="form-group checkbox-sub col-sm-6 col-sub-trailing-sm"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 		<div id="contactParent">
 			<div class="checkbox col-sm-12"><label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label></div>
 			<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12"><label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" /></div>
@@ -430,6 +430,6 @@
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
 					?>
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="submit" value="Submit" /></div>
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Request Info" /></div>
 	</form>
 </div>
