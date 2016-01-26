@@ -1,119 +1,36 @@
 <div class="row"><!-- row inside the col -->
 	<form id="contactForm">
-		<div class="form-group col-md-6"><label for="txtFirstName"><span id="childFirst">Child&rsquo;s </span>First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
-		<div class="form-group col-md-6"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
+		<div class="form-group col-md-12">
+			<h4>Referrer Information</h4>	
+		</div>
+		<div class="form-group col-md-8">
+			<label for="referrerName">Your Name*</label>
+			<input id="referrerName" class="form-control" maxlength="100" name="referrerName" required="required" type="text" />
+		</div>
+		<div class="form-group col-md-4">
+			<label for="referrerClassYear">Class Year</label>
+			<input id="referrerClassYear" class="form-control" placeholder="ex. 1997" maxlength="6" name="referrerClassYear" type="number" min="1" max="2020" />
+		</div>
+		<div class="form-group col-md-12">
+			<label for="referrerEmail">Your Email Address*</label>
+			<input id="referrerEmail" class="form-control" maxlength="100" name="referrerEmail" required="required" type="email" />
+		</div>
+		<div class="form-group col-md-12">
+			<label for="txtPhoneRequired">Phone Number*</label>
+			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" required="required" type="tel" />
+		</div>
+		<div class="form-group col-md-12">
+			<h4>Student Information</h4>
+		</div>
+		<div class="form-group col-md-6">
+		
+		<label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
+		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
 		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
-		<div id="DOB">
-			<div class="form-group col-sm-6"><label for="birth_month"><span id="childDOB">Child&rsquo;s </span>Date of Birth* <span class="sr-only">(Month)</span></label><select id="birth_month" class="form-control" name="birth_month" required="required">
-				<option value="">Month</option>
-				<option value="01">January</option>
-				<option value="02">February</option>
-				<option value="03">March</option>
-				<option value="04">April</option>
-				<option value="05">May</option>
-				<option value="06">June</option>
-				<option value="07">July</option>
-				<option value="08">August</option>
-				<option value="09">September</option>
-				<option value="10">October</option>
-				<option value="11">November</option>
-				<option value="12">December</option>
-				</select>
-			</div>
-			<div class="form-group col-sm-3">
-				<label class="hidden-xs" for="birth_day"><span class="sr-only">Date of Birth (Day)</span>&nbsp;</label>
-				<select id="birth_day" class="form-control" name="birth_day" required="required">
-					<option value="">Day</option>
-					<option value="01">01</option>
-					<option value="02">02</option>
-					<option value="03">03</option>
-					<option value="04">04</option>
-					<option value="05">05</option>
-					<option value="06">06</option>
-					<option value="07">07</option>
-					<option value="08">08</option>
-					<option value="09">09</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15">15</option>
-					<option value="16">16</option>
-					<option value="17">17</option>
-					<option value="18">18</option>
-					<option value="19">19</option>
-					<option value="20">20</option>
-					<option value="21">21</option>
-					<option value="22">22</option>
-					<option value="23">23</option>
-					<option value="24">24</option>
-					<option value="25">25</option>
-					<option value="26">26</option>
-					<option value="27">27</option>
-					<option value="28">28</option>
-					<option value="29">29</option>
-					<option value="30">30</option>
-					<option value="31">31</option>
-				</select>
-			</div>
-			<div class="form-group col-sm-3">
-				<label class="hidden-xs" for="birth_year"><span class="sr-only">Date of Birth (Year)</span>&nbsp;</label>
-				<select id="birth_year" class="form-control" name="birth_year" required="required">
-					<option value="">Year</option>
-					<option value="2005">2005</option>
-					<option value="2004">2004</option>
-					<option value="2003">2003</option>
-					<option value="2002">2002</option>
-					<option value="2001">2001</option>
-					<option value="2000">2000</option>
-					<option value="1999">1999</option>
-					<option value="1998">1998</option>
-					<option value="1997">1997</option>
-					<option value="1996">1996</option>
-					<option value="1995">1995</option>
-					<option value="1994">1994</option>
-					<option value="1993">1993</option>
-					<option value="1992">1992</option>
-					<option value="1991">1991</option>
-					<option value="1990">1990</option>
-				</select>
-			</div>
-		</div>
-		<div class="form-group col-sm-12 col-md-12">
-			<label for="gradeLevel">Grade Level*</label>
-			<select class="form-control" id="gradeLevel" name="gradeLevel" required="required">
-				<option value="">
-					<?php
-						// replace php with xsl-freindly code in CMS <php>
-							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-grade-date.php';
-						//</php>
-					?>
-				</option>
-				<option value="6">6th Grade</option>
-				<option value="7">7th Grade</option>
-				<option value="8">8th Grade</option>
-				<option value="9">9th Grade</option>
-				<option value="10">10th Grade</option>
-				<option value="11">11th Grade</option>
-				<option value="12">12th Grade</option>
-			</select>
-		</div>
-		<div id="note-container" class="col-sm-12 col-md-12 form-group">
-			<label for="note">Tell us about yourself</label> <textarea id="note" class="form-control" name="note"></textarea>
-		</div>
-		<div id="chxInfoByErr" class="col-sm-12"><label>I'd like to receive information by</label></div>
-		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
-		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
-		<div id="grpPhone" class="form-group checkbox-sub col-sm-6"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
-		<div id="grpPhoneType" class="form-group checkbox-sub col-sm-6"><label for="drpPhoneType">Phone Type</label>
-			<select id="drpPhoneType" class="form-control" name="drpPhoneType" required="required">
-				<option value="">- Select Phone Type -</option>
-				<option value="Home">Home</option>
-				<option value="Mobile">Mobile</option>
-				</select></div>
-				<div class="checkbox col-sm-12"><label> <input id="chxInfoByMail" class="chxInfoBy" name="chxInfoByMail" type="checkbox" value="Mail" /> Mail </label></div>
-				<div id="grpCountry" class="form-group checkbox-sub col-sm-12"><label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
+		<div id="grpPhone" class="form-group col-md-12"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
+		
+		<div id="grpCountry" class="form-group col-md-12">
+			<label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
 				<option value="">- Select Your Country -</option>
 				<option value="United States">United States</option>
 				<option value="Canada">Canada</option>
@@ -332,11 +249,15 @@
 				<option value="Other">Other</option>
 			</select>
 		</div>
-		<div id="grpAddress1" class="form-group checkbox-sub col-sm-12"><label for="txtAddress1">Address</label> <input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" /></div>
-		<div id="grpAddress2" class="form-group checkbox-sub col-sm-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
-		<div id="cityContainer" class="form-group checkbox-sub col-sm-12"><label for="city">City</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" /></div>
-		<div id="grpState" class="form-group checkbox-sub col-sm-6"><label for="drpState">State/Province</label>
-			<select id="drpState" class="form-control" name="drpState" required="required">
+		<div id="grpAddress1" class="form-group col-md-12">
+			<label for="txtAddress1">Address</label>
+			<input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" />
+		</div>
+		<div id="grpAddress2" class="form-group col-md-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
+		<div id="cityContainer" class="form-group col-md-12"><label for="city">City</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" /></div>
+		<div id="grpState" class="form-group col-sm-6">
+			<label for="drpState">State/Province</label>
+			<select id="drpState" class="form-control" name="drpState">
 				<option value="">- Select State/Province -</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -409,16 +330,40 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
-		<div id="contactParent">
-			<div class="checkbox col-sm-12"><label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label></div>
-			<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12"><label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" /></div>
+		<div id="grpZip" class="form-group col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpschool" class="form-group col-md-12">
+			<label for="school">School</label>
+			<input id="school" class="form-control" maxlength="100" name="school" type="text" />
+		</div>
+
+		<div class="form-group col-md-12">
+			<label for="gradeLevel">Grade Level</label>
+			<select class="form-control" id="gradeLevel" name="gradeLevel" >
+				<option value="">
+					<?php
+						// replace php with xsl-freindly code in CMS <php>
+							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-grade-date.php';
+						//</php>
+					?>
+				</option>
+				<option value="6">6th Grade</option>
+				<option value="7">7th Grade</option>
+				<option value="8">8th Grade</option>
+				<option value="9">9th Grade</option>
+				<option value="10">10th Grade</option>
+				<option value="11">11th Grade</option>
+				<option value="12">12th Grade</option>
+			</select>
+		</div>
+		<div class="col-sm-12 col-md-12 form-group">
+			<label for="note">Why are you referring this student to Simon’s Rock?</label>
+			<textarea id="referrerComment" class="form-control" name="referrerComment" maxlength="220"></textarea>
 		</div>
 			<?php
 						// replace php with xsl-freindly code in CMS <php>
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
 					?>
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Request Info" /></div>
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Refer Student" /></div>
 	</form>
 </div>

@@ -15,7 +15,7 @@ $( document ).ready(function() {
     /*
         $('#txtFirstName').val('firstName');
         $('#txtLastName').val('delete_lastName');
-        $('#txtEmail').val('delete_test@test.com');
+        $('#txtEmail').val('test@test.com');
         $('#birth_month').val('07');
         $('#birth_day').val('18');
         $('#birth_year').val('1995');
@@ -24,9 +24,7 @@ $( document ).ready(function() {
         $('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
-    */
-
-    
+    */ 
      
     //2. Submit
     // Variable to hold request
@@ -76,6 +74,10 @@ $( document ).ready(function() {
                 else if (formName == 'cty') {
                     var nextPage = 'cty-form-thanks.php'; 
                     var gtmLabel = 'formInquiryCTY';
+                }
+                else if (formName == 'referralAlumni') {
+                    var nextPage = 'referral-form-thanks.php'; 
+                    var gtmLabel = 'formInquiryReferralAlumni';
                 }
                 else {
                     var nextPage = 'contact-form-thanks.php';

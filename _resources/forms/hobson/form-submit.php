@@ -35,12 +35,15 @@ else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form conta
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
+else if ($_POST['referrerName'] > 0) { //determine Form Source, if Referal form: 
+  $formSource = 'Referral '; 
+  $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
+}
+
 else { //default
     $formSource = 'RFI Form '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
-
-
 
 $fields = array(
     "First Name" => $_POST['txtFirstName'],
@@ -50,9 +53,8 @@ $fields = array(
     "Contact City" => $_POST['city'],
     "Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
     "Parent 1 First Name" => $_POST['parentFirstName'],
-    "Parent 1 Last Name" => $_POST['parentLastName']                    
+    "Parent 1 Last Name" => $_POST['parentLastName']
 );
-
 
 
 if ($_POST['birth_month'] > 0 ) {
@@ -108,11 +110,23 @@ else {
         case 'Mobile';
             $fields["Mobile"] = $phone;
             break;
+        default:
+            $fields["Phone"] = $phone;
+            break;
     }
 }
 
+//Dump misc data into description field. Would be better to put this data into specific fields. 
 $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
+//Dump misc referrer data into field. Would be better to put this data into specific fields.
+$fields["Referral Comment"] = 
+    'Referrer: ' . $_POST['referrerName'] . 
+    ' | ' . $_POST['referrerClassYear'] . 
+    ' | ' . $_POST['referrerEmail'] .
+    ' | ' . $_POST['txtPhoneRequired'] .
+    ' | ' . $_POST['referrerComment'] .
+    ' | Student School: ' . $_POST['school'] ;
 
 //determine graduation year based on gradelevel
 if ($_POST['gradeLevel'] > 0) {
