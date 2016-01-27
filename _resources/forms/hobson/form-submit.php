@@ -35,7 +35,7 @@ else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form conta
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
-else if ($_POST['referrerName'] > 0) { //determine Form Source, if Referal form: 
+else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referal form: 
   $formSource = 'Referral '; 
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
@@ -156,15 +156,18 @@ else {
 //Dump misc data into description field. Would be better to put this data into specific fields. 
 $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
-//Dump misc referrer data into field. Would be better to put this data into specific fields.
-$fields["Referral Comment"] = 
-    'Referrer: ' . $_POST['referrerName'] . 
-    ' | ' . $_POST['referrerClassYear'] . 
-    ' | ' . $_POST['referrerEmail'] .
-    ' | ' . $_POST['txtPhoneRequired'] .
-    ' | ' . $_POST['referrerComment'] .
-    ' | Student School: ' . $_POST['school'] ;
-
+//If Referral Form...
+if ($formSource == 'Referral ') {
+    //...dump misc referrer data into field. Would be better to put this data into specific fields.
+    $fields["Referral Comment"] = 
+        'Referrer: ' . $_POST['referrerName'] . 
+        ' | ' . $_POST['referrerClassYear'] . 
+        ' | ' . $_POST['referrerEmail'] .
+        ' | ' . $_POST['txtPhoneRequired'] .
+        ' | ' . $_POST['referrerComment'] .
+        ' | Student School: ' . $_POST['school']
+    ;
+};
 //determine graduation year based on gradelevel
 if ($_POST['gradeLevel'] > 0) {
     $gradeLevel = $_POST['gradeLevel']; //pull data from form
