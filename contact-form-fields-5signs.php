@@ -420,7 +420,7 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 		<div id="contactParent">
 			<div class="checkbox col-sm-12"><label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label></div>
 			<div id="parentEmailContainer" class="form-group checkbox-sub col-sm-12"><label for="parentEmail">Parent email address</label> <input id="parentEmail" class="form-control" maxlength="100" name="parentEmail" type="text" /></div>

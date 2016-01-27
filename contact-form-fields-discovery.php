@@ -433,7 +433,7 @@
 		<option value="WY">Wyoming</option>
 		<option value="YT">Yukon Territory</option>
 		</select></div>
-		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code:</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpZip" class="form-group checkbox-sub col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 		<div id="contactParent">
 			<div class="checkbox col-sm-12">
 				<label> <input id="contactParentInput" class="chxInfoBy" name="contactParentInput" type="checkbox" value="ContactParent" /> Contact my parent </label>
