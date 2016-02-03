@@ -229,8 +229,14 @@ $( document ).ready(function() {
         }
         if ( countryval == 'United States' | countryval == 'Canada' ) {
             $('#grpState').fadeIn();
+            //style postal code for split column
+            $('#grpZip').addClass('col-sub-trailing-sm').addClass('col-sm-6');
+            $('#grpZip').removeClass('col-sm-12');
         } else {
             $('#grpState').hide();
+            ////style postal code for full column
+            $('#grpZip').removeClass('col-sub-trailing-sm').removeClass('col-sm-6');
+            $('#grpZip').addClass('col-sm-12');
         }
     }); 
     //reveal parent contact email if contact my parent is checked

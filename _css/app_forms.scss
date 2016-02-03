@@ -1,4 +1,8 @@
 //originally, from LH, this code was in the page head of just the RFI form. During implementation, MC added some rules to ensure that columns were consistently margined across devices. Then content was pulled so that it could style multiple pages. 
+
+//also see _css/bootstrap/_forms.scss
+
+
 label.error {
   color:red;
   font-size:12px;
@@ -9,18 +13,35 @@ label.error {
 }
 
 #contactForm {
-  .col-md-7, .col-sm-7, .col-md-6, .col-sm-6, .col-md-5, .col-sm-5, .col-sm-3{
+  .col-md-7, .col-sm-7, .col-md-5, .col-sm-5, {
     padding-left: 10px;
   }
-}
+  //consistent styling for most common column sizes
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-6,
+  .col-sm-8,
+  .col-sm-12,
+  .col-md-3,
+  .col-md-4,
+  .col-md-6,
+  .col-md-8,
+  .col-md-12,
+   {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $screen-sm-min) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
-#contactForm {
+  }
   .checkbox-sub {
     padding-left:35px;
     //eliminate margin on second column
-    @media screen and (min-width: $screen-sm-min) {
-      &.col-sub-trailing-sm {
-        padding-left: 0;
+    &.col-sub-trailing-sm {
+      @media screen and (min-width: $screen-sm-min) {
+        padding-left: 10px;
       }
     }
   }
