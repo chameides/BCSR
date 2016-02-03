@@ -470,7 +470,7 @@ label.error {
 			  </select>
 			</div>
 			<div class="form-group checkbox-sub col-sm-6" id="grpZip">
-				<label for="txtZipOrPostal"><span id="lblZipCode">Zip Code:</span><span id="lblPostalCode">Postal Code:</span></label>
+				<label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label>
 				<input type="text" class="form-control" name="txtZipOrPostal" id="txtZipOrPostal" />
 		  </div>
 	

@@ -1,11 +1,8 @@
 <div class="row"><!-- row inside the col -->
 	<form id="contactForm">
 		<div class="form-group col-md-12">
-			
-		
 			<!-- pass country to ensure state submit -->
 			<input id="drpCountry" class="form-control" maxlength="40" name="drpCountry" type="hidden" value="United States" />
-		
 		</div>
 		<div class="form-group col-md-6"><label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
