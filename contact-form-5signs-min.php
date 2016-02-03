@@ -60,7 +60,7 @@
 
 
   <div class="col-md-6">
-    <?php include 'contact-form-fields/contact-form-rfi-fields.php'; ?>
+    <?php include 'contact-form-fields/contact-form-fields-5signs-min.php'; ?>
   
 
 
@@ -130,7 +130,7 @@
 <?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>
-<script src="/_resources/js/forms/rfi-combine-min.js"></script>
+<script id="hobson-form-submit" data-name="5signs" src="/_resources/js/forms/rfi-combine-min.js"></script>
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
