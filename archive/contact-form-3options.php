@@ -31,7 +31,7 @@
 
 
 	<div class="col-md-6">
-		<?php include 'contact-form-rfi-fields.php'; ?>
+		<?php include 'contact-form-fields/contact-form-rfi-fields.php'; ?>
 	
 
 
