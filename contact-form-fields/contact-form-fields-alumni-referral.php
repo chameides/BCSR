@@ -26,7 +26,7 @@
 		
 		<label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
-		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
+		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
 		<div id="grpPhone" class="form-group col-md-12"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
 		
 		<div id="grpCountry" class="form-group col-md-12">
@@ -331,12 +331,12 @@
 			</select>
 		</div>
 		<div id="grpZip" class="form-group col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
-		<div id="grpschool" class="form-group col-md-12">
+		<div id="grpschool" class="form-group col-sm-12">
 			<label for="school">School</label>
 			<input id="school" class="form-control" maxlength="100" name="school" type="text" />
 		</div>
 
-		<div class="form-group col-md-12">
+		<div class="form-group col-sm-12">
 			<label for="gradeLevel">Grade Level</label>
 			<select class="form-control" id="gradeLevel" name="gradeLevel" >
 				<option value="">
