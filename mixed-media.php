@@ -95,15 +95,7 @@
 
         <!-- RIGHT COLUMN -->
         <div class="column-right">
-          <!-- Right Callout -->
-          <div class='callout-box orange-bg'>
-            <div class='callout-content'>
-              <div>
-                <span>April 15 Deadline</span>
-              </div>
-            </div>
-          </div>
-          <!-- /Right Callout -->
+        <!--remove call out-->
         </div>
         <!-- RIGHT COLUMN -->
       </div>
@@ -310,44 +302,7 @@
     
 <?php include '_inc/bottom-js.php' ?>
 
-  <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
-  <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
-  <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>
-
-  <script>
-
-    var controller;
-    var scene_callout;
-    $(document).ready(function($) {
-    
-      // init controller
-      controller = new ScrollMagic();
-
-      // Callout parallax
-      callout_parallax();
-      $(window).on('debouncedresize', function( event ) {
-        callout_parallax();
-      });
-
-    });
-
-function callout_parallax(){
-  if ($(window).width() >= 1370){
-    var tween_callout = TweenMax.fromTo('.callout-box', 1.5, 
-        { 'margin' : '20px 0;'},
-        { 'margin' : '-500px 0'}
-      );
-    // build scene
-    scene_callout = new ScrollScene({duration: 700}).setTween(tween_callout).addTo(controller);
-  }
-  else{
-    $('.callout-box').css("margin","20px 0");
-    controller.removeScene(scene_callout);
-    console.log(scene_callout);
-  }
-}
-
-  </script>
+ 
 
 
     
