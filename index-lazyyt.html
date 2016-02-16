@@ -781,37 +781,23 @@ var hostname=window.location.host,path=window.location.href,sidenav=document.get
 </script>
 <script>
 $(function() {
-    $('.lazy').lazy({
-        // loads instantly
-        customLoaderName: function(element) {
-            element.load();
-        },
+    $('button.playbutton').click(function() {
+         $('.lazy').lazy({
+             bind: "event",
+             delay: 0,
+			_youtubeLoader: function(element) {
+			            var url = 'https://www.youtube.com/embed/',
+			                frame = $('<iframe />')
 
-        // embed a youtube video
-        _youtubeLoader: function(element) {
-            var url = 'https://www.youtube.com/embed/',
-                frame = $('<iframe />')
+						frame.attr('width', 1280)
+						frame.attr('height', 720)
+						frame.attr('frameborder', 0)
+						frame.attr('src', url + element.data("video"));
 
-			frame.attr('width', 1280)
-			frame.attr('height', 720)
-			frame.attr('frameborder', 0)
-			frame.attr('src', url + element.data("video"));
-
-		    element.append(frame).load();
-        },
-
-        // loads with a five seconds delay
-        asyncLoader: function(element) {
-            setTimeout(function() {
-                element.load()
-            }, 5000);
-        },
-
-        // always fail
-        errorLoader: function(element) {
-            element.error();
-        }
-    });
+					    element.append(frame).load();
+			}
+         });
+     });
 });
 </script>
 <script async type="text/javascript" src="/_resources/forms/ouforms.js"></script>
