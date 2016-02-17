@@ -61,15 +61,6 @@
 
         <!-- RIGHT COLUMN-->
         <div class="column-right">
-          <!-- Right Callout -->
-          <div class='callout-box blue-bg'>
-            <div class='callout-content'>
-              <div>
-                <span>Member of the <a href="#">Swim Team</a></span>
-              </div>
-            </div>
-          </div>
-          <!-- /Right Callout -->
         </div>  
         <!-- /RIGHT COLUMN -->
       </div>
@@ -80,15 +71,7 @@
       <div class="row-full-width">
         <!-- LEFT COLUMN -->
         <div class="column-left no-side-nav top-zero">
-          <!-- Left Callout -->
-          <div class='callout-box left callout-custom-cicada blue-bg'>
-            <div class='callout-content'>
-              <div>
-                <span>Published a poem in Cicada Magazine sophomore year</span>
-              </div>
-            </div>
-          </div>
-          <!-- /Left Callout -->
+          
         </div>
         <!-- /LEFT COLUMN-->
 
@@ -143,15 +126,7 @@
       <div class="row-full-width">
         <!-- LEFT COLUMN -->
         <div class="column-left no-side-nav top-zero">
-          <!-- Left Callout -->
-          <div class='callout-box left orange-bg'>
-            <div class='callout-content'>
-              <div>
-                <span>Created a 3D printer from scratch</span>
-              </div>
-            </div>
-          </div>
-          <!-- /Left Callout -->
+          
         </div>
         <!-- /LEFT COLUMN-->
 
@@ -214,12 +189,10 @@
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.min.js"></script>
-  <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>
 
   <script>
 
     var controller;
-    var scene_callout;
     $(document).ready(function($) {
 
       function squidgevid() {
@@ -248,11 +221,6 @@
       // init controller
       controller = new ScrollMagic();
 
-      // Callout parallax
-      callout_parallax();
-      $(window).on('debouncedresize', function( event ) {
-        callout_parallax();
-      });
 
       //init controller
       var scene1 = new ScrollScene({
@@ -273,21 +241,6 @@
 
     });
 
-function callout_parallax(){
-  if ($(window).width() >= 1370){
-    var tween_callout = TweenMax.fromTo('.callout-box', 1.5, 
-        { 'margin' : '20px 0;'},
-        { 'margin' : '-500px 0'}
-      );
-    // build scene
-    scene_callout = new ScrollScene({duration: 700}).setTween(tween_callout).addTo(controller);
-  }
-  else{
-    $('.callout-box').css("margin","20px 0");
-    controller.removeScene(scene_callout);
-    // console.log(controller);
-  }
-}
 
   </script>
 
