@@ -35,7 +35,7 @@ else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form conta
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
-else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referal form: 
+else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referral form: 
   $formSource = 'Referral '; 
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
@@ -161,7 +161,9 @@ if ($formSource == 'Referral ') {
     //...dump misc referrer data into field. Would be better to put this data into specific fields.
     $fields["Referral Comment"] = 
         'Referrer: ' . $_POST['referrerName'] . 
-        ' | ' . $_POST['referrerClassYear'] . 
+        ' | ' . $_POST['referrerClassYear'] .
+        ' | ' . $_POST['title'] .
+        ' | ' . $_POST['organization'] . 
         ' | ' . $_POST['referrerEmail'] .
         ' | ' . $_POST['txtPhoneRequired'] .
         ' | ' . $_POST['referrerComment'] .
@@ -171,7 +173,7 @@ if ($formSource == 'Referral ') {
 //determine graduation year based on gradelevel
 if ($_POST['gradeLevel'] > 0) {
     $gradeLevel = $_POST['gradeLevel']; //pull data from form
-    $YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in January
+    $YearsToGraduation = 12 - $gradeLevel;
     $graduationYear =  date("Y") + $YearsToGraduation; //calculate value
     if (date("m")>7) { //if change this calculation, make sure to change the helper text
         $graduationYear = $graduationYear + 1;

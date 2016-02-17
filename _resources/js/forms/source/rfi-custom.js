@@ -79,6 +79,10 @@ $( document ).ready(function() {
                     var nextPage = 'referral-form-thanks.php'; 
                     var gtmLabel = 'formInquiryReferralAlumni';
                 }
+                else if (formName == 'referralCounselor') {
+                    var nextPage = 'referral-form-thanks.php'; 
+                    var gtmLabel = 'formInquiryReferralCounselor';
+                }
                 else {
                     var nextPage = 'contact-form-thanks.php';
                     var gtmLabel = 'Request Info';
