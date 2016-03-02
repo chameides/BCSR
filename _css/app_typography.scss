@@ -159,5 +159,12 @@ a.right-arrow-primary {
 a.right-arrow-aside {
     @extend .cta-bullet;
     @include LeHavre(20px);
+}
 
+.enlarge {
+  font-size: 2em; //magic number used on video page
+}
+
+.reduce {
+  font-size: .6em; //magic number used on video page
 }

@@ -1,4 +1,4 @@
-.modal-lg {
+.modal-lg, .media-close-up {
 	width:100%;
 	height:100%;
 	margin:0;
@@ -31,4 +31,20 @@
 		color:$white;
 		background-color:$dark-gray;
 	}
+}
+
+/* Full page with modal style */
+.media-close-up {
+  background-color:$dark-gray;
+  color: white; //offset text*/
+  position: absolute; //have video take full height
+  .modal-content {
+    border: 0; //override border set above
+  }
+  .close {
+    line-height: .7em;
+    padding-top: .5em;
+    opacity: .4;
+    text-shadow: 0 0 #fff;
+  }
 }
