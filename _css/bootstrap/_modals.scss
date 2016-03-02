@@ -146,3 +146,12 @@
 @media (min-width: $screen-md-min) {
   .modal-lg { width: $modal-lg; }
 }
+
+
+.media-close-up {
+  background-color: $modal-backdrop-bg;
+  color: white;
+  padding:$padding-large-vertical $padding-large-horizontal;
+}
+
+
