@@ -35,7 +35,7 @@
                   </p>
                   <div class="embed-wrapper">
                     <div class='embed-container' style="height: 300px;">
-                      <iframe src='directory-iframe-search.php'></iframe>
+                      <iframe src='directory-iframe-record.php'></iframe>
                     </div>
                   </div>
                   
