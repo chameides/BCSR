@@ -888,7 +888,10 @@ body#home {
 	}
 }
 
-.playbutton, .vjs-default-skin .vjs-big-play-button {
+
+.playbutton, 
+.vjs-default-skin .vjs-big-play-button, 
+a.playbutton /*make icon white even if link*/ {
 	width:80px;
 	height:80px;
 	text-align:center;
@@ -925,6 +928,24 @@ body#home {
 		}
 	}
 }
+
+a.playbutton {
+	line-height: 1.4em;
+	@media (min-width: $screen-md-min) {
+		line-height: 1.8em;
+	}
+}
+
+/*center play icon inside circle *
+changed from button to link and doesn't line up so added this magic number*/
+.rocker-row a.playbutton {
+	@media (max-width: $screen-md-max) {
+		line-height: 1.6em;
+	}
+}
+
+
+
  .vjs-default-skin .vjs-big-play-button {
 	position: absolute;
 	top: 50%;

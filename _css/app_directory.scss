@@ -1,0 +1,9 @@
+//place holder for directory css fixes. these should be folded into the rest of the code. 
+.directory {
+	.btn.btn-primary {
+		@media screen and (max-width:$screen-xs-min) {
+			padding: 8px 8px;
+			font-size: .8em;
+		}
+	}
+}
