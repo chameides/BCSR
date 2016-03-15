@@ -936,16 +936,6 @@ a.playbutton {
 	}
 }
 
-/*center play icon inside circle *
-changed from button to link and doesn't line up so added this magic number*/
-.rocker-row a.playbutton {
-	@media (max-width: $screen-md-max) {
-		line-height: 1.6em;
-	}
-}
-
-
-
  .vjs-default-skin .vjs-big-play-button {
 	position: absolute;
 	top: 50%;

@@ -69,7 +69,7 @@
 									<h4>Ben Krupka</h4>
 									<p>Lorem ipsum dolor sit amet</p>
 								</div>
-								<button class="btn btn-link playbutton" data-toggle="modal" data-target="#rocker2VideoModal"><i class="fa fa-play"></i></button>
+								<a class="btn btn-link playbutton" data-toggle="modal" data-target="#rocker2VideoModal"><i class="fa fa-play"></i></a>
 							</div>
 		
 							
