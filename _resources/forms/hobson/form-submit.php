@@ -1,4 +1,7 @@
 <?php
+  // Start the session
+  session_start();
+
 
 /*
 Table of Contents
@@ -351,7 +354,9 @@ if ($_POST['userRole'] !== 'Other') {
     $modify = 'False'; //reset to default
     //get entity id from return string
     $entityID = get_string_between($return, 'Entity ID":', '}');
-
+    //set session variable 
+    $_SESSION['entityID'] = $entityID;    
+    
     $data_lifecycle = array("createFields" => array(
         "Contact" => $entityID,
         "Lifecycle Role" => 'Inquirer',

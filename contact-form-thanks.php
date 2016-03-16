@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,6 +46,17 @@ label.error {
 		<p>We have recieved your form submission.
 		You should be on the lookout for something.
 		Also, check out our website.</p>
+
+		<?php 
+			$var_value = $_SESSION['entityID'];
+			echo "<p>value: " . $var_value . "</p><br><br>";
+			
+			print_r($_SESSION);
+
+		?>
+
+
+
 	</div>
 
 	<div class="col-md-6">
