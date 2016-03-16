@@ -20,7 +20,7 @@ function sendData() {
     global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify;
     
     /* Pass JSON to web server
-        If the data is a new record use, Hobson requires the Post Method. If it is exisiting record, Hobson requires the Put Method
+        If the data is a new record use, Hobson requires the Post Method. If it is an existing record, Hobson requires the Put Method
     */
     $ch = curl_init($url_curl);
         curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
@@ -74,19 +74,45 @@ function errorCheck() {
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
-            //The record already exists in the database, prepare to resubmit using the Modify/Put Method. 
-            $modify = 'True';
-            //if contacts table
-            if ($url_curl == $url_contacts) {
-                $entityID = filter_var($errorMessage, FILTER_SANITIZE_NUMBER_INT);
-            };
-            $url_curl = $url_curl . '/' . $entityID;
-            sendData();
+            if (begins_with($errorMessage, "A duplicate record has been found  in the recycle bin")) {
+                //Not sure how to get Radius to except submissions with this category, prepare variables for email
+                $subject ='Error: Hobson Radius Form Recycle';
+                $message = 'There has been an error on the Hobson Radius Form Submission
+                    
+                    Status: ' . $status .
+                    '
+                    ***Modify: ' . $modify .
+                    '
+                    ***Error: ' . $errorMessage .
+                    '
+                    ***url:' . $url_curl .
+                    '
+                    ***entityID:' . $entityID .
+                    
+                    '
+                    ***error return:' . $return  . 
+                    '
+                    
+                    data send:' . print_r( $data_contact, true ) 
+                ;
+                //send email
+                mail ( $to_error , $subject , $message, $headers );
+            }
+            else {
+                //The record already exists in the database, prepare to resubmit using the Modify/Put Method. 
+                $modify = 'True';
+                //if contacts table
+                if ($url_curl == $url_contacts) {
+                    $entityID = filter_var($errorMessage, FILTER_SANITIZE_NUMBER_INT);
+                };
+                $url_curl = $url_curl . '/' . $entityID;
+                sendData();
+            }
         }
         else {
-        //prepare variables for email
+        //not duplicate, prepare variables for email
         $subject ='Error: Hobson Radius Form';
-        $message = 'There has been an error on the Hobson Radious Form Submission
+        $message = 'There has been an error on the Hobson Radius Form Submission
             
             Status: ' . $status .
             '
@@ -108,8 +134,5 @@ function errorCheck() {
         mail ( $to_error , $subject , $message, $headers );
         };
     };
-    //send email
-    mail ( $to_error , $subject , $message, $headers );
 }
-
 ?>
