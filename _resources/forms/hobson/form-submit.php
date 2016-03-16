@@ -43,16 +43,27 @@ else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Refer
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
 
+else if (strpos($_POST['url'],'address') !== false) { //if the URL of the form contains address:
+    $formSource = 'Address'; 
+    $entityID = $_SESSION['entityID'];
+}
+
+
 else { //default
     $formSource = 'RFI Form '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-//create initial array with required fields
-$fields = array(
-    "First Name" => $_POST['txtFirstName'],
-    "Last Name" => $_POST['txtLastName']    
-);
+
+//add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtFirstName']) > 0 ) {
+    //create initial array with generally required fields
+    $fields = array(
+        "First Name" => $_POST['txtFirstName'],
+        "Last Name" => $_POST['txtLastName']    
+    );
+};
+
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtAddress1']) > 0 ) {
@@ -116,8 +127,11 @@ else {
     if(strlen($_POST['drpPhoneType']) > 0){ 
         $fields["Preferred Phone"] = $_POST['drpPhoneType'];
     };
-    $fields["Email"] = $_POST['txtEmail'];
-    //if($_POST['contactParentInput'] == 'ContactParent'){ };
+    //add field if data exists. Without if statement, blank result will overwrite existing data. 
+    if(strlen($_POST['txtEmail']) > 0) {
+        $fields["Email"] = $_POST['txtEmail'];
+    }
+        //if($_POST['contactParentInput'] == 'ContactParent'){ };
     if (strlen($_POST['parentEmail']) > 0) {
         $fields["Parent 1 Email"] = $_POST['parentEmail'];
     }
@@ -346,6 +360,12 @@ $data_contact =
 $content = json_encode($data_contact);
 $url_curl = $url_contacts;
 
+//If address form, set url and modify 
+if ($formSource == 'Address') {
+    $url_curl = $url_contacts . '/' . $entityID;
+    $modify  = 'True';
+}; 
+
 //5. send data to Hobson
 sendData();
 
@@ -354,21 +374,31 @@ if ($_POST['userRole'] !== 'Other') {
     $modify = 'False'; //reset to default
     //get entity id from return string
     $entityID = get_string_between($return, 'Entity ID":', '}');
-    //set session variable 
-    $_SESSION['entityID'] = $entityID;    
     
-    $data_lifecycle = array("createFields" => array(
-        "Contact" => $entityID,
-        "Lifecycle Role" => 'Inquirer',
-        "Lifecycle Stage" => 'Open',
-        "Primary Role" => 'True',
-    ));
+    //set session variable 
+    if ($formSource == 'Address') {
+        //variables for error testing
+        $_SESSION['formSource'] = 'address-yes';
+        $_SESSION['url'] = $url_curl;
+        $_SESSION['content'] = $content;
 
-    //define variables for specific curl event
-    $content = json_encode($data_lifecycle);
-    $url_curl = $url_lifecycles;
-    //send data to Hobson
-    sendData();
+    }
+    else {
+    //set variables for lifecyle senddata. no lifecycle on address form
+        $_SESSION['entityID'] = $entityID; 
+        $data_lifecycle = array("createFields" => array(
+            "Contact" => $entityID,
+            "Lifecycle Role" => 'Inquirer',
+            "Lifecycle Stage" => 'Open',
+            "Primary Role" => 'True',
+        ));
+
+        //define variables for specific curl event
+        $content = json_encode($data_lifecycle);
+        $url_curl = $url_lifecycles;
+        //send data to Hobson
+        sendData();
+    };
 
 }
 ?>

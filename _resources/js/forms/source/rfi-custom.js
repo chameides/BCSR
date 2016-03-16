@@ -12,8 +12,8 @@ if ($('#hobson-form-submit').length > 0) {
 $( document ).ready(function() {
 
     // 1. Dummy data   
-    /*
-        $('#txtFirstName').val('firstName');
+    
+        $('#txtFirstName').val('firstName1');
         $('#txtLastName').val('delete_lastName');
         $('#txtEmail').val('test@test.com');
         $('#birth_month').val('07');
@@ -23,8 +23,11 @@ $( document ).ready(function() {
         $('#drpCountry').val('United States');
         $('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
-        $('#txtZipOrPostal').val('60532');
-    */ 
+        $('#city').val('City');
+        $('#drpState').val('AL');
+        //$('#txtZipOrPostal').val('60532');
+        $('#gradeLevel').val('6');
+     
      
     //2. Submit
     // Variable to hold request
@@ -83,8 +86,19 @@ $( document ).ready(function() {
                     var nextPage = 'referral-form-thanks.php'; 
                     var gtmLabel = 'formInquiryReferralCounselor';
                 }
+                else if (formName == 'address') {
+                    var nextPage = 'contact-address-form-thanks.php'; 
+                    var gtmLabel = 'formNonInquiryAddress';
+                }
                 else {
-                    var nextPage = 'contact-form-thanks.php';
+                    //check if address is used by looking for zip code
+                    var txtZipOrPostal = $("#txtZipOrPostal").val();
+                    if (txtZipOrPostal > '1') {
+                        var nextPage = 'contact-form-thanks.php';
+                    }
+                    else {
+                        var nextPage = 'contact-form-thanks-address.php';
+                    }
                     var gtmLabel = 'Request Info';
                 }
                 //console.log("Hooray, it worked!");
@@ -137,16 +151,16 @@ $( document ).ready(function() {
                 required: '#chxInfoByPhone:checked'
             },
             drpCountry: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtAddress1: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             city: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtZipOrPostal: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             chxInfoBy: {
                 required: true,
