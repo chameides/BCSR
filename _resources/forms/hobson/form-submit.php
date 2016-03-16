@@ -51,7 +51,7 @@ $fields = array(
     "Last Name" => $_POST['txtLastName']    
 );
 
-//add fields if data exists. Without if statement, blank result will overrite existing data. 
+//add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtAddress1']) > 0 ) {
     $fields["Contact Street"] = $_POST['txtAddress1']; 
 };
@@ -339,7 +339,7 @@ $data_contact =
             )
     );
 
-//define variables for specic curl event
+//define variables for specific curl event
 $content = json_encode($data_contact);
 $url_curl = $url_contacts;
 
@@ -359,7 +359,7 @@ if ($_POST['userRole'] !== 'Other') {
         "Primary Role" => 'True',
     ));
 
-    //define variables for specic curl event
+    //define variables for specific curl event
     $content = json_encode($data_lifecycle);
     $url_curl = $url_lifecycles;
     //send data to Hobson
