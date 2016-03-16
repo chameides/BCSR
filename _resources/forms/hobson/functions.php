@@ -101,11 +101,22 @@ function errorCheck() {
             else {
                 //The record already exists in the database, prepare to resubmit using the Modify/Put Method. 
                 $modify = 'True';
-                //if contacts table
+                //if contacts table, append entity id
                 if ($url_curl == $url_contacts) {
                     $entityID = filter_var($errorMessage, FILTER_SANITIZE_NUMBER_INT);
+                    $url_curl = $url_contacts . '/' . $entityID;
+                    $urlStatus = 'url_contacts';
+                }
+                //sometimes url_contacts gets two sets of entityID and throws an error
+                elseif (begins_with($url_curl, $url_contacts)) {
+                    $url_curl = $url_contacts . '/' . $entityID;
+                    $urlStatus = 'url_contacts_trim';
+                }
+                //append entity id to lifecycle 
+                else {
+                    $url_curl = $url_curl . '/' . $entityID;
+                    $urlStatus = 'url__not_contacts';
                 };
-                $url_curl = $url_curl . '/' . $entityID;
                 sendData();
             }
         }
@@ -123,6 +134,9 @@ function errorCheck() {
             ***url:' . $url_curl .
             '
             ***entityID:' . $entityID .
+            
+            '
+            ***urlStatus:' . $urlStatus .
             
             '
             ***error return:' . $return  . 
