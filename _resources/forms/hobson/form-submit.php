@@ -43,11 +43,14 @@ else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Refer
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
 
-else if (strpos($_POST['url'],'address') !== false) { //if the URL of the form contains address:
+else if ($_SESSION['formSource'] == 'address') { //address only form
     $formSource = 'Address'; 
     $entityID = $_SESSION['entityID'];
 }
 
+else if ($_SESSION['formSource'] == 'addressMissingSession') { //address only form, but the session variables aren't working
+    $formSource = 'addressMissingSession'; 
+}
 
 else { //default
     $formSource = 'RFI Form '; 
@@ -59,13 +62,16 @@ else { //default
 if(strlen($_POST['txtFirstName']) > 0 ) {
     //create initial array with generally required fields
     $fields = array(
-        "First Name" => $_POST['txtFirstName'],
-        "Last Name" => $_POST['txtLastName']    
+        "First Name" => $_POST['txtFirstName']
     );
 };
 
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtLastName']) > 0 ) {     
+    $fields["Last Name"] = $_POST['txtLastName']; 
+};
+
 if(strlen($_POST['txtAddress1']) > 0 ) {
     $fields["Contact Street"] = $_POST['txtAddress1']; 
 };
@@ -170,8 +176,10 @@ else {
     }
 }
 
-//Dump misc data into description field. Would be better to put this data into specific fields. 
-$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+if ($formSource !== 'addressMissingSession') {
+    //Dump misc data into description field. Would be better to put this data into specific fields. But don't want the address follow-up form to overwrite 
+    $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+}
 
 //If Referral Form...
 if ($formSource == 'Referral ') {
@@ -375,13 +383,19 @@ if ($_POST['userRole'] !== 'Other') {
     //get entity id from return string
     $entityID = get_string_between($return, 'Entity ID":', '}');
     
-    //set session variable 
+    //set session variable - can be removed after testing is complete
     if ($formSource == 'Address') {
         //variables for error testing
-        $_SESSION['formSource'] = 'address-yes';
+        $_SESSION['formSource'] = 'addressOnly';
         $_SESSION['url'] = $url_curl;
         $_SESSION['content'] = $content;
 
+    }
+    //set session variable - can be removed after testing is complete
+    elseif ($formSource == 'addressMissingSession') {
+        $_SESSION['formSource'] = 'addressMissingSession2';
+        $_SESSION['url'] = $url_curl;
+        $_SESSION['content'] = $content;
     }
     else {
     //set variables for lifecyle senddata. no lifecycle on address form

@@ -56,25 +56,31 @@
 
   <div class="col-md-6">
     <p>Thank you text goes here....</p>
+    <?php 
+        $sessionEntityID = $_SESSION['entityID'];
+      if ($sessionEntityID > 1){
+        echo "<p>value: " . $sessionEntityID . "</p><br><br>";
+      }
+      else {
+        echo "<p>default</p><br><br>";
+      }
+      echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
+      echo "<p>url: " . $_SESSION['url'] . "</p>";
+      echo "<p>content: " . $_SESSION['content'] . "</p>";
+      echo "<p>return: " . $_SESSION['return'] . "</p>";
+      print_r($_SESSION);
+
+
+
+      /*print_r($_SESSION);*/
+
+
+    ?>
   </div>
 
 
   <div class="col-md-6">
-  	<?php 
-  			$sessionEntityID = $_SESSION['entityID'];
-			if ($sessionEntityID > 1){
-				echo "<p>value: " . $sessionEntityID . "</p><br><br>";
-			}
-			else {
-				echo "<p>default</p><br><br>";
-			}
 
-
-
-			/*print_r($_SESSION);*/
-
-
-		?>
 
     <?php include 'contact-form-fields/contact-form-address.php'; ?>
   

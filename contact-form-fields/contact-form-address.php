@@ -1,15 +1,15 @@
-<script>
-	//set form name
-	formName = 'address';
-</script>
 <div class="row"><!-- row inside the col -->
 	<form id="contactForm">
 		<?php 
-			if ($sessionEntityID > 1){
-				
+			if ($_SESSION['entityID'] > 1){ //if session id is working
+				/*set form name*/
+				$_SESSION['formSource'] = 'address';
+				echo '<script>formName = "address";</script>';
 			}
-			else {
-				echo '<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>';
+			else { //if session id isn't working, include required fields. User will be forced to re-enter
+				$_SESSION['formSource'] = 'addressMissingSession';
+				echo '<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
+				<div class="form-group col-md-6"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>';
 			}
 		?>
 		<div id="grpCountry" class="form-group col-sm-12"><label for="drpCountry">Country*</label>
@@ -315,6 +315,6 @@
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
 					?>
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Request Info" /></div>
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Mail Me the Fact Book" /></div>
 	</form>
 </div>

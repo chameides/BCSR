@@ -71,8 +71,9 @@
 			}
       echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
       echo "<p>url: " . $_SESSION['url'] . "</p>";
-      echo "<p>content: " . $_SESSION['content'] . "</p>";
-			print_r($_SESSION);
+      echo "<p>content1: " . $_SESSION['content'] . "</p>";
+      echo "<p>return: " . $_SESSION['return'] . "</p>";
+			
 
 
 		?>
