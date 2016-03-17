@@ -33,22 +33,22 @@ if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day fo
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
     $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
 }
-else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form contains cty:
+elseif (strpos($_POST['url'],'cty') !== false) { //if the URL of the form contains cty:
     $formSource = 'CTY Inquiry '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
-else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referral form: 
+elseif (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referral form: 
   $formSource = 'Referral '; 
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
 
-else if ($_SESSION['formSource'] == 'address') { //address only form
+elseif ($_SESSION['formSource'] == 'address') { //address only form
     $formSource = 'Address'; 
     $entityID = $_SESSION['entityID'];
 }
 
-else if ($_SESSION['formSource'] == 'addressMissingSession') { //address only form, but the session variables aren't working
+elseif ($_SESSION['formSource'] == 'addressMissingSession') { //address only form, but the session variables aren't working
     $formSource = 'addressMissingSession'; 
 }
 

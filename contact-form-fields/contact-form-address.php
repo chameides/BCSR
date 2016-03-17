@@ -4,7 +4,6 @@
 			if ($_SESSION['entityID'] > 1){ //if session id is working
 				/*set form name*/
 				$_SESSION['formSource'] = 'address';
-				echo '<script>formName = "address";</script>';
 			}
 			else { //if session id isn't working, include required fields. User will be forced to re-enter
 				$_SESSION['formSource'] = 'addressMissingSession';
