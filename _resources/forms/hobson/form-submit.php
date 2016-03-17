@@ -176,7 +176,7 @@ else {
     }
 }
 
-if ($formSource !== 'addressMissingSession') {
+if ($formSource !== 'addressMissingSession' && $formSource !== 'Address') {
     //Dump misc data into description field. Would be better to put this data into specific fields. But don't want the address follow-up form to overwrite 
     $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 }
