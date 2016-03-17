@@ -9,7 +9,7 @@
 			else { //if session id isn't working, include required fields. User will be forced to re-enter
 				$_SESSION['formSource'] = 'addressMissingSession';
 				echo '<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
-				<div class="form-group col-md-6"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>';
+				<div class="form-group col-md-12"><label for="txtLastName"><span id="childLast">Child&rsquo;s </span>Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>';
 			}
 		?>
 		<div id="grpCountry" class="form-group col-sm-12"><label for="drpCountry">Country*</label>
@@ -309,7 +309,7 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group col-sm-6 col-sub-trailing-sm"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code*</span><span id="lblPostalCode">Postal Code<*/span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
+		<div id="grpZip" class="form-group col-sm-6 col-sub-trailing-sm"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code*</span><span id="lblPostalCode">Postal Code*</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 			<?php
 						// replace php with xsl-freindly code in CMS <php>
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
