@@ -360,6 +360,7 @@ $data_contact =
         "createFields" => $fields,
         "returnFields" => array(
                 "Entity ID",
+                "Contact Street",
                 "Description",
             )
     );
@@ -378,10 +379,18 @@ if ($formSource == 'Address') {
 sendData();
 
 
+//testing data
+$_SESSION['formSource'] = $formSource;
+$_SESSION['url'] = $url_curl;
+$_SESSION['content'] = $content;
+
+
+
 if ($_POST['userRole'] !== 'Other') {
     $modify = 'False'; //reset to default
     //get entity id from return string
-    $entityID = get_string_between($return, 'Entity ID":', '}');
+    $entityID = get_string_between($return, 'Entity ID":', ',"Contact');
+    $_SESSION['entityID1'] = $entityID; 
     
     //set session variable - can be removed after testing is complete
     if ($formSource == 'Address') {
@@ -399,6 +408,7 @@ if ($_POST['userRole'] !== 'Other') {
     }
     else {
     //set variables for lifecyle senddata. no lifecycle on address form
+        checkIfAddressExists();
         $_SESSION['entityID'] = $entityID; 
         $data_lifecycle = array("createFields" => array(
             "Contact" => $entityID,

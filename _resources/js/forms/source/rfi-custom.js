@@ -65,7 +65,6 @@ $( document ).ready(function() {
         
             // Callback handler that will be called on success
             request.done(function (response, textStatus, jqXHR){
-                // Log a message to the console
                 if (formName == 'discovery') {
                     var nextPage = 'discovery-day-thank-you.php'; 
                     var gtmLabel = 'formInquiryDiscoveryDayRequest';
@@ -91,16 +90,17 @@ $( document ).ready(function() {
                     var gtmLabel = 'formNonInquiryAddress';
                 }
                 else {
-                    //check if address is used by looking for zip code
+                    //check if address is used by looking for submission of zip code
                     var txtZipOrPostal = $("#txtZipOrPostal").val();
                     if (txtZipOrPostal > '1') {
                         var nextPage = 'contact-form-thanks.php';
                     }
                     else {
-                        var nextPage = 'contact-form-thanks-address.php';
+                        var nextPage = 'contact-form-thanks-address.php'; //this page will redirect with php if address already exists in record
                     }
                     var gtmLabel = 'Request Info';
                 }
+                // Log a message to the console
                 //console.log("Hooray, it worked!");
                 window.location.replace(nextPage);
                 //add event for gta

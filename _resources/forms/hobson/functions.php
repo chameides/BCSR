@@ -61,6 +61,8 @@ function sendData() {
     var_dump($return);
     */
     errorCheck();
+    //testing data
+    $_SESSION['return'] = $return;
 };
 function errorCheck() { 
     /*check for error
@@ -71,6 +73,7 @@ function errorCheck() {
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
     $errorMessage = get_string_between($return, 'message":"', '"');
+    $_SESSION['errorMessage'] = $errorMessage;
     //if we are ok, then there is not error and we can move on. 
     if ($status !== "ok") {
         if (begins_with($errorMessage, "A duplicate record has been found")) {
@@ -148,5 +151,22 @@ function errorCheck() {
         mail ( $to_error , $subject , $message, $headers );
         };
     };
+    $_SESSION['urlStatus'] = $urlStatus;
 }
+
+//Determine if record has an address. Using the existence of Address Line 1 as a proxy for the entire address.
+function checkIfAddressExists() { 
+    global $return;
+    $addressExists = '';
+    $address = '';
+    $address = get_string_between($return, 'Contact Street":"', '"');
+    if(strlen($address) > 0 ) {
+        $addressExists = 'true';   
+    }
+    $_SESSION['address'] = $address;
+    $_SESSION['addressExists'] = $addressExists;
+
+}
+
+
 ?>

@@ -1,3 +1,16 @@
+<?php
+  session_start();
+  //set variables to defaults
+  $_SESSION['entityID'] = '';
+  $_SESSION['formSource'] = '';
+  $_SESSION['url'] = '';
+  $_SESSION['addressExists'] == '';
+  $_SESSION['content'] = '';
+  $_SESSION['return'] = '';
+  $_SESSION['entityID1'] = '';
+  $_SESSION['errorMessage'] = '';
+  $_SESSION['urlStatus'] = '';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,6 +65,20 @@
           <div class="row">
 
   <div class="col-md-6">
+<?
+    $sessionEntityID = $_SESSION['entityID'];
+
+    if ($sessionEntityID > 1){
+      echo "<p>value: " . $sessionEntityID . "</p>";
+    }
+    else {
+      echo "<p>default</p>";
+    }
+    echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
+    echo "<p>url: " . $_SESSION['url'] . "</p>";
+    echo "<p>content: " . $_SESSION['content'] . "</p>";
+    echo "<p>return: " . $_SESSION['return'] . "</p>";
+?>
     <p>We're so glad you would like to know
     more about Simon's Rock and Bard
     Academy. Please fill out the form on this page

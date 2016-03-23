@@ -1,5 +1,8 @@
 <?php
 	session_start();
+  if ($_SESSION['addressExists'] == 'true') {
+    header( 'Location: /new_page.html' ) ;
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,18 +60,25 @@
   <div class="col-md-6">
     <p>Thank you text goes here....</p>
     <?php 
-        $sessionEntityID = $_SESSION['entityID'];
+      $sessionEntityID = $_SESSION['entityID'];
       if ($sessionEntityID > 1){
         echo "<p>value: " . $sessionEntityID . "</p><br><br>";
+
       }
       else {
         echo "<p>default</p><br><br>";
       }
+      echo "<p>entity id1: " . $_SESSION['entityID1'] . "</p>";
       echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
       echo "<p>url: " . $_SESSION['url'] . "</p>";
+      echo "<p>urlstatus: " . $_SESSION['urlStatus'] . "</p>";
+      echo "<p>error message: " . $_SESSION['errorMessage'] . "</p>";
       echo "<p>content: " . $_SESSION['content'] . "</p>";
-      echo "<p>return: " . $_SESSION['return'] . "</p>";
-      print_r($_SESSION);
+      echo "<p>address: " . $_SESSION['address'] . "</p>";
+      echo "<p>address exists: " . $_SESSION['addressExists'] . "</p>";
+      
+      echo "<p>return</p> " . $_SESSION['return'] . "<p>end return</p>";
+      
 
 
 
