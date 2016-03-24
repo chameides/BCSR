@@ -1,7 +1,8 @@
  <?php
   session_start();
   //reset variables
-  session_unset();
+  //session_unset();
+  $_SESSION = array();
   session_destroy();
   session_write_close();
   //setcookie(session_name(),'',0,'/');

@@ -377,21 +377,22 @@ if ($formSource == 'address') {
 //5. send data to Hobson
 sendData();
 
-
 if ($_POST['userRole'] !== 'Other') {
-    $modify = 'False'; //reset to default
     //get entity id from return string
     $entityID = get_string_between($return, 'Entity ID":', ',"Contact');
-
     if ($formSource == 'RFI-Address-Follow-Yes'){
         global $modify;
         if ($_SESSION['addressSubmit'] == 'True') {
+            //just submitted an address on the form
         }
         else {
-            if ($modify == 'true'){
+            if ($modify == 'True'){
+                //record already exists, check database 
                 checkIFAddressExists();
             }
             else {
+                $_SESSION['testing-modify'] = $modify;
+                $_SESSION['testing-nocheck'] = 'true';
                 $_SESSION['addressExists'] = 'false';
             }
         }
@@ -405,7 +406,7 @@ if ($_POST['userRole'] !== 'Other') {
         $_SESSION['return'] = $return;
         $_SESSION['addressExists'] = 'true';
     }
-
+    $modify = 'False'; //reset to default
     $data_lifecycle = array("createFields" => array(
         "Contact" => $entityID,
         "Lifecycle Role" => 'Inquirer',
