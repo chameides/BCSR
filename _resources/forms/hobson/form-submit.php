@@ -31,6 +31,11 @@ if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') {
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
+else if ($_SESSION['formSource'] == 'address') { 
+    $formSource = 'address';
+}
+
+
 else if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
     $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
@@ -58,13 +63,18 @@ else {
 };
 
 
-//create initial array with required fields
-$fields = array(
-    "First Name" => $_POST['txtFirstName'],
-    "Last Name" => $_POST['txtLastName']    
-);
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtFirstName']) > 0 ) {
+   $fields["First Name"] = $_POST['txtFirstName'];
+};
+
+//add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtLastName']) > 0 ) {
+   $fields["Last Name"] = $_POST['txtLastName'];
+};
+
+
 if(strlen($_POST['txtAddress1']) > 0 ) {
     $fields["Contact Street"] = $_POST['txtAddress1'];
     if ($formSource == 'RFI-Address-Follow-Yes'){
@@ -129,7 +139,9 @@ else {
     if(strlen($_POST['drpPhoneType']) > 0){ 
         $fields["Preferred Phone"] = $_POST['drpPhoneType'];
     };
-    $fields["Email"] = $_POST['txtEmail'];
+    if(strlen($_POST['txtEmail']) > 0) {
+        $fields["Email"] = $_POST['txtEmail'];
+    };
     //if($_POST['contactParentInput'] == 'ContactParent'){ };
     if (strlen($_POST['parentEmail']) > 0) {
         $fields["Parent 1 Email"] = $_POST['parentEmail'];
