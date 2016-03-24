@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,6 +43,12 @@ label.error {
 <div class="row">
 
 	<div class="col-md-6">
+		<p>Display Variables</p>
+	    <?php 
+	      echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
+	      print_r($_SESSION);
+
+	    ?>
 		<p>We have recieved your form submission.
 		You should be on the lookout for something.
 		Also, check out our website.</p>

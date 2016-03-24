@@ -1,5 +1,5 @@
 <?php
-
+  session_start();
 /*
 Table of Contents
 1. Error Check
@@ -26,7 +26,12 @@ include 'config.php';
 include 'functions.php';
 
 /* 3. Assemble field data to pass to web server */
-if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
+if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') { 
+    $formSource = 'RFI-Address-Follow-Yes'; 
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
+}
+
+else if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
     $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
 }
@@ -44,6 +49,14 @@ else { //default
     $formSource = 'RFI Form '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
+
+if ($formSource == 'RFI-Address-Follow-Yes'){
+    $_SESSION['formSource'] = $formSource;
+}
+else {
+    $_SESSION['formSource'] = 'other';   
+};
+
 
 //create initial array with required fields
 $fields = array(

@@ -1,3 +1,14 @@
+ <?php
+  session_start();
+  
+  session_unset();
+    session_destroy();
+    session_write_close();
+    setcookie(session_name(),'',0,'/');
+    session_regenerate_id(true);
+    $_SESSION['formSource'] = 'start';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,6 +63,13 @@
           <div class="row">
 
   <div class="col-md-6">
+    <p>Display Variables</p>
+    <?php 
+      echo "variables: ";
+      print_r($_SESSION);
+
+    ?>
+    <p></p>
     <p>We're so glad you would like to know
     more about Simon's Rock and Bard
     Academy. Please fill out the form on this page
