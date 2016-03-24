@@ -27,7 +27,7 @@ include 'functions.php';
 
 /* 3. Assemble field data to pass to web server */
 if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') { 
-    $formSource = 'RFI-Address-Follow-Yes'; 
+    $formSource = 'RFI-Address-Follow-Yes';
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
@@ -55,14 +55,7 @@ else { //default
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-if ($formSource == 'RFI-Address-Follow-Yes'){
-    $_SESSION['formSource'] = $formSource;
-}
-else {
-    $_SESSION['formSource'] = 'other';   
-};
-
-
+$_SESSION['formSource'] = $formSource; 
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtFirstName']) > 0 ) {
@@ -181,8 +174,10 @@ else {
     }
 }
 
-//Dump misc data into description field. Would be better to put this data into specific fields. 
-$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+if ($formSource !== 'address') {
+    //Dump misc data into description field. Would be better to put this data into specific fields. 
+    $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+}
 
 //If Referral Form...
 if ($formSource == 'Referral ') {
@@ -357,6 +352,8 @@ else {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
+
+
 /* 4. Create createFields array per web service requirement */
 $data_contact = 
     array(
@@ -371,6 +368,11 @@ $data_contact =
 //define variables for specific curl event
 $content = json_encode($data_contact);
 $url_curl = $url_contacts;
+
+if ($formSource == 'address') {
+    $modify = 'True';
+    $url_curl = $url_contacts . '/' . $_SESSION['entityID'];
+}
 
 //5. send data to Hobson
 sendData();
@@ -399,6 +401,11 @@ if ($_POST['userRole'] !== 'Other') {
             $_SESSION['entityID'] = $entityID;    
         }
     };
+    if ($formSource == 'address') {
+        $_SESSION['return'] = $return;
+        $_SESSION['addressExists'] = 'true';
+    }
+
     $data_lifecycle = array("createFields" => array(
         "Contact" => $entityID,
         "Lifecycle Role" => 'Inquirer',

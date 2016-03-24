@@ -85,6 +85,10 @@ $( document ).ready(function() {
                     var nextPage = 'referral-form-thanks.php'; 
                     var gtmLabel = 'formInquiryReferralCounselor';
                 }
+                else if (formName == 'address') {
+                    var nextPage = 'contact-form-thanks-again.php';
+                    var gtmLabel = 'needtofigurethisout';
+                }
                 else {
                     var nextPage = 'contact-form-thanks.php';
                     var gtmLabel = 'Request Info';
