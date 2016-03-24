@@ -149,4 +149,21 @@ function errorCheck() {
         };
     };
 }
+
+//Determine if record has an address. Using the existence of Address Line 1 as a proxy for the entire address. 
+function checkIFAddressExists() {
+    global $return;
+    //reset variables
+    $addressExists = '';
+    $address = '';
+    $address = get_string_between($return, 'Contact Street":"', '"');
+    if(strlen($address) > 0 ) {
+        $addressExists = 'true';
+    }
+    else {
+        $addressExists = 'false';
+    }
+    $_SESSION['addressExists'] = $addressExists;
+}
+
 ?>

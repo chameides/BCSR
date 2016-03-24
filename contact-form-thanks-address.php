@@ -1,18 +1,6 @@
 <?php
   session_start();
-  if ($_SESSION['addressExists'] == 'false') {
-  	//redirect to thank you page with address follow form
-  	header('Location: contact-form-thanks-address');
-  }
-  else {
-  	//reset variables
-  	session_start();
-	session_unset();
-	session_destroy();
-	session_write_close();
-	//setcookie(session_name(),'',0,'/');
-	session_regenerate_id(true);
-  }
+  //if change URL, make sure to change the redirect in contact-form-thanks
 ?>
 <!DOCTYPE html>
 <html lang="en">

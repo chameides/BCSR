@@ -15,10 +15,10 @@ $( document ).ready(function() {
     
         $('#txtFirstName').val('firstName');
         $('#txtLastName').val('delete_lastName');
-        $('#txtEmail').val('test@test.com');
-        $('#birth_month').val('07');
-        $('#birth_day').val('18');
-        $('#birth_year').val('1995');
+        $('#txtEmail').val('test2@test.com');
+        $('#birth_month').val('09');
+        $('#birth_day').val('21');
+        $('#birth_year').val('1997');
         $('#txtPhone').val('1231231234');
         $('#drpCountry').val('United States');
         $('#txtAddress1').val('1234 Maple Ave');

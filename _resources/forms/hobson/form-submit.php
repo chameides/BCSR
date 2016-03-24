@@ -66,7 +66,10 @@ $fields = array(
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtAddress1']) > 0 ) {
-    $fields["Contact Street"] = $_POST['txtAddress1']; 
+    $fields["Contact Street"] = $_POST['txtAddress1'];
+    if ($formSource == 'RFI-Address-Follow-Yes'){
+        $_SESSION['addressSubmit'] = 'True';
+    }
 };
 
 if(strlen($_POST['txtAddress2']) > 0 ) {
@@ -348,6 +351,7 @@ $data_contact =
         "createFields" => $fields,
         "returnFields" => array(
                 "Entity ID",
+                "Contact Street",
                 "Description",
             )
     );
@@ -363,8 +367,23 @@ sendData();
 if ($_POST['userRole'] !== 'Other') {
     $modify = 'False'; //reset to default
     //get entity id from return string
-    $entityID = get_string_between($return, 'Entity ID":', '}');
+    $entityID = get_string_between($return, 'Entity ID":', ',"Contact');
 
+    if ($formSource == 'RFI-Address-Follow-Yes'){
+        global $modify;
+        if ($_SESSION['addressSubmit'] == 'True') {
+        }
+        else {
+            if ($modify == 'true'){
+                checkIFAddressExists();
+            }
+            else {
+                $_SESSION['addressExists'] = 'false';
+            }
+        }
+        //$_SESSION['testingReturn'] = $return;
+        //$_SESSION['testingEntityID'] = $entityID;
+    };
     $data_lifecycle = array("createFields" => array(
         "Contact" => $entityID,
         "Lifecycle Role" => 'Inquirer',
@@ -376,7 +395,7 @@ if ($_POST['userRole'] !== 'Other') {
     $content = json_encode($data_lifecycle);
     $url_curl = $url_lifecycles;
     //send data to Hobson
-    sendData();
+    //turned off for testing sendData();
 
 }
 ?>
