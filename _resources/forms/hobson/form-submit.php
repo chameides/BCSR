@@ -382,7 +382,10 @@ if ($_POST['userRole'] !== 'Other') {
             }
         }
         //$_SESSION['testingReturn'] = $return;
-        //$_SESSION['testingEntityID'] = $entityID;
+        if ($_SESSION['addressExists'] == 'false') {
+            //pass entity ID to address form
+            $_SESSION['entityID'] = $entityID;    
+        }
     };
     $data_lifecycle = array("createFields" => array(
         "Contact" => $entityID,

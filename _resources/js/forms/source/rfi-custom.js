@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
     // 1. Dummy data   
     
-        $('#txtFirstName').val('firstName');
+        $('#txtFirstName').val('firstNamed');
         $('#txtLastName').val('delete_lastName');
         $('#txtEmail').val('test2@test.com');
         $('#birth_month').val('09');
@@ -21,7 +21,7 @@ $( document ).ready(function() {
         $('#birth_year').val('1997');
         $('#txtPhone').val('1231231234');
         $('#drpCountry').val('United States');
-        $('#txtAddress1').val('1234 Maple Ave');
+        //$('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
         $('#gradeLevel').val('8');

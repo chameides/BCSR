@@ -2,7 +2,7 @@
   session_start();
   if ($_SESSION['addressExists'] == 'false') {
   	//redirect to thank you page with address follow form
-  	header('Location: contact-form-thanks-address');
+  	header('Location: /contact-form-thanks-address.php');
   }
   else {
   	//reset variables
