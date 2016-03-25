@@ -2,7 +2,6 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
 
-
     sass:
       dist:
         options:
@@ -23,7 +22,12 @@ module.exports = (grunt) ->
           '_resources/js/forms/source/rfi-custom.js',
           ]
         dest: 
-          '_resources/js/forms/rfi-combine-grunt.js'
+          '_resources/js/forms/source/rfi-combine-grunt.js'
+
+    uglify: 
+      build: 
+        src: '_resources/js/forms/source/rfi-combine-grunt.js'
+        dest: '_resources/js/forms/rfi-combine-min.js'
       
 
     svgmin:
@@ -57,6 +61,7 @@ module.exports = (grunt) ->
 
 
 
+
     watch:
       styles:
         files: ['_css/**/*.scss']
@@ -72,4 +77,4 @@ module.exports = (grunt) ->
   require('load-grunt-tasks')(grunt)
 
 
-  grunt.registerTask('default', ['sass', 'concat', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])

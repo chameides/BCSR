@@ -64,9 +64,10 @@ The CSS is written in Sass. The grunt-sass package compiles and minifies the SCS
 
 Remove comments to compile nested. 
 
-### JS and CodeKit
+### JS Concat and Minified
 
-External scripts should be minified and combined in order to improve page speed. I use CodeKit. It would be fairly easy to use Grunt instead.
+The Form scripts are concatenated with grunt-contrib-concat
+
 
 ### Icons and Grunt
 
