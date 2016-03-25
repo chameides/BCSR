@@ -53,7 +53,16 @@ events Markup for Events CMS, no automatic syncing to live site<br>
 
 ## Compile with Grunt
 
-Use the `gruntfile.coffee` for the grunt settings. 
+1. In Terminal, navigate to the project folder. 
+2. Compile with with either `grunt` or `grunt watch`
+
+### Background on Grunt 
+
+Grunt is a task runner, which automates processes. 
+
+* <a href="https://24ways.org/2013/grunt-is-not-weird-and-hard/">Grunt for People Who Think Things Like Grunt are Weird and Hard</a>
+* <a href="http://gruntjs.com/installing-grunt">Installing Grunt</a>
+* Use the `gruntfile.coffee` to modify the grunt settings
 
 ### Sass, SCSS and CSS
 
@@ -62,19 +71,15 @@ The CSS is written in Sass. The grunt-sass package compiles and minifies the SCS
 * <a href="https://github.com/sindresorhus/grunt-sass">grunt-sass</a>
 * <a href="https://github.com/sass/node-sass#options">node-sass</a>
 
-Remove comments to compile nested. 
+Remove comments in `gruntfile.coffee` to compile as nested CSS. 
 
 ### JS Concat and Minified
 
 The Form scripts are concatenated with grunt-contrib-concat
 
-
 ### Icons and Grunt
 
 The vector images for the At-A-Glance are compiled using Grunt and GruntIcon. To recompile, run grunt from the project root.
-
-* https://24ways.org/2013/grunt-is-not-weird-and-hard/
-* http://gruntjs.com/installing-grunt
 
 ### Local Testing
 

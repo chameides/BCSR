@@ -59,15 +59,13 @@ module.exports = (grunt) ->
             black: '#000000'
 
 
-
-
-
     watch:
       styles:
         files: ['_css/**/*.scss']
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sass']
         options:
           spawn: false
+
       grunticon:
         files: ['_images/_grunticon/*.svg', '_images/_grunticon/*.png']
         tasks: ['svgmin:bcsrIcons', 'grunticon:bcsrIcons']
