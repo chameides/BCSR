@@ -143,16 +143,16 @@ $( document ).ready(function() {
                 required: '#chxInfoByPhone:checked'
             },
             drpCountry: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtAddress1: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             city: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtZipOrPostal: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             chxInfoBy: {
                 required: true,
