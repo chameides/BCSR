@@ -4,9 +4,9 @@ This is a collection of sample templates for Bard College at Simon’s Rock (BCS
 
 The readme focus on coding and deployment of the testing environment. <a href="http://simons-rock.edu/guide">The Guide</a> provides more detailed patterns, governance, foundations. 
 
-##Guidelines
+## Guidelines
 
-###Principles
+### Principles
 
 "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
 -Idan Gazit
@@ -17,23 +17,23 @@ All code in any code-base should look like a single person typed it, even when m
 
 If in doubt when deciding upon a style use existing, common patterns.	
 
-###CSS
+### CSS
 The app.css has it's own guidelines and background in app_readme.scss
 
-###Comments
+### Comments
 
 Well commented code is extremely important. Take time to describe components, how they work, their limitations, and the way they are constructed. Don't leave others in the team guessing as to the purpose of uncommon or non-obvious code.
 
 When introducing ideas and sections, place comments on a new line above their subject.
 
-###Naming Convention
+### Naming Convention
 
 * Separate words in file names with a -, for example areas-of-study.php
 * Partials and includes use _, for eample app_academics.css
 * Use camelCase for form field name
 * Use camelcase for PHP variable
 
-###Bundles
+### Bundles
 
 _css  
 |<br>
@@ -51,23 +51,35 @@ archive stuff that might be nice to access, but not sure<br>
 events Markup for Events CMS, no automatic syncing to live site<br>
 [page] sample pages used for testing purposes<br>
 
-## Compile
+## Compile with Grunt
 
-###SCSS and CodeKit
-app.css is written in Sass and I use CodeKit to compile. It would be fairly easy to use Grunt instead. 
+Use the `gruntfile.coffee` for the grunt settings. 
 
-###JS and CodeKit
+### Sass, SCSS and CSS
+
+The CSS is written in Sass. The grunt-sass package compiles and minifies the SCSS to CSS. 
+
+* <a href="https://github.com/sindresorhus/grunt-sass">grunt-sass</a>
+* <a href="https://github.com/sass/node-sass#options">node-sass</a>
+
+Remove comments to compile nested. 
+
+### JS and CodeKit
+
 External scripts should be minified and combined in order to improve page speed. I use CodeKit. It would be fairly easy to use Grunt instead.
 
-###Icons and Grunt
+### Icons and Grunt
+
 The vector images for the At-A-Glance are compiled using Grunt and GruntIcon. To recompile, run grunt from the project root.
 
 * https://24ways.org/2013/grunt-is-not-weird-and-hard/
 * http://gruntjs.com/installing-grunt
 
+### Local Testing
 
+Use MAMP to preview php files locally. 
 
-##CMS Deployment
+## CMS Deployment
 
 * _fonts
 * _images

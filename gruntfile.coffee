@@ -2,6 +2,19 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
 
+
+    sass:
+      dist:
+        options:
+          outputStyle: 'compressed'
+          ### 
+          if testing, remove comments for viewing CSS as nested 
+          outputStyle: 'nested'
+          ###
+        files:
+          '_css/app.css': '_css/app.scss'
+          '_css/iframe-compiled.css': '_css/iframe.scss'
+
     svgmin:
       bcsrIcons:
         files: [{
@@ -30,12 +43,7 @@ module.exports = (grunt) ->
             white: '#ffffff'
             black: '#000000'
 
-    sass:
-      dist:
-        options:
-          style: 'compressed'
-        files:
-          '_css/app.css': '_css/app.scss'
+
 
 
     watch:
@@ -52,4 +60,4 @@ module.exports = (grunt) ->
 
   require('load-grunt-tasks')(grunt)
 
-  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'sass'])
+  grunt.registerTask('default', ['sass', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
