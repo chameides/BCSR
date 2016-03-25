@@ -31,8 +31,16 @@ if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') {
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
-else if ($_SESSION['formSource'] == 'address') { 
-    $formSource = 'address';
+else if ($_POST['formSource'] == 'Address') { 
+    //address follow up form: /contact-form-address
+    if ($_SESSION['entityID'] == 'address') { 
+        //session is working
+        $formSource = 'address';
+    }
+    else {
+        //required session variable is broken, go with back up plan
+        $formSource = 'addressMissingSession';
+    }
 }
 
 
@@ -55,7 +63,28 @@ else { //default
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-$_SESSION['formSource'] = $formSource; 
+
+
+
+
+
+/*
+REPLACE BELOW WITH THIS
+if ($formSource == 'RFI-Address-Follow-Yes' ) {
+    $_SESSION['formSource'] = $formSource; 
+}
+*/
+
+//REPLACE THIS
+$_SESSION['formSource'] = $formSource;
+
+
+
+
+
+
+
+
 
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtFirstName']) > 0 ) {
@@ -174,7 +203,9 @@ else {
     }
 }
 
-if ($formSource !== 'address') {
+if ($formSource !== 'address' && 
+    $formSource !== 'addressMissingSession'
+    ) {
     //Dump misc data into description field. Would be better to put this data into specific fields. 
     $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 }
@@ -205,7 +236,7 @@ if ($_POST['gradeLevel'] > 0) {
 }
 
 
-/* User Entity IDs */
+/* Contact Owner (Admission Counselors) User Entity IDs */
 $alexandraBillickID     = 685000000121867;
 $amandaDubrowskiID      = 685000000121891;
 $chandraJoosdeKovenID   = 685000017194351;
@@ -401,23 +432,38 @@ if ($_POST['userRole'] !== 'Other') {
             //pass entity ID to address form
             $_SESSION['entityID'] = $entityID;    
         }
-    };
+    }
     if ($formSource == 'address') {
         $_SESSION['return'] = $return;
         $_SESSION['addressExists'] = 'true';
     }
-    $modify = 'False'; //reset to default
-    $data_lifecycle = array("createFields" => array(
-        "Contact" => $entityID,
-        "Lifecycle Role" => 'Inquirer',
-        "Lifecycle Stage" => 'Open',
-        "Primary Role" => 'True',
-    ));
+    else if ($formSource == 'addressMissingSession') {
+
+    }
+    else
+    //prepare and send data for lifecycle 
+
+        $modify = 'False'; //reset to default
+        $data_lifecycle = array("createFields" => array(
+            "Contact" => $entityID,
+            "Lifecycle Role" => 'Inquirer',
+            "Lifecycle Stage" => 'Open',
+            "Primary Role" => 'True',
+        ));
 
     //define variables for specific curl event
     $content = json_encode($data_lifecycle);
     $url_curl = $url_lifecycles;
+
+
+
+
     //send data to Hobson
+
+    //don't send lifecycle on address and addressmissingsession
+
+
+
     //turned off for testing sendData();
 
 }
