@@ -31,6 +31,11 @@ if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') {
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
+else if ($_POST['formSource'] == 'RFI-Address-Follow-No') { 
+    $formSource = 'RFI-Address-Follow-No';
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
+}
+
 else if ($_POST['formSource'] == 'Address') { 
     //address follow up form: /contact-form-address
     if ($_SESSION['entityID'] == 'address') { 
@@ -59,7 +64,7 @@ else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Refer
 }
 
 else { //default
-    $formSource = 'RFI Form '; 
+    $formSource = 'RFI Form'; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
@@ -206,8 +211,18 @@ else {
 if ($formSource !== 'address' && 
     $formSource !== 'addressMissingSession'
     ) {
-    //Dump misc data into description field. Would be better to put this data into specific fields. 
-    $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+    //Dump misc data into description field. Would be better to put this data into specific fields.
+    if ($formSource == 'RFI-Address-Follow-Yes' ||
+        $formSource == 'RFI-Address-Follow-No'
+        ) {
+        $formSourceOutput = 'RFI';
+    }
+    else {
+        $formSourceOutput = $formSource;
+    }
+
+
+    $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSourceOutput . ' | Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 }
 
 //If Referral Form...
