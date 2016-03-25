@@ -15,6 +15,17 @@ module.exports = (grunt) ->
           '_css/app.css': '_css/app.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
 
+    concat:   
+      dist: 
+        src: [
+          '_resources/js/forms/source/jquery.validate.min.js',
+          '_resources/js/forms/source/additional-methods.min.js',
+          '_resources/js/forms/source/rfi-custom.js',
+          ]
+        dest: 
+          '_resources/js/forms/rfi-combine-grunt.js'
+      
+
     svgmin:
       bcsrIcons:
         files: [{
@@ -60,4 +71,5 @@ module.exports = (grunt) ->
 
   require('load-grunt-tasks')(grunt)
 
-  grunt.registerTask('default', ['sass', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
+
+  grunt.registerTask('default', ['sass', 'concat', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
