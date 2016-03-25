@@ -442,6 +442,7 @@ if ($_POST['userRole'] !== 'Other') {
     }
     else
     //prepare and send data for lifecycle 
+    //don't send lifecycle on address and addressmissingsession
 
         $modify = 'False'; //reset to default
         $data_lifecycle = array("createFields" => array(
@@ -455,16 +456,8 @@ if ($_POST['userRole'] !== 'Other') {
     $content = json_encode($data_lifecycle);
     $url_curl = $url_lifecycles;
 
-
-
-
     //send data to Hobson
-
-    //don't send lifecycle on address and addressmissingsession
-
-
-
-    //turned off for testing sendData();
+    sendData();
 
 }
 ?>
