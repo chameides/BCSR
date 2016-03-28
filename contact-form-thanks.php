@@ -1,17 +1,16 @@
 <?php
   session_start();
-  if ($_SESSION['addressExists'] == 'false') {
+  if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
   	//redirect to thank you page with address follow form
   	header('Location: /contact-form-thanks-address.php');
   }
   else {
   	//reset variables
-  	session_start();
-	session_unset();
-	session_destroy();
-	session_write_close();
-	//setcookie(session_name(),'',0,'/');
-	session_regenerate_id(true);
+		session_unset();
+		session_destroy();
+		session_write_close();
+		//setcookie(session_name(),'',0,'/');
+		//session_regenerate_id(true);
   }
 ?>
 <!DOCTYPE html>

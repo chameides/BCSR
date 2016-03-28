@@ -1,10 +1,7 @@
- <?php
-  session_start();
-  //reset variables
-  //session_unset();
+<?php session_start();
   $_SESSION = array();
-  session_destroy();
-  session_write_close();
+  //session_destroy();
+  //session_write_close();
   //setcookie(session_name(),'',0,'/');
   session_regenerate_id(true);
   //testing: $_SESSION['formSource'] = 'start';
@@ -79,7 +76,7 @@
 
 
   <div class="col-md-6">
-    <?php include 'contact-form-fields/contact-form-rfi-fields.php'; ?>
+    <?php include 'contact-form-fields/contact-form-address-follow-yes.php'; ?>
   
 
 

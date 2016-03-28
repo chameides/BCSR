@@ -365,5 +365,6 @@
 						//</php>
 					?>
 		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Refer Student" /></div>
+		<input type="hidden" name="formSource" id="formSource" value="referral" />
 	</form>
 </div>

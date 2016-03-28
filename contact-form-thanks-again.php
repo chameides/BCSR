@@ -1,10 +1,8 @@
 <?php
 	session_start();
-  	//reset variables
-  	$_SESSION = array();
-  	session_start();
+  //reset variables
+  $_SESSION = array();
 	session_destroy();
-  
 ?>
 <!DOCTYPE html>
 <html lang="en">
