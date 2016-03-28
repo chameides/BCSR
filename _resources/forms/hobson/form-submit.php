@@ -28,12 +28,10 @@ include 'functions.php';
 /* 3. Assemble field data to pass to web server */
 if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') { 
     $formSource = 'RFI-Address-Follow-Yes';
-    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
 else if ($_POST['formSource'] == 'RFI-Address-Follow-No') { 
     $formSource = 'RFI-Address-Follow-No';
-    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
 else if ($_POST['formSource'] == 'Address') { 
@@ -49,8 +47,7 @@ else if ($_POST['formSource'] == 'Address') {
 }
 
 else if ($_POST['formSource'] == 'referral') { 
-    $formSource = 'Referral '; 
-    $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
+    $formSource = 'Referral ';
 }
 
 
@@ -73,7 +70,12 @@ else { //default
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-
+if ($formSource == 'RFI-Address-Follow-Yes' ||
+    $formSource == 'RFI-Address-Follow-No' ||
+    $formSource == 'Referral ')
+    {
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
+};
 
 
 
