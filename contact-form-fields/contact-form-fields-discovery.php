@@ -448,6 +448,7 @@
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
 					?>
+		<input type="hidden" name="formSource" id="formSource" value="discovery" />
 		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="submit" value="Submit" /></div>
 	</form>
 </div>

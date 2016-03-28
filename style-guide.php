@@ -77,12 +77,11 @@
 						<li>Forms
 							<ul>
 								<li><a href="contact-form-address-follow-no.php">RFI - Address Follow Up No</a></li>
-								<li><a href="contact-form-rfi.php">RFI - Address Follow Up Yes</a>
-									<ul>
-										<li><a href="contact-form-thanks-address.php">Follow Up</a></li>
-									</ul>
-								</li>
-								<li><a href="contact-form-alumni-referral.php">Alumni Referral</a></li>
+								<li><a href="contact-form-rfi.php">RFI - Address Follow Up Yes</a></li>
+								<li><a href="contact-form-thanks-address.php">Address Only Follow Up</a></li>
+								<li><a href="contact-form-alumni-referral.php">Referral - Alumni</a></li>
+								<li><a href="contact-form-counselor-referral.php">Referral - Counselor</a></li>
+								<li><a href="contact-form-discovery.php">Discovery Day</a></li>
 
 
 							</ul>

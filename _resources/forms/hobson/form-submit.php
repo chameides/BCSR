@@ -50,6 +50,10 @@ else if ($_POST['formSource'] == 'referral') {
     $formSource = 'Referral ';
 }
 
+else if ($_POST['formSource'] == 'discovery') { 
+     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
+    $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
+}
 
 else if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
