@@ -81,18 +81,6 @@ if ($formSource == 'RFI-Address-Follow-Yes' ||
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-/*
-REPLACE BELOW WITH THIS
-if ($formSource == 'RFI-Address-Follow-Yes' ) {
-    $_SESSION['formSource'] = $formSource; 
-}
-*/
-
-//REPLACE THIS
-//$_SESSION['formSource'] = $formSource;
-
-
-
 //add fields if data exists. Without if statement, blank result will overwrite existing data. 
 if(strlen($_POST['txtFirstName']) > 0 ) {
    $fields["First Name"] = $_POST['txtFirstName'];
@@ -477,8 +465,13 @@ else {
         sendData();
     }
 }
+//end session for form types that don't need it
+if ($formSource !== 'RFI-Address-Follow-Yes' &&
+    $formSource !== 'Address' ) {
 
-
-
+    session_unset();
+    session_destroy();
+    session_write_close();
+}
 
 ?>
