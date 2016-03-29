@@ -417,7 +417,7 @@ sendData();
 $entityID = get_string_between($return, 'Entity ID":', ',"Contact');
 if ($formSource == 'RFI-Address-Follow-Yes'){
     global $modify;
-    if ($_SESSION['addressSubmit'] == 'True') {
+    if (isset($_SESSION['addressSubmit']) &&  $_SESSION['addressSubmit'] == 'True') {
         //just submitted an address on the form
     }
     else {
@@ -432,7 +432,7 @@ if ($formSource == 'RFI-Address-Follow-Yes'){
         }
     }
     //$_SESSION['testingReturn'] = $return;
-    if ($_SESSION['addressExists'] == 'false') {
+    if (isset($_SESSION['addressSubmit']) && $_SESSION['addressExists'] == 'false') {
         //pass entity ID to address form
         $_SESSION['entityID'] = $entityID;  
     }
