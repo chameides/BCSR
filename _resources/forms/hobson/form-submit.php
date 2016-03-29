@@ -432,7 +432,7 @@ if ($formSource == 'RFI-Address-Follow-Yes'){
         }
     }
     //$_SESSION['testingReturn'] = $return;
-    if (isset($_SESSION['addressSubmit']) && $_SESSION['addressExists'] == 'false') {
+    if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
         //pass entity ID to address form
         $_SESSION['entityID'] = $entityID;  
     }
