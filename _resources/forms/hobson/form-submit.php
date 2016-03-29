@@ -36,7 +36,7 @@ else if ($_POST['formSource'] == 'RFI-Address-Follow-No') {
 
 else if ($_POST['formSource'] == 'Address') { 
     //address follow up form: /contact-form-address
-    if ($_SESSION['entityID'] == 'address') { 
+    if (isset($_SESSION['entityID']) &&  $_SESSION['entityID'] > 1) { 
         //session is working
         $formSource = 'address';
     }
@@ -89,7 +89,7 @@ if ($formSource == 'RFI-Address-Follow-Yes' ) {
 */
 
 //REPLACE THIS
-$_SESSION['formSource'] = $formSource;
+//$_SESSION['formSource'] = $formSource;
 
 
 
@@ -447,10 +447,10 @@ if ($_POST['userRole'] !== 'Other') {
         //$_SESSION['testingReturn'] = $return;
         if ($_SESSION['addressExists'] == 'false') {
             //pass entity ID to address form
-            $_SESSION['entityID'] = $entityID;    
+            $_SESSION['entityID'] = $entityID;  
         }
     }
-    if ($formSource == 'address') {
+    else if ($formSource == 'address') {
         $_SESSION['return'] = $return;
         $_SESSION['addressExists'] = 'true';
     }
