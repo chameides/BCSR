@@ -3,7 +3,7 @@
 		<?php 
 			//echo 'entityID = ' . $_SESSION['entityID'];
 			if ($_SESSION['entityID'] > 1){ //if session id is working
-				//$_SESSION['formSource'] = 'address';
+				//TESTING VARIABLE: $_SESSION['formSource'] = 'address';
 			}
 			else { 
 			//if session id isn't working, include required fields. User will be forced to re-enter

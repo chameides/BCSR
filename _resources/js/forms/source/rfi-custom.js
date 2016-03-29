@@ -12,7 +12,7 @@ if ($('#hobson-form-submit').length > 0) {
 $( document ).ready(function() {
 
     // 1. Dummy data   
-    
+    /*
         $('#txtFirstName').val('firstNamed');
         $('#txtLastName').val('delete_lastName');
         $('#txtEmail').val('test2@test.com');
@@ -25,7 +25,7 @@ $( document ).ready(function() {
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
         $('#gradeLevel').val('8');
-
+    */
     
      
     //2. Submit

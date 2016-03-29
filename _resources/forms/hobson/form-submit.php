@@ -4,9 +4,11 @@
 Table of Contents
 1. Error Check
 2. Includes
-3. Assemble Field Data
-4. Create Array
-5. Send Data to Hobson
+3. Set Form Source
+4. Assemble Field Data
+5. Create Array
+6. Send Data to Hobson
+7. Turn Session Off
 */
 
 //1. Error Check
@@ -25,7 +27,9 @@ Table of Contents
 include 'config.php';
 include 'functions.php';
 
-/* 3. Assemble field data to pass to web server */
+
+
+//3. Set Form Source
 if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') { 
     $formSource = 'RFI-Address-Follow-Yes';
 }
@@ -73,6 +77,12 @@ else { //default
     $formSource = 'RFI Form'; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
+
+
+
+
+
+/* 3. Assemble field data to pass to web server */
 
 if ($formSource == 'RFI-Address-Follow-Yes' ||
     $formSource == 'RFI-Address-Follow-No' ||
@@ -390,7 +400,9 @@ $fields["Contact Owner"] = $contactOwnerID;
 
 
 
-/* 4. Create createFields array per web service requirement */
+
+
+/* 5. Create createFields array per web service requirement */
 $data_contact = 
     array(
         "createFields" => $fields,
@@ -410,7 +422,11 @@ if ($formSource == 'address') {
     $url_curl = $url_contacts . '/' . $_SESSION['entityID'];
 }
 
-//5. send data to Hobson
+
+
+
+
+//6. send data to Hobson
 sendData();
 
 //get entity id from return string
@@ -425,11 +441,13 @@ if ($formSource == 'RFI-Address-Follow-Yes'){
             //record already exists, check database 
             checkIFAddressExists();
         }
-        else {
-            $_SESSION['testing-modify'] = $modify;
-            $_SESSION['testing-nocheck'] = 'true';
-            $_SESSION['addressExists'] = 'false';
-        }
+        /*TESTING VARIABLES
+            else {
+                $_SESSION['testing-modify'] = $modify;
+                $_SESSION['testing-nocheck'] = 'true';
+                $_SESSION['addressExists'] = 'false';
+            }
+        */
     }
     //$_SESSION['testingReturn'] = $return;
     if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
@@ -465,7 +483,7 @@ else {
         sendData();
     }
 }
-//end session for form types that don't need it
+//7. end session for form types that don't need it
 if ($formSource !== 'RFI-Address-Follow-Yes' &&
     $formSource !== 'Address' ) {
 
