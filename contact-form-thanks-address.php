@@ -58,7 +58,6 @@
   <div class="col-md-6">
     <p>Thank you text goes here....</p>
     <?php 
-	      echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
 	      print_r($_SESSION);
 
 	    ?>

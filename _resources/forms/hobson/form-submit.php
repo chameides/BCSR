@@ -425,56 +425,60 @@ if ($formSource == 'address') {
 //5. send data to Hobson
 sendData();
 
-if ($_POST['userRole'] !== 'Other') {
-    //get entity id from return string
-    $entityID = get_string_between($return, 'Entity ID":', ',"Contact');
-    if ($formSource == 'RFI-Address-Follow-Yes'){
-        global $modify;
-        if ($_SESSION['addressSubmit'] == 'True') {
-            //just submitted an address on the form
+//get entity id from return string
+$entityID = get_string_between($return, 'Entity ID":', ',"Contact');
+if ($formSource == 'RFI-Address-Follow-Yes'){
+    global $modify;
+    if ($_SESSION['addressSubmit'] == 'True') {
+        //just submitted an address on the form
+    }
+    else {
+        if ($modify == 'True'){
+            //record already exists, check database 
+            checkIFAddressExists();
         }
         else {
-            if ($modify == 'True'){
-                //record already exists, check database 
-                checkIFAddressExists();
-            }
-            else {
-                $_SESSION['testing-modify'] = $modify;
-                $_SESSION['testing-nocheck'] = 'true';
-                $_SESSION['addressExists'] = 'false';
-            }
-        }
-        //$_SESSION['testingReturn'] = $return;
-        if ($_SESSION['addressExists'] == 'false') {
-            //pass entity ID to address form
-            $_SESSION['entityID'] = $entityID;  
+            $_SESSION['testing-modify'] = $modify;
+            $_SESSION['testing-nocheck'] = 'true';
+            $_SESSION['addressExists'] = 'false';
         }
     }
-    else if ($formSource == 'address') {
-        $_SESSION['return'] = $return;
-        $_SESSION['addressExists'] = 'true';
+    //$_SESSION['testingReturn'] = $return;
+    if ($_SESSION['addressExists'] == 'false') {
+        //pass entity ID to address form
+        $_SESSION['entityID'] = $entityID;  
     }
-    else if ($formSource == 'addressMissingSession') {
-
-    }
-    else
-    //prepare and send data for lifecycle 
-    //don't send lifecycle on address and addressmissingsession
-
-        $modify = 'False'; //reset to default
-        $data_lifecycle = array("createFields" => array(
-            "Contact" => $entityID,
-            "Lifecycle Role" => 'Inquirer',
-            "Lifecycle Stage" => 'Open',
-            "Primary Role" => 'True',
-        ));
-
-    //define variables for specific curl event
-    $content = json_encode($data_lifecycle);
-    $url_curl = $url_lifecycles;
-
-    //send data to Hobson
-    sendData();
+}
+else if ($formSource == 'address') {
+    $_SESSION['return'] = $return;
+    $_SESSION['addressExists'] = 'true';
+}
+else if ($formSource == 'addressMissingSession') {
 
 }
+else {
+    if ($_POST['userRole'] !== 'Other') {
+        //prepare and send data for lifecycle 
+        //don't send lifecycle on address and addressmissingsession
+
+            $modify = 'False'; //reset to default
+            $data_lifecycle = array("createFields" => array(
+                "Contact" => $entityID,
+                "Lifecycle Role" => 'Inquirer',
+                "Lifecycle Stage" => 'Open',
+                "Primary Role" => 'True',
+            ));
+
+        //define variables for specific curl event
+        $content = json_encode($data_lifecycle);
+        $url_curl = $url_lifecycles;
+
+        //send data to Hobson
+        sendData();
+    }
+}
+
+
+
+
 ?>
