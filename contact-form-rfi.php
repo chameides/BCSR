@@ -6,7 +6,6 @@
   session_regenerate_id(true);
   //testing: $_SESSION['formSource'] = 'start';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>

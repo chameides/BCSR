@@ -81,9 +81,6 @@ if ($formSource == 'RFI-Address-Follow-Yes' ||
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-
-
-
 /*
 REPLACE BELOW WITH THIS
 if ($formSource == 'RFI-Address-Follow-Yes' ) {
@@ -93,12 +90,6 @@ if ($formSource == 'RFI-Address-Follow-Yes' ) {
 
 //REPLACE THIS
 $_SESSION['formSource'] = $formSource;
-
-
-
-
-
-
 
 
 
