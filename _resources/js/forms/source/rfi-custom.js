@@ -87,7 +87,7 @@ $( document ).ready(function() {
                 }
                 else if (formName == 'address') {
                     var nextPage = 'contact-form-thanks-again.php';
-                    var gtmLabel = 'needtofigurethisout';
+                    var gtmLabel = 'formNonInquiryAddress';
                 }
                 else {
                     var nextPage = 'contact-form-thanks.php';
