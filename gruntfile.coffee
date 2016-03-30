@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
-          outputStyle: 'compressed'
+          outputStyle: 'compressed'          
           ### 
           if testing, remove comments for viewing CSS as nested 
           outputStyle: 'nested'
@@ -13,7 +13,6 @@ module.exports = (grunt) ->
         files:
           '_css/app.css': '_css/app.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
-
     concat:   
       dist: 
         src: [
@@ -64,7 +63,7 @@ module.exports = (grunt) ->
         files: ['_css/**/*.scss']
         tasks: ['sass']
         options:
-          spawn: false
+          spawn: true
 
       grunticon:
         files: ['_images/_grunticon/*.svg', '_images/_grunticon/*.png']
