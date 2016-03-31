@@ -36,7 +36,7 @@
 		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email" /></div>
 		<div id="Phone" class="form-group col-sm-6">
 			<label for="txtPhone">Phone Number*</label>
-			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" type="text" required="required"/>
+			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" type="tel" required="required"/>
 		</div>
 		<div id="PhoneType" class="form-group col-sm-6">
 			<label for="drpPhoneType">Phone Type*</label>
