@@ -12,10 +12,10 @@
 .center-block {
   @include center-block;
 }
-.pull-right, .pull-right-responsive {
+.pull-right, .pull-right-responsive, .pull-right-responsive-35, .pull-right-responsive-50 {
   float: right !important;
 }
-.pull-left, .pull-left-responsive {
+.pull-left, .pull-left-responsive, .pull-left-responsive-35, .pull-left-responsive-50 {
   float: left !important;
 }
 
