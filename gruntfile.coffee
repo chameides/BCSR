@@ -2,6 +2,33 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
 
+    sass:
+      dist:
+        options:
+          outputStyle: 'compressed'          
+          ### 
+          if testing, remove comments for viewing CSS as nested 
+          outputStyle: 'nested'
+          ###
+        files:
+          '_css/app.css': '_css/app.scss'
+          '_css/iframe-compiled.css': '_css/iframe.scss'
+    concat:   
+      dist: 
+        src: [
+          '_resources/js/forms/source/jquery.validate.min.js',
+          '_resources/js/forms/source/additional-methods.min.js',
+          '_resources/js/forms/source/rfi-custom.js',
+          ]
+        dest: 
+          '_resources/js/forms/source/rfi-combine-grunt.js'
+
+    uglify: 
+      build: 
+        src: '_resources/js/forms/source/rfi-combine-grunt.js'
+        dest: '_resources/js/forms/rfi-combine-min.js'
+      
+
     svgmin:
       bcsrIcons:
         files: [{
@@ -30,20 +57,14 @@ module.exports = (grunt) ->
             white: '#ffffff'
             black: '#000000'
 
-    sass:
-      dist:
-        options:
-          style: 'compressed'
-        files:
-          '_css/app.css': '_css/app.scss'
-
 
     watch:
       styles:
         files: ['_css/**/*.scss']
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sass']
         options:
-          spawn: false
+          spawn: true
+
       grunticon:
         files: ['_images/_grunticon/*.svg', '_images/_grunticon/*.png']
         tasks: ['svgmin:bcsrIcons', 'grunticon:bcsrIcons']
@@ -52,4 +73,5 @@ module.exports = (grunt) ->
 
   require('load-grunt-tasks')(grunt)
 
-  grunt.registerTask('default', ['svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'sass'])
+
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
