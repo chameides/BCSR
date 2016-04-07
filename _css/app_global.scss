@@ -1000,6 +1000,9 @@ ul ul, ul ol, ol ul, ol ol {
 //      margin-left: 15px; 
 //   }
 // }
+ol ol {
+  list-style-type: upper-alpha;
+}
 
 // // Circle around any number (large/header style)
 // .number-circle {
