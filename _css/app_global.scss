@@ -605,6 +605,22 @@ body#why .side-nav-mobile,
     margin-bottom: 70px;
   }
 }
+
+
+//hero graphic variation that does not take up full screen
+.page-hero-container-small {
+  @media screen and (max-width: $screen-sm-min) {
+    height: auto;
+    min-height: 352px;
+  }
+  .hero-title {
+    padding-top: 1em;
+  }
+  .hero-text {
+    padding-top: 1em; 
+  }
+}
+
 .page-hero {
   margin: 0 auto;
   padding: 180px 40px 10px 40px;

@@ -5,6 +5,9 @@
 4. Remove Calendar Header and Carousel
 5. Remove Footer
 6. Add navbar-brand-gateway
+7. update hero graphic
+  a. remove <i id="intro_arrow_down" class="fa fa-angle-down"></i>
+  b. add page-hero-container-small
 -->
 
 <!DOCTYPE html>
@@ -33,14 +36,15 @@
           </a>
         </div>
 
-        <div class="page-hero-container page-hero-container-small gateway-bg">
-          <div class="page-hero page-hero-gateway-alt text-center">
-            <h1 class="hero-title">Headline</h1>
-            <p class="hero-text">Supporting Copy</p>
+        <div class="page-hero-container page-hero-container-small gatekeeper-bg">
+          <div class="page-hero-gateway-alt text-center">
+            <h1 class="hero-title">Some Students Are Ready for College Earlier Than Their Peers</h1>
+            <p class="hero-text">Discover if you're ready for early college now.</p>
           </div>
         </div>
 
-        <i id="intro_arrow_down" class="fa fa-angle-down"></i>
+
+        
       
       </div>
       <!-- /Page Hero -->
@@ -55,22 +59,27 @@
 
         <!-- CENTER COLUMN -->
         <div class="column-center">
-          <div class="row">
-
-  <div class="col-md-6">
-    <p>We're so glad you would like to know
-    more about Simon's Rock and Bard
-    Academy. Please fill out the form on this page
-    and we will get in touch with you.</p>
-  </div>
-
-
-  <div class="col-md-6">
-    <?php include 'contact-form-rfi-fields.php'; ?>
-  </div><!-- col-md-6 -->
-</div><!-- row -->
-              
-
+          <div class="row" style="position: relative; top: -130px; margin: 0 1em;">
+            <div class="col-md-6" style="background-color:rgba(125,197,197,0.8); padding: 0em 2em; opacity: 1; color: white;">
+              <h2 style="padding-top: .5em; font-size: 1.5em;">Get the Early College Checklist:</h2>
+              <img class="pull-left" src="https://placehold.it/75x75/ffffff/?text=Fixed" alt="placeholder"><p><strong>Itching to explore more subjects, bored with High School classes and more curious than most?</strong></p>
+              <div style="clear: both;">
+                <?php include 'contact-form-rfi-fields.php'; ?>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h6>Did you know you can start college now, without a high school diploma or taking the SATs?</h6>
+              <p></p>
+              <p>Download the Early College Checklist:</p>
+              <ul>
+                <li>Five signs you're ready for a greater challenge</li>
+                <li>What you could be learning in college classes</li>
+                <li>A few of the things you could do at the Early College</li>
+              </ul>
+              <p>At Simon's Rock you'll find professors who are interested in helping you pursue your interests and expand your knowledge.</p>
+            </div>
+          </div>
+        </div><!-- row -->
         </div>
         <!-- /CENTER COLUMN -->
 
