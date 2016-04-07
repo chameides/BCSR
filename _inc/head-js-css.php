@@ -14,7 +14,7 @@
 }
 
 .page-hero-container.gatekeeper-bg {
-      background-image: url(http://lorempixel.com/image_output/business-q-c-480-352-10.jpg);
+      background-image: url(_images/gateway-header-bg-lg.jpg);
   }
   
 .page-hero-container.giving-bg {

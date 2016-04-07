@@ -609,12 +609,19 @@ body#why .side-nav-mobile,
 
 //hero graphic variation that does not take up full screen
 .page-hero-container-small {
+  margin-bottom: 0;
+  padding: 0 1em;
   @media screen and (max-width: $screen-sm-min) {
     height: auto;
     min-height: 352px;
   }
-  .hero-title {
-    padding-top: 1em;
+  @media screen and (max-width: $screen-md-min) {
+    min-height: 452px;
+  }
+  h1 {
+    @media screen and (min-width: $screen-sm-min) {
+      margin-top: 1rem;
+    }
   }
   .hero-text {
     padding-top: 1em; 
