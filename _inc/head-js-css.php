@@ -14,7 +14,7 @@
 }
 
 .page-hero-container.gatekeeper-bg {
-      background-image: url(_images/gateway-header-bg-lg.jpg);
+      background-image: url(/_images/why-simons-rock/5-signs-dorm5.jpg);
   }
   
 .page-hero-container.giving-bg {
@@ -42,7 +42,7 @@
   }
 
   .page-hero-container.gatekeeper-bg {
-      background-image: url(_images/gateway-header-bg-lg.jpg);
+      background-image: url(/_images/why-simons-rock/5-signs-dorm2.jpg);
   }
 
   .page-hero-container.giving-bg {

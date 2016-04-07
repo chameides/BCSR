@@ -210,6 +210,51 @@ p {
 
 }
 
+/*
+HIGLIGHT COLUMN
+
+Initially used on landing page forms to make the column with the form pop. 
+*/
+
+//apply on row
+.row-highlight {
+  margin: 1.5em 1.5em;
+  @media screen and (min-width:  $screen-sm-min) {
+    margin: 1.5 0;
+  }
+}
+
+//apply on column
+.row-col-highlight {
+  background-color:#5cb7b7; 
+  color: white;
+  margin-bottom: 2em;
+  padding: 0 0 15px;
+  @media screen and (min-width:  $screen-sm-min) {
+    float: right; //first column floats right on larger screens
+    padding: 0 10px 15px;
+    margin-bottom: 0;
+  }
+  .text-wrapper {
+    padding: 0 15px;
+    @media screen and (min-width:  $screen-sm-min) {
+      padding: 0 10px;
+    }
+  }
+  h2 {
+    font-size: 1.5em; 
+    padding-top: 1em; 
+    margin-top: 0;
+    @media screen and (min-width:  $screen-md-min) {
+      padding-top: .75em;
+    }
+    @media screen and (min-width:  $screen-md-min) {
+      padding-top: .5em;
+    }
+  }
+}
+
+
 // Transition Mixin
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
@@ -549,6 +594,12 @@ body#why .side-nav-mobile,
   } 
 }
 
+//less margins than .column-center
+.column-center-full {
+  max-width: 1170px;
+  margin:0 auto 30px;
+}
+
 .column-right {
   position: absolute;
   top: 250px;
@@ -611,16 +662,27 @@ body#why .side-nav-mobile,
 .page-hero-container-small {
   margin-bottom: 0;
   padding: 0 1em;
-  @media screen and (max-width: $screen-sm-min) {
-    height: auto;
-    min-height: 352px;
+  min-height: 352px;
+  height: auto; 
+  @media screen and (min-width: $screen-sm-min) {
+    min-height: 420px;
+
   }
-  @media screen and (max-width: $screen-md-min) {
-    min-height: 452px;
+  @media screen and (min-width: $screen-md-min) {
+    min-height: 380px;
   }
+
+  @media screen and (min-width: $screen-lg-min) {
+    min-height: 540px;
+  }
+
   h1 {
     @media screen and (min-width: $screen-sm-min) {
       margin-top: 1rem;
+    }
+    @media screen and (min-width: $screen-lg-min) {
+      margin-top: 3rem auto;
+      padding: 0 4.5em;
     }
   }
   .hero-text {

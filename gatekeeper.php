@@ -8,6 +8,7 @@
 7. update hero graphic
 a. remove <i id="intro_arrow_down" class="fa fa-angle-down"></i>
 b. add page-hero-container-small
+8. remove column-center and replace with column-center-full
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -40,26 +41,28 @@ b. add page-hero-container-small
         
       </div>
       <!-- /Page Hero -->
-      
+     
       <!-- << Section One >> -->
       <div class="row-full-width">
+
         <!-- LEFT COLUMN -->
         
         <!-- /LEFT COLUMN-->
         <!-- CENTER COLUMN -->
-        <div class="column-center">
+         <div class="column-center-full">
         
-          <div class="row" style="margin: 1.5em .75em;">
-            <div class="col-md-6" style="background-color:#5cb7b7; padding: 0em 1.5em .75em; opacity: 1; color: white;">
-              <h2 style="font-size: 1.5em; padding-top: 1em; margin-top: 0">Get the Early College Checklist:</h2>
-              <img class="pull-left" src="https://placehold.it/75x75/ffffff/?text=Fixed" alt="placeholder"><p>Itching to explore more subjects, bored with High School classes and more curious than most?</p>
+          <div class="row row-highlight">
+            <div class="col-sm-6 row-col-highlight">
+              <div class="text-wrapper">
+                <h2>Get the Early College Checklist:</h2>
+                <img class="pull-left" src="/_images/why-simons-rock/5-signs-screenshot" alt="placeholder" style="width: 50px;"><p>Itching to explore more subjects, bored with High School classes and more curious than most?</p>
+              </div>
               <div style="clear: both;">
-                <?php include 'contact-form-fields/contact-form-rfi-fields.php'; ?>
+                <?php include 'contact-form-fields/contact-form-fields-5signs-min-overlay.php'; ?>
               </div>
             </div>
-            <div class="col-md-6">
-              <h6>Did you know you can start college now, without a high school diploma or taking the SATs?</h6>
-              <p></p>
+            <div class="col-sm-6">
+              <p class="intro-paragraph">Did you know you can start college now, without a high school diploma or taking the SATs?</p>
               <p>Download the Early College Checklist:</p>
               <ul>
                 <li>Five signs you're ready for a greater challenge</li>

@@ -45,7 +45,7 @@
         <!-- /LEFT COLUMN-->
 
         <!-- CENTER COLUMN -->
-        <div class="column-center">
+        <div class="column-center-full">
           <!-- Video Header -->
           
           <h1 class="header-page text-center">Request for Info</h1>
