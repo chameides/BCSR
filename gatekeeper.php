@@ -25,8 +25,8 @@ b. add page-hero-container-small
     <div class="container-fluid page-container">
       <!-- Page Hero -->
       <div class="row-full-width">
-        
         <div class="page-hero-container page-hero-container-small gatekeeper-bg">
+          
           <div class="page-hero-gateway-alt text-center">
             <div class="navbar-brand-gatekeeper">
               <a href="/" title="Bard College at Simon's Rock">
@@ -92,22 +92,7 @@ b. add page-hero-container-small
       
       <?php include '_inc/bottom-js.php' ?>
       <script src="/_resources/js/forms/rfi-combine-min.js"></script>
-      <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
-      <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
-      <script>
-      var controller;
-      $(document).ready(function($) {
       
-      // init controller
-      controller = new ScrollMagic();
-      // Page hero parallax
-      var tween_page_hero = TweenMax.fromTo('.page-hero', 1.5,
-      { 'opacity' : 1, 'padding-top' : $('.page-hero').css('padding-top')},
-      { 'opacity' : 0.5, 'padding-top' : (parseInt($('.page-hero').css('padding-top'))+60) +'px'}
-      );
-      // build scene
-      var scene_page_hero = new ScrollScene({duration: 300}).setTween(tween_page_hero).addTo(controller);
-      });
-      </script>
+      
     </body>
   </html>
