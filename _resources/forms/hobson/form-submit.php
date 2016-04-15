@@ -441,13 +441,11 @@ if ($formSource == 'RFI-Address-Follow-Yes'){
             //record already exists, check database 
             checkIFAddressExists();
         }
-        /*TESTING VARIABLES
-            else {
-                $_SESSION['testing-modify'] = $modify;
-                $_SESSION['testing-nocheck'] = 'true';
-                $_SESSION['addressExists'] = 'false';
-            }
-        */
+        else {
+            //$_SESSION['testing-modify'] = $modify;
+            //$_SESSION['testing-nocheck'] = 'true';
+            $_SESSION['addressExists'] = 'false';
+        }
     }
     //$_SESSION['testingReturn'] = $return;
     if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
