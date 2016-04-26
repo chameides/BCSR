@@ -202,10 +202,12 @@ $( document ).ready(function() {
             //reveal and hide fields if Other is selected
             if ($(this).is(':checked') && $(this).val() == 'Other') {
                 $('#DOB').fadeOut();
+                $('#gradeLevel-container').fadeOut();
                 $('#note-container').fadeIn();
                
             } else {
                 $('#DOB').fadeIn();
+                $('#gradeLevel-container').fadeIn();
                 $('#note-container').fadeOut();
                 
             }

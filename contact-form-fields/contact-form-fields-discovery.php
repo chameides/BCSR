@@ -115,7 +115,7 @@
 		<option value="1991">1991</option>
 		<option value="1990">1990</option>
 		</select></div>
-		<div class="form-group col-sm-12 col-md-12">
+		<div id="gradeLevel-container" class="form-group col-sm-12 col-md-12">
 			<label for="gradeLevel">Grade Level*</label>
 			<select class="form-control" name="gradeLevel" required="required">
 				<option value="">

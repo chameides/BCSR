@@ -91,7 +91,7 @@
 				</select>
 			</div>
 		</div>
-		<div class="form-group col-sm-12 col-md-12">
+		<div id="gradeLevel-container" class="form-group col-sm-12 col-md-12">
 			<label for="gradeLevel">Grade Level*</label>
 			<select class="form-control" id="gradeLevel" name="gradeLevel" required="required">
 				<option value="">
