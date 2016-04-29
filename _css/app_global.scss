@@ -976,7 +976,7 @@ ol.circle-list > li:before {
 
 ul ul, ul ol, ol ul, ol ol {
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 //reset for IE
@@ -1000,6 +1000,9 @@ ul ul, ul ol, ol ul, ol ol {
 //      margin-left: 15px; 
 //   }
 // }
+ol ol {
+  list-style-type: upper-alpha;
+}
 
 // // Circle around any number (large/header style)
 // .number-circle {
