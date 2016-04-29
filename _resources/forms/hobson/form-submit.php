@@ -35,38 +35,61 @@ else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form conta
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
 
+else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referral form: 
+  $formSource = 'Referral '; 
+  $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
+}
+
 else { //default
     $formSource = 'RFI Form '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
 
-
-
+//create initial array with required fields
 $fields = array(
     "First Name" => $_POST['txtFirstName'],
-    "Last Name" => $_POST['txtLastName'],
-    "Contact Street" => $_POST['txtAddress1'],
-    "Contact Street 2" => $_POST['txtAddress2'],
-    "Contact City" => $_POST['city'],
-    "Primary Zip/Postal Code" => $_POST['txtZipOrPostal'],
-    "Parent 1 First Name" => $_POST['parentFirstName'],
-    "Parent 1 Last Name" => $_POST['parentLastName']                    
+    "Last Name" => $_POST['txtLastName']    
 );
 
+//add fields if data exists. Without if statement, blank result will overrite existing data. 
+if(strlen($_POST['txtAddress1']) > 0 ) {
+    $fields["Contact Street"] = $_POST['txtAddress1']; 
+};
 
+if(strlen($_POST['txtAddress2']) > 0 ) {
+     $fields["Contact Street 2"] = $_POST['txtAddress2'];  
+};
+
+if(strlen($_POST['city']) > 0 ) {
+     $fields["Contact City"] = $_POST['city'];
+};
+
+if($_POST['txtZipOrPostal'] > 0 ) {
+    $fields["Primary Zip/Postal Code"] = $_POST['txtZipOrPostal'];
+};
+
+if(strlen($_POST['parentFirstName']) > 0 ) {
+    $fields["Parent 1 First Name"] = $_POST['parentFirstName'];
+};
+
+if(strlen($_POST['parentLastName']) > 0 ) {
+    $fields["Parent 1 Last Name"] = $_POST['parentLastName'];
+};
 
 if ($_POST['birth_month'] > 0 ) {
     $fields["Date of Birth"] = $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'];
 };
 
-//only post country, if country is not US
-if ($_POST['drpCountry'] !== 'United States' ) {
+//only post country, if country is not US. and Country is assigned
+if ( ($_POST['drpCountry'] !== 'United States' ) && (strlen($_POST['drpCountry']) > 0) ) {
     $fields["Country Name"] = $_POST['drpCountry'] ;
 };
 
 //only post state, if country is US or Canada
 if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
-    $fields["Primary State Code"] = $_POST['drpState'];
+    if(strlen($_POST['drpState']) > 0 ) {
+        $fields["Primary State Code"] = $_POST['drpState'];
+    };
 }
 // else, prep contact assignments
 else {
@@ -76,15 +99,25 @@ else {
             
 //determine user type in order to select which fields to map to contact data 
 if ($_POST['userRole'] == 'Parent') {
-    $fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
-    $fields["Parent 1 Preferred Phone"] = $phone;
-    $fields["Parent 1 Email"] = $_POST['parentEmailSelf'];
+    if(strlen($_POST['drpPhoneType']) > 0){ 
+        $fields["Parent 1 Preferred Phone type"] = $_POST['drpPhoneType'];
+    };
+    if($phone > 0) {
+        $fields["Parent 1 Preferred Phone"] = $phone;
+    };
+    if(strlen($_POST['parentEmailSelf']) > 0) {
+        $fields["Parent 1 Email"] = $_POST['parentEmailSelf'];
+    };
 }
 else {
-    $fields["Preferred Phone"] = $_POST['drpPhoneType'];
+    if(strlen($_POST['drpPhoneType']) > 0){ 
+        $fields["Preferred Phone"] = $_POST['drpPhoneType'];
+    };
     $fields["Email"] = $_POST['txtEmail'];
     //if($_POST['contactParentInput'] == 'ContactParent'){ };
-    $fields["Parent 1 Email"] = $_POST['parentEmail'];
+    if (strlen($_POST['parentEmail']) > 0) {
+        $fields["Parent 1 Email"] = $_POST['parentEmail'];
+    }
     /*
     Determine preferred method of contact.
     Email trumps phone, phone trumps mail.
@@ -99,25 +132,48 @@ else {
     if($_POST['chxInfoByMail'] == 'Mail'){
         array_push($prefContactMethod, 'Mail');
     }
-    $fields["Preferred methods of contact"] = $prefContactMethod;
-    /* Determine where to put phone number based on phone type */
-    switch($_POST['drpPhoneType']) {
-        case 'Home':
-            $fields["Phone"] = $phone;
-            break;
-        case 'Mobile';
-            $fields["Mobile"] = $phone;
-            break;
+    if(strlen($_POST['$prefContactMethod']) > 0){ 
+        $fields["Preferred methods of contact"] = $prefContactMethod;
+    };
+
+    //if phone number exists... 
+    if($phone > 0) {
+        // Determine where to put phone number based on phone type
+        switch($_POST['drpPhoneType']) {
+            case 'Home':
+                $fields["Phone"] = $phone;
+                break;
+            case 'Mobile';
+                $fields["Mobile"] = $phone;
+                break;
+            default:
+                $fields["Phone"] = $phone;
+                break;
+        }
     }
 }
 
+//Dump misc data into description field. Would be better to put this data into specific fields. 
 $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
 
-
+//If Referral Form...
+if ($formSource == 'Referral ') {
+    //...dump misc referrer data into field. Would be better to put this data into specific fields.
+    $fields["Referral Comment"] = 
+        'Referrer: ' . $_POST['referrerName'] . 
+        ' | ' . $_POST['referrerClassYear'] .
+        ' | ' . $_POST['title'] .
+        ' | ' . $_POST['organization'] . 
+        ' | ' . $_POST['referrerEmail'] .
+        ' | ' . $_POST['txtPhoneRequired'] .
+        ' | ' . $_POST['referrerComment'] .
+        ' | Student School: ' . $_POST['school']
+    ;
+};
 //determine graduation year based on gradelevel
 if ($_POST['gradeLevel'] > 0) {
     $gradeLevel = $_POST['gradeLevel']; //pull data from form
-    $YearsToGraduation = 12 - $gradeLevel; //this needs to be updated in January
+    $YearsToGraduation = 12 - $gradeLevel;
     $graduationYear =  date("Y") + $YearsToGraduation; //calculate value
     if (date("m")>7) { //if change this calculation, make sure to change the helper text
         $graduationYear = $graduationYear + 1;

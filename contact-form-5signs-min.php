@@ -34,24 +34,34 @@
       </div>
     -->
       <!-- << Section One >> -->
-      
+      <div class="row-full-width">
+        <!-- LEFT COLUMN -->
+        <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
+          <div class="reveal-side-nav"></div>
+          <!-- Subnav -->
+         
+          <!-- /Subnav -->
+        </div>
         <!-- /LEFT COLUMN-->
 
         <!-- CENTER COLUMN -->
         <div class="column-center">
           <!-- Video Header -->
-         
-          <h1 class="header-page text-center">Refer a Student</h1>
+          
+          <h1 class="header-page text-center">Request for Info</h1>
           <div class="row">
 
   <div class="col-md-6">
-    <p>Make an impact on the intellectual, creative, and fiscal vibrancy of the college.</p>
+    <p>We're so glad you would like to know
+    more about Simon's Rock and Bard
+    Academy. Please fill out the form on this page
+    and we will get in touch with you.</p>
   </div>
 
 
   <div class="col-md-6">
-    <?php include 'contact-form-fields/contact-form-fields-alumni-referral.php'; ?>
-   
+    <?php include 'contact-form-fields/contact-form-fields-5signs-min.php'; ?>
+  
 
 
 
@@ -59,7 +69,7 @@
 </div><!-- row -->
 
               
-         
+         </div>
         <!-- /CENTER COLUMN -->
 
         <!-- RIGHT COLUMN -->
@@ -120,8 +130,8 @@
 <?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>
+<script id="hobson-form-submit" data-name="5signs" src="/_resources/js/forms/rfi-combine-min.js"></script>
 
-<script id="hobson-form-submit" data-name="referralAlumni" src="/_resources/js/forms/rfi-combine-min.js"></script>
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>

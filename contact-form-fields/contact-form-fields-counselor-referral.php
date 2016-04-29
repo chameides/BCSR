@@ -3,27 +3,30 @@
 		<div class="form-group col-md-12">
 			<h4 class="spotlight">Referrer Information</h4>	
 		</div>
-		<div class="form-group col-md-8">
+		<div class="form-group col-md-12">
 			<label for="referrerName">Your Name*</label>
 			<input id="referrerName" class="form-control" maxlength="100" name="referrerName" required="required" type="text" />
 		</div>
-		<div class="form-group col-md-4">
-			<label for="referrerClassYear">Class Year</label>
-			<input id="referrerClassYear" class="form-control" placeholder="ex. 1997" maxlength="6" name="referrerClassYear" type="number" min="1" max="2020" />
-		</div>
 		<div class="form-group col-md-12">
-			<label for="referrerEmail">Your Email Address*</label>
+			<label for="referrerEmail">Email Address*</label>
 			<input id="referrerEmail" class="form-control" maxlength="100" name="referrerEmail" required="required" type="email" />
 		</div>
 		<div class="form-group col-md-12">
 			<label for="txtPhoneRequired">Phone Number*</label>
 			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" required="required" type="tel" />
 		</div>
+		<div class="form-group col-md-6">
+			<label for="title">Title</label>
+			<input id="title" class="form-control" name="title" type="text" />
+		</div>
+		<div class="form-group col-md-6">
+			<label for="organization">Organization</label>
+			<input id="organization" class="form-control" name="organization" type="text" />
+		</div>
 		<div class="form-group col-md-12">
 			<h4>Student Information</h4>
 		</div>
 		<div class="form-group col-md-6">
-		
 		<label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
 		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
@@ -357,7 +360,7 @@
 		</div>
 		<div class="col-sm-12 col-md-12 form-group">
 			<label for="note">Why are you referring this student to Simon’s Rock?</label>
-			<textarea id="referrerComment" class="form-control" name="referrerComment" maxlength="220"></textarea>
+			<textarea id="referrerComment" class="form-control" name="referrerComment" maxlength="205"></textarea>
 		</div>
 			<?php
 						// replace php with xsl-freindly code in CMS <php>

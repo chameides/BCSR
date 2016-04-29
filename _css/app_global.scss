@@ -837,80 +837,7 @@ body#why .side-nav-mobile,
   }
 }
 
-// Callout Box
-.callout-box {
-  @include LeHavre(18px);
-  position: relative;
-  width: 100%;
-  max-width: 260px;
-  overflow: hidden;
-  margin: 20px 0;
-  line-height: 1.7rem;
-  &.callout-custom-cicada {
-    margin-top: -33px;
-  }
-  @media screen and (max-width:1370px) {
-      position: relative;
-      padding: 12px 20px;
-      float: right;
-      line-height: 1rem;
-      font-size: 1rem;
-      min-height: 60px;
-      margin: 20px 0;
 
-    &.left {
-      margin-top: 20px;
-      // float: left;
-    }
-    font-size: 1rem;
-  }
-  @media screen and (max-width:$screen-sm-min) {
-    max-width: 150px;
-    padding: 9px 10px;
-  }
-  @media screen and (max-width:$screen-xs-min) {
-    &.blue-bg,
-    &.orange-bg {
-      background-color: $medium-gray;
-    }
-  }
-  a {
-    color: $white;
-    text-decoration: underline;
-    &:hover {
-      color: $red;
-    }
-  }
-}
-
-  // .callout-box:before {
-  //     content: "";
-  //     display: block;
-  //     // padding-top: 100%;
-  // }
-   // .callout-content {
-   //     position:  absolute;
-   //     top: 0;
-   //     left: 0;
-   //     bottom: 0;
-   //     right: 0;
-   //     color: $white;
-   // }
-    .callout-content div {
-       display: table;
-       width: 100%;
-       min-height: 160px;
-       padding: 1em;
-      @media screen and (max-width:1370px) {
-        min-height: inherit;
-      }
-    }
-      .callout-content span {
-          display: table-cell;
-          text-align: center;
-          vertical-align: middle;
-          color: $white;
-      }
 
 // Link Styles for lists and text only
 .circle-list,
@@ -1152,10 +1079,12 @@ a.link-wrap {
       background: $red;
     }
 }
+/*colored boxes on Area of Study page (and circles on giving landing)*/
 .outer {
   position: relative;
   padding: 0;
   width: 100%;
+  /*Colored circles on giving landing page */
   &.outer-circle {
     padding: 25% 0;
     &:before {
@@ -1171,7 +1100,7 @@ a.link-wrap {
 &:before {
   content: "";
   display: block;
-  padding-top: 56.7%;   /* for ratio of 16:9*/
+  padding-top: 50%; /*for centered content*/
   -webkit-transition: all 0.3s ease-out;  
      -moz-transition: all 0.3s ease-out; 
        -o-transition: all 0.3s ease-out;

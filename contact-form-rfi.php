@@ -39,19 +39,7 @@
         <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
           <div class="reveal-side-nav"></div>
           <!-- Subnav -->
-          <ul class="flat-list list-group">
-            <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
-            <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
-            </li>
-            <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
-            <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
-          </ul>
+         
           <!-- /Subnav -->
         </div>
         <!-- /LEFT COLUMN-->
@@ -59,11 +47,7 @@
         <!-- CENTER COLUMN -->
         <div class="column-center">
           <!-- Video Header -->
-          <ol class="flat-list crumb">
-            <li><a href="#">Home</a></li>
-            <li> > </li>
-            <li class="active">This Page</li>
-          </ol>
+          
           <h1 class="header-page text-center">Request for Info</h1>
           <div class="row">
 
@@ -76,7 +60,7 @@
 
 
   <div class="col-md-6">
-    <?php include 'contact-form-rfi-fields.php'; ?>
+    <?php include 'contact-form-fields/contact-form-rfi-fields.php'; ?>
   
 
 
@@ -85,7 +69,7 @@
 </div><!-- row -->
 
               
-         
+         </div>
         <!-- /CENTER COLUMN -->
 
         <!-- RIGHT COLUMN -->

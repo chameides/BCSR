@@ -15,7 +15,7 @@ $( document ).ready(function() {
     /*
         $('#txtFirstName').val('firstName');
         $('#txtLastName').val('delete_lastName');
-        $('#txtEmail').val('delete_test@test.com');
+        $('#txtEmail').val('test@test.com');
         $('#birth_month').val('07');
         $('#birth_day').val('18');
         $('#birth_year').val('1995');
@@ -24,9 +24,7 @@ $( document ).ready(function() {
         $('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
-    */
-
-    
+    */ 
      
     //2. Submit
     // Variable to hold request
@@ -76,6 +74,14 @@ $( document ).ready(function() {
                 else if (formName == 'cty') {
                     var nextPage = 'cty-form-thanks.php'; 
                     var gtmLabel = 'formInquiryCTY';
+                }
+                else if (formName == 'referralAlumni') {
+                    var nextPage = 'referral-form-thanks.php'; 
+                    var gtmLabel = 'formInquiryReferralAlumni';
+                }
+                else if (formName == 'referralCounselor') {
+                    var nextPage = 'referral-form-thanks.php'; 
+                    var gtmLabel = 'formInquiryReferralCounselor';
                 }
                 else {
                     var nextPage = 'contact-form-thanks.php';
@@ -227,8 +233,14 @@ $( document ).ready(function() {
         }
         if ( countryval == 'United States' | countryval == 'Canada' ) {
             $('#grpState').fadeIn();
+            //style postal code for split column
+            $('#grpZip').addClass('col-sub-trailing-sm').addClass('col-sm-6');
+            $('#grpZip').removeClass('col-sm-12');
         } else {
             $('#grpState').hide();
+            ////style postal code for full column
+            $('#grpZip').removeClass('col-sub-trailing-sm').removeClass('col-sm-6');
+            $('#grpZip').addClass('col-sm-12');
         }
     }); 
     //reveal parent contact email if contact my parent is checked

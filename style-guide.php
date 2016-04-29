@@ -53,13 +53,15 @@
 						<li><a href="campus-map.php">Map</a></li>
 						<li><a href="student-life.php">Student Life</a></li>
 						<li><a href="why-simons-rock.php">Why Simon's Rock</a></li>
+						<li><a href="video.php">Video Modal</a></li>
+
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul>
 						<li><a href="gateway.php">Gateway</a></li>
 						<li><a href="giving-landing.php">Giving Landing</a></li>
-						<li><a href="index.php">Home</a></li>
+						<li><a href="index2.php">Home</a></li>
 						<li><a href="master-section-landing.php">Master Section Landing</a></li>
 						<li><a href="profile.php">Profile</a></li>
 						<li><a href="basic-profile.php">Profile (basic)</a></li>

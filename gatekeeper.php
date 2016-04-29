@@ -99,7 +99,6 @@
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
-  <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>
 
   <script>
 
