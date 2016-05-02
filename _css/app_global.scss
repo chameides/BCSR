@@ -440,6 +440,24 @@ body#why .side-nav-mobile,
       color: $white;
     }
   }
+  /*put breadcrumb at top of mobile secondary nav*/
+  .crumb-mobile {
+    background-color: $dark-gray;
+    color: white; 
+    @include HelveticaCondMed(16px);
+    line-height: 1.8em; //make space for fingers to touch specific line
+    padding: .5em 1em;
+    a,
+    a:link {
+      display: inline; //override list-group a
+      padding: 0; //override side-nav-mobile list-group a
+      background-color: $dark-gray; //override list-group a
+      color: white; //override list-group a
+      &:hover {
+        text-decoration: underline;
+      }   
+    }
+  }
 	ul li a {
 		padding-left:30px;	
 	}
@@ -531,7 +549,7 @@ body#why .side-nav-mobile,
 .column-center {
   max-width: 1170px;
   margin:0 auto 30px;
-  padding: 0 1em;
+  padding: 0 $padding-small-relative;
   @media screen and (min-width:$screen-sm-min) and (max-width:$screen-md-max) {
   	padding:0 60px;  
   }
@@ -837,7 +855,16 @@ body#why .side-nav-mobile,
   }
 }
 
-
+.crumb-mobile {
+  @include HelveticaCond(16px);
+  padding: $padding-small-relative/2 $padding-small-relative;
+  & li {
+    display: inline;
+  }
+  @media screen and (min-width:$screen-md-min) {
+    display: none;
+  }
+}
 
 // Link Styles for lists and text only
 .circle-list,
