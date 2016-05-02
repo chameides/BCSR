@@ -441,11 +441,11 @@ body#why .side-nav-mobile,
     }
   }
   /*put breadcrumb at top of mobile secondary nav*/
-  .crumb-mobile-list {
+  .crumb-mobile {
     background-color: $dark-gray;
     color: white; 
     @include HelveticaCondMed(16px);
-    line-height: 1.8em;
+    line-height: 1.8em; //make space for fingers to touch specific line
     padding: .5em 1em;
     a,
     a:link {
