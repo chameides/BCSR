@@ -940,8 +940,8 @@
 	<h2 class="text-center">Images</h2>	
 	<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
 	<p>The standard image goes to the full width of the column</p>
-	<p><img src="//placehold.it/325/325" class="pull-left-responsive">The pull-left-responsive image changes width based on screen size. It floats to the left. The max-width is 325px.  
-	<p><img src="//placehold.it/325/325" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right.</p>
+	<p><img src="//placehold.it/325/325" class="pull-left-responsive-35">The pull-left-responsive-35 image changes width based on screen size. It floats to the left. The max-width is 325px. The pull-left-responsive-50 image floats a larger image (445px) to the left. 
+	<p><img src="//placehold.it/325/325" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right for both 35% width and 50% width images.</p>
 		<div class="col-md-12">
 			<p><img src="//placehold.it/125/125" class="pull-left"><strong>img.pull-left </strong> is fixed width. ras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 			<p><img src="//placehold.it/125/125" class="pull-right">as is <strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
