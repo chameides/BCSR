@@ -309,6 +309,6 @@
 						//</php>
 			?>
 		<input type="hidden" name="formSource" id="formSource" value="Address" />
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Mail Me the Fact Book" /></div>
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Send Me the Fact Book" /></div>
 	</form>
 </div>
