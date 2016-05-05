@@ -136,6 +136,10 @@ if ($_POST['birth_month'] > 0 ) {
 //only post country, if country is not US. and Country is assigned
 if ( ($_POST['drpCountry'] !== 'United States' ) && (strlen($_POST['drpCountry']) > 0) ) {
     $fields["Country Name"] = $_POST['drpCountry'] ;
+    $_SESSION['addressInternationalExists'] = 'true';
+}
+else {
+    $_SESSION['addressInternationalExists'] = 'false';
 };
 
 //only post state, if country is US or Canada
@@ -483,8 +487,7 @@ else {
 }
 //7. end session for form types that don't need it
 if ($formSource !== 'RFI-Address-Follow-Yes' &&
-    $formSource !== 'Address' ) {
-
+    $formSource !== 'address' ) {
     session_unset();
     session_destroy();
     session_write_close();
