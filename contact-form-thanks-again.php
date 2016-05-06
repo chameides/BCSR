@@ -2,7 +2,7 @@
   session_start();
   if (isset($_SESSION['addressInternationalExists']) && $_SESSION['addressInternationalExists'] == 'true') {
   	//redirect to thank you page with address follow form
-  	header('Location: /contact-form-thanks-again-international.php');
+  	header('Location: /contact-form-thanks-international.php');
   }
   else {
   	//reset variables
