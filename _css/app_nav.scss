@@ -479,6 +479,13 @@ nav#mainnav {
 	padding: $padding-large-vertical 0;
 }
 
+//Gatekeeper pages have a simple centered logo instead of a full nav
+.navbar-brand-gatekeeper-overlay {
+	width: 163px;
+	margin: 0 auto;
+	padding: $padding-large-vertical 0;
+}
+
 
 @media (max-width: $screen-sm-max) {
 	.navbar-brand {
