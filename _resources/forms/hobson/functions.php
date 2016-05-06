@@ -66,7 +66,7 @@ function errorCheck() {
     /*check for error
     Hobson returns a string after form submission. We need to parse the string to determine the error. 
     */
-    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID;
+    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID, $formSource, $formSource, $formSourceOutput;
     
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
@@ -123,6 +123,7 @@ function errorCheck() {
         else {
         //not duplicate, prepare variables for email
         $subject ='Error: Hobson Radius Form';
+        $datetime = date('m/d/Y h:i:s a', time());
         $message = 'There has been an error on the Hobson Radius Form Submission
             
             Status: ' . $status .
@@ -131,17 +132,40 @@ function errorCheck() {
             '
             ***Error: ' . $errorMessage .
             '
-            ***url:' . $url_curl .
+            ***url: ' . $url_curl .
             '
-            ***entityID:' . $entityID .
+            ***entityID: ' . $entityID .
             
             '
-            ***urlStatus:' . $urlStatus .
+            ***urlStatus: ' . $urlStatus .
             
             '
-            ***error return:' . $return  . 
+            ***error return: ' . $return  . 
             '
-            
+
+            ***date: ' . $datetime . 
+            '
+
+            ***Form Source: ' . $formSource . 
+            '
+
+            ***Form Source Output: ' . $formSourceOutput . 
+            '
+
+            ***Form URL: ' . $_POST['url'] . 
+            '
+
+            ***Session entity ID: ' . $_SESSION['entityID'] . 
+            '
+
+             ***Session address submit: ' . $_SESSION['addressSubmit'] . 
+            '
+
+             ***Session address Exists: ' . $_SESSION['addressExists'] . 
+            '
+
+             ***Session address International Exists: ' . $_SESSION['addressInternationalExists'] . '            
+
             data send:' . print_r( $data_contact, true ) 
         ;
         //send email

@@ -212,9 +212,7 @@ else {
     }
 }
 
-if ($formSource !== 'address' && 
-    $formSource !== 'addressMissingSession'
-    ) {
+if ($_POST['formSource'] !== 'Address') {
     //Dump misc data into description field. Would be better to put this data into specific fields.
     if ($formSource == 'RFI-Address-Follow-Yes' ||
         $formSource == 'RFI-Address-Follow-No'
@@ -487,7 +485,7 @@ else {
 }
 //7. end session for form types that don't need it
 if ($formSource !== 'RFI-Address-Follow-Yes' &&
-    $formSource !== 'address' ) {
+    $_POST['formSource'] !== 'Address' ) {
     session_unset();
     session_destroy();
     session_write_close();
