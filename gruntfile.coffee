@@ -41,7 +41,7 @@ module.exports = (grunt) ->
     watch:
       styles:
         files: ['_css/**/*.scss']
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sass']
         options:
           spawn: false
       grunticon:

@@ -232,9 +232,9 @@ $cursor-disabled:                not-allowed !default;
 //** Background for the dropdown menu.
 $dropdown-bg:                    #fff !default;
 //** Dropdown menu `border-color`.
-$dropdown-border:                #ffffff /* rgba(0,0,0,.15) */ !default;
+$dropdown-border:                #ffffff !default;/* rgba(0,0,0,.15) */
 //** Dropdown menu `border-color` **for IE8**.
-$dropdown-fallback-border:       #ffffff /* #ccc */ !default;
+$dropdown-fallback-border:       #ffffff !default; /* #ccc */ 
 //** Divider color for between dropdown items.
 $dropdown-divider-bg:            #e5e5e5 !default;
 
