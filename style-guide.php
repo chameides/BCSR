@@ -317,44 +317,59 @@
 		  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
 		</ul>
 	  </li>
-	  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
+	  <li><a href="#">Financial Aid Handbook (2013/14)</li>
+	  <li><a href=".pdf">A link with a download</a></li>
 	</ul>
 
 	<h3>Custom Ordered List</h3>
 
 	<ol class="circle-list">
-	  <li><a href="#">Noncustodial Parent’s Statement Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
-		
+	  <li><a href="#">Noncustodial Parent’s Statement Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo</a>
 	  </li>
-	  <li><a href="#">International Student Financial Aid Applica<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-	  <li><a href="#">International Student Certification of Finances<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+	  <li><a href=".pdf">International Student Financial Aid Application</a></li>
+	  <li><a href=".pdf">International Student Certification of Finances</a></li>
 	</ol>
 
 	<h3>Ordered List</h3>
 	<ol>
 	  <li>List Item 1</li>
-	  <li>List Item 2</li>
-	  <li>List Item 3</li>
+	  <li><a href="">List Item 2</a></li>
+	  <li><a href=".pdf">List Item 3</a></li>
 	</ol>
 
 	<h3>Unordered List</h3>
 	<ul>
 	  <li>List Item 1</li>
-	  <li>List Item 2</li>
-	  <li>List Item 3</li>
+	  <li><a href="">List Item 2</a></li>
+	  <li><a href=".pdf">List Item 3</a></li>
 	</ul>
 
-	<h3>Definition List</h3>
-	<dl>
-	  <dt>Definition List Term 1</dt>
-	  <dd>This is a definition list description.</dd>
-	  <dt>Definition List Term 2</dt>
-	  <dd>This is a definition list description.</dd>
-	  <dt>Definition List Term 3</dt>
-	  <dd>This is a definition list description.</dd>
-	</dl>
+	<h3 id="download">Download Links</h3>
+	<p>Initial designs had the download 'down arrow' display with code appended after the link text. Using OUCampus, users would add a CSS class and then a XSL transform would convert the class to the code. This was cumbersome and we opted to replace it with CSS.</p> 
+	<p>While possible, avoid using PDF links with the Primary CTA.</p> 
+	<a class="btn btn-primary" href=".pdf">Download</a>
+	<p>&nbsp;</p>
+	<p>High priority downloads, if any, should use the Bullet CTA</p>
+	<div>
+		<a class="right-arrow-primary" href=".pdf"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
+	</div>
+	<div>
+		<a class="right-arrow-aside" href=".pdf"><i class="fa fa-angle-right bold"></i> Aside CTA</a>
+	</div>
+	<div>
+		<a class="right-arrow" href=".pdf"><i class="fa fa-angle-right bold"></i> Secondary CTA</a>
+	</div>
+	
+
+
+
+
 
 	</div>
+
+	
+	
+
 
 	<a name="tables"></a>
 	<div class="col-md-12">

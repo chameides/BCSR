@@ -1,0 +1,86 @@
+/* to do list
+1. Transition color change
+3. Separate Module
+*/
+
+
+/*Table of Contents
+1. Explanation
+2. Default Settings
+3. CTA Links
+4. Lists
+
+
+1. Explanation
+Initial designs had the download 'down arrow' display with code appended after the link text. Using OUCampus, users would add a CSS class and then a XSL transform would convert the class to the code. This was cumbersome and we opted to replace it with CSS.
+
+
+2. Default Settings
+*/
+
+[href$='.pdf']:after,
+[href$='.doc']:after {
+	width: 18px; //size of icon
+  display: inline-block;
+  margin-left: 2px;
+  display: inline-block;
+  content: url(/_resources/includes/download-arrow/svg-gray.svg);  //use separate links for different colors
+  padding-left: 5px;
+  padding-left:5px;
+} 
+
+// default red on hover
+[href$='.pdf']:hover:after,
+[href$='.doc']:hover:after {
+  content: url(/_resources/includes/download-arrow/svg-red.svg);
+}
+
+
+//3. CTA Links 
+
+.btn-primary,
+.right-arrow-aside {
+	&[href$='.pdf']:after,
+	&[href$='.doc']:after {
+		content: url(/_resources/includes/download-arrow/svg-white.svg);
+		width: 17px;
+	}
+}
+
+.right-arrow-primary,
+.right-arrow-aside,
+.right-arrow
+{
+	&[href$='.pdf']:after,
+	&[href$='.doc']:after {
+		content: url(/_resources/includes/download-arrow/svg-red.svg);
+	}
+}
+
+.right-arrow-primary,
+.right-arrow-aside,
+.right-arrow {
+	&[href$='.pdf']:hover:after,
+	&[href$='.doc']:hover:after {
+		content: url(/_resources/includes/download-arrow/svg-dark-gray.svg);
+	}
+}
+
+
+.right-arrow {
+	&[href$='.pdf']:after,
+	&[href$='.doc']:after {
+		width: 16px;
+	}
+}
+
+//4. Lists
+
+.arrow-list,
+ol,
+li {
+	[href$='.pdf']:after,
+	[href$='.doc']:after {
+		width: 17px;
+	}
+}
