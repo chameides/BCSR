@@ -10,8 +10,12 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, ol.crumb a:hover, ol.crumb a:active {
 	color:$red;
+	text-decoration:underline;
+}
+
+footer#globalfooter a:hover, footer#globalfooter a:active {
 	text-decoration:underline;
 }
 
