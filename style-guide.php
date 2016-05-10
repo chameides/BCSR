@@ -243,9 +243,9 @@
 	<a name="paragraph"></a>
 	<div class="col-md-12">
 	<h2 class="text-center" id="paragraph">Text Elements</h2>
-	<h3>paragraph</h3>
+	<h3>Intro paragraph and regular paragraph</h3>
 
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+	<p class="intro-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 	<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 	
@@ -254,27 +254,27 @@
 	<p>The <a href="#">a element</a> example</p>
 	<!-- <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p> -->
 	<!-- <p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example -->
-	<p>The <b>b element</b> example</p>
-	<p>The <cite>cite element</cite> example</p>
+	<!-- <p>The <b>b element</b> example</p>
+	<p>The <cite>cite element</cite> example</p> -->
 	<!-- <p>The <code>code element</code> example</p> -->
 	<p>The <em>em element</em> example</p>
 	<!-- <p>The <del>del element</del> example</p> -->
-	<!-- <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p> -->
-	<p>The <i>i element</i> example</p>
+	<!-- <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p> 
+	<p>The <i>i element</i> example</p> -->
 	<!-- <p>The <ins>ins element</ins> example</p> -->
 	<!-- <p>The <kbd>kbd element</kbd> example</p> -->
 	<!-- <p>The <mark>mark element</mark> example</p> -->
 	<!-- <p>The <q>q element</q> example</p> -->
 	<!-- <p>The <q>q element <q>inside</q> a q element</q> example</p> -->
 	<!-- <p>The <s>s element</s> example</p> -->
-	<!-- <p>The <samp>samp element</samp> example</p> -->
+	<!-- <p>The <samp>samp element</samp> example</p> 
 	<p>The <small>small element</small> example</p>
-	<p>The <span>span element</span> example</p>
+	<p>The <span>span element</span> example</p>-->
 	<p>The <strong>strong element</strong> example</p>
-	<p>The <sub>sub element</sub> example</p>
+	<!--<p>The <sub>sub element</sub> example</p>-->
 	<p>The <sup>sup element</sup> example</p>
-	<p>The <u>u element</u> example</p>
-	<!-- <p>The <var>var element</var> example</p> -->
+	<!--<p>The <u>u element</u> example</p>
+	 <p>The <var>var element</var> example</p> -->
 	</div>
 
 	<!--
@@ -314,23 +314,29 @@
 	<h3>Custom Ordered List</h3>
 
 	<ol class="circle-list">
-	  <li><a href="#">Noncustodial Parent’s Statement Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
-		
-	  </li>
-	  <li><a href="#">International Student Financial Aid Applica<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+	  <li><a href="#">Use custom ordered list only one level deep.<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+	  <li><a href="#">International Student Financial Aid Application<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
 	  <li><a href="#">International Student Certification of Finances<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
 	</ol>
 
 	<h3>Ordered List</h3>
 	<ol>
-	  <li>List Item 1</li>
+	  <li>List Item 1
+	  	<ol>
+	  		<li>Sub list item 1</li>
+	  		<li>Sub list item 2</li></li>
+	  	</ol>
 	  <li>List Item 2</li>
 	  <li>List Item 3</li>
 	</ol>
 
 	<h3>Unordered List</h3>
 	<ul>
-	  <li>List Item 1</li>
+	  <li>List Item 1
+	  	<ul>
+	  		<li>Sub list item 1</li>
+	  		<li>Sub list item 2</li></li>
+	  	</ul>
 	  <li>List Item 2</li>
 	  <li>List Item 3</li>
 	</ul>
@@ -344,6 +350,14 @@
 	  <dt>Definition List Term 3</dt>
 	  <dd>This is a definition list description.</dd>
 	</dl>
+	<h3>Custom Department list</h3>
+	<h4 class="spotlight">Information Technology Services</h4>
+                        <ul class="arrow-list-tight"><li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li><li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li></ul>
+	<h3>Custom Bio List</h3>
+	<h4 class="spotlight">Ben Krupka</h4>
+                           <p class="no-margin-bottom">Ceramics</p>
+                           <ul class="arrow-list-tight-small"><li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
+                           <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li></ul>
 
 	</div>
 
@@ -396,9 +410,9 @@
 	</div>
 	<a name="forms"></a>
 	<div class="col-md-12">
-	<h2 id="form_elements" class="text-center">Media and Form Elements</h2>
+	<h2 id="form_elements" class="text-center">Form Elements</h2>
 
-	<h3>Media</h3>
+<!--	<h3>Media</h3>
 
 	<p>The Audio Element:</p>
 	<audio controls>
@@ -412,9 +426,9 @@
 	  <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
 	  <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg">
 	  Your browser does not support the video tag.
-	</video>
+	</video> 
 
-	<h3>Form Elements</h3>
+	<h3>Form Elements</h3>-->
 
 	<div class="row">
 	<form>
@@ -933,6 +947,14 @@
 			<li>The blockquotes look clunky if they are long. They look best as short, pull quotes rather than an extended quote.</li>
 			<li>Consider breaking up the citation onto two lines, one for the name and the other on the title. An unforced linebreak may look errant because of the right-align - and this is likely on small screens. Forcing a line break will give a more controlled design.</li>
 		</ul>
+
+
+                     <p class="lengthybq">&ldquo;It is not just about knowledge and learning to absorb information and then regurgitate
+                        on a test, but actually being able to use one's brain in any situation, academic or
+  otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or
+  otherwise. This skill is indispensable in any time or place.&rdquo;</p><cite class="lengthybq">&mdash;Sarah&nbsp;'08&nbsp;</cite>
+  <p> Consider applying .lengthybq to the blockquote if the quote extends beyond a couple of lines.
+
 		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
 	</div>
 	<a name="images"></a> 
@@ -950,24 +972,26 @@
 	<a name="cta"></a>
 	<div class="col-md-12">
 		<h2 class="text-center">CTA</h2>
-		<p>Primary CTA should be short, scannable. Verb Object (Visit Campus). If it is longer, consider the bullet CTA. Only use the Secondary CTA in conjunction with the Primary CTA. 
+		<p>The red button should be short, scannable. Verb Object (Visit Campus). If it is longer, consider the large red arrow link. Only use the small red arrow link in conjunction with the red button. 
 		<div class="text-center">
-			<a class="btn btn-primary" href="#">Primary</a>
+			<a class="btn btn-primary" href="#">Red Button</a>
 		</div>
 		<div class="text-center page--link">
-			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Secondary CTA</a>
+			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> small red arrow link</a>
 		</div>
 		<div class="col-md-12">
-			<p>There is also a bullet CTA that can be used without the primary.</p>
+			<p>There is also a large red arrow link that can be used without the red button.</p>
 			<div class="text-center page--link">
-				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Bullet CTA</a>
+				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link</a>
 			</div>
 		</div>
 		<div class="col-md-12">
 	        <div class="row stacked-content">
 	            <div class="col-sm-8">
-		            <h3>Aside CTA</h3>
-		              <p>There is also an aside CTA for longer text connected to CTA that is not linearly connected to the rest of the copy.</p>
+		            <h3>Medium Red Arrow Link</h3>
+		              <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
+		              	<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+			<p>CTA links associated with H3’s and below match their alignment (left).</p>
 	            </div>
 	            <!-- <div class="col-sm-4" style="> -->
 	            <div class="col-sm-4 aside">
@@ -978,12 +1002,9 @@
 	            </div>
 	         </div>
 		</div>
-		<div class="col-md-12">
-			<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
-			<p>CTAs associated with H3’s and below match their alignment (left).</p>
-		</div>
+	
 	</div>
-		
+		<div>&nbsp;</div>
 	</section>
 
 
