@@ -3,7 +3,7 @@ img {
   width: 100%;
 }
 
-.pull-left, .pull-right, .pull-left-responsive, .pull-right-responsive {
+.pull-left, .pull-right, .pull-left-responsive, .pull-right-responsive, .pull-left-responsive-35, .pull-right-responsive-35, .pull-left-responsive-50, .pull-right-responsive-50 {
 	margin-bottom:15px;
 }
 
@@ -13,30 +13,35 @@ img {
 }
 
 /*right margin on left floated images*/
-.pull-left, .pull-left-responsive {
+.pull-left, .pull-left-responsive, .pull-left-responsive-35, .pull-left-responsive-50 {
 	margin-right:15px;
 }
 
 /*left margin on right floated images*/
-.pull-right, .pull-right-responsive {
+.pull-right, .pull-right-responsive, .pull-right-responsive-35, .pull-right-responsive-50 {
 	margin-left:15px;
 }
 
 /*width varies based on screen size*/
-.pull-left-responsive, .pull-right-responsive {
+.pull-left-responsive, .pull-left-responsive-35, .pull-right-responsive, .pull-right-responsive-35 {
 	min-width: 125px;
 	width: 35%;
+}
+
+.pull-left-responsive-50, .pull-right-responsive-50 {
+	min-width: 125px;
+	width: 50%;
 }
 
 /*increase margin on larger images*/
 $pull-image-margin-md: 25px;
 
-.pull-left-responsive {
+.pull-left-responsive, .pull-left-responsive-35, .pull-left-responsive-50 {
 	@media screen and (min-width:$screen-md) {
 		margin-right: $pull-image-margin-md;
 	}
 }
-.pull-right-responsive {
+.pull-right-responsive, .pull-right-responsive-35, .pull-right-responsive-50 {
 	@media screen and (min-width:$screen-md) {
 		margin-left: $pull-image-margin-md;
 	}
