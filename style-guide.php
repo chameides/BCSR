@@ -53,13 +53,15 @@
 						<li><a href="campus-map.php">Map</a></li>
 						<li><a href="student-life.php">Student Life</a></li>
 						<li><a href="why-simons-rock.php">Why Simon's Rock</a></li>
+						<li><a href="video.php">Video Modal</a></li>
+
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul>
 						<li><a href="gateway.php">Gateway</a></li>
 						<li><a href="giving-landing.php">Giving Landing</a></li>
-						<li><a href="index.php">Home</a></li>
+						<li><a href="index2.php">Home</a></li>
 						<li><a href="master-section-landing.php">Master Section Landing</a></li>
 						<li><a href="profile.php">Profile</a></li>
 						<li><a href="basic-profile.php">Profile (basic)</a></li>
@@ -321,14 +323,17 @@
 
 	<h3>Ordered List</h3>
 	<ol>
-	  <li>List Item 1
-	  	<ol>
-	  		<li>Sub list item 1</li>
-	  		<li>Sub list item 2</li></li>
-	  	</ol>
-	  <li>List Item 2</li>
+	  <li>List Item 1</li>
+	  <li>List Item 2
+	  <ol>
+		  <li>List Item 1</li>
+		  <li>List Item 2</li>
+		  <li>List Item 3</li>
+		</ol>
+	</li>
 	  <li>List Item 3</li>
 	</ol>
+	<p>Followed by a paragraph</p>
 
 	<h3>Unordered List</h3>
 	<ul>
@@ -1004,7 +1009,28 @@
 		</div>
 	
 	</div>
+
 		<div>&nbsp;</div>
+
+	<div class="col-md-12">
+		<h2 class="text-center">Captions</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="//placehold.it/330">
+				<div class="image-name text-center">Caption</div>
+			</div>
+			<div class="col-md-4">
+				<img src="//placehold.it/330">
+				<div class="image-title text-center">Secondary description</div>			
+			</div>
+			<div class="col-md-4">
+				<img src="//placehold.it/330">
+				<div class="caption-small text-center">Photo attribution</div>			
+			</div>
+		</div>
+	</div>
+	<p>&nbsp;</p>
+		
 	</section>
 
 

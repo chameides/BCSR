@@ -210,6 +210,51 @@ p {
 
 }
 
+/*
+HIGLIGHT COLUMN
+
+Initially used on landing page forms to make the column with the form pop. 
+*/
+
+//apply on row
+.row-highlight {
+  margin: 1.5em 1.5em;
+  @media screen and (min-width:  $screen-sm-min) {
+    margin: 1.5 0;
+  }
+}
+
+//apply on column
+.row-col-highlight {
+  background-color:#5cb7b7; 
+  color: white;
+  margin-bottom: 2em;
+  padding: 0 0 15px;
+  @media screen and (min-width:  $screen-sm-min) {
+    float: right; //first column floats right on larger screens
+    padding: 0 10px 15px;
+    margin-bottom: 0;
+  }
+  .text-wrapper {
+    padding: 0 15px;
+    @media screen and (min-width:  $screen-sm-min) {
+      padding: 0 10px;
+    }
+  }
+  h2 {
+    font-size: 1.5em; 
+    padding-top: 1em; 
+    margin-top: 0;
+    @media screen and (min-width:  $screen-md-min) {
+      padding-top: .75em;
+    }
+    @media screen and (min-width:  $screen-md-min) {
+      padding-top: .5em;
+    }
+  }
+}
+
+
 // Transition Mixin
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
@@ -440,6 +485,24 @@ body#why .side-nav-mobile,
       color: $white;
     }
   }
+  /*put breadcrumb at top of mobile secondary nav*/
+  .crumb-mobile {
+    background-color: $dark-gray;
+    color: white; 
+    @include HelveticaCondMed(16px);
+    line-height: 1.8em; //make space for fingers to touch specific line
+    padding: .5em 1em;
+    a,
+    a:link {
+      display: inline; //override list-group a
+      padding: 0; //override side-nav-mobile list-group a
+      background-color: $dark-gray; //override list-group a
+      color: white; //override list-group a
+      &:hover {
+        text-decoration: underline;
+      }   
+    }
+  }
 	ul li a {
 		padding-left:30px;	
 	}
@@ -531,7 +594,7 @@ body#why .side-nav-mobile,
 .column-center {
   max-width: 1170px;
   margin:0 auto 30px;
-  padding: 0 1em;
+  padding: 0 $padding-small-relative;
   @media screen and (min-width:$screen-sm-min) and (max-width:$screen-md-max) {
   	padding:0 60px;  
   }
@@ -547,6 +610,12 @@ body#why .side-nav-mobile,
   @media screen and (max-width: $pagegrid-break-low) {
     width: 100%;
   } 
+}
+
+//less margins than .column-center
+.column-center-full {
+  max-width: 1170px;
+  margin:0 auto 30px;
 }
 
 .column-right {
@@ -605,6 +674,40 @@ body#why .side-nav-mobile,
     margin-bottom: 70px;
   }
 }
+
+
+//hero graphic variation that does not take up full screen
+.page-hero-container-small {
+  margin-bottom: 0;
+  padding: 0 1em;
+  min-height: 352px;
+  height: auto; 
+  @media screen and (min-width: $screen-sm-min) {
+    min-height: 420px;
+
+  }
+  @media screen and (min-width: $screen-md-min) {
+    min-height: 380px;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    min-height: 540px;
+  }
+
+  h1 {
+    @media screen and (min-width: $screen-sm-min) {
+      margin-top: 1rem;
+    }
+    @media screen and (min-width: $screen-lg-min) {
+      margin-top: 3rem auto;
+      padding: 0 4.5em;
+    }
+  }
+  .hero-text {
+    padding-top: 1em; 
+  }
+}
+
 .page-hero {
   margin: 0 auto;
   padding: 180px 40px 10px 40px;
@@ -837,7 +940,16 @@ body#why .side-nav-mobile,
   }
 }
 
-
+.crumb-mobile {
+  @include HelveticaCond(16px);
+  padding: $padding-small-relative/2 $padding-small-relative;
+  & li {
+    display: inline;
+  }
+  @media screen and (min-width:$screen-md-min) {
+    display: none;
+  }
+}
 
 // Link Styles for lists and text only
 .circle-list,

@@ -12,6 +12,11 @@
 .page-hero-container.gateway-bg {
     background-image: url(_images/gateway-header-bg.jpg);
 }
+
+.page-hero-container.gatekeeper-bg {
+      background-image: url(/_images/why-simons-rock/5-signs-dorm5.jpg);
+  }
+  
 .page-hero-container.giving-bg {
     background-image: url(_images/giving-header-bg.jpg);
 }
@@ -35,6 +40,11 @@
   .page-hero-container.gateway-bg {
       background-image: url(_images/gateway-header-bg-lg.jpg);
   }
+
+  .page-hero-container.gatekeeper-bg {
+      background-image: url(/_images/why-simons-rock/5-signs-dorm2.jpg);
+  }
+
   .page-hero-container.giving-bg {
       background-image: url(_images/giving-header-bg-lg.jpg);
   }
