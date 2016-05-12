@@ -71,12 +71,21 @@
 					<ul>
 						<li><a href="mixed-media.php">Mixed Media</a>
 							<ul>
-								<li><a href="content-senior-thesis.php">Senior Thesis</a></li>
-								<li><a href="content-early-college.php">Early College</a></li>
 								<li><a href="search.php">Search</a></li>
 								<li><a href="news-listings.php">News Listings</a></li>
-								<li><a href="/contact-form-3options.php">Contact Form</a></li>
 								<li><a href="404.php">404</a></li>
+							</ul>
+						</li>
+						<li>Forms
+							<ul>
+								<li><a href="contact-form-address-follow-no.php">RFI - Address Follow Up No</a></li>
+								<li><a href="contact-form-rfi.php">RFI - Address Follow Up Yes</a></li>
+								<li><a href="contact-form-thanks-address.php">Address Only Follow Up</a></li>
+								<li><a href="contact-form-alumni-referral.php">Referral - Alumni</a></li>
+								<li><a href="contact-form-counselor-referral.php">Referral - Counselor</a></li>
+								<li><a href="contact-form-discovery.php">Discovery Day</a></li>
+
+
 							</ul>
 						</li>
 						
@@ -223,7 +232,9 @@
 	<h1 class="text-center">Heading 1</h1>
 	<h2 class="text-center">Heading 2</h2>
 	<h3>Heading 3</h3>
+	<h3><strong>Heading 3</strong></h3>
 	<h4>Heading 4</h4>
+
 	<h5>Heading 5</h5>
 	<h6>Heading 6</h6>
 
@@ -323,14 +334,13 @@
 
 	<h3>Ordered List</h3>
 	<ol>
-	  <li>List Item 1</li>
-	  <li>List Item 2
-	  <ol>
-		  <li>List Item 1</li>
-		  <li>List Item 2</li>
-		  <li>List Item 3</li>
-		</ol>
-	</li>
+
+	  <li>List Item 1
+	  	<ol>
+	  		<li>Sub list item 1</li>
+	  		<li>Sub list item 2</li></li>
+	  	</ol>
+	  <li>List Item 2</li>
 	  <li>List Item 3</li>
 	</ol>
 	<p>Followed by a paragraph</p>
@@ -358,8 +368,19 @@
 	<h3>Custom Department list</h3>
 	<h4 class="spotlight">Information Technology Services</h4>
                         <ul class="arrow-list-tight"><li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li><li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li></ul>
+
+  <h4 class="spotlight">Department Alternate</h4>
+                        <ul class="arrow-list-tight"><li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li><li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li></ul>
+
+
 	<h3>Custom Bio List</h3>
 	<h4 class="spotlight">Ben Krupka</h4>
+                           <p class="no-margin-bottom">Ceramics</p>
+                           <ul class="arrow-list-tight-small"><li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
+                           <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li></ul>
+
+
+  <h4 class="spotlight">Person Alternate</h4>
                            <p class="no-margin-bottom">Ceramics</p>
                            <ul class="arrow-list-tight-small"><li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
                            <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li></ul>
@@ -382,7 +403,7 @@
 			<tr>
 			  <th scope="row">Tuition/Fees</th>
 			  <td>$XX,XXX</td>
-			  <td>$XX,XXX</td>
+			  <td><a href="">$XX,XXX</a></td>
 			</tr>
 			<tr>
 			  <th scope="row">Books/Supplies</th>
@@ -803,7 +824,7 @@
 		    </div>
 		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        Anim pariatur cliche reprehenderit, <a href="">enim eiusmod</a> high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 		      </div>
 		    </div>
 		  </div>
@@ -960,6 +981,7 @@
   otherwise. This skill is indispensable in any time or place.</p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite></blockquote>
   <p> Consider applying .blobkquote-long to the blockquote if the quote extends beyond a couple of lines.
 
+
 		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
 	</div>
 	<a name="images"></a> 
@@ -974,6 +996,9 @@
 			<p><img src="//placehold.it/125/125" class="pull-right">as is <strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 		</div>
 	</div>
+<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
+<div class="caption-small">Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution.</div> 
+
 	<a name="cta"></a>
 	<div class="col-md-12">
 		<h2 class="text-center">CTA</h2>

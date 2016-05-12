@@ -35,15 +35,11 @@
 		}
 }
 .caption-small {
-    margin-bottom: 0;
     font-size: 1.2rem;
-    font-family: "HelveticaNeueLT-Condensed",Helvetica,Arial,sans-serif;
-    color: $medium-gray;
     line-height: 1.6rem;
     margin-top: 5px;
     @media screen and (max-width:$screen-md-min) {
 			font-size: 1rem;
-			margin-bottom: 0;
 			line-height: 1.4rem;
 		}
 }
