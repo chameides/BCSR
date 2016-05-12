@@ -979,7 +979,7 @@
                         on a test, but actually being able to use one's brain in any situation, academic or
   otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or
   otherwise. This skill is indispensable in any time or place.</p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite></blockquote>
-  <p> Consider applying .blobkquote-long to the blockquote if the quote extends beyond a couple of lines.
+  <p> Consider applying .blockquote-long class to the blockquote element if the quote extends beyond a couple of lines.
 
 
 		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
