@@ -978,14 +978,14 @@ ul.arrow-list li {
       list-style: none;
   }
 }
-ul.arrow-list li:before {
+ul.arrow-list li:before, ul.arrow-list-tight li:before, ul.arrow-list-tight-small li:before {
   font-family: 'FontAwesome';
   content: '\f105';
   color: $blue;
   margin-left: -30px;
   margin-right: 21px;
   }
-ul.arrow-list {
+ul.arrow-list, ul.arrow-list-tight, ul.arrow-list-tight-small {
   list-style: none;
 }
 
@@ -1012,15 +1012,9 @@ ul.arrow-list-tight li {
   }
 }
 ul.arrow-list-tight li:before {
-  font-family: 'FontAwesome';
-  content: '\f105';
-  color: $blue;
-  margin-left: -30px;
   margin-right: 8px; 
   }
-ul.arrow-list-tight {
-  list-style: none;
-}
+
 
 //new arrow list style for faculty-staff listings 5-6-2016
 
@@ -1030,12 +1024,6 @@ ul.arrow-list-tight {
   a:link {
     text-decoration: none; 
     font-family: $helvetica-md-cond;
-    font-size:20px;
-    line-height:22px;
-    @media screen and (max-width:$screen-md-min) {
-      font-size:15px;
-    line-height:19.2px; 
-    }
   }
    a:hover{
     text-decoration: underline;
@@ -1056,15 +1044,9 @@ ul.arrow-list-tight-small li {
   }
 }
 ul.arrow-list-tight-small li:before {
-  font-family: 'FontAwesome';
-  content: '\f105';
-  color: $blue;
-  margin-left: -30px;
   margin-right: 8px; 
   }
-ul.arrow-list-tight-small {
-  list-style: none;
-}
+
 
 // Table Styles
 th {
