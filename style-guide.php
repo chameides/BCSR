@@ -993,6 +993,19 @@
 
 		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
 	</div>
+	
+	<h3>Pullquote with an image</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<img src="../_images/teacher-1.jpg" alt="teacher 1">
+		</div>
+		<div class="col-md-8">
+			<blockquote class="no-margin">
+        <p>Pair an image with a blockquote by setting them inside two columns. Add class 'no-margin' to the blockquote.<span class="blockquote-mark">&rdquo;</span></p>
+        <cite>-Style Guide</cite>
+      </blockquote>
+		</div>
+	</div>
 	<a name="images"></a> 
 	<div class="col-md-12">
 	<h2 class="text-center">Images</h2>	
