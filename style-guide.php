@@ -310,81 +310,90 @@
 	-->
 	<a name="lists"></a>
 	<div class="col-md-12">
-	<h2 id="list_types" class="text-center">List Types</h2>
+		<h2 id="list_types" class="text-center">List Types</h2>
 
-	<h3>Custom Unordered (bullet) List</h3>
+		<h3>Custom Unordered (bullet) List</h3>
 
-	<ul class="arrow-list">
-	  <li><a href="#">Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
-		<ul class="arrow-list"> 
-		  <li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
+		<ul class="arrow-list">
+		  <li><a href="#">Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+			<ul class="arrow-list"> 
+			  <li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
+			  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
+			</ul>
+		  </li>
 		  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
 		</ul>
-	  </li>
-	  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
-	</ul>
 
-	<h3>Custom Ordered List</h3>
+		<h3>Custom Ordered List</h3>
 
-	<ol class="circle-list">
-	  <li><a href="#">Use custom ordered list only one level deep.<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-	  <li><a href="#">International Student Financial Aid Application<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-	  <li><a href="#">International Student Certification of Finances<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-	</ol>
+		<ol class="circle-list">
+		  <li><a href="#">Use custom ordered list only one level deep.<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		  <li><a href="#">International Student Financial Aid Application<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		  <li><a href="#">International Student Certification of Finances<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		</ol>
 
-	<h3>Ordered List</h3>
-	<ol>
+		<h3>Ordered List</h3>
+		<ol>
 
-	  <li>List Item 1
-	  	<ol>
-	  		<li>Sub list item 1</li>
-	  		<li>Sub list item 2</li></li>
-	  	</ol>
-	  <li>List Item 2</li>
-	  <li>List Item 3</li>
-	</ol>
-	<p>Followed by a paragraph</p>
+		  <li>List Item 1
+		  	<ol>
+		  		<li>Sub list item 1</li>
+		  		<li>Sub list item 2</li></li>
+		  	</ol>
+		  <li>List Item 2</li>
+		  <li>List Item 3</li>
+		</ol>
+		<p>Followed by a paragraph</p>
 
-	<h3>Unordered List</h3>
-	<ul>
-	  <li>List Item 1
-	  	<ul>
-	  		<li>Sub list item 1</li>
-	  		<li>Sub list item 2</li></li>
-	  	</ul>
-	  <li>List Item 2</li>
-	  <li>List Item 3</li>
-	</ul>
+		<h3>Unordered List</h3>
+		<ul>
+		  <li>List Item 1
+		  	<ul>
+		  		<li>Sub list item 1</li>
+		  		<li>Sub list item 2</li></li>
+		  	</ul>
+		  <li>List Item 2</li>
+		  <li>List Item 3</li>
+		</ul>
 
-	<h3>Definition List</h3>
-	<dl>
-	  <dt>Definition List Term 1</dt>
-	  <dd>This is a definition list description.</dd>
-	  <dt>Definition List Term 2</dt>
-	  <dd>This is a definition list description.</dd>
-	  <dt>Definition List Term 3</dt>
-	  <dd>This is a definition list description.</dd>
-	</dl>
-	<h3>Custom Department list</h3>
-	<h4 class="spotlight">Information Technology Services</h4>
-                        <ul class="arrow-list-tight"><li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li><li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li></ul>
+		<h3>Definition List</h3>
+		<dl>
+		  <dt>Definition List Term 1</dt>
+		  <dd>This is a definition list description.</dd>
+		  <dt>Definition List Term 2</dt>
+		  <dd>This is a definition list description.</dd>
+		  <dt>Definition List Term 3</dt>
+		  <dd>This is a definition list description.</dd>
+		</dl>
+		<h3>Custom Department list</h3>
+			<div class="arrow-list-tight-small-wrapper">
+				<h4>Information Technology Services</h4>
+	               <ul>
+	                	<li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li>
+	                	<li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li>
+	               </ul>
+	  			<h4>Department Alternate</h4>
+	             <ul>
+	                <li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li>
+	                <li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li>
+	             </ul>
+	        </div>
+		<h3>Custom Bio List</h3>
+			<div class="arrow-list-tight-small-wrapper">
+				<h4>Ben Krupka</h4>
+	             <p>Ceramics</p>
+	             <ul>
+		            <li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
+		            <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li>
+		         </ul>
 
-  <h4 class="spotlight">Department Alternate</h4>
-                        <ul class="arrow-list-tight"><li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li><li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li></ul>
-
-
-	<h3>Custom Bio List</h3>
-	<h4 class="spotlight">Ben Krupka</h4>
-                           <p class="no-margin-bottom">Ceramics</p>
-                           <ul class="arrow-list-tight-small"><li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
-                           <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li></ul>
-
-
-  <h4 class="spotlight">Person Alternate</h4>
-                           <p class="no-margin-bottom">Ceramics</p>
-                           <ul class="arrow-list-tight-small"><li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
-                           <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li></ul>
-
+	  			<h4>Person Alternate</h4>
+	             <p>French</p>
+	             <ul>
+		            <li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
+		            <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li>
+		          </ul>
+	        </div>
 	</div>
 
 	<a name="tables"></a>
