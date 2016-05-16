@@ -1,4 +1,4 @@
-<!-- test follow address --><div class="row"><!-- row inside the col -->
+<div class="row"><!-- row inside the col -->
 	<form id="contactForm">
 		<?php
 			// replace php with xsl-freindly code in CMS <php> 

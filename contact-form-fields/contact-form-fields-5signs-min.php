@@ -1,4 +1,4 @@
-<!-- test follow 5 signs min --><div class="row"><!-- row inside the col -->
+<div class="row"><!-- row inside the col -->
 	<form id="contactForm">
 		<div class="form-group col-md-12">
 			<!-- pass country to ensure state submit -->

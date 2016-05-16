@@ -1,4 +1,4 @@
-<!-- test follow alumni referral --><div class="row"><!-- row inside the col -->
+<div class="row"><!-- row inside the col -->
 	<form id="contactForm">
 		<div class="form-group col-md-12">
 			<h4 class="spotlight">Referrer Information</h4>	
