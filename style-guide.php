@@ -1072,7 +1072,7 @@
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="caption-small text-center">Photo attribution</div>			
+				<div class="caption-small text-center">Photo attribution. <br>line2</div>			
 			</div>
 		</div>
 	</div>
