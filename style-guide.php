@@ -1076,8 +1076,60 @@
 			</div>
 		</div>
 	</div>
-	<p>&nbsp;</p>
-		
+	<div>&nbsp;</div>
+
+	<div class="row thumb-set">
+	<h2 class="text-center">Thumbnails and Thumbnail Copy</h2>
+		<div class="col-md-3">
+			<div class="row no-margin">
+				<div class="col-xs-3 col-md-12">
+					<div class="image-thumb"><a href="/academics/faculty-bios/social-studies-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
+					</div>
+				</div>
+				<div class="col-xs-9 col-md-12">
+					<div class="thumbnail-copy"><a href="/academics/faculty-bios/social-studies-faculty/index.php">Use div.image-thumb for picture</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="row no-margin">
+				<div class="col-xs-3 col-md-12">
+					<div class="image-thumb"><a href="/academics/faculty-bios/languages-and-literature-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
+					</div>
+				</div>
+				<div class="col-xs-9 col-md-12">
+					<div class="thumbnail-copy"><a href="/academics/faculty-bios/languages-and-literature-faculty/index.php">Use div.thumbnail-copy for caption</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="row no-margin">
+				<div class="col-xs-3 col-md-12">
+					<div class="image-thumb"><a href="/academics/faculty-bios/arts-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
+					</div>
+				</div>
+				<div class="col-xs-9 col-md-12">
+					<div class="thumbnail-copy"><a href="/academics/faculty-bios/arts-faculty/index.php">Link Underlined on hover</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="row no-margin">
+				<div class="col-xs-3 col-md-12">
+					<div class="image-thumb"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
+					</div>
+				</div>
+				<div class="col-xs-9 col-md-12">
+					<div class="thumbnail-copy"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/index.php">Use with multiple thumbs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>&nbsp;</div>	
 	</section>
 
 

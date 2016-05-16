@@ -12,7 +12,11 @@
 	@media screen and (max-width:$screen-md-min) {
 		text-align: left;
 	}
+	a {text-decoration:none;}
+	a:hover, a:active {text-decoration:underline;}
 }
+
+
 // professor name and title next to small image
 .image-name {
 	margin-bottom: 0;
