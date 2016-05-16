@@ -116,7 +116,7 @@
 		<div id="chxInfoByErr" class="col-sm-12"><label>I'd like to receive information by</label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByEmail" class="chxInfoBy" checked="checked" name="chxInfoByEmail" type="checkbox" value="Email" /> Email </label></div>
 		<div class="checkbox col-sm-12"><label> <input id="chxInfoByPhone" class="chxInfoBy" name="chxInfoByPhone" type="checkbox" value="Phone" /> Phone </label></div>
-		<div id="grpPhone" class="form-group checkbox-sub col-sm-6"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
+		<div id="grpPhone" class="form-group checkbox-sub col-sm-6"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="tel" /></div>
 		<div id="grpPhoneType" class="form-group checkbox-sub col-sm-6 col-sub-trailing-sm"><label for="drpPhoneType">Phone Type</label>
 			<select id="drpPhoneType" class="form-control" name="drpPhoneType" required="required">
 				<option value="">- Select Phone Type -</option>
