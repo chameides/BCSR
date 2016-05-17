@@ -498,6 +498,7 @@ body#why .side-nav-mobile,
       padding: 0; //override side-nav-mobile list-group a
       background-color: $dark-gray; //override list-group a
       color: white; //override list-group a
+      text-decoration:none;
       &:hover {
         text-decoration: underline;
       }   
@@ -797,6 +798,8 @@ body#why .side-nav-mobile,
   margin: 0;
   padding: 0;
   list-style: none;
+  li a {text-decoration:none;
+  }
 }
 .side-nav-mobile .list-group li ul.list-group li a:link {
 		padding-left:4rem;	

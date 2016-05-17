@@ -33,7 +33,7 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #events .gray {background-color: #6E675F;}
 #events .red {background-color: #ec6a1e;}
 #events li { padding: 0; width: 95%; overflow: hidden; }
-#events li > a { color: white; }
+#events li > a { color: white; text-decoration:none; }
 #events li > a:hover { background-color: rgba(0,0,0,.3); text-decoration: none; }
 #events h2 { color: #6F665D; }
 #events h3 { margin-top: 10px; }
