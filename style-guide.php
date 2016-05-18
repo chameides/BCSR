@@ -84,6 +84,7 @@
 								<li><a href="contact-form-alumni-referral.php">Referral - Alumni</a></li>
 								<li><a href="contact-form-counselor-referral.php">Referral - Counselor</a></li>
 								<li><a href="contact-form-discovery.php">Discovery Day</a></li>
+								<li><a href="gatekeeper.php">Gatekeeper</a></li>
 
 
 							</ul>
@@ -1072,7 +1073,7 @@
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="caption-small text-center">Photo attribution</div>			
+				<div class="caption-small text-center">Photo attribution. <br>line2</div>			
 			</div>
 		</div>
 	</div>
