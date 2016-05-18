@@ -37,7 +37,7 @@ blockquote:before, blockquote p.blockquote-last:after, .blockquote-mark {
 }
 
 /*add a hanging quote*/
-blockquote:before {
+blockquote:before, blockquote.blockquote-long:before {
     content: '\201C';
   	font-size: 4.3em;
   	text-indent: -.5em;
@@ -55,6 +55,15 @@ blockquote:before {
 	}
 }
 
+blockquote.blockquote-long:before{
+ font-size:3em; 
+ @media screen and (max-width:$screen-md) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width:$screen-md) {
+    font-size: 3em;
+  }
+}
 
 /*add a large quote at end of blockquote*/
 blockquote p.blockquote-last:after {
@@ -100,7 +109,7 @@ blockquote {
 }
 
 
-blockquote p {
+blockquote p, blockquote.blockquote-long p {
 	font-style: italic;
 	font-size: 3rem;
 	line-height: 3.4rem;
@@ -113,28 +122,15 @@ blockquote p {
 		}
 }
 
-p.lengthybq {
-  border-left: 2px;
-  border-color: $blue;
-  margin:2em .3em 0;
-  color: $blue;
-  font-style: italic;
+blockquote.blockquote-long p {
   font-size: 2rem;
   line-height:2.5rem;
   @media screen and (max-width:$screen-md) {
       font-size: 1.5rem;
+      margin-bottom: .2rem;
       line-height: 2rem;
     }
 }
-
-
-cite.lengthybq {
-  color:$blue;
-  margin-bottom:20px;
-  margin-right:2em;
-
-}
-
 
 cite {
 	display: block;
