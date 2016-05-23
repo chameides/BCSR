@@ -198,7 +198,17 @@
       <div class="side-nav-mobile">
         <!-- Subnav -->
         <ul class="flat-list list-group list-group-mobile">
-            <li><div class="list-group-item active section-header">Areas of Study</div></li>
+            <li>
+            <ol class="flat-list crumb-mobile">
+              <li><a href="#">Home</a></li>
+              <li> > </li>
+              <li><a href="#">Academics</a></li>
+              <li> > </li>
+              <li><a href="#">Program Areas</a></li>
+              <li> > </li>
+              <li>Chemistry</li>
+            </ol>
+          </li>     
             <li><a href="#" class="list-group-item">Tuition and Financial Aid</a></li>
             <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
             <li><a href="#" class="list-group-item">Financial Aid and Scholarships</a></li>

@@ -229,7 +229,13 @@
       <div class="side-nav-mobile">
         <!-- Subnav -->
         <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">Gateway</div></li>
+          <li>
+            <ol class="flat-list crumb-mobile">
+              <li><a href="#">Home</a></li>
+              <li> > </li>
+              <li>Alumni</li>
+            </ol>
+          </li>  
             <li><a href="#" class="list-group-item">Program Overview</a></li>
             <li><a href="#" class="list-group-item">Social and Political Studies</a></li>
             <li><a href="#" class="list-group-item">Languages and Literature</a></li>

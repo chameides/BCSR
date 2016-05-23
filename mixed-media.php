@@ -281,7 +281,19 @@
       <div class="side-nav-mobile">
         <!-- Subnav -->
         <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
+          <li>
+            <ol class="flat-list crumb-mobile">
+              <li><a href="#">Home</a></li>
+              <li> > </li>
+              <li><a href="#">Admissions</a></li>
+              <li> > </li>
+              <li><a href="#">Specific</a></li>
+              <li> > </li>
+              <li><a href="#">More Specific</a></li>
+              <li> > </li>
+              <li>Tuition and Financial Aid</li>
+            </ol>
+          </li>  
             <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
             <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
             	<ul class="flat-list list-group">

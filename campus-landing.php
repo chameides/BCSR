@@ -219,7 +219,17 @@
       <div class="side-nav-mobile">
         <!-- Subnav -->
         <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">Campus</div></li>
+          <li>
+            <ol class="flat-list crumb-mobile">
+              <li><a href="#">Home</a></li>
+              <li> > </li>
+              <li><a href="#">Student Life</a></li>
+              <li> > </li>
+              <li><a href="#">Campus Experience</a></li>
+              <li> > </li>
+              <li>Building Name</li>
+            </ol>
+          </li>     
             <li><a href="#" class="list-group-item">Program Overview</a></li>
             <li><a href="#" class="list-group-item">Social and Political Studies</a></li>
             <li><a href="#" class="list-group-item">Languages and Literature</a></li>
