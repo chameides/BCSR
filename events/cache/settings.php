@@ -110,14 +110,14 @@ $hc_cfg = array(
 132 => "10",
 133 => "1.0",
 134 => "70",
-200 => "hc_cfb991dd498e59943eb0d554a7eac50b2d08c739",
-201 => "helios_748b5225e753676f6591f92ad140bdf1",
+200 => "hc_d9d0012426fb33690e9b424019e16079679520d8",
+201 => "helios_cec9a9b9984a1eae105aac542717d0bf",
 "CatCols" => "3",
 "CatLinks" => "1",
 "IsRSVP" => "1",
-"OLImages" => "http://simons-rock.edu/events/img/ol/",
+"OLImages" => "//simons-rock.edu/events/img/ol/",
 "First" => "1433980800",
 "Last" => "1499472000",
-"News" => "2015-11-13",
+"News" => "2016-05-18",
 );
 ?>

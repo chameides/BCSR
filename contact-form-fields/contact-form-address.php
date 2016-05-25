@@ -1,36 +1,12 @@
 <div class="row"><!-- row inside the col -->
 	<form id="contactForm">
-		<div class="form-group col-md-12">
-			<h4 class="spotlight">Referrer Information</h4>	
-		</div>
-		<div class="form-group col-md-8">
-			<label for="referrerName">Your Name*</label>
-			<input id="referrerName" class="form-control" maxlength="100" name="referrerName" required="required" type="text" />
-		</div>
-		<div class="form-group col-md-4">
-			<label for="referrerClassYear">Class Year</label>
-			<input id="referrerClassYear" class="form-control" placeholder="ex. 1997" maxlength="6" name="referrerClassYear" type="number" min="1" max="2020" />
-		</div>
-		<div class="form-group col-md-12">
-			<label for="referrerEmail">Your Email Address*</label>
-			<input id="referrerEmail" class="form-control" maxlength="100" name="referrerEmail" required="required" type="email" />
-		</div>
-		<div class="form-group col-md-12">
-			<label for="txtPhoneRequired">Phone Number*</label>
-			<input id="txtPhoneRequired" class="form-control" name="txtPhoneRequired" required="required" type="tel" />
-		</div>
-		<div class="form-group col-md-12">
-			<h4>Student Information</h4>
-		</div>
-		<div class="form-group col-md-6">
-		
-		<label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
-		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
-		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
-		<div id="grpPhone" class="form-group col-md-12"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="tel" /></div>
-		
-		<div id="grpCountry" class="form-group col-md-12">
-			<label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
+		<?php
+			// replace php with xsl-freindly code in CMS <php> 
+			include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-address-entity-check.php';
+			//</php>
+		?>
+		<div id="grpCountry" class="form-group col-sm-12"><label for="drpCountry">Country*</label>
+			<select id="drpCountry" class="form-control" name="drpCountry" required="required">
 				<option value="">- Select Your Country -</option>
 				<option value="United States">United States</option>
 				<option value="Canada">Canada</option>
@@ -249,15 +225,11 @@
 				<option value="Other">Other</option>
 			</select>
 		</div>
-		<div id="grpAddress1" class="form-group col-md-12">
-			<label for="txtAddress1">Address</label>
-			<input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" />
-		</div>
-		<div id="grpAddress2" class="form-group col-md-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
-		<div id="cityContainer" class="form-group col-md-12"><label for="city">City</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" /></div>
-		<div id="grpState" class="form-group col-sm-6">
-			<label for="drpState">State/Province</label>
-			<select id="drpState" class="form-control" name="drpState">
+		<div id="grpAddress1" class="form-group col-sm-12"><label for="txtAddress1">Address*</label> <input id="txtAddress1" class="form-control" maxlength="250" name="txtAddress1" type="text" required="required"/></div>
+		<div id="grpAddress2" class="form-group col-sm-12"><input id="txtAddress2" class="form-control" maxlength="60" name="txtAddress2" type="text" /></div>
+		<div id="cityContainer" class="form-group col-sm-12"><label for="city">City*</label> <input id="city" class="form-control" maxlength="30" name="city" type="text" required="required"/></div>
+		<div id="grpState" class="form-group col-sm-6"><label for="drpState">State/Province</label>
+			<select id="drpState" class="form-control" name="drpState" required="required">
 				<option value="">- Select State/Province -</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -330,40 +302,13 @@
 				<option value="YT">Yukon Territory</option>
 			</select>
 		</div>
-		<div id="grpZip" class="form-group col-sm-6"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code</span><span id="lblPostalCode">Postal Code</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
-		<div id="grpschool" class="form-group col-sm-12">
-			<label for="school">School</label>
-			<input id="school" class="form-control" maxlength="100" name="school" type="text" />
-		</div>
-
-		<div class="form-group col-sm-12">
-			<label for="gradeLevel">Grade Level</label>
-			<select class="form-control" id="gradeLevel" name="gradeLevel" >
-				<option value="">
-					<?php
-						// replace php with xsl-freindly code in CMS <php>
-							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-grade-date.php';
-						//</php>
-					?>
-				</option>
-				<option value="6">6th Grade</option>
-				<option value="7">7th Grade</option>
-				<option value="8">8th Grade</option>
-				<option value="9">9th Grade</option>
-				<option value="10">10th Grade</option>
-				<option value="11">11th Grade</option>
-				<option value="12">12th Grade</option>
-			</select>
-		</div>
-		<div class="col-sm-12 col-md-12 form-group">
-			<label for="note">Why are you referring this student to Simon’s Rock?</label>
-			<textarea id="referrerComment" class="form-control" name="referrerComment" maxlength="220"></textarea>
-		</div>
+		<div id="grpZip" class="form-group col-sm-6 col-sub-trailing-sm"><label for="txtZipOrPostal"><span id="lblZipCode">Zip Code*</span><span id="lblPostalCode">Postal Code*</span></label> <input id="txtZipOrPostal" class="form-control" maxlength="15" name="txtZipOrPostal" type="text" /></div>
 			<?php
 						// replace php with xsl-freindly code in CMS <php>
 							include $_SERVER['DOCUMENT_ROOT']. '/_resources/php/form-url.php';
 						//</php>
-					?>
-		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Refer Student" /></div>
+			?>
+		<input type="hidden" name="formSource" id="formSource" value="Address" />
+		<div class="form-group col-sm-12"><input id="RFI_btn_submit" class="btn btn-primary" type="Submit" value="Send Me the Fact Book" /></div>
 	</form>
 </div>

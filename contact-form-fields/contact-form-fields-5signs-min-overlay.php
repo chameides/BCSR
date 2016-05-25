@@ -1,5 +1,4 @@
-
-	<form id="contactForm">
+<form id="contactForm">
 		<div class="form-group col-md-12">
 			<!-- pass country to ensure state submit -->
 			<input id="drpCountry" class="form-control" maxlength="40" name="drpCountry" type="hidden" value="United States" />

@@ -14,7 +14,9 @@
   
 <?php include '_inc/nav.php'; ?>
     
-    <div class="container">
+<div class="container-fluid page-container">
+  <div class="column-center">
+    
     <h1 class="header-page text-center">Style Guide</h1>
     <h2 class="text-center">Table of Contents</h2>
     	<div class="col-md-4">
@@ -95,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-12" >
 			<a name="alert"></a>
 			<h2 class="text-center">Alert System</h2>
 			<div class="row">
@@ -1134,7 +1136,7 @@
 	</section>
 
 
-
+		</div>
 	    </div><!-- /.container -->
 
 <?php include '_inc/footer.php'; ?>
