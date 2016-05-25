@@ -46,7 +46,7 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #events .event-content-container > * { padding: 0 30px; }
 
 	td.events a, td.today a, #filter a, #events li a, div.sr-mini-cal-filters a { text-decoration:none; }
-	td.events a:hover, td.today a:hover. div.sr-mini-cal-filters a:hover, #filter a:hover { text-decoration:underline; }
+	td.events a:hover, td.today a:hover, div.sr-mini-cal-filters a:hover, #filter a:hover { text-decoration:underline; }
 	
 /* THIS CONTENT NO LONGER NECESSARY DUE TO FLEXBOX STYLES BELOW rem 8/14/15
 @media (min-width: 1281px) {

@@ -2,18 +2,23 @@
 .thumbnail-copy {
 	line-height: 2rem;
 	@include LeHavre(20px);
-		@media screen and (max-width:$screen-md-min) {
-			font-size: 12px;
-			line-height: 1.2rem;
-		}
+	@media screen and (max-width:$screen-md-min) {
+		font-size: 12px;
+		line-height: 1.2rem;
+	}
 }
 .thumbnail-copy {
 	text-align: center;
 	@media screen and (max-width:$screen-md-min) {
 		text-align: left;
 	}
-	a {text-decoration:none;}
-	a:hover, a:active {text-decoration:underline;}
+	a {
+		text-decoration:none;
+	}
+	a:hover, 
+	a:active {
+		text-decoration:underline;
+	}
 }
 
 

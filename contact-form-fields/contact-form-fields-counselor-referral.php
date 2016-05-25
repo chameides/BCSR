@@ -30,7 +30,7 @@
 		<label for="txtFirstName">First Name*</label> <input id="txtFirstName" class="form-control" maxlength="40" name="txtFirstName" required="required" type="text" /></div>
 		<div class="form-group col-md-6"><label for="txtLastName">Last Name*</label> <input id="txtLastName" class="form-control" maxlength="80" name="txtLastName" required="required" type="text" /></div>
 		<div id="emailAddress" class="form-group col-md-12"><label for="txtEmail">Email Address*</label> <input id="txtEmail" class="form-control" maxlength="100" name="txtEmail" required="required" type="email"  /></div>
-		<div id="grpPhone" class="form-group col-md-12"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="text" /></div>
+		<div id="grpPhone" class="form-group col-md-12"><label for="txtPhone">Phone Number</label> <input id="txtPhone" class="form-control" name="txtPhone" type="tel" /></div>
 		
 		<div id="grpCountry" class="form-group col-md-12">
 			<label for="drpCountry">Country</label><select id="drpCountry" class="form-control" name="drpCountry">
