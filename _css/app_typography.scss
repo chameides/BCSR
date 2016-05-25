@@ -178,6 +178,8 @@ a.right-arrow-primary {
 a.right-arrow-aside {
     @extend .cta-bullet;
     @include LeHavre(20px);
+    display: inline-block;
+    line-height: 1.2em;
 }
 
 .enlarge {

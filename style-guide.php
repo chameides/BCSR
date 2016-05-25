@@ -1053,7 +1053,7 @@
 	              <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
 	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
 	              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
-	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories</a>
+	              <div><a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a></div>
 	            </div>
 	         </div>
 		</div>
