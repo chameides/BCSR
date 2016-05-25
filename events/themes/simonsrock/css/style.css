@@ -377,3 +377,6 @@ a.red { color: #BE2126 !important; }
 #goadminmessage, label[for=recurCheck] { margin-top: 10px; }
 .tup { margin: 5px 5px 0; }
 .tdown { margin: 2px 5px 0; }
+
+/* Fix leading on mega menu drop down */
+.dropdown-menu.mega-menu li {line-height: 1.428571429}

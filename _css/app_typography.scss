@@ -9,17 +9,16 @@
     p {
         padding-top: 1em;
         margin-bottom: $line-height-computed / 3;
+        font-size: 15px; 
+        line-height: 21px;
         @media screen and (min-width:$screen-sm) {
-            font-weight: bold;
-            font-size: 1em; 
-        }
-         @media screen and (min-width:$screen-md) {
-            font-size: .85em;
-            line-height: 1.4em;
+            font-weight: bold;    
         }
     } 
 }
-
+.aside a.right-arrow-aside {
+    line-height:22px;
+}
 .h3-subheadline {
   //originally in nested global setting and moved here to apply to contact form oustide of page-container
   margin-bottom: .5rem;
