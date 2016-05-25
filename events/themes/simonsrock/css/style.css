@@ -379,4 +379,4 @@ a.red { color: #BE2126 !important; }
 .tdown { margin: 2px 5px 0; }
 
 /* Fix leading on mega menu drop down */
-.dropdown-menu.mega-menu li {line-height: $line-height-base;}
+.dropdown-menu.mega-menu li {line-height: 1.428571429}
