@@ -41,8 +41,8 @@
           <!-- Subnav -->
           <ul class="flat-list list-group">
             <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
-            <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
+            <li><a href="/mixed-media.php" class="list-group-item">Tuition and Fees</a></li>
+            <li><a href="#" class="list-group-item">Financial Aid and Scholarships</a>
             	<ul class="flat-list list-group">
             		<li><a href="#" class="list-group-item">Sub item</a></li>
             		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
@@ -295,12 +295,7 @@
             </ol>
           </li>  
             <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
-            <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
+            <li><a href="/mixed-media.php" class="list-group-item">Financial Aid and Scholarships</a>
             </li>
             <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
             <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
@@ -309,7 +304,6 @@
       </div>
       <!-- /Sidbar Mobile Nav-->
     </div>
-
 <?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>

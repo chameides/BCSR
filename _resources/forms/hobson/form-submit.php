@@ -191,6 +191,7 @@ $mollyGreeneID          = 685000022393324;
 $sophieMettlerGroveID   = 685000023022766;
 $coleenCoxID            = 685000002082963;
 $kirinTerniID           = 685000030899633;
+$alanDupont             = 685000050377037;
 
 
 /* Assign Contact Owner based on Country, State/Province, and Zip */
@@ -206,7 +207,6 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'IN': 
         case 'KY':
         case 'LA':
-        case 'MA':
         case 'MD':
         case 'MI':
         case 'MS':
@@ -218,6 +218,14 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'VA':
         case 'WV':
             $contactOwnerID = $amandaDubrowskiID;
+            break;
+        /* Alan Dupont */
+        case 'NJ':
+        case 'PA':
+        case 'RI':
+        case 'TX':
+        case 'VT':
+            $contactOwnerID = $alanDupont;
             break;
         /* Chandra Joos deKoven */
         case 'AB':
@@ -250,8 +258,7 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'ID': 
         case 'KS':
         case 'MT':
-        case 'NE':
-        case 'NJ':
+        case 'NE':   
         case 'NV':
         case 'NM':
         case 'OK':
@@ -264,8 +271,7 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         /* Joel Pitt */
         case 'ME':
         case 'NH':
-        case 'PA':
-        case 'VT':
+        case 'MA':
             $contactOwnerID = $joelPittID;
             break;
         /* Sophie Mettler-Grove */
@@ -279,8 +285,6 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'HI':
         case 'MH':
         case 'PR':
-        case 'RI':
-        case 'TX':
         case 'VI':
             $contactOwnerID = $sophieMettlerGroveID;
             break;
