@@ -7,7 +7,7 @@
     <title>Simon's Rock Templates and Style Guide</title>
 
 <?php include '_inc/head-js-css.php'; ?>
-
+<?php include '_inc/vwo.php'; ?>
   </head>
   <body>
 
@@ -73,6 +73,7 @@
 					<ul>
 						<li><a href="mixed-media.php">Mixed Media</a>
 							<ul>
+								<li><a href="mixed-media-no-vwo.php">No VWO Mixed Media</a>
 								<li><a href="search.php">Search</a></li>
 								<li><a href="news-listings.php">News Listings</a></li>
 								<li><a href="404.php">404</a></li>

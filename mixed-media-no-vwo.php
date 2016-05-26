@@ -11,7 +11,7 @@
 <style>
 
 </style>
-  <?php include '_inc/vwo.php'; ?>
+  
   </head>
   <body>
 
