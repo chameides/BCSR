@@ -333,6 +333,12 @@ else {
 $fields["Contact Owner"] = $contactOwnerID;
 
 
+//Radius Custom Fields
+$fields["TEST Google Ad track"] = '03/02/2003 01:30 PM';
+$fields["Specify Source"] = 'College fair';
+
+
+
 /* 4. Create createFields array per web service requirement */
 $data_contact = 
     array(
