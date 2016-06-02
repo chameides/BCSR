@@ -1,3 +1,7 @@
+<?php session_start();
+  $_SESSION = array();
+  session_regenerate_id(true);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,6 +56,13 @@
           <div class="row">
 
   <div class="col-md-6">
+    <p>Display Variables</p>
+    <?php 
+      echo "variables: ";
+      print_r($_SESSION);
+
+    ?>
+    <p></p>
     <p>We're so glad you would like to know
     more about Simon's Rock and Bard
     Academy. Please fill out the form on this page
@@ -113,11 +124,11 @@
           <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
             <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
             <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-            	<ul class="flat-list list-group">
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-            		<li><a href="#" class="list-group-item">Sub item</a></li>
-            	</ul>
+              <ul class="flat-list list-group">
+                <li><a href="#" class="list-group-item">Sub item</a></li>
+                <li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
+                <li><a href="#" class="list-group-item">Sub item</a></li>
+              </ul>
             </li>
             <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
             <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
@@ -130,7 +141,9 @@
 <?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>
-<script src="/_resources/js/forms/rfi-combine-min.js"></script>
+<script id="hobson-form-submit" data-name="RFI-Address-Follow-Yes" src="/_resources/js/forms/rfi-combine-min.js"></script>
+
+
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
