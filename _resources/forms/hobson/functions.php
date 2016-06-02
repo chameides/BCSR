@@ -63,7 +63,7 @@ function errorCheck() {
     /*check for error
     Hobson returns a string after form submission. We need to parse the string to determine the error. 
     */
-    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID, $formSource, $formSource, $formSourceOutput;
+    global $return, $data_contact, $url_curl, $userpwd, $content, $to_error , $headers, $modify, $url_contacts, $entityID, $formSource, $formSourceOutput;
     
     $status = 'default';
     $status = get_string_between($return, 'status":"', '"');    
