@@ -1,3 +1,16 @@
+<?php
+  session_start();
+  if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
+  	//redirect to thank you page with address follow form
+  	header('Location: /contact-form-thanks-address.php');
+  }
+  else {
+  	//reset variables
+		session_unset();
+		session_destroy();
+		session_write_close();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,6 +53,12 @@ label.error {
 <div class="row">
 
 	<div class="col-md-6">
+		<p>Display Variables</p>
+	    <?php 
+	      echo "<p>formSource: " . $_SESSION['formSource'] . "</p>";
+	      print_r($_SESSION);
+
+	    ?>
 		<p>We have recieved your form submission.
 		You should be on the lookout for something.
 		Also, check out our website.</p>
