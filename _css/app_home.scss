@@ -999,21 +999,20 @@ section#announcements {
 	background-size:cover;
 	width: 100%;
 	h2,h3 {
-	color:white;
+		color:white;
 	}
 	h3 {
-	margin-top:0;
+		margin-top:0;
 	}
 	// vertically aligns the image in the middle of the row
 	.vert-middle-fix {
-	display: inline-block;
-	vertical-align: middle;
-	float: none;
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
 	}
 	@media (max-width: $screen-xs-max) {
 		background: url('/_images/home/50th-homepage-slide-photo-mobile.jpg') no-repeat right center; 
 		background-size:cover;
 		width: 100%;
 	}
-
 } 
