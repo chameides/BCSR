@@ -1,3 +1,5 @@
+    <!-- only needs to be served on templates that have a secondary-nav -->
+    <script async src="/_resources/js/secondary-nav-min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

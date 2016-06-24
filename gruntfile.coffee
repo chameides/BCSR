@@ -24,10 +24,16 @@ module.exports = (grunt) ->
           '_resources/js/forms/source/rfi-combine-grunt.js'
 
     uglify: 
-      build: 
-        src: '_resources/js/forms/source/rfi-combine-grunt.js'
-        dest: '_resources/js/forms/rfi-combine-min.js'
-      
+      static_mappings: {
+        files: [
+          {src: '_resources/js/forms/source/rfi-combine-grunt.js', dest: '_resources/js/forms/rfi-combine-min.js'},
+          {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
+        ],
+      }
+       
+            
+        
+    
 
     svgmin:
       bcsrIcons:

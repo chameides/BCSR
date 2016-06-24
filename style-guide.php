@@ -14,7 +14,9 @@
   
 <?php include '_inc/nav.php'; ?>
     
-    <div class="container">
+<div class="container-fluid page-container">
+  <div class="column-center">
+    
     <h1 class="header-page text-center">Style Guide</h1>
     <h2 class="text-center">Table of Contents</h2>
     	<div class="col-md-4">
@@ -84,6 +86,7 @@
 								<li><a href="contact-form-alumni-referral.php">Referral - Alumni</a></li>
 								<li><a href="contact-form-counselor-referral.php">Referral - Counselor</a></li>
 								<li><a href="contact-form-discovery.php">Discovery Day</a></li>
+								<li><a href="gatekeeper.php">Gatekeeper</a></li>
 
 
 							</ul>
@@ -94,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-12" >
 			<a name="alert"></a>
 			<h2 class="text-center">Alert System</h2>
 			<div class="row">
@@ -1050,7 +1053,7 @@
 	              <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
 	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
 	              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
-	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories</a>
+	              <div><a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a></div>
 	            </div>
 	         </div>
 		</div>
@@ -1072,7 +1075,7 @@
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="caption-small text-center">Photo attribution</div>			
+				<div class="caption-small text-center">Photo attribution. <br>line2</div>			
 			</div>
 		</div>
 	</div>
@@ -1133,7 +1136,7 @@
 	</section>
 
 
-
+		</div>
 	    </div><!-- /.container -->
 
 <?php include '_inc/footer.php'; ?>
