@@ -55,7 +55,7 @@
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote style="margin:0 10px;">“It wasn’t just that I had a good time at Simon’s Rock: it was a transformative experience. I appreciated it, but when I got to graduate school and saw how rarely undergraduates were asked to think for themselves, I realized it was an exceptional education.”</blockquote>
+                <blockquote style="margin:0 10px;">“It wasn’t just that I had a good time at Simon’s Rock: it was a transformative experience.”</blockquote>
                 <figcaption><cite>Allyson Sgro ’01</cite></figcaption>
                 </figure>
               </div>
@@ -96,7 +96,7 @@
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote style="margin:0 10px;">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration. The academic rigor prepared me to work hard and push for the very best&mdash;and not settle until every stone is turned.”</blockquote>
+                <blockquote style="margin:0 10px;">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
                 <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
                 </figure>
               </div>
@@ -150,7 +150,7 @@
           <div class="ro-module double">
                 <figure class="quote">
                 <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
-                <figcaption><cite>Mary Marcy, Educating Outside the Lines</cite></figcaption>
+                <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
                 </figure>
           </div>
            <div class="ro-module single">
