@@ -51,45 +51,55 @@
           <div class="row-inner">
             <div id="first_rep_row_original">
               <div class="ro-module single">
-                <img src="/_images/home/sec2-photo1.jpg" class="img-responsive" alt="placeholder">
-              </div>
-              <div class="ro-module double">
-                <h4>275 Acres</h4>
-                <p>Our wooded campus is in the heart of the Berkshires, an area known for its natural beauty and rich cultural life.</p>
-              </div>
-              <div class="ro-module single">
-                <img src="/_images/home/sec2-photo3.png" class="img-responsive" alt="placeholder">
-              </div>
-              <div class="ro-module single">
-                <h4>24/7</h4>
-                <p>Availability of our professional residence directors who live in each residence hall. </p>
-              </div>
-              <div class="ro-module double">
-                <h4>45 &amp; 27</h4>
-                <p>Number of states and countries our students come from (respectively).</p>
-              </div>
-              <div class="ro-module single">
-                <h4>41</h4>
-                <p>Number of concentrations (our version of majors).</p>
-              </div>
-              <div class="ro-module single">
-                <h4>95<sup>%</sup></h4>
-                <p>Percentage of full-time faculty holding highest degree in their field.</p>
-              </div>
-              <div class="ro-module double">
-                <h4>30<sup>%</sup></h4>
-                <p>Percentage of Rockers who are students of color. Princeton Review ranked us #3 in the nation for “lots of race/class interaction.” </p>
-              </div>
-              <div class="ro-module single">
-                <h4>#1</h4>
-                <p>Number 1 Small Town in America, as ranked by <em>Smithsonian Magazine</em>.</p>
+                <img src="/_images/50/arthur-hillman-76.jpg" class="img-responsive" alt="Arthur Hillman '76">
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote>“One of America’s smartest colleges.”</blockquote>
-                <figcaption><cite><em>Business Insider</em> picked Simon’s Rock as a top choice “if you want to be among the most intelligent students in America.”</cite></figcaption>
-              </figure>
-            </div>
+                <blockquote style="margin:0 10px;">“It wasn’t just that I had a good time at Simon’s Rock: it was a transformative experience. I appreciated it, but when I got to graduate school and saw how rarely undergraduates were asked to think for themselves, I realized it was an exceptional education.”</blockquote>
+                <figcaption><cite>Allyson Sgro ’01</cite></figcaption>
+                </figure>
+              </div>
+              <div class="ro-module single">
+                <img src="/_images/50/llamas-reunion.jpg" class="img-responsive" alt="Llama Reunion">
+          </div>
+          <div class="ro-module single">
+                <h4>1966</h4>
+                <p>Still under construction, Simon’s Rock welcomes its first class of 50 young women into a 4-year A.A. program</p>
+              </div>
+              
+              <div class="ro-module single">
+                <img src="/_images/50/ba-win-volleyball.jpg" class="img-responsive" alt="Simon's Rock Volley Ball Team">
+              </div>
+              <div class="ro-module single">
+                <h4>1979</h4>
+                <p>Simon's Rock parnters with Bard College</p>
+              </div>
+              <div class="ro-module single">
+                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
+              </div>
+              <div class="ro-module single">
+                <h4>2010</h4>
+                <p>Two students recieve Fulbright Scholarships</p>
+              </div>
+              <div class="ro-module single">
+                <img src="/_images/50/betty-hall-slumber-party.jpg" class="img-responsive" alt="Betty Hall's Slumber Party'">
+              </div>
+               <div class="ro-module double">
+                <figure class="quote">
+                <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.”</blockquote>
+                <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
+                </figure>
+              </div>
+              <div class="ro-module single">
+                <h4>2015</h4>
+                <p>First Bard Academy class, establishing the 6 year arc.</p>
+              </div>
+              <div class="ro-module double">
+                <figure class="quote">
+                <blockquote style="margin:0 10px;">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration. The academic rigor prepared me to work hard and push for the very best&mdash;and not settle until every stone is turned.”</blockquote>
+                <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
+                </figure>
+              </div>
           </div>
         </div>
       </div>
@@ -97,44 +107,54 @@
       <div class="row second-reputations-row"><!-- 12 -->
       <div class="row-inner">
         <div id="second_rep_row_original">
-          <div class="ro-module single">
-            <img src="/_images/home/sec2-photo2.jpg" class="img-responsive" alt="placeholder">
+          <div class="ro-module double">
+                <figure class="quote">
+                <blockquote>“Milk in the Fridge &amp; Sugar in the Cow; an upside-down and concave reflection in a spoon”</blockquote>
+                <figcaption><cite>Thesis by Laura Katherine Willis '89</cite></figcaption>
+                </figure>
           </div>
           <div class="ro-module single">
-            <h4>8:1</h4>
-            <p>Our student–faculty ratio.</p>
+                <img src="/_images/50/swiss-air.jpg" class="img-responsive" alt="Winter Term Abroad">
+          </div>
+          <div class="ro-module single">
+                <h4>1976</h4>
+                <p>First seven students graduate with B.A. degree</p>
+              </div>
+          <div class="ro-module single">
+                <img src="/_images/50/leon-bernie.jpg" class="img-responsive" alt="Leon Botstein and Bernard Rodgers">
+          </div>
+          <div class="ro-module single">
+            <h4>1987</h4>
+            <p>Doug Ahlers '77 creates first commercial website</p>
+          </div>
+          <div class="ro-module single">
+                <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
+          </div>
+          <div class="ro-module single">
+            <h4>1988</h4>
+            <p>Women's Studies Program Founded</p>
+          </div>
+           <div class="ro-module double">
+                <figure class="quote">
+                <blockquote style="margin:0 10px;">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
+                <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
+                </figure>
+              </div>
+           <div class="ro-module double">
+            <h4>2001</h4>
+            <p>Bard High School Early College, a joint project of Bard and the New York City Board of Education based on the SR model</p>
+          </div>
+          <div class="ro-module single">
+                <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
           </div>
           <div class="ro-module double">
-            <h4>400</h4>
-            <p>Number of full-time students. Ninety percent live on campus.</p>
+                <figure class="quote">
+                <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
+                <figcaption><cite>Mary Marcy, Educating Outside the Lines</cite></figcaption>
+                </figure>
           </div>
-          <div class="ro-module double">
-            <h4>2.5 hours</h4>
-            <p>Our distance from Boston (west) or New York (north).</p>
-          </div>
-          <div class="ro-module single">
-            <h4>16.5</h4>
-            <p>Average age of Simon’s Rock students when they enter.</p>
-          </div>
-          <div class="ro-module single">
-            <h4>11</h4>
-            <p>Average class size.</p>
-          </div>
-          <div class="ro-module double">
-            <h4>41<sup>%</sup> / 59<sup>%</sup></h4>
-            <p>Male / Female</p>
-          </div>
-          <div class="ro-module single">
-            <h4>85<sup>%</sup></h4>
-            <p>Percentage of students receiving financial aid.</p>
-          </div>
-          <div class="ro-module single">
-            <h4>1</h4>
-            <p>Minimum weekly meetings with your advisor.</p>
-          </div>
-          <div class="ro-module double">
-            <h4>16.5</h4>
-            <p>Average age of Simon’s Rock students when they enter.</p>
+           <div class="ro-module single">
+                <img src="/_images/50/students-80s.jpg" class="img-responsive" alt="Students in the 1980s">
           </div>
         </div>
       </div>
