@@ -48,10 +48,12 @@
               <div class="ro-module single">
                 <img src="/_images/50/arthur-hillman-76.jpg" class="img-responsive" alt="Arthur Hillman '76">
               </div>
-              <div class="ro-module single">
-                <h4>1966</h4>
-                <p>Simon’s Rock welcomes its first class of 50 young women into a 4-year A.A. program</p>
-              </div>        
+              <div class="ro-module double">
+                <figure class="quote">
+                <blockquote class="lg-quote-margin-fix">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
+                <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
+                </figure>
+              </div>       
               <div class="ro-module single">
                 <img src="/_images/50/ba-win-volleyball.jpg" class="img-responsive" alt="Simon's Rock Volley Ball Team">
               </div>
@@ -64,25 +66,32 @@
               <div class="ro-module single">
                 <img src="/_images/50/llamas-reunion.jpg" class="img-responsive" alt="Llama Reunion">
               </div>
+              <div class="ro-module single">
+              <h4>1989</h4>
+              <p>Simon's Rock Soccer team plays in NSCAA national championship tournament.</p>
+              </div>
+              <div class="ro-module single">
+                <img src="/_images/50/peace-grove-in-bloom.jpg" class="img-responsive" alt="Llama Reunion">
+              </div>
               <div class="ro-module double">
               <h4>2001</h4>
               <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
               </div>
               <div class="ro-module single">
-                <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
+              <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
               </div>
-              <div class="ro-module single">
-                <h4>2010</h4>
-                <p>Two students recieve Fulbright Scholarships</p>
-              </div>
-              <div class="ro-module single">
-                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
-              </div>
-               <div class="ro-module double">
+              <div class="ro-module double">
                 <figure class="quote">
                 <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.”</blockquote>
                 <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
                 </figure>
+              </div>
+              <div class="ro-module single">
+                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
+              </div>
+              <div class="ro-module single">
+                <h4>2010</h4>
+                <p>Two students recieve Fulbright Scholarships</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/betty-hall-slumber-party.jpg" class="img-responsive" alt="Betty Hall's Slumber Party'">
@@ -92,14 +101,12 @@
                 <p>First Bard Academy class, establishing the 6 year arc</p>
               </div>
               <div class="ro-module single">
-                <img src="/_images/50/sr-group-photo.jpg" class="img-responsive" alt="Group photo in front of Livingston Hall">
+                <img src="/_images/50/kellogg-sound-board-1990s.jpg" class="img-responsive" alt="Kellogg sound board from the 1990s">
               </div>
-              <div class="ro-module double">
-                <figure class="quote">
-                <blockquote class="lg-quote-margin-fix">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
-                <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
-                </figure>
-              </div>
+              <div class="ro-module single">
+                <h4>1966</h4>
+                <p>Simon’s Rock welcomes its first class of 50 young women into a 4-year A.A. program</p>
+              </div> 
           </div>
         </div>
       </div>
@@ -145,6 +152,20 @@
           <div class="ro-module single">
             <img src="/_images/50/swiss-air.jpg" class="img-responsive" alt="Winter Term Abroad">
           </div>
+          <div class="ro-module single">
+                <h4>Ace</h4>
+                <p>In 1990, <a href="https://llamaledger.wordpress.com/2012/11/29/a-tale-of-two-frogs-a-history-of-the-library-pond/" target="_blank" style="color:black;">Ace the frog</a> moves into the pond in the Alumni Library Atrium.</p>
+          </div>
+          <div class="ro-module single">
+                <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
+          </div>
+           <div class="ro-module single">
+                <h4>1992</h4>
+                <p><a href="https://llamaledger.wordpress.com/2013/05/17/kelloggs-trip/" target="_blank" style="color:black;">Kellogg was moved</a> from upper campus to its current location.</p>
+          </div>
+          <div class="ro-module single">
+                <img src="/_images/50/kelloggs-trip-1992.jpg" class="img-responsive" alt="Kellogg's moves to its current location">
+          </div>
           <div class="ro-module double">
             <figure class="quote">
             <blockquote class="lg-quote-margin-fix">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
@@ -153,14 +174,6 @@
           </div>
           <div class="ro-module single">
             <img src="/_images/50/donkey-costume.jpg" class="img-responsive" alt="Donkey Costume">
-          </div>
-          <div class="ro-module single">
-                <h4>Ace</h4>
-                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium</p>
-          </div>
-          
-          <div class="ro-module single">
-            <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
           </div>
           <div class="ro-module single">
             <h4>1976</h4>
