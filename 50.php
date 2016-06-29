@@ -7,19 +7,14 @@
     <script src="_js/modernizr.custom.js"></script>
     <title>Reputations and Outcomes</title>
     <?php include '_inc/head-js-css.php'; ?>
-    <style>
-    #introduction {
-    background-image:url(/_images/50/hall-classroom.png);
-    }
-    </style>
   </head>
   <body id="home" class="has-hero">
     <?php include '_inc/nav.php'; ?>
-    <section id="introduction">
+    <section id="introduction" class="intro">
       <div id="intro_1" class="container abscontainer">
-        <div class="intro_sub">
-          <img src="/_images/50/gif-draft.gif" style="height: 300px; width: auto;">
-          <h1 id="intro_h1_1" style="padding: 0 12px; margin-top: 15px">50 Years of Independent Minds</h1>
+        <div class="intro_sub intro-sub-50">
+          <img src="/_images/50/gif-draft.gif">
+          <h1 id="intro_h1_1">50 Years of Independent Minds</h1>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Reunion</a>
         </div>
         
@@ -53,7 +48,7 @@
               <div class="ro-module single">
                 <img src="/_images/50/arthur-hillman-76.jpg" class="img-responsive" alt="Arthur Hillman '76">
               </div>
-             <div class="ro-module single">
+              <div class="ro-module single">
                 <h4>1966</h4>
                 <p>Simon’s Rock welcomes its first class of 50 young women into a 4-year A.A. program</p>
               </div>        
@@ -72,14 +67,14 @@
                 <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium</p>
               </div>
               <div class="ro-module single">
-                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
+                <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
               </div>
               <div class="ro-module single">
                 <h4>2010</h4>
                 <p>Two students recieve Fulbright Scholarships</p>
               </div>
               <div class="ro-module single">
-                <img src="/_images/50/betty-hall-slumber-party.jpg" class="img-responsive" alt="Betty Hall's Slumber Party'">
+                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
               </div>
                <div class="ro-module double">
                 <figure class="quote">
@@ -88,12 +83,18 @@
                 </figure>
               </div>
               <div class="ro-module single">
+                <img src="/_images/50/betty-hall-slumber-party.jpg" class="img-responsive" alt="Betty Hall's Slumber Party'">
+              </div>
+              <div class="ro-module single">
                 <h4>2015</h4>
                 <p>First Bard Academy class, establishing the 6 year arc</p>
               </div>
+              <div class="ro-module single">
+                <img src="/_images/50/sr-group-photo.jpg" class="img-responsive" alt="Group photo in front of Livingston Hall">
+              </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote style="margin:0 10px;">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
+                <blockquote class="lg-quote-margin-fix">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
                 <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
                 </figure>
               </div>
@@ -116,7 +117,7 @@
           </div>
           <div class="ro-module single">
             <h4>Inklings</h4>
-            <p>Jamie Hutchinson, appointed in 1976, taught the popular class The Inklings</p>
+            <p>Jamie Hutchinson, appointed in 1976, taught the popular class: The Inklings.</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/leon-bernie.jpg" class="img-responsive" alt="Leon Botstein and Bernard Rodgers">
@@ -125,24 +126,33 @@
             <h4>1987</h4>
             <p>Doug Ahlers '77 creates first commercial website</p>
           </div>
+          <div class="ro-module single">
+            <img src="/_images/50/wins.jpg" class="img-responsive" alt="The Wins">
+          </div>
           <div class="ro-module double">
             <h4>Harems</h4>
-            <p>Jaoan DelPlato, appointed in 1987, taught the popular class Harems: Imagined and Real</p>
+            <p>Joan DelPlato, appointed in 1987, taught the popular class Harems: Imagined and Real.</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
           </div>
-          <div class="ro-module double">
-            <h4>Women's Studies</h4>
-            <p>Program founded in 1988</p>
+          <div class="ro-module single">
+            <h4>1988</h4>
+            <p>Women's Studies program founded.</p>
           </div>
-           <div class="ro-module double">
-              <figure class="quote">
-              <blockquote style="margin:0 10px;">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
-              <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
-              </figure>
-            </div>
-           <div class="ro-module double">
+          <div class="ro-module single">
+            <img src="/_images/50/car-smashing.jpg" class="img-responsive" alt="Car Smashing">
+          </div>
+          <div class="ro-module double">
+            <figure class="quote">
+            <blockquote class="lg-quote-margin-fix">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
+            <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
+            </figure>
+          </div>
+          <div class="ro-module single">
+            <img src="/_images/50/donkey-costume.jpg" class="img-responsive" alt="Donkey Costume">
+          </div>
+          <div class="ro-module double">
             <h4>2001</h4>
             <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
           </div>
@@ -150,10 +160,10 @@
             <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
           </div>
           <div class="ro-module double">
-                <figure class="quote">
-                <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
-                <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
-                </figure>
+              <figure class="quote">
+              <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
+              <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
+              </figure>
           </div>
         </div>
       </div>
@@ -167,7 +177,7 @@
   
 </section>
 
-<section id="introduction">
+<section id="introduction" class="legacy">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Legacy Headline</h1>
@@ -182,7 +192,7 @@
       <i id="intro_arrow_down" class="fa fa-angle-down"></i>
       
     </section>
-    <section id="introduction">
+    <section id="introduction" class="future">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Future Headline</h1>
@@ -191,7 +201,7 @@
         
       </div>
     </section>
-     <section id="introduction">
+     <section id="introduction" class="transform">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Transform Lives, Transform Education
