@@ -89,7 +89,7 @@
 				ready to start college&nbsp;early.</span></p>
 		</div>
 	</section>
-	<?php /*
+	
 	
 	<!--
 		Section to be added via CMS if an annoucement is to be made.
@@ -100,46 +100,22 @@
 	-->
 	
 	<section id="announcements">
-		<div class="container-fluid">
-		<div class="row">
 	
-			<div class="col-md-12">
-			
-				<h2>This is an h2 over a two-col layout</h2>
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-xs-push-3 col-sm-4 col-sm-push-1 col-md-2 col-md-push-1 vert-middle-fix"><img src="http://simons-rock.edu/_images/home/50th-logo.png" alt="Simon's Rock 50th Anniversary Logo" /></div>
+                           <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-7 col-md-push-2 vert-middle-fix">
+                              <h2 class="text-center spotlight-title">50 Years of<br /> Independent Minds</h2><h3 class="text-center"><em>1966/1967 - 2016/2017</em></h3>
+                              <div class="text-center"><a class="btn btn-primary" href="/admission/request-information/index.php">Celebrate</a><p>&nbsp;</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  
 		
-			</div>
-
-			<div class="col-md-6">
-		
-				<p class="intro-paragraph">
-				This is a p.intro-paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
-				mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
-				pulvinar efficitur. 
-				</p>
-			</div>
-	
-			<div class="col-md-6">
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus elementum sodales. Phasellus facilisis
-				mattis est sed hendrerit. Quisque quam ligula, aliquam in dolor quis, iaculis viverra erat. Donec lacinia nisi sit amet
-				pulvinar efficitur. Donec suscipit lacus felis, egestas commodo quam ultricies ac. Nam elementum sapien eu tellus
-				ultrices, in mollis diam convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-				Curae;
-				</p>
-		
-				<p>
-				Duis vel libero vel ante varius consequat vel vel orci. Maecenas cursus ac justo at tempus. Integer ac lectus libero.
-				Cras eget ligula augue. Aenean dapibus consequat nibh vel tristique. Quisque vehicula sodales sapien et pulvinar.
-				Vivamus rutrum lacus vel sollicitudin efficitur. Pellentesque at nulla vitae orci pulvinar aliquam nec in risus.
-				Maecenas aliquam rutrum auctor. 
-				</p>
-			</div>
-
-		</div>
-		</div>
 	
 	</section>
-	*/ ?>
+	
 	
 	<section id="reputations_outcomes">
 	
