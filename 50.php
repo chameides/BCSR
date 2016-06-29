@@ -55,16 +55,18 @@
               <div class="ro-module single">
                 <img src="/_images/50/ba-win-volleyball.jpg" class="img-responsive" alt="Simon's Rock Volley Ball Team">
               </div>
-              <div class="ro-module single">
-                <h4>1979</h4>
-                <p>Simon's Rock partners with Bard College</p>
+              <div class="ro-module double">
+              <figure class="quote">
+              <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
+              <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
+              </figure>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/llamas-reunion.jpg" class="img-responsive" alt="Llama Reunion">
               </div>
-              <div class="ro-module single">
-                <h4>Ace</h4>
-                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium</p>
+              <div class="ro-module double">
+              <h4>2001</h4>
+              <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
@@ -106,11 +108,11 @@
       <div class="row-inner">
         <div id="second_rep_row_original">
           <div class="ro-module single">
-            <img src="/_images/50/swiss-air.jpg" class="img-responsive" alt="Winter Term Abroad">
+            <img src="/_images/50/car-smashing.jpg" class="img-responsive" alt="Car Smashing">
           </div>
           <div class="ro-module single">
-            <h4>1976</h4>
-            <p>First seven students graduate with B.A. degree</p>
+                <h4>1979</h4>
+                <p>Simon's Rock partners with Bard College</p>
           </div>
           <div class="ro-module single">
                 <img src="/_images/50/students-80s.jpg" class="img-responsive" alt="Students in the 1980s">
@@ -129,19 +131,19 @@
           <div class="ro-module single">
             <img src="/_images/50/wins.jpg" class="img-responsive" alt="The Wins">
           </div>
-          <div class="ro-module double">
-            <h4>Harems</h4>
-            <p>Joan DelPlato, appointed in 1987, taught the popular class Harems: Imagined and Real.</p>
-          </div>
-          <div class="ro-module single">
-            <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
-          </div>
           <div class="ro-module single">
             <h4>1988</h4>
             <p>Women's Studies program founded.</p>
           </div>
           <div class="ro-module single">
-            <img src="/_images/50/car-smashing.jpg" class="img-responsive" alt="Car Smashing">
+            <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
+          </div>
+          <div class="ro-module double">
+            <h4>Harems</h4>
+            <p>Joan DelPlato, appointed in 1987, taught the popular class Harems: Imagined and Real.</p>
+          </div>
+          <div class="ro-module single">
+            <img src="/_images/50/swiss-air.jpg" class="img-responsive" alt="Winter Term Abroad">
           </div>
           <div class="ro-module double">
             <figure class="quote">
@@ -152,18 +154,17 @@
           <div class="ro-module single">
             <img src="/_images/50/donkey-costume.jpg" class="img-responsive" alt="Donkey Costume">
           </div>
-          <div class="ro-module double">
-            <h4>2001</h4>
-            <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
+          <div class="ro-module single">
+                <h4>Ace</h4>
+                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium</p>
           </div>
+          
           <div class="ro-module single">
             <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
           </div>
-          <div class="ro-module double">
-              <figure class="quote">
-              <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
-              <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
-              </figure>
+          <div class="ro-module single">
+            <h4>1976</h4>
+            <p>First seven students graduate with B.A. degree</p>
           </div>
         </div>
       </div>
