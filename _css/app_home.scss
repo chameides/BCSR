@@ -1039,17 +1039,6 @@ section#announcements {
       background:
       	linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.1)),
       	url('/_images/50/students-pink-star.jpg');
-      blockquote {
-			@media (max-width: $screen-xs-max) {
-				p {
-					font-size: 1.8rem !important;
-    				line-height: 2.2rem !important;
-				}
-				cite {
-					font-size: 1.4rem !important;
-				}
-			}
-		}
     }
 .lg-quote-margin-fix {
       margin:0 10px;
