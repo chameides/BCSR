@@ -46,7 +46,7 @@
           <div class="row-inner">
             <div id="first_rep_row_original">    
               <div class="ro-module single">
-                <img src="/_images/50/arthur-hillman-76.jpg" class="img-responsive" alt="Arthur Hillman '76">
+                <img src="/_images/50/students-pink-star-sq.jpg" class="img-responsive" alt="Senior Prank">
               </div>
               <div class="ro-module double">
                 <figure class="quote">
@@ -87,7 +87,7 @@
                 </figure>
               </div>
               <div class="ro-module single">
-                <img src="/_images/50/betty-hall-simons-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
+                <img src="/_images/50/ebh-on-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
               </div>
               <div class="ro-module single">
                 <h4>2010</h4>
