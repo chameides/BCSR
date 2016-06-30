@@ -16,14 +16,9 @@
           <img src="/_images/50/gif-draft.gif">
           <h1 id="intro_h1_1">50 Years of Independent Minds</h1>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Reunion</a>
-        </div>
-        
+        </div>        
       </div>
-      
-      
-      
       <i id="intro_arrow_down" class="fa fa-angle-down"></i>
-      
     </section>
     
       <section id="reputations_outcomes">
