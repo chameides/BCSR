@@ -1018,39 +1018,3 @@ section#announcements {
 		width: 100%;
 	}
 } 
-
-/* 50th anniversary css for 50.php 6/28/2016  */
-
-.intro {
-    background-image:url(/_images/50/hall-classroom.png);
-   	@media (max-width: $screen-xs-max) {
-        background: url('/_images/50/hall-classroom-mobile.jpg') no-repeat right center;
-        background-size:cover;
-        width: 100%;
-      }
-    }
-.legacy {
-      background:url('/_images/50/legacy-bg.jpg');
-    }
-.future {
-      background: 
-      	linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6), rgba(0,0,0,0.1)),
-      	url("/_images/50/future-bg.jpg");
-      background-position: left center !important;
-    }
-.transform {
-      background:
-      	linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.1)),
-      	url('/_images/50/students-pink-star.jpg');
-    }
-
-.intro-sub-50 {
-	img {
-	height: 300px; 
-	width: auto;
-	}
-	h1 {
-	padding: 0 12px;
-	margin-top: 15px;
-	}
-}
