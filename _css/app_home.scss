@@ -249,6 +249,9 @@ body#home {
 			blockquote:before {
 			    content: none; //override blockquote styling
 			}
+			.reputation-quote-large {
+      	margin:0 $padding-small-horizontal;
+    	}
 			blockquote {
 				margin: 0; //override blockquote styling
 			    padding:0; //override blockquote styling
@@ -1040,9 +1043,7 @@ section#announcements {
       	linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.1)),
       	url('/_images/50/students-pink-star.jpg');
     }
-.lg-quote-margin-fix {
-      margin:0 10px;
-    }
+
 .intro-sub-50 {
 	img {
 	height: 300px; 

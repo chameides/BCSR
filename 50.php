@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="_js/modernizr.custom.js"></script>
-    <title>Reputations and Outcomes</title>
+    <title>50th Anniversary of Bard College at Simon's Rock</title>
     <?php include '_inc/head-js-css.php'; ?>
   </head>
   <body id="home" class="has-hero">
@@ -50,7 +50,7 @@
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote class="lg-quote-margin-fix">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
+                <blockquote class="reputation-quote-large">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
                 <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
                 </figure>
               </div>       
@@ -168,7 +168,7 @@
           </div>
           <div class="ro-module double">
             <figure class="quote">
-            <blockquote class="lg-quote-margin-fix">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
+            <blockquote class="reputation-quote-large">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
             <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
             </figure>
           </div>
@@ -190,7 +190,7 @@
 </section>
 
 <section class="section-full-screen legacy">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Our Legacy is Our Community</h1>
           <p class="intro-paragraph hero-text">For 50 years, Simon's Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
@@ -202,7 +202,7 @@
       
     </section>
     <section class="section-full-screen future">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">The Future of Liberal Arts</h1>
           <p class="intro-paragraph hero-text">We invented early college. (And with Bard Academy), we have reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
@@ -211,7 +211,7 @@
       </div>
     </section>
      <section class="section-full-screen transform">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Transform Lives, Transform Education
 </h1>
