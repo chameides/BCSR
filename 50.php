@@ -80,7 +80,7 @@
               </div>
                <div class="ro-module double">
                 <figure class="quote">
-                <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.”</blockquote>
+                <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
                 <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
                 </figure>
               </div>
@@ -169,8 +169,6 @@
         </div>
       </div>
     </div>
-    
-    <div class="viewall_container drop_on_mobile"><a id="reps_outcomes_btn" class="btn btn-primary">View All</a></div>
     <button class="btn btn-link reputations_outcomes_btn leftbtn"><i class="fa fa-chevron-left"></i></button>
     <button class="btn btn-link reputations_outcomes_btn rightbtn"><i class="fa fa-chevron-right"></i></button>
     
@@ -178,38 +176,37 @@
   
 </section>
 
-<section id="introduction" class="legacy">
+<section class="section-full-screen legacy">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
-          <h1 class="hero-title">Legacy Headline</h1>
-          <p class="intro-paragraph hero-text">subheadline text (doesn't center, unless more than 1 line)</p>
-          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Legacy</a>
+          <h1 class="hero-title">Our Legacy is Our Community</h1>
+          <p class="intro-paragraph hero-text">For 50 years, Simon's Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
+          </p>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon's Rock Legacy</a>
         </div>
         
       </div>
       
-      
-      
-      <i id="intro_arrow_down" class="fa fa-angle-down"></i>
-      
     </section>
-    <section id="introduction" class="future">
+    <section class="section-full-screen future">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
-          <h1 class="hero-title">Future Headline</h1>
-          <p class="intro-paragraph hero-text">subheadline text (doesn't center, unless more than 1 line)</p>
+          <h1 class="hero-title">The Future of Liberal Arts</h1>
+          <p class="intro-paragraph hero-text">We invented early college. (And with Bard Academy), we have reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
         </div>
         
       </div>
     </section>
-     <section id="introduction" class="transform">
+     <section class="section-full-screen transform">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Transform Lives, Transform Education
 </h1>
-          <p class="intro-paragraph hero-text">“It wasn’t just that I had a good time at Simon’s Rock: it was a transformative experience for me.”<br>-Allyson Sgro ’01</p>
+          <blockquote><p class="hero-quote"><span class="blockquote-mark">&ldquo;&nbsp;</span>It wasn’t just that I had a good time at Simon’s Rock: it was a transformative experience for me.<span class="blockquote-mark">&rdquo;</span></p><cite>-Allyson Sgro ’01</cite></blockquote>
+          
+
 <p class="intro-paragraph hero-text">
-Your gift has a life-altering impact on young people. Your support helps provide the scholarships, faculty, and infrastructure that makes the Simon’s Rock experience possible. With your contribution, we will continue to foster independent minds and transform the educational status quo. 
+Your gift has a life-altering impact on young people. Your support helps provide the scholarships, faculty, and infrastructure that makes the Simon’s Rock experience possible. With your contribution, we'll continue to foster independent minds and transform the educational status quo. 
 </p>
 <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Give Now</a>
         </div>
