@@ -45,8 +45,8 @@
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote class="reputation-quote-large">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
-                <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
+                <blockquote class="reputation-quote-large">“The skills I use daily are skills I honed at Simon&rsquo;s Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
+                <figcaption><cite>Brooke Skinner Ricketts &rsquo;97</cite></figcaption>
                 </figure>
               </div>       
               <div class="ro-module single">
@@ -54,7 +54,7 @@
               </div>
               <div class="ro-module double">
               <figure class="quote">
-              <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
+              <blockquote>“Central to education at Simon&rsquo;s Rock is an ability to manage diverse ideas in creative tension”</blockquote>
               <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
               </figure>
               </div>
@@ -63,14 +63,14 @@
               </div>
               <div class="ro-module single">
               <h4>1989</h4>
-              <p>Simon's Rock Soccer team plays in NSCAA national championship tournament.</p>
+              <p>Simon&rsquo;s Rock Soccer team plays in NSCAA national championship tournament.</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/peace-grove-in-bloom.jpg" class="img-responsive" alt="Llama Reunion">
               </div>
               <div class="ro-module double">
               <h4>2001</h4>
-              <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
+              <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
               </div>
               <div class="ro-module single">
               <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
@@ -114,7 +114,7 @@
           </div>
           <div class="ro-module single">
                 <h4>1979</h4>
-                <p>Simon's Rock partners with Bard College</p>
+                <p>Simon&rsquo;s Rock partners with Bard College</p>
           </div>
           <div class="ro-module single">
                 <img src="/_images/50/students-80s.jpg" class="img-responsive" alt="Students in the 1980s">
@@ -128,14 +128,14 @@
           </div>
           <div class="ro-module single">
             <h4>1987</h4>
-            <p>Doug Ahlers '77 creates first commercial website</p>
+            <p>Doug Ahlers &rsquo;77 creates first commercial website</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/wins.jpg" class="img-responsive" alt="The Wins">
           </div>
           <div class="ro-module single">
             <h4>1988</h4>
-            <p>Women's Studies program founded.</p>
+            <p>Women&rsquo;s Studies program founded.</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
@@ -164,7 +164,7 @@
           <div class="ro-module double">
             <figure class="quote">
             <blockquote class="reputation-quote-large">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
-            <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
+            <figcaption><cite>Anne Hutchinson Reid &rsquo;75</cite></figcaption>
             </figure>
           </div>
           <div class="ro-module single">
@@ -188,9 +188,9 @@
       <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Our Legacy is Our Community</h1>
-          <p class="intro-paragraph hero-text">For 50 years, Simon's Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
+          <p class="intro-paragraph hero-text">For 50 years, Simon&rsquo;s Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
           </p>
-          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon's Rock Legacy</a>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon&rsquo;s Rock Legacy</a>
         </div>
         
       </div>
@@ -200,7 +200,7 @@
       <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">The Future of Liberal Arts</h1>
-          <p class="intro-paragraph hero-text">We invented early college. (And with Bard Academy), we have reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
+          <p class="intro-paragraph hero-text">We invented early college. Then we reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
         </div>
         
       </div>
