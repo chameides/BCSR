@@ -13,7 +13,7 @@
     <section id="introduction" class="intro">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub intro-sub-50">
-          <img src="/_images/50/gif-draft.gif">
+          <img src="/_images/50/gif-draft.gif?<?php echo time();?>">
           <h1 id="intro_h1_1">50 Years of Independent Minds</h1>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Reunion</a>
         </div>        
@@ -70,14 +70,14 @@
               </div>
               <div class="ro-module double">
               <h4>2001</h4>
-              <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
+              <p>Bard High School Early College launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
               </div>
               <div class="ro-module single">
               <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
+                <blockquote>“When I got to Simon's Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
                 <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
                 </figure>
               </div>
@@ -93,7 +93,7 @@
               </div>
               <div class="ro-module single">
                 <h4>2015</h4>
-                <p>First Bard Academy class, establishing the 6 year arc</p>
+                <p>First Bard Academy class, establishing the 6-year arc</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/kellogg-sound-board-1990s.jpg" class="img-responsive" alt="Kellogg sound board from the 1990s">
@@ -149,7 +149,7 @@
           </div>
           <div class="ro-module single">
                 <h4>Ace</h4>
-                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium.</p>
+                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium. Duece moves in soon after.</p>
           </div>
           <div class="ro-module single">
                 <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
@@ -172,7 +172,7 @@
           </div>
           <div class="ro-module single">
             <h4>1976</h4>
-            <p>First seven students graduate with B.A. degree</p>
+            <p>Baird Whitlock awards the first B.A. degrees</p>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
       <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Our Legacy is Our Community</h1>
-          <p class="intro-paragraph hero-text">For 50 years, Simon&rsquo;s Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
+          <p class="intro-paragraph hero-text">For 50 years, Simon&rsquo;s Rock has been a welcoming, inclusive community where younger scholars are taken seriously and individuality thrives. Our students push beyond the usual choices in their life-altering encounter with the liberal arts. 
           </p>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon&rsquo;s Rock Legacy</a>
         </div>
@@ -214,7 +214,7 @@
           
 
 <p class="intro-paragraph hero-text">
-Your gift has a life-altering impact on young people. Your support helps provide the scholarships, faculty, and infrastructure that makes the Simon’s Rock experience possible. With your contribution, we'll continue to foster independent minds and transform the educational status quo. 
+You can have a defining impact on young people. With a gift, you support the scholarships, faculty, and infrastructure that make the Simon’s Rock experience possible. Join us in empowering independent minds and transforming the educational status quo. 
 </p>
 <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Give Now</a>
         </div>
