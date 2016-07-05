@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="_js/modernizr.custom.js"></script>
-    <title>Reputations and Outcomes</title>
+    <title>50th Anniversary of Bard College at Simon's Rock</title>
     <?php include '_inc/head-js-css.php'; ?>
   </head>
   <body id="home" class="has-hero">
@@ -13,17 +13,12 @@
     <section id="introduction" class="intro">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub intro-sub-50">
-          <img src="/_images/50/gif-draft.gif">
+          <img src="/_images/50/gif-draft.gif?<?php echo time();?>">
           <h1 id="intro_h1_1">50 Years of Independent Minds</h1>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Reunion</a>
-        </div>
-        
+        </div>        
       </div>
-      
-      
-      
       <i id="intro_arrow_down" class="fa fa-angle-down"></i>
-      
     </section>
     
       <section id="reputations_outcomes">
@@ -50,8 +45,8 @@
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote class="lg-quote-margin-fix">“The skills I use daily are skills I honed at Simon's Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
-                <figcaption><cite>Brooke Skinner Ricketts '97</cite></figcaption>
+                <blockquote class="reputation-quote-large">“The skills I use daily are skills I honed at Simon&rsquo;s Rock: critical thinking, problem solving, and creative collaboration.”</blockquote>
+                <figcaption><cite>Brooke Skinner Ricketts &rsquo;97</cite></figcaption>
                 </figure>
               </div>       
               <div class="ro-module single">
@@ -59,7 +54,7 @@
               </div>
               <div class="ro-module double">
               <figure class="quote">
-              <blockquote>“Central to education at Simon's Rock is an ability to manage diverse ideas in creative tension”</blockquote>
+              <blockquote>“Central to education at Simon&rsquo;s Rock is an ability to manage diverse ideas in creative tension”</blockquote>
               <figcaption><cite>Mary Marcy, <em>Educating Outside the Lines</em></cite></figcaption>
               </figure>
               </div>
@@ -68,21 +63,21 @@
               </div>
               <div class="ro-module single">
               <h4>1989</h4>
-              <p>Simon's Rock Soccer team plays in NSCAA national championship tournament.</p>
+              <p>Simon&rsquo;s Rock Soccer team plays in NSCAA national championship tournament.</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/peace-grove-in-bloom.jpg" class="img-responsive" alt="Llama Reunion">
               </div>
               <div class="ro-module double">
               <h4>2001</h4>
-              <p>Bard High School Early College Launches, a joint project of Bard and the NYC Board of Education based on the Simon's Rock model</p>
+              <p>Bard High School Early College launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
               </div>
               <div class="ro-module single">
               <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote>“When I got to Simons Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
+                <blockquote>“When I got to Simon's Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
                 <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
                 </figure>
               </div>
@@ -98,7 +93,7 @@
               </div>
               <div class="ro-module single">
                 <h4>2015</h4>
-                <p>First Bard Academy class, establishing the 6 year arc</p>
+                <p>First Bard Academy class, establishing the 6-year arc</p>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/kellogg-sound-board-1990s.jpg" class="img-responsive" alt="Kellogg sound board from the 1990s">
@@ -119,7 +114,7 @@
           </div>
           <div class="ro-module single">
                 <h4>1979</h4>
-                <p>Simon's Rock partners with Bard College</p>
+                <p>Simon&rsquo;s Rock partners with Bard College</p>
           </div>
           <div class="ro-module single">
                 <img src="/_images/50/students-80s.jpg" class="img-responsive" alt="Students in the 1980s">
@@ -133,14 +128,14 @@
           </div>
           <div class="ro-module single">
             <h4>1987</h4>
-            <p>Doug Ahlers '77 creates first commercial website</p>
+            <p>Doug Ahlers &rsquo;77 creates first commercial website</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/wins.jpg" class="img-responsive" alt="The Wins">
           </div>
           <div class="ro-module single">
             <h4>1988</h4>
-            <p>Women's Studies program founded.</p>
+            <p>Women&rsquo;s Studies program founded.</p>
           </div>
           <div class="ro-module single">
             <img src="/_images/50/bob-schmidt.jpg" class="img-responsive" alt="Bob Schmidt">
@@ -154,7 +149,7 @@
           </div>
           <div class="ro-module single">
                 <h4>Ace</h4>
-                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium.</p>
+                <p>In 1990, Ace the frog moves into the pond in the Alumni Library Atrium. Duece moves in soon after.</p>
           </div>
           <div class="ro-module single">
                 <img src="/_images/50/ace-the-frog.jpg" class="img-responsive" alt="Ace the frog and companion">
@@ -168,8 +163,8 @@
           </div>
           <div class="ro-module double">
             <figure class="quote">
-            <blockquote class="lg-quote-margin-fix">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
-            <figcaption><cite>Anne Hutchinson Reid ‘75</cite></figcaption>
+            <blockquote class="reputation-quote-large">“You get to know your teachers, and they treated you like a junior colleague &hellip;They made it feel like they were learning from you. It was magical.”</blockquote>
+            <figcaption><cite>Anne Hutchinson Reid &rsquo;75</cite></figcaption>
             </figure>
           </div>
           <div class="ro-module single">
@@ -177,7 +172,7 @@
           </div>
           <div class="ro-module single">
             <h4>1976</h4>
-            <p>First seven students graduate with B.A. degree</p>
+            <p>Baird Whitlock awards the first B.A. degrees</p>
           </div>
         </div>
       </div>
@@ -190,28 +185,28 @@
 </section>
 
 <section class="section-full-screen legacy">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Our Legacy is Our Community</h1>
-          <p class="intro-paragraph hero-text">For 50 years, Simon's Rock has been a welcoming, tight-knit community where individuality thrives. Our students push beyond the usual choices and interrogate the liberal arts. Our alums have the preparation and training to change the world.
+          <p class="intro-paragraph hero-text">For 50 years, Simon&rsquo;s Rock has been a welcoming, inclusive community where younger scholars are taken seriously and individuality thrives. Our students push beyond the usual choices in their life-altering encounter with the liberal arts. 
           </p>
-          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon's Rock Legacy</a>
+          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon&rsquo;s Rock Legacy</a>
         </div>
         
       </div>
       
     </section>
     <section class="section-full-screen future">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">The Future of Liberal Arts</h1>
-          <p class="intro-paragraph hero-text">We invented early college. (And with Bard Academy), we have reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
+          <p class="intro-paragraph hero-text">We invented early college. Then we reimagined the entire high school and college experience. We will continue to innovate, break down educational barriers, and provide access to the liberal arts and sciences.</p> 
         </div>
         
       </div>
     </section>
      <section class="section-full-screen transform">
-      <div id="intro_1" class="container abscontainer">
+      <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Transform Lives, Transform Education
 </h1>
@@ -219,7 +214,7 @@
           
 
 <p class="intro-paragraph hero-text">
-Your gift has a life-altering impact on young people. Your support helps provide the scholarships, faculty, and infrastructure that makes the Simon’s Rock experience possible. With your contribution, we'll continue to foster independent minds and transform the educational status quo. 
+You can have a defining impact on young people. With a gift, you support the scholarships, faculty, and infrastructure that make the Simon’s Rock experience possible. Join us in empowering independent minds and transforming the educational status quo. 
 </p>
 <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Give Now</a>
         </div>
