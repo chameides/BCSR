@@ -50,7 +50,11 @@
                 </figure>
               </div>       
               <div class="ro-module single">
-                <img src="/_images/50/ba-win-volleyball.jpg" class="img-responsive" alt="Simon's Rock Volley Ball Team">
+                <img src="/_images/50/leon-bernie.jpg" class="img-responsive" alt="Simon's Rock Volley Ball Team">
+              </div>
+               <div class="ro-module single">
+                <h4>1986</h4>
+                <p>The W.E.B. DuBois Scholarship program begins.</p>
               </div>
               <div class="ro-module double">
               <figure class="quote">
@@ -68,26 +72,27 @@
               <div class="ro-module single">
                 <img src="/_images/50/peace-grove-in-bloom.jpg" class="img-responsive" alt="Llama Reunion">
               </div>
-              <div class="ro-module double">
-              <h4>2001</h4>
-              <p>Bard High School Early College launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
+              <div class="ro-module single">
+                <h4>1996</h4>
+                <p>Veronica Chambers '87 writes <em>Mama's Girl.</em></p>
               </div>
               <div class="ro-module single">
-              <img src="/_images/50/dorm.jpg" class="img-responsive" alt="Dormitory Room">
+              <img src="/_images/50/mamas-girl.jpg" class="img-responsive" alt="Dormitory Room">
               </div>
               <div class="ro-module double">
                 <figure class="quote">
-                <blockquote>“When I got to Simon's Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.<span class="blockquote-mark">&rdquo;</span></blockquote>
+                <blockquote>“When I got to Simon's Rock, I found a community that took me seriously as a human being and that believed in me so that I could flourish.&rdquo;</blockquote>
                 <figcaption><cite>Penny Brierley-Bowers '81</cite></figcaption>
                 </figure>
               </div>
               <div class="ro-module single">
                 <img src="/_images/50/ebh-on-rock.jpg" class="img-responsive" alt="Betty Hall on Simon's Rock">
               </div>
-              <div class="ro-module single">
-                <h4>2010</h4>
-                <p>Two students recieve Fulbright Scholarships</p>
+               <div class="ro-module double">
+              <h4>2001</h4>
+              <p>Bard High School Early College launches, a joint project of Bard and the NYC Board of Education based on the Simon&rsquo;s Rock model</p>
               </div>
+              
               <div class="ro-module single">
                 <img src="/_images/50/betty-hall-slumber-party.jpg" class="img-responsive" alt="Betty Hall's Slumber Party'">
               </div>
@@ -124,7 +129,7 @@
             <p>Jamie Hutchinson, appointed in 1976, taught the popular class: The Inklings.</p>
           </div>
           <div class="ro-module single">
-            <img src="/_images/50/leon-bernie.jpg" class="img-responsive" alt="Leon Botstein and Bernard Rodgers">
+            <img src="/_images/50/students-pyramid.jpg" class="img-responsive" alt="Leon Botstein and Bernard Rodgers">
           </div>
           <div class="ro-module single">
             <h4>1987</h4>
