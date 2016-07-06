@@ -13,7 +13,7 @@
     <section id="introduction" class="intro">
       <div id="intro_1" class="container abscontainer">
         <div class="intro_sub intro-sub-50">
-          <img src="/_images/50/gif-draft.gif?<?php echo time();?>">
+          <img src="/_images/50/logo-50-animate.gif?<?php echo time();?>">
           <h1 id="intro_h1_1">50 Years of Independent Minds</h1>
           <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Reunion</a>
         </div>        
@@ -190,7 +190,7 @@
           <h1 class="hero-title">Our Legacy is Our Community</h1>
           <p class="intro-paragraph hero-text">For 50 years, Simon&rsquo;s Rock has been a welcoming, inclusive community where younger scholars are taken seriously and individuality thrives. Our students push beyond the usual choices in their life-altering encounter with the liberal arts. 
           </p>
-          <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#introVideoModal">Simon&rsquo;s Rock Legacy</a>
+          <a type="button" class="btn btn-primary">Simon&rsquo;s Rock Legacy</a>
         </div>
         
       </div>
