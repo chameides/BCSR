@@ -1,15 +1,8 @@
 <?php
-  session_start();
-  if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
-  	//redirect to thank you page with address follow form
-  	header('Location: /contact-form-thanks-address.php');
-  }
-  else {
-  	//reset variables
-		session_unset();
-		session_destroy();
-		session_write_close();
-  }
+  //reset variables
+	session_unset();
+	session_destroy();
+	session_write_close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +42,7 @@ label.error {
 	<form id="contactForm">
 
 
-<h1 id="form_elements" class="sg-heading">Thank You</h1>
+<h1 id="form_elements" class="sg-heading">Thank You Again</h1>
 <div class="row">
 
 	<div class="col-md-6">

@@ -55,7 +55,7 @@ b. add page-hero-container-small
             <div class="col-sm-6 row-col-highlight">
               <div class="text-wrapper">
                 <h2>Get the Early College Checklist:</h2>
-                <img class="pull-left" src="/_images/why-simons-rock/5-signs-screenshot" alt="placeholder" style="width: 50px;"><p>Itching to explore more subjects, bored with High School classes and more curious than most?</p>
+                <img class="pull-left" src="/_images/why-simons-rock/5-signs-screenshot.jpg" alt="placeholder" style="width: 50px;"><p>Itching to explore more subjects, bored with High School classes and more curious than most?</p>
               </div>
               <div style="clear: both;">
                 <?php include 'contact-form-fields/contact-form-fields-5signs-min-overlay.php'; ?>

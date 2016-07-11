@@ -1,8 +1,8 @@
 <?php
   session_start();
-  if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
+  if (isset($_SESSION['addressInternationalExists']) && $_SESSION['addressInternationalExists'] == 'true') {
   	//redirect to thank you page with address follow form
-  	header('Location: /contact-form-thanks-address.php');
+  	header('Location: /contact-form-thanks-international.php');
   }
   else {
   	//reset variables
@@ -49,7 +49,7 @@ label.error {
 	<form id="contactForm">
 
 
-<h1 id="form_elements" class="sg-heading">Thank You</h1>
+<h1 id="form_elements" class="sg-heading">Thank You Again</h1>
 <div class="row">
 
 	<div class="col-md-6">

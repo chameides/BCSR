@@ -2,37 +2,37 @@
 			<form name="frmJump" id="frmJump" action="#">
 			<table class="mini-cal">
 				<tr>
-					<td class="nav"><a href="http://simons-rock.edu/events/?d=2015-06-01" rel="nofollow">&lt;</a></td>
+					<td class="nav"><a href="//simons-rock.edu/events/?d=2015-06-01" rel="nofollow">&lt;</a></td>
 					<td class="title" colspan="5">
 					<select name="jumpMonth" id="jumpMonth" onchange="window.location.href=this.value;">
-						<option value="http://simons-rock.edu/events/?d=2014-07-01&amp;b=1">Jul 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2014-08-01&amp;b=1">Aug 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2014-09-01&amp;b=1">Sep 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2014-10-01&amp;b=1">Oct 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2014-11-01&amp;b=1">Nov 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2014-12-01&amp;b=1">Dec 2014</option>
-						<option value="http://simons-rock.edu/events/?d=2015-01-01&amp;b=1">Jan 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-02-01&amp;b=1">Feb 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-03-01&amp;b=1">Mar 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-04-01&amp;b=1">Apr 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-05-01&amp;b=1">May 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-06-01&amp;b=1">Jun 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-07-01&amp;b=1" selected="selected">Jul 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-08-01&amp;b=1">Aug 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-09-01&amp;b=1">Sep 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-10-01&amp;b=1">Oct 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-11-01&amp;b=1">Nov 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2015-12-01&amp;b=1">Dec 2015</option>
-						<option value="http://simons-rock.edu/events/?d=2016-01-01&amp;b=1">Jan 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-02-01&amp;b=1">Feb 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-03-01&amp;b=1">Mar 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-04-01&amp;b=1">Apr 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-05-01&amp;b=1">May 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-06-01&amp;b=1">Jun 2016</option>
-						<option value="http://simons-rock.edu/events/?d=2016-07-01&amp;b=1">Jul 2016</option>	
+						<option value="//simons-rock.edu/events/?d=2014-07-01&amp;b=1">Jul 2014</option>
+						<option value="//simons-rock.edu/events/?d=2014-08-01&amp;b=1">Aug 2014</option>
+						<option value="//simons-rock.edu/events/?d=2014-09-01&amp;b=1">Sep 2014</option>
+						<option value="//simons-rock.edu/events/?d=2014-10-01&amp;b=1">Oct 2014</option>
+						<option value="//simons-rock.edu/events/?d=2014-11-01&amp;b=1">Nov 2014</option>
+						<option value="//simons-rock.edu/events/?d=2014-12-01&amp;b=1">Dec 2014</option>
+						<option value="//simons-rock.edu/events/?d=2015-01-01&amp;b=1">Jan 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-02-01&amp;b=1">Feb 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-03-01&amp;b=1">Mar 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-04-01&amp;b=1">Apr 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-05-01&amp;b=1">May 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-06-01&amp;b=1">Jun 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-07-01&amp;b=1" selected="selected">Jul 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-08-01&amp;b=1">Aug 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-09-01&amp;b=1">Sep 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-10-01&amp;b=1">Oct 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-11-01&amp;b=1">Nov 2015</option>
+						<option value="//simons-rock.edu/events/?d=2015-12-01&amp;b=1">Dec 2015</option>
+						<option value="//simons-rock.edu/events/?d=2016-01-01&amp;b=1">Jan 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-02-01&amp;b=1">Feb 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-03-01&amp;b=1">Mar 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-04-01&amp;b=1">Apr 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-05-01&amp;b=1">May 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-06-01&amp;b=1">Jun 2016</option>
+						<option value="//simons-rock.edu/events/?d=2016-07-01&amp;b=1">Jul 2016</option>	
 					</select>
 					</td>
-					<td class="nav"><a href="http://simons-rock.edu/events/?d=2015-08-01" rel="nofollow">&gt;</a></td>
+					<td class="nav"><a href="//simons-rock.edu/events/?d=2015-08-01" rel="nofollow">&gt;</a></td>
 				</tr>
 				<tr>
 					
@@ -48,45 +48,45 @@
 					<td class="blank">&nbsp;</td>
 					<td class="blank">&nbsp;</td>
 					<td class="blank">&nbsp;</td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-1&amp;m=1" rel="nofollow">01</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-2&amp;m=1" rel="nofollow">02</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-3&amp;m=1" rel="nofollow">03</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-4&amp;m=1" rel="nofollow">04</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-1&amp;m=1" rel="nofollow">01</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-2&amp;m=1" rel="nofollow">02</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-3&amp;m=1" rel="nofollow">03</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-4&amp;m=1" rel="nofollow">04</a></td>
 				</tr>
 				<tr>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-5&amp;m=1" rel="nofollow">05</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-6&amp;m=1" rel="nofollow">06</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-7&amp;m=1" rel="nofollow">07</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-8&amp;m=1" rel="nofollow">08</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-9&amp;m=1" rel="nofollow">09</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-10&amp;m=1" rel="nofollow">10</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-11&amp;m=1" rel="nofollow">11</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-5&amp;m=1" rel="nofollow">05</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-6&amp;m=1" rel="nofollow">06</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-7&amp;m=1" rel="nofollow">07</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-8&amp;m=1" rel="nofollow">08</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-9&amp;m=1" rel="nofollow">09</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-10&amp;m=1" rel="nofollow">10</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-11&amp;m=1" rel="nofollow">11</a></td>
 				</tr>
 				<tr>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-12&amp;m=1" rel="nofollow">12</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-13&amp;m=1" rel="nofollow">13</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-14&amp;m=1" rel="nofollow">14</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-15&amp;m=1" rel="nofollow">15</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-16&amp;m=1" rel="nofollow">16</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-17&amp;m=1" rel="nofollow">17</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-18&amp;m=1" rel="nofollow">18</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-12&amp;m=1" rel="nofollow">12</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-13&amp;m=1" rel="nofollow">13</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-14&amp;m=1" rel="nofollow">14</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-15&amp;m=1" rel="nofollow">15</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-16&amp;m=1" rel="nofollow">16</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-17&amp;m=1" rel="nofollow">17</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-18&amp;m=1" rel="nofollow">18</a></td>
 				</tr>
 				<tr>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-19&amp;m=1" rel="nofollow">19</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-20&amp;m=1" rel="nofollow">20</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-21&amp;m=1" rel="nofollow">21</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-22&amp;m=1" rel="nofollow">22</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-23&amp;m=1" rel="nofollow">23</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-24&amp;m=1" rel="nofollow">24</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-25&amp;m=1" rel="nofollow">25</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-19&amp;m=1" rel="nofollow">19</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-20&amp;m=1" rel="nofollow">20</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-21&amp;m=1" rel="nofollow">21</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-22&amp;m=1" rel="nofollow">22</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-23&amp;m=1" rel="nofollow">23</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-24&amp;m=1" rel="nofollow">24</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-25&amp;m=1" rel="nofollow">25</a></td>
 				</tr>
 				<tr>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-26&amp;m=1" rel="nofollow">26</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-27&amp;m=1" rel="nofollow">27</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-28&amp;m=1" rel="nofollow">28</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-29&amp;m=1" rel="nofollow">29</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-30&amp;m=1" rel="nofollow">30</a></td>
-					<td class="events"><a href="http://simons-rock.edu/events/index.php?d=2015-07-31&amp;m=1" rel="nofollow">31</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-26&amp;m=1" rel="nofollow">26</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-27&amp;m=1" rel="nofollow">27</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-28&amp;m=1" rel="nofollow">28</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-29&amp;m=1" rel="nofollow">29</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-30&amp;m=1" rel="nofollow">30</a></td>
+					<td class="events"><a href="//simons-rock.edu/events/index.php?d=2015-07-31&amp;m=1" rel="nofollow">31</a></td>
 					<td class="blank">&nbsp;</td>
 				</tr>
 			</table>

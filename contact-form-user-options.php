@@ -30,7 +30,7 @@
 			echo $userpwd;
 
 			$data = array("searchFields" => array(
-							"Last Name" => 'Cox',
+							"Email" => 'adupont@simons-rock.edu',
 						),
 						"returnFields" => array(
 							"Entity ID",

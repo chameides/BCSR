@@ -13,18 +13,20 @@ $( document ).ready(function() {
 
     // 1. Dummy data   
     /*
-        $('#txtFirstName').val('firstName');
+        $('#txtFirstName').val('firstNamed');
         $('#txtLastName').val('delete_lastName');
-        $('#txtEmail').val('test@test.com');
-        $('#birth_month').val('07');
-        $('#birth_day').val('18');
-        $('#birth_year').val('1995');
+        $('#txtEmail').val('test2@test.com');
+        $('#birth_month').val('09');
+        $('#birth_day').val('21');
+        $('#birth_year').val('1997');
         $('#txtPhone').val('1231231234');
         $('#drpCountry').val('United States');
-        $('#txtAddress1').val('1234 Maple Ave');
+        //$('#txtAddress1').val('1234 Maple Ave');
         $('#txtAddress2').val('Apt #105');
         $('#txtZipOrPostal').val('60532');
-    */ 
+        $('#gradeLevel').val('8');
+    */
+    
      
     //2. Submit
     // Variable to hold request
@@ -83,6 +85,10 @@ $( document ).ready(function() {
                     var nextPage = 'referral-form-thanks.php'; 
                     var gtmLabel = 'formInquiryReferralCounselor';
                 }
+                else if (formName == 'address') {
+                    var nextPage = 'contact-form-thanks-again.php';
+                    var gtmLabel = 'formNonInquiryAddress';
+                }
                 else {
                     var nextPage = 'contact-form-thanks.php';
                     var gtmLabel = 'Request Info';
@@ -137,16 +143,16 @@ $( document ).ready(function() {
                 required: '#chxInfoByPhone:checked'
             },
             drpCountry: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtAddress1: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             city: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             txtZipOrPostal: {
-                required: '#chxInfoByMail:checked'
+                required: [formName=='address', '#chxInfoByMail:checked']
             },
             chxInfoBy: {
                 required: true,
@@ -196,10 +202,12 @@ $( document ).ready(function() {
             //reveal and hide fields if Other is selected
             if ($(this).is(':checked') && $(this).val() == 'Other') {
                 $('#DOB').fadeOut();
+                $('#gradeLevel-container').fadeOut();
                 $('#note-container').fadeIn();
                
             } else {
                 $('#DOB').fadeIn();
+                $('#gradeLevel-container').fadeIn();
                 $('#note-container').fadeOut();
                 
             }

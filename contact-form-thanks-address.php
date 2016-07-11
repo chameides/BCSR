@@ -1,6 +1,6 @@
-<?php session_start();
-  $_SESSION = array();
-  session_regenerate_id(true);
+<?php
+ 	session_start();
+ 	//if change URL, make sure to change the redirect in contact-form-thanks
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,26 +52,22 @@
         <div class="column-center">
           <!-- Video Header -->
           
-          <h1 class="header-page text-center">Request for Info</h1>
+          <h1 class="header-page text-center">Request for Address</h1>
           <div class="row">
 
   <div class="col-md-6">
-    <p>Display Variables</p>
+    <p>Thank you text goes here....</p>
     <?php 
-      echo "variables: ";
-      print_r($_SESSION);
+	      print_r($_SESSION);
 
-    ?>
-    <p></p>
-    <p>We're so glad you would like to know
-    more about Simon's Rock and Bard
-    Academy. Please fill out the form on this page
-    and we will get in touch with you.</p>
+	    ?>
   </div>
 
 
   <div class="col-md-6">
-    <?php include 'contact-form-fields/contact-form-address-follow-yes.php'; ?>
+
+
+    <?php include 'contact-form-fields/contact-form-address.php'; ?>
   
 
 
@@ -124,11 +120,11 @@
           <li><div class="list-group-item active section-header">Tuition and Financial Aid</div></li>
             <li><a href="#" class="list-group-item">Tuition and Fees</a></li>
             <li><a href="#" class="list-group-item active">Financial Aid and Scholarships</a>
-              <ul class="flat-list list-group">
-                <li><a href="#" class="list-group-item">Sub item</a></li>
-                <li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
-                <li><a href="#" class="list-group-item">Sub item</a></li>
-              </ul>
+            	<ul class="flat-list list-group">
+            		<li><a href="#" class="list-group-item">Sub item</a></li>
+            		<li><a href="#" class="list-group-item">Sub item nav link that runs long</a></li>
+            		<li><a href="#" class="list-group-item">Sub item</a></li>
+            	</ul>
             </li>
             <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
             <li><a href="#" class="list-group-item">Checklists and Application Tips</a></li>
@@ -141,9 +137,7 @@
 <?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>
-<script id="hobson-form-submit" data-name="RFI-Address-Follow-Yes" src="/_resources/js/forms/rfi-combine-min.js"></script>
-
-
+<script id="hobson-form-submit" data-name="address" src="/_resources/js/forms/rfi-combine-min.js"></script>
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
