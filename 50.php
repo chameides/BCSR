@@ -210,7 +210,7 @@
         
       </div>
     </section>
-     <section class="section-full-screen transform">
+     <section id="section-donate" class="section-full-screen">
       <div class="container abscontainer">
         <div class="intro_sub">
           <h1 class="hero-title">Transform Lives, Transform Education
