@@ -207,7 +207,7 @@ if ($formSource == 'Referral ') {
     ;
 };
 //determine graduation year based on gradelevel
-if ($_POST['gradeLevel'] > 0) {
+if (strlen($_POST['gradeLevel']) > 0) {
     $gradeLevel = $_POST['gradeLevel']; //pull data from form
     $YearsToGraduation = 12 - $gradeLevel;
     $graduationYear =  date("Y") + $YearsToGraduation; //calculate value
