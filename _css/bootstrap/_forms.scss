@@ -235,10 +235,7 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-left: -15px;
-  @media (min-width: $screen-md) {  
-    margin-left: -19px;
-  }
+  margin-left: -19px; // changed from 15px on 6/20/2016 to fix crunched spacing on ipad air portrait view
 }
 
 
@@ -249,7 +246,6 @@ input[type="search"] {
   @media (min-width: $screen-md) {  
     margin-top: 6px; //align radio buttons with label
   }
- 
 }
 
 
