@@ -1,14 +1,15 @@
 <?php
-
+  session_start();
 /*
 Table of Contents
 1. Error Check
 2. Includes
-3. Assemble Field Data
-4. Create Array
-5. Send Data to Hobson
+3. Set Form Source
+4. Assemble Field Data
+5. Create Array
+6. Send Data to Hobson
+7. Turn Session Off
 */
-
 //1. Error Check
 /*remove comment for email error error check 
         //set email variables
@@ -20,13 +21,35 @@ Table of Contents
         //send email
         mail ( $to , $subject , $message, $headers );
 */
-
 //2. Includes
 include 'config.php';
 include 'functions.php';
-
-/* 3. Assemble field data to pass to web server */
-if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
+//3. Set Form Source
+if ($_POST['formSource'] == 'RFI-Address-Follow-Yes') { 
+    $formSource = 'RFI-Address-Follow-Yes';
+}
+else if ($_POST['formSource'] == 'RFI-Address-Follow-No') { 
+    $formSource = 'RFI-Address-Follow-No';
+}
+else if ($_POST['formSource'] == 'Address') { 
+    //address follow up form: /contact-form-address
+    if (isset($_SESSION['entityID']) &&  $_SESSION['entityID'] > 1) { 
+        //session is working
+        $formSource = 'address';
+    }
+    else {
+        //required session variable is broken, go with back up plan
+        $formSource = 'addressMissingSession';
+    }
+}
+else if ($_POST['formSource'] == 'referral') { 
+    $formSource = 'Referral ';
+}
+else if ($_POST['formSource'] == 'discovery') { 
+     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
+    $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
+}
+else if ($_POST['attendanceDate'] > 0) { //determine Form Source, if discovery day form: 
     $formSource = 'Discovery Form | Attendance Date: ' . $_POST['attendanceDate'] . ' ' . $_POST['interview']; //include discovery day custom fields in notes 
     $phone = $_POST['txtPhoneRequired']; //Phone comes from different field names depending on the form origin
 }
@@ -34,57 +57,61 @@ else if (strpos($_POST['url'],'cty') !== false) { //if the URL of the form conta
     $formSource = 'CTY Inquiry '; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 }
-
 else if (strlen($_POST['referrerName']) > 0) { //determine Form Source, if Referral form: 
   $formSource = 'Referral '; 
   $phone = $_POST['txtPhone'];  //Phone comes from different field names depending on the form origin
 }
-
 else { //default
-    $formSource = 'RFI Form '; 
+    $formSource = 'RFI Form'; 
     $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
-
-//create initial array with required fields
-$fields = array(
-    "First Name" => $_POST['txtFirstName'],
-    "Last Name" => $_POST['txtLastName']    
-);
-
-//add fields if data exists. Without if statement, blank result will overrite existing data. 
-if(strlen($_POST['txtAddress1']) > 0 ) {
-    $fields["Contact Street"] = $_POST['txtAddress1']; 
+/* 3. Assemble field data to pass to web server */
+if ($formSource == 'RFI-Address-Follow-Yes' ||
+    $formSource == 'RFI-Address-Follow-No' ||
+    $formSource == 'Referral ')
+    {
+    $phone = $_POST['txtPhone']; //Phone comes from different field names depending on the form origin
 };
-
+//add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtFirstName']) > 0 ) {
+   $fields["First Name"] = $_POST['txtFirstName'];
+};
+//add fields if data exists. Without if statement, blank result will overwrite existing data. 
+if(strlen($_POST['txtLastName']) > 0 ) {
+   $fields["Last Name"] = $_POST['txtLastName'];
+};
+if(strlen($_POST['txtAddress1']) > 0 ) {
+    $fields["Contact Street"] = $_POST['txtAddress1'];
+    if ($formSource == 'RFI-Address-Follow-Yes'){
+        $_SESSION['addressSubmit'] = 'True';
+    }
+};
 if(strlen($_POST['txtAddress2']) > 0 ) {
      $fields["Contact Street 2"] = $_POST['txtAddress2'];  
 };
-
 if(strlen($_POST['city']) > 0 ) {
      $fields["Contact City"] = $_POST['city'];
 };
-
 if($_POST['txtZipOrPostal'] > 0 ) {
     $fields["Primary Zip/Postal Code"] = $_POST['txtZipOrPostal'];
 };
-
 if(strlen($_POST['parentFirstName']) > 0 ) {
     $fields["Parent 1 First Name"] = $_POST['parentFirstName'];
 };
-
 if(strlen($_POST['parentLastName']) > 0 ) {
     $fields["Parent 1 Last Name"] = $_POST['parentLastName'];
 };
-
 if ($_POST['birth_month'] > 0 ) {
     $fields["Date of Birth"] = $_POST['birth_month'] . '/' . $_POST['birth_day'] . '/' . $_POST['birth_year'];
 };
-
 //only post country, if country is not US. and Country is assigned
 if ( ($_POST['drpCountry'] !== 'United States' ) && (strlen($_POST['drpCountry']) > 0) ) {
     $fields["Country Name"] = $_POST['drpCountry'] ;
+    $_SESSION['addressInternationalExists'] = 'true';
+}
+else {
+    $_SESSION['addressInternationalExists'] = 'false';
 };
-
 //only post state, if country is US or Canada
 if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') {
     if(strlen($_POST['drpState']) > 0 ) {
@@ -113,7 +140,9 @@ else {
     if(strlen($_POST['drpPhoneType']) > 0){ 
         $fields["Preferred Phone"] = $_POST['drpPhoneType'];
     };
-    $fields["Email"] = $_POST['txtEmail'];
+    if(strlen($_POST['txtEmail']) > 0) {
+        $fields["Email"] = $_POST['txtEmail'];
+    };
     //if($_POST['contactParentInput'] == 'ContactParent'){ };
     if (strlen($_POST['parentEmail']) > 0) {
         $fields["Parent 1 Email"] = $_POST['parentEmail'];
@@ -135,7 +164,6 @@ else {
     if(strlen($_POST['$prefContactMethod']) > 0){ 
         $fields["Preferred methods of contact"] = $prefContactMethod;
     };
-
     //if phone number exists... 
     if($phone > 0) {
         // Determine where to put phone number based on phone type
@@ -152,10 +180,18 @@ else {
         }
     }
 }
-
-//Dump misc data into description field. Would be better to put this data into specific fields. 
-$fields["Description"] = date("Y-m-d") . ' Source: ' . $formSource . '| Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
-
+if ($_POST['formSource'] !== 'Address') {
+    //Dump misc data into description field. Would be better to put this data into specific fields.
+    if ($formSource == 'RFI-Address-Follow-Yes' ||
+        $formSource == 'RFI-Address-Follow-No'
+        ) {
+        $formSourceOutput = 'RFI';
+    }
+    else {
+        $formSourceOutput = $formSource;
+    }
+    $fields["Description"] = date("Y-m-d") . ' Source: ' . $formSourceOutput . ' | Form User: ' . $_POST['userRole'] . ' | Form url: ' . $_POST['url'] . ' | Note: ' . $_POST['note'];
+}
 //If Referral Form...
 if ($formSource == 'Referral ') {
     //...dump misc referrer data into field. Would be better to put this data into specific fields.
@@ -180,9 +216,7 @@ if ($_POST['gradeLevel'] > 0) {
     }
     $fields["High School Graduation Year"] = $graduationYear; //add to array
 }
-
-
-/* User Entity IDs */
+/* Contact Owner (Admission Counselors) User Entity IDs */
 $alexandraBillickID     = 685000000121867;
 $amandaDubrowskiID      = 685000000121891;
 $chandraJoosdeKovenID   = 685000017194351;
@@ -285,6 +319,8 @@ if ($_POST['drpCountry'] == 'United States' | $_POST['drpCountry'] == 'Canada') 
         case 'HI':
         case 'MH':
         case 'PR':
+        case 'RI':
+        case 'TX':
         case 'VI':
             $contactOwnerID = $sophieMettlerGroveID;
             break;
@@ -329,45 +365,79 @@ elseif ($countryLength >= 1) {
 else {
     $contactOwnerID = $coleenCoxID;
 };
-
 $fields["Contact Owner"] = $contactOwnerID;
-
-
-/* 4. Create createFields array per web service requirement */
+/* 5. Create createFields array per web service requirement */
 $data_contact = 
     array(
         "createFields" => $fields,
         "returnFields" => array(
                 "Entity ID",
+                "Contact Street",
                 "Description",
             )
     );
-
-//define variables for specic curl event
+//define variables for specific curl event
 $content = json_encode($data_contact);
 $url_curl = $url_contacts;
-
-//5. send data to Hobson
+if ($formSource == 'address') {
+    $modify = 'True';
+    $url_curl = $url_contacts . '/' . $_SESSION['entityID'];
+}
+//6. send data to Hobson
 sendData();
-
-
-if ($_POST['userRole'] !== 'Other') {
-    $modify = 'False'; //reset to default
-    //get entity id from return string
-    $entityID = get_string_between($return, 'Entity ID":', '}');
-
-    $data_lifecycle = array("createFields" => array(
-        "Contact" => $entityID,
-        "Lifecycle Role" => 'Inquirer',
-        "Lifecycle Stage" => 'Open',
-        "Primary Role" => 'True',
-    ));
-
-    //define variables for specic curl event
-    $content = json_encode($data_lifecycle);
-    $url_curl = $url_lifecycles;
-    //send data to Hobson
-    sendData();
-
+//get entity id from return string
+$entityID = get_string_between($return, 'Entity ID":', ',"Contact');
+if ($formSource == 'RFI-Address-Follow-Yes'){
+    global $modify;
+    if (isset($_SESSION['addressSubmit']) &&  $_SESSION['addressSubmit'] == 'True') {
+        //just submitted an address on the form
+    }
+    else {
+        if ($modify == 'True'){
+            //record already exists, check database 
+            checkIFAddressExists();
+        }
+        else {
+            //$_SESSION['testing-modify'] = $modify;
+            //$_SESSION['testing-nocheck'] = 'true';
+            $_SESSION['addressExists'] = 'false';
+        }
+    }
+    //$_SESSION['testingReturn'] = $return;
+    if (isset($_SESSION['addressExists']) && $_SESSION['addressExists'] == 'false') {
+        //pass entity ID to address form
+        $_SESSION['entityID'] = $entityID;  
+    }
+}
+else if ($formSource == 'address') {
+    $_SESSION['return'] = $return;
+    $_SESSION['addressExists'] = 'true';
+}
+else if ($formSource == 'addressMissingSession') {
+}
+else {
+    if ($_POST['userRole'] !== 'Other') {
+        //prepare and send data for lifecycle 
+        //don't send lifecycle on address and addressmissingsession
+            $modify = 'False'; //reset to default
+            $data_lifecycle = array("createFields" => array(
+                "Contact" => $entityID,
+                "Lifecycle Role" => 'Inquirer',
+                "Lifecycle Stage" => 'Open',
+                "Primary Role" => 'True',
+            ));
+        //define variables for specific curl event
+        $content = json_encode($data_lifecycle);
+        $url_curl = $url_lifecycles;
+        //send data to Hobson
+        sendData();
+    }
+}
+//7. end session for form types that don't need it
+if ($formSource !== 'RFI-Address-Follow-Yes' &&
+    $_POST['formSource'] !== 'Address' ) {
+    session_unset();
+    session_destroy();
+    session_write_close();
 }
 ?>
