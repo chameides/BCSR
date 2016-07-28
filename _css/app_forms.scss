@@ -74,91 +74,6 @@ label.error {
   }
 }
 
-.form_h2 {
-  font-family: $lehavre;
-  font-size: 4rem;
-  letter-spacing: -0.08em;
-  line-height: 1.1;
-}
-     
-.form_h1 {
-    font-family: $lehavre;
-    font-size: 5rem;
-    letter-spacing: -0.08em;
-    line-height: 1.1;
-}
-
-/* fix styling for select boxes, check boxes and radio buttons */
-.form-control, div.form_responses select {
-    height: 34px;
-    font-size: 14px;
-    color: #555;
-    background-color: $white;
-    background-image: none;
-    border: 1px solid #ccc;
-    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-     margin-right:10px;
-}
-     
-div.checkbox label {
-  font-size: 2rem;
-  line-height: 2.6rem;
-  font-family: $helvetica-cond;
-  color: $medium-gray;
-}
-     
-div.form_response input[type="checkbox"],
-div.form_response input[type="radio"] {
-  margin-top: 0px;
-}
-     
-div.form_response input+label {
-  margin-left: .4rem
-}
-
-/* fix styling for submit button */
-div.action input[type="button"], 
-.action button {
-  text-shadow:none;
-  border:none;
-  box-shadow:none;
-  text-transform: uppercase;
-  font-family: $lehavre;
-  font-size: 16px;
-  letter-spacing: -0.04em;
-  padding: 15px 20px;  
-}
-
-/* fix spacing for address block */
-div.form_address label {
-  padding:5px 0
-}
-
-div.form_address input, 
-div.form_address select {
-  margin:0 0 .5em
-}
-
-/* ------- Conforming Slate forms ----------- */
-
-/* fix styling on date of birth label */
-.form_label legend {
-  display:block;
-  max-width:100%;
-  margin-bottom: 5px;
-  font-weight:bold;
-  font-size: 2rem; 
-  line-height: 2.6rem; 
-  color: $medium-gray;
-  border-bottom: 0;
-  @media screen and (max-width: 992px) {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-  }
-}
-
 /* style h1 and h2 */
 .form_h2 {
   font-family: $lehavre;
@@ -187,7 +102,7 @@ div.form_address select {
     transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
      margin-right:10px;
 }
-     
+ /* style checkbox label */    
 div.checkbox label {
   font-size: 2rem;
   line-height: 2.6rem;
@@ -204,17 +119,41 @@ div.form_response input+label {
   margin-left: .4rem
 }
 
+/* add padding to text input and maintain consistent input box size for mobile */
+div.form_repsonses input[type="text"] {
+  padding: 3px 12px;
+  height: 34px;
+  font-size: 14px;
+}
+
+/* adding a right margin to keep fields from clashing on mobile */
+div.form-responses {
+  margin-right: 5%;
+}
+/* adjust text area width */
+div.form-responses textarea {
+width 550px;
+@media screen and (max-width:  $screen-sm-min) {
+  width:360px
+  }  
+}
+
 /* fix styling for submit button */
 div.action input[type="button"], 
 .action button {
-  text-shadow:none;
-  border:none;
-  box-shadow:none;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
   text-transform: uppercase;
   font-family: $lehavre;
   font-size: 16px;
   letter-spacing: -0.04em;
-  padding: 15px 20px;  
+  padding: 15px 20px;
+  color: $white; 
+  background-color: $red;
+  &:hover {
+  background-color: $dark-gray;
+  }
 }
 
 /* fix spacing for address block */
