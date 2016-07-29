@@ -120,19 +120,20 @@ div.form_response input+label {
 }
 
 /* add padding to text input and maintain consistent input box size for mobile */
-div.form_repsonses input[type="text"] {
+div.form_responses input[type="text"] {
   padding: 3px 12px;
   height: 34px;
   font-size: 14px;
 }
 
 /* adding a right margin to keep fields from clashing on mobile */
-div.form-responses {
+div.form_responses {
   margin-right: 5%;
 }
+
 /* adjust text area width */
-div.form-responses textarea {
-width 550px;
+div.form_responses textarea {
+width: 550px;
 @media screen and (max-width:  $screen-sm-min) {
   width:360px
   }  
