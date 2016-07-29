@@ -57,6 +57,10 @@ label.error {
 }
 
 /* ------- Conforming Slate forms ----------- */
+/* adjust spacing between items */
+div.form_question {
+  padding: .4em !important
+}
 
 /* fix styling on date of birth label */
 .form_label legend {
@@ -120,7 +124,7 @@ div.form_response input+label {
 }
 
 /* add padding to text input and maintain consistent input box size for mobile */
-div.form_responses input[type="text"] {
+div.form_responses input[type="text"], div.form_responses input[type="email"] {
   padding: 3px 12px;
   height: 34px;
   font-size: 14px;
@@ -128,7 +132,7 @@ div.form_responses input[type="text"] {
 
 /* adding a right margin to keep fields from clashing on mobile */
 div.form_responses {
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 /* adjust text area width */
@@ -165,4 +169,21 @@ div.form_address label {
 div.form_address input, 
 div.form_address select {
   margin:0 0 .5em
+}
+
+/* ----------- Slate inquiry form specific styles -------------------- */
+/* Adjust date of birth select width to mimic ou forms. Note this style is specific to inquiry form. Also adjust grade level select width and phone type width */
+select#form_f4cf7aff-c651-4389-9cbc-3c043192bf25_m, select#form_c7ca67a4-2b72-4ed5-8db4-4fd5cf63a7b9 {
+  width: 40%;
+}
+select#form_f4cf7aff-c651-4389-9cbc-3c043192bf25_d, select#form_f4cf7aff-c651-4389-9cbc-3c043192bf25_y  {
+  width: 20%;
+}
+select#form_717ce2a0-6dc7-418c-8af2-820ea354585b {
+  width: 100%
+}
+
+/* Indent conditional fields specific to inquiry form */
+div#form_question_fda1ad22-029d-4ff8-89e6-343325e83cf7, div#form_question_8067ef76-9d30-470c-8cc9-23dcfbb40af1 {
+  padding-left: 35px;
 }
