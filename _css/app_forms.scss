@@ -114,23 +114,6 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     padding-bottom: 0;
   }
 
-  /* fix styling for submit button */
-  div.action input[type="button"], 
-  .action button {
-    //text-shadow: none;
-    border: none;
-    //box-shadow: none;
-    text-transform: uppercase;
-    font-family: $lehavre;
-    font-size: 16px;
-    letter-spacing: -0.04em;
-    padding: 15px 20px;
-    color: $white; 
-    background-color: $red;
-    &:hover {
-    background-color: $dark-gray;
-    }
-  }
 
   /* fix styling for select boxes, check boxes and radio buttons */
   .form-control, div.form_responses select {
@@ -192,6 +175,24 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     padding-left: 6%;
   }
 }
+
+/* fix styling for submit button */
+  .action input[type="button"], 
+  .action button {
+    //text-shadow: none;
+    border: none;
+    //box-shadow: none;
+    text-transform: uppercase;
+    font-family: $lehavre;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    padding: 15px 20px;
+    color: $white; 
+    background-color: $red;
+    &:hover {
+    background-color: $dark-gray;
+    }
+  }
 
 
 
