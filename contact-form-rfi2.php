@@ -57,9 +57,9 @@
 
   <div class="col-md-6">
     <div id="form_064e7e99-32b7-4eb1-962f-c84b20022dd5">Loading...</div>
-      <script>// 
-var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=064e7e99-32b7-4eb1-962f-c84b20022dd5&output=embed&div=form_064e7e99-32b7-4eb1-962f-c84b20022dd5' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    // </script>
+<script>// <![CDATA[
+var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=064e7e99-32b7-4eb1-962f-c84b20022dd5&output=embed&div=form_064e7e99-32b7-4eb1-962f-c84b20022dd5&amp;redirect=http%3a%2f%2fsimons-rock.edu%2fwhy-simons-rock%2ftransform-your-wishes%2fcontact-form-thanks.php' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+// ]]></script>
   </div>
 
 
