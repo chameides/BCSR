@@ -71,7 +71,7 @@ module.exports = (grunt) ->
     browserSync:
       dist: 
         bsFiles: 
-          src: ['_css/**/*.css', '*.php']
+          src: ['*.js', '_css/**/*.css', '*.php']
       options: 
         proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
         watchTask: true,
