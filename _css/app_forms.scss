@@ -71,8 +71,8 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
 
    .form_question {
     padding-top: 0;
-    padding-bottom: .1rem !important;
-    margin-top: 0 !important;
+    padding-bottom: 1rem;
+    margin-top: 0;
   } 
 
   //2. Field Types
@@ -189,7 +189,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     font-family: $lehavre;
     font-size: 16px;
     letter-spacing: -0.04em;
-    padding: 11px 20px;
+    padding: 10.5px 20px;
     color: $white; 
     background-color: $red;
     &:hover {
