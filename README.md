@@ -55,6 +55,7 @@ events Markup for Events CMS, no automatic syncing to live site<br>
 
 1. In Terminal, navigate to the project folder. 
 2. Compile with with either `grunt` or `grunt watch`
+3. Live preview with `grunt serve`
 
 ### Background on Grunt 
 
@@ -83,7 +84,8 @@ The vector images for the At-A-Glance are compiled using Grunt and GruntIcon. To
 
 ### Local Testing
 
-Use MAMP to preview php files locally. 
+Live test with `grunt serve`. Browser will reload when .scss, .css, or .php files are updated. 
+
 
 ## CMS Deployment
 

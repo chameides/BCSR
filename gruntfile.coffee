@@ -31,10 +31,6 @@ module.exports = (grunt) ->
         ],
       }
        
-            
-        
-    
-
     svgmin:
       bcsrIcons:
         files: [{
@@ -63,6 +59,30 @@ module.exports = (grunt) ->
             white: '#ffffff'
             black: '#000000'
 
+    php:
+      dist:
+        options:
+          hostname: '127.0.0.1',
+          port: 9000,
+          base: '/Users/mchameides/Documents/web/BCSR'
+          keepalive: false,
+          open: false
+
+    browserSync:
+      dist: 
+        bsFiles: 
+          src: ['*.js', '_css/**/*.css', '*.php']
+      options: 
+        proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
+        watchTask: true,
+        notify: true,
+        open: true,
+        logLevel: 'silent',
+        ghostMode: 
+            clicks: true,
+            scroll: true,
+            links: true,
+            forms: true
 
     watch:
       styles:
@@ -80,4 +100,7 @@ module.exports = (grunt) ->
   require('load-grunt-tasks')(grunt)
 
 
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'php'])
+
+  grunt.registerTask('serve', ['php:dist', 'browserSync:dist', 'watch'])
+
