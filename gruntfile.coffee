@@ -30,7 +30,6 @@ module.exports = (grunt) ->
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
         ],
       }
-       
     svgmin:
       bcsrIcons:
         files: [{
@@ -71,7 +70,7 @@ module.exports = (grunt) ->
     browserSync:
       dist: 
         bsFiles: 
-          src: ['_css/**/*.css', '*.php']
+          src: ['*.js', '_css/**/*.css', '*.php']
       options: 
         proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
         watchTask: true,
@@ -100,7 +99,10 @@ module.exports = (grunt) ->
   require('load-grunt-tasks')(grunt)
 
 
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'php'])
+  #grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'php'])
+
+  grunt.registerTask('default', ['sass', 'concat', 'uglify'])
+
 
   grunt.registerTask('serve', ['php:dist', 'browserSync:dist', 'watch'])
 
