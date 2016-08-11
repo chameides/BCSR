@@ -150,6 +150,10 @@ div.form_response input[type="radio"] {
   @media screen and (min-width:  $screen-sm-min) {
     //Email Inquiry Landing Page + Main RFI page | First Name
     #form_question_47edfea2-9d65-4d03-8692-5bcfbc4382ae,
+    //Main RFI Page Parent | First Name
+    #form_question_5944f02d-3f1c-46e8-8438-c5e2fe096d2b,
+    //Main RFI Page other | First Name
+    #form_question_1de43127-ce57-416b-b5bb-522a13256818
      {
       margin-right: 3%;
     }
@@ -157,6 +161,14 @@ div.form_response input[type="radio"] {
     #form_question_47edfea2-9d65-4d03-8692-5bcfbc4382ae,
     //Email Inquiry Landing Page + Main RFI Page | Last Name 
     #form_question_1b24d28b-7525-41f4-9449-f643909afa07,
+    //Main RFI Page Parent | First Name
+    #form_question_5944f02d-3f1c-46e8-8438-c5e2fe096d2b,
+    //Main RFI Page Parent | Last Name
+    #form_question_2df2ab1d-d2af-4f9a-9c3a-fa9b8b8aa05e,
+    //Main RFI Page other | First Name
+    #form_question_1de43127-ce57-416b-b5bb-522a13256818,
+    //Main RFI Page other | Last Name
+    #form_question_ccc380d6-2e5b-4995-b089-a27e1837e582
  {
       width: 49%;
       clear: none !important;
