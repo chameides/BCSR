@@ -52,7 +52,7 @@
           <div class="row">
 
   <div class="col-md-6">
-    <div id="form_8fa8d6d3-2d71-4065-b1b3-99300d431e65">Loading...</div><script>/*<![CDATA[*/var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=8fa8d6d3-2d71-4065-b1b3-99300d431e65&output=embed&div=form_8fa8d6d3-2d71-4065-b1b3-99300d431e65' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);/*]]>*/</script>
+    <div id="form_7191bf6e-66c3-4feb-9d3f-54a572a422fa">Loading...</div><script>/*<![CDATA[*/var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=7191bf6e-66c3-4feb-9d3f-54a572a422fa&output=embed&div=form_7191bf6e-66c3-4feb-9d3f-54a572a422fa' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);/*]]>*/</script>
   </div>
 
 
