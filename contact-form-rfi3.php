@@ -57,6 +57,12 @@
 
   <div class="col-md-6">
    <div id="form_ed521162-2b0f-41e6-9c3d-e2f7dea0e15f">Loading...</div><script>/*<![CDATA[*/var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=ed521162-2b0f-41e6-9c3d-e2f7dea0e15f&output=embed&div=form_ed521162-2b0f-41e6-9c3d-e2f7dea0e15f' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);/*]]>*/</script>
+
+
+   <div class="form_question form_text form_question_ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3 hidden form_layout_" id="form_question_ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3" style="clear: left;" data-id="ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3" data-type="text" data-export="sys:field:source_raw"><label class="form_label" for="form_ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3">Raw URL</label><div class="form_responses"><input type="text" size="48" id="form_ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3" name="form_ba4dbe8e-5d5f-4f16-8486-fcf18e0cfde3" value="" autocomplete="off"></div></div>
+
+
+  
 </div>
 
   <div class="col-md-6">
@@ -172,7 +178,7 @@ function callout_parallax(){
 }
 
   </script>
-
+  <script type="text/javascript" src="/_js/slate.js"></script>
 
     
   </body>
