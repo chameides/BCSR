@@ -90,6 +90,7 @@
 								<li><a href="contact-form-discovery.php">Discovery Day</a></li>
 								<li><a href="contact-form-discovery2.php">Discovery Day - Slate vs Original</a></li>
 								<li><a href="gatekeeper.php">Gatekeeper</a></li>
+								<li><a href="gatekeeper-academy.php">Gatekeeper-Academy</a></li>
 
 
 							</ul>
