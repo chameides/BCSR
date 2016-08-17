@@ -81,6 +81,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
   div.form_responses {
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     textarea
      {
       padding: 3px 12px; 
@@ -90,7 +91,8 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
 
   div.form_responses {
     input[type="text"],
-    input[type="email"] {
+    input[type="email"],
+    input[type="tel"] {
     height: 34px;
     }
   }
@@ -104,6 +106,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
 
   input[type="text"],
   input[type="email"],
+  input[type="tel"],
   .form_question, 
   .form_responses select {
     width: 100%;
@@ -143,6 +146,9 @@ div.form_response input[type="checkbox"],
 div.form_response input[type="radio"] {
   margin-top: -3px;
   margin-right: -5px;
+  @media screen and (max-width: $screen-sm-min) {
+      margin-right: 0px;
+  }
 }
   
   //3. Fields Specific
@@ -153,10 +159,23 @@ div.form_response input[type="radio"] {
     //Main RFI Page Parent | First Name
     #form_question_5944f02d-3f1c-46e8-8438-c5e2fe096d2b,
     //Main RFI Page other | First Name
-    #form_question_1de43127-ce57-416b-b5bb-522a13256818
+    #form_question_1de43127-ce57-416b-b5bb-522a13256818,
+    //Discovery day | First Name - student radio
+    #form_question_ad16cdda-3ea4-4452-ab1c-b5b855e89a2d,
+    //Discovery day | First Name - parent radio
+    #form_question_3f639c55-aa37-4541-a877-e1c3b6cd2a7d,
+    //3 signs form | First Name
+    #form_question_e6144ee0-97ee-4bab-bec8-360e30381d5d,
+    //Discovery Day | Phone Number - student radio
+    #form_question_4a8d59ff-99de-4b75-b532-86f1064b516c, 
+    //Discovery Day | Phone Type - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Discovery Day | Phone Number - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107
      {
       margin-right: 3%;
     }
+
     //Email Inquiry Landing Page + Main RFI Page | First Name
     #form_question_47edfea2-9d65-4d03-8692-5bcfbc4382ae,
     //Email Inquiry Landing Page + Main RFI Page | Last Name 
@@ -168,7 +187,27 @@ div.form_response input[type="radio"] {
     //Main RFI Page other | First Name
     #form_question_1de43127-ce57-416b-b5bb-522a13256818,
     //Main RFI Page other | Last Name
-    #form_question_ccc380d6-2e5b-4995-b089-a27e1837e582
+    #form_question_ccc380d6-2e5b-4995-b089-a27e1837e582,
+    //Discovery day | First Name - student radio
+    #form_question_ad16cdda-3ea4-4452-ab1c-b5b855e89a2d,
+    //Discovery day | Last Name - student radio
+    #form_question_8a6486e9-1f10-4979-8ac9-f66039517237,
+    //Discovery day | First Name - parent radio
+    #form_question_3f639c55-aa37-4541-a877-e1c3b6cd2a7d,
+    //Discovery day | Last Name - parent radio
+    #form_question_03289424-52de-495c-96b0-7d2dd8741a94,
+    //3 signs form | First Name
+    #form_question_e6144ee0-97ee-4bab-bec8-360e30381d5d,
+    //3 signs form | Last Name
+    #form_question_c3ad7783-17fa-4723-a1d6-cf957c3e4aa3,
+    //Discovery Day | Phone Number - student radio
+    #form_question_4a8d59ff-99de-4b75-b532-86f1064b516c, 
+    //Discovery Day | phone type - student radio
+    #form_question_266a8c6f-7b91-490b-b6ae-f8ff4d611eec,
+    //Discovery Day | Phone Number - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Discovery Day | phone type - parent radio
+    #form_question_66bec60a-4feb-4649-aaad-149dcd49f96a
  {
       width: 49%;
       clear: none !important;
@@ -179,7 +218,13 @@ div.form_response input[type="radio"] {
   //Email Inquiry Landing Page + Main RFI student | Date of Birth
   #form_f4cf7aff-c651-4389-9cbc-3c043192bf25_,
   //Main RFI Page | D.O.B. parent
-  #form_e83605f3-a3cb-4ce1-84e7-bd5c25b2b8f1_
+  #form_e83605f3-a3cb-4ce1-84e7-bd5c25b2b8f1_,
+  //Discovery day form - DOB student radio
+  #form_3b028115-91cb-4151-a334-866789d778dc_,
+  //Discovery day form - DOB parent radio
+  #form_260c7ee7-ad3f-4282-a75f-55ef44e2b619_,
+  //3-signs form | DOB
+  #form_ee1ef843-367e-4dc1-8a4b-9b85af820da3_,
    {
     //month
     &m {
@@ -251,10 +296,13 @@ div.form_response input[type="radio"] {
     }
   }
 
-/* adjust horizontal spacing abd mobile view for state and country on main rfi */
+/* adjust horizontal spacing and mobile view for state and country on main rfi */
 #form_question_36d183ec-678b-482d-b9b4-8f53a22c55d3 span,
 #form_question_53dafb6a-2092-4e2e-80d9-fedfc8561538 span,
-#form_question_5bd506df-6f4c-416c-9f06-9e57553f449f span { 
+#form_question_5bd506df-6f4c-416c-9f06-9e57553f449f span,
+//discovery day form
+#form_question_be309521-1317-4041-b9fb-6b1e0b15082e span,
+#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span { 
   display:inline-block;
   width: 50%;
   @media screen and (max-width: $screen-sm-min) {
@@ -278,13 +326,20 @@ label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_country],
 label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_postal],
 label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_region],
 label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_country],
-label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_postal]
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_postal],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_region],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_country],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_postal],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_region],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_country],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
  {
   margin-top: 10px;
 }
   
 /* style --I'm a future-- on main rfi */
-#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend {
+#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend {
   @extend h3, h3.subheadline;
 }
 
