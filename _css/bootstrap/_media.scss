@@ -23,12 +23,12 @@
 
 .media-right,
 .media > .pull-right {
-  padding-left: 10px;
+  padding-left: $padding-large-vertical;
 }
 
 .media-left,
 .media > .pull-left {
-  padding-right: 10px;
+  padding-right: $padding-large-vertical;
 }
 
 .media-left,
