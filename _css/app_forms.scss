@@ -347,17 +347,15 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
   @extend h3, h3.subheadline;
 }
 
-// 3 Signs form centering of form in blue box
-div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e {
-    padding-left: $padding-large-vertical;
+//Gatekeeper Alignment inside blue box
+.row-col-highlight {
+  .form_pages, .action button.default {
+    margin-left: $padding-large-vertical;
     @media screen and (max-width: $screen-xs-max) {
-      padding-left: $padding-large;
+      margin-left: $padding-large;
     }
   }
-//3 signs form fixing spacing on submit button
-  div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e div.action {
-    //margin-left:3%;
-  }
+}
 
 //not sure if we need these (retain them should they use the other parts of the form in the future?) 
 /* style h1 and h2 
