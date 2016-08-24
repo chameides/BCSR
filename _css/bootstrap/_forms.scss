@@ -205,7 +205,7 @@ input[type="search"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: $padding-large;
+  margin-bottom: 15px;
 }
 
 
@@ -270,7 +270,7 @@ input[type="search"] {
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
-  padding-left: $padding-large;
+  padding-left: 15px;
   margin-bottom: 0;
   vertical-align: middle;
   font-weight: normal;
