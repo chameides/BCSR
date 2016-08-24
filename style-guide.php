@@ -93,6 +93,7 @@
 								<li><a href="gatekeeper-slate-prospects.php">Gatekeeper-Slate-Prospects</a></li>
 								<li><a href="gatekeeper-academy.php">Gatekeeper-Academy</a></li>
 								<li><a href="gatekeeper-academy-slate.php">Gatekeeper-Academy-Slate</a></li>
+								<li><a href="gatekeeper-college-slate.php">Gatekeeper-College-Slate</a></li>
 
 
 							</ul>

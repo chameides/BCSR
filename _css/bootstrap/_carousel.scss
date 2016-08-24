@@ -172,7 +172,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: $padding-large-vertical;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -183,12 +183,12 @@
 
   li {
     display: inline-block;
-    width:  10px;
-    height: 10px;
+    width:  $padding-large-vertical;
+    height: $padding-large-vertical;
     margin: 1px;
     text-indent: -999px;
     border: 1px solid $carousel-indicator-border-color;
-    border-radius: 10px;
+    border-radius: $padding-large-vertical;
     cursor: pointer;
 
     // IE8-9 hack for event handling

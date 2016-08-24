@@ -14,7 +14,7 @@ label.error {
 
 #contactForm {
   .col-md-7, .col-sm-7, .col-md-5, .col-sm-5, {
-    padding-left: 10px;
+    padding-left: $padding-large-vertical;
   }
   //consistent styling for most common column sizes
   .col-sm-3,
@@ -31,8 +31,8 @@ label.error {
     padding-left: 15px;
     padding-right: 15px;
     @media screen and (min-width: $screen-sm-min) {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $padding-large-vertical;
+      padding-right: $padding-large-vertical;
     }
 
   }
@@ -41,7 +41,7 @@ label.error {
     //eliminate margin on second column
     &.col-sub-trailing-sm {
       @media screen and (min-width: $screen-sm-min) {
-        padding-left: 10px;
+        padding-left: $padding-large-vertical;
       }
     }
   }
@@ -73,6 +73,9 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     padding-top: 0;
     padding-bottom: 1rem;
     margin-top: 0;
+    @media screen and (min-width: $screen-md-min) {
+      padding-right: 0;
+    }
   } 
 
   //2. Field Types
@@ -174,7 +177,7 @@ div.form_response input[type="radio"] {
     //Discovery Day | Phone Number - parent radio
     #form_question_2944759f-bf90-4767-852b-e591f6c30107
      {
-      margin-right: 3%;
+      margin-right: 4%;
     }
 
     //Email Inquiry Landing Page + Main RFI Page | First Name
@@ -335,7 +338,7 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_region],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_country],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
  {
-  margin-top: 10px;
+  margin-top: $padding-large-vertical;
 }
   
 /* style --I'm a future-- on main rfi */
@@ -344,21 +347,15 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
   @extend h3, h3.subheadline;
 }
 
-// 3 Signs form centering of form in blue box
-div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e {
-    display:table;
-    margin: 0 auto;
-    div.form_question {
-      margin: 0px;
+//Gatekeeper Alignment inside blue box
+.row-col-highlight {
+  .form_pages, .action button.default {
+    margin-left: $padding-large-vertical;
+    @media screen and (max-width: $screen-xs-max) {
+      margin-left: $padding-large;
     }
   }
-//3 signs form fixing spacing on submit button
-  div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e div.action {
-    margin-left:3%;
-    @media screen and (max-width: $screen-sm-min) {
-      margin-left: 2%;
-      }
-  }
+}
 
 //not sure if we need these (retain them should they use the other parts of the form in the future?) 
 /* style h1 and h2 
