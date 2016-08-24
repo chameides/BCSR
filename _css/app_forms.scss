@@ -28,8 +28,8 @@ label.error {
   .col-md-8,
   .col-md-12,
    {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $padding-large;
+    padding-right: $padding-large;
     @media screen and (min-width: $screen-sm-min) {
       padding-left: 10px;
       padding-right: 10px;
@@ -346,18 +346,14 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
 
 // 3 Signs form centering of form in blue box
 div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e {
-    display:table;
-    margin: 0 auto;
-    div.form_question {
-      margin: 0px;
+    padding-left: 10px;
+    @media screen and (max-width: $screen-sm-max) {
+      padding-left: $padding-large;
     }
   }
 //3 signs form fixing spacing on submit button
   div#form_7c83951b-74e7-4985-ae1b-7c74f77af05e div.action {
-    margin-left:3%;
-    @media screen and (max-width: $screen-sm-min) {
-      margin-left: 2%;
-      }
+    //margin-left:3%;
   }
 
 //not sure if we need these (retain them should they use the other parts of the form in the future?) 
