@@ -219,43 +219,37 @@ div.form_response input[type="radio"] {
     }
   }
 
-  //Email Inquiry Landing Page + Main RFI student | Date of Birth
-  #form_f4cf7aff-c651-4389-9cbc-3c043192bf25_,
-  //Main RFI Page | D.O.B. parent
-  #form_e83605f3-a3cb-4ce1-84e7-bd5c25b2b8f1_,
-  //Discovery day form - DOB student radio
-  #form_3b028115-91cb-4151-a334-866789d778dc_,
-  //Discovery day form - DOB parent radio
-  #form_260c7ee7-ad3f-4282-a75f-55ef44e2b619_,
-  //3-signs form | DOB
-  #form_ee1ef843-367e-4dc1-8a4b-9b85af820da3_,
-   {
-    //month
-    &m {
-      width: 30%;
-      margin-left: 0px;
-      margin-right: 3%;
-      @media screen and (max-width: $screen-sm-min) {
-      width:27%;
-      }
-    }
-    //day
-    &d {
-      width: 30%;
-      margin-right: 3%;
-      @media screen and (max-width: $screen-sm-min) {
-      width:27%;
-      }
-    }
-    //year
-    &y {
-      width: 30%;
-      margin-right: 0px;
-      @media screen and (max-width: $screen-sm-min) {
-      width:27%;
-      }
-    }
+ 
+.field-date-of-birth {
+  width: 30%;
+  @media screen and (max-width: $screen-sm-min) {
+    width:27%;
   }
+}
+
+//Each form with a date of birth field in Slate has a unique id and there is not a universal calss. All id's are appended with _$. Use the append to match selector. 
+
+[id^="form_"] //id begins with form_ (lots of stuff)
+  {
+  &[id$="_m"] //Month: (id ends with _m) 
+  {
+    @extend .field-date-of-birth;
+    margin-left: 0px; //no left margin on first item. 
+    margin-right: 3%;    
+  }
+  &[id$="_d"] //Day: (id ends with _d) 
+  {
+    @extend .field-date-of-birth;
+    margin-right: 3%;
+  }
+  &[id$="_y"] //Year: (id ends with _y)
+  {
+    @extend .field-date-of-birth;
+    margin-right: 0px; 
+  } 
+}
+
+
 
   //Email Inquiry Landing Page | Phone Number
   #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8 {
