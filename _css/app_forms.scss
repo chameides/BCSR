@@ -28,8 +28,8 @@ label.error {
   .col-md-8,
   .col-md-12,
    {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $padding-large;
+    padding-right: $padding-large;
     @media screen and (min-width: $screen-sm-min) {
       padding-left: $padding-large-vertical;
       padding-right: $padding-large-vertical;

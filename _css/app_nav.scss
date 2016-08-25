@@ -65,7 +65,7 @@ nav#mainnav {
 	.info-for-mobile {
 		float: none; 
 		clear: both;
-		padding:15px;
+		padding:$padding-large;
 		background-color:$medium-gray;
 		color:$dark-gray;
 		.left-me {
@@ -174,8 +174,8 @@ nav#mainnav {
 			@media (max-width: $screen-sm-max) {
 				position:absolute;
 				top:105px;
-				left:15px;
-				right:15px;
+				left:$padding-large;
+				right:$padding-large;
 			}
 			.input-group-btn {
 				@media (max-width: $screen-sm-max) {

@@ -326,7 +326,7 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
 .viewall_container {
   position: absolute;
   z-index: 1;
-  bottom: 15px;
+  bottom: $padding-large;
   left: 0;
   right: 0;
   text-align: center;
@@ -719,8 +719,8 @@ body#why .side-nav-mobile,
   &.page-hero-gateway-alt {
     @media screen and (max-width: $screen-sm-min) {
       padding-top: 40%;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: $padding-large;
+      padding-right: $padding-large;
     }
   }
 }
@@ -879,7 +879,7 @@ body#why .side-nav-mobile,
 }
 
 .btn-margin-adjust {
-  margin-left: 15px;
+  margin-left: $padding-large;
 }
 
 .hero-buttons {
@@ -902,7 +902,7 @@ body#why .side-nav-mobile,
     margin-left: 0;
   }
     @media screen and (max-width: $screen-xs2) {
-        margin-left: 15px;
+        margin-left: $padding-large;
         &:first-child {
           margin-left: 0;
         }
