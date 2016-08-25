@@ -123,6 +123,9 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     font-size: 2rem;  
     color: $medium-gray;
     border-bottom: 0;
+    .row-col-highlight & {
+      color: $white; //div with blue background gets white type treatment
+    }
     @media screen and (max-width: 992px) {
       font-size: 1.1rem;
       line-height: 1.6rem;
@@ -341,14 +344,16 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
   @extend h3, h3.subheadline;
 }
 
-//Gatekeeper Alignment inside blue box
+//Gatekeeper Blue Box
 .row-col-highlight {
-  .form_pages, .action button.default {
+  .form_pages, .action button.default { //Alignment inside blue box
     margin-left: $padding-large-vertical;
     @media screen and (max-width: $screen-xs-max) {
       margin-left: $padding-large;
     }
   }
+
+
 }
 
 //not sure if we need these (retain them should they use the other parts of the form in the future?) 
