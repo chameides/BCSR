@@ -58,7 +58,7 @@ b. add page-hero-container-small
                 <img class="pull-left" src="/_images/why-simons-rock/5-signs-screenshot.jpg" alt="placeholder" style="width: 50px;"><p>Itching to explore more subjects, bored with High School classes and more curious than most?</p>
               </div>
               <div style="clear: both;">
-                <div id="form_b9aff7d2-bc9b-4850-acb6-98a4841c5a86">Loading...</div><script>/*<![CDATA[*/var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=b9aff7d2-bc9b-4850-acb6-98a4841c5a86&output=embed&div=form_b9aff7d2-bc9b-4850-acb6-98a4841c5a86' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);/*]]>*/</script>
+                <div id="form_b9aff7d2-bc9b-4850-acb6-98a4841c5a86">Loading...</div><script>/*<![CDATA[*/var script = document.createElement('script'); script.async = 1; script.src = 'https://apply.simons-rock.edu/register/?id=b9aff7d2-bc9b-4850-acb6-98a4841c5a86&output=embed&div=form_b9aff7d2-bc9b-4850-acb6-98a4841c5a86&amp;redirect=https%3a%2f%2fsimons-rock.edu%2fwhy-simons-rock%2funderstanding-early-college%2fready%2f5-signs-download.php' + ((location.search.length > 1) ? '&' + location.search.substring(1) : ''); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);/*]]>*/</script>
               </div>
             </div>
             <div class="col-sm-6">
