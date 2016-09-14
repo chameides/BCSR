@@ -132,6 +132,13 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     }
   }
 
+  //vertically align select input with text input 
+  .form_select label {
+    @media screen and (min-width: $screen-md-min) {
+      margin-bottom: 3px;
+    }
+  }
+
   label {
     padding-bottom: 0;
   }
@@ -158,7 +165,10 @@ div.form_response input[type="radio"] {
   }
 }
   
-  //3. Fields Specific
+//3. Fields Specific
+
+ 
+
 
   @media screen and (min-width:  $screen-sm-min) {
     //Email Inquiry Landing Page + Main RFI page | First Name
@@ -178,8 +188,10 @@ div.form_response input[type="radio"] {
     //Discovery Day | Phone Type - parent radio
     #form_question_2944759f-bf90-4767-852b-e591f6c30107,
     //Discovery Day | Phone Number - parent radio
-    #form_question_2944759f-bf90-4767-852b-e591f6c30107
-     {
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d 
+    {
       margin-right: 4%;
     }
 
@@ -214,8 +226,12 @@ div.form_response input[type="radio"] {
     //Discovery Day | Phone Number - parent radio
     #form_question_2944759f-bf90-4767-852b-e591f6c30107,
     //Discovery Day | phone type - parent radio
-    #form_question_66bec60a-4feb-4649-aaad-149dcd49f96a
- {
+    #form_question_66bec60a-4feb-4649-aaad-149dcd49f96a,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Gatekeeper Prospect | Phone Type
+    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3
+  {  
       width: 49%;
       clear: none !important;
       float: left;
