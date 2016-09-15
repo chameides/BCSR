@@ -119,7 +119,7 @@ label.filter-text {
 }
 .form-academics-border {
   border-left: 1px solid $dark-gray;
-  padding-left: 15px;
+  padding-left: $padding-large;
 }
 // Custom Checkbox 
 #academics_page input[type=checkbox]:not(old),
@@ -230,7 +230,7 @@ label.filter-text {
 	text-align: left;
 	//overflow: hidden;
 	background-color:#fff;
-	padding-bottom:15px;
+	padding-bottom:$padding-large;
   @media screen and (max-width:951px) {
     max-width: 689px;
   } 

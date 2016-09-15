@@ -205,7 +205,7 @@ input[type="search"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: $padding-large;
 }
 
 
@@ -217,8 +217,8 @@ input[type="search"] {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: $padding-large-vertical;
+  margin-bottom: $padding-large-vertical;
 
   label {
     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
@@ -270,7 +270,7 @@ input[type="search"] {
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
-  padding-left: 15px;
+  padding-left: $padding-large;
   margin-bottom: 0;
   vertical-align: middle;
   font-weight: normal;
@@ -284,7 +284,7 @@ input[type="search"] {
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   @media (min-width: $screen-md) {  
-    margin-left: 10px; // space out consecutive inline controls
+    margin-left: $padding-large-vertical; // space out consecutive inline controls
   }
 }
 
@@ -443,7 +443,7 @@ input[type="checkbox"] {
 .help-block {
   display: block; // account for any element using help-block
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: $padding-large-vertical;
   color: lighten($text-color, 25%); // lighten the text some for contrast
 }
 

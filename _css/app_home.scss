@@ -111,8 +111,8 @@ body#home {
 		.intro_sub {
 			display:table-cell;
 			vertical-align:middle;
-			margin-left:15px;
-			margin-right:15px;
+			margin-left:$padding-large;
+			margin-right:$padding-large;
 			@media (max-width: $screen-sm-max) {
 				width:100vw;
 			}
@@ -320,8 +320,8 @@ body#home {
 			background-color:$medium-gray;   
 		}
 		h4, p {
-			padding-left:15px;
-			padding-right:15px;
+			padding-left:$padding-large;
+			padding-right:$padding-large;
 		}
 		h4 { 
 			color:$white;
@@ -354,10 +354,10 @@ body#home {
 					opacity:1!important;
 				}
 				&.leftbtn {
-					left:15px;
+					left:$padding-large;
 				}
 				&.rightbtn {
-					right:15px;
+					right:$padding-large;
 				}
 			}
 		}
@@ -542,7 +542,7 @@ body#home {
 		#updates_list_wrapper {
 			position:relative;
 			height:180px;
-			margin-top:15px;
+			margin-top:$padding-large;
 			ul { 
 				position:absolute; 
 				left:0;
@@ -608,8 +608,8 @@ body#home {
 	background-color:$dark-gray;
 	h2 {
 		position:absolute;
-		left:15px;
-		right:15px;
+		left:$padding-large;
+		right:$padding-large;
 		z-index:2;
 		color:$white;
 		text-align:center;
@@ -628,9 +628,9 @@ body#home {
 	}
 	.caption {
 		position:absolute;
-		bottom:15px;
-		left:15px;
-		right:15px;
+		bottom:$padding-large;
+		left:$padding-large;
+		right:$padding-large;
 		color:$white;
 	}
 	.skew .playbutton {
@@ -729,10 +729,10 @@ body#home {
 			opacity:1;
 		}
 		&.leftbtn {
-			left:15px;
+			left:$padding-large;
 		}
 		&.rightbtn {
-			right:15px;
+			right:$padding-large;
 		}
 	
 	}
@@ -767,7 +767,7 @@ body#home {
 		float:left;
 		background-color:$medium-gray;
 		overflow:hidden;
-		padding:15px;
+		padding:$padding-large;
 		color:$white;
 		transition-property:background-color;
 		transition-duration:0.5s;
@@ -852,7 +852,7 @@ body#home {
 				position:absolute;
 				top:270px;
 				margin-left:30px;
-				margin-right:15px;
+				margin-right:$padding-large;
 				max-height: 125px;
 				overflow: hidden; 
 			}
@@ -904,7 +904,7 @@ a.playbutton /*make icon white even if link*/ {
 	font-size:4.5rem;
 	display:block;
 	margin:0 auto;
-	padding-left:15px;
+	padding-left:$padding-large;
 	border:0;
 	box-shadow:none;
 	&:before {
