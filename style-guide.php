@@ -298,6 +298,12 @@
 	<p>The <sup>sup element</sup> example</p>
 	<!--<p>The <u>u element</u> example</p>
 	 <p>The <var>var element</var> example</p> -->
+
+	<p><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/aaron-williams.php">Default Text</a>
+	( <span class="image-title-inline"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/aaron-williams.php">image-title-inline</a> | <a href="https://www.researchgate.net/profile/Aaron_Williams10">another link</a></span> )<br>
+	<a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/aaron-williams.php">Default Text</a>
+	( <span class="image-title"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/aaron-williams.php">image-title</a> | <a href="https://www.researchgate.net/profile/Aaron_Williams10">another link</a></span> )</p>
+
 	</div>
 
 	<!--
@@ -1087,6 +1093,7 @@
 		</div>
 	</div>
 	<div>&nbsp;</div>
+
 
 	<div class="row thumb-set">
 	<h2 class="text-center">Thumbnails and Thumbnail Copy</h2>
