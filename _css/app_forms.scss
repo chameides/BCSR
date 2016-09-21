@@ -5,10 +5,10 @@
 
 label.error {
   color:red;
-  font-size:12px;
+  font-size:$padding-base-horizontal2;
   font-weight: normal;
   line-height: 130%;
-  margin-top: 5px;
+  margin-top: $padding-small-vertical2;
   display: block;
 }
 
@@ -87,8 +87,8 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     input[type="tel"],
     textarea
      {
-      padding: 3px 12px; 
-      font-size: 14px;
+      padding: $padding-small $padding-base-horizontal2; 
+      font-size: $font-size-base;
       color: $medium-gray
     }
   }
@@ -97,13 +97,13 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     input[type="text"],
     input[type="email"],
     input[type="tel"] {
-    height: 34px;
+    height: $input-height;
     }
   }
 
   div.form_responses {
     textarea {
-      border-color: #ccc;
+      border-color: $input-border;
       width:100%;
     }
   }
@@ -119,7 +119,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
    /* fix styling on date of birth label */
   .form_label legend {
     margin-bottom: 0px;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 2rem;  
     color: $medium-gray;
     border-bottom: 0;
@@ -132,17 +132,24 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     }
   }
 
+  //vertically align select input with text input 
+  .form_select label {
+    @media screen and (min-width: $screen-md-min) {
+      margin-bottom: $padding-small;
+    }
+  }
+
   label {
     padding-bottom: 0;
   }
 
   /* fix styling for select boxes, check boxes and radio buttons */
   .form-control, div.form_responses select {
-      height: 34px;
-      font-size: 14px;
-      color: #555;
+      height: $input-height;
+      font-size: $font-size-base;
+      color: $gray;
       background-color: $white;
-      border: 1px solid #ccc;
+      border: 1px solid $legend-border-color;
       -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
       -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
       transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
@@ -158,7 +165,10 @@ div.form_response input[type="radio"] {
   }
 }
   
-  //3. Fields Specific
+//3. Fields Specific
+
+ 
+
 
   @media screen and (min-width:  $screen-sm-min) {
     //Email Inquiry Landing Page + Main RFI page | First Name
@@ -182,8 +192,10 @@ div.form_response input[type="radio"] {
     //Academy email stream | phone number
     #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8,
     //Academy email stream | phone type
-    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b
-     {
+    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d 
+    {
       margin-right: 4%;
     }
 
@@ -222,8 +234,12 @@ div.form_response input[type="radio"] {
     //Academy email stream | phone number
     #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8,
     //Academy email stream | phone type
-    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b
- {
+    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Gatekeeper Prospect | Phone Type
+    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3
+    {  
       width: 49%;
       clear: none !important;
       float: left;
@@ -296,17 +312,10 @@ div.form_response input[type="radio"] {
   .action input[type="button"], 
   .action button,
   div#switch button {
-    border: none;
-    text-transform: uppercase;
-    font-family: $lehavre;
-    font-size: 16px;
-    letter-spacing: -0.04em;
-    padding: 10.5px 20px;
+    @extend .btn.btn-primary;
     color: $white; 
     background-color: $red;
-    &:hover {
-    background-color: $dark-gray;
-    }
+    
   }
 
 /* adjust horizontal spacing and mobile view for state and country on main rfi */

@@ -49,6 +49,12 @@
 			}
 		}
 }
+
+//need a seprate class for OU Campus to do an inline version
+.image-title-inline {
+	@extend .image-title;
+}
+
 .caption-small {
     font-size: 1.2rem;
     line-height: 1.6rem;

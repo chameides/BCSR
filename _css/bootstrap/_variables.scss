@@ -95,6 +95,7 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 $padding-base-vertical:     6px !default;
 $padding-base-horizontal:   12px !default;
+$padding-base-horizontal2:		12px;
 
 $padding-large: 						15px;
 $padding-large-vertical:    10px !default;
@@ -102,7 +103,10 @@ $padding-large-horizontal:  16px !default;
 
 
 $padding-small-vertical:    5px !default;
+$padding-small-vertical2:   5px;
 $padding-small-horizontal:  10px !default;
+
+$padding-small:							3px;
 
 $padding-xs-vertical:       1px !default;
 $padding-xs-horizontal:     5px !default;
@@ -216,6 +220,10 @@ $input-height-base:              ($line-height-computed + ($padding-base-vertica
 $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 //** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+$input-height:										34px;
+
+
 
 $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;
