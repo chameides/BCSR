@@ -11,3 +11,4 @@ Disallow: /events/uploads/
 Disallow: /events/index.php?com=submit
 Disallow: /events/index.php?com=location*
 Disallow: /events/index.php?com=send*
+Disallow: /_documents/student-handbook-archive/
