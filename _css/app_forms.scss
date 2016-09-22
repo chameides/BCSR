@@ -311,7 +311,7 @@ div.form_response input[type="radio"] {
 /* fix styling for submit button */
   .action input[type="button"], 
   .action button,
-  div#switch button {
+   {
     @extend .btn.btn-primary;
     color: $white; 
     background-color: $red; 
