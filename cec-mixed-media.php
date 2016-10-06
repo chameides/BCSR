@@ -11,11 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mixed Media</title>
 
-<?php include '_inc/head-js-css.php'; ?>
+<?php include '_inc/head-js-css-cec.php'; ?>
 
 <style>
 
 </style>
+  <script src="https://use.typekit.net/qqu1sty.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   </head>
   <body>

@@ -12,6 +12,7 @@ module.exports = (grunt) ->
           ###
         files:
           '_css/app.css': '_css/app.scss'
+          '_css/app-cec.css': '_css/app-cec.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
     concat:   
       dist: 

@@ -1,5 +1,5 @@
-//Not CEC
-$cec: false !default; 
+//CEC
+$cec: true; 
 
 @import "app_readme.scss"; //css style guide
 
@@ -50,3 +50,10 @@ Note: therse are messy.
 
 @import "app_modals.scss"; //Global, modular elements
 @import "app_print.scss"; //print
+
+//Sample CEC only rule
+@if $cec {
+   body {
+     background: #ccc;
+   }
+}
