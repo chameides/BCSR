@@ -120,6 +120,99 @@
         <div class="column-center">
           <!-- Steps to Getting Aid -->
           <div>
+            
+          <h2>CONTACT LIST</h2>
+
+          <div class="arrow-list-tight-small-wrapper">
+            <h4>Stephen Tremaine</h4>
+            <p>Vice President for Early Colleges<br>
+            <a href="">BHSEC Manhattan</a><br>
+            <a href="tel:4136444285"><i class="fa fa-phone"></i> 413-644-4285</a><br>
+            <a href="mailto:tremaine@bard.edu"><i class="fa fa-envelope-o"></i> tremaine@bard.edu</a><br>
+            <a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php"> <i class="fa fa-link"></i> Faculty Bio</a>
+            </p>
+
+            <h4>Name</h4>
+            <p>Title<br>
+            <a href="">Campus</a><br>
+            <a href="tel:4136444285"><i class="fa fa-phone"></i> Phone link</a><br>
+            <a href="mailto:tremaine@bard.edu"><i class="fa fa-envelope-o"></i> Email link</a><br>
+            <a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php"> <i class="fa fa-link"></i> Relevant webpage</a>
+            </p>
+          </div>
+            <h2>SCHOOL LIST</h2> 
+            <div class="row stacked-content">
+              <div class="col-sm-3">
+                <a href=""><img class="fluid-img" src="/_images/cec/campuses/BECHS_Baltimore01.jpeg" alt="placeholder"></a>
+              </div>
+              <div class="col-sm-9">
+                <div class="arrow-list-tight-small-wrapper">
+                  <h4>Bard High School Early College Manhattan</h4>
+                  <p>Enrollment:<br>
+                  Founding year: 2001<br>
+                  Director: Michael Lerner<br>
+                  AA Graduation Rate: <br>
+                   <a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php"> <i class="fa fa-link"></i> Relevant webpage</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row stacked-content">
+              <div class="col-sm-3">
+                <a href=""><img class="fluid-img" src="/_images/cec/campuses/BHSEC%20blur%20effect.jpg" alt="placeholder"></a>
+              </div>
+              <div class="col-sm-9">
+                <div class="arrow-list-tight-small-wrapper">
+                  <h4>School Name</h4>
+                  <p>Enrollment: #<br>
+                  Founding year: Year<br>
+                  Director: Name<br>
+                  Factoid: Number <br>
+                   <a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php"> <i class="fa fa-link"></i> Relevant webpage</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <h2>ADVISORY BOARD</h2>
+            <div>
+              <h4>Alexandra Contreras</h4>
+              <p>Senior Analyst, Global Diversity &amp; Inclusion, Colgate-Palmolive<br>
+              Bard Early Colleges parent</p>
+              <h4>Name</h4>
+              <p>Job Title, Company<br>
+              Additional Note<br>
+              Relationship to Bard</p>
+            </div>
+
+
+
+             <h4>Ben Krupka</h4>
+               <p>Ceramics</p>
+               <ul>
+                <li><a href="mailto:jpitt@simons-rock.edu">jpitt@simons-rock.edu</a></li>
+                <li><a href="mailto:jpitt@simons-rock.edu">Faculty Bio</a></li>
+             </ul>
+
+
+
+            <h4>Department Alternate</h4>
+            <ul>
+              <li><a href="tel:4136444285">413-644-4285 or 413-528-7391</a></li>
+              <li><a href="/why-simons-rock/contact-us/offices-and-departments/business-office.php">Department Page</a></li>
+            </ul>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
             <h2 class="text-center">Steps To Getting Aid H2</h2>
             <p class="intro-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
             <div class="text-center">
