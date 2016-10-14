@@ -194,7 +194,11 @@ div.form_response input[type="radio"] {
     //Academy email stream | phone type
     #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
     //Gatekeeper Prospect | Phone Number
-    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d 
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a
     {
       margin-right: 4%;
     }
@@ -238,7 +242,15 @@ div.form_response input[type="radio"] {
     //Gatekeeper Prospect | Phone Number
     #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
     //Gatekeeper Prospect | Phone Type
-    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3
+    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | last name referrer
+    #form_question_48122b12-5b89-4789-9a49-3f7454c5e6d9,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a,
+    //Refer a student - alumni | last name student
+    #form_question_75288bed-c42f-44a1-bf75-b48618dfeb54
     {  
       width: 49%;
       clear: none !important;
@@ -331,7 +343,10 @@ div#switch button {
 #form_question_5bd506df-6f4c-416c-9f06-9e57553f449f span,
 //discovery day form
 #form_question_be309521-1317-4041-b9fb-6b1e0b15082e span,
-#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span { 
+#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span,
+//refer a student form - alumni
+#form_question_ab7dbb01-2219-4195-b39d-adc279ca4b4e span
+ { 
   display:inline-block;
   width: 50%;
   @media screen and (max-width: $screen-sm-min) {
@@ -361,14 +376,19 @@ label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_country],
 label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_postal],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_region],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_country],
-label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal],
+//refer a student - alumni
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_region],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_country],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal]
  {
   margin-top: $padding-large-vertical;
 }
   
 /* style --I'm a future-- on main rfi */
 #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
-#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend {
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend
+ {
   @extend h3, h3.subheadline;
 }
 
@@ -384,18 +404,18 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
 
 }
 
-//not sure if we need these (retain them should they use the other parts of the form in the future?) 
-/* style h1 and h2 
-.form_h2 {
-  font-family: $lehavre;
-  font-size: 4rem;
-  letter-spacing: -0.08em;
-  line-height: 1.1;
-}
-     
+  //not sure if we need these (retain them should they use the other parts of the form in the future?) 
+/* style h1 and h2   
 .form_h1 {
     font-family: $lehavre;
     font-size: 5rem;
     letter-spacing: -0.08em;
     line-height: 1.1;
-}*/
+}
+.form_h2 {
+  font-family: $lehavre;
+  font-size: 3rem;
+  letter-spacing: -0.08em;
+  line-height: 1.1;
+}
+*/ 
