@@ -309,22 +309,21 @@ div.form_response input[type="radio"] {
 }
 
 /* fix styling for submit button */
-  .action input[type="button"], 
-  .action button,
-   {
-    @extend .btn.btn-primary;
-    color: $white; 
-    background-color: $red; 
-  }
+.action input[type="button"], 
+.action button {
+  @extend .btn.btn-primary;
+  color: $white; 
+  background-color: $red; 
+}
 
-  /* styling for secondary form button */
-  div#switch button {
-    @extend .btn.btn-primary;
-    font-size: 15px;
-    padding: 5px 9px; 
-    background-color: #ccc;
-    color: $medium-gray;
-  }
+/* styling for secondary form button */
+div#switch button {
+  @extend .btn.btn-primary;
+  font-size: 15px;
+  padding: 5px 9px; 
+  background-color: #ccc;
+  color: $medium-gray;
+}
 
 /* adjust horizontal spacing and mobile view for state and country on main rfi */
 #form_question_36d183ec-678b-482d-b9b4-8f53a22c55d3 span,
