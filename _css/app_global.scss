@@ -297,6 +297,10 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
 // .no-margin {
 //   margin: 0;
 // }
+.no-margin-top {
+  margin-top: 0;
+}
+
 .no-margin-bottom {
   margin-bottom: 0;
 }
@@ -821,6 +825,14 @@ body#why .side-nav-mobile,
       margin-bottom: 5rem;
     }
 }
+
+.margin-bottom-medium {
+  margin-bottom: 1.25rem;
+  @media screen and (min-width: $screen-sm-min) {
+    margin-bottom: 2rem;
+  }
+}
+
 .fluid-img {
   margin-bottom: 1em;
     @media screen and (min-width: $screen-sm-min) {
@@ -1012,6 +1024,9 @@ div.arrow-list-tight-small-wrapper {
   p {
     font-family: $helvetica-md-cond;
     font-size:1.6rem;
+    a, a:link {
+      text-decoration: none;
+    }
   }
   ul {
     margin-bottom:24px;

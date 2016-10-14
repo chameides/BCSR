@@ -121,7 +121,7 @@
           <!-- Steps to Getting Aid -->
           <div>
             
-          <h2>CONTACT LIST</h2>
+          <h2>Contact List</h2>
 
           <div class="arrow-list-tight-small-wrapper">
             <h4>Stephen Tremaine</h4>

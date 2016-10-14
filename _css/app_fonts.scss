@@ -6,7 +6,14 @@
 $helvetica:'Helvetica Neue 55 Roman',Helvetica,Arial,sans-serif !default;
 $helvetica-cond:'HelveticaNeueLT-Condensed',Helvetica,Arial,sans-serif; 
 $helvetica-md-cond:'HelveticaNeueLT-MediumCond',Helvetica,Arial,sans-serif; 
-$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif; 
+@if $cec {
+	$lehavre: 'freight-neo-pro','Arial Black',Arial,sans-serif;
+	$headline-weight: 700;
+}
+@else {
+	$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif;
+	$headline-letter-spacing: -0.08em;
+}
 
 @mixin Helvetica($fontsize) {
 	font-family:$helvetica;
@@ -23,5 +30,21 @@ $lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif;
 @mixin LeHavre($fontsize) {
 	font-family:$lehavre;
 	font-size:$fontsize;
-	letter-spacing: -0.08em;
+	@if $cec {
+		font-weight: $headline-weight;
+	}
+	@else {
+		letter-spacing: $headline-letter-spacing;
+	}
+}
+
+@mixin Header($fontsize) {
+	font-family:$lehavre;
+	font-size:$fontsize;
+	@if $cec {
+		font-weight: $headline-weight;
+	}
+	@else {
+		letter-spacing: $headline-letter-spacing;
+	}
 }

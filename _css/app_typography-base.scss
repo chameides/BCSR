@@ -17,7 +17,13 @@ h1 {
 	@include LeHavre(2.5rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@include LeHavre(5rem);
+		@if $cec {
+			@include Header(5.5rem);
+		}
+		@else {
+			@include LeHavre(5rem);
+		}		
+
 		line-height:1.1;
 	}
 }
@@ -25,7 +31,12 @@ h2 {
 	@include LeHavre(2rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@include LeHavre(4rem);
+		@if $cec {
+			@include Header(4.5rem);
+		}
+		@else {
+			@include LeHavre(4rem);
+		}		
 		line-height:1.1;
 	}
 }
@@ -33,7 +44,12 @@ h3 {
 	@include LeHavre(1.75rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@include LeHavre(3rem);
+		@if $cec {
+			@include Header(3.75rem);
+		}
+		@else {
+			@include LeHavre(3rem);
+		}		
 		line-height:1.1;
 	}
 }
@@ -41,17 +57,33 @@ h4 {
 	@include LeHavre(1.75rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@include LeHavre(2rem);
+		@if $cec {
+			@include Header(2.5rem);
+		}
+		@else {
+			@include LeHavre(2rem);
+		}	
 		line-height:1.1;
 	}
 }
 h5 {
-	@include LeHavre(1.55rem);
-	letter-spacing: -0.05em;
+	@if $cec {
+		@include HelveticaCondMed(2rem);
+	}
+	@else {
+		@include LeHavre(1.55rem);
+		letter-spacing: -0.05em;
+	}	
+		line-height:1.1;
 }
 h6 {
-	@include LeHavre(1.3rem);
-	letter-spacing: -0.05em;
+	@if $cec {
+		@include HelveticaCondMed(1.75rem);
+	}
+	@else {
+		@include LeHavre(1.3rem);
+		letter-spacing: -0.05em;
+	}	
 }
 
 
@@ -59,6 +91,11 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
 	strong, b {
-	font-weight:500;
+		@if $cec {
+			font-weight:$headline-weight;
+		}
+		@else {
+			font-weight:500;
+		}
 	}
 } 
