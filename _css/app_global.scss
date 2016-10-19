@@ -53,8 +53,15 @@ p {
 }
 .page-container {
   padding: 0;
-  font-size: 2rem;
-  line-height: 2.6rem;
+  @if $cec {
+    font-size: 1.9rem;
+    line-height: 1.3em;
+  }
+  @else {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  
   //overflow-x: hidden because created inner scrollbar on pages lacking X amount of content would receive an inner scrollbar
     @media screen and (max-width:$screen-md-min) {
       font-size: 1.1rem;
@@ -826,11 +833,9 @@ body#why .side-nav-mobile,
     }
 }
 
-.margin-bottom-medium {
-  margin-bottom: 1.25rem;
-  @media screen and (min-width: $screen-sm-min) {
-    margin-bottom: 2rem;
-  }
+.margin-bottom-small, 
+.page-container .margin-bottom-small  {
+  margin-bottom: .2rem;
 }
 
 .fluid-img {
@@ -865,7 +870,13 @@ body#why .side-nav-mobile,
 // Button Styles
 .btn.btn-primary {
   text-transform: uppercase;
-  @include LeHavre(16px);
+  @if $cec {
+    @include HelveticaCondMed(16px);
+  }
+  @else {
+    @include LeHavre(16px);
+  }
+  
   letter-spacing: -0.04em;
   padding: 15px 20px;
   border: none;
@@ -1011,7 +1022,10 @@ div.arrow-list-tight-small-wrapper ul {
 
 ul.arrow-list {
   li:before {
-  margin-right: 21px;
+    margin-right: 21px;
+    @media screen and (max-width:$screen-md-min) {
+      margin-right: .5em;
+    }
   }
 }
 
@@ -1019,13 +1033,29 @@ ul.arrow-list {
 
 div.arrow-list-tight-small-wrapper {
   h4, p {
-    margin-bottom:0px;
+    @if $cec {
+      margin-bottom:.1em;  
+    }
+    @else {
+      margin-bottom:0px;  
+    }
+    
   }
   p {
-    font-family: $helvetica-md-cond;
+    @if $cec {
+      font-family: $helvetica-cond;
+      line-height: 1.2em; 
+    }
+    @else {
+      font-family: $helvetica-md-cond;
+    }
+    
     font-size:1.6rem;
     a, a:link {
       text-decoration: none;
+      @if $cec {
+        font-family: $helvetica-cond;
+      }
     }
   }
   ul {
@@ -1041,9 +1071,9 @@ div.arrow-list-tight-small-wrapper {
       text-decoration: underline;
     }
     li {
-    margin-bottom: 5px;
-    font-size:1.6rem;
-    line-height:2.0rem;
+      margin-bottom: 5px;
+      font-size:1.6rem;
+      line-height:2.0rem;
     }
     li:before {
     margin-right: 8px; 

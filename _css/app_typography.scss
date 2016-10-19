@@ -48,7 +48,13 @@ blockquote:before, blockquote.blockquote-long:before {
     }
   	float: left;
   	@media screen and (max-width:$screen-md) {
-  		font-size: 3rem;
+      @if $cec {
+        @include Header(2em);
+        text-indent: -.6em;
+      }
+      @else {
+        font-size: 3rem;
+      }  
   	}
   	@media screen and (min-width:$screen-md) {
   		@if $cec {
@@ -84,7 +90,12 @@ blockquote:before, blockquote.blockquote-long:before {
 blockquote.blockquote-long:before{
  font-size:3em; 
  @media screen and (max-width:$screen-md) {
-    font-size: 3rem;
+    @if $cec {
+      font-size: 2.3em;
+    }
+    @else {
+      font-size: 3em;
+    }
   }
   @media screen and (min-width:$screen-md) {
     @if $cec {
@@ -125,7 +136,12 @@ blockquote p.blockquote-last:after, .blockquote-mark {
     }
   }
   @media screen and (max-width:$screen-md) {
-    top: .5rem;
+    @if $cec {
+      top: .4rem;
+    }
+    @else {
+      top: .5rem;
+    }
   }
 }
 

@@ -17,11 +17,6 @@
     
 <div class="container-fluid page-container">
   <div class="column-center"> 
-    
-  update paragraph: 
-  font-size: 1.9rem;
-  line-height: 1.3em;
- 
     <h1 class="header-page text-center">Typography</h1>
     <p>The body copy is set in Helvetica Neue Condensed. Clean, contemporary, and yet neutral. Headers are set in Freight Neo. the Sans Serif complements the contemporary feel of the body copy. Yet, the typeface also adds a serious, yet warm feel. The notches and mixed-width reference humanism and and the renaissance.</p>
 
@@ -31,28 +26,23 @@
 	    		<li><a href="#headings">Headings</a></li>
 	    		<li><a href="#lists">Lists</a></li>
 	    		<li><a href="#pull">Quotes</a></li>
-
-		    	<li><a href="#columns">Columns</a></li>
+	    		
 	    	</ul>
     	</div>
     	<div class="col-md-4">
     		<ul>
-	    		
-		    	<li><a href="#paragraph">Paragraph and Text</a></li>
-		    	
-	    		<li><a href="#forms">Forms</a></li>
+	    		<li><a href="#elements">Additional Elements</a></li>
+	     		<li><a href="#tables">Tables</a></li>   	
     		</ul>
     	</div>
     	<div class="col-md-4">
-			<ul>
-	    		<li><a href="#accordion">Accordion</a></li>
-		    	
-		    	<li><a href="#images">Images</a></li>
-		    	<li><a href="#cta">CTA</a></li>
-	    	</ul>
+    		<ul>
+    			<li><a href="#cta">Calls to Action</a></li>
+	    		<li><a href="#captions">Captions</a></li>
+				<ul>
     	</div>
 
-
+    <div class="row col-md-12">
     <a name="headings"></a>	
 		
 		<h1 class="text-center">Heading 1</h1>
@@ -76,10 +66,10 @@
 		<h6>Heading 6</h6>
 		<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 	<!--end headings-->
+		</div>
 
-	<a name="lists"></a>
-	
 	<div class="row">
+		<a name="lists"></a>
 		<div class="col-md-12">
 			<h2 id="list_types">List Types</h2>
 			<h3>Contact List</h3>	
@@ -158,13 +148,13 @@
 	</div><!--end stacked-content-->
 
   <h2>ADVISORY BOARD</h2>
-  <div class="margin-bottom-medium">
-  	<h4 class="spotlight">Alexandra Contreras</h4>
+  <div>
+  	<h4 class="margin-bottom-small">Alexandra Contreras</h4>
   	<p>Senior Analyst, Global Diversity &amp; Inclusion, Colgate-Palmolive<br>
   	Bard Early Colleges parent</p>
   </div>
   <div>
-  	<h4 class="margin-bottom-medium">Name</h4>
+  	<h4 class="margin-bottom-small">Name</h4>
   	<p >Job Title, Company<br>
   	Additional Note<br>
   	Relationship to Bard</p>
@@ -177,13 +167,9 @@
 	<h3>Links List</h3>
 
 	<ul class="arrow-list">
-	  <li><a href="#">Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
-		<ul class="arrow-list"> 
-		  <li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
-		  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
-		</ul>
+	  <li><a href="#">2016 Prospectus</a>
 	  </li>
-	  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
+	  <li><a href="#">2015 Prospectus</a></li>
 	</ul>
 
 	
@@ -221,7 +207,7 @@
 
 
 	<a name="pull"></a>
-	<div class="col-md-12">
+	<div class="row col-md-12">
 		<h2>Quotes</h2>
 		<p>Use pull quotes to highlight portions of text, to break up long sections of text and to provide scannable content. It also adds an opportunity for design flare. These quotes should be short - limit to three lines.</p>
 		<blockquote>
@@ -268,8 +254,8 @@
 	
 	
 	
-	<a name="paragraph"></a>
-	<div class="col-md-12">
+	<a name="elements"></a>
+	<div class="row col-md-12">
 		<h2 id="paragraph">Additional Text Elements</h2>
 		<p>The <a href="#">a element</a> example</p>
 
@@ -284,7 +270,7 @@
 	
 
 	<a name="tables"></a>
-	<div class="col-md-12">
+	<div class="row col-md-12">
 	<h2 id="tables" class="text-center">Tables</h2>
 
 		<table class="table table-striped">
@@ -330,511 +316,78 @@
 		</table>
 
 	</div>
-	<a name="forms"></a>
-	<div class="col-md-12">
-	<h2 id="form_elements" class="text-center">Form Elements</h2>
+	
 
-<!--	<h3>Media</h3>
 
-	<p>The Audio Element:</p>
-	<audio controls>
-	  <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
-	  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
-	  Your browser does not support the audio element.
-	</audio>
 
-	<p>The Video Element:</p>
-	<video width="320" height="240" controls>
-	  <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-	  <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg">
-	  Your browser does not support the video tag.
-	</video> 
-
-	<h3>Form Elements</h3>-->
-
-	<div class="row">
-	<form>
-		<div class="col-md-6">
-			  <div class="form-group">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-			  </div>
-			  <div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-			  <div class="form-group">
-				<label for="exampleInputFile">File input</label>
-				<input type="file" id="exampleInputFile">
-				<p class="help-block">Example block-level help text here.</p>
-			  </div>
-				<div class="checkbox">
-				  <label>
-					<input type="checkbox" value="">
-					Option one is this and that&mdash;be sure to include why it's great
-				  </label>
-				</div>
-				<div class="checkbox disabled">
-				  <label>
-					<input type="checkbox" value="" disabled>
-					Option two is disabled
-				  </label>
-				</div>
-
-				<div class="radio">
-				  <label>
-					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-					Option one is this and that&mdash;be sure to include why it's great
-				  </label>
-				</div>
-				<div class="radio">
-				  <label>
-					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-					Option two can be something else and selecting it will deselect option one
-				  </label>
-				</div>
-				<div class="radio disabled">
-				  <label>
-					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-					Option three is disabled
-				  </label>
-				</div>
-
-			  <button type="submit" class="btn btn-primary">Submit</button>
-
-		
-		</div>
-		<div class="col-md-6">
-			  <div class="form-group">
-				<label for="text_field">Text Field:</label>
-				<input type="text" class="form-control" id="text_field" />
-			  </div>
-			  <div class="form-group">
-				<label for="text_area">Text Area:</label>
-				<textarea id="text_area" class="form-control"></textarea>
-			  </div>
-			  <div class="form-group">
-				<label for="select_element">Select Element:</label>
-				<select name="select_element" class="form-control">
-				  <optgroup label="Option Group 1">
-					<option value="1">Option 1</option>
-					<option value="2">Option 2</option>
-					<option value="3">Option 3</option>
-				  </optgroup>
-				  <optgroup label="Option Group 2">
-					<option value="1">Option 1</option>
-					<option value="2">Option 2</option>
-					<option value="3">Option 3</option>
-				  </optgroup>
-				</select>
-			  </div>
-			  <div class="row">
-	                    <div class="form-group col-sm-6">
-	                      <label for="birth_month">Date of Birth* <span class="sr-only">(Month)</span></label> 
-	                      <select class="form-control" id="birth_month" name="birth_month" required>
-	                        
-	                        <option value="">
-	                          Month
-	                        </option>
-
-	                        <option value="01">
-	                          January
-	                        </option>
-
-	                        <option value="02">
-	                          February
-	                        </option>
-
-	                        <option value="03">
-	                          March
-	                        </option>
-
-	                        <option value="04">
-	                          April
-	                        </option>
-
-	                        <option value="05">
-	                          May
-	                        </option>
-
-	                        <option value="06">
-	                          June
-	                        </option>
-
-	                        <option value="07">
-	                          July
-	                        </option>
-
-	                        <option value="08">
-	                          August
-	                        </option>
-
-	                        <option value="09">
-	                          September
-	                        </option>
-
-	                        <option value="10">
-	                          October
-	                        </option>
-
-	                        <option value="11">
-	                          November
-	                        </option>
-
-	                        <option value="12">
-	                          December
-	                        </option>
-	                      </select>
-	                    </div>
-
-	                    <div class="form-group col-sm-3">
-	                      <label for="birth_day" class="hidden-xs"><span class="sr-only">Date of Birth (Day)</span>&nbsp;</label> 
-	                      <select class="form-control" id="birth_day" name="birth_day" required>
-	                        <option value="">
-	                          Day
-	                        </option>
-
-	                        <option value="01">
-	                          01
-	                        </option>
-
-	                        <option value="02">
-	                          02
-	                        </option>
-
-	                        <option value="03">
-	                          03
-	                        </option>
-
-	                        <option value="04">
-	                          04
-	                        </option>
-
-	                        <option value="05">
-	                          05
-	                        </option>
-
-	                        <option value="06">
-	                          06
-	                        </option>
-
-	                        <option value="07">
-	                          07
-	                        </option>
-
-	                        <option value="08">
-	                          08
-	                        </option>
-
-	                        <option value="09">
-	                          09
-	                        </option>
-
-	                        <option value="10">
-	                          10
-	                        </option>
-
-	                        <option value="11">
-	                          11
-	                        </option>
-
-	                        <option value="12">
-	                          12
-	                        </option>
-
-	                        <option value="13">
-	                          13
-	                        </option>
-
-	                        <option value="14">
-	                          14
-	                        </option>
-
-	                        <option value="15">
-	                          15
-	                        </option>
-
-	                        <option value="16">
-	                          16
-	                        </option>
-
-	                        <option value="17">
-	                          17
-	                        </option>
-
-	                        <option value="18">
-	                          18
-	                        </option>
-
-	                        <option value="19">
-	                          19
-	                        </option>
-
-	                        <option value="20">
-	                          20
-	                        </option>
-
-	                        <option value="21">
-	                          21
-	                        </option>
-
-	                        <option value="22">
-	                          22
-	                        </option>
-
-	                        <option value="23">
-	                          23
-	                        </option>
-
-	                        <option value="24">
-	                          24
-	                        </option>
-
-	                        <option value="25">
-	                          25
-	                        </option>
-
-	                        <option value="26">
-	                          26
-	                        </option>
-
-	                        <option value="27">
-	                          27
-	                        </option>
-
-	                        <option value="28">
-	                          28
-	                        </option>
-
-	                        <option value="29">
-	                          29
-	                        </option>
-
-	                        <option value="30">
-	                          30
-	                        </option>
-
-	                        <option value="31">
-	                          31
-	                        </option>
-	                      </select>
-	                    </div>
-
-	                    <div class="form-group col-sm-3">
-	                      <label for="birth_year" class="hidden-xs"><span class="sr-only">Date of Birth (Year)</span>&nbsp;</label> 
-	                      <select class="form-control" id="birth_year" name="birth_year" required>
-	                        <option value="">
-	                          Year
-	                        </option>
-
-	                        <option value="2005">
-	                          2005
-	                        </option>
-
-	                        <option value="2004">
-	                          2004
-	                        </option>
-
-	                        <option value="2003">
-	                          2003
-	                        </option>
-
-	                        <option value="2002">
-	                          2002
-	                        </option>
-
-	                        <option value="2001">
-	                          2001
-	                        </option>
-
-	                        <option value="2000">
-	                          2000
-	                        </option>
-
-	                        <option value="1999">
-	                          1999
-	                        </option>
-
-	                        <option value="1998">
-	                          1998
-	                        </option>
-
-	                        <option value="1997">
-	                          1997
-	                        </option>
-
-	                        <option value="1996">
-	                          1996
-	                        </option>
-
-	                        <option value="1995">
-	                          1995
-	                        </option>
-
-	                        <option value="1994">
-	                          1994
-	                        </option>
-
-	                        <option value="1993">
-	                          1993
-	                        </option>
-
-	                        <option value="1992">
-	                          1992
-	                        </option>
-
-	                        <option value="1991">
-	                          1991
-	                        </option>
-
-	                        <option value="1990">
-	                          1990
-	                        </option>
-							
-	                      </select>
-	                    </div>
-	        	</div><!-- row -->         
-		
-		</div>
-	</form>
-	</div>
-
-
-	</div>
 
 	
-	<a name="images"></a> 
-	<div class="col-md-12">
-	<h2 class="text-center">Images</h2>	
-	<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
-	<p>The standard image goes to the full width of the column</p>
-	<p><img src="//placehold.it/325/325" class="pull-left-responsive-35">The pull-left-responsive-35 image changes width based on screen size. It floats to the left. The max-width is 325px. The pull-left-responsive-50 image floats a larger image (445px) to the left. 
-	<p><img src="//placehold.it/325/325" class="pull-right-responsive">There is also an option for a pull-right-responsive image, which floats right for both 35% width and 50% width images.</p>
-		<div class="col-md-12">
-			<p><img src="//placehold.it/125/125" class="pull-left"><strong>img.pull-left </strong> is fixed width. ras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-			<p><img src="//placehold.it/125/125" class="pull-right">as is <strong>img.pull-right</strong> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-		</div>
-	</div>
-<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
-<div class="caption-small">Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution. Small Image Caption for photo attribution.</div> 
+	
 
 	<a name="cta"></a>
-	<div class="col-md-12">
-		<h2 class="text-center">CTA</h2>
-		<p>The red button should be short, scannable. Verb Object (Visit Campus). If it is longer, consider the large red arrow link. Only use the small red arrow link in conjunction with the red button. 
+	<div class="row col-md-12">
+		<h2>Calls To Action</h2>
+		<p>The red button should be short, scannable. Verb Object (Contact Us). If it is longer, consider the large red arrow link. Only use the small red arrow link in conjunction with the red button.
 		<div class="text-center">
-			<a class="btn btn-primary" href="#">Red Button</a>
+			<a class="btn btn-primary" href="#">Contact Us</a>
 		</div>
 		<div class="text-center page--link">
-			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> small red arrow link</a>
+			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Explore our programs</a>
+
 		</div>
-		<div class="col-md-12">
+		<br><br>
+		<div>
 			<p>There is also a large red arrow link that can be used without the red button.</p>
-			<div class="text-center page--link">
-				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link</a>
+			<div class="page--link">
+				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Explore our programs</a>
 			</div>
 		</div>
-		<div class="col-md-12">
-	        <div class="row stacked-content">
-	            <div class="col-sm-8">
-		            <h3>Medium Red Arrow Link</h3>
-		              <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
-		              	<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
-			<p>CTA links associated with H3’s and below match their alignment (left).</p>
-	            </div>
-	            <!-- <div class="col-sm-4" style="> -->
-	            <div class="col-sm-4 aside">
-	              <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
-	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
-	              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
-	              <div><a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a></div>
-	            </div>
-	         </div>
+
+		<div class="row"><br><br>
+      <div>
+          <div class="col-sm-8">
+            <h3 class="subheadline">An Aside</h3>
+              <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
+              	<p>Perhaps we have tangential content with an action for a user to take. The box sets it apart but it is placed visually near the related content.</p>
+          </div>
+          <!-- <div class="col-sm-4" style="> -->
+          <div class="col-sm-4 aside">
+            <p>We have 12 campuses with over 10,000 students.</p>
+            <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Learn more about our programs</a>
+          </div>
+       </div>
 		</div>
 	
 	</div>
 
 		<div>&nbsp;</div>
-
-	<div class="col-md-12">
+			<a name="captions"></a>
+	<div class="row col-md-12">
 		<h2 class="text-center">Captions</h2>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="image-name text-center">Caption</div>
+				<div class="image-name text-center">Standard Caption</div>
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="image-title text-center">Secondary description</div>			
+				<div class="image-title text-center">Alternate Caption</div>			
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="caption-small text-center">Photo attribution. <br>line2</div>			
+				<div class="caption-small text-center">Photo attribution</div>			
 			</div>
 		</div>
 	</div>
 	<div>&nbsp;</div>
 
 
-	<div class="row thumb-set">
-	<h2 class="text-center">Thumbnails and Thumbnail Copy</h2>
-		<div class="col-md-3">
-			<div class="row no-margin">
-				<div class="col-xs-3 col-md-12">
-					<div class="image-thumb"><a href="/academics/faculty-bios/social-studies-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
-					</div>
-				</div>
-				<div class="col-xs-9 col-md-12">
-					<div class="thumbnail-copy"><a href="/academics/faculty-bios/social-studies-faculty/index.php">Use div.image-thumb for picture</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="row no-margin">
-				<div class="col-xs-3 col-md-12">
-					<div class="image-thumb"><a href="/academics/faculty-bios/languages-and-literature-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
-					</div>
-				</div>
-				<div class="col-xs-9 col-md-12">
-					<div class="thumbnail-copy"><a href="/academics/faculty-bios/languages-and-literature-faculty/index.php">Use div.thumbnail-copy for caption</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="row no-margin">
-				<div class="col-xs-3 col-md-12">
-					<div class="image-thumb"><a href="/academics/faculty-bios/arts-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
-					</div>
-				</div>
-				<div class="col-xs-9 col-md-12">
-					<div class="thumbnail-copy"><a href="/academics/faculty-bios/arts-faculty/index.php">Link Underlined on hover</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="row no-margin">
-				<div class="col-xs-3 col-md-12">
-					<div class="image-thumb"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/index.php"><img class="fluid-img" src="http://placehold.it/190x190" alt="thumb photo"></a>
-					</div>
-				</div>
-				<div class="col-xs-9 col-md-12">
-					<div class="thumbnail-copy"><a href="/academics/faculty-bios/science-mathematics-and-computing-faculty/index.php">Use with multiple thumbs</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div>&nbsp;</div>	
+	</div>	
 	</section>
 
 
 		</div>
 	    </div><!-- /.container -->
-
-<?php include '_inc/footer.php'; ?>
     
 <?php include '_inc/bottom-js.php' ?>
 
