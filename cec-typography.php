@@ -18,7 +18,7 @@
 <div class="container-fluid page-container">
   <div class="column-center"> 
     <h1 class="header-page text-center">Typography</h1>
-    <p>The body copy is set in Helvetica Neue Condensed - clean, contemporary, and yet neutral. Headers are set in Freight Neo. The Sans Serif complements the contemporary feel of the body copy. The notches and mixed-width reference humanism and the renaissance, creating a serious, yet warm feel.</p>
+    <p>The body copy is set in Helvetica Neue Condensed - clean, contemporary, and yet neutral. Headers are set in Freight Neo. The Sans Serif complements the contemporary feel of the body copy. The notches and mixed-width reference humanism and the Renaissance, creating a feeling that is both serious and warm.</p>
 
     <h2>Table of Contents</h2>
     	<div class="col-md-4">
