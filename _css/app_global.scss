@@ -28,7 +28,14 @@ a {
 }
 p {
   @media screen and (max-width:$screen-md-min) {
-    font-size: 1.25rem;
+    @if $cec {
+      font-size: 1.7rem;
+      line-height: 1.2em
+    }
+    @else {
+      font-size: 1.25rem;
+    }
+    
   }
   &.paragraph-break {
     margin-bottom: 3.333rem;
@@ -63,10 +70,16 @@ p {
   }
   
   //overflow-x: hidden because created inner scrollbar on pages lacking X amount of content would receive an inner scrollbar
-    @media screen and (max-width:$screen-md-min) {
+  @media screen and (max-width:$screen-md-min) {
+    @if $cec {
+      font-size: 1.8rem;
+      line-height: 1.2em;
+    }
+    @else {
       font-size: 1.1rem;
       line-height: 1.6rem;
     }
+  }
 }
 // Global margin sizes scoped in page-container for now
 .page-container {

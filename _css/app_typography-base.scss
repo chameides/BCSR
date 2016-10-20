@@ -14,7 +14,12 @@ body {
 }
 h1 {
 	color:$dark-gray;
-	@include LeHavre(2.5rem);
+	@if $cec {
+			@include Header(3.2rem);
+		}
+		@else {
+			@include LeHavre(2.5rem);
+		}		
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
 		@if $cec {
@@ -28,7 +33,12 @@ h1 {
 	}
 }
 h2 {
-	@include LeHavre(2rem);
+	@if $cec {
+		@include Header(2.8rem);
+	}
+	@else {
+		@include LeHavre(2rem);
+	}		
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
 		@if $cec {
@@ -41,7 +51,12 @@ h2 {
 	}
 }
 h3 {
-	@include LeHavre(1.75rem);
+	@if $cec {
+		@include Header(2.3rem);
+	}
+	@else {
+		@include LeHavre(1.75rem);
+	}		
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
 		@if $cec {
@@ -54,8 +69,13 @@ h3 {
 	}
 }
 h4 {
-	@include LeHavre(1.75rem);
 	line-height:1;
+	@if $cec {
+		@include Header(1.9rem);
+	}
+	@else {
+		@include LeHavre(1.75rem);
+	}	
 	@media (min-width: $screen-sm-min) {
 		@if $cec {
 			@include Header(2.5rem);
@@ -68,7 +88,10 @@ h4 {
 }
 h5 {
 	@if $cec {
-		@include HelveticaCondMed(2rem);
+		@include HelveticaCondMed(1.8rem);
+		@media (min-width: $screen-sm-min) {
+			@include HelveticaCondMed(2rem);
+		}
 	}
 	@else {
 		@include LeHavre(1.55rem);
@@ -78,7 +101,10 @@ h5 {
 }
 h6 {
 	@if $cec {
-		@include HelveticaCondMed(1.75rem);
+		@include HelveticaCond(1.8rem);
+		@media (min-width: $screen-sm-min) {
+			@include HelveticaCondMed(1.75rem);
+		}
 	}
 	@else {
 		@include LeHavre(1.3rem);

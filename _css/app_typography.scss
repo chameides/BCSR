@@ -251,6 +251,11 @@ a.right-arrow, a:link.right-arrow  {
 /*Use larger bullet CTA when no box link CTA is present*/
 a.right-arrow-primary {
     @extend .cta-bullet;
+    @if $cec {
+      @include Header(2.1rem);
+    }
+    @else {
+    }
     @media screen and (min-width:$screen-md) {
         @include LeHavre(25px);
     }

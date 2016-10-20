@@ -5195,7 +5195,7 @@ body {
 h1 {
   color: #262421;
   font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 1; }
   @media (min-width: 768px) {
@@ -5207,7 +5207,7 @@ h1 {
 
 h2 {
   font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1; }
   @media (min-width: 768px) {
@@ -5220,7 +5220,7 @@ h2 {
 h3, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
 #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend {
   font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
-  font-size: 1.75rem;
+  font-size: 2.3rem;
   font-weight: 700;
   line-height: 1; }
   @media (min-width: 768px) {
@@ -5232,10 +5232,10 @@ h3, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
       line-height: 1.1; } }
 
 h4 {
+  line-height: 1;
   font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1; }
+  font-size: 1.9rem;
+  font-weight: 700; }
   @media (min-width: 768px) {
     h4 {
       font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
@@ -5245,12 +5245,20 @@ h4 {
 
 h5 {
   font-family: "HelveticaNeueLT-MediumCond", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.1; }
+  @media (min-width: 768px) {
+    h5 {
+      font-family: "HelveticaNeueLT-MediumCond", Helvetica, Arial, sans-serif;
+      font-size: 2rem; } }
 
 h6 {
-  font-family: "HelveticaNeueLT-MediumCond", Helvetica, Arial, sans-serif;
-  font-size: 1.75rem; }
+  font-family: "HelveticaNeueLT-Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem; }
+  @media (min-width: 768px) {
+    h6 {
+      font-family: "HelveticaNeueLT-MediumCond", Helvetica, Arial, sans-serif;
+      font-size: 1.75rem; } }
 
 h1 strong, h1 b, h2 strong, h2 b, h3 strong, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend strong,
 #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend strong, h3 b, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend b,
@@ -6713,7 +6721,8 @@ a {
 
 @media screen and (max-width: 992px) {
   p {
-    font-size: 1.25rem; } }
+    font-size: 1.7rem;
+    line-height: 1.2em; } }
 
 p.paragraph-break {
   margin-bottom: 3.333rem; }
@@ -6741,8 +6750,8 @@ p.paragraph-break {
   line-height: 1.3em; }
   @media screen and (max-width: 992px) {
     .page-container {
-      font-size: 1.1rem;
-      line-height: 1.6rem; } }
+      font-size: 1.8rem;
+      line-height: 1.2em; } }
 
 .page-container h1 {
   margin-bottom: 1.667rem;
@@ -8715,11 +8724,15 @@ cite {
     font-size: .9em; } }
 
 /*Use larger bullet CTA when no box link CTA is present*/
-@media screen and (min-width: 992px) {
-  a.right-arrow-primary {
-    font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
-    font-size: 25px;
-    font-weight: 700; } }
+a.right-arrow-primary {
+  font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    a.right-arrow-primary {
+      font-family: "freight-neo-pro", "Arial Black", Arial, sans-serif;
+      font-size: 25px;
+      font-weight: 700; } }
 
 /*when used in aside, use a slightly larger bullet CTA*/
 a.right-arrow-aside {
@@ -8770,7 +8783,7 @@ a.right-arrow-aside {
   color: #6e675f; }
   @media screen and (max-width: 992px) {
     .image-name {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 0; } }
   .image-name b, .image-name strong {
     font-weight: normal; }
@@ -8779,7 +8792,7 @@ a.right-arrow-aside {
   font-size: 20px; }
   @media screen and (max-width: 992px) {
     .image-title, .image-title-inline {
-      font-size: 1.167rem;
+      font-size: 1.3rem;
       margin-bottom: 0; }
       .image-title.image-title-with-margin, .image-title-with-margin.image-title-inline {
         margin-bottom: 1.25rem; } }
