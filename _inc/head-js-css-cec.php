@@ -1,3 +1,6 @@
+<!-- add typekit -->
+
+
 <meta name="google-site-verification" content="bWTP3Dh4CP53ONDLO3NaQHnRoXkWU8d-KeFWlislfiQ" />
 
 <meta name="google-site-verification" content="URa0nbYkyf6MKbE6FeYFywbz0bIoceyAfhIYpYIGHFM" />
@@ -12,6 +15,17 @@
 .page-hero-container.gateway-bg {
     background-image: url(_images/gateway-header-bg.jpg);
 }
+
+.page-hero-container.cec-bg {  
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, .1),
+      rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .1)
+    ),
+    url(http://simons-rock.edu/_images/bard-academy-at-simons-rock/academic-program/academic-program/desktop-mixed-content/1122px-x-642px-video-or-image/bard-academy-at-simons-rock-2.jpg);
+}
+
 
 .page-hero-container.gatekeeper-bg {
       background-image: url(/_images/why-simons-rock/5-signs-dorm5.jpg);
@@ -75,3 +89,6 @@ videojs.options.flash.swf = "/_images/video/video-js.swf";
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+<script src="https://use.typekit.net/qqu1sty.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
