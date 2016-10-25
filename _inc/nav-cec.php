@@ -66,7 +66,7 @@
 
 
 
-	<a class="navbar-brand initial visible-xs-block" href="#">Center for Early College Mobile<span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+	<a class="navbar-brand initial visible-xs-block" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
 	
 
 
@@ -88,7 +88,7 @@
 
 
 
-			  <a class="navbar-brand initial hidden-xs" href="#">Center for Early College<span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+			  <a class="navbar-brand initial hidden-xs" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
 
 
 
@@ -132,22 +132,7 @@
 					</ul>
 				</div><!--/.container -->
 			</div>
-			<div class="clearfix visible-xs-block visible-sm-block info-for-mobile">
-				<!-- Second place the "info for" links need to be written: -->
-				Info for
-				<div class="row">
-					<ul class="col-xs-6 list-unstyled" role="menu">
-						<li><a href="#" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
-					</ul>
-
-					<ul class="col-xs-6 list-unstyled" role="menu">
-						<li><a href="#" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
-					</ul>
-				</div>
-			</div>
+			
         </div><!--/.nav-collapse -->
       </div>
     </nav>
