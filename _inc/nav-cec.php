@@ -121,18 +121,16 @@
 						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
 						</li>
-						<li class="hidden-md">
+						<li class="hidden-md hidden-lg">
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"></i> Contact Us</a>
 						</li>
-						<li class="visible-md">
+						<li class="visible-md visible-lg">
 							<button class="btn btn-link"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
 						</li>
-
-
-
 						<li class="nav-search">
 							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px;padding-top: 5px;"><span class="sr-only">Search</span></i></button>
 						</li>
+
 
 
 					</ul>
