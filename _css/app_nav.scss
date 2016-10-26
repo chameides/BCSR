@@ -95,7 +95,11 @@ nav#mainnav {
 		margin: auto;
 		@media (min-width: $screen-sm-min) {
 			background-position: center 16px;
-			background-size: auto 190px;
+			@if $cec {
+			}
+			@else {
+				background-size: auto 190px;
+			}
 		}
 		@media (min-width: $screen-md-min) {
 			display:none; 
@@ -334,8 +338,13 @@ nav#mainnav {
 	.section-nav {
 		@media (max-width: $screen-sm-max) {
 			padding:0;
-			margin:55px 0 20px 0;
-			width:50%;
+			@if $cec {
+				margin:0px 0 20px 0;	
+			}
+			@else {
+				margin:55px 0 20px 0;
+				width:50%;	
+			}
 			float:left;
 			a,button.btn-link {
 				color:$white;
