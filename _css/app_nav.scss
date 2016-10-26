@@ -197,161 +197,199 @@ nav#mainnav {
 			}
 		}
 	}
-	.supernav {
-		@media (max-width: $screen-sm-max) {
-			padding:0;
-			margin-top:55px;
-			width:50%;
-			float:right;
-		}
-		a,button.btn-link {
-			color:$white;
-			&:hover {
-				background-color:$dark-gray;
-			}
-		}
-		#showsearch {
-			display:none;
-		}
-		li.nav-search {
+	@if $cec {
+		#navsearchform {
 			@media (max-width: $screen-sm-max) {
+				.form-control {
+					width: 20em;
+				}
+			}
+			@media (min-width: $screen-md-min) {	
+				display: none;
 				position:absolute;
-				top:105px;
-				left:$padding-large;
-				right:$padding-large;
-			}
-			.input-group-btn {
-				@media (max-width: $screen-sm-max) {
-					width:1%;
-					background-color:$red;
-				}
-			}
-		}
-		li.dropdown {
-			@media (max-width: $screen-sm-max) {
-				position: absolute;
-				bottom: -10px;
-				left: 0;
+				z-index:2;
 				right: 0;
-				background: $medium-gray;
-				padding-left: 5px;
-
-				a.dropdown-toggle {
-					font-style: italic;
-					color: $white !important;
+				top:5px;
+				border:0; margin:0; padding:0;
+				background-color:$red;
+				box-shadow:none;
+				.input-group {
+					width:279px;
 				}
-			}
-			ul.dropdown-menu {
-				@media (max-width: $screen-sm-max) {
-					display:block;
-					background-color: $medium-gray;
-					border:0px;
-					box-shadow:none;
-					width: 100%;
-					padding:0;
-
-
-					li {
-						a {
-							padding: 5px 0 5px 15px;
-							white-space: normal;
-							display: block;
-
-							&:hover {
-								background-color: $dark-gray;
-							}
-						}
-					}
-				}
-			}
-		}
-		@media (min-width: $screen-md-min) {
-			background-color:$white;
-			z-index:2;
-			position:fixed;
-			left:0px;
-			right:0px;
-			@include HelveticaCond(15px);
-			text-transform:uppercase;
-			a,button.btn-link {
-				transition: color 0.25s, background-color 0.25s;
-				color:$dark-gray;
-				background-color:$white;
-				padding-top:    $navbar-super-padding-vertical;
-				padding-bottom: $navbar-super-padding-vertical;
-				border-width:0;
-				&:hover {
-					color:$white;
+				button.btn-link {
+					padding-top:9px;
+					padding-bottom:9px;
 					background-color:$red;
-				}
-			}
-			li.nav-search {
-				position:relative;
-				#showsearch {
-					display:inline-block;
-				}
-				#navsearchform {
-					position:absolute;
-					z-index:2;
-					width:300px;
-					left:-229px;
-					top:0px;
-					border:0; margin:0; padding:0;
-					background-color:transparent;
-					box-shadow:none;
-					display:none;
-					.form-control {
-						border:solid 1px $dark-gray;
-						background-color:$dark-gray;
-						color:$white;
-						@if $cec {
-
-						}
-						@else {
-							height:40px;	
-						}
-						padding-top:4px;
-						padding-bottom:4px;
-						font-size:18px;
-						&:focus {
-							box-shadow:none;
-						}
-					}
-					.input-group {
-						width:279px;
-					}
-					button.btn-link {
-						padding-top:9px;
-						padding-bottom:9px;
-						background-color:$red;
-						border:solid 1px $red;
-						color:$white;
-						&:hover {
-							color:$red;
-							background-color:$white;
-						}
+					border:solid 1px $red;
+					color:$white;
+					&:hover {
+						color:$red;
+						background-color:$white;
 					}
 				}
 			}
 		}
 	}
+	@else {
+		.supernav {
+			@media (max-width: $screen-sm-max) {
+				padding:0;
+				margin-top:55px;
+				width:50%;
+				float:right;
+			}
+			a,button.btn-link {
+				color:$white;
+				&:hover {
+					background-color:$dark-gray;
+				}
+			}
+			#showsearch {
+				display:none;
+			}
+			li.nav-search {
+				@media (max-width: $screen-sm-max) {
+					position:absolute;
+					top:105px;
+					left:$padding-large;
+					right:$padding-large;
+				}
+				.input-group-btn {
+					@media (max-width: $screen-sm-max) {
+						width:1%;
+						background-color:$red;
+					}
+				}
+			}
+			li.dropdown {
+				@media (max-width: $screen-sm-max) {
+					position: absolute;
+					bottom: -10px;
+					left: 0;
+					right: 0;
+					background: $medium-gray;
+					padding-left: 5px;
+					a.dropdown-toggle {
+						font-style: italic;
+						color: $white !important;
+					}
+				}
+				ul.dropdown-menu {
+					@media (max-width: $screen-sm-max) {
+						display:block;
+						background-color: $medium-gray;
+						border:0px;
+						box-shadow:none;
+						width: 100%;
+						padding:0;
+						li {
+							a {
+								padding: 5px 0 5px 15px;
+								white-space: normal;
+								display: block;
+								&:hover {
+									background-color: $dark-gray;
+								}
+							}
+						}
+					}
+				}
+			}
+			@media (min-width: $screen-md-min) {
+				background-color:$white;
+				z-index:2;
+				position:fixed;
+				left:0px;
+				right:0px;
+				@include HelveticaCond(15px);
+				text-transform:uppercase;
+				a,button.btn-link {
+					transition: color 0.25s, background-color 0.25s;
+					color:$dark-gray;
+					background-color:$white;
+					padding-top:    $navbar-super-padding-vertical;
+					padding-bottom: $navbar-super-padding-vertical;
+					border-width:0;
+					&:hover {
+						color:$white;
+						background-color:$red;
+					}
+				}
+				li.nav-search {
+					position:relative;
+					#showsearch {
+						display:inline-block;
+					}
+					#navsearchform {
+						position:absolute;
+						z-index:2;
+						width:300px;
+						left:-229px;
+						top:0px;
+						border:0; margin:0; padding:0;
+						background-color:transparent;
+						box-shadow:none;
+						display:none;
+						.form-control {
+							border:solid 1px $dark-gray;
+							background-color:$dark-gray;
+							color:$white;
+							@if $cec {
+
+							}
+							@else {
+								height:40px;	
+							}
+							padding-top:4px;
+							padding-bottom:4px;
+							font-size:18px;
+							&:focus {
+								box-shadow:none;
+							}
+						}
+						.input-group {
+							width:279px;
+						}
+						button.btn-link {
+							padding-top:9px;
+							padding-bottom:9px;
+							background-color:$red;
+							border:solid 1px $red;
+							color:$white;
+							&:hover {
+								color:$red;
+								background-color:$white;
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+	}
+	
 	.section-nav {
 		@media (max-width: $screen-sm-max) {
 			padding:0;
 			@if $cec {
 				margin:0px 0 20px 0;	
+				a, .search-form {
+					padding: 10px 14px;
+				}
 			}
 			@else {
 				margin:55px 0 20px 0;
 				width:50%;	
+				a {
+					padding: 10px 14px;
+				}
 			}
 			float:left;
 			a,button.btn-link {
 				color:$white;
 			}
-			a {
-				padding: 10px 14px;
-			}
+			
 		} 
 		@media (min-width: $screen-md-min) {
 			transition-property: top, background-color;

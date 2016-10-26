@@ -31,7 +31,6 @@
         <li>Search functionality</li>
         <li>Refinement of the animation and transitions</li>
         <li>Optimize the breakpoint between mobile and desktop menu</li>
-        <li>Spacing on the mobile menu</li>
       </ul>
 
      
@@ -45,7 +44,7 @@
 
 <?php include '_inc/footer.php'; ?>
     
-<?php include '_inc/bottom-js.php' ?>
+<?php include '_inc/bottom-js-cec.php' ?>
 
   </body>
 </html>

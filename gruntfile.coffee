@@ -5,17 +5,19 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
-          outputStyle: 'compressed'          
-          ### 
-          if testing, remove comments for viewing CSS as nested 
-          outputStyle: 'nested'
           ###
+          outputStyle: 'compressed'          
+           
+          if testing, remove comments for viewing CSS as nested 
+          ###
+          outputStyle: 'nested'
+          
         files:
           '_css/app.css': '_css/app.scss'
           '_css/app-cec.css': '_css/app-cec.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
     concat:   
-      dist: 
+      radius: 
         src: [
           '_resources/js/forms/source/jquery.validate.min.js',
           '_resources/js/forms/source/additional-methods.min.js',
@@ -23,12 +25,29 @@ module.exports = (grunt) ->
           ]
         dest: 
           '_resources/js/forms/source/rfi-combine-grunt.js'
-
+      app_bcsr:
+        src: [
+          '_js/_js-not-minified/app/app-part1.js',
+          '_js/_js-not-minified/app/show-search-bcsr.js',
+          '_js/_js-not-minified/app/app-part2.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/app/app-bcsr-combined.js'
+      app_cec:  
+        src: [
+          '_js/_js-not-minified/app/app-part1.js',
+          '_js/_js-not-minified/app/show-search-cec.js',
+          '_js/_js-not-minified/app/app-part2.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/app/app-cec-combined.js'   
     uglify: 
       static_mappings: {
         files: [
           {src: '_resources/js/forms/source/rfi-combine-grunt.js', dest: '_resources/js/forms/rfi-combine-min.js'},
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
+          {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
+          {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
         ],
       }
     svgmin:

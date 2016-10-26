@@ -100,10 +100,9 @@
         <div id="navbar" class="navbar-collapse collapse">
         	<div class="navbar-mobile-header"></div>
         	<div class="container-fluid supernav">
-				<div id="navbar_l2" class="container">
-					
-				</div><!--/.container -->
-			</div>
+						<div id="navbar_l2" class="container">		
+						</div><!--/.container -->
+					</div>
         	<div class="container-fluid section-nav initial">				
 				<div class="container section-nav-inner">
 					<ul class="nav navbar-nav">
@@ -128,11 +127,16 @@
 							<button class="btn btn-link"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
 						</li>
 						<li class="nav-search">
-							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px;padding-top: 5px;"><span class="sr-only">Search</span></i></button>
+							<form role="search" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="SEARCH">
+								  <span class="input-group-btn">
+									<button class="btn btn-link" id="PrimaryNav_Search"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
+								  </span>
+								</div><!-- /input-group -->
+							</form>
+							<button class="btn btn-link hidden-sm hidden-xs" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;"><span class="sr-only">Search</span></i></button>
 						</li>
-
-
-
 					</ul>
 				</div><!--/.container -->
 			</div>
