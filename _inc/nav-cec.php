@@ -107,23 +107,29 @@
         	<div class="container-fluid section-nav initial">				
 				<div class="container section-nav-inner">
 					<ul class="nav navbar-nav">
-						<li class="dropdown">
+						<li>
 							<a href="/why-simons-rock.php" id="PrimaryNav_WhySimonsRock">About</a>
 						</li>
-						<li class="dropdown">
+						<li>
 							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Approach to Education</a>
 						</li>
 
-						<li class="dropdown">
+						<li>
 							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Campuses</a>
 						</li>
 
-						<li class="dropdown">
+						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
 						</li>
-						<li class="nav-search">
-							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only">Search</span></i></button>
+						<li class="hidden-md">
+							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"></i> Contact Us</a>
 						</li>
+						<li class="visible-md">
+							<button class="btn btn-link"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
+						</li>
+
+
+
 						<li class="nav-search">
 							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px;padding-top: 5px;"><span class="sr-only">Search</span></i></button>
 						</li>
