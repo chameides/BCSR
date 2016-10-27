@@ -1,12 +1,23 @@
 // General Styles
 body {
-  margin-top: 200px;
+  @if $cec {
+    margin-top: 75px;
+  }
+  @else {
+    margin-top: 200px;
+  }
+  
   //no top-margin for templates with hero graphic or pages triggering gatekeeper parameter
   &.has-hero, &.gatekeeper {
     margin-top: 0;
   }
-  @media screen and (max-width:$screen-sm-max) {
-	  margin-top: 120px;
+  @media screen and (max-width:$screen-sm-max) { 
+    @if $cec {
+    margin-top: 85px;
+    }
+    @else {
+       margin-top: 120px;
+    }
   }
 }
   //subnav affix styles

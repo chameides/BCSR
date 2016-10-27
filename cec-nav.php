@@ -28,9 +28,11 @@
       We can and will build out more parts including: 
       <ul>
         <li>Actual links for each part</li>
-        <li>Search functionality</li>
         <li>Refinement of the animation and transitions</li>
+        <li>Refinement of spacing</li>
         <li>Optimize the breakpoint between mobile and desktop menu</li>
+        <li>Swap out logo</li>
+        <li>Hero graphic version</li>
       </ul>
 
      
@@ -42,7 +44,7 @@
     </div>
       </div><!-- /.container -->
 
-<?php include '_inc/footer.php'; ?>
+<?php include '_inc/footer-cec.php'; ?>
     
 <?php include '_inc/bottom-js-cec.php' ?>
 
