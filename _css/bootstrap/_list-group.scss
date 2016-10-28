@@ -124,7 +124,12 @@ a.list-group-item {
 
 //imported from OU styles (formats the secondary nav on mobile)
 .list-group > li > a {
-  padding: 10px 15px;
+  @if $cec {
+    padding: 7px 10px;
+  }
+  @else {
+    padding: 10px 15px;
+  }
 }
 
 .list-group > li > a:hover, .list-group > li > a:focus {

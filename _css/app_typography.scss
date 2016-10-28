@@ -1,3 +1,11 @@
+@if $cec {
+  p, .text-center-over-p {
+    max-width: 58rem;
+  }
+  .text-center-over-p {
+    @extend .text-center;
+  }  
+}
 .aside {    
     background: #efefef;
     padding-bottom: 1em;

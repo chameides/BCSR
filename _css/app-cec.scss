@@ -23,28 +23,29 @@ Note: therse are messy.
 */
 @import "app_home.scss"; //Home page
 @import "app_global.scss",
-		"app_forms.scss",
-		"app_images.scss",
-		"app_iframe.scss",
-		"app_mixed-media.scss",
-		"app_academics.scss",
-		"app_gateway.scss",
-		"app_master-section-landing.scss",
-		"app_typography.scss", /*pulled blockquote from giving landing into separate partial*/
-		"app_giving-landing.scss",
-		"app_campus-landing.scss",
-		"app_areas-of-study.scss",
-		"app_profile.scss",
-		"app_basic-profile.scss",
-		"app_student-life.scss",
-		"app_campus-landing.scss",
-		"app_search.scss",
-		"app_news.scss",
-		"app_campus-map.scss",
-		"app_at-a-glance.scss",
-		"app_reputations-and-outcomes.scss",
-		"app_50.scss",
-		"app_patterns-layout.scss";
+	"app_secondary-nav.scss",
+	"app_forms.scss",
+	"app_images.scss",
+	"app_iframe.scss",
+	"app_mixed-media.scss",
+	"app_academics.scss",
+	"app_gateway.scss",
+	"app_master-section-landing.scss",
+	"app_typography.scss", /*pulled blockquote from giving landing into separate partial*/
+	"app_giving-landing.scss",
+	"app_campus-landing.scss",
+	"app_areas-of-study.scss",
+	"app_profile.scss",
+	"app_basic-profile.scss",
+	"app_student-life.scss",
+	"app_campus-landing.scss",
+	"app_search.scss",
+	"app_news.scss",
+	"app_campus-map.scss",
+	"app_at-a-glance.scss",
+	"app_reputations-and-outcomes.scss",
+	"app_50.scss",
+	"app_patterns-layout.scss";
 
 @import "app_why.scss";
 

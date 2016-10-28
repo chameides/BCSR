@@ -1,0 +1,25 @@
+.secondary-nav {
+  padding-top: 2rem;
+  width: 20%;
+  max-width: $margin-secondary-nav;
+  float: left;
+  @media screen and (max-width:$screen-md) {
+    display: none;
+    
+  }
+}
+
+
+.main-content {
+  @media screen and (max-width:$screen-md-max) {
+    @extend .column-center;
+  }
+  @media screen and (min-width:$screen-md) {
+    float: left;
+    width: 80%;
+    padding-left: 5%;
+  }
+  @media screen and (min-width:$screen-lg) {
+    
+  }
+}

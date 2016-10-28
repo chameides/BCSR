@@ -34,7 +34,22 @@ nav#mainnav {
 		padding-right:0;
 	}
 	.container {
-		max-width:970px;
+		@if $cec {
+			@media screen and (min-width:$screen-md) {
+				margin-left: 1em;
+			}
+			@media screen and (min-width:$screen-lg) {
+    		max-width: 862px;
+    		margin-left: 25%;
+ 			}
+ 			@media screen and (min-width:1400px) {
+    		max-width: 862px;
+    		margin-left: $margin-secondary-nav+90px;
+ 			}		
+		}
+		@else {
+			max-width:970px;
+		}
 		width:auto;
 	}
 	.navbar-header {
