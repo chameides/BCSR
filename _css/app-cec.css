@@ -3955,6 +3955,9 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #efefef; }
+  @media (min-width: 1520px) {
+    .list-group-item {
+      margin-bottom: 0; } }
   .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0; }
@@ -5447,7 +5450,8 @@ nav#mainnav {
     nav#mainnav #navsearchform .input-group {
       width: 240px; }
     nav#mainnav #navsearchform .form-control {
-      width: 200px; } }
+      width: 200px;
+      border-radius: 0px; } }
   @media (min-width: 900px) {
     nav#mainnav #navsearchform {
       display: none;
@@ -6638,11 +6642,20 @@ section#announcements {
 
 body {
   margin-top: 75px; }
+  @media screen and (min-width: 1520px) {
+    body {
+      background: #efefef; } }
   body.has-hero, body.gatekeeper {
     margin-top: 0; }
   @media screen and (max-width: 899px) {
     body {
       margin-top: 85px; } }
+
+@media screen and (min-width: 1520px) {
+  .content-wrapper {
+    max-width: 1400px;
+    background: white;
+    margin: 0 auto; } }
 
 .column-left.affix {
   position: fixed;
@@ -7033,6 +7046,7 @@ body#why .side-nav-mobile,
       display: block; } }
 
 .list-group {
+  background-color: #efefef;
   /*put breadcrumb at top of mobile secondary nav*/ }
   .list-group a,
   .list-group a:link,
@@ -7080,10 +7094,22 @@ body#why .side-nav-mobile,
     padding-left: 20px; }
   .list-group ul ul li a {
     padding-left: 30px; }
+    @media screen and (min-width: 1520px) {
+      .list-group ul ul li a {
+        margin-left: 18px;
+        padding-left: 12px; } }
   .list-group ul ul ul li a {
     padding-left: 40px; }
+    @media screen and (min-width: 1520px) {
+      .list-group ul ul ul li a {
+        margin-left: 28px;
+        padding-left: 12px; } }
   .list-group ul ul ul ul li a {
     padding-left: 50px; }
+    @media screen and (min-width: 1520px) {
+      .list-group ul ul ul ul li a {
+        margin-left: 38px;
+        padding-left: 12px; } }
   .list-group div.section-header.active {
     background-color: #262421; }
   @media screen and (min-width: 900px) {
@@ -7730,6 +7756,14 @@ a.link-wrap {
   @media screen and (max-width: 899px) {
     .secondary-nav {
       display: none; } }
+  @media screen and (min-width: 1520px) {
+    .secondary-nav {
+      position: relative;
+      right: 40px;
+      width: auto;
+      margin-top: 2rem;
+      padding: .8rem 0;
+      background: #efefef; } }
 
 @media screen and (min-width: 900px) {
   .main-content {
