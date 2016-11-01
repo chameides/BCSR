@@ -222,6 +222,7 @@ nav#mainnav {
 				}
 				.form-control {
 					width: 200px;
+					border-radius: 0px; //override webkit mobile default border-radius
 				}
 			}
 			//on medium screens, reveal search box at right of page
