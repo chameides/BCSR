@@ -1,10 +1,14 @@
 @if $cec {
-  p, .text-center-over-p {
-    max-width: 58rem;
+  p {
+    max-width: $paragraph-width
   }
   .text-center-over-p {
     @extend .text-center;
-  }  
+    @media screen and (min-width:$screen-md) {
+      max-width: $paragraph-width
+    }
+  }
+
 }
 .aside {    
     background: #efefef;
@@ -251,7 +255,7 @@ cite {
 
 a.right-arrow, a:link.right-arrow  {
     @extend .cta-bullet;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
         font-size: .9em;
       }
   }

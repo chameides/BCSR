@@ -38,7 +38,7 @@ a {
   }
 }
 p {
-  @media screen and (max-width:$screen-md-min) {
+  @media screen and (max-width:$screen-sm-max) {
     @if $cec {
       font-size: 1.7rem;
       line-height: 1.2em
@@ -50,7 +50,7 @@ p {
   }
   &.paragraph-break {
     margin-bottom: 3.333rem;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
       margin-bottom: 2rem;
     }
   }
@@ -81,7 +81,7 @@ p {
   }
   
   //overflow-x: hidden because created inner scrollbar on pages lacking X amount of content would receive an inner scrollbar
-  @media screen and (max-width:$screen-md-min) {
+  @media screen and (max-width:$screen-sm-max) {
     @if $cec {
       font-size: 1.8rem;
       line-height: 1.2em;
@@ -503,8 +503,14 @@ body#why .side-nav-mobile,
   div.section-header {
     color: $medium-gray;
     background-color: $light-gray;
-    @include HelveticaCondMed(16px);
-    line-height: 16px;
+    @if $cec {
+      @include HelveticaCondMed(15px);
+      line-height: 17px;
+    }
+    @else {
+      @include HelveticaCondMed(16px);
+      line-height: 16px;
+    }
     display: block;
     position: relative;
     transition: color 0.25s, background-color 0.25s;
@@ -540,8 +546,27 @@ body#why .side-nav-mobile,
     }
   }
 	ul li a {
-		padding-left:30px;	
-	}
+    @if $cec {
+      padding-left: $carousel-control-font-size
+    }
+    @else {
+		  padding-left:$grid-gutter-width	
+	  } 
+  }
+
+  ul ul li a {
+    padding-left:$carousel-control-font-size*1.5;
+  }
+
+  ul ul ul li a {
+    padding-left:$carousel-control-font-size*2;
+  }
+
+  ul ul ul ul li a {
+    padding-left:$carousel-control-font-size*2.5;
+  }
+
+
   div.section-header.active {
   	background-color:$dark-gray;
   }
@@ -989,7 +1014,7 @@ body#why .side-nav-mobile,
   & li {
     display: inline;
   }
-  @media screen and (max-width:$screen-md-min) {
+  @media screen and (max-width:$screen-sm-max) {
     display: none;
   }
 }
@@ -1025,7 +1050,7 @@ p {
 // Right Arrow before List items
 ul.arrow-list li {
   margin-bottom: 1.5rem;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
       margin-bottom: .5rem;
     }
   & ul.arrow-list li {
@@ -1047,7 +1072,7 @@ div.arrow-list-tight-small-wrapper ul {
 ul.arrow-list {
   li:before {
     margin-right: 21px;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
       margin-right: .5em;
     }
   }
@@ -1125,7 +1150,7 @@ th {
   a:link.right-arrow  {
     @include LeHavre(16px);
     color: $red;
-      @media screen and (max-width:$screen-md-min) {
+      @media screen and (max-width:$screen-sm-max) {
         font-size: .9em;
       }
       &:hover{
@@ -1180,7 +1205,7 @@ ol.circle-list > li {
     padding-left: 0.5em;
     padding-right: 0.5em;
     position: relative;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
       margin-bottom: .5rem;
     }
 }

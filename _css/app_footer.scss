@@ -8,6 +8,14 @@ footer#globalfooter {
 	padding-top:30px;
 	padding-bottom:40px;
 	position:relative;
+	@if $cec {
+		.container {
+			width: 100%;	//Left aling footer content
+			@media (min-width: $screen-md-min) {
+				max-width: 90%; //Prevent content from overflowing viewport
+			}
+		}
+	}
 	ul, li {
 		list-style-type:none;
 		margin:0;

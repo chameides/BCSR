@@ -3,15 +3,14 @@
   width: 20%;
   max-width: $margin-secondary-nav;
   float: left;
-  @media screen and (max-width:$screen-md) {
+  @media screen and (max-width:$screen-sm-max) {
     display: none;
-    
   }
 }
 
 
 .main-content {
-  @media screen and (max-width:$screen-md-max) {
+  @media screen and (max-width:$screen-sm-max) {
     @extend .column-center;
   }
   @media screen and (min-width:$screen-md) {

@@ -9,4 +9,9 @@ body {
 
 $pagegrid-break-high: 1570px;
 $pagegrid-break-med: 1370px;
-$pagegrid-break-low: 990px;
+@if $cec {
+	$pagegrid-break-low: $screen-sm-max; //smaller breakpoints in CEC
+}
+@else {
+	$pagegrid-break-low: 990px;
+}
