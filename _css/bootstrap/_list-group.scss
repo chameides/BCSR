@@ -23,6 +23,11 @@
   padding: 10px 15px;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -1px;
+  @if $cec {
+    @media (min-width: $screen-xl-min) {
+      margin-bottom: 0;
+    }
+  }
   background-color: $light-gray;
 
   // Round the first and last items

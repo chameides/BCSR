@@ -2,6 +2,9 @@
 body {
   @if $cec {
     margin-top: 75px;
+    @media screen and (min-width:$screen-xl) { 
+      background: #efefef;
+    }
   }
   @else {
     margin-top: 200px;
@@ -20,6 +23,17 @@ body {
     }
   }
 }
+
+@if $cec {
+  .content-wrapper {
+    @media screen and (min-width:$screen-xl) { 
+      max-width: $max-content-width;
+      background: white;
+      margin: 0 auto;
+    }
+  }
+}
+
   //subnav affix styles
   .column-left.affix {
       position: fixed;
@@ -498,6 +512,9 @@ body#why .side-nav-mobile,
 
 // Subnav
 .list-group {
+  @if $cec {
+    background-color: $light-gray;
+  }
   a,
   a:link,
   div.section-header {
@@ -553,19 +570,29 @@ body#why .side-nav-mobile,
 		  padding-left:$grid-gutter-width	
 	  } 
   }
-
-  ul ul li a {
-    padding-left:$carousel-control-font-size*1.5;
+  @if $cec {
+    ul ul li a {
+      padding-left:$carousel-control-font-size*1.5;
+      @media screen and (min-width: $screen-xl) { //shift secondary nav to left on large screens
+        margin-left:$carousel-control-font-size*1.5 - $padding-base-horizontal2;
+        padding-left: $padding-base-horizontal2;
+      }
+    }
+    ul ul ul li a {
+      padding-left:$carousel-control-font-size*2;
+      @media screen and (min-width: $screen-xl) {
+        margin-left:$carousel-control-font-size*2 - $padding-base-horizontal2;
+        padding-left: $padding-base-horizontal2;
+      }
+    }
+    ul ul ul ul li a {
+      padding-left:$carousel-control-font-size*2.5;
+      @media screen and (min-width: $screen-xl) {
+        margin-left:$carousel-control-font-size*2.5 - $padding-base-horizontal2;
+        padding-left: $padding-base-horizontal2;
+      }
+    }
   }
-
-  ul ul ul li a {
-    padding-left:$carousel-control-font-size*2;
-  }
-
-  ul ul ul ul li a {
-    padding-left:$carousel-control-font-size*2.5;
-  }
-
 
   div.section-header.active {
   	background-color:$dark-gray;

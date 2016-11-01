@@ -6,6 +6,15 @@
   @media screen and (max-width:$screen-sm-max) {
     display: none;
   }
+  @media screen and (min-width:$screen-xl) {
+    position: relative;
+    right: $secondary-nav-shift;
+    width: auto;
+    margin-top: 2rem;
+    padding: .8rem 0;
+    background: $light-gray;
+
+  }
 }
 
 
