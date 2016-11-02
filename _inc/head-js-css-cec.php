@@ -12,6 +12,7 @@
 <link href="/_css/app_safari_hero_hack.css" rel="stylesheet">
 
 <style>
+
 .page-hero-container.gateway-bg {
     background-image: url(_images/gateway-header-bg.jpg);
 }
@@ -24,6 +25,10 @@
       rgba(0, 0, 0, .1)
     ),
     url(http://simons-rock.edu/_images/bard-academy-at-simons-rock/academic-program/academic-program/desktop-mixed-content/1122px-x-642px-video-or-image/bard-academy-at-simons-rock-2.jpg);
+}
+
+.collaborate {  
+  background-image: url(https://simons-rock.edu/_images/bard-academy-at-simons-rock/bard-academy-at-simons-rock/mobile-master-section/400px-x-529px-hero-/faculty-and-male-student-bard-academy.jpg);
 }
 
 
@@ -74,6 +79,15 @@
   .page-hero-container.at-a-glance-bg {
       background-image: url(_images/at-a-glance-bg-lg.jpg);
   }
+  .collaborate {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, .1),
+      rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .1)
+    ),
+    url(https://simons-rock.edu/_images/bard-academy-at-simons-rock/bard-academy-at-simons-rock/desktop-master-section/hero-image-1467px-x-530px/faculty-and-male-student-bard-academy.jpg);
+  }    
 }
 </style>
 <!-- video.js must be in the <head> for older IEs to work. -->
