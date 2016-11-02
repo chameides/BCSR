@@ -7,10 +7,10 @@
     <title>Simon's Rock Templates and Style Guide</title>
 
 <?php include '_inc/head-js-css-cec.php'; ?>
-	<script src="https://use.typekit.net/qqu1sty.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
   </head>
   <body>
+  <div class="content-wrapper">
 
   
 
@@ -341,7 +341,7 @@
 		</div>
 	    </div><!-- /.container -->
     
-<?php include '_inc/bottom-js.php' ?>
-
+      <?php include '_inc/bottom-js-cec.php' ?>
+      </div>
   </body>
 </html>
