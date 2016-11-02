@@ -738,7 +738,12 @@ body#why .side-nav-mobile,
 .page-hero-container {
   background: no-repeat center top scroll;
   width: 100%;
-  height: 529px;
+  @if $cec {
+    min-height: 88vh; //almost full height, let next section peek through
+  }
+  @else {
+    height: 529px; 
+  }
   margin-bottom: 40px;
   -webkit-background-size: cover;
   -moz-background-size: cover;

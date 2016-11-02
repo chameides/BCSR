@@ -15,6 +15,9 @@ footer#globalfooter {
 				max-width: 90%; //Prevent content from overflowing viewport
 			}
 		}
+		.full-width-body & .row {
+			margin: 0 auto; //center footer if page is full-width
+		} 
 	}
 	ul, li {
 		list-style-type:none;

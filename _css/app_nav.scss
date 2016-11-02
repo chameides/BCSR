@@ -41,6 +41,9 @@ nav#mainnav {
 			@media screen and (min-width:$screen-lg) {
     		max-width: 862px;
     		margin-left: 25%;
+  			.has-hero & {
+  				margin: 0 auto; //center top nav on hero
+				}
  			}
  			@media screen and (min-width:1400px) {
     		max-width: 862px;

@@ -1,8 +1,10 @@
 //colored background with 3 highlights used on CEC homepage
 .highlights-grid {
 	background-color: $blue;
-	padding-bottom: 1rem;
-  margin-bottom: 3rem;
+	@media screen and (min-width:$screen-md-min) {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
 	h2 {
 		font-size: 4.5rem;
 		line-height: 1.2em;

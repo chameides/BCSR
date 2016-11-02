@@ -3,11 +3,14 @@ $dark-yellow:#ad9000; // 173,144,0
 $dark-blue:#428585; // 66,133,133
 $dark-orange:#b85218; // 184,82,24
 
-body#home {
+body#home, .section-full-screen-wrapper {
 	/*
 	let's give the home page an ID of 'home', and scope all of
 	its home-page-only styles under that.
 	*/
+
+	//added section-full-screen-wrapper for CEC. Could probably aggregate and split off because most of this stuff not applicable to CEC. 
+
 	.vidbg {
 		margin:0;
 		padding:0;
@@ -101,12 +104,21 @@ body#home {
 			display:table;
 			padding-top:0px;
 			padding-bottom:0px;
-			height:720px;
-			
-			min-height:720px;
+			@if $cec {
+				min-height: 535px; //ensure minimum height so text is not cutoff
+				height: 85vh; //let next section peek through
+			}
+			@else {
+				height:720px;
+				min-height:720px;	
+			}
 		}
 		@media (min-height: 720px) {
-			height:100vh;
+			@if $cec {
+			}
+			@else {
+				height:100vh;
+			}
 		}
 		.intro_sub {
 			display:table-cell;
@@ -122,6 +134,11 @@ body#home {
 				min-height:720px;
 				padding-left:100px;
 				padding-right:100px;
+			}
+			@if $cec {
+				@media (min-width: $screen-md-min) {
+					padding: 0 20%; //get text to center even if less than full-width
+				}
 			}
 			@media (min-height: 720px) {
 				height:100vh;
@@ -1017,4 +1034,10 @@ section#announcements {
 		background-size:cover;
 		width: 100%;
 	}
-} 
+}
+
+@if $cec {
+	.section-full-screen-wrapper {
+		clear: both; //prevent background image from overlapping above content
+	}
+}
