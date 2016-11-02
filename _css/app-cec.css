@@ -7229,6 +7229,7 @@ body#why .side-nav-mobile,
 .page-hero-container {
   background: no-repeat center top scroll;
   width: 100%;
+  height: 529px;
   min-height: 88vh;
   margin-bottom: 40px;
   -webkit-background-size: cover;

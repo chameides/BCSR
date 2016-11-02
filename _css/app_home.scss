@@ -138,6 +138,7 @@ body#home, .section-full-screen-wrapper {
 			@if $cec {
 				@media (min-width: $screen-md-min) {
 					display: inline-block;//text needs to be centered. left/right padding doesn't work in FF
+					padding-top: 3em; //progressive enhancement for vh units
 					padding-top: 20vh;
 				}
 			}
