@@ -137,7 +137,8 @@ body#home, .section-full-screen-wrapper {
 			}
 			@if $cec {
 				@media (min-width: $screen-md-min) {
-					padding: 0 20%; //get text to center even if less than full-width
+					display: inline-block;//text needs to be centered. left/right padding doesn't work in FF
+					padding-top: 20vh;
 				}
 			}
 			@media (min-height: 720px) {

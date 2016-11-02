@@ -5880,7 +5880,8 @@ body#home, .section-full-screen-wrapper {
           padding-right: 100px; } }
       @media (min-width: 900px) {
         body#home #introduction .intro_sub, body#home .scrollfx-container .intro_sub, body#home .section-full-screen .intro_sub, .section-full-screen-wrapper #introduction .intro_sub, .section-full-screen-wrapper .scrollfx-container .intro_sub, .section-full-screen-wrapper .section-full-screen .intro_sub {
-          padding: 0 20%; } }
+          display: inline-block;
+          padding-top: 20vh; } }
       @media (min-height: 720px) {
         body#home #introduction .intro_sub, body#home .scrollfx-container .intro_sub, body#home .section-full-screen .intro_sub, .section-full-screen-wrapper #introduction .intro_sub, .section-full-screen-wrapper .scrollfx-container .intro_sub, .section-full-screen-wrapper .section-full-screen .intro_sub {
           height: 100vh; } }
