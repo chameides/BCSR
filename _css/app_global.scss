@@ -817,31 +817,34 @@ body#why .side-nav-mobile,
   }
 }
   .hero-title,
-    .hero-text {
-      color: $white;
-    } 
-    h1.hero-title {
-      margin-bottom: 1rem;
-      &.hero-title-alt {
-        color: $dark-gray;
-        max-width: 850px;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-bottom: .5rem;
-        @media screen and (max-width: $screen-xs2) {
-          margin-top: 1rem;
-        }
+  .hero-text {
+    color: $white;
+  } 
+  h1.hero-title {
+    margin-bottom: 1rem;
+    &.hero-title-alt {
+      color: $dark-gray;
+      max-width: 850px;
+      margin: 0 auto;
+      margin-top: 0;
+      margin-bottom: .5rem;
+      @media screen and (max-width: $screen-xs2) {
+        margin-top: 1rem;
       }
     }
-    .hero-title {
-      @include fadeIn( 1s );
+  }
+  .hero-title {
+    @include fadeIn( 1s );
+  }
+  .hero-text {
+    -webkit-animation-delay: 1s;
+    @include fadeIn( 2s );
+    line-height: 2.2rem;
+    font-size: 2rem;
+    @if $cec {
+      margin: 0 auto; //center text even if smaller than container
     }
-    .hero-text {
-      -webkit-animation-delay: 1s;
-      @include fadeIn( 2s );
-      line-height: 2.2rem;
-      font-size: 2rem;
-    }
+  }
   @media screen and (max-width: $screen-xs2) {
     .page-hero {
       padding-top: 120px;

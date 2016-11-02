@@ -7317,7 +7317,8 @@ h1.hero-title {
   -ms-animation: fadeIn 2s;
   animation: fadeIn 2s;
   line-height: 2.2rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: 0 auto; }
 
 @media screen and (max-width: 630px) {
   .page-hero {
