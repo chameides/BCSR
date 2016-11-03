@@ -45,9 +45,9 @@ nav#mainnav {
   				margin: 0 auto; //center top nav on hero
 				}
  			}
- 			@media screen and (min-width:1400px) {
-    		max-width: 862px;
-    		margin-left: $margin-secondary-nav+90px;
+ 			@media screen and (min-width:$screen-xl){
+ 				margin-left: auto; 
+ 				margin-right: auto;
  			}		
 		}
 		@else {
@@ -99,17 +99,19 @@ nav#mainnav {
 	}
 	.navbar-mobile-header {
 		@if $cec {
-			background-image:url(/_images/cec-logo-sprite.png);
-			background-position: center 0px;
+			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-position: center;
 			height: 75px;
+			background-size: 225px auto;
 		}
 		@else {
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position: center 15px;
 			height: 100px;
+			background-size: 250px auto;
 		}
 		background-repeat:no-repeat;		
-		background-size: 250px auto;	
+			
 		margin: auto;
 		@media (min-width: $screen-sm-min) {
 			background-position: center 16px;
@@ -126,16 +128,18 @@ nav#mainnav {
 	.navbar-brand {
 		@if $cec {
 			height:75px;
-			background-image:url(/_images/cec-logo-sprite.png);
-			background-position:center 0px;
+			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-position:center;
+			background-size:225px auto;
 		}
 		@else {
 			height:100px;
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position:center 15px;
+			background-size:250px auto;
 		}
 		background-repeat:no-repeat;
-		background-size:250px auto;
+		
 		position:absolute;
 		z-index:2;
 		top:-110px;
@@ -160,25 +164,23 @@ nav#mainnav {
 		}
 		@media (min-width: $screen-md-min) {
 			width:390px;
-			height:40px;
 			background-color:transparent;
 			@if $cec {
-				background-image:url(/_images/bcsr-logo-sprite-leftaligned-cec.png);
+				height: 53px;
+				background-image:url(/_images/cec-logo-sprite-leftaligned.png);
+				background-size:443px auto;
+				top: -15px;			
 			}
 			@else {
+				height:40px;
 				background-image:url(/_images/bcsr-logo-sprite-leftaligned.png);
+				background-size:390px auto;
+				top:4px;	
 			}
-			background-size:390px auto;
 			background-repeat:no-repeat;
 			background-position:0px -153px;
 			position:absolute;
 			z-index:3;
-			@if $cec {
-				top: 7px;	
-			}
-			@else {
-				top:4px;	
-			}
 			transition-property:top, background-position;
 			transition-duration:0s, 0s;
 			transition-delay:0s,0s;
@@ -637,19 +639,19 @@ nav#mainnav {
 
 @media (max-width: $screen-sm-max) {
 	.navbar-brand {
-		
 		@if $cec {
 			height: 75px;
-			background-image:url(/_images/cec-logo-sprite.png);
-			background-position:center 0px;
+			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-position:center;
+			background-size:225px auto;
 		}
 		@else {
 			height:100px;
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position:center 15px;
+			background-size:250px auto;
 		}
 		background-repeat:no-repeat;
-		background-size:250px auto;
 		position:absolute;
 		z-index:2;
 		top:-110px;

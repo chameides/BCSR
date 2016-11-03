@@ -28,7 +28,7 @@ Teaching Resources</a></li>
 	
 				</div>
 				<div class="col-md-3">
-					<h4 class="footer-logo"><a href="#" id="Footer_SimonsRockLogo"><span class="sr-only">Bard College at Simon's Rock</span></a></h4>
+					<h4 class="footer-logo"><a href="#" id="Footer_SimonsRockLogo"><img src="/_images/cec-logo-stacked-white.png"></a></h4>
 				</div>
 			</div>
 			<div class="row">

@@ -25,13 +25,21 @@ footer#globalfooter {
 		padding:0.5rem 0 0.5rem 0;
 	}
 	.footer-logo {
+		//CEC uses a standard src image, while BCSR uses a background image
 		a {
-			display:inline-block;
-			width:184px;
-			height:91px;
-			background-image:url(/_images/bcsr-logo-184x91.png);
-			background-size:cover;
-			background-repeat:no-repeat;
+			@if $cec {
+				img {
+					max-width: 350px;
+				}
+			}
+			@else {
+				display:inline-block;
+				width:184px;
+				height:91px;
+				background-image:url(/_images/bcsr-logo-184x91.png);
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
 			&:hover {
 				text-decoration:none;
 			}

@@ -5343,10 +5343,10 @@ nav#mainnav {
         margin-left: 25%; }
         .has-hero nav#mainnav .container {
           margin: 0 auto; } }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1520px) {
       nav#mainnav .container {
-        max-width: 862px;
-        margin-left: 370px; } }
+        margin-left: auto;
+        margin-right: auto; } }
   nav#mainnav .navbar-header {
     position: relative; }
   nav#mainnav button.navbar-toggle {
@@ -5381,11 +5381,11 @@ nav#mainnav {
       line-height: 1.42857;
       display: block; }
   nav#mainnav .navbar-mobile-header {
-    background-image: url(/_images/cec-logo-sprite.png);
-    background-position: center 0px;
+    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-position: center;
     height: 75px;
+    background-size: 225px auto;
     background-repeat: no-repeat;
-    background-size: 250px auto;
     margin: auto; }
     @media (min-width: 768px) {
       nav#mainnav .navbar-mobile-header {
@@ -5395,10 +5395,10 @@ nav#mainnav {
         display: none; } }
   nav#mainnav .navbar-brand {
     height: 75px;
-    background-image: url(/_images/cec-logo-sprite.png);
-    background-position: center 0px;
+    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-position: center;
+    background-size: 225px auto;
     background-repeat: no-repeat;
-    background-size: 250px auto;
     position: absolute;
     z-index: 2;
     top: -110px;
@@ -5421,15 +5421,15 @@ nav#mainnav {
     @media (min-width: 900px) {
       nav#mainnav .navbar-brand {
         width: 390px;
-        height: 40px;
         background-color: transparent;
-        background-image: url(/_images/bcsr-logo-sprite-leftaligned-cec.png);
-        background-size: 390px auto;
+        height: 53px;
+        background-image: url(/_images/cec-logo-sprite-leftaligned.png);
+        background-size: 443px auto;
+        top: -15px;
         background-repeat: no-repeat;
         background-position: 0px -153px;
         position: absolute;
         z-index: 3;
-        top: 7px;
         transition-property: top, background-position;
         transition-duration: 0s, 0s;
         transition-delay: 0s,0s; }
@@ -5646,10 +5646,10 @@ nav#mainnav {
 @media (max-width: 899px) {
   .navbar-brand {
     height: 75px;
-    background-image: url(/_images/cec-logo-sprite.png);
-    background-position: center 0px;
+    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-position: center;
+    background-size: 225px auto;
     background-repeat: no-repeat;
-    background-size: 250px auto;
     position: absolute;
     z-index: 2;
     top: -110px;
@@ -5699,15 +5699,10 @@ footer#globalfooter {
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0 0.5rem 0; }
-  footer#globalfooter .footer-logo a {
-    display: inline-block;
-    width: 184px;
-    height: 91px;
-    background-image: url(/_images/bcsr-logo-184x91.png);
-    background-size: cover;
-    background-repeat: no-repeat; }
-    footer#globalfooter .footer-logo a:hover {
-      text-decoration: none; }
+  footer#globalfooter .footer-logo a img {
+    max-width: 350px; }
+  footer#globalfooter .footer-logo a:hover {
+    text-decoration: none; }
   footer#globalfooter a {
     color: inherit; }
     footer#globalfooter a.fa-a {
@@ -5881,6 +5876,7 @@ body#home, .section-full-screen-wrapper {
       @media (min-width: 900px) {
         body#home #introduction .intro_sub, body#home .scrollfx-container .intro_sub, body#home .section-full-screen .intro_sub, .section-full-screen-wrapper #introduction .intro_sub, .section-full-screen-wrapper .scrollfx-container .intro_sub, .section-full-screen-wrapper .section-full-screen .intro_sub {
           display: inline-block;
+          padding-top: 3em;
           padding-top: 20vh; } }
       @media (min-height: 720px) {
         body#home #introduction .intro_sub, body#home .scrollfx-container .intro_sub, body#home .section-full-screen .intro_sub, .section-full-screen-wrapper #introduction .intro_sub, .section-full-screen-wrapper .scrollfx-container .intro_sub, .section-full-screen-wrapper .section-full-screen .intro_sub {
