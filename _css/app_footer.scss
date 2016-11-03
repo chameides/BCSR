@@ -9,13 +9,16 @@ footer#globalfooter {
 	padding-bottom:40px;
 	position:relative;
 	@if $cec {
+		.body-width-partial & {
+			margin-top: 3em; //put space between footer and main content
+		}		
 		.container {
 			width: 100%;	//Left aling footer content
 			@media (min-width: $screen-md-min) {
 				max-width: 90%; //Prevent content from overflowing viewport
 			}
 		}
-		.full-width-body & .row {
+		.body-width-full & .row {
 			margin: 0 auto; //center footer if page is full-width
 		} 
 	}

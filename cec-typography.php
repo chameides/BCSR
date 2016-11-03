@@ -10,14 +10,38 @@
 	
   </head>
   <body class="body-width-partial">
-  <div class="content-wrapper">
+  	<div class="content-wrapper">
+      <?php include '_inc/nav-cec.php'; ?>
+      <div class="container-fluid page-container">
+        <div class="secondary-nav">
+          <ul class="flat-list list-group">
+            <li><a href="#" class="list-group-item">Home</a>
+              <ul class="flat-list list-group">
+                <li><a href="#" class="list-group-item">Approach to Education</a>
+                  <ul class="flat-list list-group">
+                    <li><a href="#" class="list-group-item">Resources</a>
+                      <ul class="flat-list list-group">
+                        <li><a href="#" class="list-group-item">Complex Classroom Methodologies</a>
+                          <ul class="flat-list list-group">
+                            <li><a href="#" class="list-group-item active">Case Studies</a>
+                            </li>
+                            <li><a href="#" class="list-group-item">Working with students</a></li>
+                            <li><a href="#" class="list-group-item">The Liberal Arts</a></li>
+                            <li><a href="#" class="list-group-item">Student Expectations</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- secondary -nav -->
+         <div class="main-content">
 
-  
 
-    
-<div class="container-fluid page-container">
-  <div class="column-center"> 
-    <h1 class="header-page text-center">Typography</h1>
+    <h1 class="header-page text-center-over-p">Typography</h1>
     <p>The body copy is set in Helvetica Neue Condensed - clean, contemporary, and yet neutral. Headers are set in Freight Neo. The sans serif complements the contemporary feel of the body copy. The notches and mixed-width reference humanism and the Renaissance, creating a feeling that is both serious and warm.</p>
 
     <h2>Table of Contents</h2>
@@ -51,7 +75,7 @@
 		<h5>Heading 5</h5>
 		<h6>Heading 6</h6>
 
-		<h1 class="text-center">Heading 1</h1>
+		<h1 class="header-page text-center-over-p">Heading 1</h1>
 		<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 		<h2>Heading 2</h2>
 		<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -280,10 +304,10 @@
 	<div class="row col-md-12">
 		<h2>Calls To Action</h2>
 		<p>The red button should be short, scannable. Verb Object (Contact Us). If it is longer, consider the large red arrow link. Only use the small red arrow link in conjunction with the red button.
-		<div class="text-center">
+		<div class="text-center-over-p">
 			<a class="btn btn-primary" href="#">Contact Us</a>
 		</div>
-		<div class="text-center page--link">
+		<div class="text-center-over-p page--link">
 			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Explore our programs</a>
 
 		</div>
@@ -331,16 +355,14 @@
 			</div>
 		</div>
 	</div>
-	<div>&nbsp;</div>
-
-
 	</div>	
 	</section>
 
 
-		</div>
+		
 	    </div><!-- /.container -->
     
+      <?php include '_inc/footer-cec.php'; ?>   
       <?php include '_inc/bottom-js-cec.php' ?>
       </div>
   </body>

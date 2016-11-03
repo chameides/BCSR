@@ -10,7 +10,7 @@
     <?php include '_inc/head-js-css-cec.php'; ?>
 
   </head>
-  <body class="has-hero full-width-body">
+  <body class="has-hero body-width-full">
 
   
 <?php include '_inc/nav-cec.php'; ?>
