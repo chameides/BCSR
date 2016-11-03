@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simon's Rock Templates and Style Guide</title>
+    <title>Typography | Center for Early College </title>
 
 <?php include '_inc/head-js-css-cec.php'; ?>
 	
   </head>
-  <body>
+  <body class="body-width-partial">
   <div class="content-wrapper">
 
   

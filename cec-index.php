@@ -9,7 +9,8 @@
     <?php include '_inc/head-js-css-cec.php'; ?>
     
   </head>
-  <body>
+  <body class="body-width-partial">
+    <div class="content-wrapper">
 
   
 <?php include '_inc/nav-cec.php'; ?>
@@ -23,7 +24,7 @@
         <ul>
           <!--<li><a href="#templates">Templates</a></li>-->
           <li><a href="cec-typography.php">Typography</a></li>
-          <li><a href="cec-nav.php">Nav</a></li>
+          <li><a href="cec-structure.php">Structure</a></li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -45,9 +46,8 @@
     </div>
       </div><!-- /.container -->
 
-<?php include '_inc/footer.php'; ?>
-    
-<?php include '_inc/bottom-js.php' ?>
-
+      <?php include '_inc/footer-cec.php'; ?>   
+      <?php include '_inc/bottom-js-cec.php' ?>
+    </div>
   </body>
 </html>
