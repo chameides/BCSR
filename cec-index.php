@@ -30,6 +30,7 @@
       <div class="col-md-4">
         <ul>
           <li><a href="cec-hero.php">Hero</a></li>
+          <li><a href="cec-search.php">Search</a></li>
           
         </ul>
       </div>
