@@ -76,7 +76,7 @@
 									<h4>Person #7</h4>
 									<p>Lorem ipsum dolor sit amet</p>
 								</div>
-								<button class="btn btn-link linkbutton" data-toggle="modal" data-target="#rocker2VideoModal"><i class="fa fa-link"></i></button>
+								<a href="test" class="btn btn-link linkbutton"><i class="fa fa-link"></i></button>
 							</div>
 		
 							<div class="skew">
