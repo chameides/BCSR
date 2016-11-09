@@ -76,7 +76,7 @@
 									<h4>Person #7</h4>
 									<p>Lorem ipsum dolor sit amet</p>
 								</div>
-								<a href="test" class="btn btn-link linkbutton"><i class="fa fa-link"></i></button>
+								<a href="test" class="btn btn-link linkbutton"><i class="fa fa-link"></i></a>
 							</div>
 		
 							<div class="skew">
