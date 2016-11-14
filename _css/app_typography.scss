@@ -54,7 +54,7 @@ blockquote:before, blockquote.blockquote-long:before {
   font-size: 4.3em;
   text-indent: -.5em;
 	float: left;
-  @media screen and (max-width:$screen-md) {
+  @media screen and (max-width:$screen-sm-max) {
     font-size: 3rem;
   }  
   @media screen and (min-width:$screen-md) {	
@@ -84,8 +84,8 @@ blockquote:before, blockquote.blockquote-long:before {
 
 blockquote.blockquote-long:before{
  font-size:3em; 
-  @media screen and (max-width:$screen-md) {
-    font-size: 3em;
+  @media screen and (max-width:$screen-sm-max) {
+    font-size: 2em;
   }
   @media screen and (min-width:$screen-md) {
     font-size: 3em;
@@ -105,21 +105,42 @@ blockquote p.blockquote-last:after, .blockquote-mark {
   content: '\201D';
   font-size: 1.8em;
   position: relative; 
+  right: 0.1em;
   line-height: 0;
   @media screen and (min-width:$screen-md) {
     top: 1.3rem;
   }
-  @media screen and (max-width:$screen-md) {
+  @media screen and (max-width:$screen-sm-max) {
     top: .5rem;
+    @if $cec {
+      font-size: 1.6em;     
+      & .blockquote-long {
+        font-size: 2.4em;
+        //top: 1rem;
+      }
+      & .no-margin-top {
+        top: 0rem;
+        font-size: 1.7em
+      }
+    }
   }
 }
 
+@if $cec {
+  @media screen and (min-width:$screen-md) {
+    .blockquote-long {
+      p.blockquote-last:after, .blockquote-mark {
+        top: 1rem;
+      }
+    }
+  }
+}
 /*inset margin*/
 blockquote {
 	border-left: none;
 	margin-left:.3em;
 	color: $blue;
-		@media screen and (max-width:$screen-md) {
+		@media screen and (max-width:$screen-sm-max) {
 			font-size: 1.5rem;
 			margin-bottom: .5rem;
 			line-height: 2rem;
@@ -143,7 +164,7 @@ blockquote, blockquote.blockquote-long, body#home .section-full-screen blockquot
       font-style: italic;
       margin-bottom: 0.667rem;
       padding: 0;
-    @media screen and (max-width:$screen-md) {
+    @media screen and (max-width:$screen-sm-max) {
       font-size: 1.5rem;
       margin-bottom: .2rem;
       line-height: 2rem;
@@ -159,7 +180,7 @@ blockquote, blockquote.blockquote-long, body#home .section-full-screen blockquot
 blockquote.blockquote-long p {
   font-size: 2rem;
   line-height:2.5rem;
-  @media screen and (max-width:$screen-md) {
+  @media screen and (max-width:$screen-sm-max) {
       font-size: 1.5rem;
       margin-bottom: .2rem;
       line-height: 2rem;
@@ -174,7 +195,7 @@ cite {
 	font-style: none;
 	text-align: right;
 	line-height: 1.3em;
-	@media screen and (max-width:$screen-md) {
+	@media screen and (max-width:$screen-sm-max) {
 		font-size: 1.2rem;
         text-align: left; /*long citation on small screen will line break and look weird if right aligned*/
 	}
