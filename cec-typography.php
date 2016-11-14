@@ -171,12 +171,12 @@
 
   <h2>ADVISORY BOARD</h2>
   <div>
-  	<h4 class="margin-bottom-small">Alexandra Contreras</h4>
+  	<h5 class="margin-bottom-small">Alexandra Contreras</h5>
   	<p>Senior Analyst, Global Diversity &amp; Inclusion, Colgate-Palmolive<br>
   	Bard Early Colleges parent</p>
   </div>
   <div>
-  	<h4 class="margin-bottom-small">Name</h4>
+  	<h5 class="margin-bottom-small">Name</h5>
   	<p >Job Title, Company<br>
   	Additional Note<br>
   	Relationship to Bard</p>

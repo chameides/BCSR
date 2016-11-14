@@ -1114,6 +1114,13 @@ ul.arrow-list {
 //Arrow list style for faculty-staff listings and department listings 5-6-2016
 
 div.arrow-list-tight-small-wrapper {
+  @if $cec {
+    @media (min-width: $screen-sm-min) {
+      h4 {
+        font-size: 2.3rem;
+      }
+    }
+  }
   h4, p {
     @if $cec {
       margin-bottom:.1em;  
