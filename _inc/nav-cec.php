@@ -110,32 +110,35 @@
 							<a href="/why-simons-rock.php" id="PrimaryNav_WhySimonsRock">About</a>
 						</li>
 						<li>
-							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Approach to Education</a>
+							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Pedagogy</a>
 						</li>
 
 						<li>
-							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Campuses</a>
+							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Our Network</a>
 						</li>
 
 						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
 						</li>
+						<li>
+							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Partnerships</a>
+						</li>
 						<li class="hidden-md hidden-lg">
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"></i> Contact Us</a>
 						</li>
 						<li class="visible-md visible-lg">
-							<button class="btn btn-link"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
+							<button class="btn btn-link" title="Contact Us"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
 						</li>
 						<li class="nav-search">
 							<form role="search" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
 								<div class="input-group">
 								  <input type="text" class="form-control" placeholder="SEARCH">
 								  <span class="input-group-btn">
-									<button class="btn btn-link" id="PrimaryNav_Search"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
+									<button class="btn btn-link" title="Search" id="PrimaryNav_Search"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
 								  </span>
 								</div><!-- /input-group -->
 							</form>
-							<button class="btn btn-link hidden-sm hidden-xs" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;"><span class="sr-only">Search</span></i></button>
+							<button class="btn btn-link hidden-sm hidden-xs" title="Search" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;"><span class="sr-only">Search</span></i></button>
 						</li>
 					</ul>
 				</div><!--/.container -->

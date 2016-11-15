@@ -15,8 +15,8 @@
       <div class="container-fluid page-container">
         <div class="secondary-nav">
           <ul class="flat-list list-group">
-            <li><a href="#" class="list-group-item">Home</a>
-              <ul class="flat-list list-group">
+            <!--<li><a href="#" class="list-group-item">Home</a>
+              <ul class="flat-list list-group">-->
                 <li><a href="#" class="list-group-item">Approach to Education</a>
                   <ul class="flat-list list-group">
                     <li><a href="#" class="list-group-item">Resources</a>
@@ -34,15 +34,15 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
-            </li>
+              <!--</ul>
+            </li>-->
           </ul>
         </div><!-- secondary -nav -->
          <div class="main-content">
 
 
     <h1 class="header-page text-center-over-p">Typography</h1>
-    <p>The body copy is set in Helvetica Neue Condensed - clean, contemporary, and yet neutral. Headers are set in Freight Neo. The sans serif complements the contemporary feel of the body copy. The notches and mixed-width reference humanism and the Renaissance, creating a feeling that is both serious and warm.</p>
+    <p>The body copy is set in Helvetica Neue Condensed&mdash;clean, contemporary, and yet neutral. Headers are set in Le Havre&mdash;the irregular edges and loudness of the typeface echo the nontraditional and bold nature of our work.</p>
 
     <h2>Table of Contents</h2>
     	<div class="col-md-4">

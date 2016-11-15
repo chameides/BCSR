@@ -39,16 +39,10 @@ nav#mainnav {
 				margin-left: 1em;
 			}
 			@media screen and (min-width:$screen-lg) {
-    		max-width: 862px;
-    		margin-left: 25%;
-  			.has-hero & {
-  				margin: 0 auto; //center top nav on hero
-				}
+    		max-width: 890px;
+    		margin-left: auto; 
+    		margin-right: auto; 
  			}
- 			@media screen and (min-width:$screen-xl){
- 				margin-left: auto; 
- 				margin-right: auto;
- 			}		
 		}
 		@else {
 			max-width:970px;

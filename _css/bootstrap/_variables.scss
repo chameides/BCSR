@@ -313,7 +313,7 @@ $screen-tablet:              $screen-sm-min !default;
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
 @if $cec {
-	$screen-md:                900px !default;	
+	$screen-md:                935px !default;	
 }
 @else {
 	$screen-md:                992px !default;

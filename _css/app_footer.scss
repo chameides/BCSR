@@ -9,8 +9,14 @@ footer#globalfooter {
 	padding-bottom:40px;
 	position:relative;
 	@if $cec {
+		@media (max-width: $screen-sm-max) {
+			padding-top:10px; 
+		}
 		.body-width-partial & {
 			margin-top: 3em; //put space between footer and main content
+			@media (max-width: $screen-sm-max) {
+				margin-top: 0; //align to top of secondary nav
+			}
 		}		
 		.container {
 			width: 100%;	//Left aling footer content
@@ -46,6 +52,20 @@ footer#globalfooter {
 			&:hover {
 				text-decoration:none;
 			}
+		}
+	}
+	@if $cec {
+		//bard logo
+		.footer-logo-secondary {
+			text-align: center; 
+			margin-top: 0;
+			@media (max-width: $screen-sm-max) {
+				text-align: left;
+			}	
+			img {
+				width: 125px;
+			}
+			
 		}
 	}
 	a {
@@ -99,6 +119,10 @@ footer#globalfooter {
 				display:inline-block;
 				margin-left:1rem;
 				margin-right:1rem;
+				&.footer-logo-secondary
+					{
+						display: block;
+					}
 			}
 		}
 	}

@@ -15,16 +15,15 @@
       <div class="container-fluid page-container">
         <div class="secondary-nav">
           <ul class="flat-list list-group">
-            <li><a href="#" class="list-group-item">Home</a>
-              <ul class="flat-list list-group">
+            <!--<li><a href="#" class="list-group-item">Home</a>
+              <ul class="flat-list list-group">-->
                 <li><a href="#" class="list-group-item">Approach to Education</a>
                   <ul class="flat-list list-group">
                     <li><a href="#" class="list-group-item">Resources</a>
                       <ul class="flat-list list-group">
                         <li><a href="#" class="list-group-item">Complex Classroom Methodologies</a>
                           <ul class="flat-list list-group">
-                            <li><a href="#" class="list-group-item active">Case Studies</a>
-                            </li>
+                            <li><a href="#" class="list-group-item active">Case Studies</a></li>
                             <li><a href="#" class="list-group-item">Working with students</a></li>
                             <li><a href="#" class="list-group-item">The Liberal Arts</a></li>
                             <li><a href="#" class="list-group-item">Student Expectations</a></li>
@@ -32,8 +31,8 @@
                         </li>
                       </ul>
                     </li>
-                  </ul>
-                </li>
+                  <!--</ul>
+                </li>-->
               </ul>
             </li>
           </ul>
@@ -48,24 +47,18 @@
           <p>The top navigation of the site is separated into four branches, plus two tasks contact us and search. The four branches are consistent with the approved strategy. Each branch references a key aspect of CEC we want to provide and they also cover the scope of the information.</p>
           <h3>Secondary</h3>
           <p>The secondary navigation provides context for where this page fits within the larger structure. Users can browse up and across the file tree. On smaller screens the navigation drops below the content and above the footer.</p>
-          <h3>Tasks</h3>
-          <p>Footer navigation gives key tasks consistent with the approved strategy. Tasks are organized into categories so as to make tasks browseable as well as to highlight key messages about CEC. The footer also includes contact information.</p>   
-
-
-          top navigation of the site is separated into four branches, plus two tasks contact us and search. The four branches are consistent with the approved strategy. Each branch references a key aspect of CEC we want to provide and they also cover the scope of the information.</p>
-
-
+          <h3>Engagement</h3>
+          <p>Footer navigation gives key ways for users to engage and connect with CEC. We decided against listing the most likely pages people will want to visit.</p>   
+          <h3>Bard branding</h3>
+          <p>In addition to incorporating Bard into the CEC logo, the Bard logo appears at the very bottom of the page, underneath the copyright stuff. The placement of the logo reaffirms that we are a branch of Bard College.</p> 
           <h2>Additional Features</h2>
           <p>We can and will build out more parts including:</p> 
           <ul>
             <li>Actual links for each part</li>
-            <li>Refinement of the animation and transitions</li>
+            <li>Refinement of the logo animation and transitions</li>
             <li>Refinement of spacing</li>
-            <li>Swap out logo</li>
-            <li>Update contact information</li>
             <li>Hero graphic version</li>
           </ul>
-
           <h2>Technical Notes</h2>
           <p>The JavaScript is branched from the Simon's Rock repository. The original script was broken up into parts (modules). Alternate and additional modules were created specific for the needs of this site. Then two versions of script, each compiled in grunt with the appropriate modules.</p>
 
@@ -112,11 +105,11 @@ concat:
                 <li>Case Studies</li>
               </ol>
             </li>  
-              <li><a href="#" class="list-group-item">Working with students</a></li>
+              <li><a href="sample1" class="list-group-item">Working with students</a></li>
               <li><a href="/mixed-media.php" class="list-group-item">The Liberal Arts</a>
               </li>
-              <li><a href="#" class="list-group-item">Dates and Deadlines</a></li>
-              <li><a href="#" class="list-group-item">Student Expectations</a></li>
+              <li><a href="sample2" class="list-group-item">Dates and Deadlines</a></li>
+              <li><a href="sample3" class="list-group-item">Student Expectations</a></li>
           </ul>
           <!-- /Subnav -->
         </div><!-- /Sidbar Mobile Nav-->
