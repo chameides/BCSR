@@ -44,7 +44,7 @@
     	</div>
     	<a name="templates"></a>
 		<div class="col-md-12">
-			<h2 class="text-center">Templates &amp; Examples</h2>
+			<h2>Templates &amp; Examples</h2>
 			<p>View samples of distinct page layouts.</p>
 			<div class="row">
 				<div class="col-md-4">
@@ -94,8 +94,6 @@
 								<li><a href="gatekeeper-academy.php">Gatekeeper-Academy</a></li>
 								<li><a href="gatekeeper-academy-slate.php">Gatekeeper-Academy-Slate</a></li>
 								<li><a href="gatekeeper-college-slate.php">Gatekeeper-College-Slate</a></li>
-
-
 							</ul>
 						</li>
 						
@@ -106,7 +104,7 @@
 		</div>
 		<div class="col-md-12" >
 			<a name="alert"></a>
-			<h2 class="text-center">Alert System</h2>
+			<h2>Alert System</h2>
 			<div class="row">
 				<p>
 					Preview any page with a warning-level alert by adding <em>"?alert=warning"</em> to the end of 
@@ -142,7 +140,7 @@
 		</div>
 	<a name="columns"></a>
 	<div class="col-md-12">
-		<h2 class="text-center">Columns</h2>
+		<h2>Columns</h2>
 		<div class="row">
 			<div class="col-md-12">
 				<h3>This is an h3 over a two-col layout</h3>
@@ -240,7 +238,7 @@
 	<a name="headings"></a>	
 	<div class="col-md-12">
 	<h1 class="text-center">Heading 1</h1>
-	<h2 class="text-center">Heading 2</h2>
+	<h2>Heading 2</h2>
 	<h3>Heading 3</h3>
 	<h3><strong>Heading 3</strong></h3>
 	<h4>Heading 4</h4>
@@ -250,7 +248,7 @@
 
 	<h1 class="text-center">Heading 1</h1>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-	<h2 class="text-center">Heading 2</h2>
+	<h2>Heading 2</h2>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 	<h3>Heading 3</h3>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -265,7 +263,7 @@
 	
 	<a name="paragraph"></a>
 	<div class="col-md-12">
-	<h2 class="text-center" id="paragraph">Text Elements</h2>
+	<h2 id="paragraph">Text Elements</h2>
 	<h3>Intro paragraph and regular paragraph</h3>
 
 	<p class="intro-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
@@ -326,7 +324,7 @@
 	-->
 	<a name="lists"></a>
 	<div class="col-md-12">
-		<h2 id="list_types" class="text-center">List Types</h2>
+		<h2 id="list_types">List Types</h2>
 
 		<h3>Custom Unordered (bullet) List</h3>
 
@@ -414,7 +412,7 @@
 
 	<a name="tables"></a>
 	<div class="col-md-12">
-	<h2 id="tables" class="text-center">Tables</h2>
+	<h2 id="tables">Tables</h2>
 
 		<table class="table table-striped">
 		  <thead class="table__head">
@@ -461,7 +459,7 @@
 	</div>
 	<a name="forms"></a>
 	<div class="col-md-12">
-	<h2 id="form_elements" class="text-center">Form Elements</h2>
+	<h2 id="form_elements">Form Elements</h2>
 
 <!--	<h3>Media</h3>
 
@@ -836,7 +834,7 @@
 	
 
 
-		<h2 class="text-center">Bootstrap Accordion</h2>
+		<h2>Bootstrap Accordion</h2>
 
 		<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
 		  <div class="panel panel-default">
@@ -984,7 +982,7 @@
 
 	<a name="pull"></a>
 	<div class="col-md-12">
-		<h2 class="text-center">Pullquotes</h2>
+		<h2>Pullquotes</h2>
 		<blockquote>
                      <p>It is not just about knowledge and learning to absorb information and then regurgitate
                         on a test, but actually being able to use one's brain in any situation, academic or
@@ -1024,7 +1022,7 @@
 	</div>
 	<a name="images"></a> 
 	<div class="col-md-12">
-	<h2 class="text-center">Images</h2>	
+	<h2>Images</h2>	
 	<img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/1170x600" title="A title element for this placeholder image.">
 	<p>The standard image goes to the full width of the column</p>
 	<p><img src="//placehold.it/325/325" class="pull-left-responsive-35">The pull-left-responsive-35 image changes width based on screen size. It floats to the left. The max-width is 325px. The pull-left-responsive-50 image floats a larger image (445px) to the left. 
@@ -1039,7 +1037,7 @@
 
 	<a name="cta"></a>
 	<div class="col-md-12">
-		<h2 class="text-center">CTA</h2>
+		<h2>CTA</h2>
 		<p>The red button should be short, scannable. Verb Object (Visit Campus). If it is longer, consider the large red arrow link. Only use the small red arrow link in conjunction with the red button. 
 		<div class="text-center">
 			<a class="btn btn-primary" href="#">Red Button</a>
@@ -1076,7 +1074,7 @@
 		<div>&nbsp;</div>
 
 	<div class="col-md-12">
-		<h2 class="text-center">Captions</h2>
+		<h2>Captions</h2>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
@@ -1096,7 +1094,7 @@
 
 
 	<div class="row thumb-set">
-	<h2 class="text-center">Thumbnails and Thumbnail Copy</h2>
+	<h2>Thumbnails and Thumbnail Copy</h2>
 		<div class="col-md-3">
 			<div class="row no-margin">
 				<div class="col-xs-3 col-md-12">
