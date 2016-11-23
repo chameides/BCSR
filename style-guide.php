@@ -1144,6 +1144,114 @@
 			</div>
 		</div>
 	</div>
+	<!-- Sucess Thumbs -->
+        <div class="padded">
+          <h2 class="text-center">Simon’s Rock Success H2</h2>
+        </div>
+        <div class="row thumb-set">
+          <div class="col-md-4">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-md-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/lady.jpg" alt="teacher">
+                </div>
+              </div>
+              <div class="col-xs-9 col-md-12">
+                <p class="thumbnail-copy">What STEM Does to Your Way of Thinking… and Why You Should Let It</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-md-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/man-painted.jpg" alt="student">
+                </div>
+              </div>
+              <div class="col-xs-9 col-md-12">
+                <p class="thumbnail-copy">Professor Profile: Jacob Fossum, Fine Artist</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-md-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/glasses-man.jpg" alt="teacher">
+                </div>
+              </div>
+              <div class="col-xs-9 col-md-12">
+                <p class="thumbnail-copy">What Really Matters About Simon's Rock Students</p>
+              </div>
+            </div></a>
+          </div>
+        </div>
+        <!-- /Sucess Thumbs -->
+
+
+
+        <p>a paragraph to test alignment. this item is used on giving to address donor interests. Select which interest area. Later on, there are options for campaigns, that speak to our language. </p>
+        <!-- Highlight Grid Thumbs -->
+        <div class="row thumb-set">
+          <div class="col-sm-6">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-sm-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/lady.jpg" alt="teacher">
+                </div>
+              </div>
+              <div class="col-xs-9 col-sm-12">
+                <p class="thumbnail-copy">Support Our Students</p>
+                <div class="image-title">Open the door to intellectual discovery</div>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-sm-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/man-painted.jpg" alt="student">
+                </div>
+              </div>
+             <div class="col-xs-9 col-sm-12">
+                <p class="thumbnail-copy">Support Our Faculty</p>
+                <div class="image-title">Commitment to inquiry, scholarship, and community</div>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-sm-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/glasses-man.jpg" alt="teacher">
+                </div>
+              </div>
+              <div class="col-xs-9 col-sm-12">
+                <p class="thumbnail-copy">Support Our Students</p>
+                <div class="image-title">Open the door to intellectual discovery</div>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#"><div class="row no-margin">
+              <div class="col-xs-3 col-sm-12">
+                <div class="image-thumb">
+                  <img class="fluid-img" src="../_images/glasses-man.jpg" alt="teacher">
+                </div>
+              </div>
+              <div class="col-xs-9 col-sm-12">
+                <p class="thumbnail-copy">Support Our Students</p>
+                <div class="image-title">Open the door to intellectual discovery</div>
+              </div>
+            </div></a>
+          </div>
+        </div>
+        <!-- /Sucess Thumbs -->
+
+
+
+
+
 	<div>&nbsp;</div>	
 	</section>
 

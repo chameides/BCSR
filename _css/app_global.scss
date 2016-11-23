@@ -174,7 +174,32 @@ p {
       //   padding-right: 0;
       // }
     }
-    .col-md-4 {
+    .col-sm-6 { //2 across used on giving interest grid on giving landing page
+      @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: 2.5rem; //spacing between rows
+        .col-sm-12 {
+          padding-left: 0;
+        }
+      }
+      .thumbnail-copy {
+        font-size: 24px;
+        line-height: 1em;
+        margin-bottom: 0;   
+        @media screen and (max-width: $screen-xs-max) {     
+          font-size: 16px;
+          margin-bottom: 3px;
+        }
+      }
+      @media screen and (min-width: $screen-sm-min) {
+        .thumbnail-copy, .image-title {
+          text-align: center; //override defaults
+        }
+      }
+    }
+    .col-sm-6:nth-child(odd) {
+      clear: left; //make sure 3rd item clears to left even if 1st item is taller than 2nd
+    }
+    .col-md-4 { //3 images with captions, used on articles in giving landing template
       @media screen and (max-width: $screen-sm-min) {
         padding-left: 1em;
         padding-right: 1em;
@@ -186,6 +211,8 @@ p {
       }
     }
   }
+
+
   .row.stacked-content {
     .col-md-6 {
       @media screen and (max-width:  $screen-sm-min) {
@@ -1343,7 +1370,9 @@ a.link-wrap {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
 }
-.block-quote-text.active { opacity: 1; }
+.block-quote-text.active { 
+  opacity: 1; 
+}
 
 
 // .circle-container {
