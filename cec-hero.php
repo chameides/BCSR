@@ -38,7 +38,7 @@
             <img src="/_images/cec/icon/building.svg">
             <h3>12 Schools</h3>
             <h4>We run early college programs across the country</h4>
-            <a class="btn btn-primary" href="#">Explore Our Programs</a>
+            <a class="btn btn-primary" href="#">Explore Our Network</a>
           </div>
           <br>
         </div>
