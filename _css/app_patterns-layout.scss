@@ -6,18 +6,19 @@
 		padding-bottom: 4rem;
 	}
 	h2 {
-		font-size: 4.5rem;
+		//font-size: 4.5rem;
 		line-height: 1.2em;
     margin-top: .5em;
     margin-bottom: .5em;
     color: white;
     @media screen and (max-width:$screen-sm-max) {
-		  font-size: 4.2rem;
+		  //font-size: 4.2rem;
     	line-height: 1.1em;
+    	margin-top: 1em;
 	  }
 	}
 	h3 {
-		font-size: 3.5rem;
+		//font-size: 3.5rem;
 		margin-top: .2em;
     margin-bottom: .2em;
     color: #efefef;

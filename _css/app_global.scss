@@ -814,44 +814,54 @@ body#why .side-nav-mobile,
     }
   }
 }
-  .hero-title,
-  .hero-text {
-    color: $white;
-  } 
-  h1.hero-title {
-    margin-bottom: 1rem;
-    &.hero-title-alt {
-      color: $dark-gray;
-      max-width: 850px;
-      margin: 0 auto;
-      margin-top: 0;
-      margin-bottom: .5rem;
-      @media screen and (max-width: $screen-xs2) {
-        margin-top: 1rem;
-      }
+.hero-title,
+.hero-text {
+  color: $white;
+} 
+h1.hero-title {
+  margin-bottom: 1rem;
+  &.hero-title-alt {
+    color: $dark-gray;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    @media screen and (max-width: $screen-xs2) {
+      margin-top: 1rem;
     }
   }
-  .hero-title {
-    @include fadeIn( 1s );
+}
+.hero-title {
+  @include fadeIn( 1s );
+}
+.hero-text {
+  -webkit-animation-delay: 1s;
+  @include fadeIn( 2s );
+  line-height: 2.2rem;
+  font-size: 2rem;
+  @if $cec {
+    margin: 0 auto; //center text even if smaller than container
   }
-  .hero-text {
-    -webkit-animation-delay: 1s;
-    @include fadeIn( 2s );
-    line-height: 2.2rem;
-    font-size: 2rem;
-    @if $cec {
-      margin: 0 auto; //center text even if smaller than container
-    }
+}
+@media screen and (max-width: $screen-xs2) {
+.page-hero .hero-title, .highlights-grid h2, .highlights-grid h3 {
+  @if $cec {
+    font-size: 2.8rem;
   }
-  @media screen and (max-width: $screen-xs2) {
-    .page-hero {
-      padding-top: 120px;
-      .hero-title {
-        font-size: 2.5rem;
+  @else {
+    font-size: 2.5rem;
+  }  
+} 
+  .page-hero {
+    padding-top: 120px;
+    .hero-text {
+      @if $cec {
+        font-size: 1.7rem;
       }
-      .hero-text {
+      @else {
         font-size: 1.5rem;
       }
+    }
   }
 }
 
