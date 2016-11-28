@@ -5415,12 +5415,12 @@ nav#mainnav {
         display: none; }
     @media (min-width: 935px) {
       nav#mainnav .navbar-brand {
-        width: 390px;
         background-color: transparent;
+        width: 230px;
         height: 53px;
         background-image: url(/_images/cec-logo-sprite-leftaligned.png);
         background-size: 443px auto;
-        top: -15px;
+        top: -18px;
         background-repeat: no-repeat;
         background-position: 0px -153px;
         position: absolute;
@@ -9909,6 +9909,7 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
   .highlights-grid h4 {
     font-family: "HelveticaNeueLT-Condensed", Helvetica, Arial, sans-serif;
     font-size: 2.1rem;
+    letter-spacing: 0;
     font-weight: 500;
     margin-top: .0em;
     color: #efefef; }

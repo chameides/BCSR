@@ -36,7 +36,7 @@
         <div class="col-sm-4 form-group"> 
           <div class="text-center">
             <img src="/_images/cec/icon/building.svg">
-            <h3>12 Campuses</h3>
+            <h3>12 Schools</h3>
             <h4>We run early college programs across the country</h4>
             <a class="btn btn-primary" href="#">Explore Our Programs</a>
           </div>

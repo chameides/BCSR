@@ -24,6 +24,7 @@
 	}
 	h4 {
 		@include HelveticaCond(2.1rem);
+		letter-spacing: 0;
 		font-weight: 500;
 		margin-top: .0em;
 		color: #efefef;
