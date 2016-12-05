@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row footer-main">
 			<div class="col-xs-12">
-				<h4 class="footer-logo"><a href="#" id="Footer_SimonsRockLogo"><img src="/_images/cec-logo-stacked-white.png" alt="Bard Center for Early College"></a></h4>
+				<h4 class="footer-logo"><a href="#" id="Footer_SimonsRockLogo"><img src="/_images/logos/cec-logo-stacked-white.png" alt="Bard Center for Early College"></a></h4>
 				<p><a href="">Contact Us</a> | 
 				<a href="">News</a> | 
 				<a href="">Donate</a></p>

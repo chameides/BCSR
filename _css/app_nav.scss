@@ -93,7 +93,7 @@ nav#mainnav {
 	}
 	.navbar-mobile-header {
 		@if $cec {
-			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position: center;
 			height: 75px;
 			background-size: 225px auto;
@@ -122,7 +122,7 @@ nav#mainnav {
 	.navbar-brand {
 		@if $cec {
 			height:75px;
-			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position:center;
 			background-size:225px auto;
 		}
@@ -161,7 +161,7 @@ nav#mainnav {
 			@if $cec {
 				width: 230px;
 				height: 53px;
-				background-image:url(/_images/cec-logo-sprite-leftaligned.png);
+				background-image:url(/_images/logos/cec-logo-sprite-leftaligned.png);
 				background-size:443px auto;
 				top: -18px;			
 			}
@@ -635,7 +635,7 @@ nav#mainnav {
 	.navbar-brand {
 		@if $cec {
 			height: 75px;
-			background-image:url(/_images/cec-logo-stacked-white.png);
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position:center;
 			background-size:225px auto;
 		}
