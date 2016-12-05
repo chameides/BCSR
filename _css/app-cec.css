@@ -5195,14 +5195,16 @@ body {
   font-style: normal;
   text-rendering: optimizelegibility; }
 
-h1 {
+h1,
+.highlights-grid h2 {
   color: #262421;
   font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;
   font-size: 3.2rem;
   letter-spacing: -0.08em;
   line-height: 1; }
   @media (min-width: 768px) {
-    h1 {
+    h1,
+    .highlights-grid h2 {
       font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;
       font-size: 5.5rem;
       letter-spacing: -0.08em;
@@ -5376,7 +5378,7 @@ nav#mainnav {
       line-height: 1.42857;
       display: block; }
   nav#mainnav .navbar-mobile-header {
-    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-image: url(/_images/logos/cec-logo-stacked-white.png);
     background-position: center;
     height: 75px;
     background-size: 225px auto;
@@ -5390,7 +5392,7 @@ nav#mainnav {
         display: none; } }
   nav#mainnav .navbar-brand {
     height: 75px;
-    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-image: url(/_images/logos/cec-logo-stacked-white.png);
     background-position: center;
     background-size: 225px auto;
     background-repeat: no-repeat;
@@ -5418,7 +5420,7 @@ nav#mainnav {
         background-color: transparent;
         width: 230px;
         height: 53px;
-        background-image: url(/_images/cec-logo-sprite-leftaligned.png);
+        background-image: url(/_images/logos/cec-logo-sprite-leftaligned.png);
         background-size: 443px auto;
         top: -18px;
         background-repeat: no-repeat;
@@ -5641,7 +5643,7 @@ nav#mainnav {
 @media (max-width: 934px) {
   .navbar-brand {
     height: 75px;
-    background-image: url(/_images/cec-logo-stacked-white.png);
+    background-image: url(/_images/logos/cec-logo-stacked-white.png);
     background-position: center;
     background-size: 225px auto;
     background-repeat: no-repeat;
@@ -6674,6 +6676,52 @@ section#announcements {
 
 .section-full-screen-wrapper {
   clear: both; }
+  .section-full-screen-wrapper .section-full-screen.slat-network {
+    min-height: 550px; }
+    @media (min-width: 768px) {
+      .section-full-screen-wrapper .section-full-screen.slat-network {
+        height: 40vh; } }
+  .section-full-screen-wrapper .slat-network {
+    min-height: auto; }
+    .section-full-screen-wrapper .slat-network .intro_sub {
+      height: auto; }
+    @media (max-width: 767px) {
+      .section-full-screen-wrapper .slat-network {
+        background: #262421;
+        padding-top: 70px;
+        padding-bottom: 70px; } }
+    @media (min-width: 768px) {
+      .section-full-screen-wrapper .slat-network {
+        background: #262421;
+        background-repeat: no-repeat;
+        background-image: url(/_images/cec/map-network.gif);
+        background-size: 95% auto;
+        background-position: center center; }
+        .section-full-screen-wrapper .slat-network .intro_sub {
+          padding: 15% 8% 10% 0;
+          padding: 12vh 0 0 5vw;
+          width: 72vw;
+          max-width: 600px;
+          display: block; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .section-full-screen-wrapper .slat-network {
+      background-size: 85% auto; } }
+  @media (min-width: 768px) and (min-width: 1520px) {
+    .section-full-screen-wrapper .slat-network {
+      background-size: auto 139%; } }
+    @media (min-width: 935px) {
+      .section-full-screen-wrapper .slat-network .intro_sub {
+        padding: 10% 0 10% 15%; } }
+    @media (min-width: 1200px) {
+      .section-full-screen-wrapper .slat-network .intro_sub {
+        max-width: 700px;
+        padding: 8% 0 0 16%;
+        padding: 9vh 0 0 15vw; } }
+    @media (min-width: 1520px) {
+      .section-full-screen-wrapper .slat-network .intro_sub {
+        max-width: 715px;
+        padding: 8% 0 0 16%;
+        padding: 8vh 0 0 11vw; } }
 
 body {
   margin-top: 75px; }
@@ -7344,18 +7392,24 @@ h1.hero-title {
   -ms-animation: fadeIn 2s;
   animation: fadeIn 2s;
   line-height: 2.2rem;
-  font-size: 2rem;
   margin: 0 auto; }
 
+.page-hero .hero-text,
+.section-full-screen-wrapper p.hero-text,
+.highlights-grid h4 {
+  font-size: 2rem; }
+
 @media screen and (max-width: 630px) {
-  .page-hero .hero-title, .highlights-grid h2, .highlights-grid h3, .highlights-grid #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .highlights-grid legend, .highlights-grid
-  #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
-  #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 .highlights-grid legend {
+  .page-hero .hero-title,
+  .highlights-grid h2,
+  .section-full-screen-wrapper .hero-title {
     font-size: 2.8rem; }
   .page-hero {
     padding-top: 120px; }
-    .page-hero .hero-text {
-      font-size: 1.7rem; } }
+  .page-hero .hero-text,
+  .section-full-screen-wrapper p.hero-text,
+  .highlights-grid h4 {
+    font-size: 1.8rem; } }
 
 #hero-video-container {
   background: no-repeat center top fixed cover;
@@ -9886,35 +9940,54 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
   background-position: left center !important; }
 
 .highlights-grid {
-  background-color: #5cb7b7; }
+  min-height: 90vh;
+  padding-bottom: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/_images/cec/classroom/20140731-0268.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
   @media screen and (min-width: 935px) {
     .highlights-grid {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
   .highlights-grid h2 {
     line-height: 1.2em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: 9vh;
     color: white; }
     @media screen and (max-width: 934px) {
       .highlights-grid h2 {
         line-height: 1.1em;
         margin-top: 1em; } }
+    @media screen and (min-width: 768px) {
+      .highlights-grid h2 {
+        margin-top: 22vh; } }
   .highlights-grid h3, .highlights-grid #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .highlights-grid legend, .highlights-grid
   #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
   #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 .highlights-grid legend {
     margin-top: .2em;
     margin-bottom: .2em;
-    color: #efefef; }
+    color: #efefef;
+    font-size: 3.3rem; }
+    @media screen and (max-width: 935px) {
+      .highlights-grid h3, .highlights-grid #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .highlights-grid legend, .highlights-grid
+      #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
+      #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 .highlights-grid legend {
+        font-size: 2.9rem; } }
+    @media screen and (max-width: 630px) {
+      .highlights-grid h3, .highlights-grid #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .highlights-grid legend, .highlights-grid
+      #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
+      #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 .highlights-grid legend {
+        font-size: 2.4rem; } }
   .highlights-grid h4 {
     font-family: "HelveticaNeueLT-Condensed", Helvetica, Arial, sans-serif;
-    font-size: 2.1rem;
     letter-spacing: 0;
     font-weight: 500;
     margin-top: .0em;
     color: #efefef; }
   .highlights-grid img {
-    max-height: 200px; }
+    max-height: 200px;
+    width: auto;
+    max-width: 100%; }
   .highlights-grid .form-group {
     margin-bottom: 2rem; }
 

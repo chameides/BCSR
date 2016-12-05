@@ -12,7 +12,8 @@ body {
 	font-style:normal;
 	text-rendering:optimizelegibility;
 }
-h1 {
+h1, 
+.highlights-grid h2 { // cec h2, semantic h2 but style as h1
 	color:$dark-gray;
 	@if $cec {
 			@include Header(3.2rem);

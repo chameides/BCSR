@@ -1,30 +1,47 @@
 //colored background with 3 highlights used on CEC homepage
 .highlights-grid {
-	background-color: $blue;
+	min-height: 90vh;
+	padding-bottom: 20px;
+  background-image: 
+  	linear-gradient(
+      rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .6)
+    ),
+  	url(/_images/cec/classroom/20140731-0268.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	@media screen and (min-width:$screen-md-min) {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 	}
 	h2 {
-		//font-size: 4.5rem;
 		line-height: 1.2em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: 9vh;
     color: white;
     @media screen and (max-width:$screen-sm-max) {
-		  //font-size: 4.2rem;
     	line-height: 1.1em;
     	margin-top: 1em;
 	  }
+	  @media screen and (min-width: $screen-sm-min) {
+	  	margin-top: 22vh;
+		}
 	}
 	h3 {
-		//font-size: 3.5rem;
 		margin-top: .2em;
     margin-bottom: .2em;
     color: #efefef;
+    font-size: 3.3rem; 
+    @media screen and (max-width: $screen-md) {
+    	font-size: 2.9rem; //make sure long word doesn't overflow column
+    }
+    
+    @media screen and (max-width: $screen-xs2) {
+    	font-size: 2.4rem;
+    }
 	}
 	h4 {
-		@include HelveticaCond(2.1rem);
+		font-family:$helvetica-cond; //set font-size in hero-text
 		letter-spacing: 0;
 		font-weight: 500;
 		margin-top: .0em;
@@ -32,6 +49,8 @@
 	}
 	img {
 		max-height: 200px;
+		width: auto;
+		max-width: 100%;
 	}
 	.form-group {
 		margin-bottom: 2rem;

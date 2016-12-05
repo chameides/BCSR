@@ -838,29 +838,37 @@ h1.hero-title {
   -webkit-animation-delay: 1s;
   @include fadeIn( 2s );
   line-height: 2.2rem;
-  font-size: 2rem;
   @if $cec {
     margin: 0 auto; //center text even if smaller than container
   }
 }
+.page-hero .hero-text, //hero text
+.section-full-screen-wrapper p.hero-text, //CEC homepage map
+.highlights-grid h4 { //CEC 3 external areas
+  font-size: 2rem;
+}
 @media screen and (max-width: $screen-xs2) {
-.page-hero .hero-title, .highlights-grid h2, .highlights-grid h3 {
-  @if $cec {
-    font-size: 2.8rem;
-  }
-  @else {
-    font-size: 2.5rem;
-  }  
-} 
+  .page-hero .hero-title, //hero title
+  .highlights-grid h2, //CEC homepage map
+  .section-full-screen-wrapper .hero-title { //CEC 3 external areas
+    @if $cec {
+      font-size: 2.8rem;
+    }
+    @else {
+      font-size: 2.5rem;
+    }  
+  } 
   .page-hero {
     padding-top: 120px;
-    .hero-text {
-      @if $cec {
-        font-size: 1.7rem;
-      }
-      @else {
-        font-size: 1.5rem;
-      }
+  }  
+  .page-hero .hero-text, //hero text
+  .section-full-screen-wrapper p.hero-text, //CEC homepage map
+  .highlights-grid h4 { //CEC 3 external areas
+    @if $cec {
+      font-size: 1.8rem;
+    }
+    @else {
+      font-size: 1.5rem;
     }
   }
 }

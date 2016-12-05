@@ -1041,5 +1041,61 @@ section#announcements {
 @if $cec {
 	.section-full-screen-wrapper {
 		clear: both; //prevent background image from overlapping above content
+		.section-full-screen.slat-network {
+			min-height: 550px;
+			@media (min-width: $screen-sm-min) {
+				height: 40vh;
+			}
+		}
+		.slat-network {
+			min-height: auto;
+			.intro_sub {
+				height: auto;
+			}
+			@media (max-width: $screen-xs-max) {
+				background: #262421;
+				padding-top: 70px;
+				padding-bottom: 70px;
+			}
+			@media (min-width: $screen-sm-min) {
+				background: #262421;
+				background-repeat: no-repeat;
+				background-image: url(/_images/cec/map-network.gif);
+				background-size: 95% auto;
+				background-position: center center;
+				.intro_sub {
+					padding: 15% 8% 10% 0; //progressive enhancement
+					padding: 12vh 0 0 5vw;
+					width: 72vw;
+					max-width: 600px;
+					display: block;
+				}
+				@media (min-width: $screen-lg-min){
+					background-size: 85% auto;
+				}
+				@media (min-width: $screen-xl-min){
+					background-size: auto 139%;
+				}
+			}
+			@media (min-width: $screen-md-min){
+				.intro_sub {
+					padding: 10% 0 10% 15%;
+				}
+			}
+			@media (min-width: $screen-lg-min){
+				.intro_sub {
+					max-width: 700px;
+					padding: 8% 0 0 16%; //progressive enhancement
+					padding: 9vh 0 0 15vw;
+				}
+			}
+			@media (min-width: $screen-xl-min){	
+				.intro_sub {
+					max-width: 715px;
+					padding: 8% 0 0 16%; //progressive enhancement
+					padding: 8vh 0 0 11vw;
+				}
+			}
+		}
 	}
 }
