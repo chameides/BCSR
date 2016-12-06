@@ -109,13 +109,16 @@
 						<li>
 							<a href="/why-simons-rock.php" id="PrimaryNav_WhySimonsRock">About</a>
 						</li>
+						
+						<li>
+							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Our Network</a>
+						</li>
+
 						<li>
 							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Pedagogy</a>
 						</li>
 
-						<li>
-							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Our Network</a>
-						</li>
+						
 
 						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
