@@ -305,38 +305,74 @@ body#home, .section-full-screen-wrapper {
 			}
 		}
 		
-		.first-reputations-row .ro-module:nth-child(5n+1) {
-			background-color:$orange;   
+		@if $cec {
+			.first-reputations-row .ro-module:nth-child(4n+1) {
+				background-color:$dark-gray;  
+				color:$white; 
+			}
+			.first-reputations-row .ro-module:nth-child(4n+2) {
+				background-color:$blue;   
+			}
+			.first-reputations-row .ro-module:nth-child(4n+3) {
+				background-color:$yellow;   
+			}
+			.first-reputations-row .ro-module:nth-child(4n+4) {
+				background-color:$medium-gray;   
+			}
+			
+			.second-reputations-row .ro-module:nth-child(4n+4) {
+				background-color:$blue;   
+			}
+
+			.second-reputations-row .ro-module:nth-child(4n+3) {
+				background-color:$dark-gray;     
+				color:$white; 
+			}
+			
+			.second-reputations-row .ro-module:nth-child(4n+2) {
+				background-color:$medium-gray;   
+			}
+
+			.second-reputations-row .ro-module:nth-child(4n+1) {
+				background-color:$yellow;   
+			}
+			
 		}
-		.first-reputations-row .ro-module:nth-child(5n+2) {
-			background-color:$dark-gray;  
-			color:$white; 
-		}
-		.first-reputations-row .ro-module:nth-child(5n+3) {
-			background-color:$blue;   
-		}
-		.first-reputations-row .ro-module:nth-child(5n+4) {
-			background-color:$yellow;   
-		}
-		.first-reputations-row .ro-module:nth-child(5n+5) {
-			background-color:$medium-gray;   
-		}
-		
-		.second-reputations-row .ro-module:nth-child(5n+5) {
-			background-color:$orange;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+3) {
-			background-color:$dark-gray;     
-			color:$white; 
-		}
-		.second-reputations-row .ro-module:nth-child(5n+4) {
-			background-color:$blue;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+1) {
-			background-color:$yellow;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+2) {
-			background-color:$medium-gray;   
+
+		@else {
+			.first-reputations-row .ro-module:nth-child(5n+1) {
+				background-color:$orange;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+2) {
+				background-color:$dark-gray;  
+				color:$white; 
+			}
+			.first-reputations-row .ro-module:nth-child(5n+3) {
+				background-color:$blue;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+4) {
+				background-color:$yellow;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$medium-gray;   
+			}
+			
+			.second-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$orange;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+3) {
+				background-color:$dark-gray;     
+				color:$white; 
+			}
+			.second-reputations-row .ro-module:nth-child(5n+4) {
+				background-color:$blue;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+1) {
+				background-color:$yellow;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+2) {
+				background-color:$medium-gray;   
+			}
 		}
 		h4, p {
 			padding-left:$padding-large;
