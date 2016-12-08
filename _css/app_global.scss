@@ -517,7 +517,8 @@ body#why .side-nav-mobile,
   }
   a,
   a:link,
-  div.section-header {
+  div.section-header, //index page on sr
+  .link-list-no-link { //index page on cec, only if the active page
     color: $medium-gray;
     background-color: $light-gray;
     @if $cec {
@@ -528,6 +529,10 @@ body#why .side-nav-mobile,
       @include HelveticaCondMed(16px);
       line-height: 16px;
     }
+  }
+  a,
+  a:link,
+  div.section-header {
     display: block;
     position: relative;
     transition: color 0.25s, background-color 0.25s;
@@ -542,6 +547,10 @@ body#why .side-nav-mobile,
       background-color: $medium-gray;
       color: $white;
     }
+  }
+  .link-list-no-link { //color as active link, with no hover
+    background-color: $medium-gray;
+    color: $white;
   }
   /*put breadcrumb at top of mobile secondary nav*/
   .crumb-mobile {
@@ -562,7 +571,8 @@ body#why .side-nav-mobile,
       }   
     }
   }
-	ul li a {
+	ul li a, 
+  .depth-3 a {
     @if $cec {
       padding-left: $carousel-control-font-size
     }
@@ -571,21 +581,24 @@ body#why .side-nav-mobile,
 	  } 
   }
   @if $cec {
-    ul ul li a {
-      padding-left:$carousel-control-font-size*1.5;
-      @media screen and (min-width: $screen-xl) { //shift secondary nav to left on large screens
-        margin-left:$carousel-control-font-size*1.5 - $padding-base-horizontal2;
-        padding-left: $padding-base-horizontal2;
+    .depth-4 { 
+      a, 
+      &.link-list-no-link {
+        padding-left:$carousel-control-font-size*1.5;
+        @media screen and (min-width: $screen-xl) { //shift secondary nav to left on large screens
+          margin-left:$carousel-control-font-size*1.5 - $padding-base-horizontal2;
+          padding-left: $padding-base-horizontal2;
+        }
       }
     }
-    ul ul ul li a {
+    .depth-5 a {
       padding-left:$carousel-control-font-size*2;
       @media screen and (min-width: $screen-xl) {
         margin-left:$carousel-control-font-size*2 - $padding-base-horizontal2;
         padding-left: $padding-base-horizontal2;
       }
     }
-    ul ul ul ul li a {
+    .depth-6 a {
       padding-left:$carousel-control-font-size*2.5;
       @media screen and (min-width: $screen-xl) {
         margin-left:$carousel-control-font-size*2.5 - $padding-base-horizontal2;

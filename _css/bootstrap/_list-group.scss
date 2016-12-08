@@ -128,7 +128,8 @@ a.list-group-item {
 }
 
 //imported from OU styles (formats the secondary nav on mobile)
-.list-group > li > a {
+.list-group > li > a, 
+.link-list-no-link { //cec secondary-nav active, index link
   @if $cec {
     padding: 7px 10px;
   }

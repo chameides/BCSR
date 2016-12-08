@@ -14,30 +14,16 @@
       <?php include '_inc/nav-cec.php'; ?>
       <div class="container-fluid page-container">
         <div class="secondary-nav">
-          <ul class="flat-list list-group">
-            <!--<li><a href="#" class="list-group-item">Home</a>
-              <ul class="flat-list list-group">-->
-                <li><a href="#" class="list-group-item">Approach to Education</a>
-                  <ul class="flat-list list-group">
-                    <li><a href="#" class="list-group-item">Resources</a>
-                      <ul class="flat-list list-group">
-                        <li><a href="#" class="list-group-item">Complex Classroom Methodologies</a>
-                          <ul class="flat-list list-group">
-                            <li><a href="#" class="list-group-item active">Case Studies</a>
-                            </li>
-                            <li><a href="#" class="list-group-item">Working with students</a></li>
-                            <li><a href="#" class="list-group-item">The Liberal Arts</a></li>
-                            <li><a href="#" class="list-group-item">Student Expectations</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              <!--</ul>
-            </li>-->
-          </ul>
-        </div><!-- secondary -nav -->
+	         <ul class="flat-list list-group">
+	          <li></li>
+	          <li class="depth-2"><a href="/">Approach to Education</a></li>
+	          <li class="depth-3"><a href="/test/">Resources</a></li>
+	          <li class="depth-4"><a href="/test/level3/">Complex Classroom Methodologies</a></li>
+	          <li class="depth-5"><a href="/test/level3/">Case Studies</a></li>
+	          <li class="depth-5"><a href="/test/level3/mixed-media.php" class="active">Working with students</a></li>
+	          <li class="depth-5"><a href="/test/level3/mixed-media.php">The Liberal Arts</a></li>
+	         </ul>
+	      </div>
         <div class="main-content">
  					<h1 class="header-page text-center-over-p">Typography</h1>
     			<p>The body copy is set in Helvetica Neue Condensed&mdash;clean, contemporary, and yet neutral. Headers are set in Le Havre&mdash;the irregular edges and loudness of the typeface echo the nontraditional and bold nature of our work.</p>

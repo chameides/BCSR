@@ -14,29 +14,12 @@
       <?php include '_inc/nav-cec.php'; ?>
       <div class="container-fluid page-container">
         <div class="secondary-nav">
-          <ul class="flat-list list-group">
-            <!--<li><a href="#" class="list-group-item">Home</a>
-              <ul class="flat-list list-group">-->
-                <li><a href="#" class="list-group-item">Approach to Education</a>
-                  <ul class="flat-list list-group">
-                    <li><a href="#" class="list-group-item">Resources</a>
-                      <ul class="flat-list list-group">
-                        <li><a href="#" class="list-group-item">Complex Classroom Methodologies</a>
-                          <ul class="flat-list list-group">
-                            <li><a href="#" class="list-group-item active">Case Studies</a></li>
-                            <li><a href="#" class="list-group-item">Working with students</a></li>
-                            <li><a href="#" class="list-group-item">The Liberal Arts</a></li>
-                            <li><a href="#" class="list-group-item">Student Expectations</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  <!--</ul>
-                </li>-->
-              </ul>
-            </li>
-          </ul>
-        </div><!-- secondary -nav -->
+         <ul class="flat-list list-group">
+            <li class="depth-2"><a href="/test/" class="list-group-item">test</a></li>
+            <li class="depth-3 link-list-no-link">Case Studies</li>
+            <li class="depth-3"><a href="/test/level3/mixed-media.php">Mixed Media</a></li><li class="depth-3"><a href="/test/level3/mixed-media.php">Second Item</a></li>
+         </ul>
+      </div>
         <div class="main-content">
           <h1 class="header-page text-center-over-p">Case Studies</h1>
           <p>Here is a draft of the CEC navigation.</p> 
