@@ -33,7 +33,7 @@
         <section class="section-full-screen slat-network">
           <div class="container abscontainer">
             <div class="intro_sub">
-              <img src="/_images/cec/map-network.gif" class="hidden-sm hidden-md hidden-lg">
+              <img src="/_images/cec/map-network.png" class="hidden-sm hidden-md hidden-lg">
               <h1 class="hero-title">Our Network</h1>
               <p class="hero-text">We run a network of early college programs, giving unprecedented access to the liberal arts.<br><br>
               </p>
