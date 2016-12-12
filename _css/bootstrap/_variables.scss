@@ -113,7 +113,11 @@ $padding-xs-horizontal:     5px !default;
 
 $padding-small-relative: 		1em !default;
 
-$margin-secondary-nav:				280px;
+$margin-secondary-nav:				280px; //max-width
+$margin-secondary-nav-width:		20%; //width
+
+
+
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 

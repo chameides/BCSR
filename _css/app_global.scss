@@ -693,11 +693,18 @@ body#why .side-nav-mobile,
 }
 
 .column-center, //sr middle content
-.main-content { //cec main body
-  max-width: 1170px;
+.main-content, //cec main body
+.main-content-shift, //cec main body, no secondary nav
+.main-content-wide { //cec full-width with a margin
   margin:0 auto 30px;
   padding: 0 $padding-small-relative;
 }
+
+.column-center, //sr middle content
+.main-content { //cec main body
+  max-width: 1170px;
+}
+
 .column-center {
   @media screen and (min-width:$screen-sm-min) and (max-width:$screen-md-max) {
   	padding:0 60px;  
@@ -716,17 +723,24 @@ body#why .side-nav-mobile,
   } 
 }
 
-.main-content {
+.main-content, 
+.main-content-shift {
   @media screen and (min-width:$screen-md) {
-    float: left;
-    width: 80%;
     padding-left: 5%;
-  }
-  @media screen and (min-width:$screen-lg) {
   }
 }
 
+.main-content, 
+.main-content-shift {
+  @media screen and (min-width:$screen-md) {
+    float: left;
+    width: 80%;
+  }
+}
 
+.main-content-shift {
+  margin-left: $margin-secondary-nav-width
+}
 
 
 
