@@ -48,14 +48,17 @@
           <p>Anticipating the need for different and flexible layouts, we have additional grid options. The CMS template will offer options to mix and match grid widths. 
         </div>
         <div class="main-content-shift">
+          <h3>Shift</h3>
           If no secondary nav, add a shift version so that it stays in line
            <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
         </div>
         <div>
+          <h3>bleed</h3>
           <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
           <p>A full width block that bleeds to the edges</p>
         </div>
         <div class="main-content-wide">
+          <h3>wide</h3>
           <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
           <p>A full width block that has margin</p>
         </div>
