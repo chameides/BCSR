@@ -9,25 +9,10 @@
   @media screen and (min-width:$screen-xl) {
     position: relative;
     right: $secondary-nav-shift;
-    width: auto;
+    //width: auto;
     margin-top: 2rem;
-    padding: .8rem 0;
+    padding: 0;
     background: $light-gray;
 
-  }
-}
-
-
-.main-content {
-  @media screen and (max-width:$screen-sm-max) {
-    //@extend .column-center;
-  }
-  @media screen and (min-width:$screen-md) {
-    float: left;
-    width: 80%;
-    padding-left: 5%;
-  }
-  @media screen and (min-width:$screen-lg) {
-    
   }
 }
