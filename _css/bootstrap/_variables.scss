@@ -300,7 +300,7 @@ $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
 $screen-phone:               $screen-xs-min !default;
 
-$screen-xs1: 490px; //this value exists in app_academics and this is an effort to variablize it
+$screen-xs1: 490px; //this value exists in app_academics and this is an effort to variabalize it
 $screen-xs2: 630px; //this value exists throughout code and this is an effort to variabalize it. 
 
 // Small screen / tablet
@@ -308,20 +308,19 @@ $screen-xs2: 630px; //this value exists throughout code and this is an effort to
 $screen-sm:                  768px !default;
 $screen-sm-min:              $screen-sm !default;
 //** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min !default;
+$screen-tablet:             $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-@if $cec {
-	$screen-md:                935px !default;	
-}
-@else {
-	$screen-md:                992px !default;
+$screen-md:						992px;
 
+@if $cec {
+	$screen-md: 				935px;	
 }
-$screen-md-min:              $screen-md !default;
+
+$screen-md-min:              $screen-md;
 //** Deprecated `$screen-desktop` as of v3.0.1
-$screen-desktop:             $screen-md-min !default;
+$screen-desktop:             $screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1

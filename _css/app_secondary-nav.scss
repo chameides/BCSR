@@ -20,7 +20,7 @@
 
 .main-content {
   @media screen and (max-width:$screen-sm-max) {
-    @extend .column-center;
+    //@extend .column-center;
   }
   @media screen and (min-width:$screen-md) {
     float: left;
