@@ -9,7 +9,6 @@
 
 <?php include '_inc/head-js-css.php'; ?>
 
-
 <!-- CJ STYLES DEC 13 2016 -->
 <style type="text/css">
   #ebscohostCustomSearchBox input[type="text"] {
