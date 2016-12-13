@@ -27,6 +27,7 @@
         <div class="main-content">
  					<h1 class="header-page text-center-over-p">Typography</h1>
     			<p>The body copy is set in Helvetica Neue Condensed&mdash;clean, contemporary, and yet neutral. Headers are set in Le Havre&mdash;the irregular edges and loudness of the typeface echo the nontraditional and bold nature of our work.</p>
+    			<p>The text sizing is slightly different from simons-rock.edu. On small screens, copy is a bit a larger. On large screens, copy is smaller. This is done to increase readability for what is likely a more text-heavy and dense presenation of information.</p>
     			<h2>Table of Contents</h2>
     			<div class="col-md-4">
 		    		<ul>
@@ -44,7 +45,6 @@
 		    		<ul>
 			    		<li><a href="#captions">Captions</a></li>
 			    		<li><a href="#cta">Calls to Action</a></li>
-			    		<li><a href="#paragraph">Paragraphs</a></li>
 						</ul>
 		    	</div>
     			<div class="row col-md-12">
@@ -277,29 +277,6 @@
 						<div class="caption-small text-center">Photo attribution</div>		
 					</div>
 				</div>
-			</div>
-			<a name="paragraph"></a>
-			<div class="row col-md-12">
-				<h2>Paragraph Sizing</h2>
-				<p>For comparison we have different versions of text size</p>
-				<h3>Comparisons v1</h3>
-				<p style="font-size: 2.1rem; line-height: 1.3em;">We currently operate eight different schools and programs across five different states. All offer tuition-free, credit-bearing college coursework to high school-age students in a structured liberal arts and sciences curriculum. In accordance with local needs, our schools have two different models</p>
-				<p style="font-size: 2.1rem; line-height: 1.3em;">The Bard Early Colleges are a network of schools and programs whose mission is to provide adolescents with a rigorous, credit-bearing, tuition-free college course of study in the liberal arts and sciences following the 9th and 10th grades. Our students receive up to 60 college credits and an associate in arts (A.A.) degree from Bard College, concurrently with a high school diploma. As satellite campuses of Bard College, a private liberal arts school in upstate New York, the Bard Early Colleges work with public school districts across the country to provide a high-quality college education to younger students at no cost to them.</p> 
-				<p style="font-size: 2.1rem; line-height: 1.3em;">Taught by experienced college faculty in rigorous and engaging undergraduate seminars, students are immersed in serious college undergraduate work while still having access to the exceptional support tools of a high school setting. By bringing the best qualities of the liberal arts into high school settings, Bard hopes to improve college access, affordability, and completion for young people across America.</p>
-				<h3>Comparisons v2</h3>  
-				<p>We currently operate eight different schools and programs across five different states. All offer tuition-free, credit-bearing college coursework to high school-age students in a structured liberal arts and sciences curriculum. In accordance with local needs, our schools have two different models</p>
-				<p>The Bard Early Colleges are a network of schools and programs whose mission is to provide adolescents with a rigorous, credit-bearing, tuition-free college course of study in the liberal arts and sciences following the 9th and 10th grades. Our students receive up to 60 college credits and an associate in arts (A.A.) degree from Bard College, concurrently with a high school diploma. As satellite campuses of Bard College, a private liberal arts school in upstate New York, the Bard Early Colleges work with public school districts across the country to provide a high-quality college education to younger students at no cost to them.</p> 
-				<p>Taught by experienced college faculty in rigorous and engaging undergraduate seminars, students are immersed in serious college undergraduate work while still having access to the exceptional support tools of a high school setting. By bringing the best qualities of the liberal arts into high school settings, Bard hopes to improve college access, affordability, and completion for young people across America.</p>
-				<h3>Comparisons v3</h3>
-				<p style="font-size: 1.7rem; line-height: 1.2em;">We currently operate eight different schools and programs across five different states. All offer tuition-free, credit-bearing college coursework to high school-age students in a structured liberal arts and sciences curriculum. In accordance with local needs, our schools have two different models</p>
-				<p style="font-size: 1.7rem; line-height: 1.2em;">The Bard Early Colleges are a network of schools and programs whose mission is to provide adolescents with a rigorous, credit-bearing, tuition-free college course of study in the liberal arts and sciences following the 9th and 10th grades. Our students receive up to 60 college credits and an associate in arts (A.A.) degree from Bard College, concurrently with a high school diploma. As satellite campuses of Bard College, a private liberal arts school in upstate New York, the Bard Early Colleges work with public school districts across the country to provide a high-quality college education to younger students at no cost to them.</p> 
-				<p style="font-size: 1.7rem; line-height: 1.2em;">Taught by experienced college faculty in rigorous and engaging undergraduate seminars, students are immersed in serious college undergraduate work while still having access to the exceptional support tools of a high school setting. By bringing the best qualities of the liberal arts into high school settings, Bard hopes to improve college access, affordability, and completion for young people across America.</p> 
-				<h3>Comparisons v4</h3>
-				<p style="font-size: 1.5rem; line-height: 1.2em;">We currently operate eight different schools and programs across five different states. All offer tuition-free, credit-bearing college coursework to high school-age students in a structured liberal arts and sciences curriculum. In accordance with local needs, our schools have two different models</p>
-				<p style="font-size: 1.5rem; line-height: 1.2em;">The Bard Early Colleges are a network of schools and programs whose mission is to provide adolescents with a rigorous, credit-bearing, tuition-free college course of study in the liberal arts and sciences following the 9th and 10th grades. Our students receive up to 60 college credits and an associate in arts (A.A.) degree from Bard College, concurrently with a high school diploma. As satellite campuses of Bard College, a private liberal arts school in upstate New York, the Bard Early Colleges work with public school districts across the country to provide a high-quality college education to younger students at no cost to them.</p> 
-				<p style="font-size: 1.5rem; line-height: 1.2em;">Taught by experienced college faculty in rigorous and engaging undergraduate seminars, students are immersed in serious college undergraduate work while still having access to the exceptional support tools of a high school setting. By bringing the best qualities of the liberal arts into high school settings, Bard hopes to improve college access, affordability, and completion for young people across America.</p>
-				
-
 			</div>
 		</div>	
  		</div><!-- /.container -->
