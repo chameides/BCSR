@@ -983,12 +983,7 @@ h1.hero-title {
 // Button Styles
 .btn.btn-primary {
   text-transform: uppercase;
-  @if $cec {
-    @include HelveticaCondMed(16px);
-  }
-  @else {
-    @include LeHavre(16px);
-  }
+  @include LeHavre(16px);
   
   letter-spacing: -0.04em;
   padding: 15px 20px;
