@@ -118,8 +118,6 @@
 							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Pedagogy</a>
 						</li>
 
-						
-
 						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
 						</li>
