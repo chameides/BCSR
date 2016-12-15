@@ -17,19 +17,19 @@
             <h1 class="header-page text-center">Search Simon's Rock</h1>
             <div>
               <script>
-                (function() {
+                (function () {
                   var cx = '006449226924018100792:z0moxjgu4ws';
                   var gcse = document.createElement('script');
                   gcse.type = 'text/javascript';
                   gcse.async = true;
                   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                      '//cse.google.com/cse.js?cx=' + cx;
+                  '//cse.google.com/cse.js?cx=' + cx;
                   var s = document.getElementsByTagName('script')[0];
                   s.parentNode.insertBefore(gcse, s);
                 })();
               </script>
-              <gcse:searchbox-only resultsUrl="/cec-search.php" data-queryParameterName="gs"></gcse:searchbox-only>
-              <gcse:searchresults-only></gcse:searchresults-only> 
+              <div class="gcse-searchbox" data-resultsUrl="/search.php" data-queryParameterName="gs"></div>
+              <div class="gcse-searchresults-only" data-defaultToRefinement="cec only"></div>
             </div>
           </div>
     
