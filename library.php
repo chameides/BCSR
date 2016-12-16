@@ -17,6 +17,9 @@
   #ebscohostsearchtext {
     height: 51px;
   }
+  #blk-1 .btn.btn-primary, #blk-2 .btn.btn-primary {
+    margin-top: 1px;
+  }
   #catalogSearchWord {
     width: 180px;
   }
@@ -26,6 +29,16 @@
   .SearchRadioToggle {
     color: #fff;
   }
+  @media screen and (max-width: 630px) {
+    #ebscohostsearchtext {
+      height: 36px;
+    }
+    #catalogSearchWord {
+      height: 36px;
+    }
+  }
+
+
 </style>
 <!-- END STYLES ADDED DEC 13 2016 -->
 
@@ -49,12 +62,7 @@
             <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-              <form class="SearchRadioToggle">
-                <input id="rdb1" type="radio" name="toggler" value="1" checked>&nbsp;Search Everything&nbsp;&nbsp;</input>
-                <input id="rdb2" type="radio" name="toggler" value="2">&nbsp;Search Catalog</input><br>
-              </form>
-
-              <br>
+              
               <div class="form-wrapper">
                 <div id="blk-1" class="toHide">
                     <form action="" id="ebscohostCustomSearchBox" method="post" onsubmit="return ebscoHostSearchGo(this);" style="width: px; overflow: auto;"><input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" /> <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8994393&amp;groupid=main&amp;profid=eds&amp;mode=and&amp;lang=en&amp;authtype=ip,guest,uid" /> <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" /> <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" /> <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
@@ -67,6 +75,11 @@
                   </form>
                 </div>
               </div>
+              <br>
+              <form class="SearchRadioToggle">
+                <input id="rdb1" type="radio" name="toggler" value="1" checked>&nbsp;Search Everything&nbsp;&nbsp;</input>
+                <input id="rdb2" type="radio" name="toggler" value="2">&nbsp;Search Catalog</input><br>
+              </form>
 
               <!-- SCRIPT ADDED BY CJ FOR LIBRARY SEARCH DEC 13 2016 -->
               <script>
