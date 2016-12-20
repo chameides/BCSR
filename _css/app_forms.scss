@@ -380,14 +380,20 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal],
 //refer a student - alumni
 label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_region],
 label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_country],
-label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal]
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal],
+//cty & berkshire scholarship form
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_street],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_street],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
  {
   margin-top: $padding-large-vertical;
 }
   
 /* style --I'm a future-- on main rfi */
 #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
-#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
+#form_d3e067a3-858f-49a7-9a43-c7d1643560cd legend,
+#form_e5af9e89-191e-43e3-8716-08fb972c0262 legend
  {
   @extend h3, h3.subheadline;
 }
