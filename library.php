@@ -24,65 +24,62 @@
             <h1 class="hero-title">Alumni Headline h1</h1>
 
             <!-- CJ DEC 13 2016 CODE FOR LIBRARY SEARCH -->
-            <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
-            
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-              
-              <div class="form-wrapper">
-                <div id="blk-1" class="toHide">
-                  <form action="" id="ebscohostCustomSearchBox" method="post" onsubmit="return ebscoHostSearchGo(this);">
-                    <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" /> 
-                    <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8994393&amp;groupid=main&amp;profid=eds&amp;mode=and&amp;lang=en&amp;authtype=ip,guest,uid" /> 
-                    <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" /><input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
-                    <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-                    <div class="form-group col-md-12 input-and-button-wrapper">
-                      <div class="input-and-button-container">
-                        <div class="input-container">
-                          <input id="ebscohostsearchtext" class="form-control" name="ebscohostsearchtext" placeholder="Search Everything" type="text" />
-                        </div>
-                        <input class="btn btn-primary" type="submit" value="Search" />
+            <script src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+            <div class="form-wrapper">
+              <div id="blk-1" class="toHide">
+                <form action="" id="ebscohostCustomSearchBox" method="post" onsubmit="return ebscoHostSearchGo(this);">
+                  <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" /> 
+                  <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8994393&amp;groupid=main&amp;profid=eds&amp;mode=and&amp;lang=en&amp;authtype=ip,guest,uid" /> 
+                  <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" /><input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+                  <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+                  <div class="form-group col-md-12 input-and-button-wrapper">
+                    <div class="input-and-button-container">
+                      <div class="input-container">
+                        <input id="ebscohostsearchtext" class="form-control" name="ebscohostsearchtext" placeholder="Search Everything" type="text" />
                       </div>
+                      <input class="btn btn-primary" type="submit" value="Search" />
                     </div>
-                  </form>
-                </div>
-                <div id="blk-2" class="toHide" style="display:none">
-                  <form id="CatalogSearchBox" action="http://simonsrock.ipac.dynixasp.com/ipac20/ipac.jsp" method="get" target="_new">
-                    <input name="menu" type="hidden" value="search" />
-                    <input name="aspect" type="hidden" value="basic_search" />
-                    <input name="profile" type="hidden" value="maincentral" />
-                    <input name="index" type="hidden" value=".GW" />
-                    <div class="form-group col-md-12 input-and-button-wrapper">
-                      <div class="input-and-button-container">
-                        <div class="input-container">
-                          <input class="portletLibSearchFormText form-control" id="catalogSearchWord" maxlength="100" name="term" type="text" placeholder="Search Catalog" />
-                        </div>
-                        <input class="btn btn-primary context" name="Quick Search" type="submit" value="Search" />
+                  </div>
+                </form>
+              </div>
+              <div id="blk-2" class="toHide" style="display:none">
+                <form id="CatalogSearchBox" action="http://simonsrock.ipac.dynixasp.com/ipac20/ipac.jsp" method="get" target="_new">
+                  <input name="menu" type="hidden" value="search" />
+                  <input name="aspect" type="hidden" value="basic_search" />
+                  <input name="profile" type="hidden" value="maincentral" />
+                  <input name="index" type="hidden" value=".GW" />
+                  <div class="form-group col-md-12 input-and-button-wrapper">
+                    <div class="input-and-button-container">
+                      <div class="input-container">
+                        <input class="portletLibSearchFormText form-control" id="catalogSearchWord" maxlength="100" name="term" type="text" placeholder="Search Catalog" />
                       </div>
+                      <input class="btn btn-primary context" name="Quick Search" type="submit" value="Search" />
                     </div>
-                  </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <form class="SearchRadioToggle">
+              <div id="guidedFieldSelectors" class="form-group col-md-12" style="color: white;">
+                <div class="radio-inline">
+                  <label><input id="rdb1" class="radio" type="radio" name="toggler" value="1" checked="checked"/>Search Everything
+                  </label>
+                  <label><input id="rdb2" type="radio" class="radio" name="toggler" value="2" maxlength="100"/>Search Catalog
+                  </label>
                 </div>
               </div>
-              <form class="SearchRadioToggle">
-                 <div id="guidedFieldSelectors" class="form-group col-md-12" style="color: white;">
-                  <div class="radio-inline">
-                    <label><input id="rdb1" class="radio" type="radio" name="toggler" value="1" checked>Search Everything</input></label>
-                    <label><input id="rdb2" type="radio" class="radio" name="toggler" value="2" maxlength="100">Search Catalog</input></label>
-                  </div>
-                </div>
-              </form>
-
-              <!-- SCRIPT ADDED BY CJ FOR LIBRARY SEARCH DEC 13 2016 
-              Use radio buttons to toggle between two different forms, user experiences them as a single form
-              -->
-              <script>
-                $(function() {
-                    $("[name=toggler]").click(function(){
-                      $('.toHide').hide();
-                      $("#blk-"+$(this).val()).fadeToggle(500);
-                    });
-                 });
-              </script>
-
+            </form>
+            <!-- SCRIPT ADDED BY CJ FOR LIBRARY SEARCH DEC 13 2016 
+            Use radio buttons to toggle between two different forms, user experiences them as a single form
+            -->
+            <script>
+              $(function() {
+                  $("[name=toggler]").click(function(){
+                    $('.toHide').hide();
+                    $("#blk-"+$(this).val()).fadeToggle(500);
+                  });
+               });
+            </script>
           </div>
         </div>
 
