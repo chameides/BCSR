@@ -607,8 +607,11 @@ input[type="checkbox"] {
 //inline input and button
 .input-and-button-wrapper{
   input[type=text] {
-    margin-bottom: 2%;
+    padding-top: 10px; //magic number to align top
     height: 38px; //magic number to match button height
+    @media (max-width: $screen-md) {  
+      padding-top: 7px; //magic number to align top
+    }
     @media (min-width: $screen-xs2) {  
       height: 52px; 
     }
@@ -627,5 +630,12 @@ input[type="checkbox"] {
 }
 
 
-
+//toggle between two library forms
+.SearchRadioToggle label {
+  text-align: left;
+  width: 120px; //magic number to match text width
+  @media (min-width: $screen-md) {
+    width: 200px; //magic number to match text width
+  }
+}
 
