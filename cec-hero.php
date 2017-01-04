@@ -19,7 +19,7 @@
 
       <!-- Page Hero -->
       <div class="row-full-width">
-        <div class="page-hero-container section-full-screen cec-bg" style="margin-bottom: 0">
+        <div class="page-hero-container section-full-screen cec-bg">
           <div class="page-hero page-hero-gateway-alt text-center" style="margin-bottom: 0">
             <h1 class="hero-title">Transforming Education</h1>
             <p class="hero-text">We are creating accessible programs where younger scholars are taken seriously and individuality thrives as our students push beyond the usual choices in their life-altering encounter with the liberal arts.</p>

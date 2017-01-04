@@ -777,6 +777,9 @@ body#why .side-nav-mobile,
   @media screen and (min-width: $screen-md-min) {
     margin-bottom: 70px;
   }
+  &.section-full-screen {
+    margin-bottom: 0px; //no vertical gap between sections
+  }
 }
 
 
