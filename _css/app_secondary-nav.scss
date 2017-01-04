@@ -13,6 +13,8 @@
     margin-top: 2rem;
     padding: 0;
     background: $light-gray;
-
+    .has-hero &{
+      right: 0;
+    }
   }
 }

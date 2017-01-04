@@ -4,6 +4,9 @@ body {
     margin-top: 75px;
     @media screen and (min-width:$screen-xl) { 
       background: #efefef;
+      &.has-hero {
+        background: white;
+      }
     }
   }
   @else {
