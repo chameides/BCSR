@@ -66,7 +66,7 @@
 
 
 
-	<a class="navbar-brand initial visible-xs-block" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+	<a class="navbar-brand initial visible-xs-block" href="#"><span class="sr-only">Bard Center for Early College</span></a>
 	
 
 
@@ -88,7 +88,7 @@
 
 
 
-			  <a class="navbar-brand initial hidden-xs" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+			  <a class="navbar-brand initial hidden-xs" href="#"><span class="sr-only">Bard Center for Early College</span></a>
 
 
 
