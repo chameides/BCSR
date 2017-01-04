@@ -9,7 +9,7 @@
 <?php include '_inc/head-js-css-cec.php'; ?>
 	
   </head>
-  <body class="body-width-partial">
+  <body>
   	<div class="content-wrapper">
       <?php include '_inc/nav-cec.php'; ?>
       <div class="container-fluid page-container">

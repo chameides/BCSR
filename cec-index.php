@@ -9,7 +9,7 @@
     <?php include '_inc/head-js-css-cec.php'; ?>
     
   </head>
-  <body class="body-width-partial">
+  <body>
     <div class="content-wrapper">
 
   
@@ -30,6 +30,7 @@
       <div class="col-md-4">
         <ul>
           <li><a href="cec-hero.php">Hero</a></li>
+          <li><a href="cec-full.php">Full</a></li>
           <li><a href="cec-search.php">Search</a></li>
           
         </ul>
