@@ -11,8 +11,8 @@
 		<div class="row footer-secondary">
 			<div class="col-xs-12">
 				<ul class="contact-info-list small">
-					<li>Copyright © 2016 Bard Center for Early College</li>
-					<li class="footer-logo-secondary"><h4><a href="https://bard.edu" id="Footer_SimonsRockLogo"><img src="/_images/cec/icon/logo-bard-gray.png" alt="Bard College"></a></h4></li>		
+					<li>Copyright &copy; 2016 Bard Center for Early College</li>
+					<li class="footer-logo-secondary"><h4><a href="https://bard.edu" id="Footer_SimonsRockLogo"><img src="/_images/logos/logo-bard-gray.png" alt="Bard College"></a></h4></li>		
 				</ul>	
 			</div>
 		</div>

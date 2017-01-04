@@ -46,6 +46,7 @@ module.exports = (grunt) ->
         files: [
           {src: '_resources/js/forms/source/rfi-combine-grunt.js', dest: '_resources/js/forms/rfi-combine-min.js'},
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
+          {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
           {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
         ],

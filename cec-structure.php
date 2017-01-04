@@ -17,7 +17,8 @@
           <ul class="flat-list list-group">
             <li class="depth-2"><a href="/test/" class="list-group-item">test</a></li>
             <li class="depth-3 link-list-no-link">Case Studies</li>
-            <li class="depth-3"><a href="/test/level3/mixed-media.php">Mixed Media</a></li><li class="depth-3"><a href="/test/level3/mixed-media.php">Second Item</a></li>
+            <li class="depth-3"><a href="/test/level3/mixed-media.php">Mixed Media</a></li>
+            <li class="depth-3"><a href="/test/level3/mixed-media.php">Second Item</a></li>
           </ul>
         </div>
         <div class="main-content">

@@ -118,8 +118,6 @@
 							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Pedagogy</a>
 						</li>
 
-						
-
 						<li>
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Public Policy</a>
 						</li>
@@ -133,15 +131,16 @@
 							<button class="btn btn-link" title="Contact Us"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
 						</li>
 						<li class="nav-search">
-							<form role="search" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
+							<form role="search" action="/search.php" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
 								<div class="input-group">
-								  <input type="text" class="form-control" placeholder="SEARCH">
-								  <span class="input-group-btn">
-									<button class="btn btn-link" title="Search" id="PrimaryNav_Search"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
-								  </span>
+									<input type="text" class="form-control" placeholder="SEARCH" name="gs">
+									<span class="input-group-btn">
+										<button class="btn btn-link" title="Search" id="PrimaryNav_Search"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
+									</span>
 								</div><!-- /input-group -->
 							</form>
-							<button class="btn btn-link hidden-sm hidden-xs" title="Search" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;"><span class="sr-only">Search</span></i></button>
+							<button class="btn btn-link hidden-sm hidden-xs" title="Search" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;">
+							<span class="sr-only">Search</span></i></button>
 						</li>
 					</ul>
 				</div><!--/.container -->
