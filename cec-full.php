@@ -26,7 +26,7 @@
       <!-- /Page Hero -->
       <!-- << Section One >> -->
       <div class="section-full-screen-wrapper">
-        <section class="slat-network">
+        <section class="slat-network section-full-screen">
           <div class="container abscontainer">
             <div class="intro_sub">
               <img src="/_images/cec/map-network.png" class="hidden-sm hidden-md hidden-lg">

@@ -16,8 +16,8 @@
         <div class="row-full-width">
           <div class="page-hero-container cec-bg">
             <div class="page-hero page-hero-gateway-alt text-center" style="margin-bottom: 0">
-              <h1 class="hero-title">Transforming Education</h1>
-              <p class="hero-text">We are creating accessible programs where younger scholars are taken seriously and individuality thrives as our students push beyond the usual choices in their life-altering encounter with the liberal arts.</p>
+              <h1 class="hero-title">Hero Graphic</h1>
+              <p class="hero-text">Kick off a page with a full-width image and text overlay.</p>
             </div>
           </div>
           <i id="intro_arrow_down" class="fa fa-angle-down"></i>
@@ -35,71 +35,45 @@
           </ul>
         </div>
         <div class="main-content-shift">
-          <h1 class="header-page text-center-over-p">Case Studies</h1>
-          <p>Here is a draft of the CEC navigation.</p> 
-          <h2>Structure</h2>
-          <p>The top navigation features Bard red, key navigation structure, and text treatment of the organization name. On smaller screen sizes, the menu is revealed with the 3-dash 'hamburger' menu. The bottom navigation has additional features. Initially, we were going to focus on top tasks in the bottom nav and elected to go with a more minimal presentation instead.</p> 
-          <h2>Information Architecture</h2>
-          <h3>Primary</h3>
-          <p>The top navigation of the site is separated into five branches, plus two tasks contact us and search. The five branches are consistent with the approved strategy. Each branch references a key aspect of CEC we want to provide and they also cover the scope of the information.</p>
-          <h3>Secondary</h3>
-          <p>The secondary navigation provides context for where this page fits within the larger structure. Users can browse up and across the file tree. It combines breadcrumbs and sibling links into a single module. On smaller screens the navigation drops below the content and above the footer.</p>
-          <h3>Engagement</h3>
-          <p>Footer navigation gives key ways for users to engage and connect with CEC. We decided against listing the most likely pages people will want to visit.</p>   
-          <h3>Bard branding</h3>
-          <p>In addition to incorporating Bard into the CEC logo, the Bard logo appears at the very bottom of the page, underneath the copyright stuff. The placement of the logo reaffirms that we are a branch of Bard College.</p> 
-          <h2>Additional Features</h2>
-          <p>We can and will build out more parts including:</p> 
+          <p>It's pretty simple.</p>
+          <ol>
+            <li>Start a mixed media page</li>
+            <li>Set Hero to Image</li>
+            <li>Fill out table</li>
+            <li>Use "Container Class" =  "section-full-screen" for no bottom margin</li>
+          </ol>
+          <p>Meanwhile, behind the scenes the HTML adjusts to change the nav, push the navigation down, and adjust the section 1.</p>
+        </div>
+         <div class="section-full-screen-wrapper">
+        <section class="slat-network section-full-screen">
+          <div class="container abscontainer">
+            <div class="intro_sub">
+              <img src="/_images/cec/map-network.png" class="hidden-sm hidden-md hidden-lg">
+              <h1 class="hero-title">Our Network</h1>
+              <p class="hero-text">We run a network of early college programs, giving unprecedented access to the liberal arts.<br><br>
+              </p>
+              <a type="button" class="btn btn-primary">Early College Network</a>
+            </div>
+          </div> 
+        </section>
+      </div>
+      <div class="main-content-shift">
+          <h2>Full Width Section</h2>
+          <p>One hero section not enough? Set up a second full-width section</p>
+          <ol>
+            <li>Set section 1 to bleed</li>
+            <li>Add hero-image-only snippet</li>
+            <li>Set intro-image, title, content, buttons, images</li>
+            <li>Container Class adds a class to the section. section-full-screen by default</li>
+            <li>Section class also adds a class to the section. Use this for 1-off modifications.</li>
+            <li>On the above hero graphic, use "Container Class" =  "section-full-screen" for no bottom margin</li>
+          </ol>
+          <p>Meanwhile, behind the scenes the HTML is outputted
           <ul>
-            <li>Actual links for each part</li>
-            <li>Refinement of the logo animation and transitions</li>
-            <li>Refinement of spacing</li>
-            <li>Hero graphic version</li>
+            <li>If "section-full-screen" is present, then the block is outputted differently</li>
+            <li>Inline style for the background images is placed in the head. Requires content-1 to be set to "bleed" and for image to be present. Note: only works on content-1.</li>
           </ul>
-          <h2>Margins and Layout</h2>
-          <p>The standard content block will leave a left margin on the left hand side. The secondary nav will fit in this area. Paragraphs are limited width. As the page width expands, they will move towards the center. Images will go to right, while leaving a left margin on large screens.</p>
-          <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-          <p>Anticipating the need for different and flexible layouts, we have additional grid options. The CMS template will offer options to mix and match grid widths. 
-        </div>
-        <div class="main-content-shift">
-          <h3>Shift</h3>
-          If no secondary nav, add a shift version so that it stays in line
-           <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-        </div>
-        <div>
-          <h3>bleed</h3>
-          <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-          <p>A full width block that bleeds to the edges</p>
-        </div>
-        <div class="main-content-wide">
-          <h3>wide</h3>
-          <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-          <p>A full width block that has margin</p>
-        </div>
-       
-        <div class="main-content-shift">
-          <h2>Technical Notes</h2>
-          <p>The JavaScript is branched from the Simon's Rock repository. The original script was broken up into parts (modules). Alternate and additional modules were created specific for the needs of this site. Then two versions of script, each compiled in grunt with the appropriate modules.</p>
 
-          <pre>
-concat:   
-  app_bcsr:
-    src: [
-      '_js/_js-not-minified/app/app-part1.js',
-      '_js/_js-not-minified/app/show-search-bcsr.js',
-      '_js/_js-not-minified/app/app-part2.js',
-      ]
-    dest: 
-      '_js/_js-not-minified/app/app-bcsr-combined.js'
-  app_cec:  
-    src: [
-      '_js/_js-not-minified/app/app-part1.js',
-      '_js/_js-not-minified/app/show-search-cec.js',
-      '_js/_js-not-minified/app/app-part2.js',
-      ]
-    dest: 
-      '_js/_js-not-minified/app/app-cec-combined.js' 
-          </pre>
           
 
 
