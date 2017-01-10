@@ -329,9 +329,12 @@ div.form_response input[type="radio"] {
   #form_question_23609b72-e236-435c-80d4-c1de07e85fbc,
   //Academy email landing page | parent last name
   #form_question_39e705c2-29d1-439e-a00c-3063adff116e
-   {
+  {
     padding-left: 6%;
-    legend {display:none;}
+    //don't display legend if indented
+    legend {
+      display:none;
+    }
   }
 }
 
@@ -365,7 +368,7 @@ div#switch button {
 #form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31 span,
 //educator visit page | zip
 #form_question_57cb5403-94e2-4002-b599-76bac5979767
- { 
+{ 
   display:inline-block;
   width: 50%;
   @media screen and (max-width: $screen-sm-min) {
@@ -376,10 +379,10 @@ div#switch button {
     margin-right:2%;
     @media screen and (max-width: $screen-sm-min) {
       width: 100%;
-      }
-    } 
+    }
+  } 
 }
-/*float the state field in address block*/
+//float the state field in address block, prevent wierd vertical height spacing
 .form_address span:first-of-type {
     float: left;
 }
@@ -408,17 +411,17 @@ label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal],
 label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_street],
 label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_street],
 label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
- {
+{
   margin-top: $padding-large-vertical;
 }
   
-/* style --I'm a future-- on main rfi */
+// style --I'm a future-- on main rfi
 #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
 #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
 #form_d3e067a3-858f-49a7-9a43-c7d1643560cd legend,
 #form_e5af9e89-191e-43e3-8716-08fb972c0262 legend,
-.form_address legend
- {
+.form_address legend //Address on block
+{
   @extend h3, h3.subheadline;
 }
 
