@@ -416,15 +416,17 @@ label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
 }
   
 // style --I'm a future-- on main rfi
-#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
-#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend,
-#form_d3e067a3-858f-49a7-9a43-c7d1643560cd legend,
-#form_e5af9e89-191e-43e3-8716-08fb972c0262 legend,
-.form_address legend //Address on block
+#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d,
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8,
+#form_d3e067a3-858f-49a7-9a43-c7d1643560cd,
+#form_e5af9e89-191e-43e3-8716-08fb972c0262,
+.form_address .form_label //Address on block
 {
-  @extend h3, h3.subheadline;
+  legend {
+    font-weight: 500; //override legend bold
+    @extend h3, h3.subheadline;
+  }
 }
-
 //Gatekeeper Blue Box
 .row-col-highlight {
   .form_pages, .action button.default { //Alignment inside blue box
