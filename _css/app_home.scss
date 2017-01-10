@@ -633,12 +633,16 @@ body#home {
 		right:$padding-large;
 		color:$white;
 	}
-	.skew .playbutton {
-		position:absolute;
+	.skew .rocker-link { //buton over rocker profile carousel
+ 		position:absolute;
 		top:30%;
 		bottom:0;
 		left:0;
 		right:0;
+	}
+	.playbutton, //used with videos 
+	.linkbutton { //used with non videos 
+		@extend .rocker-link;
 	}
 	.rocker-row {
 		position:relative;
@@ -687,7 +691,7 @@ body#home {
 			left:0px;
 			float:left;
 		}
-		.skew .playbutton {
+		.skew .rocker-link {
 			-webkit-transform:skew(11deg, 0);
 			transform:skew(11deg, 0);
 			position:absolute;
@@ -892,9 +896,9 @@ body#home {
 }
 
 
-.playbutton, 
+.rocker-link, 
 .vjs-default-skin .vjs-big-play-button, 
-a.playbutton /*make icon white even if link*/ {
+a.rocker-link /*make icon white even if link*/ {
 	width:80px;
 	height:80px;
 	text-align:center;
@@ -913,7 +917,6 @@ a.playbutton /*make icon white even if link*/ {
 	}
 	@media (min-width: $screen-md-min) {
 		font-size:5rem;
-		padding:0 0 0 10px;
 		line-height:1;
 		width:100px;
 		height:100px;
@@ -932,7 +935,14 @@ a.playbutton /*make icon white even if link*/ {
 	}
 }
 
-a.playbutton {
+.playbutton, 
+.vjs-default-skin .vjs-big-play-button, 
+a.playbutton /*make icon white even if link*/ {
+	@media (min-width: $screen-md-min) {
+		padding:0 0 0 10px;
+	}
+}
+a.rocker-link {
 	line-height: 1.4em;
 	@media (min-width: $screen-md-min) {
 		line-height: 1.8em;
