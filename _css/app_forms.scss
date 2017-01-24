@@ -271,8 +271,11 @@ div.form_response input[type="radio"] {
       float: left;
     }
   }
+  	//fix parent div of h3 spacing on Berkshire Scholarship other radio
+ 	#form_question_49fb0cc0-7a17-4420-97a8-f2b28515754a {
+ 		margin-bottom:0;
+ 	}
 
- 
 .field-date-of-birth {
   width: 30%;
   @media screen and (max-width: $screen-sm-min) {
@@ -301,8 +304,6 @@ div.form_response input[type="radio"] {
     margin-right: 0px; 
   } 
 }
-
-
 
   //Email Inquiry Landing Page | Phone Number
   #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8 {
@@ -367,7 +368,9 @@ div#switch button {
 //educator visit page | state
 #form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31 span,
 //educator visit page | zip
-#form_question_57cb5403-94e2-4002-b599-76bac5979767
+#form_question_57cb5403-94e2-4002-b599-76bac5979767,
+//Berkshire scholarship | other radio | state and zip
+#form_question_c9899af6-5fac-4d3e-b6a2-c3adc83d9ce9 span
 { 
   display:inline-block;
   width: 50%;
