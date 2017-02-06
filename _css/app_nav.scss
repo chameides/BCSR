@@ -251,10 +251,8 @@ nav#mainnav {
 				}
 			}//close md media query
 			//on larger screens, set search box in same place
-			@if $cec {
-				@media (min-width: 1470px) {
-					right: auto;
-				}
+			@media (min-width: 1470px) {
+				right: auto;
 			}
 		}
 	}
@@ -461,9 +459,17 @@ nav#mainnav {
 			a,button.btn-link {
 				transition: background-color 0.25s;
 				color:$white;
+				@if $cec {
+					height: 45px; //set height to be the same for text and icons
+				}
 				&:hover {
 					color:$white;
 					background-color:$red;
+				}
+			}
+			@if $cec {
+				button.btn-link {
+					padding-top: 0px; //align height to be the same for text and icons
 				}
 			}
 			li {
