@@ -78,8 +78,17 @@ if(hasRows($result)){
     $cnt = 0;
     while($row = mysql_fetch_row($result)){
         $description = $row[2];
-        $description = strip_tags(html_entity_decode($description));
-        $description = ($hc_cfg[107] > 0) ? clean_truncate($description,$hc_cfg[107]) : $description;
+        $description = str_replace("</p><p>", "<br />", $description);    
+        $description = strip_tags(html_entity_decode($description), '<br>');
+	$brpos = strpos($description, '<br'); 
+	if($hc_cfg[107] > 0){
+		//look out for <br />
+		if ($brpos != false && $brpos >= ($hc_cfg[107] - 6) && $brpos <= $hc_cfg[107]){
+			$description = clean_truncate($description, $hc_cfg[107] - 7);
+		} else {
+			$description = clean_truncate($description, $hc_cfg[107]);
+		}
+	}
         
         $categories = explode(",",$row[9]);//filtering out ACE
         switch (count($categories)){
@@ -97,11 +106,17 @@ if(hasRows($result)){
         if(isset($row[5])){
         	$min = mysql_fetch_row(doQuery("SELECT MIN(StartDate) FROM ". HC_TblPrefix . "events WHERE SeriesID = '". $row[5] ."' AND IsActive = 1 AND IsApproved = 1"))[0];
         	$max = mysql_fetch_row(doQuery("SELECT MAX(StartDate) FROM ". HC_TblPrefix . "events WHERE SeriesID = '". $row[5] ."' AND IsActive = 1 AND IsApproved = 1"))[0];
-        	$date =  cleanXMLChars(stampToDate($min, "%B %d")).' - '.cleanXMLChars(stampToDate($max, "%B %d"));
+        	$date =  cleanXMLChars(stampToDate($min, "%B %e")).' - '.cleanXMLChars(stampToDate($max, "%B %e"));
         } else {
-        	$date = cleanXMLChars(stampToDate($row[3], "%B %d"));
+        	$date = cleanXMLChars(stampToDate($row[3], "%B %e"));
         }
-        
+        if(isset($row[7]))
+        {
+            $endTime = date("g:i A",strtotime(stampToDate($row[3].' '.$row[7],"%d %b %Y %H:%M:%S")));
+        }
+        else{
+            $endTime = "";
+        }
 
         $comment = ($hc_cfg[25] != '') ? '<comments><![CDATA['.CalRoot.'/index.php?eID='.$row[0].'#disqus_thread'.']]></comments>' : '';
         echo '
@@ -112,9 +127,9 @@ if(hasRows($result)){
 		'.$comment.'
 		<guid>'.CalRoot.'/index.php&#63;eID='.$row[0].'</guid>
 		<pubDate>'.cleanXMLChars(stampToDate($row[3].' '.$row[4], "%a, %d %b %Y  %H:%M:%S").' '.$tzRSS).'</pubDate>
-        <date>'.$date.'</date>
-        <startTime>'.date("h:i A",strtotime(stampToDate($row[3].' '.$row[4],"%d %b %Y %H:%M:%S"))).'</startTime>
-        <endTime>'.date("h:i A",strtotime(stampToDate($row[3].' '.$row[7],"%d %b %Y %H:%M:%S"))).'</endTime>
+        <date>'.preg_replace('/ {2,}/', ' ', $date).'</date>
+        <startTime>'.date("g:i A",strtotime(stampToDate($row[3].' '.$row[4],"%d %b %Y %H:%M:%S"))).'</startTime>
+        <endTime>'.$endTime .'</endTime>
         <location>'.$row[8].'</location>
         <category>'.cleanXMLChars($category).'</category>
         <eventName>'.cleanXMLChars(cOut($row[1])).'</eventName>

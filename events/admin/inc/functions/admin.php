@@ -78,7 +78,7 @@
 	function stampToDateAP($timeStamp,$useYear = 1){
           $stampParts = explode(" ", $timeStamp);
 		$dateParts = explode("-", $stampParts[0]);
-		$dateFormat = ($useYear == 1) ? ' %#d, %Y' : ' %#d';
+		$dateFormat = ($useYear == 1) ? ' %#e, %Y' : ' %#e';
 
 		switch($dateParts[1]){
 			case 1:
