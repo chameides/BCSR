@@ -1,7 +1,10 @@
 // horizontal subnav on master landing only
 .admission-subnav {
 	text-align: justify;
-  	margin-top: -30px;	
+  	margin-top: -45px;	//move up to vertically center on gray zone .horiz-nav-bg
+  	@media screen and (max-width: $screen-sm-max) {
+	  	margin-top: -31px;
+	  }
   	&:after {
 	  content: '';
 	  width: 100%;
@@ -76,7 +79,7 @@
 	height: 250px;
 	position: absolute;
 	width: 100%;
-	bottom: -110px;
+	bottom: -80px;
 	@media screen and (max-width:$screen-md-min)  {
 	 	bottom: -100px;
 	}
