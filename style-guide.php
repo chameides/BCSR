@@ -103,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12" >
+		<div class="col-md-12">
 			<a name="alert"></a>
 			<h2>Alert System</h2>
 			<div class="row">
@@ -1086,7 +1086,7 @@
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
-				<div class="image-title text-center">Secondary description</div>			
+				<div class="image-title text-center">Secondary description <br> line 2</div>			
 			</div>
 			<div class="col-md-4">
 				<img src="//placehold.it/330">
