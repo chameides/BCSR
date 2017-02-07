@@ -613,13 +613,20 @@ input[type="checkbox"] {
     height: 38px; //magic number to match button height
     @media (max-width: $screen-md) {  
       padding-top: 5px; //magic number to align top
-      border: 0px solid white;
     }
     @media (min-width: $screen-xs2) {  
       height: 52px; 
     }
   }
 }
+
+//if button is over a hero graphic, set border to white. For example, do it on Library, but not on the Directory.
+.page-hero-container .input-and-button-wrapper input[type=text]{
+  border: 0 solid white;
+}
+
+
+
 
 //container within the wrapper
 .input-and-button-container { 

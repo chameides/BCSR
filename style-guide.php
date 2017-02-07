@@ -529,6 +529,9 @@
 				</div>
 
 			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <h3>Custom Form Elements</h3>
+			  <a href="library.php">Form Over Hero</a><br>
+			  <a href="directory.php">Single Field</a>
 
 		
 		</div>
