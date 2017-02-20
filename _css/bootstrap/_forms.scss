@@ -618,6 +618,9 @@ input[type="checkbox"] {
       height: 52px; 
     }
   }
+  .btn {
+    vertical-align: top;
+  }
 }
 
 //if button is over a hero graphic, set border to white. For example, do it on Library, but not on the Directory.
