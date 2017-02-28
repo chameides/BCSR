@@ -686,7 +686,13 @@ body#why .side-nav-mobile,
 	margin-top:-12px;
 }
 .row {
-  max-width: 1170px;
+  @if $cec {
+
+  }
+  @else {
+    max-width: 1170px;  
+  }
+  
   // @media screen and (max-width: $pagegrid-break-high) { 
   //   width: 970px;
   // }
@@ -960,7 +966,11 @@ h1.hero-title {
   margin: 0;
   padding: 0;
   list-style: none;
-  li a {text-decoration:none;
+  @if $cec {
+    max-width: 100%;
+  }
+  li a {
+    text-decoration:none;
   }
 }
 .side-nav-mobile .list-group li ul.list-group li a:link {

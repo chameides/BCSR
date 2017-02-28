@@ -1,5 +1,8 @@
 @if $cec {
-  p, cite {
+  p, 
+  cite, 
+  ul, 
+  ol {
     max-width: $paragraph-width
   }
   .text-center-over-p {
@@ -42,14 +45,17 @@
 }
 
 /*hanging block quote*/
-blockquote:before, blockquote p.blockquote-last:after, .blockquote-mark {
+blockquote:before, 
+blockquote p.blockquote-last:after, 
+.blockquote-mark {
 	@media screen and (min-width:$screen-md) {
 		color: lighten($blue, 18%); /*lighten the hanging quotes when larger font-size is used */
 	}
 }
 
 /*add a hanging quote*/
-blockquote:before, blockquote.blockquote-long:before {
+blockquote:before, 
+blockquote.blockquote-long:before {
   content: '\201C';
   font-size: 4.3em;
   text-indent: -.5em;
@@ -101,7 +107,8 @@ blockquote p.blockquote-last:after {
 
 
 /*style quote*/
-blockquote p.blockquote-last:after, .blockquote-mark {
+blockquote p.blockquote-last:after, 
+.blockquote-mark {
   content: '\201D';
   font-size: 1.8em;
   position: relative; 
@@ -129,7 +136,8 @@ blockquote p.blockquote-last:after, .blockquote-mark {
 @if $cec {
   @media screen and (min-width:$screen-md) {
     .blockquote-long {
-      p.blockquote-last:after, .blockquote-mark {
+      p.blockquote-last:after, 
+      .blockquote-mark {
         top: 1rem;
       }
     }
@@ -157,7 +165,9 @@ blockquote {
 }
 
 
-blockquote, blockquote.blockquote-long, body#home .section-full-screen blockquote {
+blockquote, 
+blockquote.blockquote-long, 
+body#home .section-full-screen blockquote {
   p {
       font-size: 3rem;
       line-height: 3.4rem;
@@ -214,7 +224,8 @@ cite {
 }
 
 
-a.right-arrow, a:link.right-arrow  {
+a.right-arrow, 
+a:link.right-arrow  {
     @extend .cta-bullet;
     @media screen and (max-width:$screen-sm-max) {
         font-size: .9em;
