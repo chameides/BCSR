@@ -1154,14 +1154,34 @@ p {
   margin-bottom: 1em;
 }
 
-// Right Arrow before List items
-ul.arrow-list li {
-  margin-bottom: 1.5rem;
-    @media screen and (max-width:$screen-sm-max) {
-      margin-bottom: .5rem;
+@if $cec {
+  .page-container {
+    li, 
+    li li:first-child {
+      margin-top: .3em;
     }
-  & ul.arrow-list li {
-      list-style: none;
+    li:first-child {
+      margin-top: 0; //default on first li. 
+    }
+  }
+}
+
+// Right Arrow before List items
+ul.arrow-list {
+  @if $cec {
+    line-height: 1.3em;
+    @media screen and (max-width:$screen-sm-max) {
+      padding-left: $padding-small-relative; //align arrow with text on small screen
+    }
+  }
+  li {
+    margin-bottom: 1.5rem;
+      @media screen and (max-width:$screen-sm-max) {
+        margin-bottom: .5rem;
+      }
+    & ul.arrow-list li {
+        list-style: none;
+    }
   }
 }
 
@@ -1172,6 +1192,11 @@ div.arrow-list-tight-small-wrapper ul {
     content: '\f105';
     color: $blue;
     margin-left: -30px;
+    @if $cec {
+      @media screen and (max-width:$screen-sm-max) {
+        margin-left: -19px; //even up indent on small screen
+      }
+    }
   }
   list-style: none;
 }

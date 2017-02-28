@@ -51,12 +51,28 @@
         <div class="main-content-shift">
           <h3>Shift</h3>
           If no secondary nav, add a shift version so that it stays in line
-           <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-        </div>
-        <div>
-          <h3>bleed</h3>
           <img alt="100% image" src="http://placehold.it/2000x200" title="A title element for this placeholder image.">
-          <p>A full width block that bleeds to the edges</p>
+          <p>placeholder text</p>
+          
+          <div class="col-md-12">
+            <div class="row stacked-content">
+              <div class="col-sm-8">
+                <h3>Medium Red Arrow Link</h3>
+                  <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
+                  <p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+      <p>CTA links associated with H3’s and below match their alignment (left).</p>
+              </div>
+              <!-- <div class="col-sm-4" style="> -->
+              <div class="col-sm-4 aside">
+                <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
+                <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
+                <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
+                <div><a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a></div>
+              </div>
+           </div>
+          </div>
+          <p>placeholder text</p>
+
         </div>
         <div class="main-content-wide">
           <h3>wide</h3>
