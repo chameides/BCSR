@@ -55,3 +55,11 @@
 		margin-bottom: 2rem;
 	}
 }
+
+//set background position for hero graphics. 
+.background-sm-width-80 {
+	@media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+		background-position-x: 80%!important //between center and right position on tablet and up
+	}
+}
+
