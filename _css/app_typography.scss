@@ -5,6 +5,14 @@
   ol {
     max-width: $paragraph-width
   }
+  blockquote {
+    p, 
+    cite {
+      max-width: $paragraph-width - 9;
+    }
+  }
+
+
   .text-center-over-p {
     @extend .text-center;
     @media screen and (min-width:$screen-md) {
@@ -154,8 +162,14 @@ blockquote {
 			line-height: 2rem;
 		}
 		@media screen and (min-width:$screen-md) {
-			margin-left: 3em;
-			margin-right: 3em;
+			@if $cec {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+      @else {
+        margin-left: 3em;
+        margin-right: 3em;  
+      }
 			margin-top: 2rem;
 		}
 	&.nested-block {
