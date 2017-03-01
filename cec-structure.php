@@ -127,6 +127,7 @@ concat:
                 <li>Case Studies</li>
               </ol>
             </li>  
+              <li><a href="cec-structure.php" class="list-group-item active">Structure</a></li>
               <li><a href="sample1" class="list-group-item">Working with students</a></li>
               <li><a href="/mixed-media.php" class="list-group-item">The Liberal Arts</a>
               </li>

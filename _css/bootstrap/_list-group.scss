@@ -102,6 +102,11 @@ a.list-group-item {
   }
 }
 
+//don't show active link on mobile because it's redundant with breadcrumb
+.side-nav-mobile li a.active {
+  display: none;
+}
+
 
 // Contextual variants
 //
