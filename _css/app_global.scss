@@ -1160,8 +1160,10 @@ p {
     li li:first-child {
       margin-top: .3em;
     }
-    li:first-child {
-      margin-top: 0; //default on first li. 
+    li:first-child, //default on first li. 
+    .secondary-nav li //nav
+    {
+      margin-top: 0; 
     }
   }
 }
