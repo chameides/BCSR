@@ -708,6 +708,10 @@ body#why .side-nav-mobile,
   margin:0 auto 30px;
   padding: 0 $padding-small-relative;
 }
+//prevent the full-width content from floating
+.main-content-bleed {
+  clear: left;
+}
 
 .column-center {
    max-width: 1170px;
