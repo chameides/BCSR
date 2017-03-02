@@ -29,7 +29,10 @@ module.exports = (grunt) ->
         src: [
           '_js/_js-not-minified/app/app-part1.js',
           '_js/_js-not-minified/app/show-search-bcsr.js',
+          '_js/_js-not-minified/app/mobilenav.js',
           '_js/_js-not-minified/app/app-part2.js',
+          '_js/_js-not-minified/app/rockers.js',
+          '_js/_js-not-minified/app/app-part3.js',
           ]
         dest: 
           '_js/_js-not-minified/app/app-bcsr-combined.js'
@@ -38,6 +41,7 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/app/app-part1.js',
           '_js/_js-not-minified/app/show-search-cec.js',
           '_js/_js-not-minified/app/app-part2.js',
+          '_js/_js-not-minified/app/app-part3.js',
           ]
         dest: 
           '_js/_js-not-minified/app/app-cec-combined.js'   
