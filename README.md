@@ -76,7 +76,8 @@ Remove comments in `gruntfile.coffee` to compile as nested CSS.
 
 ### JS Concat and Minified
 
-The Form scripts are concatenated with grunt-contrib-concat
+The App JS is broken up into partials. The CEC and Simon's Rock have slightly different flavors. Both are are concatenated and compressed grunt-contrib-concat.
+
 
 ### Icons and Grunt
 
