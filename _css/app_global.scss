@@ -1069,7 +1069,12 @@ h1.hero-title {
 
 .hero-buttons {
   @media screen and (max-width: 484px) {
-    max-width: 300px;
+    @if $cec {
+      //max-width causes button to be off center
+    }
+    @else {
+      max-width: 300px;  
+    }
     margin: 0 auto;
   }
   @include fadeIn( 3s );

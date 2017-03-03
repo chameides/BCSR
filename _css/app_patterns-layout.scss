@@ -13,6 +13,9 @@
 	@media screen and (max-width:$screen-xs-max) {
 		background-image: url(/_images/cec/classroom/student-present-bhsec_qns_0261.jpg);
 		background-position: center top;
+		.hero-text {
+			margin-top: .3em;
+		}
 	}
 	h2 {
 		line-height: 1.2em;
