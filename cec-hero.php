@@ -20,7 +20,6 @@
               <p class="hero-text">Kick off a page with a full-width image and text overlay.</p>
             </div>
           </div>
-          <i id="intro_arrow_down" class="fa fa-angle-down"></i>
         </div>
         <!-- /Page Hero -->
       </div><!-- /container-fluid-->

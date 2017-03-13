@@ -393,6 +393,10 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
     content:" ";
     display:block;
   }
+  @if $cec {
+
+  }
+  @else {
     #intro_arrow_down {
       position:absolute;
       bottom:30px;
@@ -408,6 +412,8 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
         display: none;
       }
     }
+  }
+    
 
     @-webkit-keyframes bounce3x {
       0%   {bottom:30px;}

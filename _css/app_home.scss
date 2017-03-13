@@ -146,16 +146,20 @@ body#home, .section-full-screen-wrapper {
 				height:100vh;
 			}
 		}
+		@if $cec {
 
-		#intro_arrow_down {
-			position:absolute;
-			bottom:30px;
-			font-size:4rem;
-			color:$white;
-			left:0;
-			right:0;
-			-webkit-animation: bounce3x 5s; /* Chrome, Safari, Opera */
-    		animation: bounce3x 5s;
+		}
+		@else {
+			#intro_arrow_down {
+				position:absolute;
+				bottom:30px;
+				font-size:4rem;
+				color:$white;
+				left:0;
+				right:0;
+				-webkit-animation: bounce3x 5s; /* Chrome, Safari, Opera */
+	    		animation: bounce3x 5s;
+			}
 		}
 
 		@-webkit-keyframes bounce3x {
