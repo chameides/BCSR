@@ -25,6 +25,7 @@
           <!--<li><a href="#templates">Templates</a></li>-->
           <li><a href="cec-typography.php">Typography</a></li>
           <li><a href="cec-structure.php">Structure</a></li>
+          <li><a href="cec-constant-contact.php">Constant Contact</a></li>
         </ul>
       </div>
       <div class="col-md-4">

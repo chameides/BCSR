@@ -255,9 +255,14 @@ input[type="search"] {
   .radio-inline input[type="radio"],
   .checkbox input[type="checkbox"],
   .checkbox-inline input[type="checkbox"] {
-    margin-top: 2px; //align radio buttons with label
-    @media (min-width: $screen-md) {  
-      margin-top: 6px;
+    @if $cec {
+      margin-top: 0px
+    }
+    @else {
+       margin-top: 2px; //align radio buttons with label
+       @media (min-width: $screen-md) {  
+        margin-top: 6px;
+      }
     }
   }
 }
