@@ -5,13 +5,12 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
-          ###
-          outputStyle: 'compressed'          
-           
-          if testing, remove comments for viewing CSS as nested 
-          ###
-          outputStyle: 'nested'
           
+          outputStyle: 'compressed'          
+          ### 
+          if testing, remove comments for viewing CSS as nested 
+          outputStyle: 'nested'
+          ###
         files:
           '_css/app.css': '_css/app.scss'
           '_css/app-cec.css': '_css/app-cec.scss'
@@ -42,9 +41,20 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/app/show-search-cec.js',
           '_js/_js-not-minified/app/app-part2.js',
           '_js/_js-not-minified/app/app-part3.js',
+          '_js/_js-not-minified/OU-link.js',
           ]
         dest: 
-          '_js/_js-not-minified/app/app-cec-combined.js'   
+          '_js/_js-not-minified/app/app-cec-combined.js'
+      bootstrap_cec:  
+        src: [
+          '_js/bootstrap.min.js',
+          '_js/modernizr.custom.js',
+          '_js/polyfills/tokenizer.js',
+          '_js/polyfills/parser.js',
+          '_js/polyfills/vminpoly.js',
+          ]
+        dest: 
+          '_js/app-sync.js'   
     uglify: 
       static_mappings: {
         files: [
@@ -52,6 +62,7 @@ module.exports = (grunt) ->
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
           {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
           {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
+          {src: '_js/_js-not-minified/factoid.js', dest: '_js/factoid.js'},
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
         ],
       }
@@ -88,7 +99,10 @@ module.exports = (grunt) ->
         options:
           hostname: '127.0.0.1',
           port: 9000,
+          ###
           base: '/Users/mchameides/Documents/web/BCSR'
+          ###
+          base: '/Users/kc2/Documents/Portfolio/BCSR/'
           keepalive: false,
           open: false
 
