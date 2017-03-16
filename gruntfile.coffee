@@ -54,7 +54,14 @@ module.exports = (grunt) ->
           '_js/polyfills/vminpoly.js',
           ]
         dest: 
-          '_js/app-sync.js'   
+          '_js/app-sync.js'
+      factoids:  
+        src: [
+          '_js/_js-not-minified/scrollmagic/jquery.scrollmagic.min.js',
+          '_js/_js-not-minified/factoids.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/factoids-scroll.js'      
     uglify: 
       static_mappings: {
         files: [
@@ -62,8 +69,8 @@ module.exports = (grunt) ->
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
           {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
           {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
-          {src: '_js/_js-not-minified/factoid.js', dest: '_js/factoid.js'},
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
+          {src: '_js/_js-not-minified/factoids-scroll.js', dest: '_js/factoids.min.js'},
         ],
       }
     svgmin:
@@ -99,10 +106,10 @@ module.exports = (grunt) ->
         options:
           hostname: '127.0.0.1',
           port: 9000,
-          ###
           base: '/Users/mchameides/Documents/web/BCSR'
           ###
           base: '/Users/kc2/Documents/Portfolio/BCSR/'
+          ###
           keepalive: false,
           open: false
 
