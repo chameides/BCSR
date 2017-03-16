@@ -1,5 +1,6 @@
 //colored background with 3 highlights used on CEC homepage
 .highlights-grid {
+	min-height: 400px; //progressive enhancement
 	min-height: 90vh;
 	padding-bottom: 20px;
   background-image: url(/_images/cec/classroom/classroom-teaching-CF045232.jpg);
@@ -19,6 +20,7 @@
 	}
 	h2 {
 		line-height: 1.2em;
+    margin-bottom: 40px; //progressive enhancement
     margin-bottom: 9vh;
     color: white;
     @media screen and (max-width:$screen-sm-max) {
@@ -26,6 +28,7 @@
     	margin-top: 1em;
 	  }
 	  @media screen and (min-width: $screen-sm-min) {
+	  	margin-top: 200px;
 	  	margin-top: 22vh;
 		}
 	}

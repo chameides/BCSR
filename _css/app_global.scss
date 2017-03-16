@@ -806,6 +806,7 @@ body#why .side-nav-mobile,
   width: 100%;
   height: 529px; 
   @if $cec {
+    min-height: 529px; //progressive enhancement
     min-height: 88vh; //almost full height, let next section peek through
   }
   margin-bottom: 40px;
@@ -819,6 +820,7 @@ body#why .side-nav-mobile,
     z-index: 11;
   }
   @media screen and (max-width: $screen-xs-max) {
+    height: 400px; //progressive enhacement
     height: 100vh;
     min-height: 600px;
     // background-size: auto;
@@ -950,6 +952,7 @@ h1.hero-title {
   background: black;
   margin-bottom: 40px;
   @media screen and (max-width: $screen-xs-max) {
+    height: 300px;
     height: 100vh;
   }
   video {
