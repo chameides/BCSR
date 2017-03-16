@@ -47,7 +47,6 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/app/app-cec-combined.js'
       bootstrap_cec:  
         src: [
-          '_js/bootstrap.min.js',
           '_js/modernizr.custom.js',
           '_js/polyfills/tokenizer.js',
           '_js/polyfills/parser.js',
@@ -57,7 +56,7 @@ module.exports = (grunt) ->
           '_js/app-sync.js'
       factoids:  
         src: [
-          '_js/_js-not-minified/scrollmagic/jquery.scrollmagic.min.js',
+          '_js/scrollmagic/jquery.scrollmagic.js',
           '_js/_js-not-minified/factoids.js',
           ]
         dest: 
