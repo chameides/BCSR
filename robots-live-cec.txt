@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*.inc$
+Disallow: /*.html$
+Disallow: /test/
+Disallow: /addendum/
