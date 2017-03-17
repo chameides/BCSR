@@ -197,8 +197,13 @@
 					<p>Use pull quotes to highlight portions of text, to break up long sections of text and to provide scannable content. It also adds an opportunity for design flare. These quotes should be short - limit to three lines.</p>
 					<blockquote>
 				  	<p>It is not just about knowledge and learning to absorb information and then regurgitate
-				      on a test.<span class="blockquote-mark">&rdquo;</span></p><cite>-Sarah&nbsp;'08&nbsp;</cite>
+				      on a test.</p>
+				     <p>It is not just about knowledge and learning to absorb information and then regurgitate
+				      on a test.<span class="blockquote-mark">&rdquo;</span></p>
+
+				      <cite>-Sarah&nbsp;'08&nbsp;</cite>
 				  </blockquote>
+					<p>We also have styles for longer quotes. Use this for longer citations. The style still separates it from a reqular paragraph, but text is smaller with a different typeface so that it is more readable in a longer blocks of text.</p>
 					<p>We also have styles for longer quotes. Use this for longer citations. The style still separates it from a reqular paragraph, but text is smaller with a different typeface so that it is more readable in a longer blocks of text.</p>
 					<blockquote class="blockquote-long">
 				   <p class="blockquote-last">It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place.</p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite>

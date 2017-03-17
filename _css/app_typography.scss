@@ -53,7 +53,8 @@
 }
 
 /*hanging block quote*/
-blockquote:before, 
+blockquote p:first-of-type:before,
+blockquote.blockquote-long p:first-of-type:before, 
 blockquote p.blockquote-last:after, 
 .blockquote-mark {
 	@media screen and (min-width:$screen-md) {
@@ -62,8 +63,8 @@ blockquote p.blockquote-last:after,
 }
 
 /*add a hanging quote*/
-blockquote:before, 
-blockquote.blockquote-long:before {
+blockquote p:first-of-type:before, 
+blockquote.blockquote-long p:first-of-type:before {
   content: '\201C';
   font-size: 4.3em;
   text-indent: -.5em;
@@ -72,12 +73,20 @@ blockquote.blockquote-long:before {
     font-size: 3rem;
   }  
   @media screen and (min-width:$screen-md) {	
-    font-size: 4em;
-    text-indent: -.4em;    
+    font-size: 2.4em;
+    text-indent: -.5em;    
   	position: relative; 
     top: 1.5rem;
   	line-height: 1rem;
   }
+  @media screen\9 {
+      /* IE9 CSS styles go here */
+      font-size: 6rem; //set font size larger than type
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     font-size: 6rem; //set font size larger than type
+    }
 }
 
 
@@ -96,7 +105,7 @@ blockquote.blockquote-long:before {
   }
 }
 
-blockquote.blockquote-long:before{
+blockquote.blockquote-long p:first-of-type:before{
  font-size:3em; 
   @media screen and (max-width:$screen-sm-max) {
     font-size: 2em;
@@ -167,7 +176,7 @@ blockquote {
         margin-right: 2em;
       }
       @else {
-        margin-left: 3em;
+        margin-left: 2.5em;
         margin-right: 3em;  
       }
 			margin-top: 2rem;
