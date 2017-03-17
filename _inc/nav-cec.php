@@ -125,10 +125,10 @@
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Partnerships</a>
 						</li>
 						<li class="hidden-md hidden-lg">
-							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"></i> Contact Us</a>
+							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-envelope" style="padding-top: 5px;"></i> Contact Us</a>
 						</li>
 						<li class="visible-md visible-lg">
-							<button class="btn btn-link" title="Contact Us"><i class="fa fa-envelope" style="font-size: 17px;padding-top: 5px;"><span class="sr-only ">Contact Us</span></i></button>
+							<a href="" class="btn btn-link" title="Contact Us"><i class="fa fa-envelope"><span class="sr-only ">Contact Us</span></i></a>
 						</li>
 						<li class="nav-search">
 							<form role="search" action="/search.php" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
@@ -139,7 +139,7 @@
 									</span>
 								</div><!-- /input-group -->
 							</form>
-							<button class="btn btn-link hidden-sm hidden-xs" title="Search" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search" style="font-size: 17px; padding-top: 4px;">
+							<button class="btn btn-link hidden-sm hidden-xs" title="Search" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search">
 							<span class="sr-only">Search</span></i></button>
 						</li>
 					</ul>

@@ -43,6 +43,9 @@ nav#mainnav {
     		margin-left: auto; 
     		margin-right: auto; 
  			}
+ 			.fa {
+				font-size: 17px;
+			}
 		}
 		@else {
 			max-width:970px;
@@ -261,6 +264,9 @@ nav#mainnav {
 			@media (min-width: 1470px) {
 				right: auto;
 			}
+		}
+		#showsearch {
+			padding-bottom: 1px;
 		}
 	}
 	@else {
