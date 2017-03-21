@@ -11,14 +11,11 @@
   </head>
   <body>
     <div class="content-wrapper">
-
-  
-<?php include '_inc/nav-cec.php'; ?>
+      <?php include '_inc/nav-cec.php'; ?>
     
-<div class="container-fluid page-container">
-  <div class="column-center">
-    
-    <h1 class="header-page text-center">Index</h1>
+      <div class="container-fluid page-container">
+        <div class="column-center">
+          <h1 class="header-page text-center">Index</h1>
     
       <div class="col-md-4">
         <ul>
@@ -49,8 +46,9 @@
     </div>
       </div><!-- /.container -->
 
-      <?php include '_inc/footer-cec.php'; ?>   
-      <?php include '_inc/bottom-js-cec.php' ?>
+      
     </div>
+    <?php include '_inc/footer-cec.php'; ?>   
+      <?php include '_inc/bottom-js-cec.php' ?>
   </body>
 </html>

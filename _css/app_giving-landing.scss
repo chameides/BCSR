@@ -141,26 +141,28 @@ a.circle-heading {
 				margin-bottom: 6px;
 			}
 }
-	// div
-	.circle-heading {
-	    float:left;
-	    width: 100%;
-	    padding-top: 50%;
-	    line-height: 1em;
-	    margin-top: -0.5em;
-	    text-align: center;
-		@include LeHavre(20px);
-		@media screen and (max-width:$screen-sm-min) {
-			font-size: 12px;
-		}
-		// Two Lines
-		.clubs &,
-		.community & {
-			margin-top: -1em;
-		}
-		// Three Lines
-		.barrington & {
-			margin-top: -1.7em;
+	@if $cec {
+		// div
+		.circle-heading {
+		    float:left;
+		    width: 100%;
+		    padding-top: 50%;
+		    line-height: 1em;
+		    margin-top: -0.5em;
+		    text-align: center;
+			@include LeHavre(20px);
+			@media screen and (max-width:$screen-sm-min) {
+				font-size: 12px;
+			}
+			// Two Lines
+			.clubs &,
+			.community & {
+				margin-top: -1em;
+			}
+			// Three Lines
+			.barrington & {
+				margin-top: -1.7em;
+			}
 		}
 	}
 
