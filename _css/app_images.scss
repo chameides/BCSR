@@ -8,7 +8,9 @@ img {
 }
 
 /*fixed-width images*/
-.pull-left, .pull-right {
+.pull-left, 
+.pull-right,
+.width-auto {
 	width:auto;
 }
 
