@@ -316,6 +316,8 @@ $screen-tablet:             $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
+
+$screen-footer-spread: 				845px;
 $screen-md:						992px;
 
 @if $cec {
@@ -395,6 +397,8 @@ $container-lg:                 $container-large-desktop !default;
 
 // Basics of a navbar
 $navbar-height:                    54px !default;
+$navbar-height2:                   75px !default;
+$navbar-height2-xs:								 85px !default;
 $navbar-super-height:              40px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
@@ -903,3 +907,11 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+$footer-height:								200px;
+$footer-height-inverse:				$footer-height * -1;
+$footer-height-md: 						180px;
+$footer-height-md-inverse:		$footer-height-md * -1;
+
+
