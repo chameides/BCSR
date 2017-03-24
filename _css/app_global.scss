@@ -1,7 +1,43 @@
+@if $cec {
+  html, body {
+    height: calc(100vh - #{$navbar-height2});
+    margin: 0;
+    @media screen and (max-width:$screen-md-max) { 
+      height: calc(100vh - #{$navbar-height2-xs});
+    }
+  }
+  .content-wrapper {
+    min-height: calc(100vh - #{$navbar-height2});
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: $footer-height-inverse;
+    @media screen and (min-width:$screen-sm-min) {
+      margin-bottom: $footer-height-md-inverse;
+    } 
+    @media screen and (max-width:$screen-sm-max) { 
+      min-height: calc(100vh - #{$navbar-height2-xs});
+    }
+
+  }
+  .content-wrapper:after {
+    content: "";
+    display: block;
+  }
+  footer,
+  .content-wrapper:after {
+    height: $footer-height;
+    @media screen and (min-width:$screen-sm-min) {
+      height: $footer-height-md;
+    } 
+  }
+  
+}
+
+
 // General Styles
 body {
   @if $cec {
-    margin-top: 75px;
+    margin-top: $navbar-height2;
     @media screen and (min-width:$screen-xl) { 
       background: #efefef;
       &.has-hero {
@@ -19,7 +55,7 @@ body {
   }
   @media screen and (max-width:$screen-sm-max) { 
     @if $cec {
-    margin-top: 85px;
+      margin-top: $navbar-height2-xs;
     }
     @else {
        margin-top: 120px;
@@ -32,7 +68,7 @@ body {
     @media screen and (min-width:$screen-xl) { 
       max-width: $max-content-width;
       background: white;
-      margin: 0 auto;
+      margin: 0 auto $footer-height-md-inverse;
     }
   }
 }
