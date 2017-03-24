@@ -196,9 +196,7 @@
 					<h2>Quotes</h2>
 					<p>Use pull quotes to highlight portions of text, to break up long sections of text and to provide scannable content. It also adds an opportunity for design flare. These quotes should be short - limit to three lines.</p>
 					<blockquote>
-				  	<p>It is not just about knowledge and learning to absorb information and then regurgitate
-				      on a test.</p>
-				     <p>It is not just about knowledge and learning to absorb information and then regurgitate
+				  	<span class="blockquote-start">&ldquo;</span><p>It is not just about knowledge and learning to absorb information and then regurgitate
 				      on a test.<span class="blockquote-mark">&rdquo;</span></p>
 
 				      <cite>-Sarah&nbsp;'08&nbsp;</cite>
@@ -206,7 +204,7 @@
 					<p>We also have styles for longer quotes. Use this for longer citations. The style still separates it from a reqular paragraph, but text is smaller with a different typeface so that it is more readable in a longer blocks of text.</p>
 					<p>We also have styles for longer quotes. Use this for longer citations. The style still separates it from a reqular paragraph, but text is smaller with a different typeface so that it is more readable in a longer blocks of text.</p>
 					<blockquote class="blockquote-long">
-				   <p class="blockquote-last">It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place.</p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite>
+				   <span class="blockquote-start">&ldquo;</span><p class="blockquote-last">It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place.<span class="blockquote-mark">&rdquo;</span></p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite>
 				  </blockquote>
   				<p>Consider applying .blockquote-long class to the blockquote element if the quote extends beyond a couple of lines.
 					<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
@@ -219,7 +217,7 @@
 					</div>
 					<div class="col-md-8">
 						<blockquote class="no-margin-top">
-			        <p>Pair an image with a blockquote by setting them inside two columns. Add class 'no-margin' to the blockquote.<span class="blockquote-mark">&rdquo;</span></p>
+			         <span class="blockquote-start">&ldquo;</span><p>Pair an image with a blockquote by setting them inside two columns. Add class 'no-margin' to the blockquote.<span class="blockquote-mark">&rdquo;</span></p>
 			        <cite>-Style Guide</cite>
 			      </blockquote>
 					</div>
