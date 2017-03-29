@@ -63,6 +63,7 @@
     while($row = mysql_fetch_row($result)){
         $description = $row[2];
         $description = str_replace("</p><p>", "<br />", $description);
+        $description = str_replace("</div><div>", "<br />", $description);
         $description = strip_tags(html_entity_decode($description));
         $description = ($hc_cfg[107] > 0) ? clean_truncate($description,$hc_cfg[107]) : $description;
     
