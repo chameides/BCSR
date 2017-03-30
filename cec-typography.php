@@ -56,6 +56,8 @@
 						<h5>Heading 5</h5>
 						<h6>Heading 6</h6>
 						<h1 class="header-page text-center-over-p">Heading 1</h1>
+						<p class="intro-paragraph">
+						Kick off a paragraph with class intro-paragraph and give a summary of the page. Keep it to three lines or it will start to look clunky and less readable.</p>
 						<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 						<h2>Heading 2</h2>
 						<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -68,6 +70,7 @@
 						<h6>Heading 6</h6>
 						<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 						<!--end headings-->
+
 					</div>
 
 					<div class="row">

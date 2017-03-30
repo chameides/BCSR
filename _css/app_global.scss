@@ -1032,14 +1032,23 @@ h1.hero-title {
 }
 // Paragraph
 .intro-paragraph {
-  font-size: 3rem;
-  line-height: 3.4rem;
-  margin-bottom: 3.333rem;
-  @media screen and (max-width:$screen-sm-min) {
-    font-size: 1.5rem;
-    // line-height: 20px;
-    margin-bottom: 1.25rem;
-    line-height: 2rem;
+  
+  @if cec {
+    @media screen and (min-width:$screen-sm-min) {
+      font-size: 1.4em;
+      line-height: 1.2em;
+    }
+  }
+  @else {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    margin-bottom: 3.333rem;
+    @media screen and (max-width:$screen-xs-max) {
+      font-size: 1.5rem;
+      // line-height: 20px;
+      margin-bottom: 1.25rem;
+      line-height: 2rem;
+    }
   }
 }
 
