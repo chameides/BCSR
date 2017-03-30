@@ -137,7 +137,7 @@ a.circle-heading {
 		    &:hover a {
 		    	text-decoration: none;
 		    }
-			@media screen and (max-width:$screen-sm-min) {
+			@media screen and (max-width:$screen-xs-max) {
 				margin-bottom: 6px;
 			}
 }
@@ -151,7 +151,7 @@ a.circle-heading {
 		    margin-top: -0.5em;
 		    text-align: center;
 			@include LeHavre(20px);
-			@media screen and (max-width:$screen-sm-min) {
+			@media screen and (max-width:$screen-xs-max) {
 				font-size: 12px;
 			}
 			// Two Lines

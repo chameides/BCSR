@@ -27,7 +27,7 @@
 	&.rental {
 		background: $orange;
 	}
-		@media screen and (max-width:$screen-sm-min) {
+		@media screen and (max-width:$screen-xs-max) {
 			width: 100%;
 			display: block;
 		}
@@ -38,7 +38,7 @@
 	color: $white;
 	font-size: 16px;
 	line-height: 1.5em;
-		@media screen and (max-width:$screen-sm-min) {
+		@media screen and (max-width:$screen-xs-max) {
 			p {
 				font-size: 14px;
 			}
@@ -74,7 +74,7 @@
 	@media screen and (max-width: $pagegrid-break-high) {
 		height: 435px;
 	}
-	@media screen and (max-width:$screen-sm-min) {
+	@media screen and (max-width:$screen-xs-max) {
 		height: auto;
 		width: 100%;
 	}
@@ -114,7 +114,7 @@
 			    width: 10px;
 			    margin-top: -8px;
 			    color: #fff;
-				@media screen and (max-width:$screen-sm-min) {
+				@media screen and (max-width:$screen-xs-max) {
 					display: none;
 				}
 			}
@@ -130,7 +130,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		@media screen and (max-width:$screen-sm-min) {
+		@media screen and (max-width:$screen-xs-max) {
 			width: 100%;
 			height: auto;
 			position: static;
@@ -162,7 +162,7 @@
 						}
 				}
 
-					@media screen and (max-width:$screen-sm-min) {
+					@media screen and (max-width:$screen-xs-max) {
 						@include LeHavre(12px);
 						// bottom: 30%;
 					}
@@ -172,7 +172,7 @@
 				}
 				#accordion img {
 					height: auto;
-					@media screen and (max-width:$screen-sm-min) {
+					@media screen and (max-width:$screen-xs-max) {
 						width: 100%;
 						height: auto;
 					}
