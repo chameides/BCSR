@@ -89,7 +89,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
      {
       padding: $padding-small $padding-base-horizontal2; 
       font-size: $font-size-base;
-      color: $medium-gray
+      color: $medium-gray;
     }
   }
 
@@ -194,7 +194,17 @@ div.form_response input[type="radio"] {
     //Academy email stream | phone type
     #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
     //Gatekeeper Prospect | Phone Number
-    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d 
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a,
+    //educator visit page | first name
+    #form_question_706aa7af-9e86-4ea1-91ab-8178ec5186fe,
+     //educator visit page | state
+    #form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31,
+    //educator visit page 2 | first name
+    #form_question_fe472150-da89-4c71-a716-37d88685b984
     {
       margin-right: 4%;
     }
@@ -238,15 +248,34 @@ div.form_response input[type="radio"] {
     //Gatekeeper Prospect | Phone Number
     #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
     //Gatekeeper Prospect | Phone Type
-    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3
+    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | last name referrer
+    #form_question_48122b12-5b89-4789-9a49-3f7454c5e6d9,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a,
+    //Refer a student - alumni | last name student
+    #form_question_75288bed-c42f-44a1-bf75-b48618dfeb54,
+    //educator visit page | first name
+    #form_question_706aa7af-9e86-4ea1-91ab-8178ec5186fe,
+    //educator visit page | last name
+    #form_question_402ea4e7-b8db-462e-9aed-e66aa286b405,
+	//educator visit page 2 | first name
+    #form_question_fe472150-da89-4c71-a716-37d88685b984,
+    //educator visit page 2 | last name
+    #form_question_d89753a5-b61e-4a66-b243-d8444c52f385
     {  
       width: 49%;
       clear: none !important;
       float: left;
     }
   }
+  	//fix parent div of h3 spacing on Berkshire Scholarship other radio
+ 	#form_question_49fb0cc0-7a17-4420-97a8-f2b28515754a {
+ 		margin-bottom:0;
+ 	}
 
- 
 .field-date-of-birth {
   width: 30%;
   @media screen and (max-width: $screen-xs-max) {
@@ -276,8 +305,6 @@ div.form_response input[type="radio"] {
   } 
 }
 
-
-
   //Email Inquiry Landing Page | Phone Number
   #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8 {
     margin-right: 2%;
@@ -303,8 +330,12 @@ div.form_response input[type="radio"] {
   #form_question_23609b72-e236-435c-80d4-c1de07e85fbc,
   //Academy email landing page | parent last name
   #form_question_39e705c2-29d1-439e-a00c-3063adff116e
-   {
+  {
     padding-left: 6%;
+    //don't display legend if indented
+    legend {
+      display:none;
+    }
   }
 }
 
@@ -331,7 +362,16 @@ div#switch button {
 #form_question_5bd506df-6f4c-416c-9f06-9e57553f449f span,
 //discovery day form
 #form_question_be309521-1317-4041-b9fb-6b1e0b15082e span,
-#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span { 
+#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span,
+//refer a student form - alumni
+#form_question_ab7dbb01-2219-4195-b39d-adc279ca4b4e span,
+//educator visit page | state
+#form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31 span,
+//educator visit page | zip
+#form_question_57cb5403-94e2-4002-b599-76bac5979767,
+//Berkshire scholarship | other radio | state and zip
+#form_question_c9899af6-5fac-4d3e-b6a2-c3adc83d9ce9 span
+{ 
   display:inline-block;
   width: 50%;
   @media screen and (max-width: $screen-xs-max) {
@@ -342,8 +382,12 @@ div#switch button {
     margin-right:2%;
     @media screen and (max-width: $screen-xs-max) {
       width: 100%;
-      }
-    } 
+    }
+  } 
+}
+//float the state field in address block, prevent wierd vertical height spacing
+.form_address span:first-of-type {
+    float: left;
 }
 
 /* fix vertical spacing for address block on main rfi */
@@ -361,17 +405,31 @@ label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_country],
 label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_postal],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_region],
 label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_country],
-label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
- {
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal],
+//refer a student - alumni
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_region],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_country],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal],
+//cty & berkshire scholarship form
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_street],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_street],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
+{
   margin-top: $padding-large-vertical;
 }
   
-/* style --I'm a future-- on main rfi */
-#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend,
-#form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend {
-  @extend h3, h3.subheadline;
+// style --I'm a future-- on main rfi
+#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d,
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8,
+#form_d3e067a3-858f-49a7-9a43-c7d1643560cd,
+#form_e5af9e89-191e-43e3-8716-08fb972c0262,
+.form_address .form_label //Address on block
+{
+  legend {
+    font-weight: 500; //override legend bold
+    @extend h3, h3.subheadline;
+  }
 }
-
 //Gatekeeper Blue Box
 .row-col-highlight {
   .form_pages, .action button.default { //Alignment inside blue box
@@ -380,22 +438,20 @@ label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal]
       margin-left: $padding-large;
     }
   }
-
-
 }
 
-//not sure if we need these (retain them should they use the other parts of the form in the future?) 
-/* style h1 and h2 
-.form_h2 {
-  font-family: $lehavre;
-  font-size: 4rem;
-  letter-spacing: -0.08em;
-  line-height: 1.1;
-}
-     
+  //not sure if we need these (retain them should they use the other parts of the form in the future?) 
+/* style h1 and h2   
 .form_h1 {
     font-family: $lehavre;
     font-size: 5rem;
     letter-spacing: -0.08em;
     line-height: 1.1;
-}*/
+}
+.form_h2 {
+  font-family: $lehavre;
+  font-size: 3rem;
+  letter-spacing: -0.08em;
+  line-height: 1.1;
+}
+*/ 

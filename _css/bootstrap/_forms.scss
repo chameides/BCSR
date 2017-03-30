@@ -126,6 +126,8 @@ output {
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid $input-border;
+  -webkit-appearance: none;
+  border-radius: 0;
   /*
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
@@ -619,13 +621,27 @@ input[type="checkbox"] {
 //inline input and button
 .input-and-button-wrapper{
   input[type=text] {
-    margin-bottom: 2%;
+    padding-top: 10px; //magic number to align top
     height: 38px; //magic number to match button height
+    @media (max-width: $screen-md) {  
+      padding-top: 5px; //magic number to align top
+    }
     @media (min-width: $screen-xs2) {  
       height: 52px; 
     }
   }
+  .btn {
+    vertical-align: top;
+  }
 }
+
+//if button is over a hero graphic, set border to white. For example, do it on Library, but not on the Directory.
+.page-hero-container .input-and-button-wrapper input[type=text]{
+  border: 0 solid white;
+}
+
+
+
 
 //container within the wrapper
 .input-and-button-container { 
@@ -639,5 +655,12 @@ input[type="checkbox"] {
 }
 
 
-
+//toggle between two library forms
+.SearchRadioToggle label {
+  text-align: left;
+  width: 130px; //magic number to match text width
+  @media (min-width: $screen-md) {
+    width: 200px; //magic number to match text width
+  }
+}
 

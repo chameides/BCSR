@@ -380,3 +380,9 @@ a.red { color: #BE2126 !important; }
 
 /* Fix leading on mega menu drop down */
 .dropdown-menu.mega-menu li {line-height: 1.428571429}
+
+/* Set style for categories */
+#form-section select[multiple], select[size] {
+    min-width: 140px;
+    overflow: hidden;
+}
