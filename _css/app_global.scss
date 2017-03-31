@@ -56,14 +56,8 @@ a {
 }
 p {
   @media screen and (max-width:$screen-sm-max) {
-    @if $cec {
-      font-size: 1.7rem;
-      line-height: 1.2em
-    }
-    @else {
-      font-size: 1.25rem;
-    }
-    
+    font-size: $font-size-sm;
+    line-height: 1.2em
   }
   &.paragraph-break {
     margin-bottom: 3.333rem;
@@ -99,14 +93,8 @@ p {
   
   //overflow-x: hidden because created inner scrollbar on pages lacking X amount of content would receive an inner scrollbar
   @media screen and (max-width:$screen-sm-max) {
-    @if $cec {
-      font-size: 1.8rem;
-      line-height: 1.2em;
-    }
-    @else {
-      font-size: 1.1rem;
-      line-height: 1.6rem;
-    }
+    font-size: $font-size-sm;
+    line-height: 1.2em;
   }
 }
 // Global margin sizes scoped in page-container for now
@@ -1059,22 +1047,17 @@ h1.hero-title {
 }
 // Paragraph
 .intro-paragraph {
-  
-  @if cec {
-    @media screen and (min-width:$screen-sm-min) {
-      font-size: 1.4em;
-      line-height: 1.2em;
-    }
+  @media screen and (min-width:$screen-sm-min) {
+    font-size: 1.4em;
+    line-height: 1.2em;
+  }
+  @if $cec {
   }
   @else {
-    font-size: 3rem;
-    line-height: 3.4rem;
-    margin-bottom: 3.333rem;
-    @media screen and (max-width:$screen-xs-max) {
-      font-size: 1.5rem;
-      // line-height: 20px;
-      margin-bottom: 1.25rem;
-      line-height: 2rem;
+    @media screen and (min-width:$screen-md-min) {
+      font-size: 3rem;
+      line-height: 3.4rem;
+      margin-bottom: 3.333rem;
     }
   }
 }
@@ -1083,7 +1066,6 @@ h1.hero-title {
 .btn.btn-primary {
   text-transform: uppercase;
   @include LeHavre(16px);
-  
   letter-spacing: -0.04em;
   padding: 15px 20px;
   border: none;
@@ -1097,7 +1079,7 @@ h1.hero-title {
     text-decoration: none;
   }
     @media screen and (max-width: $screen-xs2) {
-        font-size: 1em;
+        //font-size: 1em;
         padding: 10px 15px;
     }
   &.btn-two-stack {
@@ -1114,12 +1096,6 @@ h1.hero-title {
 
 .hero-buttons {
   @media screen and (max-width: 484px) {
-    @if $cec {
-      //max-width causes button to be off center
-    }
-    @else {
-      max-width: 300px;  
-    }
     margin: 0 auto;
   }
   @include fadeIn( 3s );
@@ -1224,13 +1200,12 @@ p {
   }
 }
 
+
 // Right Arrow before List items
 ul.arrow-list {
-  @if $cec {
-    line-height: 1.3em;
-    @media screen and (max-width:$screen-sm-max) {
-      padding-left: $padding-small-relative; //align arrow with text on small screen
-    }
+  line-height: 1.3em;
+  @media screen and (max-width:$screen-sm-max) {
+    padding-left: $padding-small-relative; //align arrow with text on small screen
   }
   li {
     margin-bottom: 1.5rem;
@@ -1250,10 +1225,8 @@ div.arrow-list-tight-small-wrapper ul {
     content: '\f105';
     color: $blue;
     margin-left: -30px;
-    @if $cec {
-      @media screen and (max-width:$screen-sm-max) {
-        margin-left: -19px; //even up indent on small screen
-      }
+    @media screen and (max-width:$screen-sm-max) {
+      margin-left: -19px; //even up indent on small screen
     }
   }
   list-style: none;

@@ -15,102 +15,91 @@ body {
 h1, 
 .highlights-grid h2 { // cec h2, semantic h2 but style as h1
 	color:$dark-gray;
-	@if $cec {
-			@include Header(3.2rem);
-		}
-		@else {
-			@include LeHavre(2.5rem);
-		}		
+	@include Header(3.2rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@if $cec {
-			@include Header(5.5rem);
-		}
-		@else {
-			@include LeHavre(5rem);
-		}		
-
+		@include Header(5.5rem);
 		line-height:1.1;
+	}
+	@if $cec {
+	}
+	@else {
+		@media (min-width: $screen-md-min) {
+			@include LeHavre(5rem);
+		}
 	}
 }
 h2 {
-	@if $cec {
-		@include Header(2.8rem);
-	}
-	@else {
-		@include LeHavre(2rem);
-	}		
+	@include Header(2.8rem);
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@if $cec {
-			@include Header(4.5rem);
-		}
-		@else {
-			@include LeHavre(4rem);
-		}		
+		@include Header(4.5rem);	
 		line-height:1.1;
+	}
+	@if $cec {
+	}
+	@else {
+		@media (min-width: $screen-md-min) {
+			@include LeHavre(4rem);
+		}
 	}
 }
 h3 {
-	@if $cec {
-		@include Header(2.3rem);
-	}
-	@else {
-		@include LeHavre(1.75rem);
-	}		
+	@include Header(2.3rem);		
 	line-height:1;
 	@media (min-width: $screen-sm-min) {
-		@if $cec {
-			@include Header(3.5rem);
-		}
-		@else {
-			@include LeHavre(3rem);
-		}		
+		@include Header(3.5rem);		
 		line-height:1.1;
+	}
+	@if $cec {
+	}
+	@else {
+		@media (min-width: $screen-md-min) {
+			@include LeHavre(3rem);
+		}
 	}
 }
 h4 {
 	line-height:1;
+	@include Header(2rem);
+	@media (min-width: $screen-sm-min) {
+		@include Header(2.5rem);
+	}
+	line-height:1.1;
 	@if $cec {
-		@include Header(2rem);
 	}
 	@else {
-		@include LeHavre(1.75rem);
-	}	
-	@media (min-width: $screen-sm-min) {
-		@if $cec {
-			@include Header(2.5rem);
+		@media (min-width: $screen-md-min) {
+			@include LeHavre(2.4rem);
 		}
-		@else {
-			@include LeHavre(2rem);
-		}	
-		line-height:1.1;
 	}
 }
 h5 {
+	@include HelveticaCondMed(2rem);
+	@media (min-width: $screen-sm-min) {
+		@include HelveticaCondMed(2.3rem);
+	}	
+	line-height:1.1;
 	@if $cec {
-		@include HelveticaCondMed(2rem);
-		@media (min-width: $screen-sm-min) {
-			@include HelveticaCondMed(2.3rem);
-		}
 	}
 	@else {
-		@include LeHavre(1.55rem);
-		letter-spacing: -0.05em;
-	}	
-		line-height:1.1;
+		@media (min-width: $screen-md-min) {
+			@include HelveticaCondMed(2.2rem);
+		}
+	}
 }
 h6 {
-	@if $cec {
-		@include HelveticaCond(2rem);
-		@media (min-width: $screen-sm-min) {
+	@include HelveticaCond(2rem);
+	@media (min-width: $screen-sm-min) {
 			@include HelveticaCondMed(1.75rem);
-		}
+	}
+	@if $cec {
 	}
 	@else {
-		@include LeHavre(1.3rem);
-		letter-spacing: -0.05em;
-	}	
+		@media (min-width: $screen-md-min) {
+			@include HelveticaCondMed(2rem);
+		}
+	}
 }
 
 
