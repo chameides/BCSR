@@ -241,7 +241,6 @@
 	<h1 class="text-center">Heading 1</h1>
 	<h2>Heading 2</h2>
 	<h3>Heading 3</h3>
-	<h3><strong>Heading 3</strong></h3>
 	<h4>Heading 4</h4>
 
 	<h5>Heading 5</h5>
@@ -328,14 +327,11 @@
 		<h2 id="list_types">List Types</h2>
 
 		<h3>Custom Unordered (bullet) List</h3>
-
+		<p>A paragraph for reference size</p>
 		<ul class="arrow-list">
-		  <li><a href="#">Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
-			<ul class="arrow-list"> 
-			  <li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
-			  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
-			</ul>
-		  </li>
+		  <li><a href="#">paragraph for reference size - Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+			<li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
+			<li><a href="#">Financial Aid Handbook (2013/14)</a></li>
 		  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
 		</ul>
 
@@ -1099,6 +1095,7 @@
 
 	<div class="row thumb-set">
 	<h2>Thumbnails and Thumbnail Copy</h2>
+	<p>A paragraph for perspective</p>
 		<div class="col-md-3">
 			<div class="row no-margin">
 				<div class="col-xs-3 col-md-12">
