@@ -966,15 +966,28 @@ h1.hero-title {
   overflow: hidden;
   background: black;
   margin-bottom: 40px;
-  @media screen and (max-width: $screen-xs-max) {
-    height: 300px;
-    height: 100vh;
-  }
-  video {
-    @media screen and (max-width: $screen-xs-max) {
-      display: none;
+  @if $cec {
+    @media screen and (max-width: $screen-xs-min) {
+      height: 300px; //progressive enhancement
+      height: 100vh;
     }
+    video {
+      @media screen and (max-width: $screen-xs-min) {
+        display: none;
+      }
+    }  
   }
+  @else {
+    @media screen and (max-width: $screen-sm-min) { //apply to ipad
+      height: 300px; //progressive enhancement
+      height: 100vh;
+    }
+    video {
+      @media screen and (max-width: $screen-sm-min) { //apply to ipad
+        display: none;
+      }
+    }  
+  }  
   &.academics{
     background-image: url(/_images/_why/pond.jpg);
     background-repeat: no-repeat;
