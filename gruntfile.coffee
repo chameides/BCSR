@@ -47,13 +47,21 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/app/app-cec-combined.js'
       bootstrap_cec:  
         src: [
-          '_js/modernizr.custom.js',
+          '_js/_js-not-minified/modernizr.custom.js',
           '_js/polyfills/tokenizer.js',
           '_js/polyfills/parser.js',
           '_js/polyfills/vminpoly.js',
           ]
         dest: 
-          '_js/app-sync.js'
+          '_js/_js-not-minified/app-sync.js'
+      polyfill:  
+        src: [
+          '_js/polyfills/tokenizer.js',
+          '_js/polyfills/parser.js',
+          '_js/polyfills/vminpoly.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/polyfill.js'
       factoids:  
         src: [
           '_js/scrollmagic/jquery.scrollmagic.js',
@@ -69,6 +77,7 @@ module.exports = (grunt) ->
           {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
           {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
+          {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
           {src: '_js/_js-not-minified/factoids-scroll.js', dest: '_js/factoids.min.js'},
         ],
       }
