@@ -984,10 +984,7 @@
 	<div class="col-md-12">
 		<h2>Pullquotes</h2>
 		<blockquote>
-                     <p>It is not just about knowledge and learning to absorb information and then regurgitate
-                        on a test, but actually being able to use one's brain in any situation, academic or
-  otherwise. This skill is indispensable in any time or place.<span class="blockquote-mark">&rdquo;</span></p><cite>-Sarah&nbsp;'08&nbsp;</cite></blockquote>
-		
+      <p><span class="blockquote-start">&ldquo;</span>It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place.<span class="blockquote-mark">&rdquo;</span></p><cite>-Sarah&nbsp;'08&nbsp;</cite></blockquote>	
 		<ul>
 			<li>This is a semantic blockquote, but used as a pull quote</li>
 			<li>Put the quote in a p tag and the citation in a cite tag - all within a blockquote.</li>
@@ -998,14 +995,11 @@
 		</ul>
 
 		<blockquote class="blockquote-long">
-                     <p class="blockquote-last">It is not just about knowledge and learning to absorb information and then regurgitate
-                        on a test, but actually being able to use one's brain in any situation, academic or
-  otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or
-  otherwise. This skill is indispensable in any time or place.</p><cite>&mdash;Sarah&nbsp;'08&nbsp;</cite></blockquote>
-  <p> Consider applying .blockquote-long class to the blockquote element if the quote extends beyond a couple of lines.
-
-
-		<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+     	<p>It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place. It is not just about knowledge and learning to absorb information and then regurgitate on a test, but actually being able to use one's brain in any situation, academic or otherwise. This skill is indispensable in any time or place.<span class="blockquote-mark">&rdquo;</span></p>
+     	<cite>&mdash;Sarah&nbsp;'08&nbsp;</cite>
+    </blockquote>
+     	<p> Consider applying .blockquote-long class to the blockquote element if the quote extends beyond a couple of lines.
+			<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
 	</div>
 	
 	<h3>Pullquote with an image</h3>

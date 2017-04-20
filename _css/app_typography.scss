@@ -53,9 +53,6 @@
 }
 
 /*hanging block quote*/
-blockquote p:first-of-type:before,
-blockquote.blockquote-long p:first-of-type:before, 
-blockquote p.blockquote-last:after, 
 .blockquote-mark, 
 .blockquote-start {
 	@media screen and (min-width:$screen-md) {
@@ -87,9 +84,8 @@ blockquote p.blockquote-last:after,
   }
 }
 @else {
-  /*add a hanging quote*/
-  blockquote p:first-of-type:before, 
-  blockquote.blockquote-long p:first-of-type:before {
+  /*add a hanging quote*/ 
+  .blockquote-start {
     content: '\201C';
     font-size: 4.3em;
     text-indent: -.5em;
@@ -104,20 +100,8 @@ blockquote p.blockquote-last:after,
       top: 1.5rem;
       line-height: 1rem;
     }
-    @media screen\9 {
-      /* IE9 CSS styles go here */
-      font-size: 6rem; //set font size larger than type
-    }
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      /* IE10+ CSS styles go here */
-      font-size: 6rem; //set font size larger than type
-    }
   } 
 }
-
-
-
-
 
 
 .section-full-screen {
@@ -136,7 +120,6 @@ blockquote p.blockquote-last:after,
 }
 
 blockquote.blockquote-long {
-  p:first-of-type:before, 
   .blockquote-start {
     font-size:3em; 
     @media screen and (max-width:$screen-sm-max) {
@@ -161,8 +144,14 @@ blockquote.blockquote-long {
   position: relative; 
   right: 0.1em;
   line-height: 0;
+  .hero-quote & {
+    right: 0;
+  }
   @media screen and (min-width:$screen-md) {
     top: 1.3rem;
+    .blockquote-long &{
+      top: 1rem;
+    }
   }
   @media screen and (max-width:$screen-sm-max) {
     @if $cec {
@@ -201,9 +190,7 @@ blockquote.blockquote-long {
   }
 }
 @else {
-  blockquote p.blockquote-last:after, 
   .blockquote-mark {
-    content: '\201D'; /*add a large quote at end of blockquote*/
     @extend .blockquote-end-style; 
   }
 }
