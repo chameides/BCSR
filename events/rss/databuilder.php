@@ -62,6 +62,8 @@
     $cnt = 0;
     while($row = mysql_fetch_row($result)){
         $description = $row[2];
+        $description = str_replace("</p><p>", "<br />", $description);
+        $description = str_replace("</div><div>", "<br />", $description);
         $description = strip_tags(html_entity_decode($description));
         $description = ($hc_cfg[107] > 0) ? clean_truncate($description,$hc_cfg[107]) : $description;
     
@@ -77,6 +79,13 @@
                 $category = (substr($categories[0],-4) != '_ACE') ? substr($categories[0],3) : substr($categories[1],3);
                 break;
         }
+       if(isset($row[7]))
+        {
+            $endTime = date("g:i A",strtotime(stampToDate($row[3].' '.$row[7],"%d %b %Y %H:%M:%S")));
+        }
+        else{
+            $endTime = "";
+        }
         $comment = ($hc_cfg[25] != '') ? '<comments><![CDATA['.CalRoot.'/index.php?eID='.$row[0].'#disqus_thread'.']]></comments>' : '';
         echo '
 <item>
@@ -87,8 +96,8 @@
         <guid>'.CalRoot.'/index.php&#63;eID='.$row[0].'</guid>
         <pubDate>'.cleanXMLChars(stampToDate($row[3].' '.$row[4], "%a, %d %b %Y  %H:%M:%S").' '.$tzRSS).'</pubDate>
         <date>'.cleanXMLChars(stampToDate($row[3], "%B %d")).'</date>
-        <startTime>'.date("h:i A",strtotime(stampToDate($row[3].' '.$row[4],"%d %b %Y %H:%M:%S"))).'</startTime>
-        <endTime>'.date("h:i A",strtotime(stampToDate($row[3].' '.$row[7],"%d %b %Y %H:%M:%S"))).'</endTime>
+        <startTime>'.date("g:i A",strtotime(stampToDate($row[3].' '.$row[4],"%d %b %Y %H:%M:%S"))).'</startTime>
+        <endTime>'.$endTime.'</endTime>
         <location>'.$row[8].'</location>
         <category>'.cleanXMLChars($category).'</category>
         <eventName>'.cleanXMLChars(cOut($row[1])).'</eventName>

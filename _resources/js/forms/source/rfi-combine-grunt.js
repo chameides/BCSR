@@ -152,16 +152,28 @@ $( document ).ready(function() {
                 required: '#chxInfoByPhone:checked'
             },
             drpCountry: {
-                required: [formName=='address', '#chxInfoByMail:checked']
+                required: formName=='address'
+            },
+            drpCountry: {
+                required: '#chxInfoByMail:checked'
             },
             txtAddress1: {
-                required: [formName=='address', '#chxInfoByMail:checked']
+                required: formName=='address'
+            },
+            txtAddress1: {
+                required: '#chxInfoByMail:checked'
             },
             city: {
-                required: [formName=='address', '#chxInfoByMail:checked']
+                required: formName=='address'
+            },
+            city: {
+                required: '#chxInfoByMail:checked'
             },
             txtZipOrPostal: {
-                required: [formName=='address', '#chxInfoByMail:checked']
+                required: formName=='address'
+            },
+            txtZipOrPostal: {
+                required: '#chxInfoByMail:checked'
             },
             chxInfoBy: {
                 required: true,

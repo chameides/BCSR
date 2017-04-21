@@ -2,7 +2,11 @@ User-agent: *
 Disallow: /*.inc$
 Disallow: /*.html$
 Disallow: /*.xsl$
+Disallow: /*.scss$
+Disallow: /*.pcf$
 Disallow: /_test/
+Disallow: /_resources/archive/
+Disallow: /_resources/email-2016/
 Disallow: /guide/
 Disallow: /training/
 Disallow: /events/admin/
@@ -11,3 +15,9 @@ Disallow: /events/uploads/
 Disallow: /events/index.php?com=submit
 Disallow: /events/index.php?com=location*
 Disallow: /events/index.php?com=send*
+Disallow: /_documents/student-handbook-archive/
+Disallow: /_documents/student-handbook-2015-2016.pdf
+Disallow: /_documents/studenthandbook.pdf
+Disallow: /_documents/bard-academy-student-handbook-sept-2015.pdf
+Disallow: /_documents/why-simons-rock/5-signs-ready-for-early-college.pdf
+Disallow: /_documents/why-simons-rock/3-signs-check-list.pdf

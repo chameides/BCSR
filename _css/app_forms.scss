@@ -5,16 +5,16 @@
 
 label.error {
   color:red;
-  font-size:12px;
+  font-size:$padding-base-horizontal2;
   font-weight: normal;
   line-height: 130%;
-  margin-top: 5px;
+  margin-top: $padding-small-vertical2;
   display: block;
 }
 
 #contactForm {
   .col-md-7, .col-sm-7, .col-md-5, .col-sm-5, {
-    padding-left: 10px;
+    padding-left: $padding-large-vertical;
   }
   //consistent styling for most common column sizes
   .col-sm-3,
@@ -28,11 +28,11 @@ label.error {
   .col-md-8,
   .col-md-12,
    {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $padding-large;
+    padding-right: $padding-large;
     @media screen and (min-width: $screen-sm-min) {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $padding-large-vertical;
+      padding-right: $padding-large-vertical;
     }
 
   }
@@ -41,7 +41,7 @@ label.error {
     //eliminate margin on second column
     &.col-sub-trailing-sm {
       @media screen and (min-width: $screen-sm-min) {
-        padding-left: 10px;
+        padding-left: $padding-large-vertical;
       }
     }
   }
@@ -56,87 +56,402 @@ label.error {
   }
 }
 
-/* ------- Conforming Slate forms ----------- */
+/* ------- Conforming Slate forms ----------- 
+Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conform the HTML styles to the site design and sometimes override the Slate CSS
 
-/* fix styling on date of birth label */
-.form_label legend {
-  display:block;
-  max-width:100%;
-  margin-bottom: 5px;
-  font-weight:bold;
-  font-size: 2rem; 
-  line-height: 2.6rem; 
-  color: $medium-gray;
-  border-bottom: 0;
-  @media screen and (max-width: 992px) {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+1. General Spacing
+2. Field Types
+3. Fields Specific
+*/
+
+//All Slate Styles
+.form_pages {
+
+  //1. General Spacing
+
+   .form_question {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    @media screen and (min-width: $screen-md-min) {
+      padding-right: 0;
+    }
+  } 
+
+  //2. Field Types
+
+  /* add padding to text input and maintain consistent input box size for mobile */
+  div.form_responses {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea
+     {
+      padding: $padding-small $padding-base-horizontal2; 
+      font-size: $font-size-base;
+      color: $medium-gray;
+    }
+  }
+
+  div.form_responses {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+    height: $input-height;
+    }
+  }
+
+  div.form_responses {
+    textarea {
+      border-color: $input-border;
+      width:100%;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  .form_question, 
+  .form_responses select {
+    width: 100%;
+  }
+
+   /* fix styling on date of birth label */
+  .form_label legend {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 2rem;  
+    color: $medium-gray;
+    border-bottom: 0;
+    .row-col-highlight & {
+      color: $white; //div with blue background gets white type treatment
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  //vertically align select input with text input 
+  .form_select label {
+    @media screen and (min-width: $screen-md-min) {
+      margin-bottom: $padding-small;
+    }
+  }
+
+  label {
+    padding-bottom: 0;
+  }
+
+  /* fix styling for select boxes, check boxes and radio buttons */
+  .form-control, div.form_responses select {
+      height: $input-height;
+      font-size: $font-size-base;
+      color: $gray;
+      background-color: $white;
+      border: 1px solid $legend-border-color;
+      -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+  }
+
+  /* check box + radio circle placement adjustments */
+div.form_response input[type="checkbox"],
+div.form_response input[type="radio"] {
+  margin-top: -3px;
+  margin-right: -5px;
+  @media screen and (max-width: $screen-xs-max) {
+      margin-right: 0px;
+  }
+}
+  
+//3. Fields Specific
+
+ 
+
+
+  @media screen and (min-width:  $screen-sm-min) {
+    //Email Inquiry Landing Page + Main RFI page | First Name
+    #form_question_47edfea2-9d65-4d03-8692-5bcfbc4382ae,
+    //Main RFI Page Parent | First Name
+    #form_question_5944f02d-3f1c-46e8-8438-c5e2fe096d2b,
+    //Main RFI Page other | First Name
+    #form_question_1de43127-ce57-416b-b5bb-522a13256818,
+    //Discovery day | First Name - student radio
+    #form_question_ad16cdda-3ea4-4452-ab1c-b5b855e89a2d,
+    //Discovery day | First Name - parent radio
+    #form_question_3f639c55-aa37-4541-a877-e1c3b6cd2a7d,
+    //3 signs form | First Name
+    #form_question_e6144ee0-97ee-4bab-bec8-360e30381d5d,
+    //Discovery Day | Phone Number - student radio
+    #form_question_4a8d59ff-99de-4b75-b532-86f1064b516c, 
+    //Discovery Day | Phone Type - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Discovery Day | Phone Number - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Academy email stream | phone number
+    #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8,
+    //Academy email stream | phone type
+    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a,
+    //educator visit page | first name
+    #form_question_706aa7af-9e86-4ea1-91ab-8178ec5186fe,
+     //educator visit page | state
+    #form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31,
+    //educator visit page 2 | first name
+    #form_question_fe472150-da89-4c71-a716-37d88685b984
+    {
+      margin-right: 4%;
+    }
+
+    //Email Inquiry Landing Page + Main RFI Page | First Name
+    #form_question_47edfea2-9d65-4d03-8692-5bcfbc4382ae,
+    //Email Inquiry Landing Page + Main RFI Page | Last Name 
+    #form_question_1b24d28b-7525-41f4-9449-f643909afa07,
+    //Main RFI Page Parent | First Name
+    #form_question_5944f02d-3f1c-46e8-8438-c5e2fe096d2b,
+    //Main RFI Page Parent | Last Name
+    #form_question_2df2ab1d-d2af-4f9a-9c3a-fa9b8b8aa05e,
+    //Main RFI Page other | First Name
+    #form_question_1de43127-ce57-416b-b5bb-522a13256818,
+    //Main RFI Page other | Last Name
+    #form_question_ccc380d6-2e5b-4995-b089-a27e1837e582,
+    //Discovery day | First Name - student radio
+    #form_question_ad16cdda-3ea4-4452-ab1c-b5b855e89a2d,
+    //Discovery day | Last Name - student radio
+    #form_question_8a6486e9-1f10-4979-8ac9-f66039517237,
+    //Discovery day | First Name - parent radio
+    #form_question_3f639c55-aa37-4541-a877-e1c3b6cd2a7d,
+    //Discovery day | Last Name - parent radio
+    #form_question_03289424-52de-495c-96b0-7d2dd8741a94,
+    //3 signs form | First Name
+    #form_question_e6144ee0-97ee-4bab-bec8-360e30381d5d,
+    //3 signs form | Last Name
+    #form_question_c3ad7783-17fa-4723-a1d6-cf957c3e4aa3,
+    //Discovery Day | Phone Number - student radio
+    #form_question_4a8d59ff-99de-4b75-b532-86f1064b516c, 
+    //Discovery Day | phone type - student radio
+    #form_question_266a8c6f-7b91-490b-b6ae-f8ff4d611eec,
+    //Discovery Day | Phone Number - parent radio
+    #form_question_2944759f-bf90-4767-852b-e591f6c30107,
+    //Discovery Day | phone type - parent radio
+    #form_question_66bec60a-4feb-4649-aaad-149dcd49f96a,
+    //Academy email stream | phone number
+    #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8,
+    //Academy email stream | phone type
+    #form_question_717ce2a0-6dc7-418c-8af2-820ea354585b,
+    //Gatekeeper Prospect | Phone Number
+    #form_question_e0949537-9a91-46a8-87c4-2cef80c87c8d,
+    //Gatekeeper Prospect | Phone Type
+    #form_question_bcb9818e-0cb1-4baa-91fc-ddf2320825d3,
+    //Refer a student - alumni | first name referrer
+    #form_question_e7465233-b733-4a90-994c-454891425362,
+    //Refer a student - alumni | last name referrer
+    #form_question_48122b12-5b89-4789-9a49-3f7454c5e6d9,
+    //Refer a student - alumni | first name student
+    #form_question_9e15de4f-6331-477f-bf08-810e04b5d13a,
+    //Refer a student - alumni | last name student
+    #form_question_75288bed-c42f-44a1-bf75-b48618dfeb54,
+    //educator visit page | first name
+    #form_question_706aa7af-9e86-4ea1-91ab-8178ec5186fe,
+    //educator visit page | last name
+    #form_question_402ea4e7-b8db-462e-9aed-e66aa286b405,
+	//educator visit page 2 | first name
+    #form_question_fe472150-da89-4c71-a716-37d88685b984,
+    //educator visit page 2 | last name
+    #form_question_d89753a5-b61e-4a66-b243-d8444c52f385
+    {  
+      width: 49%;
+      clear: none !important;
+      float: left;
+    }
+  }
+  	//fix parent div of h3 spacing on Berkshire Scholarship other radio
+ 	#form_question_49fb0cc0-7a17-4420-97a8-f2b28515754a {
+ 		margin-bottom:0;
+ 	}
+
+.field-date-of-birth {
+  width: 30%;
+  @media screen and (max-width: $screen-xs-max) {
+    width:27%;
   }
 }
 
-.form_h2 {
-  font-family: $lehavre;
-  font-size: 4rem;
-  letter-spacing: -0.08em;
-  line-height: 1.1;
+//Each form with a date of birth field in Slate has a unique id and there is not a universal calss. All id's are appended with _$. Use the append to match selector. 
+
+[id^="form_"] //id begins with form_ (lots of stuff)
+  {
+  &[id$="_m"] //Month: (id ends with _m) 
+  {
+    @extend .field-date-of-birth;
+    margin-left: 0px; //no left margin on first item. 
+    margin-right: 3%;    
+  }
+  &[id$="_d"] //Day: (id ends with _d) 
+  {
+    @extend .field-date-of-birth;
+    margin-right: 3%;
+  }
+  &[id$="_y"] //Year: (id ends with _y)
+  {
+    @extend .field-date-of-birth;
+    margin-right: 0px; 
+  } 
 }
-     
+
+  //Email Inquiry Landing Page | Phone Number
+  #form_question_aa54d7b7-ed90-4c3d-b970-f6dbb3ef3de8 {
+    margin-right: 2%;
+  }
+
+  //Email Inquiry Landing Page | Parent Name
+  #form_question_fda1ad22-029d-4ff8-89e6-343325e83cf7,
+  //Email Inquiry Landing Page | Parent Last Name
+  #form_question_8067ef76-9d30-470c-8cc9-23dcfbb40af1,
+  //Main RFI Page | Parent First Name
+  #form_question_f4f30349-5148-466b-81d7-5c14efd4306f,
+  //Main RFI Page | Parent Last Name
+  #form_question_cab3eb30-1d91-4770-a922-c320d18ab1b2,
+  //Main RFI Page | Parent email
+  #form_question_633a504c-bd81-4da6-8590-3b58a9e8d9a1,
+  //Main RFI Page | Address block student
+  #form_question_36d183ec-678b-482d-b9b4-8f53a22c55d3,
+  //Main RFI Page | Address block parent
+  #form_question_53dafb6a-2092-4e2e-80d9-fedfc8561538,
+  //Main RFI Page | Address block other
+  #form_question_5bd506df-6f4c-416c-9f06-9e57553f449f,
+  //Academy email landing page | parent first name
+  #form_question_23609b72-e236-435c-80d4-c1de07e85fbc,
+  //Academy email landing page | parent last name
+  #form_question_39e705c2-29d1-439e-a00c-3063adff116e
+  {
+    padding-left: 6%;
+    //don't display legend if indented
+    legend {
+      display:none;
+    }
+  }
+}
+
+/* fix styling for submit button */
+.action input[type="button"], 
+.action button {
+  @extend .btn.btn-primary;
+  color: $white; 
+  background-color: $red; 
+}
+
+/* styling for secondary form button */
+div#switch button {
+  @extend .btn.btn-primary;
+  font-size: 15px;
+  padding: 5px 9px; 
+  background-color: #ccc;
+  color: $medium-gray;
+}
+
+/* adjust horizontal spacing and mobile view for state and country on main rfi */
+#form_question_36d183ec-678b-482d-b9b4-8f53a22c55d3 span,
+#form_question_53dafb6a-2092-4e2e-80d9-fedfc8561538 span,
+#form_question_5bd506df-6f4c-416c-9f06-9e57553f449f span,
+//discovery day form
+#form_question_be309521-1317-4041-b9fb-6b1e0b15082e span,
+#form_question_ea5aea7e-71b4-4c00-a84a-68390754301d span,
+//refer a student form - alumni
+#form_question_ab7dbb01-2219-4195-b39d-adc279ca4b4e span,
+//educator visit page | state
+#form_question_fc805914-ddf5-4b1d-afd0-e2faa8676a31 span,
+//educator visit page | zip
+#form_question_57cb5403-94e2-4002-b599-76bac5979767,
+//Berkshire scholarship | other radio | state and zip
+#form_question_c9899af6-5fac-4d3e-b6a2-c3adc83d9ce9 span
+{ 
+  display:inline-block;
+  width: 50%;
+  @media screen and (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+  &:first-of-type {
+    width:48%;
+    margin-right:2%;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  } 
+}
+//float the state field in address block, prevent wierd vertical height spacing
+.form_address span:first-of-type {
+    float: left;
+}
+
+/* fix vertical spacing for address block on main rfi */
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_region],
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_country],
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_postal],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_region],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_country],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_postal],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_region],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_country],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_postal],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_region],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_country],
+label[for=form_ea5aea7e-71b4-4c00-a84a-68390754301d_postal],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_region],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_country],
+label[for=form_be309521-1317-4041-b9fb-6b1e0b15082e_postal],
+//refer a student - alumni
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_region],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_country],
+label[for=form_ab7dbb01-2219-4195-b39d-adc279ca4b4e_postal],
+//cty & berkshire scholarship form
+label[for=form_36d183ec-678b-482d-b9b4-8f53a22c55d3_street],
+label[for=form_53dafb6a-2092-4e2e-80d9-fedfc8561538_street],
+label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
+{
+  margin-top: $padding-large-vertical;
+}
+  
+// style --I'm a future-- on main rfi
+#form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d,
+#form_253fae55-b353-436e-b14f-cbcc74f8e1f8,
+#form_d3e067a3-858f-49a7-9a43-c7d1643560cd,
+#form_e5af9e89-191e-43e3-8716-08fb972c0262,
+.form_address .form_label //Address on block
+{
+  legend {
+    font-weight: 500; //override legend bold
+    @extend h3, h3.subheadline;
+  }
+}
+//Gatekeeper Blue Box
+.row-col-highlight {
+  .form_pages, .action button.default { //Alignment inside blue box
+    margin-left: $padding-large-vertical;
+    @media screen and (max-width: $screen-xs-max) {
+      margin-left: $padding-large;
+    }
+  }
+}
+
+  //not sure if we need these (retain them should they use the other parts of the form in the future?) 
+/* style h1 and h2   
 .form_h1 {
     font-family: $lehavre;
     font-size: 5rem;
     letter-spacing: -0.08em;
     line-height: 1.1;
 }
-
-/* fix styling for select boxes, check boxes and radio buttons */
-.form-control, div.form_responses select {
-    height: 34px;
-    font-size: 14px;
-    color: #555;
-    background-color: $white;
-    background-image: none;
-    border: 1px solid #ccc;
-    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-     margin-right:10px;
-}
-     
-div.checkbox label {
-  font-size: 2rem;
-  line-height: 2.6rem;
-  font-family: $helvetica-cond;
-  color: $medium-gray;
-}
-     
-div.form_response input[type="checkbox"],
-div.form_response input[type="radio"] {
-  margin-top: 0px;
-}
-     
-div.form_response input+label {
-  margin-left: .4rem
-}
-
-/* fix styling for submit button */
-div.action input[type="button"], 
-.action button {
-  text-shadow:none;
-  border:none;
-  box-shadow:none;
-  text-transform: uppercase;
+.form_h2 {
   font-family: $lehavre;
-  font-size: 16px;
-  letter-spacing: -0.04em;
-  padding: 15px 20px;  
+  font-size: 3rem;
+  letter-spacing: -0.08em;
+  line-height: 1.1;
 }
-
-/* fix spacing for address block */
-div.form_address label {
-  padding:5px 0
-}
-
-div.form_address input, 
-div.form_address select {
-  margin:0 0 .5em
-}
+*/ 

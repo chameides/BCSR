@@ -1,4 +1,6 @@
-//place holder for directory css fixes. these should be folded into the rest of the code. 
+//directory form 
+
+//similar button size to field on small viewport
 .directory {
 	.btn.btn-primary {
 		@media screen and (max-width:$screen-xs-min) {

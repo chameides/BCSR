@@ -6,7 +6,8 @@
 $helvetica:'Helvetica Neue 55 Roman',Helvetica,Arial,sans-serif !default;
 $helvetica-cond:'HelveticaNeueLT-Condensed',Helvetica,Arial,sans-serif; 
 $helvetica-md-cond:'HelveticaNeueLT-MediumCond',Helvetica,Arial,sans-serif; 
-$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif; 
+$lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif;
+$headline-letter-spacing: -0.08em;
 
 @mixin Helvetica($fontsize) {
 	font-family:$helvetica;
@@ -23,5 +24,11 @@ $lehavre:'LeHavreRough-Primary','Arial Black',Arial,sans-serif;
 @mixin LeHavre($fontsize) {
 	font-family:$lehavre;
 	font-size:$fontsize;
-	letter-spacing: -0.08em;
+	letter-spacing: $headline-letter-spacing;
+}
+
+@mixin Header($fontsize) {
+	font-family:$lehavre;
+	font-size:$fontsize;	
+	letter-spacing: $headline-letter-spacing;
 }

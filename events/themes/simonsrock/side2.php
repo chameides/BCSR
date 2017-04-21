@@ -10,10 +10,14 @@
         </div>
 		<?php mini_cal_month();?>
 		<br />
-        <p>Subscribe to this calendar <?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a class="red" href="/events/index.php?com=newsletter">Email</a> | '; };?> <a class="red" href="/events/rss/">RSS</a> | <a class="red" href="/events/link/ical.php">iCal</a></p>
+        <p><strong>Subscribe to Events</strong><br /><?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a class="red" href="http://eepurl.com/bW8t6n">Email</a> | '; };?> <a class="red" href="/events/rss/">RSS</a> | <a class="red" href="/events/link/ical.php">iCal</a></p>
 		<?php //ou_cal_menu();?>
 
         <div id="filter">
+ <div style="clear:both;">
+        <p><a class="red" href="http://simons-rock.edu/admission/admission-events.php">Simon's Rock Admissions on the Road</a> | <a class="red" href="http://simons-rock.edu/alumni/regional-events.php">Alumni Regional Events</a> | <a class="red" href="http://simons-rock.edu/student-life/campus-experience/kilpatrick-athletic-center/kilpatrick-calendar.php">Kilpatrick Athletic Center Calendar</a></p>
+</div>
+
             <?php sr_theme_mini_search('Search Events by Keyword',0);?>
         </div>
         

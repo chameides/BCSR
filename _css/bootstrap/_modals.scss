@@ -44,7 +44,7 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: $padding-large-vertical;
   a.close {text-decoration:none;
   }
 }

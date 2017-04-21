@@ -23,6 +23,11 @@
   padding: 10px 15px;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -1px;
+  @if $cec {
+    @media (min-width: $screen-xl-min) {
+      margin-bottom: 0;
+    }
+  }
   background-color: $light-gray;
 
   // Round the first and last items
@@ -97,6 +102,11 @@ a.list-group-item {
   }
 }
 
+//don't show active link on mobile because it's redundant with breadcrumb
+.side-nav-mobile li a.active {
+  display: none;
+}
+
 
 // Contextual variants
 //
@@ -123,8 +133,14 @@ a.list-group-item {
 }
 
 //imported from OU styles (formats the secondary nav on mobile)
-.list-group > li > a {
-  padding: 10px 15px;
+.list-group > li > a, 
+.link-list-no-link { //cec secondary-nav active, index link
+  @if $cec {
+    padding: 7px 10px;
+  }
+  @else {
+    padding: 10px 15px;
+  }
 }
 
 .list-group > li > a:hover, .list-group > li > a:focus {

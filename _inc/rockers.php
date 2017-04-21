@@ -76,7 +76,7 @@
 									<h4>Person #7</h4>
 									<p>Lorem ipsum dolor sit amet</p>
 								</div>
-								<button class="btn btn-link playbutton" data-toggle="modal" data-target="#rocker2VideoModal"><i class="fa fa-play"></i></button>
+								<a href="test" class="btn btn-link linkbutton"><i class="fa fa-link"></i></a>
 							</div>
 		
 							<div class="skew">
@@ -115,7 +115,8 @@
 			<h4 class="modal-title">Rocker 1 Video</h4>
 		  </div>
 		  <div class="modal-body">
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/YysT-Fe1RT8" frameborder="0" allowfullscreen></iframe>
+			<iframe width="1280" height="
+			" src="https://www.youtube.com/embed/YysT-Fe1RT8" frameborder="0" allowfullscreen></iframe>
 		  </div>
 		  <div class="modal-footer">
 			<a href="#" class="btn btn-primary">CTA LINK</a>

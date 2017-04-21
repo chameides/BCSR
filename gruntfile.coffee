@@ -5,6 +5,7 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
+          
           outputStyle: 'compressed'          
           ### 
           if testing, remove comments for viewing CSS as nested 
@@ -12,9 +13,10 @@ module.exports = (grunt) ->
           ###
         files:
           '_css/app.css': '_css/app.scss'
+          '_css/app-cec.css': '_css/app-cec.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
     concat:   
-      dist: 
+      radius: 
         src: [
           '_resources/js/forms/source/jquery.validate.min.js',
           '_resources/js/forms/source/additional-methods.min.js',
@@ -22,19 +24,63 @@ module.exports = (grunt) ->
           ]
         dest: 
           '_resources/js/forms/source/rfi-combine-grunt.js'
-
+      app_bcsr:
+        src: [
+          '_js/_js-not-minified/app/app-part1.js',
+          '_js/_js-not-minified/app/show-search-bcsr.js',
+          '_js/_js-not-minified/app/mobilenav.js',
+          '_js/_js-not-minified/app/app-part2.js',
+          '_js/_js-not-minified/app/rockers.js',
+          '_js/_js-not-minified/app/app-part3.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/app/app-bcsr-combined.js'
+      app_cec:  
+        src: [
+          '_js/_js-not-minified/app/app-part1.js',
+          '_js/_js-not-minified/app/show-search-cec.js',
+          '_js/_js-not-minified/app/app-part2.js',
+          '_js/_js-not-minified/app/app-part3.js',
+          '_js/_js-not-minified/OU-link.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/app/app-cec-combined.js'
+      bootstrap_cec:  
+        src: [
+          '_js/_js-not-minified/modernizr.custom.js',
+          '_js/polyfills/tokenizer.js',
+          '_js/polyfills/parser.js',
+          '_js/polyfills/vminpoly.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/app-sync.js'
+      polyfill:  
+        src: [
+          '_js/polyfills/tokenizer.js',
+          '_js/polyfills/parser.js',
+          '_js/polyfills/vminpoly.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/polyfill.js'
+      factoids:  
+        src: [
+          '_js/scrollmagic/jquery.scrollmagic.js',
+          '_js/_js-not-minified/factoids.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/factoids-scroll.js'      
     uglify: 
       static_mappings: {
         files: [
           {src: '_resources/js/forms/source/rfi-combine-grunt.js', dest: '_resources/js/forms/rfi-combine-min.js'},
           {src: '_resources/js/secondary-nav.js', dest: '_resources/js/secondary-nav-min.js'},
+          {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
+          {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
+          {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
+          {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
+          {src: '_js/_js-not-minified/factoids-scroll.js', dest: '_js/factoids.min.js'},
         ],
       }
-       
-            
-        
-    
-
     svgmin:
       bcsrIcons:
         files: [{
@@ -63,6 +109,33 @@ module.exports = (grunt) ->
             white: '#ffffff'
             black: '#000000'
 
+    php:
+      dist:
+        options:
+          hostname: '127.0.0.1',
+          port: 9000,
+          base: '/Users/mchameides/Documents/web/BCSR'
+          ###
+          base: '/Users/kc2/Documents/Portfolio/BCSR/'
+          ###
+          keepalive: false,
+          open: false
+
+    browserSync:
+      dist: 
+        bsFiles: 
+          src: ['*.js', '_css/**/*.css', '*.php']
+      options: 
+        proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
+        watchTask: true,
+        notify: true,
+        open: true,
+        logLevel: 'silent',
+        ghostMode: 
+            clicks: true,
+            scroll: true,
+            links: true,
+            forms: true
 
     watch:
       styles:
@@ -80,4 +153,10 @@ module.exports = (grunt) ->
   require('load-grunt-tasks')(grunt)
 
 
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons'])
+  #grunt.registerTask('default', ['sass', 'concat', 'uglify', 'svgmin:bcsrIcons', 'grunticon:bcsrIcons', 'php'])
+
+  grunt.registerTask('default', ['sass', 'concat', 'uglify'])
+
+
+  grunt.registerTask('serve', ['php:dist', 'browserSync:dist', 'watch'])
+

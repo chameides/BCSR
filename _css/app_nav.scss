@@ -34,7 +34,22 @@ nav#mainnav {
 		padding-right:0;
 	}
 	.container {
-		max-width:970px;
+		@if $cec {
+			@media screen and (min-width:$screen-md) {
+				margin-left: 1em;
+			}
+			@media screen and (min-width:$screen-lg) {
+    		max-width: 890px;
+    		margin-left: auto; 
+    		margin-right: auto; 
+ 			}
+ 			.fa {
+				font-size: 17px;
+			}
+		}
+		@else {
+			max-width:970px;
+		}
 		width:auto;
 	}
 	.navbar-header {
@@ -65,7 +80,7 @@ nav#mainnav {
 	.info-for-mobile {
 		float: none; 
 		clear: both;
-		padding:15px;
+		padding:$padding-large;
 		background-color:$medium-gray;
 		color:$dark-gray;
 		.left-me {
@@ -80,26 +95,48 @@ nav#mainnav {
 		}
 	}
 	.navbar-mobile-header {
-		background-image:url(/_images/bcsr-logo-sprite.png);
-		background-repeat:no-repeat;
-		background-position: center 15px;
-		background-size: 250px auto;
-		height: 100px;
+		@if $cec {
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
+			background-position: center;
+			height: 75px;
+			background-size: 225px auto;
+		}
+		@else {
+			background-image:url(/_images/bcsr-logo-sprite.png);
+			background-position: center 15px;
+			height: 100px;
+			background-size: 250px auto;
+		}
+		background-repeat:no-repeat;		
+			
 		margin: auto;
 		@media (min-width: $screen-sm-min) {
 			background-position: center 16px;
-			background-size: auto 190px;
+			@if $cec {
+			}
+			@else {
+				background-size: auto 190px;
+			}
 		}
 		@media (min-width: $screen-md-min) {
 			display:none; 
 		}
 	}
 	.navbar-brand {
-		height:100px;
-		background-image:url(/_images/bcsr-logo-sprite.png);
+		@if $cec {
+			height:75px;
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
+			background-position:center;
+			background-size:225px auto;
+		}
+		@else {
+			height:100px;
+			background-image:url(/_images/bcsr-logo-sprite.png);
+			background-position:center 15px;
+			background-size:250px auto;
+		}
 		background-repeat:no-repeat;
-		background-position:center 15px;
-		background-size:250px auto;
+		
 		position:absolute;
 		z-index:2;
 		top:-110px;
@@ -122,28 +159,53 @@ nav#mainnav {
 				display:none;
 			}
 		}
-		@media (min-width: $screen-md-min) {
-			width:390px;
-			height:40px;
+		@media (min-width: $screen-md-min) {	
 			background-color:transparent;
-			background-image:url(/_images/bcsr-logo-sprite-leftaligned.png);
-			background-size:390px auto;
+			@if $cec {
+				width: 230px;
+				height: 53px;
+				background-image:url(/_images/logos/cec-logo-sprite-leftaligned.png);
+				background-size:443px auto;
+				top: -18px;			
+			}
+			@else {
+				width:390px;
+				height:40px;
+				background-image:url(/_images/bcsr-logo-sprite-leftaligned.png);
+				background-size:390px auto;
+				top:4px;	
+			}
 			background-repeat:no-repeat;
 			background-position:0px -153px;
 			position:absolute;
 			z-index:3;
-			top:4px;
 			transition-property:top, background-position;
 			transition-duration:0s, 0s;
 			transition-delay:0s,0s;
 			&.initial {
-				width:242px;
+				@if $cec {
+					width: 255px
+				}
+				@else {
+					width:242px;	
+				}
 				height:104px;
 				background-size:390px auto;
-				background-position:0px 0px;
+				@if $cec {
+					background-position: 0px -8px;
+				}
+				@else {
+					background-position:0px 0px;	
+				}
+				
 				z-index:3;
 				position:absolute;
-				top:47px;
+				@if $cec {
+					top: 0px;
+				}
+				@else {
+					top:47px;		
+				}
 				left:-15px;
 				@media (min-width: $screen-lg-min) {
 					left:-25px;
@@ -154,150 +216,218 @@ nav#mainnav {
 			}
 		}
 	}
-	.supernav {
-		@media (max-width: $screen-sm-max) {
-			padding:0;
-			margin-top:55px;
-			width:50%;
-			float:right;
-		}
-		a,button.btn-link {
-			color:$white;
-			&:hover {
-				background-color:$dark-gray;
+	@if $cec {
+		#navsearchform {
+			@media (max-width: $screen-sm-max) {
+				.input-group {
+					width: 240px;
+				}
+				.form-control {
+					width: 200px;
+					border-radius: 0px; //override webkit mobile default border-radius
+				}
+			}
+			//on medium screens, reveal search box at right of page
+			@media (min-width: $screen-md-min) {	
+				display: none;
+				position:absolute;
+				z-index:2;
+				right: 0;
+				top:5px;
+				border-width: 0;
+				margin:0; 
+				padding:0;
+				input.form-control {
+					//border-width: 0;
+					//seamless between input and button
+					&:focus {
+						box-shadow: none;
+						border-width: 0;
+						background-color: white;
+					}
+				}
+				.input-group {
+					width:279px;
+				}
+				button.btn-link {
+					padding-top:0px;
+					padding-bottom:2px;
+					font-size: 18px;
+					color:$red;
+					background-color: $white;
+					height: 34px;
+					&:hover {
+						color:black;
+					}
+				}
+			}//close md media query
+			//on larger screens, set search box in same place
+			@media (min-width: 1470px) {
+				right: auto;
 			}
 		}
 		#showsearch {
-			display:none;
+			padding-bottom: 1px;
 		}
-		li.nav-search {
+	}
+	@else {
+		.supernav {
 			@media (max-width: $screen-sm-max) {
-				position:absolute;
-				top:105px;
-				left:15px;
-				right:15px;
+				padding:0;
+				margin-top:55px;
+				width:50%;
+				float:right;
 			}
-			.input-group-btn {
-				@media (max-width: $screen-sm-max) {
-					width:1%;
-					background-color:$red;
+			a,button.btn-link {
+				color:$white;
+				&:hover {
+					background-color:$dark-gray;
 				}
 			}
-		}
-		li.dropdown {
-			@media (max-width: $screen-sm-max) {
-				position: absolute;
-				bottom: -10px;
-				left: 0;
-				right: 0;
-				background: $medium-gray;
-				padding-left: 5px;
-
-				a.dropdown-toggle {
-					font-style: italic;
-					color: $white !important;
+			#showsearch {
+				display:none;
+			}
+			li.nav-search {
+				@media (max-width: $screen-sm-max) {
+					position:absolute;
+					top:105px;
+					left:$padding-large;
+					right:$padding-large;
+				}
+				.input-group-btn {
+					@media (max-width: $screen-sm-max) {
+						width:1%;
+						background-color:$red;
+					}
 				}
 			}
-			ul.dropdown-menu {
+			li.dropdown {
 				@media (max-width: $screen-sm-max) {
-					display:block;
-					background-color: $medium-gray;
-					border:0px;
-					box-shadow:none;
-					width: 100%;
-					padding:0;
-
-
-					li {
-						a {
-							padding: 5px 0 5px 15px;
-							white-space: normal;
-							display: block;
-
-							&:hover {
-								background-color: $dark-gray;
+					position: absolute;
+					bottom: -10px;
+					left: 0;
+					right: 0;
+					background: $medium-gray;
+					padding-left: 5px;
+					a.dropdown-toggle {
+						font-style: italic;
+						color: $white !important;
+					}
+				}
+				ul.dropdown-menu {
+					@media (max-width: $screen-sm-max) {
+						display:block;
+						background-color: $medium-gray;
+						border:0px;
+						box-shadow:none;
+						width: 100%;
+						padding:0;
+						li {
+							a {
+								padding: 5px 0 5px 15px;
+								white-space: normal;
+								display: block;
+								&:hover {
+									background-color: $dark-gray;
+								}
 							}
 						}
 					}
 				}
 			}
-		}
-		@media (min-width: $screen-md-min) {
-			background-color:$white;
-			z-index:2;
-			position:fixed;
-			left:0px;
-			right:0px;
-			@include HelveticaCond(15px);
-			text-transform:uppercase;
-			a,button.btn-link {
-				transition: color 0.25s, background-color 0.25s;
-				color:$dark-gray;
+			@media (min-width: $screen-md-min) {
 				background-color:$white;
-				padding-top:    $navbar-super-padding-vertical;
-				padding-bottom: $navbar-super-padding-vertical;
-				border-width:0;
-				&:hover {
-					color:$white;
-					background-color:$red;
-				}
-			}
-			li.nav-search {
-				position:relative;
-				#showsearch {
-					display:inline-block;
-				}
-				#navsearchform {
-					position:absolute;
-					z-index:2;
-					width:300px;
-					left:-229px;
-					top:0px;
-					border:0; margin:0; padding:0;
-					background-color:transparent;
-					box-shadow:none;
-					display:none;
-					.form-control {
-						border:solid 1px $dark-gray;
-						background-color:$dark-gray;
+				z-index:2;
+				position:fixed;
+				left:0px;
+				right:0px;
+				@include HelveticaCond(15px);
+				text-transform:uppercase;
+				a,button.btn-link {
+					transition: color 0.25s, background-color 0.25s;
+					color:$dark-gray;
+					background-color:$white;
+					padding-top:    $navbar-super-padding-vertical;
+					padding-bottom: $navbar-super-padding-vertical;
+					border-width:0;
+					&:hover {
 						color:$white;
-						height:40px;
-						padding-top:4px;
-						padding-bottom:4px;
-						font-size:18px;
-						&:focus {
-							box-shadow:none;
-						}
-					}
-					.input-group {
-						width:279px;
-					}
-					button.btn-link {
-						padding-top:9px;
-						padding-bottom:9px;
 						background-color:$red;
-						border:solid 1px $red;
-						color:$white;
-						&:hover {
-							color:$red;
-							background-color:$white;
+					}
+				}
+				li.nav-search {
+					position:relative;
+					#showsearch {
+						display:inline-block;
+					}
+					#navsearchform {
+						position:absolute;
+						z-index:2;
+						width:300px;
+						left:-229px;
+						top:0px;
+						border:0; margin:0; padding:0;
+						background-color:transparent;
+						box-shadow:none;
+						display:none;
+						.form-control {
+							border:solid 1px $dark-gray;
+							background-color:$dark-gray;
+							color:$white;
+							@if $cec {
+
+							}
+							@else {
+								height:40px;	
+							}
+							padding-top:4px;
+							padding-bottom:4px;
+							font-size:18px;
+							&:focus {
+								box-shadow:none;
+							}
+						}
+						.input-group {
+							width:279px;
+						}
+						button.btn-link {
+							padding-top:9px;
+							padding-bottom:9px;
+							background-color:$red;
+							border:solid 1px $red;
+							color:$white;
+							&:hover {
+								color:$red;
+								background-color:$white;
+							}
 						}
 					}
 				}
 			}
+
+
 		}
 	}
+	
 	.section-nav {
 		@media (max-width: $screen-sm-max) {
 			padding:0;
-			margin:55px 0 20px 0;
-			width:50%;
+			@if $cec {
+				margin:0px 0 20px 0;	
+				a, .search-form {
+					padding: 10px 14px;
+				}
+			}
+			@else {
+				margin:55px 0 20px 0;
+				width:50%;	
+				a {
+					padding: 10px 14px;
+				}
+			}
 			float:left;
 			a,button.btn-link {
 				color:$white;
-			}
-			a {
-				padding: 10px 14px;
 			}
 		} 
 		@media (min-width: $screen-md-min) {
@@ -307,7 +437,16 @@ nav#mainnav {
 			position:fixed;
 			left:0px;
 			right:0px;
-			top:40px;
+			@if $cec {
+				//set outline of search to be same size and width as adjacent search button on hover
+				.search-form .form-control:focus { 
+					outline: none;
+				  border-color: white; 
+				}
+			}
+			@else {
+				top:40px;
+			}
 			z-index:1;
 			@include HelveticaCondMed(22px);
 			&.initial {
@@ -315,7 +454,13 @@ nav#mainnav {
 				body.has-hero & {
 					background-color:transparent;
 				}
-				height:125px;
+				@if $cec {
+					height: 75px;
+				}
+				@else {
+					height:125px;	
+				}
+				
 				transition-delay:0s,0s;
 			}	
 			&.tucked {
@@ -328,9 +473,17 @@ nav#mainnav {
 			a,button.btn-link {
 				transition: background-color 0.25s;
 				color:$white;
+				@if $cec {
+					height: 45px; //set height to be the same for text and icons
+				}
 				&:hover {
 					color:$white;
 					background-color:$red;
+				}
+			}
+			@if $cec {
+				button.btn-link {
+					padding-top: 0px; //align height to be the same for text and icons
 				}
 			}
 			li {
@@ -395,8 +548,7 @@ nav#mainnav {
 					-webkit-flex-wrap: wrap;
 					flex-flow:row wrap;
 				}
-				li {
-					
+				li {	
 					display:flex;
 					float:left;
 					list-style-type:none;
@@ -410,7 +562,7 @@ nav#mainnav {
 					}
 				}
 			}
-		}
+		}//close md media query
 	}
 	.open > a, 
 	.open > a:hover, 
@@ -473,10 +625,22 @@ nav#mainnav {
 }
 
 //Gatekeeper pages have a simple centered logo instead of a full nav
-.navbar-brand-gatekeeper {
-	width: 163px;
+.navbar-brand-default {
 	margin: 0 auto;
 	padding: $padding-large-vertical 0;
+}
+
+//width for college logo
+.navbar-brand-gatekeeper {
+	@extend .navbar-brand-default;
+	width: 163px;
+	
+}
+
+//width for academy logo
+.navbar-brand-gatekeeper-academy {
+	@extend .navbar-brand-default;
+	width: 200px;
 }
 
 //Gatekeeper pages have a simple centered logo instead of a full nav
@@ -489,11 +653,19 @@ nav#mainnav {
 
 @media (max-width: $screen-sm-max) {
 	.navbar-brand {
-		height:100px;
-		background-image:url(/_images/bcsr-logo-sprite.png);
+		@if $cec {
+			height: 75px;
+			background-image:url(/_images/logos/cec-logo-stacked-white.png);
+			background-position:center;
+			background-size:225px auto;
+		}
+		@else {
+			height:100px;
+			background-image:url(/_images/bcsr-logo-sprite.png);
+			background-position:center 15px;
+			background-size:250px auto;
+		}
 		background-repeat:no-repeat;
-		background-position:center 15px;
-		background-size:250px auto;
 		position:absolute;
 		z-index:2;
 		top:-110px;

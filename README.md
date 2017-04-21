@@ -2,7 +2,7 @@
 
 This is a collection of sample templates for Bard College at Simon’s Rock (BCSR). The initial templates were created by an agency in collaboration with BCSR. Now these templates are used to update designs, features, and functionality.
 
-The readme focus on coding and deployment of the testing environment. <a href="http://simons-rock.edu/guide">The Guide</a> provides more detailed patterns, governance, foundations. 
+The readme focus on coding and deployment of the testing environment. <a href="https://simons-rock.edu/guide">The Guide</a> and <a href="http://cec.bard.edu/addendum">Addendum</a>provide more detailed patterns, governance, foundations. 
 
 ## Guidelines
 
@@ -55,6 +55,7 @@ events Markup for Events CMS, no automatic syncing to live site<br>
 
 1. In Terminal, navigate to the project folder. 
 2. Compile with with either `grunt` or `grunt watch`
+3. Live preview with `grunt serve`
 
 ### Background on Grunt 
 
@@ -75,7 +76,8 @@ Remove comments in `gruntfile.coffee` to compile as nested CSS.
 
 ### JS Concat and Minified
 
-The Form scripts are concatenated with grunt-contrib-concat
+The App JS is broken up into partials. The CEC and Simon's Rock have slightly different flavors. Both are are concatenated and compressed grunt-contrib-concat.
+
 
 ### Icons and Grunt
 
@@ -83,7 +85,8 @@ The vector images for the At-A-Glance are compiled using Grunt and GruntIcon. To
 
 ### Local Testing
 
-Use MAMP to preview php files locally. 
+Live test with `grunt serve`. Browser will reload when .scss, .css, or .php files are updated. 
+
 
 ## CMS Deployment
 

@@ -1,6 +1,6 @@
 .media {
   // Proper spacing between instances of .media
-  margin-top: 15px;
+  margin-top: $padding-large;
 
   &:first-child {
     margin-top: 0;
@@ -23,12 +23,12 @@
 
 .media-right,
 .media > .pull-right {
-  padding-left: 10px;
+  padding-left: $padding-large-vertical;
 }
 
 .media-left,
 .media > .pull-left {
-  padding-right: 10px;
+  padding-right: $padding-large-vertical;
 }
 
 .media-left,

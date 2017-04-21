@@ -60,6 +60,7 @@ $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-sm:						1.7rem;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -95,18 +96,28 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 $padding-base-vertical:     6px !default;
 $padding-base-horizontal:   12px !default;
+$padding-base-horizontal2:		12px;
 
+$padding-large: 						15px;
 $padding-large-vertical:    10px !default;
 $padding-large-horizontal:  16px !default;
 
 
 $padding-small-vertical:    5px !default;
+$padding-small-vertical2:   5px;
 $padding-small-horizontal:  10px !default;
+
+$padding-small:							3px;
 
 $padding-xs-vertical:       1px !default;
 $padding-xs-horizontal:     5px !default;
 
 $padding-small-relative: 		1em !default;
+
+$margin-secondary-nav:				280px; //max-width
+$margin-secondary-nav-width:		20%; //width
+
+
 
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
@@ -216,6 +227,10 @@ $input-height-large:             (ceil($font-size-large * $line-height-large) + 
 //** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
+$input-height:										34px;
+
+
+
 $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;
 
@@ -290,7 +305,7 @@ $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
 $screen-phone:               $screen-xs-min !default;
 
-$screen-xs1: 490px; //this value exists in app_academics and this is an effort to variablize it
+$screen-xs1: 490px; //this value exists in app_academics and this is an effort to variabalize it
 $screen-xs2: 630px; //this value exists throughout code and this is an effort to variabalize it. 
 
 // Small screen / tablet
@@ -298,14 +313,21 @@ $screen-xs2: 630px; //this value exists throughout code and this is an effort to
 $screen-sm:                  768px !default;
 $screen-sm-min:              $screen-sm !default;
 //** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min !default;
+$screen-tablet:             $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
+
+$screen-footer-spread: 				845px;
+$screen-md:						992px;
+
+@if $cec {
+	$screen-md: 				935px;	
+}
+
+$screen-md-min:              $screen-md;
 //** Deprecated `$screen-desktop` as of v3.0.1
-$screen-desktop:             $screen-md-min !default;
+$screen-desktop:             $screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
@@ -314,10 +336,25 @@ $screen-lg-min:              $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min !default;
 
+
+$max-content-width:					 1400px !default;		//max-width of copy
+$secondary-nav-shift:				 40px; //secondary nav will shift left off of conent
+
+$screen-xl:                  $max-content-width + ($secondary-nav-shift * 3); //make padding for shift before breakpoint
+$screen-xl-min:              $screen-xl !default;
+
+
+
+
+
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+
+$paragraph-width: 						58rem;
 
 
 //== Grid system
@@ -361,6 +398,8 @@ $container-lg:                 $container-large-desktop !default;
 
 // Basics of a navbar
 $navbar-height:                    54px !default;
+$navbar-height2:                   75px !default;
+$navbar-height2-xs:								 85px !default;
 $navbar-super-height:              40px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
@@ -869,3 +908,11 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+$footer-height:								200px;
+$footer-height-inverse:				$footer-height * -1;
+$footer-height-md: 						180px;
+$footer-height-md-inverse:		$footer-height-md * -1;
+
+

@@ -3,11 +3,14 @@ $dark-yellow:#ad9000; // 173,144,0
 $dark-blue:#428585; // 66,133,133
 $dark-orange:#b85218; // 184,82,24
 
-body#home {
+body#home, .section-full-screen-wrapper {
 	/*
 	let's give the home page an ID of 'home', and scope all of
 	its home-page-only styles under that.
 	*/
+
+	//added section-full-screen-wrapper for CEC. Could probably aggregate and split off because most of this stuff not applicable to CEC. 
+
 	.vidbg {
 		margin:0;
 		padding:0;
@@ -57,7 +60,7 @@ body#home {
 		}
 	}
 
-	#introduction {
+	#introduction, .section-full-screen {
 		.abscontainer {
 			@media (min-width: $screen-md-min) {
 				max-width:970px;
@@ -71,7 +74,7 @@ body#home {
 			line-height:1.2;
 		}
 	}
-	#introduction, .scrollfx-container {
+	#introduction, .scrollfx-container, .section-full-screen {
 		padding-top:120px;
 		padding-bottom:80px;
 		background-repeat:no-repeat;
@@ -101,18 +104,27 @@ body#home {
 			display:table;
 			padding-top:0px;
 			padding-bottom:0px;
-			height:720px;
-			
-			min-height:720px;
+			@if $cec {
+				min-height: 535px; //ensure minimum height so text is not cutoff
+				height: 85vh; //let next section peek through
+			}
+			@else {
+				height:720px;
+				min-height:720px;	
+			}
 		}
 		@media (min-height: 720px) {
-			height:100vh;
+			@if $cec {
+			}
+			@else {
+				height:100vh;
+			}
 		}
 		.intro_sub {
 			display:table-cell;
 			vertical-align:middle;
-			margin-left:15px;
-			margin-right:15px;
+			margin-left:$padding-large;
+			margin-right:$padding-large;
 			@media (max-width: $screen-sm-max) {
 				width:100vw;
 			}
@@ -123,20 +135,32 @@ body#home {
 				padding-left:100px;
 				padding-right:100px;
 			}
+			@if $cec {
+				@media (min-width: $screen-md-min) {
+					display: inline-block;//text needs to be centered. left/right padding doesn't work in FF
+					padding-top: 3em; //progressive enhancement for vh units
+					padding-top: 20vh;
+				}
+			}
 			@media (min-height: 720px) {
+				height:720px;
 				height:100vh;
 			}
 		}
+		@if $cec {
 
-		#intro_arrow_down {
-			position:absolute;
-			bottom:30px;
-			font-size:4rem;
-			color:$white;
-			left:0;
-			right:0;
-			-webkit-animation: bounce3x 5s; /* Chrome, Safari, Opera */
-    		animation: bounce3x 5s;
+		}
+		@else {
+			#intro_arrow_down {
+				position:absolute;
+				bottom:30px;
+				font-size:4rem;
+				color:$white;
+				left:0;
+				right:0;
+				-webkit-animation: bounce3x 5s; /* Chrome, Safari, Opera */
+	    		animation: bounce3x 5s;
+			}
 		}
 
 		@-webkit-keyframes bounce3x {
@@ -249,6 +273,9 @@ body#home {
 			blockquote:before {
 			    content: none; //override blockquote styling
 			}
+			.reputation-quote-large {
+      	margin:0 $padding-small-horizontal;
+    	}
 			blockquote {
 				margin: 0; //override blockquote styling
 			    padding:0; //override blockquote styling
@@ -283,42 +310,78 @@ body#home {
 			}
 		}
 		
-		.first-reputations-row .ro-module:nth-child(5n+1) {
-			background-color:$orange;   
+		@if $cec {
+			.first-reputations-row .ro-module:nth-child(4n+1) {
+				background-color:$dark-gray;  
+				color:$white; 
+			}
+			.first-reputations-row .ro-module:nth-child(4n+2) {
+				background-color:$blue;   
+			}
+			.first-reputations-row .ro-module:nth-child(4n+3) {
+				background-color:$yellow;   
+			}
+			.first-reputations-row .ro-module:nth-child(4n+4) {
+				background-color:$medium-gray;   
+			}
+			
+			.second-reputations-row .ro-module:nth-child(4n+4) {
+				background-color:$blue;   
+			}
+
+			.second-reputations-row .ro-module:nth-child(4n+3) {
+				background-color:$dark-gray;     
+				color:$white; 
+			}
+			
+			.second-reputations-row .ro-module:nth-child(4n+2) {
+				background-color:$medium-gray;   
+			}
+
+			.second-reputations-row .ro-module:nth-child(4n+1) {
+				background-color:$yellow;   
+			}
+			
 		}
-		.first-reputations-row .ro-module:nth-child(5n+2) {
-			background-color:$dark-gray;  
-			color:$white; 
-		}
-		.first-reputations-row .ro-module:nth-child(5n+3) {
-			background-color:$blue;   
-		}
-		.first-reputations-row .ro-module:nth-child(5n+4) {
-			background-color:$yellow;   
-		}
-		.first-reputations-row .ro-module:nth-child(5n+5) {
-			background-color:$medium-gray;   
-		}
-		
-		.second-reputations-row .ro-module:nth-child(5n+5) {
-			background-color:$orange;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+3) {
-			background-color:$dark-gray;     
-			color:$white; 
-		}
-		.second-reputations-row .ro-module:nth-child(5n+4) {
-			background-color:$blue;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+1) {
-			background-color:$yellow;   
-		}
-		.second-reputations-row .ro-module:nth-child(5n+2) {
-			background-color:$medium-gray;   
+
+		@else {
+			.first-reputations-row .ro-module:nth-child(5n+1) {
+				background-color:$orange;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+2) {
+				background-color:$dark-gray;  
+				color:$white; 
+			}
+			.first-reputations-row .ro-module:nth-child(5n+3) {
+				background-color:$blue;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+4) {
+				background-color:$yellow;   
+			}
+			.first-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$medium-gray;   
+			}
+			
+			.second-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$orange;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+3) {
+				background-color:$dark-gray;     
+				color:$white; 
+			}
+			.second-reputations-row .ro-module:nth-child(5n+4) {
+				background-color:$blue;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+1) {
+				background-color:$yellow;   
+			}
+			.second-reputations-row .ro-module:nth-child(5n+2) {
+				background-color:$medium-gray;   
+			}
 		}
 		h4, p {
-			padding-left:15px;
-			padding-right:15px;
+			padding-left:$padding-large;
+			padding-right:$padding-large;
 		}
 		h4 { 
 			color:$white;
@@ -351,10 +414,10 @@ body#home {
 					opacity:1!important;
 				}
 				&.leftbtn {
-					left:15px;
+					left:$padding-large;
 				}
 				&.rightbtn {
-					right:15px;
+					right:$padding-large;
 				}
 			}
 		}
@@ -539,7 +602,7 @@ body#home {
 		#updates_list_wrapper {
 			position:relative;
 			height:180px;
-			margin-top:15px;
+			margin-top:$padding-large;
 			ul { 
 				position:absolute; 
 				left:0;
@@ -601,12 +664,17 @@ body#home {
 
 /* These styles need to be globally available, so: */
 
+.playbutton, //used with videos (rocker profiles and homepage slats)
+.linkbutton { //used with non videos (rocker profiles)
+	@extend .rocker-link;
+}
+
 #rockers {
 	background-color:$dark-gray;
 	h2 {
 		position:absolute;
-		left:15px;
-		right:15px;
+		left:$padding-large;
+		right:$padding-large;
 		z-index:2;
 		color:$white;
 		text-align:center;
@@ -625,13 +693,13 @@ body#home {
 	}
 	.caption {
 		position:absolute;
-		bottom:15px;
-		left:15px;
-		right:15px;
+		bottom:$padding-large;
+		left:$padding-large;
+		right:$padding-large;
 		color:$white;
 	}
-	.skew .playbutton {
-		position:absolute;
+	.skew .rocker-link { //buton over rocker profile carousel
+ 		position:absolute;
 		top:30%;
 		bottom:0;
 		left:0;
@@ -684,7 +752,7 @@ body#home {
 			left:0px;
 			float:left;
 		}
-		.skew .playbutton {
+		.skew .rocker-link {
 			-webkit-transform:skew(11deg, 0);
 			transform:skew(11deg, 0);
 			position:absolute;
@@ -726,10 +794,10 @@ body#home {
 			opacity:1;
 		}
 		&.leftbtn {
-			left:15px;
+			left:$padding-large;
 		}
 		&.rightbtn {
-			right:15px;
+			right:$padding-large;
 		}
 	
 	}
@@ -764,7 +832,7 @@ body#home {
 		float:left;
 		background-color:$medium-gray;
 		overflow:hidden;
-		padding:15px;
+		padding:$padding-large;
 		color:$white;
 		transition-property:background-color;
 		transition-duration:0.5s;
@@ -849,7 +917,7 @@ body#home {
 				position:absolute;
 				top:270px;
 				margin-left:30px;
-				margin-right:15px;
+				margin-right:$padding-large;
 				max-height: 125px;
 				overflow: hidden; 
 			}
@@ -889,9 +957,9 @@ body#home {
 }
 
 
-.playbutton, 
+.rocker-link, 
 .vjs-default-skin .vjs-big-play-button, 
-a.playbutton /*make icon white even if link*/ {
+a.rocker-link /*make icon white even if link*/ {
 	width:80px;
 	height:80px;
 	text-align:center;
@@ -901,16 +969,21 @@ a.playbutton /*make icon white even if link*/ {
 	font-size:4.5rem;
 	display:block;
 	margin:0 auto;
-	padding-left:15px;
+	padding-left:$padding-large;
 	border:0;
 	box-shadow:none;
 	&:before {
 		left:4px;
 		line-height:1.5em;
 	}
+	&:hover {
+		color:$white;
+		background-color:$red;
+		transition-property:background-color;
+		transition-duration:0.25s;
+	}
 	@media (min-width: $screen-md-min) {
 		font-size:5rem;
-		padding:0 0 0 10px;
 		line-height:1;
 		width:100px;
 		height:100px;
@@ -920,16 +993,17 @@ a.playbutton /*make icon white even if link*/ {
 		&:before {
 			line-height:1.7em;
 		}
-		&:hover {
-			color:$white;
-			background-color:$red;
-			transition-property:background-color;
-			transition-duration:0.25s;
-		}
 	}
 }
 
-a.playbutton {
+.playbutton, 
+.vjs-default-skin .vjs-big-play-button, 
+a.playbutton /*make icon white even if link*/ {
+	@media (min-width: $screen-md-min) {
+		padding:0 0 0 10px;
+	}
+}
+a.rocker-link {
 	line-height: 1.4em;
 	@media (min-width: $screen-md-min) {
 		line-height: 1.8em;
@@ -990,3 +1064,92 @@ a.playbutton {
 }
 // just for testing:
 //#introduction, #reputations_outcomes, #interested_in, #rockers { display:none!important; }
+
+/* 50th anniversary css for announcement section 6/24/2016  */
+
+section#announcements {
+	background: url('/_images/home/50th-homepage-slide-photo.jpg') no-repeat right center; 
+	background-size:cover;
+	width: 100%;
+	h2,h3 {
+		color:$white;
+	}
+	h3 {
+		margin-top:0;
+	}
+	// vertically aligns the image in the middle of the row
+	.vert-middle-fix {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+	@media (max-width: $screen-xs-max) {
+		background: url('/_images/home/50th-homepage-slide-photo-mobile.jpg') no-repeat right center; 
+		background-size:cover;
+		width: 100%;
+	}
+}
+
+@if $cec {
+	.section-full-screen-wrapper {
+		clear: both; //prevent background image from overlapping above content
+		.section-full-screen.slat-network {
+			min-height: 550px;
+			@media (min-width: $screen-sm-min) {
+				height: 200px; //progressive enhancement
+				height: 40vh;
+			}
+		}
+		.slat-network {
+			min-height: auto;
+			.intro_sub {
+				height: auto;
+			}
+			@media (max-width: $screen-xs-max) {
+				background: #262421;
+				padding-top: 70px;
+				padding-bottom: 70px;
+			}
+			@media (min-width: $screen-sm-min) {
+				background: #262421;
+				background-repeat: no-repeat;
+				background-image: url(/_images/cec/map-network/our-network-1200.png);
+				background-size: 95% auto;
+				background-position: center center;
+				.intro_sub {
+					padding: 15% 8% 10% 0; //progressive enhancement
+					padding: 12vh 0 0 5vw;
+					width: 72%; //progressive enhancement
+					width: 72vw;
+					max-width: 600px;
+					display: block;
+				}
+				@media (min-width: $screen-lg-min){
+					background-size: 85% auto;
+				}
+				@media (min-width: $screen-xl-min){
+					background-size: auto 139%;
+				}
+			}
+			@media (min-width: $screen-md-min){
+				.intro_sub {
+					padding: 10% 0 10% 15%;
+				}
+			}
+			@media (min-width: $screen-lg-min){
+				.intro_sub {
+					max-width: 700px;
+					padding: 8% 0 0 16%; //progressive enhancement
+					padding: 9vh 0 0 15vw;
+				}
+			}
+			@media (min-width: $screen-xl-min){	
+				.intro_sub {
+					max-width: 715px;
+					padding: 8% 0 0 16%; //progressive enhancement
+					padding: 8vh 0 0 11vw;
+				}
+			}
+		}
+	}
+}

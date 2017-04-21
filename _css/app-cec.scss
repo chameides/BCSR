@@ -1,0 +1,38 @@
+//CEC
+$cec: true; 
+
+@import "app_readme.scss"; //css style guide
+
+/*Globals*/
+@import "app_colors.scss"; //Global color variables
+@import "app_fonts.scss"; //Global font variable families
+@import "_bootstrap.scss"; 
+@import "app_base.scss"; //template base styles
+@import "app_typography-base.scss"; //Global font, font-size settings
+@import "app_links.scss"; // Global link styling
+
+/*Menus*/
+@import "app_nav.scss"; //Top navigation
+@import "app_footer.scss"; //Footer
+
+/*Templates
+
+Note: therse are messy. 
+	There are patterns that appear on a single template partial that are used on multiple templates
+	There are also partials for modular patterns such as forms and images
+*/
+@import "app_home.scss"; //Home page
+@import "app_global.scss",
+	"app_secondary-nav.scss",
+	"app_forms.scss",
+	"app_images.scss",
+	"app_iframe.scss",
+	"app_mixed-media.scss",
+	"app_typography.scss", /*pulled blockquote from giving landing into separate partial*/
+	"app_giving-landing.scss",
+	"app_campus-landing.scss",
+	"app_basic-profile.scss",
+	"app_student-life.scss",
+	"app_search.scss",
+	"app_patterns-layout.scss";
+@import "app_print.scss"; //print

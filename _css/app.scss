@@ -1,3 +1,6 @@
+//Not CEC
+$cec: false !default; 
+
 @import "app_readme.scss"; //css style guide
 
 /*Globals*/
@@ -21,6 +24,7 @@ Note: therse are messy.
 @import "app_home.scss"; //Home page
 @import "app_global.scss",
 		"app_forms.scss",
+		"app_directory.scss",
 		"app_images.scss",
 		"app_iframe.scss",
 		"app_mixed-media.scss",
@@ -39,7 +43,8 @@ Note: therse are messy.
 		"app_news.scss",
 		"app_campus-map.scss",
 		"app_at-a-glance.scss",
-		"app_reputations-and-outcomes.scss";
+		"app_reputations-and-outcomes.scss",
+		"app_50.scss";
 @import "app_why.scss";
 
 

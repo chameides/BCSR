@@ -2,14 +2,17 @@
 .thumbnail-copy {
 	line-height: 2rem;
 	@include LeHavre(20px);
-	@media screen and (max-width:$screen-md-min) {
-		font-size: 12px;
-		line-height: 1.2rem;
+	@media screen and (max-width:$screen-xs-max) {
+		line-height: 1.2em;
+		font-size: $font-size-sm * .8;
+	}
+	b, strong {
+		font-weight:normal;
 	}
 }
 .thumbnail-copy {
 	text-align: center;
-	@media screen and (max-width:$screen-md-min) {
+	@media screen and (max-width:$screen-sm-max) {
 		text-align: left;
 	}
 	a {
@@ -27,27 +30,37 @@
 	margin-bottom: 0;
 	@include LeHavre(20px);
 	color: $medium-gray;
-		@media screen and (max-width:$screen-md-min) {
-			font-size: 1rem;
+		@media screen and (max-width:$screen-sm-max) {
+			font-size: 1.5rem;
 			margin-bottom: 0;
 		}
+	b, strong {
+		font-weight:normal;
+	}
 }
 .image-title {
-	margin-bottom: 0;
+	//margin-bottom: 0;
 	font-size: 20px;
-		@media screen and (max-width:$screen-md-min) {
-			font-size: 1.167rem;
+	line-height: 1.4em;
+		@media screen and (max-width:$screen-sm-max) {
+			font-size: 1.3rem;
 			margin-bottom: 0;
 			&.image-title-with-margin {
 				margin-bottom: 1.25rem;
 			}
 		}
 }
+
+//need a seprate class for OU Campus to do an inline version
+.image-title-inline {
+	@extend .image-title;
+}
+
 .caption-small {
     font-size: 1.2rem;
     line-height: 1.6rem;
     margin-top: 5px;
-    @media screen and (max-width:$screen-md-min) {
+    @media screen and (max-width:$screen-sm-max) {
 			font-size: 1rem;
 			line-height: 1.4rem;
 		}
@@ -114,30 +127,34 @@ a.circle-heading {
 		    &:hover a {
 		    	text-decoration: none;
 		    }
-			@media screen and (max-width:$screen-sm-min) {
+			@media screen and (max-width:$screen-xs-max) {
 				margin-bottom: 6px;
 			}
 }
-	// div
-	.circle-heading {
-	    float:left;
-	    width: 100%;
-	    padding-top: 50%;
-	    line-height: 1em;
-	    margin-top: -0.5em;
-	    text-align: center;
-		@include LeHavre(20px);
-		@media screen and (max-width:$screen-sm-min) {
-			font-size: 12px;
-		}
-		// Two Lines
-		.clubs &,
-		.community & {
-			margin-top: -1em;
-		}
-		// Three Lines
-		.barrington & {
-			margin-top: -1.7em;
+	@if $cec {
+	}
+	@else {
+		// div
+		.circle-heading {
+		    float:left;
+		    width: 100%;
+		    padding-top: 50%;
+		    line-height: 1em;
+		    margin-top: -0.5em;
+		    text-align: center;
+			@include LeHavre(20px);
+			@media screen and (max-width:$screen-xs-max) {
+				font-size: 12px;
+			}
+			// Two Lines
+			.clubs &,
+			.community & {
+				margin-top: -1em;
+			}
+			// Three Lines
+			.barrington & {
+				margin-top: -1.7em;
+			}
 		}
 	}
 

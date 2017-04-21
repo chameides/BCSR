@@ -68,6 +68,7 @@
         echo (($user_id > 0 && $user_net != '' && $user_name != '' && $user_email != '') ? '
         <fieldset>
             <legend>'.$hc_lang_submit['ContactInfo'].'</legend>
+            <p>Event contact information is not displayed in the event listing. If you’d like the information to appear, please add it to the event description.</p>
             <label for="submitName">'.$hc_lang_submit['Name'].'</label>
             <span class="output submit_user">
                 <img src="'.CalRoot.'/img/share/'.$user_net.'" width="16" height="16" alt="" /> '.$user_name.'
@@ -83,6 +84,7 @@
         <fieldset>
             <legend>'.$hc_lang_submit['ContactInfo'].'</legend>
             '.$si_notice.'
+	    <p>Event contact information is not displayed in the event listing. If you’d like the information to appear, please add it to the event description.</p>
             <label for="submitName">'.$hc_lang_submit['Name'].'</label>
             <input name="submitName" id="submitName" type="text" size="25" maxlength="50" required="required" placeholder="'.$hc_lang_submit['PlaceSubName'].'" value="" />
             <label for="submitEmail">'.$hc_lang_submit['Email'].'</label>
@@ -240,11 +242,13 @@
         echo '
         <fieldset>
             <legend>'.$hc_lang_submit['LocationLabel'].'</legend>
-            <input type="hidden" id="locPreset" name="locPreset" value="0" />
+            <!--input type="hidden" id="locPreset" name="locPreset" value="0" /-->
             <input type="hidden" id="locPresetName" name="locPresetName" value="" />';
-            location_select();
+            //location_select();
         echo '
-            <div id="custom_notice" style="display:none;">
+	    <label for="locPreset">Location*</label>
+	    <select id="locPreset" name="locPreset" style="max-width:500px;">'.sr_get_locations().'</select>
+            <!--div id="custom_notice" style="display:none;">
                 <label class="blank">&nbsp;</label>
                 <b>'.$hc_lang_core['PresetLoc'].'</b>
             </div>
@@ -273,9 +277,9 @@
                 <input name="'.$inputs[$second][1].'" id="'.$inputs[$second][1].'" type="text" size="20" maxlength="50" placeholder="'.$hc_lang_submit[$inputs[$second][2]].'" value="" /><span class="output req2">*</span>
                 <label for="locCountry">'.$hc_lang_submit['Country'].'</label>
                 <input name="locCountry" id="locCountry" type="text" size="10" maxlength="50" placeholder="'.$hc_lang_submit['PlaceLocCountry'].'" value="" />
-            </div>
+            </div-->
         </fieldset>
-        <fieldset>
+        <!--fieldset>
             <legend>'.$hc_lang_submit['ContactLabel'].'</legend>
             <label for="contactName">'.$hc_lang_submit['Name'].'</label>
             <input name="contactName" id="contactName" type="text" size="20" maxlength="50" placeholder="'.$hc_lang_submit['PlaceContactName'].'" value="" /><span class="output req3">*</span>
@@ -285,7 +289,7 @@
             <input name="contactPhone" id="contactPhone" type="tel" size="20" maxlength="25" placeholder="'.$hc_lang_submit['PlaceContactPhone'].'" value="" />
             <label for="contactURL">'.$hc_lang_submit['Website'].'</label>
             <input name="contactURL" id="contactURL" type="url" maxlength="100" placeholder="'.$hc_lang_submit['PlaceContactURL'].'" value="" />
-        </fieldset>
+        </fieldset-->
         <fieldset>
             <legend>'.$hc_lang_submit['MessageLabel'].'</legend>
             <label for="goadminmessage">'.$hc_lang_submit['Include'].'</label>
@@ -332,7 +336,7 @@ function sr_theme_hc_header(){
 <link rel="search" type="application/opensearchdescription+xml" href="'.CalRoot.'/opensearch.php" title="'.CalName.'" />'.$rss.$cmnts.$can;
 }
 
-function sr_shared_getCategories($frmName, $columns, $query = NULL, $showLinks = 1){
+/* function sr_shared_getCategories($frmName, $columns, $query = NULL, $showLinks = 1){
     global $hc_cfg, $hc_lang_config, $hc_lang_core;
 
     if(!isset($query))
@@ -381,6 +385,44 @@ function sr_shared_getCategories($frmName, $columns, $query = NULL, $showLinks =
             [ <a href="javascript:;" onclick="checkAllArray(\'' . $frmName . '\', \'catID[]\');">' . $hc_lang_core['SelectAll'] . '</a>
             &nbsp;|&nbsp; <a href="javascript:;" onclick="uncheckAllArray(\'' . $frmName . '\', \'catID[]\');">' . $hc_lang_core['DeselectAll'] . '</a> ]
         </div>';
+}*/
+
+function sr_shared_getCategories($frmName, $columns, $query = NULL, $showLinks = 1){
+    global $hc_cfg, $hc_lang_config, $hc_lang_core;
+
+    if(!isset($query))
+        $query = "SELECT c.PkID, c.CategoryName, c.ParentID, c.CategoryName as Sort, NULL as Selected
+                FROM " . HC_TblPrefix . "categories c 
+                    LEFT JOIN " . HC_TblPrefix . "eventcategories ec ON (c.PkID = ec.CategoryID)
+                WHERE c.ParentID = 0 AND c.IsActive = 1
+                GROUP BY c.PkID, c.CategoryName, c.ParentID
+                UNION SELECT c.PkID, c.CategoryName, c.ParentID, c2.CategoryName as Sort, NULL as Selected
+                FROM " . HC_TblPrefix . "categories c 
+                    LEFT JOIN " . HC_TblPrefix . "categories c2 ON (c.ParentID = c2.PkID) 
+                    LEFT JOIN " . HC_TblPrefix . "eventcategories ec ON (c.PkID = ec.CategoryID) 
+                WHERE c.ParentID > 0 AND c.IsActive = 1
+                GROUP BY c.PkID, c.CategoryName, c.ParentID, c2.CategoryName
+                ORDER BY Sort, ParentID, CategoryName";
+    $result = doQuery($query);
+    if(!hasRows($result))
+        return 0;
+
+    $cnt = 1;
+
+    echo '
+	<label for="catID">Category</label>
+        <select name="catID[]" size="'.mysql_num_rows($result).'" required  multiple>';
+    while($row = mysql_fetch_row($result)){
+
+        echo '<option value="'.$row[0].'">'.cOut(substr($row[1],3)).'</option>';
+        ++$cnt;
+    }
+    echo '
+        </select>';
+
+    if($cnt == 0 || $showLinks == 0)
+        return 0;
+
 }
 
 function sr_forms_news_edit(){
@@ -820,7 +862,7 @@ function sr_forms_search(){
             if(($date != $row[2])){
                 $date = $row[2];
                 echo ($cnt > 0) ? '</ul>' : '';
-                echo '<h2>' . stampToDate($row[2], '%A, %B %d, %Y') . '</h2><ul>';
+                echo '<h2>' . stampToDate($row[2], '%A, %B %e, %Y') . '</h2><ul>';
                 $cnt = 1;
             }
 
@@ -834,11 +876,11 @@ function sr_forms_search(){
                 $time = ($row[3] != '') ? stampToDate($row[3], $hc_cfg[23]) : '';
                 $time .= ($row[4] != '') ? ' - ' . stampToDate($row[4], $hc_cfg[23]) : '';
                 //$stamp = date("Y-m-d\Th:i:00",strtotime($row[2] . trim(' '.$row[3]))) . HCTZ;
-                $stamp = stampToDate($row[2], '%A, %B %d'); //$hc_cfg[14]
+                $stamp = stampToDate($row[2], '%A, %B %e'); //$hc_cfg[14]
             } else {
                 $time = ($row[5] == 1) ? $hc_lang_event['AllDay'] : $hc_lang_event['TBA'];
                 $stamp = $row[2];
-                $stamp = stampToDate($row[2], '%A, %B %d');
+                $stamp = stampToDate($row[2], '%A, %B %e');
             }
             echo '
             <li '.($cls != '' ? 'class="'.$color_class.' '.trim($cls).'" ':'class="'.$color_class.'"').'itemscope itemtype="http://schema.org/Event">
@@ -1047,6 +1089,7 @@ function sr_colorizer($row_number){
     }
 }
 
+//listings on events
 function sr_event_browse($show_images = 0){
     global $lID, $hc_cfg, $hc_lang_event, $favQ1, $favQ2, $resultEB, $myNav;
 
@@ -1084,7 +1127,7 @@ function sr_event_browse($show_images = 0){
         if(($date != $row[2])){
             $date = $row[2];
             echo ($cnt > 0) ? '</ul>' : '';
-            echo '<h2>' . stampToDate($row[2], '%A, %B %d, %Y') . '</h2><ul>';
+            echo '<h2>' . stampToDate($row[2], '%A, %B %e, %Y') . '</h2><ul>';
             $cnt = 1;
         }
 
@@ -1098,11 +1141,11 @@ function sr_event_browse($show_images = 0){
             $time = ($row[3] != '') ? stampToDate($row[3], $hc_cfg[23]) : '';
             $time .= ($row[4] != '') ? ' - ' . stampToDate($row[4], $hc_cfg[23]) : '';
             //$stamp = date("Y-m-d\Th:i:00",strtotime($row[2] . trim(' '.$row[3]))) . HCTZ;
-            $stamp = stampToDate($row[2], '%A, %B %d'); //$hc_cfg[14]
+            $stamp = stampToDate($row[2], '%A, %B %e'); //$hc_cfg[14]
         } else {
             $time = ($row[5] == 1) ? $hc_lang_event['AllDay'] : $hc_lang_event['TBA'];
             $stamp = $row[2];
-            $stamp = stampToDate($row[2], '%A, %B %d');
+            $stamp = stampToDate($row[2], '%A, %B %e');
         }
         echo '
         <li '.($cls != '' ? 'class="'.$color_class.' '.trim($cls).'" ':'class="'.$color_class.'"').'itemscope itemtype="http://schema.org/Event">
@@ -1110,7 +1153,7 @@ function sr_event_browse($show_images = 0){
             .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
             <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
             <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
-            .strip_tags(cOut($description)) . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
+            .strip_tags(str_replace("</p><p>", "<br />", cOut($description)), '<br>') . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>'; 
 
@@ -1129,5 +1172,18 @@ function sr_news_link_archive(){
 	echo '<div class="newsTools">
 	<a href="'.CalRoot.'/index.php?com=archive" class="icon news_a">'.$hc_lang_news['NewsOpt0'].'</a></div>';
 	}
+}
+
+function sr_get_locations(){
+	$html = "";
+	$q = "SELECT PkID, Name, Address, Address2, City, State, Country, Zip FROM hc_locations ORDER BY Name";
+	$result = doQuery($q);
+    $html .= '<option value="default">Please choose location</option>';
+	while($row=mysql_fetch_row($result)){
+		$text = $row[1].((!empty($row[3]))?' - '.$row[3]:'').((!empty($row[2]))?' - '.$row[2]:'').((!empty($row[4]) && !empty($row[5]))?' - '.$row[4].', '.$row[5]:'');
+		$html .= '<option value="'.$row[0].'">'.$text.'</option>';
+	} 
+
+	return $html; 
 }
 ?>
