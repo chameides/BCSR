@@ -1,0 +1,101 @@
+//code for wufoo forms embed
+
+//wrap with namespaced class
+.wufoo {
+
+  //set typography
+  @extend body;
+  
+
+  //title and description
+  #header h2 {
+    display: none;
+  }
+
+
+  // RESETS
+
+  //field lable
+  label.desc,
+  legend.desc {
+    font-size:inherit;
+    color:inherit;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+  }
+
+  //reset active color
+  li.focused {
+    //background-color: white;
+    background-color: inherit;
+  }
+
+  //set to full-width
+  li {
+    //width: 100%;
+    width: inherit;
+  }
+
+
+  //checkbox label
+  label.choice, 
+  li span label, 
+  li span,
+  .section div
+  {
+    color: inherit;
+  }
+
+  //align checkbox with label
+  label.choice {
+    margin-top: -21px;
+  } 
+
+
+  li.complex div span.left {
+    clear: both;
+  }
+
+  //EXTENDS
+
+
+  .section {
+    //section-header
+    h3 {
+      @extend h2;
+      margin-top: 20px;
+    }
+    //add 'level-2 class inside wufoo'
+    & .level-2 {
+      h3 {
+        @extend h4;
+      }
+    }
+  }
+
+ 
+
+  input.text,
+  input.search,
+  textarea.textarea {
+    @extend .form-control;
+  }
+
+  select.select {
+    height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: $padding-base-vertical $padding-base-horizontal;
+    font-size: $font-size-base !important;
+    line-height: $line-height-base;
+    color: $input-color;
+    background-color: $input-bg;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid $input-border;
+    border-radius: 0;
+  }
+  
+  //button
+  input.btTxt {
+    @extend .btn.btn-primary;
+    @extend .btn-primary;
+  }
+}
