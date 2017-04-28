@@ -10,6 +10,7 @@ $cec: false !default;
 @import "app_base.scss"; //template base styles
 @import "app_typography-base.scss"; //Global font, font-size settings
 @import "app_links.scss"; // Global link styling
+@import "app_down-arrow.scss"; //Global, modular elements
 
 /*Menus*/
 @import "app_nav.scss"; //Top navigation
@@ -17,7 +18,7 @@ $cec: false !default;
 
 /*Templates
 
-Note: therse are messy. 
+Note: these are messy. 
 	There are patterns that appear on a single template partial that are used on multiple templates
 	There are also partials for modular patterns such as forms and images
 */

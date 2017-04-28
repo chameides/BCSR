@@ -1,0 +1,66 @@
+// add a down arrow to indicate links to pdf and other downloads
+
+//prevent arrow from wrapping to next line. not used on narrow elements such as button that have less risk of line breaks
+a.dl-svg-wrapper {
+  .panel-body &,
+  p & {
+    padding-right: 19px; //link spacing to compensate for absolute position (mobile)
+  }
+
+  @media screen and (max-width:$screen-sm-max) {
+    //margin-right: 10px; 
+  }
+
+  .dl-svg {
+    position: absolute; 
+  }
+}
+
+
+//style the arrow container
+.dl-svg {
+  width: 13px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 10px;
+  white-space: nowrap;
+  @media screen and (max-width:$screen-sm-max) {
+    width: 10px; 
+    margin-left: 7px;
+  }
+  .panel-body &,
+  p &,
+  .btn-primary & { 
+    margin-left: 5px; //reduce spacing between arrow and link text
+  }
+  .right-arrow & {
+    width: 11px; //reduce size
+  }
+}
+
+
+//style the download SVG Icon
+.dl-icon-path {
+  fill: $medium-gray;
+  a:hover & {
+    fill: $red;
+  }
+
+  //For button primary cta, match button color
+  .btn-primary & {
+    fill: $btn-primary-color;
+  }
+  a.btn-primary:hover & {
+    fill: $btn-primary-color;
+  }
+
+  //secondary ctas, match color
+  .right-arrow &,
+  .right-arrow-primary &,
+  .right-arrow-aside & {
+    fill: $red;
+  }
+  a.cta-bullet:hover & {
+    fill: $dark-gray;;
+  }
+}

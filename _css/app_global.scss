@@ -1144,20 +1144,6 @@ h1.hero-title {
 //   }  
 // }
 
-// Styles for Download SVG Icon
-.dl-svg {
-  width: 13px;
-  height: 14px;
-  display: inline-block;
-  margin-left: 10px;
-  white-space: nowrap;
-}
-  .dl-icon-path {
-    fill: $red;
-    &:hover {
-      fill: $dark-gray;
-    }
-  }
 
 
 // Crumb Styles

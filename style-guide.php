@@ -268,8 +268,10 @@
 
 	<p class="intro-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 	<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-	
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.
+	<a href="#" class="dl-svg-wrapper">paragraph for reference size - Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate<span class="dl-svg"><?php include("_inc/svg.php"); ?></a> and then some</p>
+
+
 
 	<h3> Additional Text Elements</h3>
 	<p>The <a href="#">a element</a> example</p>
@@ -329,7 +331,7 @@
 		<h3>Custom Unordered (bullet) List</h3>
 		<p>A paragraph for reference size</p>
 		<ul class="arrow-list">
-		  <li><a href="#">paragraph for reference size - Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+		  <li><a href="#" class="dl-svg-wrapper">paragraph for reference size - Business Farm Supplement oncustodial Parent’s Statement Statement Quis autem vel eum iure reprehenderit qui in ea voluptate<span class="dl-svg"><?php include("_inc/svg.php"); ?></a>
 			<li><a href="#">Financial Aid Handbook (2013/14) Business Farm Supplement oncustodial Parent’s Statement Statement Quis</a></li>
 			<li><a href="#">Financial Aid Handbook (2013/14)</a></li>
 		  <li><a href="#">Financial Aid Handbook (2013/14)</a></li>
@@ -338,9 +340,9 @@
 		<h3>Custom Ordered List</h3>
 
 		<ol class="circle-list">
-		  <li><a href="#">Use custom ordered list only one level deep.<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-		  <li><a href="#">International Student Financial Aid Application<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
-		  <li><a href="#">International Student Certification of Finances<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		  <li><a href="#" class="dl-svg-wrapper">Use custom ordered list only one level deep.<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		  <li><a href="#" class="dl-svg-wrapper">International Student Financial Aid Application<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a></li>
+		  <li><a href="#">International Student Certification of Finances</a></li>
 		</ol>
 
 		<h3>Ordered List</h3>
@@ -847,7 +849,7 @@
 		    </div>
 		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-		        Anim pariatur cliche reprehenderit, <a href="">enim eiusmod</a> high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        Anim pariatur cliche reprehenderit, <a href="" class="dl-svg-wrapper">enim eiusmod<span class="dl-svg"><?php include("_inc/svg.php"); ?></a> high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 		      </div>
 		    </div>
 		  </div>
@@ -1039,10 +1041,18 @@
 		<div class="text-center page--link">
 			<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> small red arrow link</a>
 		</div>
+		<div class="text-center">
+			<a class="btn btn-primary" href="#">Download <span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
+		</div>
 		<div class="col-md-12">
 			<p>There is also a large red arrow link that can be used without the red button.</p>
 			<div class="text-center page--link">
-				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link</a>
+				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link</a><br>
+				<a class="right-arrow" href="#"><i class="fa fa-angle-right bold"></i> Red Arrow Link<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a><br>
+				<a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Aside Red Arrow Link<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
+			</div>
+			<div class="text-center page--link">
+				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
 			</div>
 		</div>
 		<div class="col-md-12">
