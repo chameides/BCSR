@@ -1056,24 +1056,62 @@
 			</div>
 		</div>
 		<div class="col-md-12">
-	        <div class="row stacked-content">
-	            <div class="col-sm-8">
-		            <h3>Medium Red Arrow Link</h3>
-		              <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
-		              	<p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
-			<p>CTA links associated with H3’s and below match their alignment (left).</p>
-	            </div>
-	            <!-- <div class="col-sm-4" style="> -->
-	            <div class="col-sm-4 aside">
-	              <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
-	              <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
-	              <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
-	              <div><a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a></div>
-	            </div>
-	         </div>
+	  	<div class="row stacked-content">
+	      <div class="col-sm-8">
+		      <h3>Medium Red Arrow Link</h3>
+		      <p>There is also a medium red arrow link that can be used in an aside or next to an image.</p>
+		      <p>Callouts are the boxes at the side on the Mixed Media and Profile pages. These are ephemeral content similar to a pull quote where information in the document is pulled out and displayed in a way that is easy-to-scan</p>
+					<p>CTA links associated with H3’s and below match their alignment (left).</p>
+	      </div>
+        <!-- <div class="col-sm-4" style="> -->
+        <div class="col-sm-4 aside">
+          <p>The admission process is just that - a process. We’ll work together to decide if the right time for college is now.</p>
+          <a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Contact Us</a>
+          <p>Deciding if early college is right for your child? Listen to the stories of other Simon’s Rock families.</p>
+          <div>
+          	<a class="right-arrow-aside" href="#"><i class="fa fa-angle-right bold"></i> Parent Stories and if it is extra long?</a>
+          </div>
+        </div>
+	    </div>
 		</div>
+
+		<div class="col-md-12">
+	  	<div class="row stacked-content">
+	      <div class="col-sm-8">
+		      <h3>Sidebar</h3>
+		      <p>Asides are created for short, text and a CTA. For longer blocks of text, try the .sidebard isntead. Break up sections with a longer margin bottom. </p>
+	      </div>
+        <!-- <div class="col-sm-4" style="> -->
+        
+        <div class="col-sm-4 sidebar">
+          <h3 class="subheadline">In the Media</h3>
+          <p>Peter Filkins, Richard B. Fisher Professor of Literature, reflects on this year’s
+             election season with three poems in <em><a title="The Common November 2016 Poetry Feature" href="http://www.thecommononline.org/features/november-2016-poetry-feature" target="_blank">The Common</a></em>, a prominent literary magazine based at Amherst College.
+          </p>
+          <p class="margin-bottom">Peter Filkins delivered his paper “<a href="/news/filkins-adler-paper-london.php">H.G. Adler: The Displaced Modernist</a>” at the Institute of Modern Languages Research, University College London.
+          </p>
+          <p class="margin-bottom"><span class="pull-left-responsive-35"><img class="" src="/_images/academics/program-overview/languages-and-literature/what-i-forgot.jpg" alt="Dr Browdy What I Forgot"></span>Dr. Browdy is the author of a memoir, <em>What I Forgot …And Why I Remembered: A Journey to Environmental Awareness and Activism
+                Through Purposeful Memoir</em>, and an accompanying writer’s guide, <em>The Elemental Journey of Purposeful Memoir: A Writer’s Companion</em>.
+          </p>
+          <p class="margin-bottom">Brendan Mathews’ debut novel, <em>The World of Tomorrow</em>, will be published in September 2017 by Little, Brown &amp; Co.
+          </p>
+          <p style="clear: both;"><span class="pull-left-responsive-35"><img class="" src="/_images/academics/program-overview/languages-and-literature/ethical-issues-citizens-rights.jpg" alt="The Borders of Corruption by Rebecca Fiske"></span>Rebecca Fiske’s recent publication (chapter 1) “<a href="https://books.google.com/books?id=5HWBCwAAQBAJ&amp;pg=PA1&amp;lpg=PA1&amp;dq=Rebecca+Fiske+Surveillance+in+the+State+of+Emergency&amp;source=bl&amp;ots=GvOY7SFiHj&amp;sig=wRNE9Cvxv2AjwYKhQOpu5ngI3UI&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwizlKm43djRAhUGMSYKHfpzAyMQ6AEIJTAC#v=onepage&amp;q=Rebecca%20Fiske%20Surveillance%20in%20the%20State%20of%20Emergency&amp;f=false">The Borders of Corruption: Living in a State of Surveillance</a>” in <em>Ethical Issues and Citizen Rights in the Era of Digital Government Surveillance</em>.
+          </p>
+          <div style="clear: both; height: 0;">&nbsp;</div>
+        </div>
+	    </div>
+		</div>
+
+
 	
 	</div>
+
+
+	
+
+
+
+
 
 		<div>&nbsp;</div>
 

@@ -21,37 +21,45 @@
   }
 
 }
-.aside {    
-    background: #efefef;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+
+.aside, 
+.sidebar {
+  background: $gray-lighter;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+
+.aside {      
+  @media screen and (min-width:$screen-sm) {
+    background: none;
+    border:1px solid #999;
+  }
+  p {
+    padding-top: 1em;
+    margin-bottom: $line-height-computed / 3;
     @media screen and (min-width:$screen-sm) {
-      background: none;
-      border:1px solid #999;
+      font-weight: bold;
+      font-size: 1em; 
     }
-    p {
-      padding-top: 1em;
-      margin-bottom: $line-height-computed / 3;
-      @media screen and (min-width:$screen-sm) {
-        font-weight: bold;
-        font-size: 1em; 
-    }
-       @media screen and (min-width:$screen-md) {
-          font-size: .85em;
-          line-height: 1.4em;
+    @media screen and (min-width:$screen-md) {
+      font-size: .85em;
+      line-height: 1.4em;
     }
   } 
 }
+
 .sidebar {
-    background:#efefef;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    padding-top: 1em;
+  padding-top: 1em;
   p {
     font-size:.85em;
     line-height:1.4em;
-  }  
+  &.margin-bottom {
+    margin-bottom: 3.5rem;
+  } 
 }
+
+
 .h3-subheadline {
   //originally in nested global setting and moved here to apply to contact form oustide of page-container
   margin-bottom: .5rem;
