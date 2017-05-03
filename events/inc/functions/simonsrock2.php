@@ -888,7 +888,7 @@ function sr_forms_search(){
                 .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
                 <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
                 <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
-                .strip_tags(cOut($description, '<br>')) . '<span class="readmore">&nbsp;Read more</span></p></div>'
+                .strip_tags(cOut($description, '<br>')) . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>';
             ++$cnt; 
@@ -1089,7 +1089,6 @@ function sr_colorizer($row_number){
     }
 }
 
-//listings on events
 function sr_event_browse($show_images = 0){
     global $lID, $hc_cfg, $hc_lang_event, $favQ1, $favQ2, $resultEB, $myNav;
 
@@ -1153,7 +1152,7 @@ function sr_event_browse($show_images = 0){
             .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
             <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
             <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
-            .strip_tags(str_replace("</p><p>", "<br />", cOut($description)), '<br>') . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
+            .strip_tags(cOut($description)) . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>'; 
 
