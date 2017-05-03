@@ -23,7 +23,9 @@
 	<div id="filter">
         <?php sr_theme_cal_filter(1,1); ?>
 	<span style="clear:both;">
-	<a href="http://simons-rock.edu/admission/admission-events.php">Simon's Rock Admissions on the Road</a> | <a class="red" href="http://simons-rock.edu/alumni/regional-events.php">Alumni Regional Events</a> | <a href="http://simons-rock.edu/student-life/campus-experience/kilpatrick-athletic-center/kilpatrick-calendar.php">Kilpatrick Athletic Center Calendar</a>
+	<a href="http://simons-rock.edu/admission/admission-events.php">Simon's Rock Admissions on the Road</a><br>
+	<a href="http://simons-rock.edu/alumni/regional-events.php">Alumni Regional Events</a><br>
+	<a href="http://simons-rock.edu/student-life/campus-experience/kilpatrick-athletic-center/kilpatrick-calendar.php">Kilpatrick Athletic Center Calendar</a>
 </span>
 		<?php sr_theme_mini_search('Search Events by Keyword',0);?>
 	</div>
