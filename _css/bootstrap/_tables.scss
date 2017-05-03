@@ -235,3 +235,23 @@ table {
     }
   }
 }
+
+//on tables with long information and no need for headers, wstack all elements on small screens and hide header
+
+.table-tube-xs-max {
+  @media screen and (max-width: $screen-xs-max) {
+    thead {
+      display: none
+    }
+    th, td {
+      display: table-row;
+    }
+
+    tr {
+      padding: 1em;
+      display: block;
+    }
+    border: 1px solid $table-border-color;
+  }
+}
+  

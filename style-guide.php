@@ -455,6 +455,94 @@
 		  </tbody>
 		</table>
 
+		<h2>table responsive</h2>
+		<div class="table-responsive">
+			<table class="table table-striped ">
+			  <thead class="table__head">
+				<tr>
+				  <th>Expense Category</th>
+				  <th>In-State and Reciprocity*</th>
+				  <th>Non-Resident</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">Tuition/Fees</th>
+				  <td>$XX,XXX</td>
+				  <td><a href="">$XX,XXX</a></td>
+				</tr>
+				<tr>
+				  <th scope="row">Books/Supplies</th>
+				  <td>$XX,XXX</td>
+				  <td>$XX,XXX</td>
+				</tr>
+				<tr>
+				  <th scope="row">Room/Board</th>
+				  <td>$XX,XXX</td>
+				  <td>$XX,XXX</td>
+				</tr>
+				<tr>
+				  <th scope="row">Transportation</th>
+				  <td>$XX,XXX</td>
+				  <td>$XX,XXX</td>
+				</tr>
+				<tr>
+				  <th scope="row">Personal/Miscellaneous</th>
+				  <td>$XX,XXX</td>
+				  <td>$XX,XXX</td>
+				</tr>
+				<tr class="bold">
+				  <th class="bold" scope="row">Total</th>
+				  <td>$XX,XXX</td>
+				  <td>$XX,XXX</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+
+		<h2>table tube xs max</h2>
+		<table class="table table-striped table-tube-xs-max">
+		  <thead class="table__head">
+			<tr>
+			  <th>Expense Category</th>
+			  <th>In-State and Reciprocity*</th>
+			  <th>Non-Resident</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">Tuition/Fees</th>
+			  <td>$XX,XXX</td>
+			  <td><a href="">$XX,XXX</a></td>
+			</tr>
+			<tr>
+			  <th scope="row">Books/Supplies</th>
+			  <td>$XX,XXX</td>
+			  <td>$XX,XXX</td>
+			</tr>
+			<tr>
+			  <th scope="row">Room/Board</th>
+			  <td>$XX,XXX</td>
+			  <td>$XX,XXX</td>
+			</tr>
+			<tr>
+			  <th scope="row">Transportation</th>
+			  <td>$XX,XXX</td>
+			  <td>$XX,XXX</td>
+			</tr>
+			<tr>
+			  <th scope="row">Personal/Miscellaneous</th>
+			  <td>$XX,XXX</td>
+			  <td>$XX,XXX</td>
+			</tr>
+			<tr class="bold">
+			  <th class="bold" scope="row">Total</th>
+			  <td>$XX,XXX</td>
+			  <td>$XX,XXX</td>
+			</tr>
+		  </tbody>
+		</table>
+
 	</div>
 	<a name="forms"></a>
 	<div class="col-md-12">
