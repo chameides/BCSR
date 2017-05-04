@@ -8,6 +8,8 @@
 	sr_event_browse_valid(1);
 	
 	get_header();
+	echo '<meta name="description" content="Whatever you do outside the classroom, boredom is not an option. View our upcoming events." />';
+
 
     $xml = simplexml_load_file($_SERVER['DOCUMENT_ROOT'] . '/_resources/calendar/header.xml');
     $xmlhead = $xml->head[0]->asXML();
@@ -30,7 +32,6 @@
     
     echo $xmlcontent;
 ?>
-	<h1 id="events-header">Events Calendar</h1>
     <div class="col-md-8">
 	<section id="events">		
 		<?php 
