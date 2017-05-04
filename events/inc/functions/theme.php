@@ -32,7 +32,6 @@
 		echo ($hc_cfg[7] == 1) ? '<meta name="robots" content="all, index, follow" />' : '<meta name="robots" content="noindex, nofollow" />';
 		echo '
 	<meta name="description" content="'.substr(str_replace("\"","'",strip_tags($meta['desc'])),0,150).'" />
-	<meta name="keywords" content="'.$meta['keywords'].'" />
 	<title>'.$meta['title'].' - '.CalName. '</title>	
 	<meta name="generator" content="Helios Calendar ' . $hc_cfg[49] . '" /> <!-- leave this for stats -->
 	<link rel="search" type="application/opensearchdescription+xml" href="'.CalRoot.'/opensearch.php" title="'.CalName.'" />'.$rss.$cmnts.$can;
@@ -528,7 +527,9 @@
 			return 0;
 		echo '
 	<ul class="breadbox">
-		<li id="bread_top"><a href="#top" rel="nofollow">&uarr;</a></li>';
+		<li id="bread_top"><a href="#top" rel="nofollow">&uarr;</a></li>
+		<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/"><span itemprop="title">Home</span></a><span class="arrow"><span>&nbsp;</span></span></li>
+		';
 		foreach($crumbs as $link => $text){
 			echo ($link != 'NULL') ? '
 		<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="'.$link.'" itemprop="url"><span itemprop="title">'.clean_truncate($text,$limit).'</span></a><span class="arrow"><span>&nbsp;</span></span></li>' : '
