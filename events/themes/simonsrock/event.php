@@ -58,7 +58,16 @@
 
 		<?php		if($myEvnt['Venue_Address'].$myEvnt['Venue_Address2'].$myEvnt['Venue_City'].$myEvnt['Venue_Region'].$myEvnt['Venue_Postal'].$myEvnt['Venue_Country'] != ''){?>
 			<div id="detail_left_nostyle">
-				<h4 class="date"><?php echo $myEvnt['Date'];?></h4>
+				<h4 class="date"><?php 
+					echo $myEvnt['Date'];
+					//if not this year, add year to date
+					$yearEvent = substr($myEvnt['Timestamp'], 0, 4); //strip timestamp for year
+					$yearCurrent = date("Y");
+					if ($yearEvent != $yearCurrent) {
+					    echo ', ' . $yearEvent;
+					} 
+				?>
+				</h4>
 				<time itemprop="startDate" content="<?php echo $myEvnt['Timestamp'];?>"><?php echo $myEvnt['Time'];?></time>
                 <h4 itemprop="name" class="locname"><i class="fa fa-map-marker"></i>  <?php echo ($myEvnt['Venue_URL'] != '') ? ' <a href="'.$myEvnt['Venue_URL'].'" target="_blank">'. $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '') .'</a>' : $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '')?></h4>			
 			</div>
