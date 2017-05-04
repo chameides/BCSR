@@ -12,22 +12,32 @@
 	<aside>
         <div class="row-fluid">
         <div class="sr-mini-cal-filters">
-            <a href="/events/index.php?b=2" class="<?php echo ( strpos($cur_uri,'index.php?b=2') != false ) ? 'cal-active' : ''; ?>">Today</a>
+            <h4><a href="/events/index.php?b=2" class="<?php echo ( strpos($cur_uri,'index.php?b=2') != false ) ? 'cal-active' : ''; ?>">Today</a>
             <a href="/events/index.php?b=0" class="<?php echo ( strpos($cur_uri,'index.php?b=0') != false) ? 'cal-active' : ''; ?>">Week</a>
-            <a href="/events/index.php?b=1" class="<?php echo ( strpos($cur_uri,'index.php?b=1') != false || $cur_uri == '/events/' ) ? 'cal-active' : ''; ?>">Month</a>
+            <a href="/events/index.php?b=1" class="<?php echo ( strpos($cur_uri,'index.php?b=1') != false || $cur_uri == '/events/' ) ? 'cal-active' : ''; ?>">Month</a></h4>
         </div>
 		<?php mini_cal_month();?>
-		<br />
-        <p><strong>Subscribe to Events</strong><br /><?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a class="red" href="http://eepurl.com/bW8t6n">Email</a> | '; };?> <a class="red" href="/events/rss/">RSS</a> | <a class="red" href="/events/link/ical.php">iCal</a></p>
             </div>
 	<div id="filter">
-        <?php sr_theme_cal_filter(1,1); ?>
+  
 	<span style="clear:both;">
-	<a href="http://simons-rock.edu/admission/admission-events.php">Simon's Rock Admissions on the Road</a><br>
-	<a href="http://simons-rock.edu/alumni/regional-events.php">Alumni Regional Events</a><br>
-	<a href="http://simons-rock.edu/student-life/campus-experience/kilpatrick-athletic-center/kilpatrick-calendar.php">Kilpatrick Athletic Center Calendar</a>
+	<h4 class="spotlight">Subscribe to Events</h4>
+	<?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a href="http://eepurl.com/bW8t6n">Email</a> | '; };?> <a href="/events/rss/">RSS</a> | <a href="/events/link/ical.php">iCal</a></p>
+	<h4 class="spotlight">Browse by Category</h4>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=36">Special Events</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=24">Admissions - On Campus Events</a><br>
+	<a href="https://simons-rock.edu/admission/admission-events.php">Admissions on the Road</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=26%2C25%2C27%2C28%2C31">Arts and Academics</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=29%2C30%2C33">Student Activities</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=45">ACE</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=32">Athletics</a><br>
+	<a href="https://simons-rock.edu/student-life/campus-experience/kilpatrick-athletic-center/kilpatrick-calendar.php">Kilpatrick Athletic Center Classes and Events</a><br>
+	<a href="https://simons-rock.edu/events/index.php?com=searchresult&r=0&t=34">Alumni - On Campus Events</a><br>
+	<a href="https://simons-rock.edu/alumni/regional-events.php">Alumni Regional Events</a>
+	<p></p>
 </span>
-		<?php sr_theme_mini_search('Search Events by Keyword',0);?>
+		<h4 class="spotlight">Search</h4>
+		<?php sr_theme_mini_search('Search by Keyword',0);?>
 	</div>
 			
 		<div class="setting"><?php select_language(0);?></div>
