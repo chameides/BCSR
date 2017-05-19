@@ -1,0 +1,135 @@
+//code for wufoo forms embed
+
+//wrap with namespaced class
+.wufoo, 
+#payment {
+
+  //set typography
+  @extend body;
+  
+
+  //title and description
+  #header h2 {
+    display: none;
+  }
+
+
+  // RESETS
+
+  //field lable
+  label.desc,
+  legend.desc, 
+  li div label, 
+  li span label {
+    font-size:inherit;
+    color:inherit;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+  }
+
+  //reset active color
+  li.focused {
+    //background-color: white;
+    background-color: inherit;
+  }
+
+  //set to full-width
+  li {
+    //width: 100%;
+    width: inherit;
+  }
+
+
+  //checkbox label
+  label.choice, 
+  li span label, 
+  li span,
+  .section div, 
+  li span label
+  {
+    color: inherit;
+  }
+
+  //align checkbox with label
+  label.choice {
+    margin-top: -17px;
+    color: $medium-gray;
+    line-height: 1.2em;
+  } 
+
+  //checkbox
+  span.subfield {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  //child field label 
+  li div label, 
+  li span label,
+  li div span label {
+    font-size: 80%;
+    color: $medium-gray;
+  }
+
+  li.complex div span.left {
+    clear: both;
+  }
+
+  //EXTENDS
+
+
+  .section {
+    //section-header
+    h3 {
+      @extend h2;
+      margin-top: 20px;
+    }
+    //add 'level-2 class inside wufoo'
+    & .level-2 {
+      h3 {
+        @extend h4;
+      }
+    }
+  }
+
+ 
+
+  input.text,
+  input.search,
+  textarea.textarea {
+    @extend .form-control;
+  }
+
+  select.select {
+    height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: $padding-base-vertical $padding-base-horizontal;
+    font-size: $font-size-base !important;
+    line-height: $line-height-base;
+    color: $medium-gray;
+    background-color: $input-bg;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid $input-border;
+    border-radius: 0;
+  }
+  
+  //button
+  input.btTxt {
+    @extend .btn.btn-primary;
+    @extend .btn-primary;
+  }
+
+  //prevent large images
+ img {
+    max-width: 100%;
+    width: auto; 
+  }
+
+  //credit card section
+  #ccSection {
+    background: none;
+  }
+  input.radio {
+    width: inherit;
+    height: inherit;
+  }
+}
