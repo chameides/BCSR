@@ -1,7 +1,8 @@
 //code for wufoo forms embed
 
 //wrap with namespaced class
-.wufoo {
+.wufoo, 
+#payment {
 
   //set typography
   @extend body;
@@ -17,7 +18,9 @@
 
   //field lable
   label.desc,
-  legend.desc {
+  legend.desc, 
+  li div label, 
+  li span label {
     font-size:inherit;
     color:inherit;
     margin-bottom: 0;
@@ -41,16 +44,32 @@
   label.choice, 
   li span label, 
   li span,
-  .section div
+  .section div, 
+  li span label
   {
     color: inherit;
   }
 
   //align checkbox with label
   label.choice {
-    margin-top: -21px;
+    margin-top: -17px;
+    color: $medium-gray;
+    line-height: 1.2em;
   } 
 
+  //checkbox
+  span.subfield {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  //child field label 
+  li div label, 
+  li span label,
+  li div span label {
+    font-size: 80%;
+    color: $medium-gray;
+  }
 
   li.complex div span.left {
     clear: both;
@@ -86,7 +105,7 @@
     padding: $padding-base-vertical $padding-base-horizontal;
     font-size: $font-size-base !important;
     line-height: $line-height-base;
-    color: $input-color;
+    color: $medium-gray;
     background-color: $input-bg;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     border: 1px solid $input-border;
@@ -97,5 +116,20 @@
   input.btTxt {
     @extend .btn.btn-primary;
     @extend .btn-primary;
+  }
+
+  //prevent large images
+ img {
+    max-width: 100%;
+    width: auto; 
+  }
+
+  //credit card section
+  #ccSection {
+    background: none;
+  }
+  input.radio {
+    width: inherit;
+    height: inherit;
   }
 }
