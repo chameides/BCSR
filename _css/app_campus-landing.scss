@@ -69,18 +69,24 @@
 // Accordion styles
 .accordion-container {
 	position: relative;
-	height: 560px;
+	height: auto; //height controls gray box and space between accordion and elements below. 
+	width: 100%;
 	background: $light-gray;
-	@media screen and (max-width: $pagegrid-break-high) {
+	@media screen and (min-width:$screen-sm-min) {
+		height: 406px;
+	}
+	@media screen and (min-width:$screen-lg-min) {
 		height: 435px;
 	}
-	@media screen and (max-width:$screen-xs-max) {
-		height: auto;
-		width: 100%;
+	@media screen and (min-width:$screen-xl-min) {
+		height: 527px;
 	}
+	
 	.panel-group .panel {
 		margin: 0;
 		border: 0;
+		background: $light-gray; //no white space between image and gray box 
+		box-shadow:none; //no border between gray box and gray box
 	}
 
 	.panel-heading {
