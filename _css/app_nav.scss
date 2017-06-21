@@ -48,7 +48,10 @@ nav#mainnav {
 			}
 		}
 		@else {
-			max-width:970px;
+			max-width:976px;  //was 970 and there was a small gap at 
+			@media screen and (min-width:$screen-md) {
+				max-width:970px;  
+			}
 		}
 		width:auto;
 	}
