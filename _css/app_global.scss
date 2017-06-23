@@ -202,7 +202,12 @@ p {
     @media screen and (min-width: $screen-sm-min) {
       margin-bottom: 0rem;
     }
-  } 
+  }
+
+  .clear-odd:nth-child(odd) {
+    clear: left; //make sure 3rd item clears to left even if 1st item is taller than 2nd
+  }
+
   .row.thumb-set {
     .col-md-12 {
       // @media screen and (min-width: $screen-sm-min) {
