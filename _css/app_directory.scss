@@ -1,17 +1,3 @@
-//directory form 
-
-//similar button size to field on small viewport
-.directory {
-	.btn.btn-primary {
-		@media screen and (max-width:$screen-xs-min) {
-			padding: 8px 8px;
-			font-size: .8em;
-		}
-	}
-}
-
-
-
 //list style directory
 #directory-list {
 	//make placeholder readable
