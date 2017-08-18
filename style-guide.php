@@ -1142,6 +1142,15 @@
 			<div class="text-center page--link">
 				<a class="right-arrow-primary" href="#"><i class="fa fa-angle-right bold"></i> Large Red Arrow Link<span class="dl-svg"><?php include("_inc/svg.php"); ?></span></a>
 			</div>
+			<h3>Secondary buttons</h3>
+			<p>In rare instances, there is a button that uses a secondary button. These are used when a button makes the most sense, but it is not neccessarily desired behavior</p>
+			<div id="directory-list">
+				<div class="image-title">
+					<button class="btn btn-default btn-info" data-target="#carousel-directory" data-slide-to="0">Departments</button><button class="btn btn-default btn-info" data-target="#carousel-directory" data-slide-to="1">Search or Browse Faculty and Staff</button><button class="btn btn-default btn-info btn-active" data-target="#carousel-directory" data-slide-to="2">Browse Faculty and Staff by Department</button>
+				</div>
+			</div>
+
+
 		</div>
 		<div class="col-md-12">
 	  	<div class="row stacked-content">

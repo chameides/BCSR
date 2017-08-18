@@ -22,28 +22,7 @@
 		padding-top: 5px;
 		font-size: .7em;
 	}
-  .btn-info {
-    background: white; 
-    border-color: #ccc;
-    color: #333;
-    margin-right: 1%;
-    @media screen and (max-width:$screen-xs2) {
-    	width: 100%;
-    	margin-bottom: 1%;
-    }
-
-    &:hover {
-      background-color: #5cb7b7;
-      color: white;
-      border-color: #ccc;
-    }
-  }
-  .btn-active, 
-  .btn-active:hover{
-    background-color: #5cb7b7;
-    color: white;
-    cursor: default;
-  } 
+ 
 	//default to hiding list
 	//.list {
 	//	display: none;

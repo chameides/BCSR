@@ -349,11 +349,11 @@ div.form_response input[type="radio"] {
 
 /* styling for secondary form button */
 div#switch button {
-  @extend .btn.btn-primary;
-  font-size: 15px;
-  padding: 5px 9px; 
-  background-color: #ccc;
-  color: $medium-gray;
+  //@extend .btn.btn-primary;
+  padding: 4px 9px;
+  margin-bottom: 5px;
+  //background-color: #ccc;
+  //color: $medium-gray;
 }
 
 /* adjust horizontal spacing and mobile view for state and country on main rfi */
@@ -439,6 +439,16 @@ label[for=form_5bd506df-6f4c-416c-9f06-9e57553f449f_street]
     }
   }
 }
+
+//COLL Propsect Seq Landing RFI - reduce space between 1st and 2nd elements
+.form_pages .form_question_f9c7887f-58e3-4105-8d4b-eea5714e476b {
+  padding-bottom: 0;
+}
+h4#switch1 {
+  margin-top: 0;
+}
+
+
 
   //not sure if we need these (retain them should they use the other parts of the form in the future?) 
 /* style h1 and h2   
