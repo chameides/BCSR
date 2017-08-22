@@ -1,9 +1,16 @@
 // Image Thumbnails, could reduce CSS specificity if HTML classes are more specific
 a.image-thumb {
-    position: relative;
-    display: block;
-    background: black; // set background to black so that image darkens on hover
+  position: relative;
+  display: block;
+  background: black; // set background to black so that image darkens on hover
+  @media screen and (max-width:$screen-xs-max) {
+    .col-xs-12 & {
+      margin-bottom: .5em;
+    }
+  }
 }
+
+
 
 // images get darker on hover
 a.image-thumb:hover{
@@ -41,6 +48,9 @@ a.image-thumb:hover{
   }
   @media screen and (max-width: 680px) {
     font-size: 11px;
+  }
+  @media screen and (max-width:$screen-xs-max) {
+    font-size: 20px;
   }
 }
 

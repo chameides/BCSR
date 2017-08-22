@@ -66,7 +66,7 @@
 
           <!-- Class News -->
           <div class="row image-list-section">
-            <div class="col-xs-3 col-sm-3">
+            <div class="col-sm-3">
               <a href="#" class="image-thumb">
                 <img src="../_images/class-news.jpg" alt="class news">
                 <div class="image-text-overlay-container">
@@ -74,7 +74,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-9 col-sm-9">
+            <div class="col-sm-9">
               <div class="col-sm-12">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
               </div>
@@ -95,7 +95,7 @@
           <!-- /Class News -->
           <!-- Get Involved -->
           <div class="row image-list-section">
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-3">
               <a href="#" class="image-thumb">
                 <img src="../_images/get-involved.jpg" alt="get involved">
                 <div class="image-text-overlay-container">
@@ -103,7 +103,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-9">
+            <div class="col-sm-9">
               <div class="col-sm-12">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
               </div>
@@ -120,7 +120,7 @@
           <!-- Get Involved -->
           <!-- Resources -->
           <div class="row image-list-section">
-            <div class="col-xs-3">
+            <div class="col-sm-3">
               <a href="#" class="image-thumb">
                 <img src="../_images/resources.jpg" alt="recources">
                 <div class="image-text-overlay-container">
@@ -128,7 +128,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-9">
+            <div class="col-sm-9">
               <div class="col-sm-12">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
               </div>
@@ -149,7 +149,7 @@
           <!-- /Resources -->
           <!-- Give Back -->
           <div class="row image-list-section">
-            <div class="col-xs-3">
+            <div class="col-sm-3">
               <a href="#" class="image-thumb">
                 <img src="../_images/give-back.jpg" alt="give back">
                 <div class="image-text-overlay-container">
@@ -157,7 +157,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-9">
+            <div class="col-sm-9">
               <div class="col-sm-12">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
               </div>
@@ -174,7 +174,7 @@
           <!-- /Give Back -->
           <!-- Connect -->
           <div class="row image-list-section">
-            <div class="col-xs-3">
+            <div class="col-sm-3">
               <a href="#" class="image-thumb">
                 <img src="../_images/connect.jpg" alt="connect">
                 <div class="image-text-overlay-container">
@@ -182,7 +182,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-9">
+            <div class="col-sm-9">
               <div class="col-sm-12">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui (this should be marketing based copy).</p>
               </div>
