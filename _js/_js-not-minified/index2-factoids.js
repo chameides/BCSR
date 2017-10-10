@@ -1,4 +1,4 @@
-
+//index2-factoids.js
             
             $( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
             $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );

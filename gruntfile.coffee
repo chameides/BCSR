@@ -86,9 +86,11 @@ module.exports = (grunt) ->
           '_js/scrollmagic/jquery.scrollmagic.js',
           '_js/_js-not-minified/factoids-wrapper1.js',
           '_js/_js-not-minified/index2-factoids.js',
+          '_js/_js-not-minified/factoids-wrapper2b.js',
           '_js/_js-not-minified/index4-factoids.js',
-          '_js/_js-not-minified/factoids-wrapper2.js'
-          '_js/_js-not-minified/factoids-wrapper3.js'
+          '_js/_js-not-minified/factoids-wrapper2.js',
+          '_js/_js-not-minified/index6-factoids.js',
+          '_js/_js-not-minified/factoids-wrapper3.js',
           ]
         dest: 
           '_js/_js-not-minified/factoids-scroll1.js'           
@@ -102,7 +104,7 @@ module.exports = (grunt) ->
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
           {src: '_js/_js-not-minified/index-concat.js', dest: '_js/index-contact.js'},
           {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
-          {src: '_js/_js-not-minified/factoids-scroll.js', dest: '_js/factoids.min.js'},
+          {src: '_js/_js-not-minified/factoids-scroll1.js', dest: '_js/factoids.min.js'},
         ],
       }
     svgmin:
