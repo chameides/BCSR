@@ -86,6 +86,12 @@ function initEventsCarousel() {
 	if ( $(window).width() >= 768 ) {
 		$( '#events_carousel_original' ).clone().appendTo( '#events_carousel_append' );
 		$( '#events_carousel_original' ).clone().prependTo( '#events_carousel_prepend' );
+		
+		$( "#events_carousel_append #events_carousel_original").attr( "aria-hidden", "true" );
+		$( "#events_carousel_prepend #events_carousel_original").attr( "aria-hidden", "true" );
+
+		$( "#events_carousel_append .events-carousel-item").attr( "aria-hidden", "true" );
+		$( "#events_carousel_prepend .events-carousel-item").attr( "aria-hidden", "true" );
 	}
 
 	$('.events-carousel-row .row-inner').width(0);
@@ -175,6 +181,8 @@ function initStudentLifeCarousel() {
 	if ( $(window).width() >= 768-15 ) {
 		$( '#student-life_carousel_original' ).clone().appendTo( '#student-life_carousel_append' );
 		$( '#student-life_carousel_original' ).clone().prependTo( '#student-life_carousel_prepend' );
+		$( "#rockers_prepend #rockers_original").attr( "aria-hidden", "true" );
+		$( "#rockers_append #rockers_original").attr( "aria-hidden", "true" );
 	}
 
 	$('.student-life_carousel-row .row-inner').width(0);

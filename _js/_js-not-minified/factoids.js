@@ -5,10 +5,10 @@ var controller;
 				controller = new ScrollMagic();
 				
 					//factoids js
-					$( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' );
-      $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' );
-      $( '#second_rep_row_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' );
-      $( '#second_rep_row_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' );
+					$( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
+      $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
+      $( '#second_rep_row_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
+      $( '#second_rep_row_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
       
       $('.first-reputations-row .row-inner').width(0);
       $('.first-reputations-row #first_rep_row_original div').each(function(i){

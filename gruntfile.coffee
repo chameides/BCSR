@@ -62,13 +62,36 @@ module.exports = (grunt) ->
           ]
         dest: 
           '_js/_js-not-minified/polyfill.js'
+      index_bcsr:  
+        src: [
+          '_js/_js-not-minified/index1.js',
+          '_js/_js-not-minified/index2-factoids.js',
+          '_js/_js-not-minified/index3.js',
+          '_js/_js-not-minified/index4-factoids.js',
+          '_js/_js-not-minified/index5.js',
+          '_js/_js-not-minified/index6-factoids.js',
+          '_js/_js-not-minified/index7.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/index-concat.js'
       factoids:  
         src: [
           '_js/scrollmagic/jquery.scrollmagic.js',
           '_js/_js-not-minified/factoids.js',
           ]
         dest: 
-          '_js/_js-not-minified/factoids-scroll.js'      
+          '_js/_js-not-minified/factoids-scroll.js'
+      factoids1:  
+        src: [
+          '_js/scrollmagic/jquery.scrollmagic.js',
+          '_js/_js-not-minified/factoids-wrapper1.js',
+          '_js/_js-not-minified/index2-factoids.js',
+          '_js/_js-not-minified/index4-factoids.js',
+          '_js/_js-not-minified/factoids-wrapper2.js'
+          '_js/_js-not-minified/factoids-wrapper3.js'
+          ]
+        dest: 
+          '_js/_js-not-minified/factoids-scroll1.js'           
     uglify: 
       static_mappings: {
         files: [
@@ -77,6 +100,7 @@ module.exports = (grunt) ->
           {src: '_resources/js/secondary-nav-cec.js', dest: '_resources/js/secondary-nav-cec-min.js'},
           {src: '_js/_js-not-minified/app/app-bcsr-combined.js', dest: '_js/app.js'},
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
+          {src: '_js/_js-not-minified/index-concat.js', dest: '_js/index-contact.js'},
           {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
           {src: '_js/_js-not-minified/factoids-scroll.js', dest: '_js/factoids.min.js'},
         ],
