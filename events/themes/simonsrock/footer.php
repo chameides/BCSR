@@ -52,6 +52,27 @@
 		}
 
 	})
+
+  //customize image submission emai link based on event title
+  $("#eventTitle")
+    .keyup(function() {
+    //get value of input
+      var eventTitle = $(this).val();
+      //default email
+      var emailLink = "mailto:EventRequest@simons-rock.edu?subject=Event Image";
+
+      //if event title is filled in, add it
+      var $eventTitlelength = eventTitle.length;
+      if ($eventTitlelength > 0) {
+        var emailLinkAppend = " - ";
+        var emailLink = emailLink + emailLinkAppend + eventTitle;
+      }
+
+      //update value
+      $("#emailLink").attr("href", emailLink);
+      $("#text").text(emailLink);
+    })
+    .keyup();
 	</script>
 </body>
 </html>
