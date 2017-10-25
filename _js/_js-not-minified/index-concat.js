@@ -39,7 +39,7 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
             $('#introVideoModal').on('show.bs.modal', function (e) {
                 $('#introduction video').get(0).pause();
             });
-
+//index2-factoids.js
             
             $( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
             $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
@@ -313,6 +313,7 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
 
 
         }); // end of the $(document).ready()
+//index4-factoids.js
         function scrollReputationRowsIntoView(){
             if ( $(window).width() < 768 ) {
                 $('.first-reputations-row').scrollLeft( $('.first-reputations-row .row-inner').width()/2 );
@@ -410,6 +411,7 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
                     
                     
             } // end if/else ( $(window).width >= 768 )
+//index6-factoids.js
             // Scene 5 - animate the module rows when Reputations and Outcomes is scrolled into view.
             var scene5 = new ScrollScene({triggerElement: '#reputations_outcomes'})
                 .on('enter leave', function(e) {
