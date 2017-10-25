@@ -638,7 +638,7 @@
 			}
 
 			$user_level = (isset($_SESSION['UserLevel'])) ? cIn($_SESSION['UserLevel']) : 0;
-			$subject = $hc_lang_submit['NoticeSubject'] . ' - ' . CalName;
+			$subject = $hc_lang_submit['NoticeSubject'] . ' - ' .cOut($eventTitle);
 			$message = '<p>' . $hc_lang_submit['NoticeEmail1'] . '</p>
 <p>
 	<b>' . $hc_lang_submit['NoticeEmail2'] . '</b> ' . $subName . ' - ' . $subEmail . '<br />
