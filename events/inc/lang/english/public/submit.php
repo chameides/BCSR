@@ -13,7 +13,7 @@ $hc_lang_submit = array(
 'EventDetails'		=>	'Event Details',
 'Title'				=>	'Title*',
 'Description'		=>	'Description*',
-'DescriptionHelper'		=>	'Submit Images via mail: <a href="mailto:EventRequests@simons-rock.edu">EventRequests@simons-rock.edu</a>. Please include event name in Subject Line.',
+'DescriptionHelper'		=>	'<a href="mailto:EventRequest@simons-rock.edu?subject=Event Image" id="emailLink">Submit Images via Email</a>. Please include event name in Subject Line.',
 'EventDate'			=>	'Event Date*',
 'StartTime'			=>	'Start Time*',
 'AM'				=>	'AM',
