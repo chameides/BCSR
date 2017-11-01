@@ -2,7 +2,7 @@
 
 This is a collection of sample templates for Bard College at Simon’s Rock (BCSR). The initial templates were created by an agency in collaboration with BCSR. Now these templates are used to update designs, features, and functionality.
 
-The readme focus on coding and deployment of the testing environment. <a href="https://simons-rock.edu/guide">The Guide</a> and <a href="http://cec.bard.edu/addendum">Addendum</a>provide more detailed patterns, governance, foundations. 
+The readme focus on coding and deployment of the testing environment. <a href="https://simons-rock.edu/guide">The Guide</a> and <a href="http://cec.bard.edu/addendum">Addendum</a> provide more detailed patterns, governance, foundations. 
 
 ## Guidelines
 
