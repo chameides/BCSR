@@ -63,9 +63,10 @@ Grunt is a task runner, which automates processes.
 
 * <a href="https://24ways.org/2013/grunt-is-not-weird-and-hard/">Grunt for People Who Think Things Like Grunt are Weird and Hard</a>
 * <a href="http://gruntjs.com/installing-grunt">Installing Grunt</a>
+ * Please note that Grunt modules must be installed individually using the command `npm install <module> --save-dev`
+ * Grunt-sass module requires [Xcode installation](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/) on OS X	
 * Use the `gruntfile.coffee` to modify the grunt settings
-* Change will go here
-
+ 
 ### Sass, SCSS and CSS
 
 The CSS is written in Sass. The grunt-sass package compiles and minifies the SCSS to CSS. 
