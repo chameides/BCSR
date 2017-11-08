@@ -64,6 +64,7 @@ Grunt is a task runner, which automates processes.
 * <a href="https://24ways.org/2013/grunt-is-not-weird-and-hard/">Grunt for People Who Think Things Like Grunt are Weird and Hard</a>
 * <a href="http://gruntjs.com/installing-grunt">Installing Grunt</a>
 * Use the `gruntfile.coffee` to modify the grunt settings
+* Change will go here
 
 ### Sass, SCSS and CSS
 
