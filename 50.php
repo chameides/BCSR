@@ -37,9 +37,9 @@
           Colors are assigned sequentially via CSS.
           -->
           
-          <div class="row first-reputations-row"><!-- 16 -->
-          <div class="row-inner">
-            <div id="first_rep_row_original">    
+        <div class="row first-reputations-row"><!-- 16 -->
+        <div class="row-inner">
+          <div class="first_rep_row_original" id="first_rep_row_original_original">
               <div class="ro-module single">
                 <img src="/_images/50/students-pink-star-sq.jpg" class="img-responsive" alt="Senior Prank">
               </div>
@@ -112,8 +112,8 @@
       </div>
       
       <div class="row second-reputations-row"><!-- 12 -->
-      <div class="row-inner">
-        <div id="second_rep_row_original">
+        <div class="row-inner">
+          <div class="second_rep_row_original" id="second_rep_row_original_original">
           <div class="ro-module single">
             <img src="/_images/50/car-smashing.jpg" class="img-responsive" alt="Car Smashing">
           </div>
@@ -249,26 +249,28 @@ You can have a defining impact on young people. With a gift, you support the sch
     
       //console.log('doc ready');
       
-      $( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' );
-      $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' );
-      $( '#second_rep_row_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' );
-      $( '#second_rep_row_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' );
+      //first row
+      $( '#first_rep_row_original_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"first-reputations-row-prepend" });
+      $( '#first_rep_row_original_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"first-reputations-row-append" });
+      //second row
+      $( '#second_rep_row_original_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"second-reputations-row-prepend" });
+      $( '#second_rep_row_original_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"second-reputations-row-append" });
       
-      $('.first-reputations-row .row-inner').width(0);
-      $('.first-reputations-row #first_rep_row_original div').each(function(i){
-        var additionalWidth = $(this).width();
-        $('.first-reputations-row .row-inner').width( $('.first-reputations-row .row-inner').width() + additionalWidth );
-      });
-      var firstRepRowWidth = $('.first-reputations-row .row-inner').width();
-      $('.first-reputations-row .row-inner').css('left','-750px');
-      
-      $('.second-reputations-row .row-inner').width(0);
-      $('.second-reputations-row #second_rep_row_original div').each(function(i){
-        var additionalWidth = $(this).width();
-        $('.second-reputations-row .row-inner').width( $('.second-reputations-row .row-inner').width() + additionalWidth );
-      });
-      var secondRepRowWidth = $('.second-reputations-row .row-inner').width();
-      $('.second-reputations-row .row-inner').css('left','-1600px');
+     $('.first-reputations-row .row-inner').width(0);
+            $('.first-reputations-row .first_rep_row_original div').each(function(i){
+                var additionalWidth = $(this).width();
+                $('.first-reputations-row .row-inner').width( $('.first-reputations-row .row-inner').width() + additionalWidth );
+            });
+            var firstRepRowWidth = $('.first-reputations-row .row-inner').width();
+            $('.first-reputations-row .row-inner').css('left','-750px');
+            
+            $('.second-reputations-row .row-inner').width(0);
+            $('.second-reputations-row .second_rep_row_original div').each(function(i){
+                var additionalWidth = $(this).width();
+                $('.second-reputations-row .row-inner').width( $('.second-reputations-row .row-inner').width() + additionalWidth );
+            });
+            var secondRepRowWidth = $('.second-reputations-row .row-inner').width();
+            $('.second-reputations-row .row-inner').css('left','-1600px');
       // if you can fit 3+, advance by 2 - if screen size is above or equal to 1125
       // if you can fit 2+, advance by 1 - if screen size is below 1125
       
