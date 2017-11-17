@@ -68,7 +68,7 @@ p {
 }
 .video--container {
   margin-bottom: .5rem;
-  padding-bottom: 56.25%;   /* for ratio of 16:9*/
+  padding-bottom: 56.25%;   /* for ratio of 16:9 */
   height: 0;
   position: relative;
   overflow: hidden;
@@ -112,6 +112,7 @@ p {
     @media screen and (min-width: $screen-xs-min) {
       margin-bottom: 1.333rem;
     }
+    /* this class is deprecated and replace by .reduce-top-margin defined below */
     &.spotlight-title {
       margin-bottom: 1.333rem;
       margin-top: 0;
@@ -126,6 +127,7 @@ p {
     @media screen and (min-width: $screen-xs-min) {
       margin-bottom: 1.333rem;
     }
+     /* this class is deprecated and replace by .reduce-top-margin defined below */
     &.no-margin {
       margin: 0;
     }
@@ -135,6 +137,7 @@ p {
     @media screen and (min-width: $screen-sm-min) {
       margin-bottom: 1rem;
     }
+     /* this class is deprecated and replace by .reduce-top-margin defined below */
     &.spotlight {
         margin-bottom: .5rem;
         margin-top: 0;
@@ -142,10 +145,59 @@ p {
       }
     }
   }
-
+   /* this class is deprecated and replace by .reduce-top-margin defined below */
   h3.subheadline {
     @extend .h3-subheadline 
   }
+/* new reduce-top-margin class */
+  .reduce-top-margin {
+    margin-top: 0;  
+  }
+  
+  h2.reduce-top-margin {
+    margin-bottom: 1.333rem;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  h3.reduce-top-margin {
+    margin-bottom: .7rem;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: .5rem;
+    }
+  }
+
+  h4.reduce-top-margin {
+    margin-bottom: .5rem;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: .3rem;
+    }
+  }
+
+  h5.reduce-top-margin {
+    margin-bottom: .3rem;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: .3rem;
+    }
+  }
+
+  h6.reduce-top-margin {
+    margin-bottom: .3rem;
+    @media screen and (min-width: $screen-sm-min) {
+       margin-top: 0;
+      margin-bottom: .3rem;
+    }
+  }
+
+  div.reduce-top-margin {
+     margin-bottom: 0;
+  }
+
+  p.reduce-top-margin {
+     margin-bottom: .3rem;
+  }
+
 
   .row {
     margin-bottom: 1.25rem;
