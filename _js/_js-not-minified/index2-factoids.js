@@ -1,13 +1,17 @@
 //index2-factoids.js
             
-            $( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
-            $( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
-            $( '#second_rep_row_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
-            $( '#second_rep_row_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( "aria-hidden", "true" );
+            //To enable scrolling, clone the factoids row and put one before and after the original. Add attributes for accessibility. On the local development, this script is contained at the bottom of the index page. 
+
+            //first row
+            $( '#first_rep_row_original_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"first-reputations-row-prepend" });
+            $( '#first_rep_row_original_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"first-reputations-row-append" });
+            //second row
+            $( '#second_rep_row_original_original' ).clone().appendTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"second-reputations-row-prepend" });
+            $( '#second_rep_row_original_original' ).clone().prependTo( '#reputations_outcomes .second-reputations-row .row-inner' ).attr( { "aria-hidden":"true", "id":"second-reputations-row-append" });
 
             
             $('.first-reputations-row .row-inner').width(0);
-            $('.first-reputations-row #first_rep_row_original div').each(function(i){
+            $('.first-reputations-row .first_rep_row_original div').each(function(i){
                 var additionalWidth = $(this).width();
                 $('.first-reputations-row .row-inner').width( $('.first-reputations-row .row-inner').width() + additionalWidth );
             });
@@ -15,7 +19,7 @@
             $('.first-reputations-row .row-inner').css('left','-750px');
             
             $('.second-reputations-row .row-inner').width(0);
-            $('.second-reputations-row #second_rep_row_original div').each(function(i){
+            $('.second-reputations-row .second_rep_row_original div').each(function(i){
                 var additionalWidth = $(this).width();
                 $('.second-reputations-row .row-inner').width( $('.second-reputations-row .row-inner').width() + additionalWidth );
             });
