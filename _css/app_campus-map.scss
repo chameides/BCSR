@@ -31,10 +31,12 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
     position: static;
     width: 100%;
   }
-  h4.nav-head {
+  //changed h4.nav-head to h1.nav-head for accessibility standards, added margin bottom: 0.25em to override .page-container style
+  h1.nav-head {
     font-size: 0.833333em;
     color: #fff;
     margin-top: 0;
+    margin-bottom: 0.25em;
     @media screen and (max-width:$screen-xs-max) {
       margin-top: 0.5em;
     }
@@ -87,7 +89,8 @@ body.no-mobile-nav nav#mainnav .section-nav.initial {
       max-height:150px;
     }
   }
-  h4 {
+  //changing h4 to h1 for accessibility standards
+  h1 {
     font-size: 1.6em;
     line-height: 1.2em;
     margin-bottom: 0.25em;

@@ -28,7 +28,8 @@
 
         <!-- ====== this div will hold the select box ==== -->
         <div class="map-navigation">
-          <h4 class="nav-head">Simon’s Rock Campus Map</h4>
+          <!--<h4 class="nav-head">Simon’s Rock Campus Map</h4> changed h4 to h1, kept styling, for accessibility standards -->
+          <h1 class="nav-head">Simon’s Rock Campus Map</h1>
           <div id="selection">Loading map...</div>
         </div>
 
