@@ -81,16 +81,23 @@
   border-bottom: 1px solid $modal-header-border-color;
   min-height: ($modal-title-padding + $modal-title-line-height);
 }
+  
+    
 // Close icon
 .modal-header .close {
   margin-top: -2px;
 }
 
-// Title text within header
+// Title text within header (added h1 style for accessibility in color #fff)
 .modal-title {
   margin: 0;
   line-height: $modal-title-line-height;
+  font-size: 2.4rem;
+}  
+h1.modal-title {
+  color: #ffffff;
 }
+
 
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)

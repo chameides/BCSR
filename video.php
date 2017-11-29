@@ -15,7 +15,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <a href="/" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="enlarge">&times;</span><br/><span class="reduce">Back</span></span></a>
-          <h4 class="modal-title">College. Now. Why wait?</h4>
+          <h1 class="modal-title">College. Now. Why wait?</h1>
         </div>
         <div class="modal-body">
           <iframe width="1280" height="720" src="https://www.youtube.com/embed/HMufScThPn8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
