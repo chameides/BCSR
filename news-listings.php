@@ -62,8 +62,10 @@
           <div class="news-listings">
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/300/cats/" class="image-news" alt="alt copy goes here"></a>
-              <a class="link-news-header" href="#"><h3 class="squeeze">Rockers, Roommates, Best Friends and Fulbright Scholars</h3></a>
+              <!-- old link styles <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/300/cats/" class="image-news" alt="alt copy goes here"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">Rockers, Roommates, Best Friends and Fulbright Scholars</h3></a> -->
+              <!-- Comibined Text and Image links for accessibility -->
+              <a class="link-news-header" href="#"><img class="image-news" src="http://lorempixel.com/400/300/cats/" alt=""/><h3 class="squeeze">    Rockers, Rommates, Best Friends, and Fullbright Scholars</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
               <div class="news-content-container"> 
                 <div class="news-content">
@@ -77,8 +79,10 @@
             <!-- Article End -->        
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news" alt="#"></a>
-              <a class="link-news-header" href="#"><h3 class="squeeze">Simon's Rock Loses Beloved Dance Professor Wendy Shifrin</h3></a>
+              <!-- old link styles <a class="link-news-image" href="#"><img src="_images/placeholder.gif" class="image-news" alt="#"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">Simon's Rock Loses Beloved Dance Professor Wendy Shifrin</h3></a> -->
+              <!-- Comibined Text and Image links for accessibility -->
+              <a class="link-news-header" href="#"><img class="image-news" src="_images/placeholder.gif" alt=""/><h3 class="squeeze">Simon's Rock Loses Beloved Dance Professor Wendy Shifrin</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">March 16, 2015</h5></a>
               <div class="news-content-container"> 
                 <div class="news-content">
@@ -92,8 +96,10 @@
             <!-- Article End -->
             <!-- Article Start -->
             <div class="news-article">
-              <a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news" alt="alt copy goes here2"></a>
-              <a class="link-news-header" href="#"><h3 class="squeeze">H3 Article Title</h3></a>
+              <!-- old link styles<a class="link-news-image" href="#"><img src="http://lorempixel.com/400/200/cats/" class="image-news" alt="alt copy goes here2"></a>
+              <a class="link-news-header" href="#"><h3 class="squeeze">H3 Article Title</h3></a> -->
+              <!-- Comibined Text and Image links for accessibility -->
+              <a class="link-news-header" href="#"><img class="image-news" src="http://lorempixel.com/400/200/cats/" alt=""/><h3 class="squeeze">H3 Article Title</h3></a>
               <a class="link-news-header" href="#"><h5 class="squeeze">Date</h5></a>
               <div class="news-content-container"> 
                 <div class="news-content">
