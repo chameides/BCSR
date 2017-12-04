@@ -60,7 +60,7 @@ else {
  
 
   echo "<div class=\"row\">".$imageWrapper."
-        <a id=\"expander-close\" href=\"#close\"><i class=\"fa fa-times\"></i></a>
+        <a id=\"expander-close\" href=\"#close\"><i class=\"fa fa-times\" aria-hidden=\"true\" title=\"Close\"><span class=\"sr-only\">Close</span></i></a>
         <h2>".$name."</h2>
         <p>".$intro."</p>
         <a href=\"".$link."\" class=\"btn btn-primary\">Learn More</a>
