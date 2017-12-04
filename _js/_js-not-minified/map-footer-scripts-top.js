@@ -110,7 +110,7 @@ function placeMarker(map, location, infowindow){
       if (this.description){
         infoContent += "<p>" + this.description + "</p>\n";
       }
-      infoContent += "<h4 class='read-more'><a href='"+this.linkhref+"'><i class='fa fa-angle-right'></i> READ MORE</a></h4>\n";
+      infoContent += "<h4 class='read-more'><a href='"+this.linkhref+"'><i class='fa fa-angle-right' aria-hidden='true'></i> READ MORE</a></h4>\n";
       infoContent += "</div>\n";
       infowindow.setContent(infoContent);
       infowindow.open(map, this);
