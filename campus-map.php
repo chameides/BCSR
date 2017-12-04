@@ -45,7 +45,7 @@
 
     <script>
 
-<?php include '_js/_js-not-minified/map-footer-scripts-top.js'; ?>
+<?php include '_js/map-footer-scripts-top.js'; ?>
 
 
 var locations = [

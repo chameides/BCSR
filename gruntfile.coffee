@@ -104,6 +104,7 @@ module.exports = (grunt) ->
           {src: '_js/_js-not-minified/app/app-cec-combined.js', dest: '_js/app-cec.js'},
           {src: '_js/_js-not-minified/index-concat.js', dest: '_js/index-contact.js'},
           {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
+          {src: '_js/_js-not-minified/map-footer-scripts-top.js', dest: '_js/map-footer-scripts-top.js'},
           {src: '_js/_js-not-minified/factoids-scroll1.js', dest: '_js/factoids.min.js'},
         ],
       }
