@@ -956,17 +956,14 @@ body#home, .section-full-screen-wrapper {
 	}
 }
 
-
-.rocker-link, 
+.video-pause, //play pause controls on hero video
+.rocker-link,  //play or link button on profile slider
 .vjs-default-skin .vjs-big-play-button, 
 a.rocker-link /*make icon white even if link*/ {
-	width:80px;
-	height:80px;
 	text-align:center;
 	color:$white;
 	border-radius:100px;
 	background-color:$dark-gray;
-	font-size:4.5rem;
 	display:block;
 	margin:0 auto;
 	padding-left:$padding-large;
@@ -995,6 +992,24 @@ a.rocker-link /*make icon white even if link*/ {
 		}
 	}
 }
+
+.rocker-link, 
+.vjs-default-skin .vjs-big-play-button, 
+a.rocker-link /*make icon white even if link*/ {
+	width:80px;
+	height:80px;
+	font-size:4.5rem;
+}
+
+//.video-pause is smaller variant of .rocker-link
+.video-pause {
+	width: 40px; //size of circle
+  height: 40px;
+  font-size: 1.6rem; //size of play/pause button
+  padding: 0;
+	line-height: 44px; //align vertically
+}
+
 
 .playbutton, 
 .vjs-default-skin .vjs-big-play-button, 

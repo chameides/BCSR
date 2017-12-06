@@ -957,6 +957,20 @@ body#why .side-nav-mobile,
     }
   }
 }
+
+#hero-video-controls {
+  //position controls at bottom right
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2; //make sure it sits higher than page-hero and section-nav
+  //since video does not appear on small screens, do not display controls on small screens
+  @media (max-width: $screen-sm-min) {
+    display: none;
+  }
+  //button is styled with class .video-pause in app_home
+}
+
 .hero-title,
 .hero-text {
   color: $white;
