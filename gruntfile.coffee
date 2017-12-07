@@ -74,6 +74,13 @@ module.exports = (grunt) ->
           ]
         dest: 
           '_js/_js-not-minified/index-concat.js'
+      background_video:  
+        src: [
+          '_js/_js-not-minified/backgroundVideo.mod.js',
+          '_js/_js-not-minified/backgroundVideoControls.js',
+          ]
+        dest: 
+          '_js/_js-not-minified/backgroundVideoCombined.js'
       factoids:  
         src: [
           '_js/scrollmagic/jquery.scrollmagic.js',
@@ -105,6 +112,7 @@ module.exports = (grunt) ->
           {src: '_js/_js-not-minified/index-concat.js', dest: '_js/index-contact.js'},
           {src: '_js/_js-not-minified/app-sync.js', dest: '_js/app-sync.js'},
           {src: '_js/_js-not-minified/map-footer-scripts-top.js', dest: '_js/map-footer-scripts-top.js'},
+           {src: '_js/_js-not-minified/backgroundVideoCombined.js', dest: '_js/backgroundVideoCombined.js'},
           {src: '_js/_js-not-minified/factoids-scroll1.js', dest: '_js/factoids.min.js'},
         ],
       }
