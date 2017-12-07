@@ -64,6 +64,7 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/polyfill.js'
       index_bcsr:  
         src: [
+          '_js/_js-not-minified/backgroundVideoControlsIndex.js',
           '_js/_js-not-minified/index1.js',
           '_js/_js-not-minified/index2-factoids.js',
           '_js/_js-not-minified/index3.js',
