@@ -965,9 +965,21 @@ body#why .side-nav-mobile,
   right: 1em;
   z-index: 2; //make sure it sits higher than page-hero and section-nav
   //since video does not appear on small screens, do not display controls on small screens
+  //hide buttons by default and start on play;
+  #play, 
+  #stop {
+    display: none;
+  }
   @media (max-width: $screen-sm-min) {
     display: none;
   }
+  //ensure controls appear on screen 
+  #intro_vidbg & {
+    @media (max-height: 708px) {
+      top: 90vh;
+    }
+  }
+
   //button is styled with class .video-pause in app_home
 }
 

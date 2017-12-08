@@ -9,8 +9,6 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
         });
         */
         
-        $( document ).ready(function() {
-        
             //console.log('doc ready');
             
             function squidgevid() {
@@ -24,6 +22,7 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
                 $('#introduction').animate({opacity:1},750,function(){
                     //console.log('faded in');
                     $('video').get(0).play();
+                    $('#stop').show();
                 });
                 setTimeout(function(){ 
                     $('#introduction video').fadeTo('slow', 0.5); 
@@ -33,9 +32,10 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
             squidgevid();
             
 
+            /*modals have been removed
             $('#introVideoModal').on('hidden.bs.modal', function (e) {
                 $('#introduction video').get(0).play();
             });
             $('#introVideoModal').on('show.bs.modal', function (e) {
                 $('#introduction video').get(0).pause();
-            });
+            });*/

@@ -37,9 +37,9 @@
 	
 		<div id="intro_vidbg" class="container vidbg">
 			<div id="hero-video-controls">
-              <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
-              <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
-            </div>
+        <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+        <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+      </div>
 		  <video id="intro_background_video" class="video-js vjs-default-skin background-video" loop="loop" preload="auto" muted="muted" width="640" height="264" poster="/_images/video/homepage-hero-background.jpg" data-setup="{}">
 			<source src="/_images/video/homepage-hero-background.mp4" type='video/mp4' />
 			<source src="/_images/video/homepage-hero-background.webm" type='video/webm' />
@@ -519,26 +519,23 @@
 	<script>
 
 		//video pause/play controls for autoplay video
-
+		//backgroundvideocontrolsindex
 $(document).ready(function() {
   var videoElement = document.getElementById('intro_background_video');
-  //hide play by default
-  $('#play').hide();
 
   //click play to start video and toggle button display
   $('#play').click(function() {
     $('#play').hide();
     $('#stop').show();
-    videoElement.play();
+    $('#introduction video').get(0).play();
   });
 
   //click stop to stop video and toggle button display
   $('#stop').click(function() {
     $('#play').show();
     $('#stop').hide();
-    videoElement.pause();
+    $('#introduction video').get(0).pause();
   });
-});
 
 		/*
 		$( window ).load(function() {
@@ -546,10 +543,8 @@ $(document).ready(function() {
 		});
 		*/
 		
-		$( document ).ready(function() {
-		
 			//console.log('doc ready');
-			
+			//index1
 			function squidgevid() {
 				var windwidth = $('#intro_vidbg').width();
 				var vidwidth = $('#intro_background_video').width();
@@ -561,6 +556,7 @@ $(document).ready(function() {
 				$('#introduction').animate({opacity:1},750,function(){
 					//console.log('faded in');
 					$('video').get(0).play();
+					$('#stop').show();
 				});
 				setTimeout(function(){ 
 					$('#introduction video').fadeTo('slow', 0.5); 
@@ -568,14 +564,13 @@ $(document).ready(function() {
 				
 			}
 			squidgevid();
-			
 
-			$('#introVideoModal').on('hidden.bs.modal', function (e) {
+			/*$('#introVideoModal').on('hidden.bs.modal', function (e) {
 				$('#introduction video').get(0).play();
 			});
 			$('#introVideoModal').on('show.bs.modal', function (e) {
 				$('#introduction video').get(0).pause();
-			});
+			});*/
 			
 			$( '#first_rep_row_original' ).clone().appendTo( '#reputations_outcomes .first-reputations-row .row-inner' );
 			$( '#first_rep_row_original' ).clone().prependTo( '#reputations_outcomes .first-reputations-row .row-inner' );

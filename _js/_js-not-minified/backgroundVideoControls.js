@@ -1,10 +1,11 @@
 //video pause/play controls for autoplay video
 
+var videoElement = document.getElementById('hero-video');
+  //show play, on play
+  if (videoElement.play) {
+    $('#stop').show();
+  }
 $(document).ready(function() {
-  var videoElement = document.getElementById('hero-video');
-  //hide play by default
-  $('#play').hide();
-
   //click play to start video and toggle button display
   $('#play').click(function() {
     $('#play').hide();
