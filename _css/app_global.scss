@@ -958,7 +958,8 @@ body#why .side-nav-mobile,
   }
 }
 
-#hero-video-controls {
+#hero-video-controls, 
+#intro-video-controls {
   //position controls at bottom right
   position: absolute;
   bottom: 1em;
@@ -970,17 +971,19 @@ body#why .side-nav-mobile,
   #stop {
     display: none;
   }
-  @media (max-width: $screen-sm-min) {
-    display: none;
-  }
   //ensure controls appear on screen 
-  #intro_vidbg & {
-    @media (max-height: 708px) {
-      top: 90vh;
-    }
-  }
-
   //button is styled with class .video-pause in app_home
+}
+
+#hero-video-controls {
+  @media (max-width: $screen-sm-min) {
+    //display: none;
+  }
+}
+
+
+#intro-video-controls {
+  top: 92vh;
 }
 
 .hero-title,

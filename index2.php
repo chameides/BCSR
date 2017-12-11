@@ -36,7 +36,7 @@
 	-->
 	
 		<div id="intro_vidbg" class="container vidbg">
-			<div id="hero-video-controls">
+			<div id="intro-video-controls">
         <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
         <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
       </div>
