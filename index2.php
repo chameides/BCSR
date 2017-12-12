@@ -554,14 +554,19 @@ $(document).ready(function() {
 				var negativevidoffsetpx = '-' + vidoffset + 'px';
 				$('.vidbg video').css({'marginLeft':negativevidoffsetpx,'left':'50%'});
 				$('#introduction').animate({opacity:1},750,function(){
-					//console.log('faded in');
+					//faded in
 					$('video').get(0).play();
-					$('#stop').show();
+					if ($("video").get(0).paused){
+						//video is paused (iPhone)
+					}
+					else {
+						//video is not paused, display stop button
+						$('#stop').show();
+					}
 				});
 				setTimeout(function(){ 
 					$('#introduction video').fadeTo('slow', 0.5); 
 				}, 3000);
-				
 			}
 			squidgevid();
 
@@ -987,6 +992,8 @@ $(document).ready(function() {
 						))
 					.addTo(controller);
 			}
+
+
 			
 
 			
@@ -1001,6 +1008,11 @@ $(document).ready(function() {
 	</script>
 
     
+  <script>
+  	if ($(".vjs-playing")[0]){
+      alert("yes vjs-playing");
+    }
+  </script>
 
   </body>
 </html>
