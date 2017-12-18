@@ -556,7 +556,7 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
       position: relative;
       top: auto;
       left: auto;
-      float: auto;
+      //float: auto; float auto is not a float value
       width: 190px;
     }
     @media screen and (max-width: $screen-xs-max) { 
@@ -933,7 +933,7 @@ body#why .side-nav-mobile,
       margin-top: 1rem;
     }
     @media screen and (min-width: $screen-lg-min) {
-      margin-top: 3rem auto;
+      margin-top: 3rem;
       padding: 0 4.5em;
     }
   }
