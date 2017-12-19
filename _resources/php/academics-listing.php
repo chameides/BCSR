@@ -1,4 +1,3 @@
-
 <?php
 	//set this up!
 	date_default_timezone_set('America/New_York');
@@ -44,15 +43,29 @@ function expandedContent() {
 	$imgAlt = $sortable[$id]->image->img->attributes()->alt;
 	$intro = $sortable[$id]->intro;
 	$link = $sortable[$id]->attributes()->href;
-	echo "<div class=\"row\">
-		<div class=\"col-xs-3 col-sm-6 col-md-6\"><img src=\"".$img."\" alt=\"".$imgAlt."\"></div>
-			<div class=\"col-xs-9 col-sm-6 col-md-6\">
-				<a id=\"expander-close\" href=\"#close\"><i class=\"fa fa-times\"></i></a>
-				<h2>".$name."</h2>
-				<p>".$intro."</p>
-				<a href=\"".$link."\" class=\"btn btn-primary\">Learn More</a>
-			</div>
-		</div>";
+//if image exists. Dependency scanner fills in a blank field with dummy data. So look if image exists that doesn't equal dummy data. 
+if ((strlen($img)>1) && ($img != "/academics/program-overview/")) {
+	$imageWrapper = "
+		<div class=\"col-xs-3 col-sm-6 col-md-6\">
+			<img src=\" ".$img."\" alt=\" ". $imgAlt  ." \"/>
+		</div>
+		<div class=\"col-xs-9 col-sm-6 col-md-6\">";
+}
+//else, no image
+else {
+	$imageWrapper = "<div class=\"col-xs-0\"></div>
+	<div class=\"col-xs-12\">";
+}
+
+ 
+
+  echo "<div class=\"row\">".$imageWrapper."
+        <a id=\"expander-close\" href=\"#close\"><i class=\"fa fa-times\" aria-hidden=\"true\" title=\"Close\"><span class=\"sr-only\">Close</span></i></a>
+        <h2>".$name."</h2>
+        <p>".$intro."</p>
+        <a href=\"".$link."\" class=\"btn btn-primary\">Learn More</a>
+      </div>
+    </div>";
 }
 
 //academics.php is first loaded

@@ -38,7 +38,7 @@
                 }
             }
             if($location != ""){
-                echo '<span class="location"><i class="fa fa-map-marker"></i>&nbsp;'.$location.'</span>';
+                echo '<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;'.$location.'</span>';
             }
             echo '</div><p>'.$description.'</p></a>';
             /** Adding next guid to the guid Check array */
