@@ -53,12 +53,11 @@ a.list-group-item {
     color: $dark-gray;
   }
 
-  // Hover state
-  &:hover,
+  // Focus state, used to contain hover state, but hover is overridden elsewhere
   &:focus {
     text-decoration: none;
-    color: $dark-gray;
-    background-color: $list-group-hover-bg;
+    color: $brand-primary;
+    background-color: $list-group-hover-bg; //aka #fff
   }
 }
 

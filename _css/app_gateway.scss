@@ -12,10 +12,11 @@ a.image-thumb {
 
 
 
-// images get darker on hover
-a.image-thumb:hover{
+// images get darker on hover and focus
+a.image-thumb:hover, 
+a.image-thumb:focus {
   img {
-    opacity: .8;
+    opacity: 0.5;
   }
 }
 

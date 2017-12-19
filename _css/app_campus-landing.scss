@@ -100,7 +100,8 @@
 			color: $white;
 			display: block;
 			padding: 7px 15px;
-			&:hover {
+			&:hover,
+			&:focus {
 				color: $white;
 				text-decoration: none;
 				background: $red;

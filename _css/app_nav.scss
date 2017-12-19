@@ -152,6 +152,10 @@ nav#mainnav {
 		}
 		transition-property:top;
 		transition-duration:0.5s;
+		//the logo focus link border style can be found in _navbar.scss lines 175-185
+		&:focus {
+			background-size:378px;
+			}
 		&.initial {
 			z-index:2;
 			position:absolute;
@@ -160,6 +164,9 @@ nav#mainnav {
 			transition-duration:0.5s;
 			body.no-mobile-nav & {
 				display:none;
+			}
+			&:focus {
+			background-size:350px;
 			}
 		}
 		@media (min-width: $screen-md-min) {	
@@ -353,7 +360,8 @@ nav#mainnav {
 					padding-top:    $navbar-super-padding-vertical;
 					padding-bottom: $navbar-super-padding-vertical;
 					border-width:0;
-					&:hover {
+					&:hover,
+					&:focus {
 						color:$white;
 						background-color:$red;
 					}
@@ -432,6 +440,7 @@ nav#mainnav {
 			a,button.btn-link {
 				color:$white;
 			}
+			
 		} 
 		@media (min-width: $screen-md-min) {
 			transition-property: top, background-color;
@@ -479,7 +488,8 @@ nav#mainnav {
 				@if $cec {
 					height: 45px; //set height to be the same for text and icons
 				}
-				&:hover {
+				&:hover,
+				&:focus {
 					color:$white;
 					background-color:$red;
 				}
@@ -576,6 +586,10 @@ nav#mainnav {
 	.section-nav.initial {
 		a,button.btn-link {
 			&:hover {
+				background-color:$dark-gray;
+			}
+			&:focus {
+				color:#449F9F	;
 				background-color:$dark-gray;
 			}
 		}

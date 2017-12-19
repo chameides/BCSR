@@ -169,10 +169,24 @@
   line-height: $line-height-computed;
   height: $navbar-height;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
+    }
+  //the logo focus link style that resizes the logo can be found in app_nav.scss lines 155-170
+  &:focus {
+    border: 5px solid rgba(190, 33, 38, 0.8);
+    border-radius: 3px;   
   }
+  &.initial {
+    &:focus {
+    border: 5px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    outline: 2px solid rgba(190, 33, 38, 0.8);
+    outline-offset: 1px;
+    }
+  }
+
+
 
   > img {
     display: block;

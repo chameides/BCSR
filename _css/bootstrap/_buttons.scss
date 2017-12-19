@@ -193,16 +193,20 @@ input[type="button"] {
       width: 100%;
       margin-bottom: 1%;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #5cb7b7;
       color: white;
       border-color: #ccc;
     }
   }
-  .btn-active, 
-  .btn-active:hover {
+  .btn-active {
     cursor: default;
-  }
+    }
+  .btn-active:hover, .btn-active:focus {
+    cursor: default;
+    color: #333;
+    }
 }
 
 

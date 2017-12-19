@@ -75,6 +75,11 @@ footer#globalfooter {
 			&:hover {
 				text-decoration:none;
 			}
+  			&:focus {
+    			border: 5px solid rgba(255,255,255,0.7);
+    			border-radius: 3px;
+    			background-size: 160px; 
+  			}
 		}
 	}
 	@if $cec {
@@ -113,7 +118,8 @@ footer#globalfooter {
 				font-size:2.25rem;
 				transition:color 0.25s;
 			}
-			&:hover {
+			&:hover,
+			&:focus {
 				background-color:$red;
 				text-decoration:none;
 				.fa {

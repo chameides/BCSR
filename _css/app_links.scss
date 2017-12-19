@@ -10,12 +10,12 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active, ol.crumb a:hover, ol.crumb a:active {
+a:hover, a:active, a:focus, ol.crumb a:hover, ol.crumb a:active {
 	color:$red;
 	text-decoration:underline;
 }
 
-footer#globalfooter a:hover, footer#globalfooter a:active, #updates_list_wrapper a:hover, #updates_list_wrapper a:active {
+footer#globalfooter a:hover, footer#globalfooter a:focus, footer#globalfooter a:active, #updates_list_wrapper a:hover, #updates_list_wrapper a:focus, 										#updates_list_wrapper a:active {
 	text-decoration:underline;
 }
 
@@ -32,6 +32,7 @@ a.btn { color:$white; }
 		color:$yellow;
 	}
 }
+
 
 //OU Styles - imported from OU dev team
 a.ou-btn[data-region-style="button"] {
