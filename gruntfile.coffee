@@ -140,10 +140,13 @@ module.exports = (grunt) ->
         options:
           hostname: '127.0.0.1',
           port: 9000,
+          
+          ###
+          customize directory
           base: '/Users/mchameides/Documents/web/BCSR'
+          base: '/Users/jfrederick/Documents/GitHub/BCSR'
           ###
-          base: '/Users/kc2/Documents/Portfolio/BCSR/'
-          ###
+          base: '/Users/jfrederick/Documents/GitHub/BCSR'
           keepalive: false,
           open: false
 
