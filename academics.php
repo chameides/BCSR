@@ -32,6 +32,12 @@
       <div class="row-full-width full-row-with-video">
 
         <div class="page-hero-container page-hero-with-video hero-with-nav">
+           <!-- add video controls, font-awesome icons -->
+            <div id="hero-video-controls">
+              <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+              <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+            </div>
+            <!-- end of added HTML-->
           <div class="page-hero text-center">
             <h1 class="hero-title">Bringing Your Passions Into Focus</h1>
             <p class="hero-text">The subject areas you see here are the intellectual foundation for our 40 interdisciplinary majors—more than many conventional colleges offer.</p>
@@ -651,8 +657,7 @@
 
   <script type="text/javascript" src="/_js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
-  <script type="text/javascript" src="/_js/backgroundVideo.mod.js"></script>
-
+  <script type="text/javascript" src="_js/backgroundVideoCombined.js"></script>
   <script>
 	
 	

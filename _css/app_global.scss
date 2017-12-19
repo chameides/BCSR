@@ -556,7 +556,7 @@ $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
       position: relative;
       top: auto;
       left: auto;
-      float: auto;
+      //float: auto; float auto is not a float value
       width: 190px;
     }
     @media screen and (max-width: $screen-xs-max) { 
@@ -933,7 +933,7 @@ body#why .side-nav-mobile,
       margin-top: 1rem;
     }
     @media screen and (min-width: $screen-lg-min) {
-      margin-top: 3rem auto;
+      margin-top: 3rem;
       padding: 0 4.5em;
     }
   }
@@ -957,6 +957,35 @@ body#why .side-nav-mobile,
     }
   }
 }
+
+#hero-video-controls, 
+#intro-video-controls {
+  //position controls at bottom right
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2; //make sure it sits higher than page-hero and section-nav
+  //since video does not appear on small screens, do not display controls on small screens
+  //hide buttons by default and start on play;
+  #play, 
+  #stop {
+    display: none;
+  }
+  //ensure controls appear on screen 
+  //button is styled with class .video-pause in app_home
+}
+
+#hero-video-controls {
+  @media (max-width: $screen-sm-min) {
+    //display: none;
+  }
+}
+
+
+#intro-video-controls {
+  top: 92vh;
+}
+
 .hero-title,
 .hero-text {
   color: $white;

@@ -14,8 +14,10 @@ $('.side-nav-mobile a.active, .side-nav a.active').click(function(e){
 	e.preventDefault();
 });
 
-if (Modernizr.touch){ 
+if (Modernizr.touch){
+	//hide hero video and play/pause controls on phone and tablet 
 	$('#hero-video-container video').hide();
+	$('#hero-video-controls').hide();
 }
 
 

@@ -9,8 +9,6 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
         });
         */
         
-        $( document ).ready(function() {
-        
             //console.log('doc ready');
             
             function squidgevid() {
@@ -22,20 +20,27 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
                 var negativevidoffsetpx = '-' + vidoffset + 'px';
                 $('.vidbg video').css({'marginLeft':negativevidoffsetpx,'left':'50%'});
                 $('#introduction').animate({opacity:1},750,function(){
-                    //console.log('faded in');
+                    //faded in
                     $('video').get(0).play();
+                    if ($("video").get(0).paused){
+                        //video is paused (iPhone)
+                    }
+                    else {
+                        //video is not paused, display stop button
+                        $('#stop').show();
+                    }
                 });
                 setTimeout(function(){ 
                     $('#introduction video').fadeTo('slow', 0.5); 
                 }, 3000);
-                
             }
             squidgevid();
             
 
+            /*modals have been removed
             $('#introVideoModal').on('hidden.bs.modal', function (e) {
                 $('#introduction video').get(0).play();
             });
             $('#introVideoModal').on('show.bs.modal', function (e) {
                 $('#introduction video').get(0).pause();
-            });
+            });*/
