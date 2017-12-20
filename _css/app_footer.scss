@@ -75,11 +75,12 @@ footer#globalfooter {
 			&:hover {
 				text-decoration:none;
 			}
-  			&:focus {
-    			border: 5px solid rgba(255,255,255,0.7);
-    			border-radius: 3px;
-    			background-size: 160px; 
-  			}
+			//outline image
+			&:focus {
+  			box-shadow: 
+  				1px 0px 0px 10px black, 
+  				1px 0px 0px 12px rgba(255,255,255,0.7);
+			}
 		}
 	}
 	@if $cec {
