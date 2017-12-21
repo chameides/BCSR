@@ -107,7 +107,7 @@ nav#mainnav {
 		@else {
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position: center 15px;
-			height: 100px;
+			height: 100px; //not tablet logo
 			background-size: 250px auto;
 		}
 		background-repeat:no-repeat;		
@@ -133,20 +133,17 @@ nav#mainnav {
 			background-size:225px auto;
 		}
 		@else {
-			height:100px;
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position:center 15px;
 			background-size:250px auto;
 		}
 		background-repeat:no-repeat;
-		
 		position:absolute;
 		z-index:2;
 		top:-110px;
 		left:0px;
 		right:0px;
 		margin:auto;
-		background-color:$red;
 		body.has-hero & {
 			background-color:transparent;
 		}
@@ -193,7 +190,7 @@ nav#mainnav {
 				@else {
 					width:242px;	
 				}
-				height:104px;
+				height:106px; //set logo size and spacing for box-shadow on hover
 				background-size:390px auto;
 				@if $cec {
 					background-position: 0px -8px;
@@ -635,6 +632,22 @@ nav#mainnav {
 	}
 }
 
+
+@media (max-width: $screen-md-max) {
+	@if $cec {
+	}
+	@else {
+		.navbar-brand {
+			body.has-hero & {
+				height: 85px; //match width height of logo so focus looks
+				width: 170px; //match to width of logo so focus looks ok
+			}
+		}
+	}	
+}
+
+
+
 //Gatekeeper pages have a simple centered logo instead of a full nav
 .navbar-brand-default {
 	margin: 0 auto;
@@ -661,7 +674,6 @@ nav#mainnav {
 	padding: $padding-large-vertical 0;
 }
 
-
 @media (max-width: $screen-sm-max) {
 	.navbar-brand {
 		@if $cec {
@@ -671,7 +683,7 @@ nav#mainnav {
 			background-size:225px auto;
 		}
 		@else {
-			height:100px;
+			height: 100px; //not tablet
 			background-image:url(/_images/bcsr-logo-sprite.png);
 			background-position:center 15px;
 			background-size:250px auto;
@@ -702,6 +714,7 @@ nav#mainnav {
 		}
 	}
 }
+
 body.no-mobile-nav .section-nav .initial {
 	height:44px;
 }

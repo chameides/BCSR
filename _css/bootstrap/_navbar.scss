@@ -168,35 +168,40 @@
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
-
   &:hover {
     text-decoration: none;
     }
   //the logo focus link style that resizes the logo can be found in app_nav.scss lines 155-170
-  &:focus{
+  &:focus, 
+  &:hover {
     //horizontal logo with white background
     box-shadow: 
       inset 0px -4px 0px 0px white,
       inset 0px -6px 0px 0px $red;
   }
-
-  //stacked logo on load, 
+  //stacked logo on load 
   &.initial {
-    &:focus {
+    &:focus, 
+    &:hover {
       //red background
       box-shadow: 
         0px 5px 0px 0px $red,
         0px 7px 0px 0px white;
+      @media (max-width: $screen-sm-max) {
+        box-shadow: none; //overwrite
+        background-color: $medium-gray;
+        transition-property:background-color;
+        transition-duration:.5s;
+        body.has-hero & {
+          background-color: transparent; //overwrite for hero
+        }
+      }
       //transparent background, with video or image background
       body.has-hero & {
-        box-shadow: 
-        0px 5px 0px 0px black,
-        0px 7px 0px 0px white;
+        box-shadow: 0px 3px 0px 0px white;
       }
     }
   }
-
-
 
   > img {
     display: block;
@@ -423,13 +428,12 @@
 
 // Default navbar
 .navbar-default {
-
+  
   .navbar-brand {
     color: $navbar-default-brand-color;
     &:hover,
     &:focus {
       color: $navbar-default-brand-hover-color;
-      background-color: $navbar-default-brand-hover-bg;
     }
   }
 
