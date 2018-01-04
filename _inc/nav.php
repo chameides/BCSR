@@ -115,15 +115,15 @@
 								<div class="container">
 									<div class="col-md-9">
 										<ul class="clearfix" role="menu">
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock">Why Simon's Rock</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_TheAcademicExperience">The Academic Experience</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_ReputationsAndOutcomes">Reputation and Outcomes</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_OurStudents">Our Students</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_TheBardNetwork">The Bard Network</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_TheEarlyCollegeFAQs">The Early College FAQs</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_ContactUs">Contact Us</a></li>
+											<li class="col-md-4"><a href="#1" id="PrimaryNav_WhySimonsRock">Why Simon's Rock</a></li>
+											<li class="col-md-4"><a href="#2" id="PrimaryNav_WhySimonsRock_TheAcademicExperience">The Academic Experience</a></li>
+											<li class="col-md-4"><a href="#3" id="PrimaryNav_WhySimonsRock_ReputationsAndOutcomes">Reputation and Outcomes</a></li>
+											<li class="col-md-4"><a href="#4" id="PrimaryNav_WhySimonsRock_OurStudents">Our Students</a></li>
+											<li class="col-md-4"><a href="#5" id="PrimaryNav_WhySimonsRock_TheBardNetwork">The Bard Network</a></li>
+											<li class="col-md-4"><a href="#6" id="PrimaryNav_WhySimonsRock_TheEarlyCollegeFAQs">The Early College FAQs</a></li>
+											<li class="col-md-4"><a href="#7" id="PrimaryNav_WhySimonsRock_ContactUs">Contact Us</a></li>
 										</ul>
-										<a href="#" class="cta" id="PrimaryNav_WhySimonsRock_LearnMore">Ready to Apply? Learn more here.</a>
+										<a href="#8" class="cta" id="PrimaryNav_WhySimonsRock_LearnMore">Ready to Apply? Learn more here.</a>
 									</div>
 									<div class="col-md-3">
 										<img src="http://placehold.it/300x300/e2be00" class="img-responsive" alt="Why Simon's Rock">

@@ -521,7 +521,7 @@ nav#mainnav {
 					width:31%;
 				}
 				a.cta {
-					display:block;
+					//display:block; prevent tabbing to hidden links
 					padding:20px 15px 20px 30px;
 					color:$yellow;
 					@include LeHavre(2.25rem);
@@ -560,7 +560,7 @@ nav#mainnav {
 					border-bottom:solid 1px $medium-gray;
 					margin-right:2%;
 					a {
-						display:block;
+						//display:block; prevent tabbing to hidden links
 						padding:20px 7.5px;						
 						width:100%;
 					}

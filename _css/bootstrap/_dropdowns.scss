@@ -75,13 +75,13 @@
   }
 
   //prevent focus on tabs when menu is hidden
-  .col-md-9 {
+  .col-md-9 a {
     display: none;
   }
 }
 
 //allow focus on tabs when menu is open
-.open .dropdown-menu .col-md-9{
+.open .dropdown-menu .col-md-9 a{
   display: block;
 }
 
