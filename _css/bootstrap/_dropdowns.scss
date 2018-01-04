@@ -50,6 +50,8 @@
   // Aligns the dropdown menu to right
   //
   // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
+  
+
   &.pull-right {
     right: 0;
     left: auto;
@@ -71,6 +73,16 @@
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
+
+  //prevent focus on tabs when menu is hidden
+  .col-md-9 {
+    display: none;
+  }
+}
+
+//allow focus on tabs when menu is open
+.open .dropdown-menu .col-md-9{
+  display: block;
 }
 
 // Hover/Focus state
