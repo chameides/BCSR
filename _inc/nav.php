@@ -54,7 +54,7 @@
 		teros vel volutpat. <a href="#" class="alert-link">Learn More&raquo;</a>
 	</div>
 	<?php } ?>
-	<a class="navbar-brand initial visible-xs-block" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+	<a class="navbar-brand initial visible-xs-block" href="#logo"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
 	<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
       <div class="container-fluid">
       	<div class="container">
@@ -65,7 +65,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand initial hidden-xs" href="#"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
+			  <a class="navbar-brand initial hidden-xs" href="#logo2"><span class="sr-only">Bard College at Simon's Rock: the Early College</span></a>
 			</div>
 		</div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -74,23 +74,23 @@
 				<div id="navbar_l2" class="container">
 					<ul class="nav navbar-nav">
 						<li class="dropdown hidden-xs hidden-sm">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info for <span class="fa fa-caret-down"></span></a>
+						  <a href="#drop" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info for <span class="fa fa-caret-down"></span></a>
 						  <ul class="dropdown-menu" role="menu">
 						  	<!-- First place the "info for" links need to be written: -->
 						
-								<li><a href="#" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
-								<li><a href="#" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
-								<li><a href="#" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
+								<li><a href="#e" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
+								<li><a href="#f" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
+								<li><a href="#g" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
 							
-								<li><a href="#" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
-								<li><a href="#" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
+								<li><a href="#h" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
+								<li><a href="#i" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
 				
 						  </ul>
 						</li>
-						<li><a href="#" id="PrimaryNav_RequestInformation">Request Info</a></li>
-						<li><a href="#about" id="PrimaryNav_AskAStudent">Ask a Student</a></li>
-						<li><a href="#contact" id="PrimaryNav_Visit">Visit</a></li>
-						<li><a href="#" id="PrimaryNav_Apply">Apply</a></li>
+						<li><a class="nav-cta" href="#a" id="PrimaryNav_RequestInformation">Request info</a></li>
+						<li><a class="nav-cta" href="#b" id="PrimaryNav_AskAStudent">Ask a Student</a></li>
+						<li><a class="nav-cta" href="#c" id="PrimaryNav_Visit">Visit</a></li>
+						<li><a class="nav-cta" href="#d" id="PrimaryNav_Apply">Apply</a></li>
 						<!--<li><a href="#about"><i class="fa fa-flip-horizontal fa-search"></i></a></li>-->
 						<li class="nav-search">
 							<form role="search" class="search-form form-inline" id="navsearchform" aria-labelledby="showsearch">
@@ -101,7 +101,7 @@
 								  </span>
 								</div><!-- /input-group -->
 							</form>
-							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>
+							<button class="btn btn-link" id="showsearch" aria-expanded="false"><i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search</span></i></button>	
 						</li>
 					</ul>
 				</div><!--/.container -->
@@ -131,7 +131,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="dropdown">
+						<li class="dropdown" >
 							<a href="#Academics" id="PrimaryNav_Academics" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Academics</a>
 							<div class="dropdown-menu mega-menu">
 								<div class="container">
@@ -156,7 +156,7 @@
 							</div>
 						</li>
 
-						<li class="dropdown">
+						<li class="dropdown" >
 							<a href="#Student" id="PrimaryNav_StudentLife" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Student Life</a>
 							<div class="dropdown-menu mega-menu">
 								<div class="container">
@@ -180,7 +180,7 @@
 							</div>
 						</li>
 
-						<li class="dropdown">
+						<li class="dropdown" >
 							<a href="#Admission" id="PrimaryNav_Admission" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Admission</a>
 							<div class="dropdown-menu mega-menu">
 								<div class="container">
@@ -203,7 +203,7 @@
 							</div>
 						</li>
 
-						<li class="dropdown">
+						<li class="dropdown" >
 							<a href="#Bard" id="PrimaryNav_BardAcademy" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Bard Academy</a>
 							<div class="dropdown-menu mega-menu">
 								<div class="container">
@@ -222,10 +222,10 @@
 									</div>
 								</div>
 							</div>
-						</li>
+						</li>	
 
-						<li class="dropdown">
-							<a href="#Bard" id="PrimaryNav_Giving" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Giving</a>
+						<li class="dropdown" >
+							<a href="#Giving" id="PrimaryNav_Giving" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">Giving</a>
 							<div class="dropdown-menu mega-menu">
 								<div class="container">
 									<div class="col-md-9">
@@ -253,14 +253,14 @@
 				Info for
 				<div class="row">
 					<ul class="col-xs-6 list-unstyled" role="menu">
-						<li><a href="#" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
+						<li></li><a href="#aa" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
+						<li><a href="#bb" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
 					</ul>
 
 					<ul class="col-xs-6 list-unstyled" role="menu">
-						<li><a href="#" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
-						<li><a href="#" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
+						<li><a href="#cc" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
+						<li><a href="#dd" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
+						<li><a href="#ee" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
 					</ul>
 				</div>
 			</div>
