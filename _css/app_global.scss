@@ -1312,7 +1312,7 @@ div.arrow-list-tight-small-wrapper ul {
   li:before {
     font-family: 'FontAwesome';
     content: '\f105';
-    color: $blue;
+    color: $blue-sky;
     margin-left: -30px;
     @media screen and (max-width:$screen-sm-max) {
       margin-left: -19px; //even up indent on small screen
