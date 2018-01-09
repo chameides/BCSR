@@ -13,31 +13,31 @@
   @include transition(background-color, 0.2s, ease-out);
 }
 .social-political {
-	background: $red;
-	&:hover {
-		background: darken( $red, 20% );
-		@include transition(background-color, 0.2s, ease-out);
-	}
-}
-.languages {
-	background: $yellow;
-	&:hover {
-		background: darken( $yellow, 20% );
-		@include transition(background-color, 0.2s, ease-out);
-	}
-
-}
-.performing-arts {
 	background: $orange;
 	&:hover {
 		background: darken( $orange, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
-.science {
-	background: $blue;
+.languages {
+	background: $red;
 	&:hover {
-		background: darken( $blue, 20% );
+		background: darken( $red, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+
+}
+.performing-arts {
+	background: $gray-intermediate;
+	&:hover {
+		background: darken( $gray-intermediate, 20% );
+		@include transition(background-color, 0.2s, ease-out);
+	}
+}
+.science {
+	background: $blue-sky;
+	&:hover {
+		background: darken( $blue-sky, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
