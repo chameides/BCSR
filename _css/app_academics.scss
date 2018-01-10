@@ -122,8 +122,7 @@ label.filter-text {
   padding-left: $padding-large;
 }
 // Custom Checkbox 
-#academics_page input[type=checkbox]:not(old),
-#academics_page input[type=radio   ]:not(old) {
+#academics_page input[type=checkbox]:not(old) {
    width     : 28px;
    margin    : 0;
    padding   : 0;
@@ -131,16 +130,14 @@ label.filter-text {
    opacity   : 0;
    // margin-left: -30px;
 }
-#academics_page input[type=checkbox]:not(old) + label,
-#academics_page input[type=radio   ]:not(old) + label {
+#academics_page input[type=checkbox]:not(old) + label {
     // font-size: 1.6rem;
     display: inline-block;
     margin-left: -28px;
     line-height: 36px;
     // font-weight: normal;
 }
-#academics_page input[type=checkbox]:not(old) + label > span,
-#academics_page input[type=radio   ]:not(old) + label > span {
+#academics_page input[type=checkbox]:not(old) + label > span {
     display          : inline-block;
     width            : 21px;
     height           : 21px;
