@@ -1471,7 +1471,7 @@ ol.circle-list > li {
 ol.circle-list > li:before {
   @include LeHavre(12px);
   letter-spacing: -0.08em;
-  background-color: #5cb7b7;
+  background-color: $blue-sky;
   border-radius: 50%;
   color: #ffffff;
   padding: 1px;
