@@ -5,6 +5,9 @@
 //   }
 // }
 
+.program-item a {
+  height: 100%; //prevent border on focus
+}
 
 // Category Colors
 .areas-of-study,
@@ -14,14 +17,16 @@
 }
 .social-political {
 	background: $orange;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: darken( $orange, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .languages {
 	background: $red;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: darken( $red, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
@@ -29,21 +34,24 @@
 }
 .performing-arts {
 	background: $gray-intermediate;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: darken( $gray-intermediate, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .science {
 	background: $blue-sky;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: darken( $blue-sky, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .interdisciplinary {
 	background: $dark-gray;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: lighten( $dark-gray, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
@@ -163,7 +171,6 @@ label.filter-text {
     text-shadow: none;
     // margin-top: .3em;
  }
-
   //adjust color on checkboxes for hover and focus
   &:hover,
   &:focus {
@@ -189,6 +196,12 @@ label.filter-text {
       }
     }
   }
+}
+
+#academics_page input[type=checkbox]:hover, 
+#academics_page input[type=checkbox] + label > span:hover, //larger area around input 
+#academics_page .filter-item label:hover {//additional label
+  cursor: pointer;
 }
 
 // Grid
@@ -235,7 +248,8 @@ label.filter-text {
 	text-decoration: none;
 }
 
-.active-program, .active-program:hover {
+.active-program, 
+.active-program:hover,   {
 	background-image: url('/_images/academics-triangle.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -295,13 +309,18 @@ label.filter-text {
 	.btn-primary {
 		font-size: 0.6em;
 		padding: 0.5em 1em;
+    &:focus {
+      text-decoration: none;
+    }
 	}
   #expander-close {
     float: right;
     padding-right: 1em;
     z-index: 100;
     @include transition(color, 0.5s, ease-out);
-    &:hover {
+    &:hover,
+    &:focus
+     {
       color: $red;
     }
   }
