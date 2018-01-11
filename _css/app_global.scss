@@ -1177,6 +1177,18 @@ h1.hero-title {
     background-color: $dark-gray;
     transition: color 0.25s, background-color 0.25s;
   }
+
+  //in modal dialogue, background is black so the button hover needs to be lighter, use a lighter gray            
+  &:hover,
+  &:focus {
+    .modal-dialog & {
+      background: $gray-intermediate;
+    }
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
   a {
     color: $white;
     text-decoration: none;
