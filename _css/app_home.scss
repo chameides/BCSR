@@ -407,7 +407,8 @@ body#home, .section-full-screen-wrapper {
 				opacity:0.4;
 				transition-property:opacity;
 				transition-duration:0.5s;
-				&:hover {
+				&:hover,
+				&:focus {
 					opacity:1!important;
 				}
 				&.leftbtn {
@@ -502,7 +503,9 @@ body#home, .section-full-screen-wrapper {
 						white-space:normal;
 						line-height:0.825;
 						height:105px;
-						&:hover, &:focus, &.focused {
+						&:hover, 
+						&:focus, 
+						&.focused {
 							opacity:1;
 							font-size:3rem;
 							text-decoration:none;
@@ -616,7 +619,8 @@ body#home, .section-full-screen-wrapper {
 				color:$white;
 				letter-spacing:inherit;
 				vertical-align:inherit;
-				&:hover {
+				&:hover,
+				&:focus {
 					color:$yellow;
 					background-color:transparent;
 					text-decoration:none;
@@ -643,7 +647,8 @@ body#home, .section-full-screen-wrapper {
 				margin:7px auto;
 				padding:0px 6px;
 				line-height:0.8;
-				&:hover {
+				&:hover,
+				&:focus {
 					background-color:transparent;
 					//color:$white;
 				}
@@ -786,7 +791,8 @@ body#home, .section-full-screen-wrapper {
 		opacity:0.8;
 		transition-property:opacity;
 		transition-duration:0.5s;
-		&:hover {
+		&:hover,
+		&:focus {
 			color:$white;
 			opacity:1;
 		}
@@ -919,7 +925,8 @@ body#home, .section-full-screen-wrapper {
 				overflow: hidden; 
 			}
 		}
-		&:hover, &:focus {
+		&:hover, 
+		&:focus {
 			text-decoration:none;
 			@media (min-width: $screen-sm-min) {
 				transition-property:background-color;
@@ -969,7 +976,8 @@ a.rocker-link /*make icon white even if link*/ {
 		left:4px;
 		line-height:1.5em;
 	}
-	&:hover, &:focus {
+	&:hover, 
+	&:focus {
 		color:$white;
 		background-color:$red;
 		transition-property:background-color;
