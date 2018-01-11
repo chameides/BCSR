@@ -346,7 +346,7 @@ Initially used on landing page forms to make the column with the form pop.
 
 //apply on column
 .row-col-highlight {
-  background-color:#5cb7b7; 
+  background-color:$blue; 
   color: white;
   margin-bottom: 2em;
   padding: 0 0 15px;
@@ -1177,6 +1177,18 @@ h1.hero-title {
     background-color: $dark-gray;
     transition: color 0.25s, background-color 0.25s;
   }
+
+  //in modal dialogue, background is black so the button hover needs to be lighter, use a lighter gray            
+  &:hover,
+  &:focus {
+    .modal-dialog & {
+      background: $gray-intermediate;
+    }
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
   a {
     color: $white;
     text-decoration: none;
@@ -1312,7 +1324,7 @@ div.arrow-list-tight-small-wrapper ul {
   li:before {
     font-family: 'FontAwesome';
     content: '\f105';
-    color: $blue;
+    color: $blue-sky;
     margin-left: -30px;
     @media screen and (max-width:$screen-sm-max) {
       margin-left: -19px; //even up indent on small screen
@@ -1471,7 +1483,7 @@ ol.circle-list > li {
 ol.circle-list > li:before {
   @include LeHavre(12px);
   letter-spacing: -0.08em;
-  background-color: #5cb7b7;
+  background-color: $blue-sky;
   border-radius: 50%;
   color: #ffffff;
   padding: 1px;
@@ -1597,7 +1609,8 @@ a.link-wrap {
       margin-bottom: 6px;
     }
   }
-    &:hover {
+    &:hover, 
+    &:focus {
       text-decoration: none;
       background: $red;
     }

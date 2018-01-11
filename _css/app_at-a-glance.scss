@@ -75,9 +75,9 @@
 			}
 
 			&.red { background-color: $red; }
-			&.blue { background-color: $blue; }
-			&.orange { background-color: $orange; }
-			&.yellow { background-color: $yellow; }
+			&.blue { background-color: $blue-sky; }
+			&.orange { background-color: $dark-gray; }
+			&.yellow { background-color: $orange; }
 
 			// neat trick to make the height match the width, even without content
 			&:before { content: ''; display: block; margin-top: 100%; box-sizing: content-box; }

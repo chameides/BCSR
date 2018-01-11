@@ -66,17 +66,20 @@
 		}
 }
 
+/*
 a.circle-heading {
 	color: $white;
 }
+*/
 
 // Bar bg at bottom of page
 .solid-bar {
-	color: $white;
+	color: $gray-intermediate;
 	padding: 25px 0;
-	background: $yellow;
+	background: $light-gray;
 }
 
+/*
 .circle-container {
     width: 100%;
 	&:after {
@@ -95,6 +98,7 @@ a.circle-heading {
 	            transition: all 0.3s ease-out; 
 		}
 		// Giving Landing Circles
+		
 		&.why-give:after {
 			background: $yellow;
 		}
@@ -107,6 +111,7 @@ a.circle-heading {
 		&.contact:after {
 			background: $blue;
 		}
+		
 	    // Student Life Circles
 		&.life-campus:after {
 			background: $blue;
@@ -120,43 +125,42 @@ a.circle-heading {
 		&.barrington:after {
 			background: $yellow;
 		}
-		 	&:hover:after  {
-		    	background: $red;
-		    	cursor: pointer;
-		    }
-		    &:hover a {
-		    	text-decoration: none;
-		    }
-			@media screen and (max-width:$screen-xs-max) {
-				margin-bottom: 6px;
-			}
-}
-	@if $cec {
-	}
-	@else {
-		// div
-		.circle-heading {
-		    float:left;
-		    width: 100%;
-		    padding-top: 50%;
-		    line-height: 1em;
-		    margin-top: -0.5em;
-		    text-align: center;
-			@include LeHavre(20px);
-			@media screen and (max-width:$screen-xs-max) {
-				font-size: 12px;
-			}
-			// Two Lines
-			.clubs &,
-			.community & {
-				margin-top: -1em;
-			}
-			// Three Lines
-			.barrington & {
-				margin-top: -1.7em;
-			}
+	 	&:hover:after {
+	    background: $red;
+	    cursor: pointer;
+	  }
+	  &:hover a {
+	    text-decoration: none;
+	  }
+		@media screen and (max-width:$screen-xs-max) {
+			margin-bottom: 6px;
 		}
+}
+
+
+// div
+.circle-heading {
+    float:left;
+    width: 100%;
+    padding-top: 50%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+	@include LeHavre(20px);
+	@media screen and (max-width:$screen-xs-max) {
+		font-size: 12px;
 	}
+	// Two Lines
+	.clubs &,
+	.community & {
+		margin-top: -1em;
+	}
+	// Three Lines
+	.barrington & {
+		margin-top: -1.7em;
+	}
+}
+*/
 
 
 

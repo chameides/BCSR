@@ -67,6 +67,8 @@
 						<li><a href="master-section-landing.php">Master Section Landing</a></li>
 						<li><a href="profile.php">Profile</a></li>
 						<li><a href="basic-profile.php">Profile (basic)</a></li>
+						<li><a href="reputations-and-outcomes.php">Reputation</a></li>
+						<li><a href="simons-rock-at-a-glance.php">At A Glance</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">

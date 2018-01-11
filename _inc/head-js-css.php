@@ -6,7 +6,6 @@
 <link href="/_css/video-js.min.css" rel="stylesheet" type="text/css">
 <!-- Bootstrap -->
 <link href="/_css/app.css" rel="stylesheet">
-<link href="/_css/app_safari_hero_hack.css" rel="stylesheet">
 
 <style>
 .page-hero-container.gateway-bg {

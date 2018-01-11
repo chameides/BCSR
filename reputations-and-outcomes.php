@@ -7,7 +7,7 @@
     <script src="_js/modernizr.custom.js"></script>
     <title>Reputations and Outcomes</title>
     <?php include '_inc/head-js-css.php'; ?>
-    <?php include '_inc/icon-loader.php'; ?>
+    <?php include '_resources/includes/icon-loader.php'; ?>
   </head>
 
   <body class="has-hero">

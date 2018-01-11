@@ -171,7 +171,7 @@ input[type="button"] {
   }
   .btn-active, 
   .btn-active:hover{
-    background-color: #5cb7b7;
+    background-color: $blue-sky;
     color: white;
     
   } 
@@ -195,7 +195,7 @@ input[type="button"] {
     }
     &:hover,
     &:focus {
-      background-color: #5cb7b7;
+      background-color: $blue-dark;
       color: white;
       border-color: #ccc;
     }
@@ -205,8 +205,8 @@ input[type="button"] {
     }
   .btn-active:hover, .btn-active:focus {
     cursor: default;
-    color: #333;
-    }
+    background-color: $blue-sky;
+  }
 }
 
 

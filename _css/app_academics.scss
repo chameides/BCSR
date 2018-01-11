@@ -5,6 +5,9 @@
 //   }
 // }
 
+.program-item a {
+  height: 100%; //prevent border on focus
+}
 
 // Category Colors
 .areas-of-study,
@@ -13,37 +16,42 @@
   @include transition(background-color, 0.2s, ease-out);
 }
 .social-political {
-	background: $red;
-	&:hover {
-		background: darken( $red, 20% );
+	background: $orange;
+	&:hover, 
+  a:focus {
+		background: darken( $orange, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .languages {
-	background: $yellow;
-	&:hover {
-		background: darken( $yellow, 20% );
+	background: $red;
+	&:hover, 
+  a:focus {
+		background: darken( $red, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 
 }
 .performing-arts {
-	background: $orange;
-	&:hover {
-		background: darken( $orange, 20% );
+	background: $gray-intermediate;
+	&:hover, 
+  a:focus {
+		background: darken( $gray-intermediate, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .science {
-	background: $blue;
-	&:hover {
-		background: darken( $blue, 20% );
+	background: $blue-sky;
+	&:hover, 
+  a:focus {
+		background: darken( $blue-sky, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
 }
 .interdisciplinary {
 	background: $dark-gray;
-	&:hover {
+	&:hover, 
+  a:focus {
 		background: lighten( $dark-gray, 20% );
 		@include transition(background-color, 0.2s, ease-out);
 	}
@@ -54,13 +62,13 @@
 	background: $red;
 }
 .yellow-bg {
-	background: $yellow;
+	background: $gray-intermediate;
 }
 .orange-bg {
 	background: $orange;
 }
 .blue-bg {
-	background: $blue;
+	background: $blue-sky;
 }
 .black-bg {
 	background: $dark-gray;
@@ -122,8 +130,7 @@ label.filter-text {
   padding-left: $padding-large;
 }
 // Custom Checkbox 
-#academics_page input[type=checkbox]:not(old),
-#academics_page input[type=radio   ]:not(old) {
+#academics_page input[type=checkbox]:not(old) {
    width     : 28px;
    margin    : 0;
    padding   : 0;
@@ -131,16 +138,14 @@ label.filter-text {
    opacity   : 0;
    // margin-left: -30px;
 }
-#academics_page input[type=checkbox]:not(old) + label,
-#academics_page input[type=radio   ]:not(old) + label {
+#academics_page input[type=checkbox]:not(old) + label {
     // font-size: 1.6rem;
     display: inline-block;
     margin-left: -28px;
     line-height: 36px;
     // font-weight: normal;
 }
-#academics_page input[type=checkbox]:not(old) + label > span,
-#academics_page input[type=radio   ]:not(old) + label > span {
+#academics_page input[type=checkbox]:not(old) + label > span {
     display          : inline-block;
     width            : 21px;
     height           : 21px;
@@ -152,17 +157,52 @@ label.filter-text {
 //   display: inline-block;
 //   position: absolute;
 // }
-#academics_page input[type=checkbox]:not(old):checked + label > span:before {
-  font-family: 'FontAwesome';
-  content: '\f00c';
-  display: block;
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 24px;
-  text-align: center;
-  text-shadow: none;
-  // margin-top: .3em;
+
+//checkboxes
+#academics_page input[type=checkbox] {
+  &:not(old):checked + label > span:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    display: block;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: none;
+    // margin-top: .3em;
  }
+  //adjust color on checkboxes for hover and focus
+  &:hover,
+  &:focus {
+    & + label > span {
+      &.areas-of-study,
+      &.special-programs {
+        background: darken( $medium-gray, 20% );
+      }
+      &.languages {
+        background: darken( $red, 20% );
+      }
+      &.social-political {
+        background: darken( $orange, 20% );
+      }
+      &.performing-arts {
+        background: darken( $gray-intermediate, 20% );
+      }
+      &.science {
+        background: darken( $blue-sky, 20% );
+      }
+      &.interdisciplinary {
+        background: lighten( $dark-gray, 20% );
+      }
+    }
+  }
+}
+
+#academics_page input[type=checkbox]:hover, 
+#academics_page input[type=checkbox] + label > span:hover, //larger area around input 
+#academics_page .filter-item label:hover {//additional label
+  cursor: pointer;
+}
 
 // Grid
 .program-grid {
@@ -208,7 +248,8 @@ label.filter-text {
 	text-decoration: none;
 }
 
-.active-program, .active-program:hover {
+.active-program, 
+.active-program:hover,   {
 	background-image: url('/_images/academics-triangle.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -274,7 +315,9 @@ label.filter-text {
     padding-right: 1em;
     z-index: 100;
     @include transition(color, 0.5s, ease-out);
-    &:hover {
+    &:hover,
+    &:focus
+     {
       color: $red;
     }
   }
