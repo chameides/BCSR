@@ -60,9 +60,14 @@
         opacity: 0.25;
       }
     }
+    //darken image on hover and focus
     &:hover > .overlay {
       opacity: 0.25;
     }
+    &:focus > .overlay {
+      opacity: 0.4;
+    }
+
     /* use inline image instead
     &.daniel-arts-center{
       background-image: url('../_images/student-life/daniel-arts-center.jpg');
