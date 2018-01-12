@@ -172,8 +172,7 @@
     text-decoration: none;
     }
   //the logo focus link style that resizes the logo can be found in app_nav.scss lines 155-170
-  &:focus, 
-  &:hover {
+  &:focus {
     //horizontal logo with white background
     box-shadow: 
       inset 0px -4px 0px 0px white,
@@ -181,8 +180,7 @@
   }
   //stacked logo on load 
   &.initial {
-    &:focus, 
-    &:hover {
+    &:focus {
       //red background
       box-shadow: 
         0px 5px 0px 0px $red,
@@ -233,9 +231,13 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: 0;
-
   // We remove the `outline` here, but later compensate by attaching `:hover`
-  // styles to `:focus`.
+  // styles to `:focus`. 
+  &:hover,
+  &:focus {
+    background-color: $gray-intermediate;
+  }
+
   &:focus {
     outline: 0;
   }
@@ -469,8 +471,13 @@
     }
   }
 
+  //hambruger menu button
   .navbar-toggle {
     border-color: $red;
+    &:hover,
+    &:focus {
+      border-color: $gray-intermediate;  
+    }
     /*
     &:hover,
     &:focus {

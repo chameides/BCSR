@@ -80,6 +80,8 @@ nav#mainnav {
 			max-height: 100vh;
 		}
 	}
+
+	//audience links in mobile menu
 	.info-for-mobile {
 		float: none; 
 		clear: both;
@@ -95,6 +97,10 @@ nav#mainnav {
 			padding:5px 0px 5px 15px;
 			line-height:1.42857;
 			display:block;
+			&:hover,
+			&:focus {
+				background: $dark-gray;
+			}
 		}
 	}
 	.navbar-mobile-header {
@@ -278,6 +284,13 @@ nav#mainnav {
 				margin-top:55px;
 				width:50%;
 				float:right;
+				//set hover and focus for CTA links in mobile menu
+				li a {
+					&:hover,
+					&:focus {
+						background: $gray-intermediate;
+					}
+				}
 			}
 			a,button.btn-link {
 				color:$white;
@@ -576,12 +589,15 @@ nav#mainnav {
 	}
 	.section-nav.initial {
 		a,button.btn-link {
-			&:hover {
-				background-color:$dark-gray;
-			}
-			&:focus {
-				color:#449F9F;
-				background-color:$dark-gray;
+			&:hover, 
+			&:focus{
+				//set top level items to have background on desktop. 
+				background-color:$dark-gray; 
+				
+				//set distinct color for mobile, menu has dark-gray background
+				@media (max-width: $screen-sm-max) {
+					background-color:$gray-intermediate;
+				}
 			}
 		}
 		.dropdown-menu {
@@ -590,7 +606,8 @@ nav#mainnav {
 			body.has-hero & {
 				background-color:$dark-gray;
 				li > a {
-					&:hover {
+					&:hover,
+					&:focus {
 						background-color:$red;
 					}
 				}

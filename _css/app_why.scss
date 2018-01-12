@@ -253,7 +253,7 @@ overflow-x:hidden!important;
 			position:relative;
 		}
 		#earlycollege_div3 {
-			background-color:$yellow;
+			background-color:$orange;
 			position:relative;
 			@media (max-width: $screen-sm-max) { 
 				background-image:url(/_images/_why/cake.png);
@@ -353,7 +353,7 @@ overflow-x:hidden!important;
 			
 		}
 		#learningliberated_div3 {
-			background-color:$orange;
+			background-color:$blue-sky;
 			@media (max-width: $screen-sm-max) { 
 				background-image:url(/_images/_why/dudes-mobile.png);
 				background-repeat:no-repeat;
@@ -392,7 +392,7 @@ overflow-x:hidden!important;
 			
 		}
 		#realcollege_div3 {
-			background-color:$medium-gray;
+			background-color:$gray-intermediate;
 			@media (max-width: $screen-sm-max) { 
 				background-image:url(/_images/_why/mortar-mob.png);
 				background-repeat:no-repeat;
@@ -403,7 +403,7 @@ overflow-x:hidden!important;
 				display:none;
 				@media (min-width: $screen-md-min) { 
 					display:block;
-					background-color:$medium-gray;
+					background-color:$gray-intermediate;
 					position:absolute; 
 					left: 50%;
 					top: 50%;
@@ -451,7 +451,7 @@ overflow-x:hidden!important;
 			
 		}
 		#besurrounded_div3 {
-			background-color:$blue;
+			background-color:$blue-sky;
 			@media (max-width: $screen-sm-max) { 
 				background-image:url(/_images/_why/clock-mobile.png);
 				background-repeat:no-repeat;
@@ -514,7 +514,7 @@ overflow-x:hidden!important;
 			position:relative;
 		}
 		#jumpstart_div3 {
-			background-color:$dark-gray;
+			background-color:$orange;
 			@media (max-width: $screen-sm-max) { 
 				background-image:url(/_images/_why/six-stars.png);
 				background-repeat:no-repeat;
@@ -551,7 +551,7 @@ overflow-x:hidden!important;
 		#yourpeople_div2 {
 		}
 		#yourpeople_div3 {
-			background-color:$yellow;
+			background-color:$gray-intermediate;
 			@media (max-width: $screen-sm-max) { 
 				background-image: url(/_images/_why/pins-mobile.png);
 				background-size: 80% auto;

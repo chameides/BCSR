@@ -115,8 +115,8 @@
 								<div class="container">
 									<div class="col-md-9">
 										<ul class="clearfix" role="menu">
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock">Why Simon's Rock</a></li>
-											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_TheAcademicExperience">The Academic Experience</a></li>
+											<li class="col-md-4"><a href="#wsr" id="PrimaryNav_WhySimonsRock">Why Simon's Rock</a></li>
+											<li class="col-md-4"><a href="#academics" id="PrimaryNav_WhySimonsRock_TheAcademicExperience">The Academic Experience</a></li>
 											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_ReputationsAndOutcomes">Reputation and Outcomes</a></li>
 											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_OurStudents">Our Students</a></li>
 											<li class="col-md-4"><a href="#" id="PrimaryNav_WhySimonsRock_TheBardNetwork">The Bard Network</a></li>

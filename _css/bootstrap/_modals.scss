@@ -88,6 +88,13 @@
   margin-top: -2px;
 }
 
+.modal-header a.close {
+  &:hover,
+  &:focus {
+    opacity: 1;      
+  }
+}   
+
 // Title text within header (added h1 style for accessibility in color #fff)
 .modal-title {
   margin: 0;

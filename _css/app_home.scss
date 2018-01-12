@@ -1,8 +1,3 @@
-$dark-medium-gray:#3b3733; // 59,55,51
-$dark-yellow:#ad9000; // 173,144,0
-$dark-blue:#428585; // 66,133,133
-$dark-orange:#b85218; // 184,82,24
-
 body#home, .section-full-screen-wrapper {
 	/*
 	let's give the home page an ID of 'home', and scope all of
@@ -346,37 +341,39 @@ body#home, .section-full-screen-wrapper {
 
 		@else {
 			.first-reputations-row .ro-module:nth-child(5n+1) {
-				background-color:$orange;   
+				background-color:$dark-gray2;
+				color:$white;    
 			}
 			.first-reputations-row .ro-module:nth-child(5n+2) {
-				background-color:$dark-gray;  
-				color:$white; 
+				background-color:$blue-sky;
 			}
 			.first-reputations-row .ro-module:nth-child(5n+3) {
-				background-color:$blue;   
+				background-color:$gray-intermediate;   
 			}
 			.first-reputations-row .ro-module:nth-child(5n+4) {
-				background-color:$yellow;   
-			}
-			.first-reputations-row .ro-module:nth-child(5n+5) {
-				background-color:$medium-gray;   
-			}
-			
-			.second-reputations-row .ro-module:nth-child(5n+5) {
 				background-color:$orange;   
 			}
+			.first-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$dark-gray;
+				color:$white;    
+			}
+
+			.second-reputations-row .ro-module:nth-child(5n+5) {
+				background-color:$dark-gray2;
+				color:$white;   
+			}
 			.second-reputations-row .ro-module:nth-child(5n+3) {
-				background-color:$dark-gray;     
-				color:$white; 
+				background-color:$blue-sky;     
 			}
 			.second-reputations-row .ro-module:nth-child(5n+4) {
-				background-color:$blue;   
+				background-color:$gray-intermediate;
 			}
 			.second-reputations-row .ro-module:nth-child(5n+1) {
-				background-color:$yellow;   
+				background-color:$orange;   
 			}
 			.second-reputations-row .ro-module:nth-child(5n+2) {
-				background-color:$medium-gray;   
+				background-color:$dark-gray;
+				color:$white;   
 			}
 		}
 		h4, p {
@@ -410,7 +407,8 @@ body#home, .section-full-screen-wrapper {
 				opacity:0.4;
 				transition-property:opacity;
 				transition-duration:0.5s;
-				&:hover {
+				&:hover,
+				&:focus {
 					opacity:1!important;
 				}
 				&.leftbtn {
@@ -505,7 +503,9 @@ body#home, .section-full-screen-wrapper {
 						white-space:normal;
 						line-height:0.825;
 						height:105px;
-						&:hover, &:focus, &.focused {
+						&:hover, 
+						&:focus, 
+						&.focused {
 							opacity:1;
 							font-size:3rem;
 							text-decoration:none;
@@ -619,7 +619,8 @@ body#home, .section-full-screen-wrapper {
 				color:$white;
 				letter-spacing:inherit;
 				vertical-align:inherit;
-				&:hover {
+				&:hover,
+				&:focus {
 					color:$yellow;
 					background-color:transparent;
 					text-decoration:none;
@@ -646,7 +647,8 @@ body#home, .section-full-screen-wrapper {
 				margin:7px auto;
 				padding:0px 6px;
 				line-height:0.8;
-				&:hover {
+				&:hover,
+				&:focus {
 					background-color:transparent;
 					//color:$white;
 				}
@@ -789,7 +791,8 @@ body#home, .section-full-screen-wrapper {
 		opacity:0.8;
 		transition-property:opacity;
 		transition-duration:0.5s;
-		&:hover {
+		&:hover,
+		&:focus {
 			color:$white;
 			opacity:1;
 		}
@@ -830,30 +833,30 @@ body#home, .section-full-screen-wrapper {
 		width:180px;
 		height:180px;
 		float:left;
-		background-color:$medium-gray;
 		overflow:hidden;
 		padding:$padding-large;
 		color:$white;
 		transition-property:background-color;
 		transition-duration:0.5s;
-		&:nth-child(4n+2) {
-			background-color:$yellow;
-			.date-time {
-				background: linear-gradient(rgba(226,190,0,0) 50%, rgba(226,190,0,1) 72%);
-			}
-		}
-		&:nth-child(4n+3) {
-			background-color:$blue;
-			.date-time {
-				background: linear-gradient(rgba(92,183,183,0) 50%, rgba(92,183,183,1) 72%);
-			}
-		}
-		&:nth-child(4n+4) {
+		&:nth-child(3n+1) {
 			background-color:$orange; 
 			.date-time {
-				background: linear-gradient(rgba(236,106,30,0) 50%, rgba(236,106,30,1) 72%);
+				background: linear-gradient(rgba( $orange, 0 ) 50%, rgba( $orange , 1) 72%);
 			}
 		}
+		&:nth-child(3n+2) {
+			background-color:$medium-gray;
+			.date-time {
+				background: linear-gradient(rgba($medium-gray,0) 50%, rgba($medium-gray,1) 72%);
+			}
+		}
+		&:nth-child(3n+3) {
+			background-color:$blue-sky;
+			.date-time {
+				background: linear-gradient(rgba($blue-sky,0) 50%, rgba($blue-sky,1) 72%);
+			}
+		}
+		
 		@media (min-width: $screen-sm-min) {
 			width:380px;
 			height:440px;
@@ -922,33 +925,33 @@ body#home, .section-full-screen-wrapper {
 				overflow: hidden; 
 			}
 		}
-		&:hover, &:focus {
+		&:hover, 
+		&:focus {
 			text-decoration:none;
 			@media (min-width: $screen-sm-min) {
-				background-color:$dark-medium-gray;
 				transition-property:background-color;
 				transition-duration:0.5s;
-				&:nth-child(4n+2) {
-					background-color:$dark-yellow;
-					.date-time {
-						background: linear-gradient(rgba(173,144,0,0) 50%, rgba(173,144,0,1) 72%);
-					}
-				}
-				&:nth-child(4n+3) {
-					background-color:$dark-blue;
-					.date-time {
-						background: linear-gradient(rgba(66,133,133,0) 50%, rgba(66,133,133,1) 72%);
-					}
-				}
-				&:nth-child(4n+4) {
+				&:nth-child(3n+1) {
 					background-color:$dark-orange;
 					.date-time {
-						background: linear-gradient(rgba(184,82,24,0) 50%, rgba(184,82,24,1) 72%);
+						background: linear-gradient(rgba($dark-orange,0) 50%, rgba($dark-orange,1) 72%);
+					}
+				}
+				&:nth-child(3n+2) {
+					background-color:$dark-gray2;
+					.date-time {
+						background: linear-gradient(rgba($dark-gray2,0) 50%, rgba($dark-gray2,1) 72%);
+					}
+				}
+				&:nth-child(3n+3) {
+					background-color:$blue-dark;
+					.date-time {
+						background: linear-gradient(rgba($blue-dark,0) 50%, rgba($blue-dark,1) 72%);
 					}
 				}
 				.date-time {
 					color:$white;
-					background: linear-gradient(rgba(59,55,51,0) 50%, rgba(59,55,51,1) 72%);
+					//background: linear-gradient(rgba(59,55,51,0) 50%, rgba(59,55,51,1) 72%);
 				}
 			
 			}
@@ -973,7 +976,8 @@ a.rocker-link /*make icon white even if link*/ {
 		left:4px;
 		line-height:1.5em;
 	}
-	&:hover, &:focus {
+	&:hover, 
+	&:focus {
 		color:$white;
 		background-color:$red;
 		transition-property:background-color;
