@@ -67,6 +67,12 @@ thead {
   }
 }
 
+//overwrite Slate style
+table.table>*>tr>th, 
+table.table>*>tr>td {
+  border-bottom: inherit;
+}
+
 
 // Condensed table w/ half padding
 
