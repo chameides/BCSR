@@ -32,6 +32,7 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/app/app-part2.js',
           '_js/_js-not-minified/app/rockers.js',
           '_js/_js-not-minified/app/app-part3.js',
+          '_js/_js-not-minified/app/mobile-nav-tab-order.js',          
           ]
         dest: 
           '_js/_js-not-minified/app/app-bcsr-combined.js'

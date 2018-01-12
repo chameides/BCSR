@@ -516,7 +516,8 @@
   	<script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
   	<!--<script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>-->
 
-	<script>
+  	<script>
+		
 
 		//video pause/play controls for autoplay video
 		//backgroundvideocontrolsindex
