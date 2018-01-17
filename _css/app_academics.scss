@@ -12,7 +12,7 @@
 // Category Colors
 .areas-of-study,
 .special-programs{
-  background: $medium-gray;
+  background: $gray-intermediate;
   @include transition(background-color, 0.2s, ease-out);
 }
 .social-political {
@@ -177,7 +177,7 @@ label.filter-text {
     & + label > span {
       &.areas-of-study,
       &.special-programs {
-        background: darken( $medium-gray, 20% );
+        background: darken( $gray-intermediate, 20% );
       }
       &.languages {
         background: darken( $red, 20% );

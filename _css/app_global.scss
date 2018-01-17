@@ -600,7 +600,7 @@ body#why .side-nav-mobile,
   a:link,
   div.section-header, //index page on sr
   .link-list-no-link { //index page on cec, only if the active page
-    color: $medium-gray;
+    color: $gray-intermediate;
     background-color: $light-gray;
     @if $cec {
       @include HelveticaCondMed(15px);
@@ -622,15 +622,15 @@ body#why .side-nav-mobile,
     }
     &:hover {
       color: $white;
-      background-color: $medium-gray;
+      background-color: $gray-intermediate;
     }
     &.active {
-      background-color: $medium-gray;
+      background-color: $gray-intermediate;
       color: $white;
     }
   }
   .link-list-no-link { //color as active link, with no hover
-    background-color: $medium-gray;
+    background-color: $gray-intermediate;
     color: $white;
   }
   /*put breadcrumb at top of mobile secondary nav*/

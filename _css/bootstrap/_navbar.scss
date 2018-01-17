@@ -187,7 +187,7 @@
         0px 7px 0px 0px white;
       @media (max-width: $screen-sm-max) {
         box-shadow: none; //overwrite
-        background-color: $medium-gray;
+        background-color: $gray-intermediate;
         transition-property:background-color;
         transition-duration:.5s;
         body.has-hero & {

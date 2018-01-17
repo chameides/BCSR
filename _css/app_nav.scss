@@ -86,7 +86,7 @@ nav#mainnav {
 		float: none; 
 		clear: both;
 		padding:$padding-large;
-		background-color:$medium-gray;
+		background-color:$gray-intermediate;
 		color:$dark-gray;
 		.left-me {
 			float: left;
@@ -321,7 +321,7 @@ nav#mainnav {
 					bottom: -10px;
 					left: 0;
 					right: 0;
-					background: $medium-gray;
+					background: $gray-intermediate;
 					padding-left: 5px;
 					a.dropdown-toggle {
 						font-style: italic;
@@ -331,7 +331,7 @@ nav#mainnav {
 				ul.dropdown-menu {
 					@media (max-width: $screen-sm-max) {
 						display:block;
-						background-color: $medium-gray;
+						background-color: $gray-intermediate;
 						border:0px;
 						box-shadow:none;
 						width: 100%;
@@ -570,7 +570,7 @@ nav#mainnav {
 					float:left;
 					list-style-type:none;
 					padding-right:0px;
-					border-bottom:solid 1px $medium-gray;
+					border-bottom:solid 1px $gray-intermediate;
 					margin-right:2%;
 					a {
 						display:block;

@@ -4,7 +4,7 @@
 
 body {
 	@include HelveticaCond(1.5rem);
-	color:$medium-gray; 
+	color:$gray-intermediate; 
 	-webkit-font-smoothing:antialiased;
 	font-smoothing:antialiased;
 	-moz-osx-font-smoothing: grayscale;

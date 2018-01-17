@@ -12,7 +12,7 @@
 	}
 	& .admission-item {
 		display: inline-block;
-		color: $medium-gray;
+		color: $gray-intermediate;
 		@include LeHavre(20px);
 		@media screen and (max-width: $screen-sm-max) {
 		 	width: 49%;

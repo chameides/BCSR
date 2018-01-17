@@ -115,7 +115,7 @@ thead {
 
 .table-striped {
   > tbody > tr:nth-of-type(even) {
-    background-color: lighten($medium-gray, 50);
+    background-color: lighten($gray-intermediate, 50);
   }
 }
 

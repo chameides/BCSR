@@ -16,7 +16,7 @@ within secondary navigation, text color and backgrounds. */
 $white:#ffffff;
 $light-gray:#efefef;
 $gray-intermediate: #7e746d; //allows white text, small and large, and large black text
-$medium-gray:#6e675f;
+
 $dark-gray:#262421; // but not black - there should be no #000000 in the palette except in the footer background 
 $dark-gray2: #393530;
 
@@ -32,6 +32,8 @@ $blue-dark: #27556f; //accessbility for hover
 
 $blue:#5cb7b7; //turquoise, deprecated for accessibility
 $yellow:#e2be00; //deprecated for accessibility
+$medium-gray:#6e675f; //deprecated for accessibility, replaced with gray-intermediate
+
 
 /*event hover color*/
 $dark-blue:#428585; // 66,133,133
