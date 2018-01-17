@@ -55,7 +55,13 @@
 		color: $white;
 		&:hover, 
 		&:focus {
-			color: $red;
+			.hours & {
+				color: $red;
+			}
+			.contact &,
+			.rental & {
+				color: $dark-gray;
+			}
 		}
 	}
 }
