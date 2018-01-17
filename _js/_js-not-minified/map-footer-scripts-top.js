@@ -131,7 +131,7 @@ function drawWalkingPaths(map, walkingPathCoordinates){
   };
 
   var walkingPathColors = new Object();
-  walkingPathColors = { 'cyan': '#5cb7b7', 'yellow': '#e1be22', 'orange': '#eb6a23', 'red': '#be2126', 'purple': '#b83a93' };
+  walkingPathColors = { 'cyan': '#337BA3', 'yellow': '#7e746d', 'orange': '#262421', 'red': '#be2126', 'purple': '#b83a93' };
 
   var walkingPathLabelPosition = new Object();
   walkingPathLabelPosition['cyan'] = new google.maps.LatLng(42.2104259647603,-73.3821160111201);
