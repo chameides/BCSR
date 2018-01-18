@@ -59,16 +59,19 @@
 	}
 
 	#our-students {
-		background-color: $gray-intermediate;
-		color: $white;
+		background-color: $light-gray;
+		color: $gray-intermediate;
 		padding: 2em 0;
 
+
+		//circles
 		.stat {
 			border-radius: 300px;
 			padding: 0;
 			margin-bottom: 0;
 			transform: scale(0.7);
 			transition: transform 600ms ease-out;
+			color: white;
 
 			&.active {
 				transform: scale(1);
@@ -131,12 +134,12 @@
 							background-position: center bottom;
 						}
 
-						&.blue { background-color: $blue; }
-						&.orange { background-color: $orange; }
-						&.yellow { background-color: $yellow; }
-						&.white { background-color: $light-gray; }
-						&.charcoal { background-color: $dark-gray; }
-						&.red { background-color: $red; }
+						&.blue { background-color: $blue-sky; }
+						&.orange { background-color: $red; }
+						&.yellow { background-color: $dark-gray2; }
+						&.white { background-color: #262421; }
+						&.charcoal { background-color: $gray-intermediate; }
+						&.red { background-color: $purple; }
 					}
 				}
 
@@ -173,12 +176,12 @@
 					border-radius: 42px;
 				}
 
-				&.blue:before { background-color: $blue; }
-				&.charcoal:before { background-color: $dark-gray; }
-				&.orange:before { background-color: $orange; }
-				&.yellow:before { background-color: $yellow; }
-				&.white:before { background-color: $light-gray; }
-				&.red:before { background-color: $red; }
+				&.blue:before { background-color: $blue-sky; }
+				&.charcoal:before { background-color: $gray-intermediate; }
+				&.orange:before { background-color: $red; }
+				&.yellow:before { background-color: $dark-gray2; }
+				&.white:before { background-color: $orange; }
+				&.red:before { background-color: $purple; }
 
 				@media screen and (max-width: $screen-xs-min) {
 					text-align: center;
