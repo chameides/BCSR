@@ -85,11 +85,11 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    textarea
-     {
+    textarea {
       padding: $padding-small $padding-base-horizontal2; 
       font-size: $font-size-base;
       color: $gray-intermediate;
+      border-radius: 0;
     }
   }
 
