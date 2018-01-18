@@ -90,8 +90,8 @@ function initEventsCarousel() {
 		$( "#events_carousel_append #events_carousel_original").attr( "aria-hidden", "true" );
 		$( "#events_carousel_prepend #events_carousel_original").attr( "aria-hidden", "true" );
 
-		$( "#events_carousel_append .events-carousel-item").attr( "aria-hidden", "true" );
-		$( "#events_carousel_prepend .events-carousel-item").attr( "aria-hidden", "true" );
+		$( "#events_carousel_append .events-carousel-item").attr( "aria-hidden", "true" ).attr( "tabindex", "-1" );
+		$( "#events_carousel_prepend .events-carousel-item").attr( "aria-hidden", "true" ).attr( "tabindex", "-1" );
 	}
 
 	$('.events-carousel-row .row-inner').width(0);
@@ -181,8 +181,21 @@ function initStudentLifeCarousel() {
 	if ( $(window).width() >= 768-15 ) {
 		$( '#student-life_carousel_original' ).clone().appendTo( '#student-life_carousel_append' );
 		$( '#student-life_carousel_original' ).clone().prependTo( '#student-life_carousel_prepend' );
+		
+
+		$( "#student-life_carousel_prepend").attr( "aria-hidden", "true" );
+		$( "#student-life_carousel_prepend a").attr( "tabindex", "-1" );
+		$( "#student-life_carousel_append").attr( "aria-hidden", "true" );
+		$( "#student-life_carousel_append a").attr( "tabindex", "-1" );
+
+
+
 		$( "#rockers_prepend #rockers_original").attr( "aria-hidden", "true" );
+		$( "#rockers_prepend #rockers_original a").attr( "tabindex", "-1" );
+		$( "#rockers_prepend #rockers_original button").attr( "tabindex", "-1" );
 		$( "#rockers_append #rockers_original").attr( "aria-hidden", "true" );
+		$( "#rockers_append #rockers_original a").attr( "tabindex", "-1" );
+		$( "#rockers_append #rockers_original button").attr( "tabindex", "-1" );
 	}
 
 	$('.student-life_carousel-row .row-inner').width(0);
