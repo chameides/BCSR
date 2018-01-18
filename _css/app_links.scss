@@ -2,7 +2,7 @@
 	I-5. Global link styling
 */
 a, a:link, a:visited {
-	color:$medium-gray;
+	color:$gray-intermediate;
 	text-decoration:underline;
 }
 //exceptions to underline links added 5-6-2016
@@ -28,8 +28,10 @@ a.btn { color:$white; }
 		color: white;
 		text-decoration:underline;
 	}
-	a:hover, a:active {
-		color:$yellow;
+	a:hover, 
+	a:active,
+	a:focus {
+		color:$red;
 	}
 }
 

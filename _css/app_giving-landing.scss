@@ -29,7 +29,7 @@
 .image-name {
 	margin-bottom: 0;
 	@include LeHavre(20px);
-	color: $medium-gray;
+	color: $gray-intermediate;
 		@media screen and (max-width:$screen-sm-max) {
 			font-size: 1.5rem;
 			margin-bottom: 0;

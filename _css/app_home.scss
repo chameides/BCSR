@@ -317,7 +317,7 @@ body#home, .section-full-screen-wrapper {
 				background-color:$yellow;   
 			}
 			.first-reputations-row .ro-module:nth-child(4n+4) {
-				background-color:$medium-gray;   
+				background-color:$gray-intermediate;   
 			}
 			
 			.second-reputations-row .ro-module:nth-child(4n+4) {
@@ -330,7 +330,7 @@ body#home, .section-full-screen-wrapper {
 			}
 			
 			.second-reputations-row .ro-module:nth-child(4n+2) {
-				background-color:$medium-gray;   
+				background-color:$gray-intermediate;   
 			}
 
 			.second-reputations-row .ro-module:nth-child(4n+1) {
@@ -423,7 +423,7 @@ body#home, .section-full-screen-wrapper {
 	} /* end #reputations_outcomes */
 	
 	#interested_in {
-		background-color:$medium-gray;
+		background-color:$gray-intermediate;
 		color:$white;
 		h2 {
 			text-align:center;
@@ -845,9 +845,9 @@ body#home, .section-full-screen-wrapper {
 			}
 		}
 		&:nth-child(3n+2) {
-			background-color:$medium-gray;
+			background-color:$gray-intermediate;
 			.date-time {
-				background: linear-gradient(rgba($medium-gray,0) 50%, rgba($medium-gray,1) 72%);
+				background: linear-gradient(rgba($gray-intermediate,0) 50%, rgba($gray-intermediate,1) 72%);
 			}
 		}
 		&:nth-child(3n+3) {
@@ -904,7 +904,7 @@ body#home, .section-full-screen-wrapper {
 				left:0px;
 				right:0px;
 				z-index:1;
-				background: linear-gradient(rgba(110,103,95,0) 50%, rgba(110,103,95,1) 72%);
+				background: linear-gradient(rgba($gray-intermediate ,0) 50%, rgba($gray-intermediate,1) 72%);
 			}
 			.location {
 				display:block;
@@ -1055,7 +1055,7 @@ a.rocker-link {
 			position:relative;
 			margin:0px -15px;
 			padding:20px 0px;
-			border-bottom:solid 3px $medium-gray;
+			border-bottom:solid 3px $gray-intermediate;
 			overflow:visible;
 			z-index:2;
 			bottom:0;

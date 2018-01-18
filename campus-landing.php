@@ -73,7 +73,7 @@
                   <h4>Hours H4</h4>
                   <p>Monday–Friday 6 a.m.–9 p.m.</p>
                   <p>Weekends 8 a.m.–6 p.m.</p>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum <a href="mailto:lorumipsum@simons-rock.edu">lorumipsum@simons-rock.edu</a></p>
                 </div>
               </span>
               <span class="info-box-item contact">
@@ -157,7 +157,7 @@
                     <div class="accordion-overlay-container">
                       <img class="accordion-image" src="../_images/pool3.jpg" alt="pool">
                       <div class="accordion-overlay">
-                        <p class="accordion-text">Fourth frame caption Copy unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <p class="accordion-text">Fourth frame caption Copy unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam <a href="#accordion">rem aperiam</a>.</p>
                       </div>
                     </div>
                   </div>
