@@ -131,6 +131,7 @@ function drawWalkingPaths(map, walkingPathCoordinates){
   };
 
   var walkingPathColors = new Object();
+  //the circle color is png
   walkingPathColors = { 'cyan': '#337BA3', 'yellow': '#7e746d', 'orange': '#262421', 'red': '#be2126', 'purple': '#b83a93' };
 
   var walkingPathLabelPosition = new Object();
