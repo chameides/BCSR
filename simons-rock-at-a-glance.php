@@ -219,13 +219,13 @@
                 </div>
                 <div class="icon col-xs-2 col-md-1 col-md-push-2 icon-faculty-lamp"></div>
 
-                <div class="stat red col-xs-10 col-md-7 col-md-push-2">
+                <div class="stat purple col-xs-10 col-md-7 col-md-push-2">
                   <h2>Once a week</h2>
                   <h4>Number of times you’ll meet with your academic advisor (That’s a minimum. He/she will always be happy to talk to you more)</h4>
                 </div>
                 <div class="icon col-xs-2 col-md-1 col-md-push-2 icon-faculty-coffee"></div>
 
-                <div class="stat blue col-xs-10 col-md-7 col-md-push-2">
+                <div class="stat red col-xs-10 col-md-7 col-md-push-2">
                   <h2>0</h2>
                   <h4>Number of schools that do what we do</h4>
                 </div>

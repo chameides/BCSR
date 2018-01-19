@@ -206,13 +206,17 @@
 				h2 { color: $red; border-bottom-color: $red; }
 			}
 			&.blue {
-				h2 { color: $blue; border-bottom-color: $blue; }
+				h2 { color: $blue-sky; border-bottom-color: $blue-sky; }
 			}
 			&.orange {
 				h2 { color: $orange; border-bottom-color: $orange; }
 			}
 			&.yellow {
 				h2 { color: $yellow; border-bottom-color: $yellow; }
+			}
+
+			&.purple {
+				h2 { color: $purple; border-bottom-color: $purple; }
 			}
 		}
 
