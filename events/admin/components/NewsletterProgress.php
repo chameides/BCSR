@@ -231,7 +231,7 @@
 						$curDate = $row[2];
 						$events .= '<div style="clear:both;font-weight:bold;padding-top:15px;">' . stampToDate($row[2], $hc_cfg[14]) . '</div>';
 					}
-					$events .= ($cnt % 2 == 1) ? '<div style="background:#5CB7B7;clear:both;">&nbsp;' : '<div style="clear:both;">&nbsp;';
+					$events .= ($cnt % 2 == 1) ? '<div style="background:#1674BB;clear:both;">&nbsp;' : '<div style="clear:both;">&nbsp;';
 					
 					if($row[5] == 0){
 						if(strlen($row[4]) > 0){

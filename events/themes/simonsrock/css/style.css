@@ -28,9 +28,9 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 
 /* basic events section rules */
 #events {/*float:left;/*width:70%;*/margin:0px 0 15px 25px; color: white;}
-#events .teal {background-color: #5CB7B7;}
+#events .teal {background-color: #1674BB;} /*blue*/
 #events .yellow {background-color: #E2BE00;}
-#events .gray {background-color: #6E675F;}
+#events .gray {background-color: #7e746d;}
 #events .red {background-color: #ec6a1e;}
 #events li { padding: 0; width: 95%; overflow: hidden; }
 #events li > a { color: white; text-decoration:none; }
@@ -76,6 +76,10 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #no_events li {background-color:#FFFFFF;}
 #no_events li > a {color:#000000;}
 #events span.readmore {font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;font-size:1.55rem;padding-left:0px;color:#BE2126;}
+#events .red:hover span.readmore, 
+#events li > a:hover .date-time span{
+	color:#efefef; transition: color 0.55s ease 0s;
+} /*read more text pop on dark orange background*/
 /*#events > ul > li:nth-of-type(4n+1) { background-color: #BE2126; }
 #events > ul > li:nth-of-type(4n+2) { background-color: #5CB7B7; }*/
 section {/*padding-left:30px;*/}

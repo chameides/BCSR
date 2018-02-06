@@ -1081,16 +1081,16 @@ function sr_event_browse_valid($sort_featured = 1, $nav_function = 'event_browse
 function sr_colorizer($row_number){
     switch ($row_number % 4){
         case 1:
-			return "teal";
+			return "red";
 			break;
 		case 2:
-			return "yellow";
-			break;
-		case 3:
 			return "gray";
 			break;
+		case 3:
+			return "teal";
+			break;
 		case 0:
-			return "red";
+			return "gray";
 			break;
     }
 }
