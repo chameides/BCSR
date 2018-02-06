@@ -28,6 +28,7 @@ at Simon's Rock that need attention drawn to them. */
 $orange:#ec6a1e;
 $dark-orange:#b85218; // 184,82,24 for hover
 $blue-sky: #1674BB; //accessibility
+$blue-less: desaturate( $blue-sky, 40% ); //used on lists
 $blue-dark: #27556f; //accessbility for hover
 $purple: #b83a93;
 
