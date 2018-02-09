@@ -620,7 +620,8 @@ body#why .side-nav-mobile,
     & li {
       position: relative;
     }
-    &:hover {
+    &:hover, 
+    &:focus {
       color: $white;
       background-color: $gray-intermediate;
     }
