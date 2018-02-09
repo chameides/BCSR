@@ -600,7 +600,7 @@ body#why .side-nav-mobile,
   a:link,
   div.section-header, //index page on sr
   .link-list-no-link { //index page on cec, only if the active page
-    color: $gray-intermediate;
+    color: $medium-gray;
     background-color: $light-gray;
     @if $cec {
       @include HelveticaCondMed(15px);

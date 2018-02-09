@@ -17,6 +17,10 @@ $white:#ffffff;
 $light-gray:#efefef;
 $gray-intermediate: #7e746d; //allows white text, small and large, and large black text
 
+$medium-gray:#6e675f; 
+/*medium -gray is slightly darker than gray-intermediate. 
+It is used on secondary nav with $light-gray, it's AA compliant, but not AAA compliant.*/
+
 $dark-gray:#262421; // but not black - there should be no #000000 in the palette except in the footer background 
 $dark-gray2: #393530;
 
@@ -34,7 +38,7 @@ $purple: #b83a93;
 
 $blue:#5cb7b7; //turquoise, deprecated for accessibility
 $yellow:#e2be00; //deprecated for accessibility
-$medium-gray:#6e675f; //deprecated for accessibility, replaced with gray-intermediate
+
 
 
 /*event hover color*/
