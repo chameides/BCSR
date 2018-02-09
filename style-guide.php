@@ -1178,7 +1178,7 @@
 	  	<div class="row stacked-content">
 	      <div class="col-sm-8">
 		      <h3>Sidebar</h3>
-		      <p>Asides are created for short, text and a CTA. For longer blocks of text, try the .sidebard isntead. Break up sections with a longer margin bottom. </p>
+		      <p>Asides are created for short, text and a CTA. For longer blocks of text, try the .sidebar instead. Break up sections with a longer margin bottom. </p>
 	      </div>
         <!-- <div class="col-sm-4" style="> -->
         
