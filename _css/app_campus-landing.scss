@@ -56,11 +56,13 @@
 		&:hover, 
 		&:focus {
 			.hours & {
-				color: $red;
+				color: $orange;
 			}
-			.contact &,
+			.contact & {
+				color: black;
+			}
 			.rental & {
-				color: $dark-gray;
+				color: $yellow-light;
 			}
 		}
 	}
