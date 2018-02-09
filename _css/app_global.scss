@@ -3,7 +3,7 @@ body {
   @if $cec {
     margin-top: $navbar-height2;
     @media screen and (min-width:$screen-xl) { 
-      background: #efefef;
+      background: $light-gray;
       &.has-hero {
         background: white;
       }
