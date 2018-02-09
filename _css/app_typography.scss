@@ -29,6 +29,10 @@
   margin-bottom: 1em;
 }
 
+.sidebar {
+  color: $medium-gray;  //must be accessible with background;
+}
+
 
 .aside {      
   @media screen and (min-width:$screen-sm) {
