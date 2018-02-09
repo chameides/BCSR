@@ -74,7 +74,7 @@
 .blockquote-mark, 
 .blockquote-start {
 	@media screen and (min-width:$screen-md) {
-    color: lighten( $blue-less, 30%); /*lighten the hanging quotes when larger font-size is used */
+    color: lighten( $blue-less, 17%); /*lighten the hanging quotes when larger font-size is used */
 	}
 }
 
