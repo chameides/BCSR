@@ -53,17 +53,12 @@
 	}
 	a {
 		color: $white;
-		&:hover, 
 		&:focus {
-			.hours & {
-				color: $orange;
-			}
-			.contact & {
-				color: black;
-			}
-			.rental & {
-				color: $yellow-light;
-			}
+			border-bottom: 1px solid white;
+		}
+		&:focus:hover, 
+		:hover  {
+			border-bottom-width: 0px;
 		}
 	}
 }
