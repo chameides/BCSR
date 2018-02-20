@@ -46,5 +46,16 @@
     padding-top: .5em;
     opacity: .4;
     text-shadow: 0 0 #fff;
+    &:hover,
+    &:hover:focus {
+    	opacity: 1;
+    	color: white;
+    }
+    &:focus {
+    	color: $yellow;
+    	.reduce {
+    		text-decoration: underline;
+    	}
+    }
   }
 }
