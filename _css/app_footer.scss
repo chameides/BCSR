@@ -73,13 +73,14 @@ footer#globalfooter {
 				background-repeat:no-repeat;
 			}
 			&:hover {
-				text-decoration:none;
+				border-bottom: 0 black
 			}
 			//outline image
 			&:focus {
   			box-shadow: 
   				1px 0px 0px 10px black, 
   				1px 0px 0px 12px #efefef;
+  			border-bottom: 0 black;
 			}
 		}
 	}
@@ -123,6 +124,7 @@ footer#globalfooter {
 			&:focus {
 				background-color:$red;
 				text-decoration:none;
+				border-bottom: 0 black;
 				.fa {
 					color:$white;
 					
