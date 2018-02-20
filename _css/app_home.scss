@@ -408,8 +408,13 @@ body#home, .section-full-screen-wrapper {
 				transition-property:opacity;
 				transition-duration:0.5s;
 				&:hover,
-				&:focus {
+				&:focus:hover {
 					opacity:1!important;
+					color: $white;
+				}
+				&:focus {
+					color:$red;
+					opacity:1;
 				}
 				&.leftbtn {
 					left:$padding-large;
