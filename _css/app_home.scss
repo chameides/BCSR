@@ -792,8 +792,12 @@ body#home, .section-full-screen-wrapper {
 		transition-property:opacity;
 		transition-duration:0.5s;
 		&:hover,
-		&:focus {
+		&:focus:hover {
 			color:$white;
+			opacity:1;
+		}
+		&:focus {
+			color:$red;
 			opacity:1;
 		}
 		&.leftbtn {
