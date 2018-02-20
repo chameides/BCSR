@@ -15,9 +15,24 @@ a:hover, a:active, a:focus, ol.crumb a:hover, ol.crumb a:active {
 	text-decoration:underline;
 }
 
-footer#globalfooter a:hover, footer#globalfooter a:focus, footer#globalfooter a:active, #updates_list_wrapper a:hover, #updates_list_wrapper a:focus, 										#updates_list_wrapper a:active {
+#updates_list_wrapper a:hover, 
+#updates_list_wrapper a:focus,
+#updates_list_wrapper a:active {
 	text-decoration:underline;
 }
+
+
+footer#globalfooter a {
+	border-bottom: 1px solid black;
+} 
+
+footer#globalfooter a:hover, 
+footer#globalfooter a:focus, 
+footer#globalfooter a:active {
+	color: $yellow;
+	border-bottom-color: $yellow;
+}
+
 
 a.btn { color:$white; }
 
