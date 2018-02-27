@@ -71,6 +71,11 @@ footer#globalfooter {
 				background-image:url(/_images/bcsr-logo-184x91.png);
 				background-size:cover;
 				background-repeat:no-repeat;
+				//set box-shadow so color transitions on focus
+				box-shadow: 
+  				1px 0px 0px 10px black, 
+  				1px 0px 0px 12px black;
+
 			}
 			&:hover {
 				border-bottom: 0 black
@@ -79,8 +84,14 @@ footer#globalfooter {
 			&:focus {
   			box-shadow: 
   				1px 0px 0px 10px black, 
-  				1px 0px 0px 12px #efefef;
+  				1px 0px 0px 12px $yellow;
+  			transition: box-shadow .25s;
   			border-bottom: 0 black;
+			}
+			&:hover:focus {
+  			box-shadow: 
+  				1px 0px 0px 10px black, 
+  				1px 0px 0px 12px black;
 			}
 		}
 	}
