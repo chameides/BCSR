@@ -114,32 +114,6 @@
 				<a href="<?php echo $myLnks['Event_LiveCal'];?>" class="icon live" target="_blank"><?php echo event_lang('CalendarW');?></a><br />
                 </p>
 			</div>
-			
-            <!--<div class="event-social-icons">-->
-            		<div class="social"> 
-					<div id="cmnt_cnt"><span class="arrow"><span>&nbsp;</span></span><?php get_comments_link($myEvnt['CommentsID'],$myEvnt['CommentsURL'],1)?></div>
-					<div class="socialT">
-						<a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php echo $myLnks['This'];?>" data-text="<?php build_tweet($myEvnt['Title'].' @ '.$myEvnt['Venue_Name'].' - '.$myEvnt['Time'].' '.event_lang('On').' '.stampToDate($myEvnt['DateRaw'],$hc_cfg[24]));?>" data-count="horizontal">Tweet</a>
-						<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-					</div>
-					<div class="socialG">
-						<g:plusone size="medium" count="true" href="<?php echo $myLnks['This'];?>"></g:plusone>
-						<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-					</div>
-					<div class="socialF">
-						<div class="fb-like" data-href="<?php echo $myLnks['This'];?>" data-send="false" data-layout="button_count" data-width="75" data-show-faces="false"></div>
-					</div>
-					<div class="socialL">
-						<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-						<script type="in/share" data-url="<?php echo urlencode($myLnks['This']);?>" data-counter="right"></script>
-					</div>
-				<!-- </div> -->
-                <!--<a id="esi-facebook" href="#" class="fa-a"><i class="fa fa-facebook"><span class="sr-only">Facebook</span></i></a>
-                <a id="esi-twitter" href="#" class="fa-a"><i class="fa fa-twitter"><span class="sr-only">Twitter</span></i></a>
-                <a id="esi-gplus" href="#" class="fa-a"><i class="fa fa-google-plus"><span class="sr-only">Instagram</span></i></a>
-                <a id="esi-linked" href="#" class="fa-a"><i class="fa fa-linkedin"><span class="sr-only">YouTube</span></i></a>-->
-            </div>
-            
 			<?php get_comments($myEvnt['CommentsID'],$myEvnt['CommentsURL'],$myEvnt['Title'],1);?>
 		</article>
 	</section>
