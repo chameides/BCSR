@@ -67,7 +67,7 @@ footer#globalfooter {
 			@else {
 				display:inline-block;
 				width:184px;
-				height:92px;
+				height:91px;
 				background-image:url(/_images/bcsr-logo-184x91.png);
 				background-size:cover;
 				background-repeat:no-repeat;
@@ -75,6 +75,7 @@ footer#globalfooter {
 				box-shadow: 
   				1px 0px 0px 10px black, 
   				1px 0px 0px 12px black;
+  			border-bottom: 0 black;
 
 			}
 			&:hover {
