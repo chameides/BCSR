@@ -177,6 +177,7 @@ footer#globalfooter {
 	
 	a.oulogin {
 		display:none;
+		border: none;
 		@media (min-width:$screen-lg-min) {
 			position: absolute;
 			bottom: 0px;
