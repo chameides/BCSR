@@ -844,7 +844,13 @@ function sr_forms_search(){
             $color_class = sr_colorizer($row_number);
             
             $description = ($hc_cfg[107] > 0) ? clean_truncate($row[21],$hc_cfg[107]) : $row[21];
-            
+            $descriptionShort = $description;
+            $descriptionShort = str_replace("</p><p>", "<br />", $descriptionShort);
+            $descriptionShort = str_replace("</div><div>", "<br />", $descriptionShort);
+            $descriptionShort = str_replace("</p><div>", "<br />", $descriptionShort);
+            $descriptionShort = str_replace("</div><p>", "<br />", $descriptionShort);    
+
+
             $categories = explode(",",$row[20]);//filtering out ACE
             switch (count($categories)){
                 case 0:
@@ -887,8 +893,7 @@ function sr_forms_search(){
                 <a href="'.CalRoot . '/index.php?eID='.$row[0].'">' //$location var removed for search results
                 .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
                 <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
-                <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
-                .strip_tags(cOut($description, '<br>')) . '<span class="readmore">&nbsp;Read more</span></p></div>'
+                <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'.strip_tags(html_entity_decode($descriptionShort), '<br><i><em>'). '<span class="readmore btest">&nbsp;Read more</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>';
             ++$cnt; 
@@ -1159,7 +1164,7 @@ function sr_event_browse($show_images = 0){
             .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
             <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
             <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
-            .strip_tags(str_replace("</p><p>", "<br />", cOut($description)), '<br>') . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
+            .strip_tags(str_replace("</p><p>", "<br />", cOut($description)), '<br><i><em>') . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>'; 
 

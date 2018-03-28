@@ -79,8 +79,10 @@ if(hasRows($result)){
     while($row = mysql_fetch_row($result)){
         $description = $row[2];
         $description = str_replace("</p><p>", "<br />", $description);
-        $description = str_replace("</div><div>", "<br />", $description);    
-        $description = strip_tags(html_entity_decode($description), '<br>');
+        $description = str_replace("</div><div>", "<br />", $description);
+        $description = str_replace("</p><div>", "<br />", $description);
+        $description = str_replace("</div><p>", "<br />", $description);    
+        $description = strip_tags(html_entity_decode($description), '<br><i><em>');
 	$brpos = strpos($description, '<br'); 
 	if($hc_cfg[107] > 0){
 		//look out for <br />
