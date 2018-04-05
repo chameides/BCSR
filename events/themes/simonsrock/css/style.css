@@ -19,7 +19,9 @@ h2 {clear:both;font-size:13px;margin:15px 0 3px 0;padding:5px 0 0 0;}
 h2.date, h2.location {clear:both;font-size:13px;margin:0 0 3px 0;padding:0;border:none;}
 h3, h4 {clear:both;font-size:13px;padding:10px 0 0 0;margin:0;}
 a:link, a:visited {text-decoration:underline;color:#3D3F3E;}
-a:hover {text-decoration:none;color:#be2126;}
+a:hover, 
+a:focus
+ {text-decoration:none;color:#be2126;}
 a:active {text-decoration:underline;color:#be2126;}
 a.series {float:right;}
 a.output {display:block;width:80%;}
@@ -34,7 +36,9 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #events .red {background-color: #ec6a1e;}
 #events li { padding: 0; width: 95%; overflow: hidden; }
 #events li > a { color: white; text-decoration:none; }
-#events li > a:hover { background-color: rgba(0,0,0,.3); text-decoration: none; }
+#events li > a:hover,
+#events li > a:focus
+	{ background-color: rgba(0,0,0,.3); text-decoration: none; }
 #events h2 { color: #6F665D; }
 #events h3 { margin-top: 10px; }
 #events h4 { background-image: url("/_images/home/event-ribbon.png"); max-width: 362px; height:39px; line-height:39px; font-size: 100%; margin: 0;  }
@@ -46,7 +50,9 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #events .event-content-container > * { padding: 0 30px; }
 
 	td.events a, td.today a, #filter a, #events li a, div.sr-mini-cal-filters a { text-decoration:none; }
-	td.events a:hover, td.today a:hover, div.sr-mini-cal-filters a:hover, #filter a:hover { text-decoration:underline; }
+	td.events a:hover, td.today a:hover, div.sr-mini-cal-filters a:hover, #filter a:hover 
+	td.events a:focus, td.today a:focus, div.sr-mini-cal-filters a:focus, #filter a:focus
+		{ text-decoration:underline; }
 	
 /* THIS CONTENT NO LONGER NECESSARY DUE TO FLEXBOX STYLES BELOW rem 8/14/15
 @media (min-width: 1281px) {
@@ -75,9 +81,11 @@ section {/*clear:both;float:left;width:69%;*/margin:0px 10px 15px 5px;}
 #no_events {color:#000000;}
 #no_events li {background-color:#FFFFFF;}
 #no_events li > a {color:#000000;}
-#events span.readmore {font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;font-size:1.55rem;padding-left:0px;color:#BE2126;}
+#events span.readmore {font-family: "LeHavreRough-Primary", "Arial Black", Arial, sans-serif;font-size:1.55rem;padding-left:0px;color:white;}
 #events .red:hover span.readmore, 
-#events li > a:hover .date-time span{
+#events li > a:hover .date-time span,
+#events .red:focus span.readmore, 
+#events li > a:focus .date-time span {
 	color:#efefef; transition: color 0.55s ease 0s;
 } /*read more text pop on dark orange background*/
 /*#events > ul > li:nth-of-type(4n+1) { background-color: #BE2126; }
@@ -109,7 +117,9 @@ section article h1 {display:block; margin-top: 0;}
 fieldset {margin:5px 0 0 0;border-top:solid 1px #666666;border-bottom:0;border-right:0;border-left:0;background:#FAFAFA;}
 fieldset legend {font-size:25px;padding:0 15px 0 10px;color:#be2126;}
 fieldset legend a.legend {text-decoration:underline;font-size:25px;color:#be2126;}
-fieldset legend a.legend:hover {text-decoration:none;color:#666666;}
+fieldset legend a.legend:hover,
+fieldset legend a.legend:focus
+	{text-decoration:none;color:#666666;}
 fieldset#signin {text-align:center;}
 fieldset#signin a {margin:15px 20px 15px 20px;}
 fieldset#signin p {margin:20px 0 0 0 ;font-size:0.8em;color:#666666;}
@@ -141,9 +151,10 @@ aside nav {margin-top:30px;}
 aside nav ul {margin: 0;width:99%;padding:0;background-color:#f1f1f1;}
 aside nav ul li {margin:0;padding:0;}
 aside nav ul a.menu {display:block;padding: 5px 0 5px 10px;text-decoration:none;font-size:18px;line-height:25px;}
-aside nav ul a.menu:hover {color:#FFFFFF;background:#be2126;}
+aside nav ul a.menu:hover, 
+aside nav ul a.menu:focus
+	{color:#FFFFFF;background:#be2126;}
 aside nav ul a.hc_mnu_usr_si {color:#be2126;}
-aside nav ul li:last-child a:hover {}
 aside ul {list-style:none;margin:0 5px 5px 10px;padding:0;}
 aside li {padding:0 0 15px 0;}
 aside li.date {color:#000000;margin:7px 0 0 1px;padding:0;}
@@ -179,8 +190,12 @@ ul.series li a {text-decoration:none;padding: 0 2% 10px 29px;}
 #cmnt_cnt a {text-decoration:none;font-size:12px;position: relative;line-height:20px;text-align:center;font-weight:bold;padding:3px 5px 3px 5px;border:solid 1px #CCCCCC;background:#EFEFEF;color:#666666;margin:0 5px 5px 10px;border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
 #cmnt_cnt .arrow {display:block;float:left;position:relative;right:-10px;top:8px;z-index:5;border:7px solid transparent;border-left:1px none #000000;border-right-color:#CCCCCC;width:0;height:0;}
 #cmnt_cnt .arrow span {display:block;float:left;position:relative;left:1px;top:-7px;z-index:10;border:7px solid transparent;border-left:1px none #CCCCCC;border-right-color:#EEEEEE;width:0;height:0;overflow:hidden;white-space:nowrap;}
-#cmnt_cnt:hover .arrow span {border-right-color:#CCCCCC;}
-#cmnt_cnt:hover a {background:#CCCCCC;color:#FFFFFF;}
+#cmnt_cnt:hover .arrow span,
+#cmnt_cnt:focus .arrow span
+	{border-right-color:#CCCCCC;}
+#cmnt_cnt:hover a,
+#cmnt_cnt:focus a
+	{background:#CCCCCC;color:#FFFFFF;}
 #cmnt_cnt a:active {text-decoration:none;}
 #hc_lang, #hc_theme {float:none;margin:5px 0 0 10px;}
 .setting {display:none;}
@@ -217,7 +232,9 @@ fieldset.user {min-height:150px;}
 #user_events li {clear:none;text-align:center;float:left;margin:0;padding:0;height:25px;}
 #ue_prev, #ue_next {width:15%;float:left;}
 #ue_prev a, #ue_next a {text-decoration:none;font-size:15px;margin:2px 0 0 0;display:block;color:#666666;}
-#ue_prev a:hover, #ue_next a:hover {text-decoration:none;font-size:15px;color:#be2126;}
+#ue_prev a:hover, #ue_next a:hover,
+#ue_prev a:focus, #ue_next a:focus,
+ {text-decoration:none;font-size:15px;color:#be2126;}
 #ue_jump {width:70%;float:left;}
 #ue_jump_select {margin:3px 0 0 35%;}
 #evernote img {width:auto; max-width: 100%;} /*ensure content image is not stretched, without the ability to add classes, need to fall back on general rules*/
@@ -249,7 +266,10 @@ a.news_su {background-image:url(../../../img/icons/email.png);background-repeat:
 a.news_e {background-image:url(../../../img/icons/emailedit.png);background-repeat:no-repeat;}
 
 /* BCSR Footer */
-footer .row:hover {background-color:inherit;}
+footer .row:hover, 
+footer .row:focus
+{background-color:inherit;}
+
 footer .clearfix {float:none;}
 footer {clear:both;width:100%;display:block;}
 /*footer p {margin:25px 0 0 3%;}*/
@@ -260,8 +280,12 @@ footer {clear:both;width:100%;display:block;}
 .breadbox {clear:both;z-index:1000;width:99%;overflow:hidden;margin:0;padding:10px 0 15px 29px;font-size:15px;}
 .breadbox li {display:block;float:left;position:relative;}
 .breadbox li a {height:25px;display:inline-block;line-height:24px;text-decoration:none;padding:0 10px 0 15px;color:#666666;}
-.breadbox li:hover a {color:#000000;}
-.breadbox li:hover .arrow span {border-left-color:#be2126;}
+.breadbox li:hover a,
+.breadbox li:focus a, 
+	{color:#000000;}
+.breadbox li:hover .arrow span, 
+.breadbox li:focus .arrow span 
+	{border-left-color:#be2126;}
 .breadbox li.empty {font-style:italic;padding:3px 10px 0 25px;}
 .breadbox li:first-child a {padding:0 10px 0 15px;}
 .breadbox li:second-child a {padding:0 10px 0 15px;}
@@ -271,8 +295,9 @@ footer {clear:both;width:100%;display:block;}
 .breadbox li .arrow span {}
 #bread_top {display:none;float:right;width:25px;}
 #bread_top a {font-weight:bold;font-size:20px;float:right;width:25px;text-align:center;vertical-align:middle;margin:0;padding:0;}
-#bread_top a:hover {color:#666666;}
-
+#bread_top a:hover,
+#bread_top a:focus 
+	{color:#666666;}
 /* Mini-Calendar */
 .mini-cal {border-collapse:collapse;empty-cells:show;width:99%;height:150px;font-size:16px;padding:0;margin:auto;}
 .mini-cal a {text-decoration:none;display:block;line-height:20px;}
@@ -280,17 +305,25 @@ footer {clear:both;width:100%;display:block;}
 .mini-cal td.nav, .mini-cal td.title {background:#BE2126;font-size:20px;}
 .mini-cal td.title select {background-color:#BE2126;border:0;float:none;color:#fff;}
 .mini-cal td.nav a {text-decoration:none;font-weight:bold;color:#fff;}
-.mini-cal td.nav a:hover {text-decoration:none;font-weight:bold;color:#fff;}
+.mini-cal td.nav a:hover
+ {text-decoration:none;font-weight:bold;color:#fff;}
+.mini-cal td.nav a:focus {
+	border: white solid 2px;
+}
 .mini-cal td.dow {background:#FAFAFA;color:#be2126;width:14%;}
 .mini-cal td.blank {background:#FAFAFA;}
 .mini-cal td.today, .mini-cal td.today a {background:#be2126;color:#ffffff;}
-.mini-cal td.today:hover, .mini-cal td.today a:hover {background:#be2126;color:#EFEFEF;}
+.mini-cal td.today:hover, .mini-cal td.today a:hover,
+.mini-cal td.today:focus, .mini-cal td.today a:focus 
+	{background:#be2126;color:#EFEFEF;}
 .mini-cal td.events {background:#e1e1e1;}
-.mini-cal td.events:hover, .mini-cal td.events a:hover {background:#262421;color:#ffffff;}
+.mini-cal td.events:hover, .mini-cal td.events a:hover
+.mini-cal td.events:focus, .mini-cal td.events a:focus
+	{background:#262421;color:#ffffff;}
 
 .sr-mini-cal-filters { padding-bottom: 5px; }
 .sr-mini-cal-filters a { text-transform: uppercase; margin-right: 10px; }
-.sr-mini-cal-filters .cal-active { color: #be2126; }
+.sr-mini-cal-filters .cal-focus { color: #be2126; }
 
 /*	Event Details & Location Profile */
 #share_more {display:none;clear:both;margin:5px 0 0 0;}
@@ -321,12 +354,17 @@ td.hc_cpMonthNavigation, td.hc_cpYearNavigation {padding-top:5px;}
 .hc_cpBorder a.hc_cpTodayText:hover,
 .hc_cpBorder td a.hc_cpCurrentMonthDate:hover,
 .hc_cpBorder td a.hc_cpOtherMonthDate:hover,
-.hc_cpBorder td a.hc_cpCurrentDate:hover {background:#FFFFFF;color:#000000}
+.hc_cpBorder td a.hc_cpCurrentDate:hover,
+.hc_cpBorder a.hc_cpTodayText:focus,
+.hc_cpBorder td a.hc_cpCurrentMonthDate:focus,
+.hc_cpBorder td a.hc_cpOtherMonthDate:focus,
+.hc_cpBorder td a.hc_cpCurrentDate:focus 
+	{background:#FFFFFF;color:#000000}
 .hc_cpBorder td.hc_cpDayColumnHeader{text-align:center;font-weight:bold;}
 .hc_cpBorder a.hc_cpTodayText{margin:5px 0 0 0;display:block;color:#666666;font-weight:bold;height:20px;background:#EFEFEF;text-decoration:none;text-align:center;padding:5px 0 0 0;}
 .hc_cpBorder{border:0;width:225px;height:170px;background:#FAFAFA;border-radius:15px;-khtml-border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;-moz-box-shadow:1px 1px 5px rgba(0,0,0,.5);-webkit-box-shadow:1px 1px 5px rgba(0,0,0,.5);-goog-ms-box-shadow:1px 1px 5px rgba(0,0,0,.5);box-shadow:1px 1px 5px rgba(0,0,0,.5);}
 
-/*	Disqus Comments */
+/*	Disqus Comments 
 #disqus_thread {clear:both;}
 #dsq-content h3 {clear:none;color:#000000;margin:0;padding:0;}
 #disqus_thread {background-color: #FFFFFF;color: #000000;padding: 5px;border-top:solid 1px #CCCCCC;}
@@ -352,13 +390,17 @@ li.dsq-like-thread, li.dsq-dislike-thread, li.dsq-community-box, li.dsq-global-t
 ul.dsq-comment-actions li {float:right;clear:none;}
 #dsq-subscribe li {clear:none;float:left;}
 .dsq-trackback-url {display:none;}
+*/
 
-/*	Facebook Comments */
+
+/*	Facebook Comments 
 .fb-comments {clear:both;width:100%;text-align:center;;border-top:solid 1px #CCCCCC;padding:5px 0 0 0;}
+*/
 
-/*	Livefyre Comments */
+/*	Livefyre Comments 
 #livefyre {margin:10px 0 0 0;border-top:solid 1px #CCCCCC;}
 #livefyre input {float:none;}
+*/
 
 /*	Chrome */
 @media screen and (-webkit-min-device-pixel-ratio:0) {}
@@ -368,16 +410,18 @@ ul.dsq-comment-actions li {float:right;clear:none;}
 
 a.red { color: #BE2126 !important; }
 
-/* Font Awesome Styles */
+/* Font Awesome Styles 
 .event-social-icons { display: block; clear:both; }
 #esi-facebook { background-color:#3F6EB2; }
 #esi-twitter { background-color:#0294C5; }
 #esi-gplus { background-color:#DF0907; }
 #esi-linked { background-color:#2F92CB; }
+
+
 .event-social-icons .fa-a{ width: 40px; height: 40px; display: table; border-radius: 100px; background-color: #333; float: left; margin: 1rem 0 1rem 0.5rem; transition: background-color 0.25s ease 0s; }
 .event-social-icons a.fa-a:hover { background-color: #333 !important; text-decoration: none; }
 .event-social-icons .fa-a .fa { display: table-cell; width: 100%; height: 100%; text-align: center; vertical-align: middle; font-size: 2.25rem; color: #FFF; transition: color 0.25s ease 0s; }
-
+*/
 #goadminmessage, label[for=recurCheck] { margin-top: 10px; }
 .tup { margin: 5px 5px 0; }
 .tdown { margin: 2px 5px 0; }
