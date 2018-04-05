@@ -953,7 +953,7 @@ function sr_get_side($which = ''){
 function sr_theme_mini_search($holder = '',$button = 0){
     global $hc_lang_core;
     echo '
-    <form name="hc_search" id="hc_search" method="post" action="'.CalRoot.'/index.php?com=searchresult"><input type="search" name="hc_search_keyword" id="hc_search_keyword" value=""'.(($holder != '') ? ' placeholder="'.$holder.'"':'').' required="required" speech x-webkit-speech />'
+    <form name="hc_search" id="hc_search" method="post" action="'.CalRoot.'/index.php?com=searchresult"><input type="search" name="hc_search_keyword" aria-label="Search events by keyword" id="hc_search_keyword" value=""'.(($holder != '') ? ' placeholder="'.$holder.'"':'').' required="required" speech x-webkit-speech />'
         .(($button == 1) ? '<input type="submit" name="hc_search_submit" id="hc_search_submit" value="'.$hc_lang_core['GoSearch'].'" />':'').
         '<span>
             <a href="'.CalRoot.'/index.php?com=search" rel="nofollow">'.$hc_lang_core['AdvSearch'].'</a><p></p>

@@ -219,7 +219,7 @@
 				<tr>
 					<td class="nav">'.$bak.'</td>
 					<td class="title" colspan="5">
-					<select name="jumpMonth" id="jumpMonth" onchange="window.location.href=this.value;">'.$opts.'	
+					<select name="jumpMonth" id="jumpMonth" aria-label="Select Month for Event Range" onchange="window.location.href=this.value;">'.$opts.'	
 					</select>
 					</td>
 					<td class="nav">'.$fwd.'</td>

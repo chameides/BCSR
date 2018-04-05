@@ -33,7 +33,7 @@
     echo $xmlcontent;
 ?>
     <div class="col-md-8">
-	<section id="events">		
+	<section id="events" aria-label="Event Listing">		
 		<?php 
             
 			sr_event_browse(1);
