@@ -37,7 +37,7 @@
 	<p></p>
 </span>
 		<h4 class="spotlight">Search</h4>
-		<?php sr_theme_mini_search('Search by Keyword',0);?>
+		<?php sr_theme_mini_search('Search by Keyword',1);?>
 	</div>
 			
 		<div class="setting"><?php select_language(0);?></div>

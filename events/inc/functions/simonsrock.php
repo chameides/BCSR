@@ -893,7 +893,7 @@ function sr_forms_search(){
                 <a href="'.CalRoot . '/index.php?eID='.$row[0].'">' //$location var removed for search results
                 .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
                 <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
-                <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'.strip_tags(html_entity_decode($descriptionShort), '<br><i><em>'). '<span class="readmore btest">&nbsp;Read more</span></p></div>'
+                <span class="location"><i class="fa fa-map-marker" title="Location"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'.strip_tags(html_entity_decode($descriptionShort), '<br><i><em>'). '<span class="readmore btest">&nbsp;Read more</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>';
             ++$cnt; 
@@ -954,7 +954,9 @@ function sr_theme_mini_search($holder = '',$button = 0){
     global $hc_lang_core;
     echo '
     <form name="hc_search" id="hc_search" method="post" action="'.CalRoot.'/index.php?com=searchresult"><input type="search" name="hc_search_keyword" aria-label="Search events by keyword" id="hc_search_keyword" value=""'.(($holder != '') ? ' placeholder="'.$holder.'"':'').' required="required" speech x-webkit-speech />'
-        .(($button == 1) ? '<input type="submit" name="hc_search_submit" id="hc_search_submit" value="'.$hc_lang_core['GoSearch'].'" />':'').
+        .(($button == 1) ? '<button class="btn btn-link" type="submit" name="hc_search_submit" id="hc_search_submit" value="'.$hc_lang_core['GoSearch'].'" >
+                <i class="fa fa-flip-horizontal fa-search"><span class="sr-only">Search Events</span></i>
+            </button>':'').
         '<span>
             <a href="'.CalRoot.'/index.php?com=search" rel="nofollow">'.$hc_lang_core['AdvSearch'].'</a><p></p>
         </span>
@@ -1163,7 +1165,7 @@ function sr_event_browse($show_images = 0){
             <a href="'.CalRoot . '/index.php?eID='.$row[0].$location.'">'
             .'<div class="event-content-container">'. $category . '<h3 itemprop="name">'.cOut($row[1]).'</h3><div class="date-time">
             <span itemprop="startDate" datetime="'.$stamp.'">'. $stamp . ', ' .$time.'</span>
-            <span class="location"><i class="fa fa-map-marker"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
+            <span class="location"><i class="fa fa-map-marker" title="Location"></i> ' . $row[14] .  (($row[22] != '') ? ' - ' . $row[22] : '') . '</span></div><p>'
             .strip_tags(str_replace("</p><p>", "<br />", cOut($description)), '<br><i><em>') . '<span class="readmore">&nbsp;READ MORE</span></p></div>'
                 .(($show_images == 1 && $row[6] != '') ? '<div class="event-image-container" style="background-image: url('. $row[6] .'); min-width:'
                 . ((strlen($row[1]) > 43) ? 325 : 287 ) .'px;"></div>':'').'</a></li>'; 

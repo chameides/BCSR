@@ -101,8 +101,14 @@ span[itemprop="name"] {display:block;clear:both;}
 #filter {float:left;width:100%;max-width:400px;margin:10px 0 15px 0px;}
 #filter span {display:block;clear:both;width:100%;font-size:1.7rem; line-height: 1.6em;}
 #hc_search span {width:99%;text-align:left;margin:0 0 4px 0;padding:0;}
-#hc_search_keyword {width:99%;margin:0; padding: 2px 10px; font-size: 1.5rem;}
-#hc_search_submit {width:99%;margin:0 0 25px 0;padding:0;}
+#hc_search_keyword {width:90%;margin:0; padding: 2px 10px; font-size: 1.5rem;}
+#hc_search_submit {
+	margin:0 0 25px 0;
+	padding:0;
+	font-size: 1em;
+  color: #6e675f;
+  padding-left: 5px;
+}
 #cap_img {float:left;border:solid 1px #000000;margin:5px 0 5px 0;}
 #capChk {float:left;margin:4px 0 0 5px;}
 section header {display:block;float:left;font-size:13px;font-weight:bold;color:#000000;padding:10px 0 0 5px;text-transform:uppercase;}
