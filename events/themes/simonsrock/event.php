@@ -33,14 +33,6 @@
 <body id="top" itemscope itemtype="http://schema.org/WebPage" class="bcsr-cal no-hero">
 	<?php include('head.php');?>
 	<a name="top"></a>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 <?php
 	//$crumbs = array(cal_url().'/index.php?com=digest' => 'Events', cal_url() => 'Calendar',$myLnks['This'] => $myEvnt['Title']);
     $crumbs = array(cal_url() => 'Events',$myLnks['This'] => $myEvnt['Title']);
@@ -69,7 +61,7 @@
 				?>
 				</h4>
 				<time itemprop="startDate" content="<?php echo $myEvnt['Timestamp'];?>"><?php echo $myEvnt['Time'];?></time>
-                <h4 itemprop="name" class="locname"><i class="fa fa-map-marker"></i>  <?php echo ($myEvnt['Venue_URL'] != '') ? ' <a href="'.$myEvnt['Venue_URL'].'" target="_blank">'. $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '') .'</a>' : $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '')?></h4>			
+                <h4 itemprop="name" class="locname"><i class="fa fa-map-marker" title="Location"></i>  <?php echo ($myEvnt['Venue_URL'] != '') ? ' <a href="'.$myEvnt['Venue_URL'].'" target="_blank">'. $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '') .'</a>' : $myEvnt['Venue_Name'] . (($myEvnt['Venue_Address2'] != '') ? ' - ' . $myEvnt['Venue_Address2'] : '')?></h4>			
 			</div>
 
 					<br />

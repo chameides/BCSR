@@ -109,6 +109,10 @@ span[itemprop="name"] {display:block;clear:both;}
   color: #6e675f;
   padding-left: 5px;
 }
+#hc_search_submit:focus {
+	color: #BE2126;
+}
+
 #cap_img {float:left;border:solid 1px #000000;margin:5px 0 5px 0;}
 #capChk {float:left;margin:4px 0 0 5px;}
 section header {display:block;float:left;font-size:13px;font-weight:bold;color:#000000;padding:10px 0 0 5px;text-transform:uppercase;}
@@ -287,8 +291,10 @@ footer {clear:both;width:100%;display:block;}
 .breadbox li {display:block;float:left;position:relative;}
 .breadbox li a {height:25px;display:inline-block;line-height:24px;text-decoration:none;padding:0 10px 0 15px;color:#666666;}
 .breadbox li:hover a,
-.breadbox li:focus a, 
-	{color:#000000;}
+.breadbox li a:focus {
+	color:#000000; 
+	text-decoration: underline;
+}
 .breadbox li:hover .arrow span, 
 .breadbox li:focus .arrow span 
 	{border-left-color:#be2126;}

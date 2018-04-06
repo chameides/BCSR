@@ -2,7 +2,7 @@
 $hc_lang_search = array(
 
 //	Search
-'SearchLabel'		=>	'To search events select your event criteria below and click "Begin Search".',
+'SearchLabel'		=>	'Select event criteria and Search',
 'DateRange'			=>	'Date Range',
 'Dates'				=>	'Events from',
 'To'				=>	'to',
@@ -45,7 +45,7 @@ $hc_lang_search = array(
 'ResetSearch'		=>	'Reset Location Search',
 
 //	Buttons
-'BeginSearch'		=>	'Begin Search',
+'BeginSearch'		=>	'Search',
 
 //	Validation
 'Valid01'			=>	'Your search could not be completed because of the following reasons:',

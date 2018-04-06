@@ -642,7 +642,7 @@ function sr_forms_search(){
 
     $region = ($hc_lang_config['AddressRegion'] != 0) ? ' | <a tabindex="-1" href="javascript:;" onclick="toggleMe(2)" class="legend">'.$hc_lang_config['RegionTitle'] . '</a>' : '';
 
-    echo '
+    echo '<h1>Search Event</h1>
     <p>'.$hc_lang_search['SearchLabel'].'</p>
 
     <form name="frmEventSearch" id="frmEventSearch" method="post" action="'.CalRoot.'/index.php?com=searchresult" onsubmit="return validate();">
@@ -664,42 +664,15 @@ function sr_forms_search(){
     </fieldset>
     <fieldset>
         <legend>
-            <a tabindex="-1" href="javascript:;" onclick="toggleMe(0);" class="legend">' . $hc_lang_search['LocationLabel'] . '</a>
-            | <a tabindex="-1" href="javascript:;" onclick="toggleMe(1);" class="legend">' . $hc_lang_search['CityLabel'] . '</a>
-            '.$region.'
-            | <a tabindex="-1" href="javascript:;" onclick="toggleMe(3)" class="legend">' . $hc_lang_search['PostalLabel'] . '</a>
+            ' . $hc_lang_search['LocationLabel'] . '
         </legend>
         <div id="location_div">';
             location_select(false);
     echo '
         </div>
-        <div id="city_div" style="display:none;">
-            <label for="city">'.$hc_lang_search['City'].'</label>';
-    $f = ($hc_cfg[11] == 1) ? 'a':'';
-    if(!file_exists(HCPATH.'/cache/selCity'.$f.'.php'))
-        buildCache(4,$hc_cfg[11]);
-    include(HCPATH.'/cache/selCity'.$f.'.php');
-    echo '
-        </div>
-        <div id="region_div" style="display:none;">
-            <label for="locState">'.$hc_lang_config['RegionLabel'].'</label>';	
-    $state = $hc_cfg[21];
-    $regSelect = $hc_lang_search['RegSelect'];
-    $stateDisabled = 1;
-    include(HCLANG.'/'.$hc_lang_config['RegionFile']);
-    echo '
-        </div>
-        <div id="postal_div" style="display:none;">
-            <label for="postal">'.$hc_lang_search['Postal'].'</label>';
-    if(!file_exists(HCPATH.'/cache/selPostal'.$f.'.php'))
-        buildCache(5,$hc_cfg[11]);
-    include(HCPATH.'/cache/selPostal'.$f.'.php');
-    echo '
-        </div>
     </fieldset>
     <fieldset>
-        <legend>'.$hc_lang_search['CategoryLabel'].'</legend>
-        <label>'.$hc_lang_search['Categories'].'</label>';
+        <legend>'.$hc_lang_search['CategoryLabel'].'</legend>';
     sr_shared_getCategories('frmEventSearch', $hc_cfg['CatCols'],NULL,$hc_cfg['CatLinks']);
     echo '
     </fieldset>
