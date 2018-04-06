@@ -642,7 +642,7 @@ function sr_forms_search(){
 
     $region = ($hc_lang_config['AddressRegion'] != 0) ? ' | <a tabindex="-1" href="javascript:;" onclick="toggleMe(2)" class="legend">'.$hc_lang_config['RegionTitle'] . '</a>' : '';
 
-    echo '<h1>Search Event</h1>
+    echo '<h1>Event Search</h1>
     <p>'.$hc_lang_search['SearchLabel'].'</p>
 
     <form name="frmEventSearch" id="frmEventSearch" method="post" action="'.CalRoot.'/index.php?com=searchresult" onsubmit="return validate();">
