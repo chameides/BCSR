@@ -12,6 +12,25 @@ form.gsc-search-box {
 	max-width: 584px;
 }
 
+//override google defaults
+
+.gsc-input .gsc-input-box {
+	height: auto; //prevent search text getting cut off
+}
+
+.gsc-search-button .gsc-search-button-v2 { //style button size
+		padding: 9px;
+		margin-bottom: 0;
+		line-height: 2em;
+		background-color: $red;
+		background-image: none; 
+		border: 0;
+		border-radius: 0;
+		@media screen and (max-width:$screen-md-max) {
+			padding: 7px;
+		}
+	}
+
 .cse .gsc-control-cse, 
 .gsc-control-cse {
   padding: .5em; //align search results with search box
@@ -45,6 +64,19 @@ input[type="button"].gsc-search-button //google custom search - search button
 	text-decoration: none !important;
 	:hover {
 		text-decoration: underline !important;
+	}
+}
+
+.gsc-webResult {
+	//align results left
+	.gsc-thumbnail-inside, //title
+	.gsc-url-top, //url
+	.gsc-table-cell-thumbnail { //image 
+		padding-left: 0px; 
+	}
+
+	.gsc-table-result { //page description
+		line-height: 1.6em;
 	}
 }
 
