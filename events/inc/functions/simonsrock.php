@@ -642,7 +642,7 @@ function sr_forms_search(){
 
     $region = ($hc_lang_config['AddressRegion'] != 0) ? ' | <a tabindex="-1" href="javascript:;" onclick="toggleMe(2)" class="legend">'.$hc_lang_config['RegionTitle'] . '</a>' : '';
 
-    echo '<h1>Event Search</h1>
+    echo '<h1 class="margin-top-none">Event Search</h1>
     <p>'.$hc_lang_search['SearchLabel'].'</p>
 
     <form name="frmEventSearch" id="frmEventSearch" method="post" action="'.CalRoot.'/index.php?com=searchresult" onsubmit="return validate();">
@@ -780,11 +780,12 @@ function sr_forms_search(){
                         .$rQuery." ORDER BY StartDate, TBD, StartTime, Title");
         if(!hasRows($result)){
             echo '
-            <p>' . $hc_lang_search['NoResults'] . '</p>
+            <h1 class="margin-top-none">' . $hc_lang_search['NoResults'] . '</h1>
+            <p>' . $hc_lang_search['NoResultsExplanation'] . '<p>
             <p><a href="'.CalRoot.'/index.php?com=search">'.$hc_lang_search['SearchAgain'].'</a></p>';
             return 0;}
         
-        echo '<p>'.$hc_lang_search['ResultLabel']. ' [<a href="'.CalRoot.'/index.php?com=searchresult&amp;r='.$doRecur."&amp;s=".urlencode($startDate)."&amp;e=".urlencode($endDate).$link.'">'.$hc_lang_search['ResultLink'].'</a>]';
+        echo '<h1 class="margin-top-none">'.$hc_lang_search['ResultLabel']. '</h1> <a href="'.CalRoot.'/index.php?com=searchresult&amp;r='.$doRecur."&amp;s=".urlencode($startDate)."&amp;e=".urlencode($endDate).$link.'">'.$hc_lang_search['ResultLink'].'</a>';
         
         $cnt = 0;
         $row_number = 1;

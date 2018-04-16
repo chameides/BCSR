@@ -34,10 +34,11 @@ $hc_lang_search = array(
 'PlaceKeywords'		=>	'Enter at leat four (4) characters.',
 
 //	Search Results
-'ResultLabel'		=>	'Your Search Results',
+'ResultLabel'		=>	'Events',
 'ResultLink'		=>	'Link to These Results',
-'NoResults'			=>	'There are no events that meet that search criteria.',
-'SearchAgain'		=>	'Click here to search again.',
+'NoResults'			=>	'No Results',
+'NoResultsExplanation'		=>	'There are no events that meet that search criteria.',
+'SearchAgain'		=>	'Try another search.',
 
 //	Location Search
 'NoLocation'		=>	'There are no locations available with that name.',

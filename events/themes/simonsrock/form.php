@@ -23,7 +23,7 @@
 		<div class="container-fluid">
         <div class="row-fluid">
         <div class="col-md-8">
-	<section id="form-section">
+	<section id="form-section" aria-label="Matching Event Listings">
 		<?php sr_forms_get_form();?>
 	</section>
             </div>
