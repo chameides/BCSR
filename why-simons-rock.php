@@ -63,8 +63,8 @@
 <div id="trigger" style="position:fixed; top:2px; right:0%; height:3px; width:50px; background-color:transparent; z-index:9999;"></div>
 
 <div id="why_rightnav">
-	<a class="btn btn-link" id="why_upbutton"><i class="fa fa-chevron-circle-up"></i></a>
-	<a class="btn btn-link" id="why_downbutton"><i class="fa fa-chevron-circle-down"></i></a>
+	<button class="btn btn-link" id="why_upbutton" title="Next Slide"><i class="fa fa-chevron-circle-up"></i></button>
+	<button class="btn btn-link" id="why_downbutton" title="Previous Slide"><i class="fa fa-chevron-circle-down"></i></button>
 </div>
 <div id="fullpage">
 <!--<section id="earlycollege">-->
