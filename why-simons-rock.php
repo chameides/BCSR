@@ -150,6 +150,13 @@
 <!--<section id="learningliberated">-->
 	<div class="section subsection subsection-video" id="learningliberated_div1">
 		
+		<!-- add video controls, font-awesome icons -->
+    <div id="hero-video-controls" style="z-index:3">
+      <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+      <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+    </div>
+    <!-- end of added HTML-->
+		
 		<video id="learningliberated_background_video" class="background-video" loop="loop" preload="auto" muted="true" width="640" height="264" poster="/_images/_why/pond.jpg" data-setup="{}">
 			
 			<source src="/_images/_why/pond.mp4" type="video/mp4" />
@@ -672,6 +679,29 @@
 	<script type="text/javascript" src="/_js/jquery.fullPage.min.js"></script>
   	
   	<script type="text/javascript" src="/_js/why-simons-rock.js"></script>
+
+  	<script>
+  		//video pause/play controls for autoplay video
+$('#stop').show();
+var videoElement = document.getElementById('learningliberated_background_video');
+$(document).ready(function() {
+  //click play to start video and toggle button display
+  $('#play').click(function() {
+    $('#play').hide();
+    $('#stop').show();
+    videoElement.play();
+    $(document.body).removeClass('pause-video');
+  });
+
+  //click stop to stop video and toggle button display
+  $('#stop').click(function() {
+    $('#play').show();
+    $('#stop').hide();
+    videoElement.pause();
+    $(document.body).addClass('pause-video');
+  });
+});
+</script>
 
   </body>
 </html>

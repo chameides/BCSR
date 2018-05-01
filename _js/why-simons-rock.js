@@ -88,10 +88,17 @@ $(document).ready(function($) {
 					//console.log('firing nextIndex 4');
 					if (!touch) $('#learningliberated_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250,function(){
 						if (!isMobileWSR && !touch) {
-							setTimeout(function(){ 
-								$('#learningliberated_div1 .background-video').show('fast');
-								$('#learningliberated_div1 video').get(0).play(); 
-							}, 750);
+								//queue up video
+								setTimeout(function(){m 
+									$('#learningliberated_div1 .background-video').show('fast');
+									//if not pause button
+									if (!$("body").hasClass("pause-video")) {
+										$('#learningliberated_div1 video').get(0).play();
+										//display controls
+										$('#play').hide();
+	    							$('#stop').show(); 
+									}
+								}, 750);	
 							//$('#learningliberated_div1 video').get(0).play();
 						}					
 					});			
