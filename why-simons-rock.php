@@ -682,26 +682,28 @@
 
   	<script>
   		//video pause/play controls for autoplay video
-$('#stop').show();
-var videoElement = document.getElementById('learningliberated_background_video');
-$(document).ready(function() {
-  //click play to start video and toggle button display
-  $('#play').click(function() {
-    $('#play').hide();
-    $('#stop').show();
-    videoElement.play();
-    $(document.body).removeClass('pause-video');
-  });
+			$('#stop').show();
+			var videoElement = document.getElementById('learningliberated_background_video');
+			$(document).ready(function() {
+			  //click play to start video and toggle button display
+			  $('#play').click(function() {
+			    $('#play').hide();
+			    $('#stop').show();
+			    videoElement.play();
+			    //set document wide value
+			    $(document.body).removeClass('pause-video');
+			  });
 
-  //click stop to stop video and toggle button display
-  $('#stop').click(function() {
-    $('#play').show();
-    $('#stop').hide();
-    videoElement.pause();
-    $(document.body).addClass('pause-video');
-  });
-});
-</script>
+			  //click stop to stop video and toggle button display
+			  $('#stop').click(function() {
+			    $('#play').show();
+			    $('#stop').hide();
+			    videoElement.pause();
+			    //set document wide value
+			    $(document.body).addClass('pause-video');
+			  });
+			});
+		</script>
 
   </body>
 </html>
