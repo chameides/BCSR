@@ -74,7 +74,8 @@ overflow-x:hidden!important;
 				opacity:0.4;
 				transition-property:opacity;
 				transition-duration:0.5s;
-				&:hover {
+				&:hover,
+				&:focus {
 					opacity:1;
 				}	
 			}
