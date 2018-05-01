@@ -698,7 +698,8 @@ overflow-x:hidden!important;
 			padding: 20px 7.5px;
 			width: 100%;
 			color: #FFF;
-			&:hover {
+			&:hover,
+			&:focus {
 				background-color: #BE2126;
 				text-decoration:none;
 			}
