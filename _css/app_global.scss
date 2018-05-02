@@ -974,6 +974,27 @@ body#why .side-nav-mobile,
   }
   //ensure controls appear on screen 
   //button is styled with class .video-pause in app_home
+
+  //Set Buttons Why Simon's Rock template above next, back
+  #fullpage & {
+    z-index: 3;
+  }
+}
+
+ //Set play button to hide by default on Why Simon's Rock template
+.video-play {
+  display: none;
+}
+
+body.pause-video { //class added to body when pause is selected
+  //Set pause button to hide after pause button is selected
+  .video-stop {
+    display: none;
+  }
+  //Set play button to display after pause button is selected
+  .video-play {
+    display: inline;
+  }
 }
 
 #hero-video-controls {

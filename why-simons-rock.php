@@ -149,11 +149,10 @@
 
 <!--<section id="learningliberated">-->
 	<div class="section subsection subsection-video" id="learningliberated_div1">
-		
 		<!-- add video controls, font-awesome icons -->
-    <div id="hero-video-controls" style="z-index:3">
-      <button id="play"  href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
-      <button id="stop" href="#" onClick="play()" class="btn btn-link video-pause"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+    <div id="hero-video-controls">
+      <button data-video-control="learningliberated_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-play"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+      <button data-video-control="learningliberated_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-stop"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
     </div>
     <!-- end of added HTML-->
 		
@@ -329,11 +328,6 @@
 						them on a first-name basis, and they’ll love sharing the important, ambitious scholarship they’re
 						doing.
 					</p>
-		
-					
-				
-			
-		
 			</div>
 		
 		</div> <!-- / intro_1 -->
@@ -342,6 +336,13 @@
 	</div>
 	<div class="section subsection subsection-video" id="besurrounded_div2">
 		
+		<!-- add video controls, font-awesome icons -->
+    <div id="hero-video-controls">
+      <button data-video-control="besurrounded_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-play"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+      <button data-video-control="besurrounded_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-stop"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+    </div>
+    <!-- end of added HTML-->
+
 		<video id="besurrounded_background_video" class="background-video" loop="loop" preload="auto" muted="true" width="640" height="264" poster="/_images/_why/one-on-one.jpg" data-setup="{}">
 
 			<source src="/_images/_why/one-on-one.webm" type="video/webm" />
@@ -576,7 +577,12 @@
 
 <!--<section id="oncearocker" class="scrollfx-container">-->
 	<div class="section subsection subsection-video" id="oncearocker_div1">
-		
+		<!-- add video controls, font-awesome icons -->
+    <div id="hero-video-controls">
+      <button data-video-control="commencement_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-play"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
+      <button data-video-control="commencement_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-stop"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
+    </div>
+    <!-- end of added HTML-->
 		<video id="commencement_background_video" class="background-video" loop="loop" preload="auto" muted="true" width="640" height="264" poster="/_images/_why/commencement.jpg" data-setup="{}">
 
 			<source src="/_images/_why/commencement.webm" type="video/webm" />
@@ -681,26 +687,23 @@
   	<script type="text/javascript" src="/_js/why-simons-rock.js"></script>
 
   	<script>
-  		//video pause/play controls for autoplay video
-			$('#stop').show();
-			var videoElement = document.getElementById('learningliberated_background_video');
 			$(document).ready(function() {
-			  //click play to start video and toggle button display
-			  $('#play').click(function() {
-			    $('#play').hide();
-			    $('#stop').show();
-			    videoElement.play();
-			    //set document wide value
-			    $(document.body).removeClass('pause-video');
-			  });
-
-			  //click stop to stop video and toggle button display
-			  $('#stop').click(function() {
-			    $('#play').show();
-			    $('#stop').hide();
-			    videoElement.pause();
-			    //set document wide value
-			    $(document.body).addClass('pause-video');
+			  //click play or pause
+			  $('.video-pause').click(function() {
+			  	//get data attribute
+			  	var videoControl = $(this).data("video-control");
+			  	//set video element based on attribute
+			  	var videoElement = document.getElementById(videoControl).getElementsByTagName( 'video' )[0];
+			  	//if stop/pause button
+			  	if ($(this).hasClass("video-stop")) {
+			  		videoElement.pause();
+			  		$(document.body).addClass('pause-video');
+			  	}
+			  	//if play button
+			  	if ($(this).hasClass("video-play")) {
+			  		videoElement.play();
+			  		$(document.body).removeClass('pause-video');
+			  	}
 			  });
 			});
 		</script>

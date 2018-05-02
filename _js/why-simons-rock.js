@@ -89,17 +89,13 @@ $(document).ready(function($) {
 					if (!touch) $('#learningliberated_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250,function(){
 						if (!isMobileWSR && !touch) {
 								//queue up video
-								setTimeout(function(){m 
+								setTimeout(function(){ 
 									$('#learningliberated_div1 .background-video').show('fast');
-									//if not pause button
+									//if not paused
 									if (!$("body").hasClass("pause-video")) {
 										$('#learningliberated_div1 video').get(0).play();
-										//display controls
-										$('#play').hide();
-	    							$('#stop').show(); 
 									}
 								}, 750);	
-							//$('#learningliberated_div1 video').get(0).play();
 						}					
 					});			
 					$('#learningliberated_div1 .fader').delay( 750 ).animate({opacity:0.5},250);		
@@ -157,7 +153,12 @@ $(document).ready(function($) {
 				}
 				if (nextIndex == 11) {
 					$('#besurrounded_div2 .fader').delay( 750 ).animate({opacity:0.5},250);	
-					if (!isMobileWSR && !touch) $('#besurrounded_div2 video').get(0).play();
+					if (!isMobileWSR && !touch) {		
+						//if not paused
+						if (!$("body").hasClass("pause-video")) {
+							$('#besurrounded_div2 video').get(0).play();
+						}
+					}		
 					$('#besurrounded_div3 .svg-div-2').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('six-o-clock');
 					$('#besurrounded_div3 .svg-div-3').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('t1 t2 t3 t4 t5');
 					if (!touch) $('#besurrounded_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250);
@@ -245,8 +246,11 @@ $(document).ready(function($) {
 				// #oncearocker_div 
 				if (nextIndex == 19) {
 					$('#oncearocker_div1 .fader').delay( 750 ).animate({opacity:0.5},250);
-					if (!isMobileWSR && !touch) { 
-						$('#oncearocker_div1 video').get(0).play();
+					if (!isMobileWSR && !touch) {
+						//if not paused
+						if (!$("body").hasClass("pause-video")) {
+							$('#oncearocker_div1 video').get(0).play();
+						}
 					}
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').addClass('light-gray');
 					$('#yourpeople_div3 img').css({opacity:0});
