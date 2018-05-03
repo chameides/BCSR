@@ -682,31 +682,7 @@
 
 	
 	<script type="text/javascript" src="/_js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="/_js/jquery.fullPage.min.js"></script>
-  	
-  	<script type="text/javascript" src="/_js/why-simons-rock.js"></script>
-
-  	<script>
-			$(document).ready(function() {
-			  //click play or pause
-			  $('.video-pause').click(function() {
-			  	//get data attribute
-			  	var videoControl = $(this).data("video-control");
-			  	//set video element based on attribute
-			  	var videoElement = document.getElementById(videoControl).getElementsByTagName( 'video' )[0];
-			  	//if stop/pause button
-			  	if ($(this).hasClass("video-stop")) {
-			  		videoElement.pause();
-			  		$(document.body).addClass('pause-video');
-			  	}
-			  	//if play button
-			  	if ($(this).hasClass("video-play")) {
-			  		videoElement.play();
-			  		$(document.body).removeClass('pause-video');
-			  	}
-			  });
-			});
-		</script>
-
+	<script type="text/javascript" src="/_js/jquery.fullPage.min.js"></script>	
+  <script type="text/javascript" src="/_js/why-simons-rock.js"></script>
   </body>
 </html>

@@ -365,6 +365,23 @@ $(document).ready(function($) {
 		//location.reload(false);
 	});
 
+	//click play or pause
+  $('.video-pause').click(function() {
+  	//get data attribute
+  	var videoControl = $(this).data("video-control");
+  	//set video element based on attribute
+  	var videoElement = document.getElementById(videoControl).getElementsByTagName( 'video' )[0];
+  	//if stop/pause button
+  	if ($(this).hasClass("video-stop")) {
+  		videoElement.pause();
+  		$(document.body).addClass('pause-video');
+  	}
+  	//if play button
+  	if ($(this).hasClass("video-play")) {
+  		videoElement.play();
+  		$(document.body).removeClass('pause-video');
+  	}
+  });	
 });
 
 if (!Array.prototype.filter)
