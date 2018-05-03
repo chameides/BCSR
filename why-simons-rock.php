@@ -679,10 +679,6 @@
 
 </div><!-- /#fullpage -->    
 <?php include '_inc/bottom-js.php' ?>
-
-	
-	<script type="text/javascript" src="/_js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="/_js/jquery.fullPage.min.js"></script>	
-  <script type="text/javascript" src="/_js/why-simons-rock.js"></script>
+	<script DEFER type="text/javascript" src="/_js/why-simons-rock.js"></script>
   </body>
 </html>
