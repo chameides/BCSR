@@ -88,15 +88,18 @@ $(document).ready(function($) {
 					//console.log('firing nextIndex 4');
 					if (!touch) $('#learningliberated_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250,function(){
 						if (!isMobileWSR && !touch) {
-								//queue up video
-								setTimeout(function(){ 
-									$('#learningliberated_div1 .background-video').show('fast');
-									//if not paused
-									if (!$("body").hasClass("pause-video")) {
-										$('#learningliberated_div1 video').get(0).play();
-									}
-								}, 750);	
-						}					
+							//queue up video
+							setTimeout(function(){ 
+								$('#learningliberated_div1 .background-video').show('fast');
+								//if not paused
+								if (!$("body").hasClass("pause-video")) {
+									console.log('que video');
+									$('#learningliberated_div1 video').get(0).play();
+									console.log('add class');
+									$(document.body).addClass('play-video');
+								}
+							}, 750);	
+						}
 					});			
 					$('#learningliberated_div1 .fader').delay( 750 ).animate({opacity:0.5},250);		
 					$('#earlycollege_div3 .svg-div').css('opacity',0);
@@ -157,6 +160,7 @@ $(document).ready(function($) {
 						//if not paused
 						if (!$("body").hasClass("pause-video")) {
 							$('#besurrounded_div2 video').get(0).play();
+							$(document.body).addClass('play-video');
 						}
 					}		
 					$('#besurrounded_div3 .svg-div-2').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('six-o-clock');
@@ -250,6 +254,7 @@ $(document).ready(function($) {
 						//if not paused
 						if (!$("body").hasClass("pause-video")) {
 							$('#oncearocker_div1 video').get(0).play();
+							$(document.body).addClass('play-video');
 						}
 					}
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').addClass('light-gray');
@@ -374,12 +379,14 @@ $(document).ready(function($) {
   	//if stop/pause button
   	if ($(this).hasClass("video-stop")) {
   		videoElement.pause();
+  		$(document.body).removeClass('play-video');
   		$(document.body).addClass('pause-video');
   	}
   	//if play button
   	if ($(this).hasClass("video-play")) {
   		videoElement.play();
   		$(document.body).removeClass('pause-video');
+  		$(document.body).addClass('play-video');
   	}
   });	
 });

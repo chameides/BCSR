@@ -982,15 +982,18 @@ body#why .side-nav-mobile,
 }
 
  //Set play button to hide by default on Why Simon's Rock template
+.video-stop, 
 .video-play {
   display: none;
 }
 
-body.pause-video { //class added to body when pause is selected
-  //Set pause button to hide after pause button is selected
+body.play-video {
   .video-stop {
-    display: none;
+    display: inline;
   }
+}
+
+body.pause-video { //class added to body when pause is selected
   //Set play button to display after pause button is selected
   .video-play {
     display: inline;
