@@ -981,6 +981,15 @@ body#why .side-nav-mobile,
   }
 }
 
+//wsr video 2 and 3 does not play unless screen is 1200px or wider
+@media screen and (max-width:1199px) {
+  .hero-video-controls-secondary,
+  .hero-video-controls-11,
+  .hero-video-controls-19 {
+    display: none;
+  }
+}
+
  //Set play button to hide by default on Why Simon's Rock template
 .video-stop, 
 .video-play {

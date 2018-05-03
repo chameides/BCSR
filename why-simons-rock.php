@@ -337,7 +337,7 @@
 	<div class="section subsection subsection-video" id="besurrounded_div2">
 		
 		<!-- add video controls, font-awesome icons -->
-    <div id="hero-video-controls">
+    <div id="hero-video-controls" class="hero-video-controls-secondary">
       <button data-video-control="besurrounded_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-play"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
       <button data-video-control="besurrounded_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-stop"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
     </div>
@@ -578,7 +578,7 @@
 <!--<section id="oncearocker" class="scrollfx-container">-->
 	<div class="section subsection subsection-video" id="oncearocker_div1">
 		<!-- add video controls, font-awesome icons -->
-    <div id="hero-video-controls">
+    <div id="hero-video-controls" class="hero-video-controls-secondary">
       <button data-video-control="commencement_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-play"><i class="fa fa-play" aria-hidden="true" title="play video"><span class="sr-only">Play Video</span></i></button>
       <button data-video-control="commencement_background_video" href="#" onClick="play()" class="btn btn-link video-pause video-stop"><i class="fa fa-pause" aria-hidden="true" title="pause video"><span class="sr-only">Pause Video</span></i></button>
     </div>
