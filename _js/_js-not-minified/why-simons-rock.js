@@ -88,12 +88,18 @@ $(document).ready(function($) {
 					//console.log('firing nextIndex 4');
 					if (!touch) $('#learningliberated_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250,function(){
 						if (!isMobileWSR && !touch) {
+							//queue up video
 							setTimeout(function(){ 
 								$('#learningliberated_div1 .background-video').show('fast');
-								$('#learningliberated_div1 video').get(0).play(); 
-							}, 750);
-							//$('#learningliberated_div1 video').get(0).play();
-						}					
+								//if not paused
+								if (!$("body").hasClass("pause-video")) {
+									console.log('que video');
+									$('#learningliberated_div1 video').get(0).play();
+									console.log('add class');
+									$(document.body).addClass('play-video');
+								}
+							}, 750);	
+						}
 					});			
 					$('#learningliberated_div1 .fader').delay( 750 ).animate({opacity:0.5},250);		
 					$('#earlycollege_div3 .svg-div').css('opacity',0);
@@ -150,9 +156,15 @@ $(document).ready(function($) {
 				}
 				if (nextIndex == 11) {
 					$('#besurrounded_div2 .fader').delay( 750 ).animate({opacity:0.5},250);	
-					if (!isMobileWSR && !touch) $('#besurrounded_div2 video').get(0).play();
-					$('#besurrounded_div3 .svg-div-2').removeClass('six-o-clock');
-					$('#besurrounded_div3 .svg-div-3').removeClass('t1 t2 t3 t4 t5');
+					if (!isMobileWSR && !touch) {		
+						//if not paused
+						if (!$("body").hasClass("pause-video")) {
+							$('#besurrounded_div2 video').get(0).play();
+							$(document.body).addClass('play-video');
+						}
+					}		
+					$('#besurrounded_div3 .svg-div-2').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('six-o-clock');
+					$('#besurrounded_div3 .svg-div-3').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('t1 t2 t3 t4 t5');
 					if (!touch) $('#besurrounded_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250);
 				}
 				if (nextIndex == 12) {
@@ -160,8 +172,8 @@ $(document).ready(function($) {
 					if (!isMobileWSR && !touch) $('#besurrounded_div2 video').get(0).pause();
 					// clock
 					$('#besurrounded_div3 .svg-div').delay( 750 ).animate({opacity:1},250);
-					$('#besurrounded_div3 .svg-div-2').delay( 1000 ).addClass('six-o-clock');
-					$('#besurrounded_div3 .svg-div-3').delay(000).addClass('t1').delay(7000).addClass('t2').delay(7000).addClass('t3').delay(7000).addClass('t4').delay(7000).addClass('t5');
+					$('#besurrounded_div3 .svg-div-2').css({'-webkit-transition': '-webkit-transform 12s','-moz-transition': '-moz-transform 12s','-ms-transition': '-ms-transform 12s','transition': 'transform 12s'}).delay( 1000 ).addClass('six-o-clock');
+					$('#besurrounded_div3 .svg-div-3').css({'-webkit-transition': '-webkit-transform 12s','-moz-transition': '-moz-transform 12s','-ms-transition': '-ms-transform 12s','transition': 'transform 12s'}).delay(000).addClass('t1').delay(7000).addClass('t2').delay(7000).addClass('t3').delay(7000).addClass('t4').delay(7000).addClass('t5');
 					$('#besurrounded_div3 .btn').delay( 7500 ).animate({'bottom':'3px'},500).animate({'bottom':'-3px'},500).animate({'bottom':'3px'},500).animate({'bottom':'0px'},500);
 				}
 				if (nextIndex < 10 || nextIndex >= 12) {
@@ -171,8 +183,8 @@ $(document).ready(function($) {
 				// #jumpstart_div 
 				if (nextIndex == 13) {
 					$('#jumpstart_div1 .fader').delay( 750 ).animate({opacity:0.5},250);
-					$('#besurrounded_div3 .svg-div-2').removeClass('six-o-clock');
-					$('#besurrounded_div3 .svg-div-3').removeClass('t1 t2 t3 t4 t5');
+					$('#besurrounded_div3 .svg-div-2').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('six-o-clock');
+					$('#besurrounded_div3 .svg-div-3').css({'-webkit-transition': '-webkit-transform 0s','-moz-transition': '-moz-transform 0s','-ms-transition': '-ms-transform 0s','transition': 'transform 0s'}).removeClass('t1 t2 t3 t4 t5');
 					if (!touch) { 
 						$('#jumpstart_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250);
 					}
@@ -209,7 +221,9 @@ $(document).ready(function($) {
 					$('#yourpeople_div3 img').css({opacity:0});
 				}
 				if (nextIndex == 18) {
-					$('#oncearocker_div1 video').get(0).pause();
+					if (!isMobileWSR && !touch) { 
+						$('#oncearocker_div1 video').get(0).pause(); 
+					}
 
 					var ypsrd = 750;
 					var ypsro = 0.7;
@@ -236,14 +250,22 @@ $(document).ready(function($) {
 				// #oncearocker_div 
 				if (nextIndex == 19) {
 					$('#oncearocker_div1 .fader').delay( 750 ).animate({opacity:0.5},250);
-					$('#oncearocker_div1 video').get(0).play();
+					if (!isMobileWSR && !touch) {
+						//if not paused
+						if (!$("body").hasClass("pause-video")) {
+							$('#oncearocker_div1 video').get(0).play();
+							$(document.body).addClass('play-video');
+						}
+					}
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').addClass('light-gray');
 					$('#yourpeople_div3 img').css({opacity:0});
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250);
 				}
 				if (nextIndex == 20) {
 					$('#oncearocker_div2 .fader').delay( 750 ).animate({opacity:0.5},250);	
-					$('#oncearocker_div1 video').get(0).pause();
+					if (!isMobileWSR && !touch) { 
+						$('#oncearocker_div1 video').get(0).pause();
+					}
 					$('#oncearocker_div2 .btn').delay( 1500 ).animate({'bottom':'3px'},500).animate({'bottom':'-3px'},500).animate({'bottom':'3px'},500).animate({'bottom':'0px'},500);
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').css({'position':'fixed'}).animate({opacity:1},250);
 					if (!touch) $('#oncearocker_div1 .intro_h1_1').removeClass('light-gray').addClass('dark-gray');
@@ -348,6 +370,25 @@ $(document).ready(function($) {
 		//location.reload(false);
 	});
 
+	//click play or pause
+  $('.video-pause').click(function() {
+  	//get data attribute
+  	var videoControl = $(this).data("video-control");
+  	//set video element based on attribute
+  	var videoElement = document.getElementById(videoControl).getElementsByTagName( 'video' )[0];
+  	//if stop/pause button
+  	if ($(this).hasClass("video-stop")) {
+  		videoElement.pause();
+  		$(document.body).removeClass('play-video');
+  		$(document.body).addClass('pause-video');
+  	}
+  	//if play button
+  	if ($(this).hasClass("video-play")) {
+  		videoElement.play();
+  		$(document.body).removeClass('pause-video');
+  		$(document.body).addClass('play-video');
+  	}
+  });	
 });
 
 if (!Array.prototype.filter)
