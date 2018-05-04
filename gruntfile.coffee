@@ -166,7 +166,7 @@ module.exports = (grunt) ->
           base: '/Users/mchameides/Documents/web/BCSR'
           base: '/Users/jfrederick/Documents/GitHub/BCSR'
           ###
-          base: '/Users/jfrederick/Documents/GitHub/BCSR'
+          base: '/Users/mchameides/Documents/web/BCSR'
           keepalive: false,
           open: false
 
