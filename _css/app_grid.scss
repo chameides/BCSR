@@ -1,0 +1,324 @@
+//Set up grid
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    height: $section-height-xs;
+    @media (min-width: $screen-sm-min) {
+      height: $section-height-sm;
+    }
+    .item {
+      overflow: scroll;
+    }
+    
+    //typography  
+    h2,
+    h3, 
+    h4 {
+      display: block;
+    }
+    
+    
+   //assign grid layout
+    grid-template-columns: repeat(10, $section-height-xs/2);
+    grid-template-rows: repeat(2, $section-height-xs/2);
+    @media (min-width: $screen-sm-min) {
+      grid-template-columns: repeat(10, $section-height-sm/2);
+      grid-template-rows: repeat(2, $section-height-sm/2);
+    }
+    grid-template-areas:
+      "item1  item3 item3 item6 item7 item8 item8 item9   item11  item13"
+      "item2  item4 item5 item5 item7 item8 item8 item10  item12  item14";
+    }
+
+    .item:nth-child(1)  { grid-area: item1; }
+    .item:nth-child(2)  { grid-area: item2; }
+    .item:nth-child(3)  { grid-area: item3; }
+    .item:nth-child(4)  { grid-area: item4; }
+    .item:nth-child(5)  { grid-area: item5; }
+    .item:nth-child(6)  { grid-area: item6; }
+    .item:nth-child(7)  { grid-area: item7; }
+    .item:nth-child(8)  { grid-area: item8; }
+    .item:nth-child(9)  { grid-area: item9; }
+    .item:nth-child(10) { grid-area: item10; }
+    .item:nth-child(11) { grid-area: item11; }
+    .item:nth-child(12) { grid-area: item12; }
+    .item:nth-child(13) { grid-area: item13; }
+    .item:nth-child(14) { grid-area: item14; }
+  }
+
+
+  /* flexbox fallback is the browser does not support display:grid */
+  @supports not (display: grid) {
+    .grid {
+      display: flex;
+      flex-flow: row wrap;
+      min-height: 100vh;
+      padding: 0.75vw;
+    }
+
+    .grid .item {
+      min-height: 20vh;
+      margin: 0.75vw;
+    }
+    
+    .grid .item { 
+      flex: 0 1 calc(30% - 1.5vw); height: 50vh; 
+    }
+  }
+
+
+  //note for no grid
+  @supports not (display: grid) {
+    body:before {
+      content: 'Sorry, seems like your browser doesn\'t support display: grid. Below is the flexbox fallback.';
+      display: block;
+      padding: 2rem 2rem 0;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+.grid {
+  //assign rotating colors
+  .item {
+    &:nth-child(4n+1)  { 
+      background-color: $blue-sky; 
+      &.item-with-link {
+        &:focus,
+        &:hover {
+          background: darken( $blue-sky, 10% ); 
+          .image-container-size1,
+          .image-container-size2,
+          .image-container-size3,
+          .image-container-size4,
+          .image-container-size5 {
+            background-color: rgba(darken( $blue-sky, 10% ),0.20);
+            background-blend-mode: overlay;
+          }
+        }
+      }
+    }
+    &:nth-child(4n+2) { 
+      background-color: $medium-gray;
+      &.item-with-link {
+        &:focus,
+        &:hover {
+         background: darken( $medium-gray, 10% );
+          .image-container-size1,
+          .image-container-size2,
+          .image-container-size3,
+          .image-container-size4,
+          .image-container-size5 {
+            background-color: rgba(darken( $medium-gray, 10% ),0.20);
+            background-blend-mode: overlay;
+          } 
+        }
+      } 
+    }
+    
+    &:nth-child(4n+3) { 
+      background-color: $orange;
+      &.item-with-link {
+        &:focus,
+        &:hover {
+          background: darken( $orange, 10% ); 
+          .image-container-size1,
+          .image-container-size2,
+          .image-container-size3,
+          .image-container-size4,
+          .image-container-size5 {
+            background-color: rgba(darken( $orange, 10% ),0.20);
+            background-blend-mode: overlay;
+          }
+        }
+      } 
+    } 
+    &:nth-child(4n+4)  { 
+      background-color: black;
+      &.item-with-link {
+        &:focus,
+        &:hover {
+          background: lighten( black, 20% ); 
+          .image-container-size1,
+          .image-container-size2,
+          .image-container-size3,
+          .image-container-size4,
+          .image-container-size5 {
+            background-color: rgba(black,0.10);
+            background-blend-mode: overlay;
+         }
+        }
+      }  
+    }
+    
+    //color overrides
+    &.background-blue { 
+      background-color: $blue-sky;
+      &.item-with-link:hover {
+       background: darken( $blue-sky, 10% ); 
+      } 
+    }
+    &.background-gray { 
+      background-color: $medium-gray;
+      &.item-with-link:hover {
+       background: darken( $medium-gray, 10% ); 
+      } 
+    }
+    &.background-orange { 
+      background-color: $orange;
+      &.item-with-link:hover {
+       background: darken( $orange, 10% ); 
+      } 
+    }
+    &.background-black { 
+      background-color: black;
+      &.item-with-link:hover {
+       background: darken( black, 10% ); 
+      } 
+    }
+  }
+  
+}
+
+
+.grid {
+  //link fills space
+  .item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  //text-style
+  .item, 
+  .item a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+body#home .grid { //override defaults
+  h2 {
+    font-size: 1.5em;
+    margin: 0 .8em;
+  }
+  .item h2.caption { //small text version
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1.3em;
+    margin: .5em .8em;
+  }
+}
+
+
+.grid {  
+  //image fills space
+  .image-container-size1,
+  .image-container-size2,
+  .image-container-size3,
+  .image-container-size4,
+  .image-container-size5 {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+   } 
+
+  //image size options
+  .image-container-size1 {
+    height: 40%;
+  }
+  
+  .image-container-size2 {
+    height: 60%;
+  }
+  
+  .image-container-size3 {
+    height: 80%;
+  }
+  
+  .image-container-size4 {
+    height: 88%;
+  }
+  
+  .image-container-size5 {
+    height: 100%;
+  }
+    
+  //set background image with CSS
+  #image-container-2 {
+    background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg);  
+  }
+}//close grid
+
+
+//vertical align text
+.item-text{
+  display: grid;
+  align-items: center;
+}
+
+//height = (height of item) * remaining space for text
+.style-image-size1 .item-text{
+  height: ($section-height-xs/2)*.6;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm/2)*.6;
+  }
+}
+
+.style-image-size-r2-1 .item-text {
+  height: ($section-height-xs)*.6;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm)*.6;
+  }
+}
+
+
+.style-image-size2 .item-text{
+  height: ($section-height-xs/2)*.4;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm/2)*.4;
+  }
+}
+
+.style-image-size-r2-1 .item-text {
+  height: ($section-height-xs)*.4;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm)*.4;
+  }
+}
+
+
+.style-image-size3 .item-text{
+  height: ($section-height-xs/2)*.2;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm/2)*.2;
+  }
+}
+
+.style-image-size-r2-3 .item-text{
+  height: ($section-height-xs)*.2;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm)*.2;
+  }
+}
+
+
+.style-image-size4 .item-text{
+  height: ($section-height-xs/2)*.12;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm/2)*.12;
+  }
+}
+
+.style-image-size-r2-4 .item-text{
+  height: ($section-height-xs)*.12;
+  @media (min-width: $screen-sm-min) {
+    height: ($section-height-sm)*.12;
+  }
+}
+
+
+
