@@ -81,8 +81,10 @@
 .grid {
   //assign rotating colors
   .item {
+    transition-property:background-color;
+    transition-duration:0.5s; 
     &:nth-child(4n+1)  { 
-      background-color: $blue-sky; 
+      background-color: $blue-sky;
       &.item-with-link {
         &:focus,
         &:hover {
