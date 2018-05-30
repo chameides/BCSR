@@ -6,9 +6,6 @@
     @media (min-width: $screen-sm-min) {
       height: $section-height-sm;
     }
-    .item {
-      overflow: scroll;
-    }
     
     //typography  
     h2,
@@ -259,21 +256,33 @@ body#home .grid { //override defaults
 //vertical align text
 .item-text{
   display: grid;
-  align-items: center;
+  align-content: center;
 }
+
 
 //height = (height of item) * remaining space for text
-.style-image-size1 .item-text{
-  height: ($section-height-xs/2)*.6;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-sm/2)*.6;
+.style-image-none,  
+.style-image-split {
+  .item-text
+  {
+    height: ($section-height-xs/2);
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-sm/2);
+    }
   }
-}
 
-.style-image-size-r2-1 .item-text {
-  height: ($section-height-xs)*.6;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-sm)*.6;
+  .style-image-size1 .item-text{
+    height: ($section-height-xs/2)*.6;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-sm/2)*.6;
+    }
+  }
+
+  .style-image-size-r2-1 .item-text {
+    height: ($section-height-xs)*.6;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-sm)*.6;
+    }
   }
 }
 
