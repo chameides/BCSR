@@ -207,15 +207,24 @@ body#home .grid { //override defaults
   h2 {
     font-size: 1.5em;
     margin: 0 .8em;
+    &.small {
+      font-size: 1.2em;
+    }
   }
   .item h2.caption { //small text version
     font-size: 1.1em;
     line-height: 1.1em;
     margin-top: 0;
+    &.small {
+      font-size: .9em
+    }
   }
   p {
     font-size: 1.3em;
     margin: .5em .8em;
+    &.small {
+      font-size: 1.1em;
+    }
   }
 }
 

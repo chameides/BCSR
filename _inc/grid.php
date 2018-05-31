@@ -70,11 +70,12 @@
       </div>
     </a>
   </div>
-  <div class="item item-with-link style-image-none" tabindex="9">
+  <div class="item style-image style-image-size2 item-with-link" tabindex="2">
     <a href="https://simons-rock.edu/news">
+      <div class="image-container-size2" id="image-container-2">
+      </div> 
       <div class="item-text">
-        <h2>9. Headline</h2>
-        <p>SubheadliNe goes here</p>
+        <p>Professor Jennifer Browdy's guide to writing memior wins Nautilus award</p>
       </div>
     </a>
   </div>
@@ -105,8 +106,8 @@
   <div class="item item-with-link style-image-none" tabindex="13">
     <a href="https://simons-rock.edu/news">
       <div class="item-text">
-        <h2>13. Headline</h2>
-        <p>SubheadliNe goes here</p>
+        <h2 class="small">13. Headline - text goes smaller if text is really, really long.</h2>
+        <p class="small">Subheadline can also go small, if text is really long, but there is an accessibility issue. but, it's just a fallback and I think more accessible than if text gets cut off</p>
       </div>
     </a>
   </div>
