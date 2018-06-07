@@ -1,3 +1,10 @@
+//position grid inside side scroller
+.grid-wrapper {
+  //position:relative;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+
 //Set up grid
 @supports (display: grid) {
   .grid {
@@ -266,113 +273,110 @@ body#home .grid { //override defaults
   #image-container-2 {
     background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg);  
   }
-}//close grid
 
+  //vertical align text
+  .item-text{
+    display: grid;
+    align-content: center;
+  }
 
-//vertical align text
-.item-text{
-  display: grid;
-  align-content: center;
-}
-
-
-//height = (height of item) * remaining space for text
-.style-image-none,  
-.style-image-split {
-  .item-text
-  {
-    height: ($section-height-xs/2);
-    @media (min-width: $screen-sm-min) {
-      height: ($section-height-news/2);
+  //height = (height of item) * remaining space for text
+  .style-image-none,  
+  .style-image-split {
+    .item-text
+    {
+      height: ($section-height-xs/2);
+      @media (min-width: $screen-sm-min) {
+        height: ($section-height-news/2);
+      }
+      @media (min-width: $screen-xl-min) {
+        height: ($section-height-sm/2);
+      }
     }
-    @media (min-width: $screen-xl-min) {
-      height: ($section-height-sm/2);
+
+    .style-image-size1 .item-text{
+      height: ($section-height-xs/2)*.6;
+      @media (min-width: $screen-sm-min) {
+        height: ($section-height-news/2)*.6;
+      }
+      @media (min-width: $screen-xl-min) {
+        height: ($section-height-sm/2)*.6;
+      }
+    }
+
+    .style-image-size-r2-1 .item-text {
+      height: ($section-height-xs)*.6;
+      @media (min-width: $screen-sm-min) {
+        height: ($section-height-news)*.6;
+      }
+      @media (min-width: $screen-xl-min) {
+        height: ($section-height-sm)*.6;
+      }
     }
   }
 
-  .style-image-size1 .item-text{
-    height: ($section-height-xs/2)*.6;
+
+  .style-image-size2 .item-text{
+    height: ($section-height-xs/2)*.4;
     @media (min-width: $screen-sm-min) {
-      height: ($section-height-news/2)*.6;
+      height: ($section-height-news/2)*.4;
     }
     @media (min-width: $screen-xl-min) {
-      height: ($section-height-sm/2)*.6;
+      height: ($section-height-sm/2)*.4;
     }
   }
 
   .style-image-size-r2-1 .item-text {
-    height: ($section-height-xs)*.6;
+    height: ($section-height-xs)*.4;
     @media (min-width: $screen-sm-min) {
-      height: ($section-height-news)*.6;
+      height: ($section-height-news)*.4;
     }
     @media (min-width: $screen-xl-min) {
-      height: ($section-height-sm)*.6;
+      height: ($section-height-sm)*.4;
     }
   }
-}
 
 
-.style-image-size2 .item-text{
-  height: ($section-height-xs/2)*.4;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news/2)*.4;
+  .style-image-size3 .item-text{
+    height: ($section-height-xs/2)*.2;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news/2)*.2;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm/2)*.2;
+    }
   }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm/2)*.4;
-  }
-}
 
-.style-image-size-r2-1 .item-text {
-  height: ($section-height-xs)*.4;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news)*.4;
+  .style-image-size-r2-3 .item-text{
+    height: ($section-height-xs)*.2;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news)*.2;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.2;
+    }
   }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm)*.4;
-  }
-}
-
-
-.style-image-size3 .item-text{
-  height: ($section-height-xs/2)*.2;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news/2)*.2;
-  }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm/2)*.2;
-  }
-}
-
-.style-image-size-r2-3 .item-text{
-  height: ($section-height-xs)*.2;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news)*.2;
-  }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm)*.2;
-  }
-}
 
 
-.style-image-size4 .item-text{
-  height: ($section-height-xs/2)*.12;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news/2)*.12;
+  .style-image-size4 .item-text{
+    height: ($section-height-xs/2)*.12;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news/2)*.12;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm/2)*.12;
+    }
   }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm/2)*.12;
-  }
-}
 
-.style-image-size-r2-4 .item-text{
-  height: ($section-height-xs)*.12;
-  @media (min-width: $screen-sm-min) {
-    height: ($section-height-news)*.12;
+  .style-image-size-r2-4 .item-text{
+    height: ($section-height-xs)*.12;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news)*.12;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.12;
+    }
   }
-  @media (min-width: $screen-xl-min) {
-    height: ($section-height-sm)*.12;
-  }
-}
-
+}//close grid
 
 
