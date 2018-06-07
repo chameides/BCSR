@@ -915,5 +915,6 @@ $footer-height-inverse:				$footer-height * -1;
 $footer-height-md: 						180px;
 $footer-height-md-inverse:		$footer-height-md * -1;
 
-$section-height-xs:						480px;
-$section-height-sm:						680px;
+$section-height-xs:						480px; //xs on profiles xs on profiles
+$section-height-sm:						680px; //sm on profiles xl on news
+$section-height-news:					588px; //sm and md on news
