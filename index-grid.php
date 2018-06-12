@@ -469,6 +469,53 @@
   	<script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.js"></script>
   	<!--<script type="text/javascript" src="/_js/scrollmagic/jquery.scrollmagic.debug.js"></script>-->
 
+
+  	<script>
+  		console.log("script open");
+
+  		//get full width of grid
+  		var element = $('#news-grid .grid');
+  		var newsCarouselWidth = element.prop('scrollWidth');
+  		console.log('width = ' + newsCarouselWidth);
+
+  		//start grid at second of three duplications
+  		$('#news-grid .grid').css('left', newsCarouselWidth/3 * -1);
+
+
+  		//set width to advance on click
+  		var newsAdvWidth = 380;
+			if ( $(window).width() >= 1920 ) {
+				var newsAdvWidth = 1520;
+			}
+			else if ( $(window).width() >= 1520 ) {
+				var newsAdvWidth = 1140;
+			}
+			else if ( $(window).width() >= 1140 ) {
+				var newsAdvWidth = 760;
+			} 
+			console.log('advance width = ' + newsAdvWidth);
+
+
+  		//click arrow buttons
+  		$('#news-grid .rockers_btn').click(function(){
+  			console.log('click');
+  			
+  			//determine current offset
+  			var newsCurrentLeft = $('#news-grid .grid').offset().left;
+  			console.log('current left ' + newsCurrentLeft);
+
+  			//hide button
+  			//$(this).css('display','none');
+
+  			var newsNewLeft = newsCurrentLeft + newsAdvWidth;
+  			console.log('New Left = ' + newsNewLeft);
+
+  			$('#news-grid .grid').animate({left:newsNewLeft},750);
+  		});
+
+  	</script>
+
+
   	<script>
 		
 
@@ -947,10 +994,6 @@ $(document).ready(function() {
 					.addTo(controller);
 			}
 
-
-			
-
-			
 			
 			
 			// show indicators (requires debug extension)
@@ -963,6 +1006,9 @@ $(document).ready(function() {
 
     
   <script>
+  	
+
+
   	if ($(".vjs-playing")[0]){
       alert("yes vjs-playing");
     }
