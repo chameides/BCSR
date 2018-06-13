@@ -1,12 +1,25 @@
+#news-grid {
+   background-color:$dark-gray;
+}
+
 //position grid inside side scroller
 .grid-wrapper {
   //position:relative;
   overflow-x:scroll;
+  @media(max-width: $screen-xs-max) {
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: none;
+    }
+  }
+  @media(min-width: $screen-sm-min) {
+    overflow-x: hidden;
+  }
   overflow-y:hidden;
 }
 
 //Set up grid
-@supports (display: grid) {
+@supports (display: grida) {
   .grid {
     display: grid;
     height: $section-height-xs;
@@ -45,90 +58,91 @@
 
 
 
-    .item:nth-child(1)  { grid-area: item1; }
-    .item:nth-child(2)  { grid-area: item2; }
-    .item:nth-child(3)  { grid-area: item3; }
-    .item:nth-child(4)  { grid-area: item4; }
-    .item:nth-child(5)  { grid-area: item5; }
-    .item:nth-child(6)  { grid-area: item6; }
-    .item:nth-child(7)  { grid-area: item7; }
-    .item:nth-child(8)  { grid-area: item8; }
-    .item:nth-child(9)  { grid-area: item9; }
-    .item:nth-child(10) { grid-area: item10; }
-    .item:nth-child(11) { grid-area: item11; }
-    .item:nth-child(12) { grid-area: item12; }
-    .item:nth-child(13) { grid-area: item13; }
-    .item:nth-child(14) { grid-area: item14; }
-    .item:nth-child(15) { grid-area: item1b; }
-    .item:nth-child(16) { grid-area: item2b; }
-    .item:nth-child(17) { grid-area: item3b; }
-    .item:nth-child(18) { grid-area: item4b; }
-    .item:nth-child(19) { grid-area: item5b; }
-    .item:nth-child(20) { grid-area: item6b; }
-    .item:nth-child(21) { grid-area: item7b; }
-    .item:nth-child(22) { grid-area: item8b; }
-    .item:nth-child(23) { grid-area: item9b; }
-    .item:nth-child(24) { grid-area: item10b; }
-    .item:nth-child(25) { grid-area: item11b; }
-    .item:nth-child(26) { grid-area: item12b; }
-    .item:nth-child(27) { grid-area: item13b; }
-    .item:nth-child(28) { grid-area: item14b; }
-    .item:nth-child(29) { grid-area: item1c; }
-    .item:nth-child(30) { grid-area: item2c; }
-    .item:nth-child(31) { grid-area: item3c; }
-    .item:nth-child(32) { grid-area: item4c; }
-    .item:nth-child(33) { grid-area: item5c; }
-    .item:nth-child(34) { grid-area: item6c; }
-    .item:nth-child(35) { grid-area: item7c; }
-    .item:nth-child(36) { grid-area: item8c; }
-    .item:nth-child(37) { grid-area: item9c; }
-    .item:nth-child(38) { grid-area: item10c; }
-    .item:nth-child(39) { grid-area: item11c; }
-    .item:nth-child(40) { grid-area: item12c; }
-    .item:nth-child(41) { grid-area: item13c; }
-    .item:nth-child(42) { grid-area: item14c; }
+    .news-item:nth-child(1)  { grid-area: item1; }
+    .news-item:nth-child(2)  { grid-area: item2; }
+    .news-item:nth-child(3)  { grid-area: item3; }
+    .news-item:nth-child(4)  { grid-area: item4; }
+    .news-item:nth-child(5)  { grid-area: item5; }
+    .news-item:nth-child(6)  { grid-area: item6; }
+    .news-item:nth-child(7)  { grid-area: item7; }
+    .news-item:nth-child(8)  { grid-area: item8; }
+    .news-item:nth-child(9)  { grid-area: item9; }
+    .news-item:nth-child(10) { grid-area: item10; }
+    .news-item:nth-child(11) { grid-area: item11; }
+    .news-item:nth-child(12) { grid-area: item12; }
+    .news-item:nth-child(13) { grid-area: item13; }
+    .news-item:nth-child(14) { grid-area: item14; }
+    .news-item:nth-child(15) { grid-area: item1b; }
+    .news-item:nth-child(16) { grid-area: item2b; }
+    .news-item:nth-child(17) { grid-area: item3b; }
+    .news-item:nth-child(18) { grid-area: item4b; }
+    .news-item:nth-child(19) { grid-area: item5b; }
+    .news-item:nth-child(20) { grid-area: item6b; }
+    .news-item:nth-child(21) { grid-area: item7b; }
+    .news-item:nth-child(22) { grid-area: item8b; }
+    .news-item:nth-child(23) { grid-area: item9b; }
+    .news-item:nth-child(24) { grid-area: item10b; }
+    .news-item:nth-child(25) { grid-area: item11b; }
+    .news-item:nth-child(26) { grid-area: item12b; }
+    .news-item:nth-child(27) { grid-area: item13b; }
+    .news-item:nth-child(28) { grid-area: item14b; }
+    .news-item:nth-child(29) { grid-area: item1c; }
+    .news-item:nth-child(30) { grid-area: item2c; }
+    .news-item:nth-child(31) { grid-area: item3c; }
+    .news-item:nth-child(32) { grid-area: item4c; }
+    .news-item:nth-child(33) { grid-area: item5c; }
+    .news-item:nth-child(34) { grid-area: item6c; }
+    .news-item:nth-child(35) { grid-area: item7c; }
+    .news-item:nth-child(36) { grid-area: item8c; }
+    .news-item:nth-child(37) { grid-area: item9c; }
+    .news-item:nth-child(38) { grid-area: item10c; }
+    .news-item:nth-child(39) { grid-area: item11c; }
+    .news-item:nth-child(40) { grid-area: item12c; }
+    .news-item:nth-child(41) { grid-area: item13c; }
+    .news-item:nth-child(42) { grid-area: item14c; }
   }
 
 
-  /* flexbox fallback is the browser does not support display:grid */
-  @supports not (display: grid) {
-    .grid {
-      display: flex;
-      flex-flow: row wrap;
-      min-height: 100vh;
-      padding: 0.75vw;
-    }
-
-    .grid .item {
-      min-height: 20vh;
-      margin: 0.75vw;
-    }
-    
-    .grid .item { 
-      flex: 0 1 calc(30% - 1.5vw); height: 50vh; 
+/* flexbox fallback is the browser does not support display:grid */
+@supports not (display: grida) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+    padding: 0;
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: none;
     }
   }
 
-
-  //note for no grid
-  @supports not (display: grid) {
-    body:before {
-      content: 'Sorry, seems like your browser doesn\'t support display: grid. Below is the flexbox fallback.';
-      display: block;
-      padding: 2rem 2rem 0;
-      color: #ffffff;
-      text-align: center;
-    }
+  .grid .news-item {
+    min-height: 20vh;
+    margin: 0vw;
   }
+  
+  .grid .news-item { 
+    flex: 0 1 33.3%; height: 50vh; 
+  }
+
+  #news-grid .rockers_btn {
+    display: none;
+  }
+
+  
+}
+
 
 .grid {
   //assign rotating colors
-  .item {
+  .news-item-batch1,
+  .news-item-batch2, 
+  .news-item-batch3 {
     transition-property:background-color;
     transition-duration:0.5s; 
     &:nth-child(4n+1)  { 
       background-color: $blue-sky;
-      &.item-with-link {
+      &.news-item-link {
         &:focus,
         &:hover {
           background: darken( $blue-sky, 10% ); 
@@ -145,7 +159,7 @@
     }
     &:nth-child(4n+2) { 
       background-color: $medium-gray;
-      &.item-with-link {
+      &.news-item-link {
         &:focus,
         &:hover {
          background: darken( $medium-gray, 10% );
@@ -163,7 +177,7 @@
     
     &:nth-child(4n+3) { 
       background-color: $orange;
-      &.item-with-link {
+      &.news-item-link {
         &:focus,
         &:hover {
           background: darken( $orange, 10% ); 
@@ -180,7 +194,7 @@
     } 
     &:nth-child(4n+4)  { 
       background-color: black;
-      &.item-with-link {
+      &.news-item-link {
         &:focus,
         &:hover {
           background: lighten( black, 20% ); 
@@ -199,25 +213,25 @@
     //color overrides
     &.background-blue { 
       background-color: $blue-sky;
-      &.item-with-link:hover {
+      &.news-item-link:hover {
        background: darken( $blue-sky, 10% ); 
       } 
     }
     &.background-gray { 
       background-color: $medium-gray;
-      &.item-with-link:hover {
+      &.news-item-link:hover {
        background: darken( $medium-gray, 10% ); 
       } 
     }
     &.background-orange { 
       background-color: $orange;
-      &.item-with-link:hover {
+      &.news-item-link:hover {
        background: darken( $orange, 10% ); 
       } 
     }
     &.background-black { 
       background-color: black;
-      &.item-with-link:hover {
+      &.news-item-link:hover {
        background: darken( black, 10% ); 
       } 
     }
@@ -228,14 +242,14 @@
 
 .grid {
   //link fills space
-  .item a {
+  .news-item a {
     display: inline-block;
     width: 100%;
     height: 100%;
   }
   //text-style
-  .item, 
-  .item a {
+  .news-item, 
+  .news-item a {
     text-align: center;
     color: white;
     text-decoration: none;
@@ -250,7 +264,7 @@ body#home .grid { //override defaults
       font-size: 1.2em;
     }
   }
-  .item h2.caption { //small text version
+  .news-item h2.caption { //small text version
     font-size: 1.1em;
     line-height: 1.1em;
     margin-top: 0;
@@ -281,18 +295,29 @@ body#home .grid { //override defaults
    } 
 
   //image size options
+
+  //caption character count 125
   .image-container-size1 {
-    height: 40%;
+    height: 30%;
+    @media (min-width: $screen-sm-min) {
+      height: 40%;
+    }
   }
   
+  //caption character count 65
   .image-container-size2 {
     height: 60%;
   }
   
+  //caption character count 38
   .image-container-size3 {
-    height: 80%;
+    height: 75%;
+    @media (min-width: $screen-sm-min) {
+      height: 80%;
+    }
   }
   
+  //caption character count 19
   .image-container-size4 {
     height: 88%;
   }
@@ -300,6 +325,8 @@ body#home .grid { //override defaults
   .image-container-size5 {
     height: 100%;
   }
+
+
     
   //set background image with CSS
   #image-container-2 {
@@ -313,10 +340,9 @@ body#home .grid { //override defaults
   }
 
   //height = (height of item) * remaining space for text
-  .style-image-none,  
-  .style-image-split {
-    .item-text
-    {
+  .news-item-image-none,  
+  .news-item-image-split {
+    .item-text {
       height: ($section-height-xs/2);
       @media (min-width: $screen-sm-min) {
         height: ($section-height-news/2);
@@ -325,30 +351,30 @@ body#home .grid { //override defaults
         height: ($section-height-sm/2);
       }
     }
+  }
 
-    .style-image-size1 .item-text{
-      height: ($section-height-xs/2)*.6;
-      @media (min-width: $screen-sm-min) {
-        height: ($section-height-news/2)*.6;
-      }
-      @media (min-width: $screen-xl-min) {
-        height: ($section-height-sm/2)*.6;
-      }
+  .news-item-image-size1 .item-text{
+    height: ($section-height-xs/2)*.7;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news/2)*.6;
     }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm/2)*.6;
+    }
+  }
 
-    .style-image-size-r2-1 .item-text {
-      height: ($section-height-xs)*.6;
-      @media (min-width: $screen-sm-min) {
-        height: ($section-height-news)*.6;
-      }
-      @media (min-width: $screen-xl-min) {
-        height: ($section-height-sm)*.6;
-      }
+  .style-image-size-r2-1 .item-text {
+    height: ($section-height-xs)*.6;
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news)*.6;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.6;
     }
   }
 
 
-  .style-image-size2 .item-text{
+  .news-item-image-size2 .item-text{
     height: ($section-height-xs/2)*.4;
     @media (min-width: $screen-sm-min) {
       height: ($section-height-news/2)*.4;
@@ -369,8 +395,8 @@ body#home .grid { //override defaults
   }
 
 
-  .style-image-size3 .item-text{
-    height: ($section-height-xs/2)*.2;
+  .news-item-image-size3 .item-text{
+    height: ($section-height-xs/2)*.25;
     @media (min-width: $screen-sm-min) {
       height: ($section-height-news/2)*.2;
     }
@@ -379,7 +405,7 @@ body#home .grid { //override defaults
     }
   }
 
-  .style-image-size-r2-3 .item-text{
+  .news-item-image-r2-3 .item-text{
     height: ($section-height-xs)*.2;
     @media (min-width: $screen-sm-min) {
       height: ($section-height-news)*.2;
@@ -390,7 +416,7 @@ body#home .grid { //override defaults
   }
 
 
-  .style-image-size4 .item-text{
+  .news-item-image-size4 .item-text{
     height: ($section-height-xs/2)*.12;
     @media (min-width: $screen-sm-min) {
       height: ($section-height-news/2)*.12;
@@ -400,7 +426,7 @@ body#home .grid { //override defaults
     }
   }
 
-  .style-image-size-r2-4 .item-text{
+  .news-item-image-r2-4 .item-text{
     height: ($section-height-xs)*.12;
     @media (min-width: $screen-sm-min) {
       height: ($section-height-news)*.12;
