@@ -2,8 +2,6 @@
 
 $(document).ready(function() {
   var videoElement = document.getElementById('intro_background_video');
-  //hide play by default
-  $('#play').hide();
 
   //click play to start video and toggle button display
   $('#play').click(function() {
@@ -40,13 +38,19 @@ In the original LH designs, this code appeared in the index.php unminified. I mo
                 var negativevidoffsetpx = '-' + vidoffset + 'px';
                 $('.vidbg video').css({'marginLeft':negativevidoffsetpx,'left':'50%'});
                 $('#introduction').animate({opacity:1},750,function(){
-                    //console.log('faded in');
+                    //faded in
                     $('video').get(0).play();
+                    if ($("video").get(0).paused){
+                        //video is paused (iPhone)
+                    }
+                    else {
+                        //video is not paused, display stop button
+                        $('#stop').show();
+                    }
                 });
                 setTimeout(function(){ 
                     $('#introduction video').fadeTo('slow', 0.5); 
                 }, 3000);
-                
             }
             squidgevid();
             
