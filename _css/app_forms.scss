@@ -127,7 +127,7 @@ Slate CRM Forms are embedded through JS that outputs HTML/CSS. These styles conf
       color: $white; //div with blue background gets white type treatment
     }
     @media screen and (max-width: 992px) {
-      font-size: 1.1rem;
+      font-size: 1.7rem; //set legend size to be the same as field label
       line-height: 1.6rem;
     }
   }
