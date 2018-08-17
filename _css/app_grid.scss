@@ -19,7 +19,7 @@
 }
 
 //Set up grid
-@supports (display: grida) {
+@supports (display: grid) {
   .grid {
     display: grid;
     height: $section-height-xs;
@@ -100,11 +100,19 @@
     .news-item:nth-child(40) { grid-area: item12c; }
     .news-item:nth-child(41) { grid-area: item13c; }
     .news-item:nth-child(42) { grid-area: item14c; }
+  
+    //hide left right buttons on mobile
+    @media (max-width: $screen-sm-max) {
+      .rockers_btn {
+        display: none;
+      }
+    }
+
   }
 
 
 /* flexbox fallback is the browser does not support display:grid */
-@supports not (display: grida) {
+@supports not (display: grid) {
   .grid {
     display: flex;
     flex-flow: row wrap;
@@ -128,7 +136,6 @@
   #news-grid .rockers_btn {
     display: none;
   }
-
   
 }
 
