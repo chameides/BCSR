@@ -40,7 +40,7 @@
     
     
    //assign grid layout
-    grid-template-columns: repeat(30, $section-height-xs/2);
+    grid-template-columns: repeat(30, 190px);
     grid-template-rows: repeat(2, $section-height-xs/2);
     @media (min-width: $screen-sm-min) {
       grid-template-columns: repeat(30, $section-height-news/2);
@@ -51,8 +51,8 @@
       grid-template-rows: repeat(2, $section-height-sm/2);
     }
     grid-template-areas:
-      "item1  item3 item3 item6 item7 item8 item8 item9   item11  item13  item1b  item3b item3b item6b item7b item8b item8b item9b   item11b  item13b item1c  item3c item3c item6c item7c item8c item8c item9c   item11c  item13c"
-      "item2  item4 item5 item5 item7 item8 item8 item10  item12  item14  item2b  item4b item5b item5b item7b item8b item8b item10b  item12b  item14b item2c  item4c item5c item5c item7c item8c item8c item10c  item12c  item14c";
+      "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item1b  item1b item2b item8b item8b item9b   item11b  item13b item1c  item3c item3c item6c item7c item8c item8c item9c   item11c  item11c"
+      "item2  item4 item5 item5 item8 item8 item10 item10  item12  item14  item1b  item1b item2b item8b item8b item10b  item12b  item14b item2c  item4c item5c item5c item7c item8c item8c item10c  item12c  item14c";
     }
 
 
@@ -103,7 +103,7 @@
   
     //hide left right buttons on mobile
     @media (max-width: $screen-sm-max) {
-      .rockers_btn {
+    .rockers_btn {
         display: none;
       }
     }
@@ -265,7 +265,10 @@
 
 body#home .grid { //override defaults
   h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    @media (min-width: $screen-sm-min) {
+      font-size: 1.5em;
+    } 
     margin: 0 .8em;
     &.small {
       font-size: 1.2em;
@@ -280,10 +283,18 @@ body#home .grid { //override defaults
     }
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    @media (min-width: $screen-sm-min) {
+      font-size: 1.3em;
+    }
     margin: .5em .8em;
     &.small {
       font-size: 1.1em;
+    }
+    @media (max-width: $screen-sm-max) {
+      &.item-extra {
+        display: none;
+      }
     }
   }
 }
@@ -357,6 +368,9 @@ body#home .grid { //override defaults
       @media (min-width: $screen-xl-min) {
         height: ($section-height-sm/2);
       }
+    }
+    .col-xs-6 {
+      padding: 0;
     }
   }
 

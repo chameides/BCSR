@@ -2,60 +2,76 @@
   <div class="container-fluid">
     <div class="grid-wrapper row">
       <div class="grid">
+        <!-- headline and text -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
-              <p>Professor Jennifer Browdy’s guide to writing memoir wins Nautilus Award (a)</p>
+              <p>Professor Jennifer Browdy’s guide to writing memoir wins Nautilus Award</p>
             </div>
           </a>        
         </div> 
-        <div class="news-item news-item-batch1  news-item-image-size1 news-item-link" tabindex="2">
+        <!-- headline and text -->
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="2">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size1" id="image-container-2">
-            </div> 
             <div class="item-text">
-              <h2 class="caption">
-                Sandy Cleary, director of Daniel Arts Center at Bard College at Simon's Rock, shares more about a new and exciting performing
-              </h2>
+              <h2>Leading the Way for Women in STEM</h2>
+              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
-          </a>
-        </div>
-       <div class="news-item news-item-batch1  news-item-link news-item-image-size3" tabindex="3">
+          </a>        
+        </div> 
+        <!-- headline and text -->
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="3">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size3" id="image-container-2">
-            </div> 
             <div class="item-text">
-              <h2>3. headline goes here</h2>
+              <h2>Austria on a Fulbright</h2>
+              <p>Elibba Dean ’13 will be teaching in secondary schools while researching and taking university courses. </p>
             </div>
-          </a>
-        </div>
+          </a>        
+        </div> 
+        <!-- event -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="4">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
-              <h2>4. Headline</h2>
-              <p>SubheadliNe goes here</p>
+              <h2>Berkshire Pulse Performance</h2>
+              <p>May 26 - 27 3:00 PM<br>
+                Daniel Arts Center</p>
+              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>
+        <!-- 2 wide image + caption -->
         <div class="news-item news-item-batch1  news-item-image-split news-item-link" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="col-xs-6 image-container-size5" id="image-container-2">
             </div>
             <div class="col-xs-6 item-text">
-              <h2>5. Headline</h2>
-              <p>subheadline</p>
+              <h2>Leading the Way for Women in STEM</h2>
+              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="6">
+        <!-- image with heading -->
+        <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="2">
           <a href="https://simons-rock.edu/news">
+            <div class="image-container-size2" id="image-container-2">
+            </div> 
             <div class="item-text">
-              <h2>6. Headline</h2>
-              <p>SubheadliNe goes here</p>
+              <h2 class="caption">Everyone Has a Story To Tell</h2>
             </div>
           </a>
         </div>
+        <!-- image with caption -->
+        <div class="news-item news-item-batch1  news-item-image-size3 news-item-link" tabindex="2">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size3" id="image-container-2">
+            </div> 
+            <div class="item-text">
+              <p class="caption">Austria on a Fullbright</p>
+            </div>
+          </a>
+        </div>
+        <!-- 2 x 2 image and headline -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-r2-3 " tabindex="7">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size3" id="image-container-2">
@@ -65,30 +81,28 @@
             </div>
           </a>
         </div>
-        <div class="news-item news-item-batch1  news-item-link news-item-image-r2-4" tabindex="7">
+        <!-- 1x1 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size4" id="image-container-2">
+            <div class="image-container-size5" id="image-container-2">
             </div> 
-            <div class="item-text">
-              <h2>8. headliNe goes here</h2>
-            </div>
           </a>
         </div>
+        <!-- image with longer small text -->
         <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size2" id="image-container-2">
             </div> 
             <div class="item-text">
-              <p>Professor Jennifer Browdy's guide to writing memior wins Nautilus award</p>
+              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="10">
+        <!--2x1 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
           <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>10. Headline</h2>
-              <p>SubheadliNe goes here</p>
-            </div>
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
           </a>
         </div>
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="11">
@@ -99,14 +113,7 @@
             </div>
           </a>
         </div>
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="12">
-          <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>12. Headline</h2>
-              <p>SubheadliNe goes here</p>
-            </div>
-          </a>
-        </div>
+        
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="13">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
@@ -122,7 +129,39 @@
               <p>SubheadliNe goes here</p>
             </div>
           </a>
-        </div><!--end item-->
+        </div>
+        <!--2x2 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+        <!--2x1 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+        <!--2x1 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+        <!--1x2 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+
+        
+
+        <!--end item-->
 
 
         <div class="news-item news-item-batch2  news-item-link news-item-image-none" tabindex="1">
