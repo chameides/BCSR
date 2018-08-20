@@ -51,8 +51,8 @@
       grid-template-rows: repeat(2, $section-height-sm/2);
     }
     grid-template-areas:
-      "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item1b  item1b item2b item8b item8b item9b   item11b  item13b item1c  item3c item3c item6c item7c item8c item8c item9c   item11c  item11c"
-      "item2  item4 item5 item5 item8 item8 item10 item10  item12  item14  item1b  item1b item2b item8b item8b item10b  item12b  item14b item2c  item4c item5c item5c item7c item8c item8c item10c  item12c  item14c";
+      "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item15  item15 item16 item8b item8b item9b   item11b  item13b item1c  item3c item3c item6c item7c item8c item8c item9c   item11c  item11c"
+      "item2  item4 item5 item5 item8 item8 item10 item10  item12  item14  item15  item15 item16 item8b item8b item10b  item12b  item14b item2c  item4c item5c item5c item7c item8c item8c item10c  item12c  item14c";
     }
 
 
@@ -72,34 +72,34 @@
     .news-item:nth-child(12) { grid-area: item12; }
     .news-item:nth-child(13) { grid-area: item13; }
     .news-item:nth-child(14) { grid-area: item14; }
-    .news-item:nth-child(15) { grid-area: item1b; }
-    .news-item:nth-child(16) { grid-area: item2b; }
-    .news-item:nth-child(17) { grid-area: item3b; }
-    .news-item:nth-child(18) { grid-area: item4b; }
-    .news-item:nth-child(19) { grid-area: item5b; }
-    .news-item:nth-child(20) { grid-area: item6b; }
-    .news-item:nth-child(21) { grid-area: item7b; }
-    .news-item:nth-child(22) { grid-area: item8b; }
-    .news-item:nth-child(23) { grid-area: item9b; }
-    .news-item:nth-child(24) { grid-area: item10b; }
-    .news-item:nth-child(25) { grid-area: item11b; }
-    .news-item:nth-child(26) { grid-area: item12b; }
-    .news-item:nth-child(27) { grid-area: item13b; }
-    .news-item:nth-child(28) { grid-area: item14b; }
-    .news-item:nth-child(29) { grid-area: item1c; }
-    .news-item:nth-child(30) { grid-area: item2c; }
-    .news-item:nth-child(31) { grid-area: item3c; }
-    .news-item:nth-child(32) { grid-area: item4c; }
-    .news-item:nth-child(33) { grid-area: item5c; }
-    .news-item:nth-child(34) { grid-area: item6c; }
-    .news-item:nth-child(35) { grid-area: item7c; }
-    .news-item:nth-child(36) { grid-area: item8c; }
-    .news-item:nth-child(37) { grid-area: item9c; }
-    .news-item:nth-child(38) { grid-area: item10c; }
-    .news-item:nth-child(39) { grid-area: item11c; }
-    .news-item:nth-child(40) { grid-area: item12c; }
-    .news-item:nth-child(41) { grid-area: item13c; }
-    .news-item:nth-child(42) { grid-area: item14c; }
+    .news-item:nth-child(15) { grid-area: item15; }
+    .news-item:nth-child(16) { grid-area: item16; }
+    .news-item:nth-child(17) { grid-area: item17; }
+    .news-item:nth-child(18) { grid-area: item18; }
+    .news-item:nth-child(19) { grid-area: item19; }
+    .news-item:nth-child(20) { grid-area: item20; }
+    .news-item:nth-child(21) { grid-area: item21; }
+    .news-item:nth-child(22) { grid-area: item22; }
+    .news-item:nth-child(23) { grid-area: item23; }
+    .news-item:nth-child(24) { grid-area: item24; }
+    .news-item:nth-child(25) { grid-area: item25; }
+    .news-item:nth-child(26) { grid-area: item26; }
+    .news-item:nth-child(27) { grid-area: item27; }
+    .news-item:nth-child(28) { grid-area: item28; }
+    .news-item:nth-child(29) { grid-area: item29; }
+    .news-item:nth-child(30) { grid-area: item30; }
+    .news-item:nth-child(31) { grid-area: item31; }
+    .news-item:nth-child(32) { grid-area: item32; }
+    .news-item:nth-child(33) { grid-area: item33; }
+    .news-item:nth-child(34) { grid-area: item34; }
+    .news-item:nth-child(35) { grid-area: item35; }
+    .news-item:nth-child(36) { grid-area: item36; }
+    .news-item:nth-child(37) { grid-area: item37; }
+    .news-item:nth-child(38) { grid-area: item38; }
+    .news-item:nth-child(39) { grid-area: item39; }
+    .news-item:nth-child(40) { grid-area: item40; }
+    .news-item:nth-child(41) { grid-area: item41; }
+    .news-item:nth-child(42) { grid-area: item42; }
   
     //hide left right buttons on mobile
     @media (max-width: $screen-sm-max) {
