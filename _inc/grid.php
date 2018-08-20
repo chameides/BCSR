@@ -52,7 +52,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="2">
+        <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="6">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size2" id="image-container-2">
             </div> 
@@ -62,7 +62,7 @@
           </a>
         </div>
         <!-- image with caption -->
-        <div class="news-item news-item-batch1  news-item-image-size3 news-item-link" tabindex="2">
+        <div class="news-item news-item-batch1  news-item-image-size3 news-item-link" tabindex="7">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size3" id="image-container-2">
             </div> 
@@ -72,7 +72,7 @@
           </a>
         </div>
         <!-- 2 x 2 image and headline -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-r2-3 " tabindex="7">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-r2-3 " tabindex="8">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size3" id="image-container-2">
             </div>
@@ -82,14 +82,14 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size5" id="image-container-2">
             </div> 
           </a>
         </div>
         <!-- image with longer small text -->
-        <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="2">
+        <div class="news-item news-item-batch1  news-item-image-size2 news-item-link" tabindex="10">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size2" id="image-container-2">
             </div> 
@@ -99,21 +99,21 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size5" id="image-container-2">
             </div> 
           </a>
         </div>
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="11">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="12">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
-              <h2>11. Headline</h2>
-              <p>SubheadliNe goes here</p>
+              <h2>Everyone Has A Story To Tell</h2>
+              <p>Professor Jennifer Browdy's guide to writing memroir wins Nautilus Award</p>
             </div>
           </a>
         </div>
-        
+        <!-- reduced headline text -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="13">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
@@ -122,6 +122,8 @@
             </div>
           </a>
         </div>
+
+        <!-- not in use-->
         <div class="news-item news-item-batch1 news-item-image-none" tabindex="14">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
@@ -130,32 +132,37 @@
             </div>
           </a>
         </div>
+        
         <!--2x2 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
-          <a href="https://simons-rock.edu/news">
-            <div class="image-container-size5" id="image-container-2">
-            </div> 
-          </a>
-        </div>
-        <!--2x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
-          <a href="https://simons-rock.edu/news">
-            <div class="image-container-size5" id="image-container-2">
-            </div> 
-          </a>
-        </div>
-        <!--2x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="15">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size5" id="image-container-2">
             </div> 
           </a>
         </div>
         <!--1x2 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="7">
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container-size5" id="image-container-2">
             </div> 
+          </a>
+        </div>
+        <!-- 1x2 full text -->
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-r2" tabindex="17">
+          <a href="https://simons-rock.edu/news">
+            <div class="item-text">
+              <h2>Everyone Has A Story To Tell</h2>
+              <p>Professor Jennifer Browdy's guide to writing memroir wins Nautilus Award</p>
+            </div>
+          </a>
+        </div>
+        <!-- 2x2 full text -->
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-r2" tabindex="18">
+          <a href="https://simons-rock.edu/news">
+            <div class="item-text">
+              <h2>Everyone Has A Story To Tell</h2>
+              <p>Professor Jennifer Browdy's guide to writing memroir wins Nautilus Award</p>
+            </div>
           </a>
         </div>
 

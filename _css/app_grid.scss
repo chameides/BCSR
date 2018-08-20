@@ -51,8 +51,8 @@
       grid-template-rows: repeat(2, $section-height-sm/2);
     }
     grid-template-areas:
-      "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item15  item15 item16 item8b item8b item9b   item11b  item13b item1c  item3c item3c item6c item7c item8c item8c item9c   item11c  item11c"
-      "item2  item4 item5 item5 item8 item8 item10 item10  item12  item14  item15  item15 item16 item8b item8b item10b  item12b  item14b item2c  item4c item5c item5c item7c item8c item8c item10c  item12c  item14c";
+      "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item15  item15 item16 item17 item18 item18"
+      "item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item15  item15 item16 item17 item18 item18";
     }
 
 
@@ -381,6 +381,16 @@ body#home .grid { //override defaults
     }
     .col-xs-6 {
       padding: 0;
+    }
+  }
+
+  .news-item-size-r2 .item-text{
+    height: ($section-height-xs);
+    @media (min-width: $screen-sm-min) {
+      height: ($section-height-news);
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm);
     }
   }
 
