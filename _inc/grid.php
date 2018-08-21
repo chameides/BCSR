@@ -123,12 +123,13 @@
           </a>
         </div>
 
-        <!-- not in use-->
-        <div class="news-item news-item-batch1 news-item-image-none" tabindex="14">
+        <!-- image 2 tall-->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-r2-3" tabindex="14">
           <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>14. Headline</h2>
-              <p>SubheadliNe goes here</p>
+            <div class="image-container-size3" id="image-container-2">
+            </div>
+            <div class="item-text"> 
+              <h2 class="caption">Lauren Duca to Deliver Commencement Speech</h2>
             </div>
           </a>
         </div>
@@ -165,10 +166,16 @@
             </div>
           </a>
         </div>
+        
 
         
 
         <!--end item-->
+
+
+
+
+
 
 
         <div class="news-item news-item-batch2  news-item-link news-item-image-none" tabindex="1">
