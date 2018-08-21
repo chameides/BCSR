@@ -507,6 +507,9 @@
 					// hang tight
 				} else {
 					// move the element exactly one third its width to the right so that we're looking at the middle
+					console.log('NewsnewLeft*-1=' + newsNewLeft*-1);
+					console.log('newsCarouselWidth/3=' + newsCarouselWidth*.33);
+					console.log('newsCarouselWidth*.66=' + newsCarouselWidth*.66);
 					console.log('shuffle3');
 					$('#news-grid .grid').css({'left':newsNewLeft + (newsCarouselWidth/3)});
 				}
