@@ -761,13 +761,56 @@
         <!-- end batch 3-->
 
 
+         <!-- 1x1 full image -->
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5 news-item-cta-placeholder1" tabindex="9">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5 news-item-cta-placeholder2" tabindex="9">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
+        <div class="news-item news-item-batch1  news-item-link news-item-image-size5 news-item-cta-placeholder3" tabindex="9">
+          <a href="https://simons-rock.edu/news">
+            <div class="image-container-size5" id="image-container-2">
+            </div> 
+          </a>
+        </div>
 
 
+        <!-- CTA -->
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-cta1 background-red" tabindex="1">
+          <a href="https://simons-rock.edu/news">
+            <div class="item-text">
+              <h2>View All News and Events</h2>
+            </div>
+          </a>        
+        </div>
+
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-cta2 background-red" tabindex="1">
+          <a href="https://simons-rock.edu/news">
+            <div class="item-text">
+              <h2>View All News and Events</h2>
+            </div>
+          </a>        
+        </div>
+
+        <div class="news-item news-item-batch3 news-item-link news-item-image-none news-item-cta3 background-red" tabindex="1">
+          <a href="https://simons-rock.edu/news">
+            <div class="item-text">
+              <h2>View All News and Events</h2>
+            </div>
+          </a>        
+        </div>
+        <!-- end CTA-->
 
 
       </div><!--end grid-->
     </div><!--end grid wrapper-->
-    <div class="viewall_container drop_on_mobile"><a href="#" class="btn btn-primary">View News and Events</a></div>
       <button class="btn btn-link rockers_btn leftbtn" id="news-carousel-left"><i class="fa fa-chevron-left"></i></button>
       <button class="btn btn-link rockers_btn rightbtn" id="news-carousel-right"><i class="fa fa-chevron-right"></i></button>
   </div><!--end container fluid-->
