@@ -1,7 +1,7 @@
 <section id="news-grid">
   <div class="container-fluid">
     <div class="grid-wrapper row">
-      <div class="grid">
+      <div class="grid grid-all">
         <!-- headline and text -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
