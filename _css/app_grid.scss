@@ -164,8 +164,14 @@
 
       @media (min-width: $screen-sm-min) {
         grid-template-areas:
-          "item5c   item5c   item4c item3c item3c item2c item1c item1c item5b   item5b   item4b item3b item3b item2b item1b item1b item5   item5   item4 item3 item3 item2 item1 item1"
-          "itemcta3 itemcta3 item4c item3c item3c item2c item1c item1c itemcta2 itemcta2 item4b item3b item3b item2b item1b item1b itemcta itemcta item4 item3 item3 item2 item1 item1";
+          "item1c item4c item5c item5c     item1b item4b item5b item5b          item1 item4 item5 item5"
+          "item2c item2c item3c itemcta3   item2b item2b item3b itemcta2        item2 item2 item3 itemcta";
+      }
+
+      @media (min-width: $screen-lg-min) {
+        grid-template-areas:
+          "item1c item1c item2c item3c item3c item5c item5c     item1b item1b item2b item3b item3b item5b item5b   item1  item1  item2 item3 item3 item5 item5"
+          "item1c item1c item2c item3c item3c item4c itemcta3   item1b item1b item2b item3b item3b item4b itemcta2 item1  item1  item2 item3 item3 item4 itemcta";
       }
 
       .news-item:nth-child(1)  { grid-area: item1; }
@@ -399,7 +405,7 @@ body#home .grid { //override defaults
       }
       
     }
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-md-max) {
       &.item-extra {
         display: none;
       }
@@ -491,6 +497,17 @@ body#home .grid { //override defaults
       height: ($section-height-sm);
     }
   }
+
+  .news-item-size-lg-r2 .item-text{
+    @media (min-width: $screen-lg-min) {
+      height: ($section-height-news);
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm);
+    }
+  }
+
+
 
   .news-item-image-size1 .item-text{
     height: ($section-height-xs/2)*.7;
