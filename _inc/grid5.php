@@ -1,6 +1,6 @@
 <section id="news-grid">
   <div class="container-fluid">
-    <div class="grid-wrapper row grid-few-items">
+    <div class="grid-wrapper row">
       <div class="grid grid-5">
         <!-- headline and text -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="1">

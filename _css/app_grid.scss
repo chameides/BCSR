@@ -42,6 +42,13 @@
    //assign grid layout
     grid-template-columns: repeat(90, 190px);
     grid-template-rows: repeat(2, $section-height-xs/2);
+    
+    @media (min-width: 190px * 3) and (max-width: $screen-xs-max) {
+      &.grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
     @media (min-width: $screen-sm-min) {
       grid-template-columns: repeat(90, $section-height-news/2);
       grid-template-rows: repeat(2, $section-height-news/2);
