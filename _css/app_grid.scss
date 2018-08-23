@@ -43,6 +43,8 @@
     grid-template-columns: repeat(90, 190px);
     grid-template-rows: repeat(2, $section-height-xs/2);
     
+
+    //option for 3 x 3 full width
     @media (min-width: 190px * 3) and (max-width: $screen-xs-max) {
       &.grid-5 {
         grid-template-columns: repeat(3, 1fr);
@@ -502,6 +504,12 @@ body#home .grid { //override defaults
     }
     @media (min-width: $screen-xl-min) {
       height: ($section-height-sm);
+    }
+  }
+
+  .news-item-size-sm-r2 .item-text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+      height: ($section-height-news);
     }
   }
 

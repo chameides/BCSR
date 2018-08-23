@@ -60,7 +60,7 @@
           </a>        
         </div> 
        <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="2">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none  news-item-size-lg-r2" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -70,7 +70,7 @@
           </a>        
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="3">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-sm-r2 news-item-size-lg-r2" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
