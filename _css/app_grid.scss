@@ -497,6 +497,8 @@ body#home .grid { //override defaults
     }
   }
 
+  //no image
+
   .news-item-size-r2 .item-text{
     height: ($section-height-xs);
     @media (min-width: $screen-sm-min) {
@@ -523,7 +525,7 @@ body#home .grid { //override defaults
   }
 
 
-
+  //image size 1
   .news-item-image-size1 .item-text{
     height: ($section-height-xs/2)*.7;
     @media (min-width: $screen-sm-min) {
@@ -544,6 +546,23 @@ body#home .grid { //override defaults
     }
   }
 
+  .news-item-size-sm-r2-1 .item-text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+      height: ($section-height-news)*.6;
+    }
+  }
+
+  .news-item-size-lg-r2-1 .item-text{
+    @media (min-width: $screen-lg-min) {
+      height: ($section-height-news)*.6;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.6;
+    }
+  }
+
+
+//image size 2
 
   .news-item-image-size2 .item-text{
     height: ($section-height-xs/2)*.4;
@@ -565,7 +584,24 @@ body#home .grid { //override defaults
     }
   }
 
+  .news-item-size-sm-r2-2 .item-text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+      height: ($section-height-news)*.4;
+    }
+  }
 
+  .news-item-size-lg-r2-2 .item-text{
+    @media (min-width: $screen-lg-min) {
+      height: ($section-height-news)*.4;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.4;
+    }
+  }
+
+
+
+  //size 3
   .news-item-image-size3 .item-text{
     height: ($section-height-xs/2)*.25;
     @media (min-width: $screen-sm-min) {
@@ -586,6 +622,24 @@ body#home .grid { //override defaults
     }
   }
 
+  .news-item-size-sm-r2-3 .item-text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+      height: ($section-height-news)*.2;
+    }
+  }
+
+  .news-item-size-lg-r2-3 .item-text{
+    @media (min-width: $screen-lg-min) {
+      height: ($section-height-news)*.2;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.2;
+    }
+  }
+
+
+
+  //image size4
 
   .news-item-image-size4 .item-text{
     height: ($section-height-xs/2)*.12;
@@ -606,6 +660,22 @@ body#home .grid { //override defaults
       height: ($section-height-sm)*.12;
     }
   }
+
+  .news-item-size-sm-r2-4 .item-text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+      height: ($section-height-news)*.12;
+    }
+  }
+
+  .news-item-size-lg-r2-4 .item-text{
+    @media (min-width: $screen-lg-min) {
+      height: ($section-height-news)*.12;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: ($section-height-sm)*.12;
+    }
+  }
+
 }//close grid
 
 
