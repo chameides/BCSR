@@ -20,8 +20,8 @@
 
 //Set up grid
 @supports (display: grid) {
-  .grid {
-    display: grid;
+  //set height for horizontal scroll
+  .grid-wrapper .grid {
     height: $section-height-xs;
     @media (min-width: $screen-sm-min) {
       height: $section-height-news;
@@ -30,6 +30,10 @@
     @media (min-width: $screen-xl-min) {
       height: $section-height-sm;
     }
+  }
+
+  .grid {
+    display: grid;   
     
     //typography  
     h2,
@@ -43,6 +47,12 @@
     grid-template-columns: repeat(90, 190px);
     grid-template-rows: repeat(2, $section-height-xs/2);
     
+
+    //set dimensions for vertical scroll
+    &.grid-all-news {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(90, $section-height-xs/2);
+    }
 
     //option for 3 x 3 full width
     @media (min-width: 190px * 3) and (max-width: $screen-xs-max) {
@@ -164,6 +174,77 @@
       .news-item-cta-placeholder3 { grid-area: itemctaplaceholder3; }  
 
     }
+
+
+    //grid layout for vertical scroll
+    &.grid-all-news {
+      grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item6 item5"
+        "item7 item5"
+        "item8 item8"
+        "item8 item8"
+        "item9 item10"
+        "item11 item10"
+        "item11 item12"
+        "item13 item12"
+        "item14 item14"
+        "item15 item15"
+        "item15 item15"
+        "item16 item16"
+        "item17 item17"
+        "item18 item18"
+        "item18 item18"
+        "item19 item19"
+        "item20 item20"
+        "item21 item21"
+        "item22 item22"
+        "item23 item24"
+        "item23 item24"
+        "item25 item26"
+        "item25 item26";        
+
+      
+      @media (min-width: $screen-sm-min) {
+        grid-template-areas:
+          "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item23 item25"
+
+          "item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item24 item26";
+      }
+
+
+      .news-item:nth-child(1)  { grid-area: item1; }
+    .news-item:nth-child(2)  { grid-area: item2; }
+    .news-item:nth-child(3)  { grid-area: item3; }
+    .news-item:nth-child(4)  { grid-area: item4; }
+    .news-item:nth-child(5)  { grid-area: item5; }
+    .news-item:nth-child(6)  { grid-area: item6; }
+    .news-item:nth-child(7)  { grid-area: item7; }
+    .news-item:nth-child(8)  { grid-area: item8; }
+    .news-item:nth-child(9)  { grid-area: item9; }
+    .news-item:nth-child(10) { grid-area: item10; }
+    .news-item:nth-child(11) { grid-area: item11; }
+    .news-item:nth-child(12) { grid-area: item12; }
+    .news-item:nth-child(13) { grid-area: item13; }
+    .news-item:nth-child(14) { grid-area: item14; }
+    .news-item:nth-child(15) { grid-area: item15; }
+    .news-item:nth-child(16) { grid-area: item16; }
+    .news-item:nth-child(17) { grid-area: item17; }
+    .news-item:nth-child(18) { grid-area: item18; }
+    .news-item:nth-child(19) { grid-area: item19; }
+    .news-item:nth-child(20) { grid-area: item20; }
+    .news-item:nth-child(21) { grid-area: item21; }
+    .news-item:nth-child(22) { grid-area: item22; }
+    .news-item:nth-child(23) { grid-area: item23; }
+    .news-item:nth-child(24) { grid-area: item24; }
+    .news-item:nth-child(25) { grid-area: item25; }
+    .news-item:nth-child(26) { grid-area: item26; }
+    
+    }
+
+
+
 
     &.grid-5 {
       grid-template-areas:
@@ -416,47 +497,55 @@
   }
 }
 
-body#home .grid { //override defaults
-  h2 {
-    font-size: 1.3em;
-    @media (min-width: $screen-sm-min) {
-      font-size: 1.5em;
-    } 
-    margin: 0 .8em;
-    &.small {
-      font-size: 1em;
-      @media (min-width: $screen-md-min) {
-        font-size: 1.2em;
-      }
-    }
-  }
-  .news-item h2.caption { //small text version
-    font-size: 1.1em;
-    line-height: 1.1em;
-    margin-top: 0;
-    &.small {
-      font-size: .8em;
-      @media (min-width: $screen-md-min) {
-        font-size: .9em
-      }
-    }
-  }
-  p {
-    font-size: 1.1em;
-    @media (min-width: $screen-sm-min) {
+//override page-container default on vertical scroll
+.page-container #news-grid{
+  font-size: 1.5rem;
+}
+
+body#home, 
+body#newslisting {
+  .grid { //override defaults
+    h2 {
       font-size: 1.3em;
-    }
-    margin: .5em .8em;
-    &.small {
-      font-size: .9em;
-      @media (min-width: $screen-md-min) {
-        font-size: 1.1em;
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.5em;
+      } 
+      margin: 0 .8em;
+      &.small {
+        font-size: 1em;
+        @media (min-width: $screen-md-min) {
+          font-size: 1.2em;
+        }
       }
-      
     }
-    @media (max-width: $screen-md-max) {
-      &.item-extra {
-        display: none;
+    .news-item h2.caption { //small text version
+      font-size: 1.1em;
+      line-height: 1.1em;
+      margin-top: 0;
+      &.small {
+        font-size: .8em;
+        @media (min-width: $screen-md-min) {
+          font-size: .9em
+        }
+      }
+    }
+    p {
+      font-size: 1.1em;
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.3em;
+      }
+      margin: .5em .8em;
+      &.small {
+        font-size: .9em;
+        @media (min-width: $screen-md-min) {
+          font-size: 1.1em;
+        }
+        
+      }
+      @media (max-width: $screen-md-max) {
+        &.item-extra {
+          display: none;
+        }
       }
     }
   }
