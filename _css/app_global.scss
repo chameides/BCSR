@@ -981,6 +981,13 @@ body#why .side-nav-mobile,
   }
 }
 
+#hero-video-controls {
+  //video does not play unless screen is 769px or wider
+  @media screen and (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
 //wsr video 2 and 3 does not play unless screen is 1200px or wider
 @media screen and (max-width:1199px) {
   .hero-video-controls-secondary,
@@ -1086,6 +1093,11 @@ h1.hero-title {
   overflow: hidden;
   background: black;
   margin-bottom: 40px;
+  //hide default play button on chrome
+  video::-webkit-media-controls{
+    display: none;
+    -webkit-appearance: none;
+  }
   @if $cec {
     @media screen and (max-width: $screen-xs-min) {
       height: 300px; //progressive enhancement
