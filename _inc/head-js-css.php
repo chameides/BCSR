@@ -12,6 +12,11 @@
     background-image: url(_images/gateway-header-bg.jpg);
 }
 
+
+.page-hero-container.news-bg {
+    background-image: url(https://simons-rock.edu/_images/academy/bard-academy-at-simons-rock/mobile-master-section/400px-x-529px-hero-/faculty-and-male-student-bard-academy.jpg);
+}
+
 .page-hero-container.gatekeeper-bg {
       background-image: url(/_images/why-simons-rock/5-signs-dorm5.jpg);
   }
@@ -39,6 +44,11 @@
   .page-hero-container.gateway-bg {
       background-image: url(_images/gateway-header-bg-lg.jpg);
   }
+
+  .page-hero-container.news-bg {
+    background-image: url(http://simons-rock.edu/_images/academy/bard-academy-at-simons-rock/desktop-master-section/hero-image-1467px-x-530px/faculty-and-male-student-bard-academy.jpg);
+}
+
 
   .page-hero-container.gatekeeper-bg {
       background-image: url(/_images/why-simons-rock/5-signs-dorm2.jpg);

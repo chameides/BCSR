@@ -13,53 +13,31 @@
 </style>
 
   </head>
-  <body id="newslisting">
+  <body id="newslisting" class="has-hero">
 
   
 <?php include '_inc/nav.php'; ?>
 
     <div class="container-fluid page-container"> 
 
-    <!-- Colored columns for testing grid
-      <div class="row-full-width">
-        <div class="column-left" style="background: grey;">
-          left column
-        </div>
-        <div class="column-center" style="background: green;">
-          center column
-        </div>
-        <div class="column-right" style="background: yellow;">
-          right column
-        </div>
-      </div>
-    -->
+    
       <!-- << Section One >> -->
       <div class="row-full-width">
-        <!-- LEFT COLUMN -->
-        <div class="column-left side-nav" data-spy="affix" data-offset-top="100">
-          <div class="reveal-side-nav"></div>
-          <!-- Subnav -->
-          <ul class="flat-list list-group">
-            <li><div class="list-group-item active section-header">News</div></li>
-            <li><a href="#" class="list-group-item">Media Contacts</a></li>
-            <li><a href="#" class="list-group-item">Submit News Tips</a></li>
-            <li><a href="#" class="list-group-item">Additional Links FPO</a></li>
-          </ul>
-          <!-- /Subnav -->
-        </div>
-        <!-- /LEFT COLUMN-->
-
-        
-
         <!-- CENTER COLUMN -->
-        <div class="column-center">
-          <!-- Video Header -->
-          
-          <h1 class="header-page text-center">Simon's Rock News</h1>
-          
-        </div>
+       
           <section id="news-grid">
             <div class="grid grid-all-news-5b"> 
+              <div class="news-hero page-hero-container page-hero-container-min news-bg">
+                <div class="page-hero page-hero-news-alt text-center">
+                  <h1 class="hero-title">Simon's Rock News</h1>
+                  <p class="hero-text">Highlights from campus and the Simon's Rock community</p>
+                  <div class="hero-buttons">
+                    <a class="center-block btn btn-primary" href="#">Events</a>
+                    <a class="center-block btn btn-primary" href="#">Subscribe</a>
+                    <a class="center-block btn btn-primary" href="#">Media Relations</a>
+                  </div>
+                </div>
+              </div>
               <?php include '_inc/grid-content-5b.php'; ?>
             </div>  
           </section> 
@@ -118,33 +96,23 @@
             </div>
             <!-- Article End -->        
           </div>
+          <div class="text-center">
+            <a class="btn btn-primary" href="#">News Archives</a>
+          </div>
           <!-- End of News Listings -->
         <!-- /CENTER COLUMN -->
+
 
         <!-- RIGHT COLUMN -->
       
         <!-- RIGHT COLUMN -->
       </div>
+       <?php include '_inc/events_carousel.php'; ?>
       <!-- << /Section One >> -->
       </div>
 
     </div><!-- /container-fluid -->
 
-    <div class="row-full-width">
-      <!-- Sidbar Mobile Nav -->
-      <div class="side-nav-mobile">
-        <!-- Subnav -->
-        <ul class="flat-list list-group list-group-mobile">
-          <li><div class="list-group-item active section-header">News</div></li>
-            <li><a href="#" class="list-group-item">Link 1</a></li>
-            <li><a href="#" class="list-group-item">Link 2</a>
-            </li>
-            <li><a href="#" class="list-group-item">Link 3 FPO</a></li>
-        </ul>
-        <!-- /Subnav -->
-      </div>
-      <!-- /Sidbar Mobile Nav-->
-    </div>
 
 <?php include '_inc/footer.php'; ?>
     

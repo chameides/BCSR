@@ -912,11 +912,16 @@ body#why .side-nav-mobile,
 
 
 //hero graphic variation that does not take up full screen
-.page-hero-container-small {
+.page-hero-container-small,
+.page-hero-container-min {
   margin-bottom: 0;
   padding: 0 1em;
-  min-height: 352px;
   height: auto; 
+}
+
+.page-hero-container-small {
+  min-height: 352px;
+  
   @media screen and (min-width: $screen-sm-min) {
     min-height: 420px;
 
@@ -928,7 +933,6 @@ body#why .side-nav-mobile,
   @media screen and (min-width: $screen-lg-min) {
     min-height: 540px;
   }
-
   h1 {
     @media screen and (min-width: $screen-sm-min) {
       margin-top: 1rem;
@@ -943,6 +947,21 @@ body#why .side-nav-mobile,
   }
 }
 
+.page-hero-container-min {
+  min-height: auto;
+  h1{
+    @media screen and (min-width: $screen-md-min) {
+      margin-top: 5rem;
+    }
+    @media screen and (min-width: $screen-lg-min) {
+      padding: 0;
+      margin-top: 0rem;
+    }
+  }
+  padding-bottom: 30px;
+}
+
+
 .page-hero {
   margin: 0 auto;
   padding: 180px 40px 10px 40px;
@@ -955,6 +974,11 @@ body#why .side-nav-mobile,
       padding-top: 40%;
       padding-left: $padding-large;
       padding-right: $padding-large;
+    }
+  }
+  &.page-hero-news-alt {
+    @media screen and (max-width: $screen-md-max) {
+      padding-top: 100px;
     }
   }
 }
