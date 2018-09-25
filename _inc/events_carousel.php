@@ -161,7 +161,7 @@
 			
 			</div><!-- / events-carousel-row -->
 		
-			<div class="viewall_container drop_on_mobile"><a href="#" class="btn btn-primary">View All</a></div>
+			<div class="viewall_container drop_on_mobile"><a href="#" class="btn btn-primary">All Events</a></div>
 			<button class="btn btn-link rockers_btn leftbtn"><i class="fa fa-chevron-left"></i></button>
 			<button class="btn btn-link rockers_btn rightbtn"><i class="fa fa-chevron-right"></i></button>
 

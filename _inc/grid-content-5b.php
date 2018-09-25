@@ -1,30 +1,29 @@
 
+      
+
+
       <!-- 1x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-image-size-5" tabindex="1">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-only" tabindex="1">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size5" id="image-container-3">
-            </div> 
+            <img src="/_images/grid/selfie.jpg">
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1  news-item-image-size-2 news-item-link news-item-image-size-md-r2-2 news-item-image-size-lg-r2-2" tabindex="2">
+        <div class="news-item news-item-batch1 news-item-link" tabindex="2">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size2" id="image-container-4">
-            </div> 
+            <img src="/_images/grid/breadpuppet.jpg">
             <div class="item-text">
               <h2>Bread and Puppet</h2>
               <p>Thursday, September 13 5:30 PM</p>
               <p class="item-extra">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
-         
             </div>
           </a>
         </div>
 
         <!-- image with heading -->
-        <div class="news-item news-item-batch1  news-item-image-size-2 news-item-link news-item-image-size-md-r2-2 news-item-image-size-lg-r2-2" tabindex="3">
+        <div class="news-item news-item-link" tabindex="3">
           <a href="https://simons-rock.edu/news">
-            <div class="image-container-size2" id="image-container-2">
-            </div> 
+           <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
               <p class="item-extra">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
