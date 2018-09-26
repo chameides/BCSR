@@ -452,8 +452,8 @@
         @media (min-width: $screen-md-min) {
           grid-template-areas:
             "hero   hero  hero  hero"
-            "item2  item2 item3 item3"
-            "item5  item1 item1 item4";
+            "item2  item5 item1 item3"
+            "item2  item4 item1 item3";
         }
 
         .news-hero               { grid-area: hero; }
@@ -499,11 +499,12 @@
 
 .grid {
   //assign rotating colors
-  .news-item-batch1,
-  .news-item-batch2, 
-  .news-item-batch3 {
-    transition-property:background-color;
-    transition-duration:0.5s; 
+  .news-item {
+    transition-property:background-color, opacity;
+    transition-duration:0.5s;
+    img {
+      opacity: 1;
+    } 
     &:nth-child(4n+1)  { 
       background-color: $blue-sky;
       &.news-item-link {
@@ -514,9 +515,9 @@
           .image-container-size2,
           .image-container-size3,
           .image-container-size4,
-          .image-container-size5 {
-            background-color: rgba(darken( $blue-sky, 10% ),0.20);
-            background-blend-mode: overlay;
+          .image-container-size5 ,
+          img {
+            opacity: .9;
           }
         }
       }
@@ -531,10 +532,10 @@
           .image-container-size2,
           .image-container-size3,
           .image-container-size4,
-          .image-container-size5 {
-            background-color: rgba(darken( $medium-gray, 10% ),0.20);
-            background-blend-mode: overlay;
-          } 
+          .image-container-size5 ,
+          img {
+            opacity: .9;
+          }
         }
       } 
     }
@@ -549,9 +550,9 @@
           .image-container-size2,
           .image-container-size3,
           .image-container-size4,
-          .image-container-size5 {
-            background-color: rgba(darken( $orange, 10% ),0.20);
-            background-blend-mode: overlay;
+          .image-container-size5,
+          img {
+            opacity: .9;
           }
         }
       } 
@@ -560,16 +561,16 @@
       background-color: black;
       &.news-item-link {
         &:focus,
-        &:hover {
-          background: lighten( black, 20% ); 
+        &:hover { 
+          background: lighten( black, 20% );
           .image-container-size1,
           .image-container-size2,
           .image-container-size3,
           .image-container-size4,
-          .image-container-size5 {
-            background-color: rgba(black,0.10);
-            background-blend-mode: overlay;
-         }
+          .image-container-size5, 
+          img {
+            opacity: .9;
+          }
         }
       }  
     }
