@@ -96,7 +96,7 @@
             </div>
             <!-- Article End -->        
           </div>
-          <div class="text-center">
+          <div class="text-center" style="clear:both;">
             <a class="btn btn-primary" href="#">News Archives</a>
           </div>
           <!-- End of News Listings -->

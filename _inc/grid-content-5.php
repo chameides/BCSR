@@ -1,7 +1,7 @@
 
         <!-- headline and text -->
         <div class="news-item
-                    news-item-batch1 news-item-link news-item-image-none" tabindex="1">
+                    news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -11,7 +11,7 @@
         </div> 
          <!-- headline and text -->
         <div class="news-item
-                    news-item-batch1 news-item-link news-item-image-none" tabindex="2">
+                    news-item-link news-item-image-none" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -20,7 +20,7 @@
           </a>        
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="3">
+        <div class="news-item news-item-link news-item-image-none" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -29,7 +29,7 @@
           </a>        
         </div>  
          <!-- event -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="4">
+        <div class="news-item news-item-link news-item-image-none" tabindex="4">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Berkshire Pulse Performance</h2>
@@ -40,7 +40,7 @@
           </a>
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-md-r2 news-item-size-lg-r2" tabindex="5">
+        <div class="news-item news-item-link news-item-image-none" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Item 5</h2>
