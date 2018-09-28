@@ -67,7 +67,7 @@
             <div class="image-container-size3" id="image-container-2">
             </div> 
             <div class="item-text">
-              <p class="caption">Austria on a Fullbright</p>
+              <h2>Austria on a Fullbright</h2>
             </div>
           </a>
         </div>
@@ -320,7 +320,7 @@
             <div class="image-container-size3" id="image-container-2">
             </div> 
             <div class="item-text">
-              <p class="caption">Austria on a Fullbright</p>
+              <h2 class="caption">Austria on a Fullbright</h2>
             </div>
           </a>
         </div>
@@ -574,7 +574,7 @@
             <div class="image-container-size3" id="image-container-2">
             </div> 
             <div class="item-text">
-              <p class="caption">Austria on a Fullbright</p>
+              <h2 class="caption">Austria on a Fullbright</h2>
             </div>
           </a>
         </div>

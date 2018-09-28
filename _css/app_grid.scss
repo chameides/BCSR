@@ -1,11 +1,8 @@
-#news-grid {
-   background-color:$dark-gray;
-}
-
 //position grid inside side scroller
 .grid-wrapper {
   //position:relative;
   overflow-x:scroll;
+  background-color:$dark-gray;
   @media(max-width: $screen-xs-max) {
     .news-item-batch2,
     .news-item-batch3 {
@@ -33,7 +30,8 @@
   }
 
   .grid {
-    display: grid;   
+    display: grid;
+    grid-gap: 1px;   
     
     //typography  
     h2,
@@ -46,7 +44,6 @@
    //assign grid layout
     grid-template-columns: repeat(90, 190px);
     grid-template-rows: repeat(2, $section-height-xs/2);
-    
 
     //option for 3 x 3 full width
     @media (min-width: 190px * 3) and (max-width: $screen-xs-max) {
@@ -66,16 +63,16 @@
 
     //set dimensions for vertical scroll
     &.grid-all-news {
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: 0px repeat(2, 1fr) 0px;
       grid-template-rows: auto repeat(24, minmax(80px, auto));
       //grid-template-rows: auto;
       @media (min-width: $screen-sm-min) {
-        grid-template-columns: repeat(3, 33.3333333%);
+        grid-template-columns: 0px repeat(3, 1fr) 0px;
         grid-template-rows: auto repeat(14, minmax(80px, auto));
         //grid-template-rows: repeat(25, $section-height-news/2);
       }
       @media (min-width: $screen-md-min) {
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: 0px repeat(4, 1fr) 0px;
         grid-template-rows: auto repeat(10, minmax(80px, auto));
         //grid-template-rows: repeat(25, $section-height-news/2);
       }
@@ -83,7 +80,6 @@
       @media (min-width: $screen-xl-min) {
         //grid-template-rows: repeat(25, $section-height-sm/2);
       }
-
     }
 
     &.grid-all {
@@ -195,70 +191,70 @@
     //grid layout for vertical scroll
     &.grid-all-news {
       grid-template-areas:
-        "hero hero"
-        "item1 item2"
-        "item3 item4"
-        "item6 item5"
-        "item7 item9"
-        "item8 item8"
-        "item8 item8"
-        "item11 item10"
-        "item13 item12"
-        "item14 item14"
-        "item15 item15"
-        "item15 item15"
-        "item15 item15"
-        "item16 item16"
-        "item17 item17"
-        "item18 item18"
-        "item18 item18"
-        "item19 item19"
-        "item20 item20"
-        "item21 item21"
-        "item22 item22"
-        "item23 item24"
-        "item23 item24"
-        "item25 item26"
-        "item25 item26";
+        "hero hero hero hero "
+        " . item1 item2 . "
+        " . item3 item4 . "
+        " . item6 item5 . "
+        " . item7 item9 . "
+        " . item8 item8 . "
+        " . item8 item8 . "
+        " . item11 item10 . "
+        " . item13 item12 . "
+        " . item14 item14 . "
+        " . item15 item15 . "
+        " . item15 item15 . "
+        " . item15 item15 . "
+        " . item16 item16 . "
+        " . item17 item17 . "
+        " . item18 item18 . "
+        " . item18 item18 . "
+        " . item19 item19 . "
+        " . item20 item20 . "
+        " . item21 item21 . "
+        " . item22 item22 . "
+        " . item23 item24 . "
+        " . item23 item24 . "
+        " . item25 item26 . "
+        " . item25 item26 . ";
 
 
         @media (min-width: $screen-sm-min) {
           grid-template-areas:
-          "hero  hero  hero"
-          "item1 item2 item3"
-          "item4 item6 item12"
-          "item9 item7 item12"
-          "item8 item8 item5"
-          "item8 item8 item5"
-          "item11 item10 item13" 
-          "item11 item10 item14"
-          "item15 item15 item14"
-          "item15 item15 item17"
-          "item18 item18 item17"
-          "item18 item18 item19"
-          "item16 item20 item21"
-          "item22 item22 item25"
-          "item23 item24 item26";
+          "hero hero hero  hero  hero"
+          " . item1 item2 item3 . "
+          " . item4 item6 item12 . "
+          " . item9 item7 item12 . "
+          " . item8 item8 item5 . "
+          " . item8 item8 item5 . "
+          " . item11 item10 item13 . " 
+          " . item11 item10 item14 . "
+          " . item15 item15 item14 . "
+          " . item15 item15 item17 . "
+          " . item18 item18 item17 . "
+          " . item18 item18 item19 . "
+          " . item16 item20 item21 . "
+          " . item22 item22 item25 . "
+          " . item23 item24 item26 . ";
         }
 
         @media (min-width: $screen-md-min) {
           grid-template-areas:
-          "hero   hero   hero   hero"
-          "item1  item3 item6 item7" 
-          "item2  item5 item5 item4"
+          "hero hero hero   hero   hero   hero"
+          ". item1  item3 item6 item7 . " 
+          ". item2  item5 item5 item4 . "
 
-          "item8 item8 item10 item11" 
-          "item8 item8 item10 item11"   
+          " . item8 item8 item10 item11  . " 
+          " . item8 item8 item10 item11 . "   
 
-          "item13  item9  item14 item16"
-          "item13  item9  item12 item12"  
+          " . item13  item9  item14 item16 . "
+          " . item13  item9  item12 item12 . "  
 
-          "item15 item15 item17 item19" 
+          " . item15 item15 item17 item19 . " 
 
-          "item18 item18 item20 item26" 
+          " . item18 item18 item20 item26  . " 
 
-          "item22 item25 item25 item21"
-          "item23 item25 item25 item24";
+          " . item22 item25 item25 item21  . "
+          " . item23 item25 item25 item24  . ";
 
         }
 
@@ -339,15 +335,15 @@
     //grid layout for vertical scroll
     &.grid-all-news-5 {
       
-      grid-template-columns: repeat(2, 50%);
-      grid-template-rows: auto;
-    
-      @media (min-width: $screen-sm-min) {
-        grid-template-columns: repeat(3, 33.3333333%);
-      }
-      @media (min-width: $screen-md-min) {
-        grid-template-columns: repeat(4, 25%);
-      }
+    grid-template-columns: 0px repeat(2, 1fr) 0px;
+    grid-template-rows: auto;
+    @media (min-width: $screen-sm-min) {
+      grid-template-columns: 0px repeat(3, 1fr) 0px;  
+    }
+    @media (min-width: $screen-md-min) {
+      grid-template-columns: 0px repeat(4, 1fr) 0px;
+      
+    }
 
       @media (min-width: $screen-xl-min) {
         
@@ -355,23 +351,23 @@
 
 
       grid-template-areas:
-        "hero hero"
-        "item1 item2" 
-        "item3 item3"
-        "item4 item5";
+        "hero hero hero hero"
+        ". item1 item2 ." 
+        ". item3 item3 ."
+        ". item4 item5 .";
 
       @media (min-width: $screen-sm-min) {
         grid-template-areas:        
-          "hero  hero  hero"
-          "item1 item3 item4"
-          "item2 item5 item5";
+          "hero hero  hero  hero hero"
+          ". item1 item3 item4 ."
+          ". item2 item5 item5 .";
       }
 
       @media (min-width: $screen-md-min) {
         grid-template-areas:        
-          "hero  hero  hero  hero"
-          "item4 item4 item1 item2"
-          "item5 item3 item3 item2";
+          "hero hero  hero  hero  hero hero"
+          ". item4 item4 item1 item2 ."
+          ". item5 item3 item3 item2 .";
       }
 
       .news-hero               { grid-area: hero; }
@@ -421,14 +417,14 @@
 
       &.grid-all-news-5b {
 
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: 0px repeat(2, 1fr) 0px;
         grid-template-rows: auto;
         @media (min-width: $screen-sm-min) {
-          grid-template-columns: repeat(3, 33.3333333%);
+          grid-template-columns: 0px repeat(3, 1fr) 0px;
           
         }
         @media (min-width: $screen-md-min) {
-          grid-template-columns: repeat(4, 25%);
+          grid-template-columns: 0px repeat(4, 1fr) 0px;
           
         }
 
@@ -437,23 +433,23 @@
         }
 
         grid-template-areas:
-          "hero hero"
-          "item2 item2"
-          "item3 item1"
-          "item4 item5";
+          "hero hero hero hero"
+          ". item2 item2 ."
+          ". item3 item1 ."
+          ". item4 item5 .";
 
         @media (min-width: $screen-sm-min) {
           grid-template-areas:
-            "hero hero hero"
-            "item2  item2 item1"
-            "item5  item3 item4 ";
+            "hero hero hero hero hero"
+            ". item2  item2 item1 ."
+            ". item5  item3 item4 .";
         }
 
         @media (min-width: $screen-md-min) {
           grid-template-areas:
-            "hero   hero  hero  hero"
-            "item2  item5 item1 item3"
-            "item2  item4 item1 item3";
+            "hero hero   hero  hero  hero hero"
+            ". item2  item5 item1 item3 ."
+            ". item2  item4 item1 item3 .";
         }
 
         .news-hero               { grid-area: hero; }
@@ -496,85 +492,142 @@
   
 }
 
+#news-grid .grid .news-item {
+  //assign rotating colors (no orange)
+  &:nth-child(4n+1)  { 
+    background-color: $blue-sky;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( $blue-sky, 10% ); 
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5 ,
+        img {
+          opacity: .9;
+        }
+      }
+    }
+  }
+  &:nth-child(4n+2) { 
+    background-color: $medium-gray;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+       background: darken( $medium-gray, 10% );
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5 ,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  }
+  
+  &:nth-child(4n+3) { 
+    background-color: $orange;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( #27556f, 10% ); 
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  } 
+  &:nth-child(4n+4)  { 
+    background-color: black;
+    &.news-item-link {
+      &:focus,
+      &:hover { 
+        background: lighten( black, 20% );
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5, 
+        img {
+          opacity: .9;
+        }
+      }
+    }  
+  }
+}
+
+#newslisting .grid .news-item{
+  //assign rotating colors (no orange)
+  &:nth-child(3n+1)  { 
+    background-color: $blue-sky;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( $blue-sky, 10% ); 
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5 ,
+        img {
+          opacity: .9;
+        }
+      }
+    }
+  }
+  &:nth-child(3n+2) { 
+    background-color: $medium-gray;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+       background: darken( $medium-gray, 10% );
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5 ,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  }
+  &:nth-child(3n+3)  { 
+    background-color: black;
+    &.news-item-link {
+      &:focus,
+      &:hover { 
+        background: lighten( black, 20% );
+        .image-container-size1,
+        .image-container-size2,
+        .image-container-size3,
+        .image-container-size4,
+        .image-container-size5, 
+        img {
+          opacity: .9;
+        }
+      }
+    }  
+  }
+}
+
 
 .grid {
-  //assign rotating colors
   .news-item {
     transition-property:background-color, opacity;
     transition-duration:0.5s;
     img {
       opacity: 1;
     } 
-    &:nth-child(4n+1)  { 
-      background-color: $blue-sky;
-      &.news-item-link {
-        &:focus,
-        &:hover {
-          background: darken( $blue-sky, 10% ); 
-          .image-container-size1,
-          .image-container-size2,
-          .image-container-size3,
-          .image-container-size4,
-          .image-container-size5 ,
-          img {
-            opacity: .9;
-          }
-        }
-      }
-    }
-    &:nth-child(4n+2) { 
-      background-color: $medium-gray;
-      &.news-item-link {
-        &:focus,
-        &:hover {
-         background: darken( $medium-gray, 10% );
-          .image-container-size1,
-          .image-container-size2,
-          .image-container-size3,
-          .image-container-size4,
-          .image-container-size5 ,
-          img {
-            opacity: .9;
-          }
-        }
-      } 
-    }
-    
-    &:nth-child(4n+3) { 
-      background-color: $orange;
-      &.news-item-link {
-        &:focus,
-        &:hover {
-          background: darken( $orange, 10% ); 
-          .image-container-size1,
-          .image-container-size2,
-          .image-container-size3,
-          .image-container-size4,
-          .image-container-size5,
-          img {
-            opacity: .9;
-          }
-        }
-      } 
-    } 
-    &:nth-child(4n+4)  { 
-      background-color: black;
-      &.news-item-link {
-        &:focus,
-        &:hover { 
-          background: lighten( black, 20% );
-          .image-container-size1,
-          .image-container-size2,
-          .image-container-size3,
-          .image-container-size4,
-          .image-container-size5, 
-          img {
-            opacity: .9;
-          }
-        }
-      }  
-    }
-    
     //color overrides
     &.background-blue { 
       background-color: $blue-sky;
@@ -761,9 +814,11 @@ body#home {
   //---VERTICAL ALIGN TEXT---
 
   .item-text{
-    display: grid;
-    align-content: center;
+    //display: grid;
+    //align-content: center;
   }
+
+
 
 
   //no image, 1 tall
@@ -1150,8 +1205,29 @@ body#home {
 
 }//close grid
 
- body#newslisting{
+body#home .grid {
+  .news-item-image-none {
+    .item-text {
+      display: grid;
+      align-content: center;
+    }
+  }
+}
+
+
+body#home, 
+body#newslisting {
+  .grid  {
+    .item-text {
+      padding-top: 1em;
+    }
+  }
+}
+body#newslisting{
   .grid {
+    //grid-gap: 2% 2%;
+    row-gap: 20px;
+    column-gap: 20px;
     .news-item-image-only{
       //overflow: hidden;
       a {
@@ -1173,7 +1249,6 @@ body#home {
     }
   }
   .item-text {
-    padding-top: 1em;
     padding-bottom: 1em;
   }
   .news-item-image-none {
