@@ -621,46 +621,48 @@
 }
 
 
-.grid {
-  .news-item {
-    transition-property:background-color, opacity;
-    transition-duration:0.5s;
-    img {
-      opacity: 1;
-    } 
-    //color overrides
-    &.background-blue { 
-      background-color: $blue-sky;
-      &.news-item-link:hover {
-       background: darken( $blue-sky, 10% ); 
+#news-grid, 
+#news-listing {
+  .grid {
+    .news-item {
+      transition-property:background-color, opacity;
+      transition-duration:0.5s;
+      img {
+        opacity: 1;
       } 
-    }
-    &.background-gray { 
-      background-color: $medium-gray;
-      &.news-item-link:hover {
-       background: darken( $medium-gray, 10% ); 
-      } 
-    }
-    &.background-orange { 
-      background-color: $orange;
-      &.news-item-link:hover {
-       background: darken( $orange, 10% ); 
-      } 
-    }
-    &.background-black { 
-      background-color: black;
-      &.news-item-link:hover {
-       background: darken( black, 10% ); 
-      } 
-    }
-    &.background-red { 
-      background-color: $red;
-      &.news-item-link:hover {
-       background: darken( $red, 10% ); 
-      } 
-    }
+      //color overrides
+      &.background-blue { 
+        background-color: $blue-sky;
+        &.news-item-link:hover {
+         background: darken( $blue-sky, 10% ); 
+        } 
+      }
+      &.background-gray { 
+        background-color: $medium-gray;
+        &.news-item-link:hover {
+         background: darken( $medium-gray, 10% ); 
+        } 
+      }
+      &.background-orange { 
+        background-color: $orange;
+        &.news-item-link:hover {
+         background: darken( $orange, 10% ); 
+        } 
+      }
+      &.background-black { 
+        background-color: black;
+        &.news-item-link:hover {
+         background: darken( black, 10% ); 
+        } 
+      }
+      &.background-red { 
+        background-color: $red;
+        &.news-item-link:hover {
+         background: darken( $red, 10% ); 
+        } 
+      }
+    }    
   }
-  
 }
 
 
