@@ -43,7 +43,7 @@
           </a>        
         </div>  
          <!-- event -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="5">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-blue" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Berkshire Pulse Performance</h2>
