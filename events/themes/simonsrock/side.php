@@ -22,7 +22,7 @@
   
 	<span style="clear:both;">
 	<h4 class="spotlight">Subscribe to Events</h4>
-	<?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a href="http://eepurl.com/bW8t6n">Email</a> | '; };?> <a href="/events/rss/">RSS</a> | <a href="/events/link/ical.php">iCal</a></p>
+	<?php global $hc_cfg; if($hc_cfg[54] == 1){ echo '<a href="https://signup.e2ma.net/signup/1864845/1809122/ ">Email</a> | '; };?> <a href="/events/rss/">RSS</a> | <a href="/events/link/ical.php">iCal</a></p>
 	<h4 class="spotlight">Browse by Category</h4>
 	<a href="/events/index.php?com=searchresult&r=0&t=36">Special Events</a><br>
 	<a href="/events/index.php?com=searchresult&r=0&t=24">Admissions - On Campus Events</a><br>
