@@ -442,7 +442,7 @@
 		catch(error){
 			err +=reqField(document.getElementById("eventDescription"),"'.$hc_lang_submit['Valid02'].'\n");}
 		
-		if(document.getElementById("rsvp_type").value == 1){
+		if(document.getElementById("rsvp_type") && document.getElementById("rsvp_type").value == 1){
 			err +=reqField(document.getElementById("rsvp_space"),"'.$hc_lang_submit['Valid04'].'\n");
 			err +=validNumber(document.getElementById("rsvp_space"),"'.$hc_lang_submit['Valid04'].'\n");
 			err +=validGreater(document.getElementById("rsvp_space"),-1,"'.$hc_lang_submit['Valid03'].'\n");
@@ -482,7 +482,7 @@
 			
 		if(document.getElementById("locPreset").value == 0)
 			err +=reqField(document.getElementById("locName"),"'.$hc_lang_submit['Valid19'].'\n");
-		if(document.getElementById("contactEmail").value != "")
+		if(document.getElementById("contactEmail") && document.getElementById("contactEmail").value != "")
 			err +=validEmail(document.getElementById("contactEmail"),"'.$hc_lang_submit['Valid21'].'\n");
 		if(err != ""){
 			alert(err);
