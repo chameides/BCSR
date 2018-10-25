@@ -29,8 +29,7 @@ legend {
   border-bottom: 1px solid $legend-border-color;
 }
 
-label, 
-.wufoo label.desc {
+label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: $padding-small-vertical2;
