@@ -1,4 +1,3 @@
-
         <!-- headline and text -->
         <div class="news-item
                     news-item-link news-item-image-none" tabindex="1">

@@ -3,7 +3,7 @@
     <div class="grid-wrapper row">
       <div class="grid grid-5">
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="1">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -12,7 +12,7 @@
           </a>        
         </div> 
          <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="2">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -21,7 +21,7 @@
           </a>        
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="3">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -50,7 +50,7 @@
           </a>        
         </div> 
         <!--batch 2-->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="1">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -60,7 +60,7 @@
           </a>        
         </div> 
        <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none  news-item-size-lg-r2" tabindex="2">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -70,7 +70,7 @@
           </a>        
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="3">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -103,7 +103,7 @@
 
 
         <!--batch 3-->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="1">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -112,7 +112,7 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="2">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -121,7 +121,7 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none news-item-size-lg-r2" tabindex="3">
+        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
