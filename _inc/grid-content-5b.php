@@ -1,12 +1,12 @@
       <!-- 1x1 full image -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-only" tabindex="1">
+        <div class="news-item news-item-link news-item-image news-item-image-only" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-3">
             </div> 
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="2">
+        <div class="news-item news-item-link news-item-image" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <img src="/_images/grid/breadpuppet.jpg">
             <div class="item-text">
@@ -18,7 +18,7 @@
         </div>
 
         <!-- image with heading -->
-        <div class="news-item news-item-link" tabindex="3">
+        <div class="news-item news-item-link news-item-image" tabindex="3">
           <a href="https://simons-rock.edu/news">
            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
             <div class="item-text">
@@ -30,7 +30,7 @@
 
 
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="4">
+        <div class="news-item news-item-link news-item-image-none" tabindex="4">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -39,7 +39,7 @@
           </a>        
         </div>  
          <!-- event -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-blue" tabindex="5">
+        <div class="news-item news-item-link news-item-image-none background-blue" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Berkshire Pulse Performance</h2>
