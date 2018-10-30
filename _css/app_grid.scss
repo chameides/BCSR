@@ -42,7 +42,7 @@
     
     
    //assign grid layout
-    grid-template-columns: repeat(90, 190px);
+    grid-template-columns: repeat(90, 175px); //set width so next column peaks out from offscreen
     grid-template-rows: repeat(2, $section-height-xs/2);
 
     //option for 3 x 3 full width
