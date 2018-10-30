@@ -42,7 +42,7 @@
         </div>
         
 
-        <div class="news-item news-item-batch1 news-item-link" tabindex="5">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -53,7 +53,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="6">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="6">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -63,7 +63,7 @@
           </a>
         </div>
         <!-- image with caption -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="7">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="7">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -73,7 +73,7 @@
           </a>
         </div>
         <!-- 2 x 2 image and headline -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="8">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="8">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -83,14 +83,14 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="9">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
         <!-- image with longer small text -->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="10">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="10">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -100,7 +100,7 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="11">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -126,7 +126,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="14">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="14">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -137,14 +137,14 @@
         </div>
         
         <!--2x2 full image -->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="15">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="15">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
         <!--1x2 full image -->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="16">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -171,7 +171,7 @@
 
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="19">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="19">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -182,7 +182,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="20">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="20">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -192,7 +192,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="21">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="21">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -202,7 +202,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch1  news-item-link" tabindex="22">
+        <div class="news-item news-item-batch1  news-item-link news-item-image" tabindex="22">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -213,7 +213,7 @@
         </div>
 
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="23">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="23">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -223,7 +223,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="24">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="24">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -233,7 +233,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="25">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="25">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -243,7 +243,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="26">
+        <div class="news-item news-item-batch1 news-item-link news-item-image" tabindex="26">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -296,7 +296,7 @@
           </a>
         </div>
         
-        <div class="news-item news-item-batch2 news-item-link" tabindex="5">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -307,7 +307,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="6">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="6">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -317,7 +317,7 @@
           </a>
         </div>
         <!-- image with caption -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="7">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="7">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -327,7 +327,7 @@
           </a>
         </div>
         <!-- 2 x 2 image and headline -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="8">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="8">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -337,14 +337,14 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="9">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
         <!-- image with longer small text -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="10">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="10">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -354,7 +354,7 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="11">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -379,7 +379,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="14">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="14">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -390,14 +390,14 @@
         </div>
         
         <!--2x2 full image -->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="15">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="15">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
         <!--1x2 full image -->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="16">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -424,7 +424,7 @@
 
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="19">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="19">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -435,7 +435,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="20">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="20">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -445,7 +445,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="21">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="21">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -455,7 +455,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch2  news-item-link" tabindex="22">
+        <div class="news-item news-item-batch2  news-item-link news-item-image" tabindex="22">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -465,8 +465,8 @@
           </a>
         </div>
 
-        <!-- image with heading -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="23">
+        <!-- image with heading --> 
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="23">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -476,7 +476,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="24">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="24">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -486,7 +486,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="25">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="25">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -496,7 +496,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch2 news-item-link" tabindex="26">
+        <div class="news-item news-item-batch2 news-item-link news-item-image" tabindex="26">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -549,7 +549,7 @@
             </div>
           </a>
         </div>
-        <div class="news-item news-item-batch3 news-item-link" tabindex="5">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -560,7 +560,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="6">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="6">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -570,7 +570,7 @@
           </a>
         </div>
         <!-- image with caption -->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="7">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="7">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -580,7 +580,7 @@
           </a>
         </div>
         <!-- 2 x 2 image and headline -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="8">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="8">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -590,14 +590,14 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="9">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
         <!-- image with longer small text -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="10">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="10">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -607,7 +607,7 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="11">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -632,7 +632,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="14">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="14">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -643,7 +643,7 @@
         </div>
         
         <!--2x2 full image -->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="15">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="15">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -651,7 +651,7 @@
         </div>
         
         <!--1x2 full image -->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="16">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -679,7 +679,7 @@
 
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="19">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="19">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -690,7 +690,7 @@
         </div>
 
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="20">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="20">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -700,7 +700,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="21">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="21">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -710,7 +710,7 @@
           </a>
         </div>
         <!-- image 2 tall-->
-        <div class="news-item news-item-batch3  news-item-link" tabindex="22">
+        <div class="news-item news-item-batch3  news-item-link news-item-image" tabindex="22">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div>
@@ -721,7 +721,7 @@
         </div>
 
         <!-- image with heading -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="23">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="23">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -731,7 +731,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="24">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="24">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -741,7 +741,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="25">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="25">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -751,7 +751,7 @@
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-batch3 news-item-link" tabindex="26">
+        <div class="news-item news-item-batch3 news-item-link news-item-image" tabindex="26">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -765,19 +765,19 @@
 
 
          <!-- 1x1 full image -->
-        <div class="news-item news-item-batch1  news-item-link news-item-cta-placeholder1" tabindex="9">
+        <div class="news-item news-item-batch1  news-item-link news-item-cta-placeholder1 news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
-        <div class="news-item news-item-batch2  news-item-link news-item-cta-placeholder2" tabindex="9">
+        <div class="news-item news-item-batch2  news-item-link news-item-cta-placeholder2 news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
           </a>
         </div>
-        <div class="news-item news-item-batch3  news-item-link news-item-cta-placeholder3" tabindex="9">
+        <div class="news-item news-item-batch3  news-item-link news-item-cta-placeholder3 news-item-image" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
