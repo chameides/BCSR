@@ -16,7 +16,9 @@
 }
 
 //Set up grid
-@supports (display: grid) {
+//@supports (display: grid) {
+
+
   //set height for horizontal scroll
   .grid-wrapper .grid {
     height: $section-height-xs;
@@ -476,10 +478,10 @@
       
       }
     }
-  }
+  //}
 
 
-/* flexbox fallback is the browser does not support display:grid */
+/* flexbox fallback is the browser does not support display:grid 
 @supports not (display: grid) {
   .grid {
     display: flex;
@@ -506,6 +508,9 @@
   }
   
 }
+*/
+
+
 
 #news-grid .grid .news-item-image {
   &.news-item-link-none,             //add option for news-item-link-none
