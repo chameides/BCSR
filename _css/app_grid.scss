@@ -30,6 +30,7 @@
   }
 
   .grid {
+    display: -ms-grid;
     display: grid;
     grid-gap: 1px;   
     
@@ -42,43 +43,55 @@
     
     
    //assign grid layout
+    $errorhack-grid-46: "(175px)[90]";
+    -ms-grid-columns: #{$errorhack-grid-46}; //set width so next column peaks out from offscreen
     grid-template-columns: repeat(90, 175px); //set width so next column peaks out from offscreen
+    $errorhack-grid-50: "($section-height-xs/2)[2]";
+    -ms-grid-rows: #{$errorhack-grid-50};
     grid-template-rows: repeat(2, $section-height-xs/2);
 
-    //option for 3 x 3 full width
-    @media (min-width: 190px * 3) and (max-width: $screen-xs-max) {
-      &.grid-5 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
     @media (min-width: $screen-sm-min) {
+      $errorhack-grid-54: "($section-height-news/2)[90]";
+      -ms-grid-columns: #{$errorhack-grid-54};
+      
       grid-template-columns: repeat(90, $section-height-news/2);
+      
+      $errorhack-grid-59: "($section-height-news/2)[2]";
+      -ms-grid-rows: #{$errorhack-grid-59};
       grid-template-rows: repeat(2, $section-height-news/2);
     }
     @media (min-width: $screen-xl-min) {
+      $errorhack-grid-64: "($section-height-sm/2)[90]";
+      -ms-grid-columns: #{$errorhack-grid-64};
       grid-template-columns: repeat(90, $section-height-sm/2);
+      $errorhack-grid-67: "($section-height-sm/2)[2]";
+      -ms-grid-rows: #{$errorhack-grid-67};
       grid-template-rows: repeat(2, $section-height-sm/2);
     }
 
     //set dimensions for vertical scroll
     &.grid-all-news {
+      $errorhack-grid-74: "0px (1fr)[2] 0px";
+      -ms-grid-columns: #{$errorhack-grid-74};
       grid-template-columns: 0px repeat(2, 1fr) 0px;
+      $errorhack-grid-77: "auto (minmax(80px, auto))[24]";
+      -ms-grid-rows: #{$errorhack-grid-77};
       grid-template-rows: auto repeat(24, minmax(80px, auto));
-      //grid-template-rows: auto;
       @media (min-width: $screen-sm-min) {
+        $errorhack-grid-81: "0px (1fr)[3] 0px";  
+        -ms-grid-columns: #{$errorhack-grid-81};
         grid-template-columns: 0px repeat(3, 1fr) 0px;
+        $errorhack-grid-85: "auto (minmax(80px, auto))[14]"; 
+        -ms-grid-rows: #{$errorhack-grid-85};
         grid-template-rows: auto repeat(14, minmax(80px, auto));
-        //grid-template-rows: repeat(25, $section-height-news/2);
       }
       @media (min-width: $screen-md-min) {
+        $errorhack-grid-89: "0px (1fr)[4] 0px"; 
+        -ms-grid-columns: #{$errorhack-grid-89};
         grid-template-columns: 0px repeat(4, 1fr) 0px;
+        $errorhack-grid-92: "auto (minmax(80px, auto))[10]";
+        -ms-grid-rows: #{$errorhack-grid-92};
         grid-template-rows: auto repeat(10, minmax(80px, auto));
-        //grid-template-rows: repeat(25, $section-height-news/2);
-      }
-
-      @media (min-width: $screen-xl-min) {
-        //grid-template-rows: repeat(25, $section-height-sm/2);
       }
     }
 
@@ -334,19 +347,21 @@
 
     //grid layout for vertical scroll
     &.grid-all-news-5 {
-      
-    grid-template-columns: 0px repeat(2, 1fr) 0px;
-    grid-template-rows: auto;
-    @media (min-width: $screen-sm-min) {
-      grid-template-columns: 0px repeat(3, 1fr) 0px;  
-    }
-    @media (min-width: $screen-md-min) {
-      grid-template-columns: 0px repeat(4, 1fr) 0px;
-      
-    }
-
-      @media (min-width: $screen-xl-min) {
+      $errorhack-grid-354: "0px (1fr)[2] 0px";
+      -ms-grid-columns: #{$errorhack-grid-354}; 
+      grid-template-columns: 0px repeat(2, 1fr) 0px;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      @media (min-width: $screen-sm-min) {
         
+        $errorhack-grid-358: "0px (1fr)[3] 0px";
+        ms-grid-columns: #{$errorhack-grid-358};  
+        grid-template-columns: 0px repeat(3, 1fr) 0px;  
+      }
+      @media (min-width: $screen-md-min) {
+        $errorhack-grid-363: "0px (1fr)[4] 0px";
+        ms-grid-columns: #{$errorhack-grid-363}; 
+        grid-template-columns: 0px repeat(4, 1fr) 0px;
       }
 
 
@@ -416,20 +431,20 @@
       }
 
       &.grid-all-news-5b {
-
+        $errorhack-grid-434: "0px (1fr)[2] 0px";
+        -ms-grid-columns: #{$errorhack-grid-434}; 
         grid-template-columns: 0px repeat(2, 1fr) 0px;
+        -ms-grid-rows: auto;
         grid-template-rows: auto;
         @media (min-width: $screen-sm-min) {
+          $errorhack-grid-440: "0px (1fr)[3] 0px";
+          ms-grid-columns: #{$errorhack-grid-440};
           grid-template-columns: 0px repeat(3, 1fr) 0px;
-          
         }
         @media (min-width: $screen-md-min) {
-          grid-template-columns: 0px repeat(4, 1fr) 0px;
-          
-        }
-
-        @media (min-width: $screen-xl-min) {
-          
+          $errorhack-grid-445: "0px (1fr)[4] 0px;";
+          ms-grid-columns: #{$errorhack-grid-445};
+          grid-template-columns: 0px repeat(4, 1fr) 0px; 
         }
 
         grid-template-areas:
@@ -740,6 +755,7 @@ body#newslisting {
   .news-item-image-none {
     .item-text {
       height: 100%;
+      display: -ms-grid;
       display: grid;
       align-content: center;
     }
@@ -756,6 +772,7 @@ body#newslisting {
 body#home .grid {
   .news-item-image-none {
     .item-text {
+      display: -ms-grid;
       display: grid;
       align-content: center;
     }
@@ -797,5 +814,3 @@ body#newslisting{
     padding-bottom: 1em;
   }
 }
-
-
