@@ -17000,6 +17000,9 @@ body#home .grid .news-item, #home.wufoo .grid .news-item {
   height: 400px;
   height: 50vh; }
 
+#news-listing .grid .news-item img {
+  height: 100%; }
+
 #news-grid .rockers_btn {
   display: none; }
 
