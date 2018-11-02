@@ -15,6 +15,35 @@
   overflow-y:hidden;
 }
 
+
+/* flexbox fallback is the browser does not support display:grid */
+//@supports not (display: grid) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: none;
+    }
+  }
+  
+  .grid .news-item { 
+    flex: 0 1 33.3%; 
+    height: 400px;
+    height: 50vh; 
+  }
+
+  #news-grid .rockers_btn {
+    display: none;
+  }
+  
+// } end flexbox alternative
+
+
+
+
+
 //Set up grid
 @supports (display: grid) {
   //set height for horizontal scroll
@@ -31,7 +60,14 @@
 
   .grid {
     display: grid;
-    grid-gap: 1px;   
+    grid-gap: 1px;
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: block; //override flexbox fallback
+    }
+    .news-item { 
+      height: auto; 
+    }
     
     //typography  
     h2,
@@ -461,37 +497,13 @@
       
       }
     }
-  }
-
-
-/* flexbox fallback is the browser does not support display:grid */
-@supports not (display: grid) {
-  .grid {
-    display: flex;
-    flex-flow: row wrap;
-    min-height: 100vh;
-    padding: 0;
-    .news-item-batch2,
-    .news-item-batch3 {
-      display: none;
+    @media (min-width: $screen-sm-min) {
+      #news-grid .rockers_btn {
+        display: block; //override flexbox fallback
+      }
     }
-  }
 
-  .grid .news-item {
-    min-height: 20vh;
-    margin: 0vw;
-    background-color: black!important
-  }
-  
-  .grid .news-item { 
-    flex: 0 1 33.3%; height: 50vh; 
-  }
-
-  #news-grid .rockers_btn {
-    display: none;
-  }
-  
-}
+  }//end @support grid
 
 #news-grid .grid .news-item-image {
   &.news-item-link-none,             //add option for news-item-link-none

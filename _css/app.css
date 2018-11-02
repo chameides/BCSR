@@ -16985,6 +16985,23 @@ body.no-mobile-nav nav#mainnav .section-nav.initial, .no-mobile-nav.wufoo nav#ma
     .grid-wrapper {
       overflow-x: hidden; } }
 
+/* flexbox fallback is the browser does not support display:grid */
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0; }
+  .grid .news-item-batch2,
+  .grid .news-item-batch3 {
+    display: none; }
+
+.grid .news-item {
+  flex: 0 1 33.3%;
+  height: 400px;
+  height: 50vh; }
+
+#news-grid .rockers_btn {
+  display: none; }
+
 @supports (display: grid) {
   .grid-wrapper .grid {
     height: 480px; }
@@ -17000,6 +17017,11 @@ body.no-mobile-nav nav#mainnav .section-nav.initial, .no-mobile-nav.wufoo nav#ma
     grid-gap: 1px;
     grid-template-columns: repeat(90, 175px);
     grid-template-rows: repeat(2, 240px); }
+    .grid .news-item-batch2,
+    .grid .news-item-batch3 {
+      display: block; }
+    .grid .news-item {
+      height: auto; }
     .grid h2, .grid .wufoo .section h3, .wufoo .section .grid h3, .grid .wufoo .section #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d legend, .wufoo .section #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .grid legend, .grid #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .wufoo .section legend, #form_e4ee01cb-3a71-45a0-9ff8-0ae8473f605d .wufoo .section .grid legend, .grid .wufoo .section
     #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 legend, .wufoo .section
     #form_253fae55-b353-436e-b14f-cbcc74f8e1f8 .grid legend, .grid
@@ -17574,27 +17596,10 @@ body.no-mobile-nav nav#mainnav .section-nav.initial, .no-mobile-nav.wufoo nav#ma
       .grid.grid-all-news-5b .news-item:nth-child(5) {
         grid-area: item4; }
       .grid.grid-all-news-5b .news-item:nth-child(6) {
-        grid-area: item5; } }
-
-/* flexbox fallback is the browser does not support display:grid */
-@supports not (display: grid) {
-  .grid {
-    display: flex;
-    flex-flow: row wrap;
-    min-height: 100vh;
-    padding: 0; }
-    .grid .news-item-batch2,
-    .grid .news-item-batch3 {
-      display: none; }
-  .grid .news-item {
-    min-height: 20vh;
-    margin: 0vw;
-    background-color: black !important; }
-  .grid .news-item {
-    flex: 0 1 33.3%;
-    height: 50vh; }
-  #news-grid .rockers_btn {
-    display: none; } }
+        grid-area: item5; }
+  @media (min-width: 768px) {
+    #news-grid .rockers_btn {
+      display: block; } } }
 
 #news-grid .grid .news-item-image.news-item-link-none,
 #news-grid .grid .news-item-image.news-item-link a {
