@@ -16,8 +16,7 @@
 }
 
 
-/* flexbox fallback is the browser does not support display:grid */
-//@supports not (display: grid) {
+/* flexbox fallback if the browser does not support display:grid */
   .grid {
     display: flex;
     flex-flow: row wrap;
@@ -26,10 +25,12 @@
     .news-item-batch3 {
       display: none;
     }
+    .news-item { 
+      flex: 0 1 33.3%; 
+    }
   }
-  
-  .grid .news-item { 
-    flex: 0 1 33.3%; 
+
+  body#home .grid .news-item {
     height: 400px;
     height: 50vh; 
   }
@@ -38,11 +39,7 @@
     display: none;
   }
   
-// } end flexbox alternative
-
-
-
-
+// } end flexbox fallback
 
 //Set up grid
 @supports (display: grid) {
@@ -58,15 +55,16 @@
     }
   }
 
+  body#home .grid .news-item {
+    height: auto; //flexbox fallback override
+  }
+
   .grid {
     display: grid;
     grid-gap: 1px;
     .news-item-batch2,
     .news-item-batch3 {
       display: block; //override flexbox fallback
-    }
-    .news-item { 
-      height: auto; 
     }
     
     //typography  
