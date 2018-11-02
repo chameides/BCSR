@@ -17001,7 +17001,7 @@ body#home .grid .news-item, #home.wufoo .grid .news-item {
   height: 50vh; }
 
 #newslisting .grid .news-item img {
-  height: 100%; }
+  flex: 0 0 auto; }
 
 #news-grid .rockers_btn {
   display: none; }

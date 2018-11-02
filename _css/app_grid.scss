@@ -35,8 +35,13 @@
     height: 50vh; 
   }
 
-  #newslisting .grid .news-item img {
-    height: 100%;
+  #newslisting .grid .news-item {
+    .item-text {
+      //height: 100%;
+    }
+    img {
+      flex: 0 0 auto;
+    }
   }
 
   #news-grid .rockers_btn {
