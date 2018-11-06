@@ -12,7 +12,7 @@
             <div class="item-text">
               <h2>Bread and Puppet</h2>
               <p>Thursday, September 13 5:30 PM</p>
-              <p class="item-extra">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
+              <p>Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
             </div>
           </a>
         </div>
@@ -23,7 +23,7 @@
            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
-              <p class="item-extra">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
@@ -45,7 +45,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p>Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>

@@ -17,7 +17,7 @@
             <div class="item-text">
               <h2>Bread and Puppet</h2>
               <p>Thursday, September 13 5:30 PM</p>
-              <p class="item-extra">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
+              <p class="hidden-xs hidden-sm">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
             </div>
           </a>
         </div>
@@ -31,7 +31,7 @@
             </div> 
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
-              <p class="item-extra">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+              <p class="hidden-xs hidden-sm">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
@@ -53,7 +53,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>
@@ -74,7 +74,7 @@
             <div class="item-text">
               <h2>Bread and Puppet</h2>
               <p>Thursday, September 13 5:30 PM</p>
-              <p class="item-extra">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
+              <p class="hidden-xs hidden-sm">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
          
             </div>
           </a>
@@ -87,7 +87,7 @@
             </div> 
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
-              <p class="item-extra">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+              <p class="hidden-xs hidden-sm">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
@@ -109,7 +109,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>
@@ -132,7 +132,7 @@
             <div class="item-text">
               <h2>Bread and Puppet</h2>
               <p>Thursday, September 13 5:30 PM</p>
-              <p class="item-extra">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
+              <p class="hidden-xs hidden-sm">Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
          
             </div>
           </a>
@@ -145,7 +145,7 @@
             </div> 
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
-              <p class="item-extra">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+              <p class="hidden-xs hidden-sm">Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
           </a>
         </div>
@@ -167,7 +167,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>

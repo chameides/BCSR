@@ -36,7 +36,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>
@@ -55,7 +55,7 @@
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
               <p>Professor Jennifer Browdy’s guide to writing memoir wins Nautilus Award</p>
-              <p class="item-extra">Extra text displays on larger screens....</p>
+              <p class="hidden-xs hidden-sm">Extra text displays on larger screens....</p>
             </div>
           </a>        
         </div> 
@@ -65,7 +65,7 @@
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
               <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
-              <p class="item-extra">Extra text displays on larger screens....</p>
+              <p class="hidden-xs hidden-sm">Extra text displays on larger screens....</p>
             </div>
           </a>        
         </div>
@@ -75,7 +75,7 @@
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
               <p>Elibba Dean ’13 will be teaching in secondary schools while researching and taking university courses. </p>
-              <p class="item-extra">Extra text displays on larger screens....</p>
+              <p class="hidden-xs hidden-sm">Extra text displays on larger screens....</p>
             </div>
           </a>        
         </div>
@@ -86,7 +86,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>
@@ -96,7 +96,7 @@
             <div class="item-text">
               <h2>Item 5</h2>
               <p>Subheadline</p>
-              <p class="item-extra">Extra text displays on larger screens....</p>
+              <p class="hidden-xs hidden-sm">Extra text displays on larger screens....</p>
             </div>
           </a>        
         </div>  
@@ -136,7 +136,7 @@
               <h2>Berkshire Pulse Performance</h2>
               <p>May 26 - 27 3:00 PM<br>
                 Daniel Arts Center</p>
-              <p class="item-extra">Celebrate our local artistic community with dancers and musicians.</p>
+              <p class="hidden-xs hidden-sm">Celebrate our local artistic community with dancers and musicians.</p>
             </div>
           </a>
         </div>

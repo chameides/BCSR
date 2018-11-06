@@ -763,11 +763,6 @@ body#newslisting {
         font-size: 1.3em;
       }
       margin: .5em .8em 0 .8em;
-      @media (max-width: $screen-md-max) {
-        &.item-extra {
-          display: none;
-        }
-      }
     }
   }
 }
@@ -794,9 +789,6 @@ body#newslisting{
   .grid {
     row-gap: 20px;
     column-gap: 20px;
-    p.item-extra {
-      display: block;
-    }
   }
   .item-text {
     padding-bottom: 1em;
