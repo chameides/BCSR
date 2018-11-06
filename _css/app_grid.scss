@@ -52,7 +52,7 @@
 
   //2a. Grid layout
 
-  //position grid inside side scroller
+  //homepage: position grid inside side scroller
   .grid-wrapper {
     overflow-x:scroll;
     @media(min-width: $screen-sm-min) {
@@ -66,13 +66,8 @@
         display: none;
       }
     } 
-    
-    
-    .grid {
-      //grid
-      display: grid;
-      grid-gap: 1px;
 
+    .grid {
       //set height for horizontal scroll
       height: $section-height-xs;
       @media (min-width: $screen-sm-min) {
@@ -82,6 +77,17 @@
       @media (min-width: $screen-xl-min) {
         height: $section-height-sm;
       }
+    }
+
+
+  } //end grid-wrapper
+    
+    .grid {
+      //grid
+      display: grid;
+      grid-gap: 1px;
+
+      
 
       //typography  
       h2,
@@ -506,7 +512,7 @@
         .news-item:nth-child(6)  { grid-area: item5; }  
       } //end grid-all-news-5b
     } //grid
-  } //end grid-wrapper
+  
   
   @media (min-width: $screen-sm-min) {
     #news-grid .rockers_btn {
