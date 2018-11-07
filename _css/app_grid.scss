@@ -60,12 +60,6 @@
     }
     overflow-y:hidden;
     background-color:$dark-gray;
-    @media(max-width: $screen-xs-max) {
-      .news-item-batch2,
-      .news-item-batch3 {
-        display: none;
-      }
-    } 
 
     .grid {
       //set height for horizontal scroll
@@ -86,26 +80,20 @@
       //grid
       display: grid;
       grid-gap: 1px;
-
-      
-
-      //typography  
-      h2,
-      h3, 
-      h4 {
-        //display: block;
-      }
       
       //override flexbox fallback
-      .news-item-batch2,
-      .news-item-batch3 {
-        display: block; 
+      
+      @media(min-width: $screen-sm) {
+        .news-item-batch2,
+        .news-item-batch3 {
+          display: block; 
+        }
       }
     
       //3a Homepage Grid
     
       //assign grid layout
-      grid-template-columns: repeat(90, 175px); //set width so next column peaks out from offscreen
+      grid-template-columns: repeat(24, 175px); //set width so next column peaks out from offscreen
       grid-template-rows: repeat(2, $section-height-xs/2);
 
       //option for 3 x 3 full width
