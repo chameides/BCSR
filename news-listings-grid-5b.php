@@ -10,6 +10,38 @@
 
 <style>
 
+  @supports (display: grid) {
+    .grid.grid-all-news-5b {
+      grid-template-columns: 0px repeat(2, 1fr) 0px;
+      grid-template-rows: auto;
+      grid-template-areas: "hero hero hero hero" ". item2 item2 ." ". item3 item1 ." ". item4 item5 ."; }
+      @media (min-width: 768px) {
+        .grid.grid-all-news-5b {
+          grid-template-columns: 0px repeat(3, 1fr) 0px; } }
+      @media (min-width: 992px) {
+        .grid.grid-all-news-5b {
+          grid-template-columns: 0px repeat(4, 1fr) 0px; } }
+      @media (min-width: 768px) {
+        .grid.grid-all-news-5b {
+          grid-template-areas: "hero hero hero hero hero" ". item2  item2 item1 ." ". item5  item3 item4 ."; } }
+      @media (min-width: 992px) {
+        .grid.grid-all-news-5b {
+          grid-template-areas: "hero hero   hero  hero  hero hero" ". item2  item5 item1 item3 ." ". item2  item4 item1 item3 ."; } }
+      .grid.grid-all-news-5b .news-hero {
+        grid-area: hero; }
+      .grid.grid-all-news-5b .news-item:nth-child(2) {
+        grid-area: item1; }
+      .grid.grid-all-news-5b .news-item:nth-child(3) {
+        grid-area: item2; }
+      .grid.grid-all-news-5b .news-item:nth-child(4) {
+        grid-area: item3; }
+      .grid.grid-all-news-5b .news-item:nth-child(5) {
+        grid-area: item4; }
+      .grid.grid-all-news-5b .news-item:nth-child(6) {
+        grid-area: item5; }
+    
+  }/*end @support */
+
 </style>
 
   </head>

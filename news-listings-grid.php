@@ -10,6 +10,82 @@
 
 <style>
 
+  @supports (display: grid) {
+    .grid.grid-all-news {
+      grid-template-columns: 0px repeat(2, 1fr) 0px;
+      grid-template-rows: auto repeat(24, minmax(80px, auto)); }
+    @media (min-width: 768px) {
+      .grid.grid-all-news {
+        grid-template-columns: 0px repeat(3, 1fr) 0px;
+        grid-template-rows: auto repeat(14, minmax(80px, auto)); } }
+    @media (min-width: 992px) {
+      .grid.grid-all-news {
+        grid-template-columns: 0px repeat(4, 1fr) 0px;
+        grid-template-rows: auto repeat(10, minmax(80px, auto)); } }
+    .grid.grid-all-news {
+      grid-template-areas: "hero hero hero hero " " . item1 item2 . " " . item3 item4 . " " . item6 item5 . " " . item7 item9 . " " . item8 item8 . " " . item8 item8 . " " . item11 item10 . " " . item13 item12 . " " . item14 item14 . " " . item15 item15 . " " . item15 item15 . " " . item15 item15 . " " . item16 item16 . " " . item17 item17 . " " . item18 item18 . " " . item18 item18 . " " . item19 item19 . " " . item20 item20 . " " . item21 item21 . " " . item22 item22 . " " . item23 item24 . " " . item23 item24 . " " . item25 item26 . " " . item25 item26 . "; }
+    @media (min-width: 768px) {
+      .grid.grid-all-news {
+        grid-template-areas: "hero hero hero  hero  hero" " . item1 item2 item3 . " " . item4 item6 item12 . " " . item9 item7 item12 . " " . item8 item8 item5 . " " . item8 item8 item5 . " " . item11 item10 item13 . "  " . item11 item10 item14 . " " . item15 item15 item14 . " " . item15 item15 item17 . " " . item18 item18 item17 . " " . item18 item18 item19 . " " . item16 item20 item21 . " " . item22 item22 item25 . " " . item23 item24 item26 . "; } }
+    @media (min-width: 992px) {
+      .grid.grid-all-news {
+        grid-template-areas: "hero hero hero   hero   hero   hero" ". item1  item3 item6 item7 . "  ". item2  item5 item5 item4 . "  " . item8 item8 item10 item11  . "  " . item8 item8 item10 item11 . "     " . item13  item9  item14 item16 . " " . item13  item9  item12 item12 . "    " . item15 item15 item17 item19 . "   " . item18 item18 item20 item26  . "   " . item22 item25 item25 item21  . " " . item23 item25 item25 item24  . "; } }
+    .grid.grid-all-news .news-hero {
+      grid-area: hero; }
+    .grid.grid-all-news .news-item:nth-child(2) {
+      grid-area: item1; }
+    .grid.grid-all-news .news-item:nth-child(3) {
+      grid-area: item2; }
+    .grid.grid-all-news .news-item:nth-child(4) {
+      grid-area: item3; }
+    .grid.grid-all-news .news-item:nth-child(5) {
+      grid-area: item4; }
+    .grid.grid-all-news .news-item:nth-child(6) {
+      grid-area: item5; }
+    .grid.grid-all-news .news-item:nth-child(7) {
+      grid-area: item6; }
+    .grid.grid-all-news .news-item:nth-child(8) {
+      grid-area: item7; }
+    .grid.grid-all-news .news-item:nth-child(9) {
+      grid-area: item8; }
+    .grid.grid-all-news .news-item:nth-child(10) {
+      grid-area: item9; }
+    .grid.grid-all-news .news-item:nth-child(11) {
+      grid-area: item10; }
+    .grid.grid-all-news .news-item:nth-child(12) {
+      grid-area: item11; }
+    .grid.grid-all-news .news-item:nth-child(13) {
+      grid-area: item12; }
+    .grid.grid-all-news .news-item:nth-child(14) {
+      grid-area: item13; }
+    .grid.grid-all-news .news-item:nth-child(15) {
+      grid-area: item14; }
+    .grid.grid-all-news .news-item:nth-child(16) {
+      grid-area: item15; }
+    .grid.grid-all-news .news-item:nth-child(17) {
+      grid-area: item16; }
+    .grid.grid-all-news .news-item:nth-child(18) {
+      grid-area: item17; }
+    .grid.grid-all-news .news-item:nth-child(19) {
+      grid-area: item18; }
+    .grid.grid-all-news .news-item:nth-child(20) {
+      grid-area: item19; }
+    .grid.grid-all-news .news-item:nth-child(21) {
+      grid-area: item20; }
+    .grid.grid-all-news .news-item:nth-child(22) {
+      grid-area: item21; }
+    .grid.grid-all-news .news-item:nth-child(23) {
+      grid-area: item22; }
+    .grid.grid-all-news .news-item:nth-child(24) {
+      grid-area: item23; }
+    .grid.grid-all-news .news-item:nth-child(25) {
+      grid-area: item24; }
+    .grid.grid-all-news .news-item:nth-child(26) {
+      grid-area: item25; }
+    .grid.grid-all-news .news-item:nth-child(27) {
+      grid-area: item26; }
+  }/*end @support */
+
 </style>
 
   </head>

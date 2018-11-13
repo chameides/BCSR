@@ -18,6 +18,207 @@
 	background-image:url(/_images/home/sec_place_bg.jpg);
 }
 
+
+
+@supports (display: grid) {
+	
+	/*set number of items for small viewport*/
+	@media (max-width: 767px) {
+    .grid {
+    	grid-template-columns: repeat(24, 175px);
+    }
+  }
+
+  /*set grid layout*/
+  .grid.grid-all {
+		/*small viewport*/
+    grid-template-areas: 
+    	"item1  item3 item6 item7 item8 item8 item9 item11 item11  item13  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item23 item25 itemctaplaceholder1"  
+    	"item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item24 item26 itemcta"; 
+  }
+      
+  /*medium viewport*/
+  @media (min-width: 768px) {
+    .grid.grid-all {
+      grid-template-areas: 
+      	"itemctaplaceholder1 item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item23 item25 item1b  item3b item6b item7b item8b item8b item9b item11b   item11b  item13b  item14b item15b  item15b item16b item17b item18b item18b item19b item20b item21b item22b item23b item25b itemctaplaceholder2 item1c  item3c item6c item7c item8c item8c item9c item11c   item11c  item13c  item14c item15c  item15c item16c item17c item18c item18c item19c item20c item21c item22c item23c item25c itemctaplaceholder3"  
+      	"itemcta2 item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item24 item26 item2b  item4b item5b item5b item8b item8b item10b item10b  item12b  item12b  item14b item15b  item15b item16b item17b item18b item18b item19b item20b item21b item22b item24b item26b itemcta item2c  item4c item5c item5c item8c item8c item10c item10c  item12c  item12c  item14c item15c  item15c item16c item17c item18c item18c item19c item20c item21c item22c item24c item26c itemcta3"; 
+    } 
+  }
+
+  /*grid mapping */
+  .grid.grid-all .news-item:nth-child(1) {
+      grid-area: item1; }
+  .grid.grid-all .news-item:nth-child(2) {
+    grid-area: item2; }
+  .grid.grid-all .news-item:nth-child(3) {
+    grid-area: item3; }
+  .grid.grid-all .news-item:nth-child(4) {
+    grid-area: item4; }
+  .grid.grid-all .news-item:nth-child(5) {
+    grid-area: item5; }
+  .grid.grid-all .news-item:nth-child(6) {
+    grid-area: item6; }
+  .grid.grid-all .news-item:nth-child(7) {
+    grid-area: item7; }
+  .grid.grid-all .news-item:nth-child(8) {
+    grid-area: item8; }
+  .grid.grid-all .news-item:nth-child(9) {
+    grid-area: item9; }
+  .grid.grid-all .news-item:nth-child(10) {
+    grid-area: item10; }
+  .grid.grid-all .news-item:nth-child(11) {
+    grid-area: item11; }
+  .grid.grid-all .news-item:nth-child(12) {
+    grid-area: item12; }
+  .grid.grid-all .news-item:nth-child(13) {
+    grid-area: item13; }
+  .grid.grid-all .news-item:nth-child(14) {
+    grid-area: item14; }
+  .grid.grid-all .news-item:nth-child(15) {
+    grid-area: item15; }
+  .grid.grid-all .news-item:nth-child(16) {
+    grid-area: item16; }
+  .grid.grid-all .news-item:nth-child(17) {
+    grid-area: item17; }
+  .grid.grid-all .news-item:nth-child(18) {
+    grid-area: item18; }
+  .grid.grid-all .news-item:nth-child(19) {
+    grid-area: item19; }
+  .grid.grid-all .news-item:nth-child(20) {
+    grid-area: item20; }
+  .grid.grid-all .news-item:nth-child(21) {
+    grid-area: item21; }
+  .grid.grid-all .news-item:nth-child(22) {
+    grid-area: item22; }
+  .grid.grid-all .news-item:nth-child(23) {
+    grid-area: item23; }
+  .grid.grid-all .news-item:nth-child(24) {
+    grid-area: item24; }
+  .grid.grid-all .news-item:nth-child(25) {
+    grid-area: item25; }
+  .grid.grid-all .news-item:nth-child(26) {
+    grid-area: item26; }
+  .grid.grid-all .news-item:nth-child(27) {
+    grid-area: item1b; }
+  .grid.grid-all .news-item:nth-child(28) {
+    grid-area: item2b; }
+  .grid.grid-all .news-item:nth-child(29) {
+    grid-area: item3b; }
+  .grid.grid-all .news-item:nth-child(30) {
+    grid-area: item4b; }
+  .grid.grid-all .news-item:nth-child(31) {
+    grid-area: item5b; }
+  .grid.grid-all .news-item:nth-child(32) {
+    grid-area: item6b; }
+  .grid.grid-all .news-item:nth-child(33) {
+    grid-area: item7b; }
+  .grid.grid-all .news-item:nth-child(34) {
+    grid-area: item8b; }
+  .grid.grid-all .news-item:nth-child(35) {
+    grid-area: item9b; }
+  .grid.grid-all .news-item:nth-child(36) {
+    grid-area: item10b; }
+  .grid.grid-all .news-item:nth-child(37) {
+    grid-area: item11b; }
+  .grid.grid-all .news-item:nth-child(38) {
+    grid-area: item12b; }
+  .grid.grid-all .news-item:nth-child(39) {
+    grid-area: item13b; }
+  .grid.grid-all .news-item:nth-child(40) {
+    grid-area: item14b; }
+  .grid.grid-all .news-item:nth-child(41) {
+    grid-area: item15b; }
+  .grid.grid-all .news-item:nth-child(42) {
+    grid-area: item16b; }
+  .grid.grid-all .news-item:nth-child(43) {
+    grid-area: item17b; }
+  .grid.grid-all .news-item:nth-child(44) {
+    grid-area: item18b; }
+  .grid.grid-all .news-item:nth-child(45) {
+    grid-area: item19b; }
+  .grid.grid-all .news-item:nth-child(46) {
+    grid-area: item20b; }
+  .grid.grid-all .news-item:nth-child(47) {
+    grid-area: item21b; }
+  .grid.grid-all .news-item:nth-child(48) {
+    grid-area: item22b; }
+  .grid.grid-all .news-item:nth-child(49) {
+    grid-area: item23b; }
+  .grid.grid-all .news-item:nth-child(50) {
+    grid-area: item24b; }
+  .grid.grid-all .news-item:nth-child(51) {
+    grid-area: item25b; }
+  .grid.grid-all .news-item:nth-child(52) {
+    grid-area: item26b; }
+  .grid.grid-all .news-item:nth-child(53) {
+    grid-area: item1c; }
+  .grid.grid-all .news-item:nth-child(54) {
+    grid-area: item2c; }
+  .grid.grid-all .news-item:nth-child(55) {
+    grid-area: item3c; }
+  .grid.grid-all .news-item:nth-child(56) {
+    grid-area: item4c; }
+  .grid.grid-all .news-item:nth-child(57) {
+    grid-area: item5c; }
+  .grid.grid-all .news-item:nth-child(58) {
+    grid-area: item6c; }
+  .grid.grid-all .news-item:nth-child(59) {
+    grid-area: item7c; }
+  .grid.grid-all .news-item:nth-child(60) {
+    grid-area: item8c; }
+  .grid.grid-all .news-item:nth-child(61) {
+    grid-area: item9c; }
+  .grid.grid-all .news-item:nth-child(62) {
+    grid-area: item10c; }
+  .grid.grid-all .news-item:nth-child(63) {
+    grid-area: item11c; }
+  .grid.grid-all .news-item:nth-child(64) {
+    grid-area: item12c; }
+  .grid.grid-all .news-item:nth-child(65) {
+    grid-area: item13c; }
+  .grid.grid-all .news-item:nth-child(66) {
+    grid-area: item14c; }
+  .grid.grid-all .news-item:nth-child(67) {
+    grid-area: item15c; }
+  .grid.grid-all .news-item:nth-child(68) {
+    grid-area: item16c; }
+  .grid.grid-all .news-item:nth-child(69) {
+    grid-area: item17c; }
+  .grid.grid-all .news-item:nth-child(70) {
+    grid-area: item18c; }
+  .grid.grid-all .news-item:nth-child(71) {
+    grid-area: item19c; }
+  .grid.grid-all .news-item:nth-child(72) {
+    grid-area: item20c; }
+  .grid.grid-all .news-item:nth-child(73) {
+    grid-area: item21c; }
+  .grid.grid-all .news-item:nth-child(74) {
+    grid-area: item22c; }
+  .grid.grid-all .news-item:nth-child(75) {
+    grid-area: item23c; }
+  .grid.grid-all .news-item:nth-child(76) {
+    grid-area: item24c; }
+  .grid.grid-all .news-item:nth-child(77) {
+    grid-area: item25c; }
+  .grid.grid-all .news-item:nth-child(78) {
+    grid-area: item26c; }
+  .grid.grid-all .news-item-cta1 {
+    grid-area: itemcta; }
+  .grid.grid-all .news-item-cta2 {
+    grid-area: itemcta2; }
+  .grid.grid-all .news-item-cta3 {
+    grid-area: itemcta3; }
+  .grid.grid-all .news-item-cta-placeholder1 {
+    grid-area: itemctaplaceholder1; }
+  .grid.grid-all .news-item-cta-placeholder2 {
+    grid-area: itemctaplaceholder2; }
+  .grid.grid-all .news-item-cta-placeholder3 {
+    grid-area: itemctaplaceholder3; }
+
+}/*end @support */
+
+
 </style>
 
   </head>

@@ -18,6 +18,75 @@
 	background-image:url(/_images/home/sec_place_bg.jpg);
 }
 
+
+@supports (display: grid) {
+
+	/*If 6 items, set number of items for small viewport*/
+	@media (max-width: 524px) {
+    .grid {
+    	grid-template-columns: repeat(3, 175px);
+    }
+  }
+
+  /*3x2 grid */
+  @media (min-width: 525px) and (max-width: 767px) {
+    .grid-5 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+	
+	.grid.grid-5b {
+    grid-template-areas: "item3  item4 item1 item5" "item2  item2 item1 itemcta"; 
+ 	}
+  @media (min-width: 768px) {
+    .grid.grid-5b {
+      grid-template-areas: "item3  item4 item1 item5     item3b  item4b item1b item5b          item3c  item4c item1c item5c" "item2  item2 item1 itemcta   item2b  item2b item1b itemcta2        item2c  item2c item1c itemcta3"; 
+    } 
+  }
+  @media (min-width: 1200px) {
+    .grid.grid-5b {
+      grid-template-areas: "item2  item2 item1 item3 item3 item5  item5     item2b  item2b item1b item3b item3b item5b item5b   item2c  item2c item1c item3c item3c item5c item5c" "item2  item2 item1 item3 item3 item4  itemcta   item2b  item2b item1b item3b item3b item4b itemcta2 item2c  item2c item1c item3c item3c item4c itemcta3";
+    } 
+  }
+  .grid.grid-5b .news-item:nth-child(1) {
+    grid-area: item1; }
+  .grid.grid-5b .news-item:nth-child(2) {
+    grid-area: item2; }
+  .grid.grid-5b .news-item:nth-child(3) {
+    grid-area: item3; }
+  .grid.grid-5b .news-item:nth-child(4) {
+    grid-area: item4; }
+  .grid.grid-5b .news-item:nth-child(5) {
+    grid-area: item5; }
+  .grid.grid-5b .news-item:nth-child(6) {
+    grid-area: item1b; }
+  .grid.grid-5b .news-item:nth-child(7) {
+    grid-area: item2b; }
+  .grid.grid-5b .news-item:nth-child(8) {
+    grid-area: item3b; }
+  .grid.grid-5b .news-item:nth-child(9) {
+    grid-area: item4b; }
+  .grid.grid-5b .news-item:nth-child(10) {
+    grid-area: item5b; }
+  .grid.grid-5b .news-item:nth-child(11) {
+    grid-area: item1c; }
+  .grid.grid-5b .news-item:nth-child(12) {
+    grid-area: item2c; }
+  .grid.grid-5b .news-item:nth-child(13) {
+    grid-area: item3c; }
+  .grid.grid-5b .news-item:nth-child(14) {
+    grid-area: item4c; }
+  .grid.grid-5b .news-item:nth-child(15) {
+    grid-area: item5c; }
+  .grid.grid-5b .news-item-cta1 {
+    grid-area: itemcta; }
+  .grid.grid-5b .news-item-cta2 {
+    grid-area: itemcta2; }
+  .grid.grid-5b .news-item-cta3 {
+    grid-area: itemcta3; }
+
+}/*end @support */
+
 </style>
 
   </head>
