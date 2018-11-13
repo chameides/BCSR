@@ -6,7 +6,7 @@ a, a:link, a:visited {
 	text-decoration:underline;
 }
 //exceptions to underline links added 5-6-2016
-.side-nav li a, ol.crumb a, footer#globalfooter a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a.btn, a.right-arrow, a.right-arrow-primary, a.right-arrow-aside, .panel-title a, .accordion-container .panel-heading a, #events_carousel_original a, #updates_list_wrapper a, .admission-subnav a, a.link-news-header, body#why #why_subnav .mega-menu ul li a {
+.side-nav li a, ol.crumb a, footer#globalfooter a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a.btn, a.right-arrow, a.right-arrow-primary, a.right-arrow-aside, .panel-title a, .accordion-container .panel-heading a, #events_carousel_original a, .admission-subnav a, a.link-news-header, body#why #why_subnav .mega-menu ul li a {
     text-decoration: none;
 }
 
@@ -15,11 +15,14 @@ a:hover, a:active, a:focus, ol.crumb a:hover, ol.crumb a:active {
 	text-decoration:underline;
 }
 
+
+/* old news
 #updates_list_wrapper a:hover, 
 #updates_list_wrapper a:focus,
 #updates_list_wrapper a:active {
 	text-decoration:underline;
 }
+*/
 
 footer#globalfooter a {
 	border-bottom: 1px solid black;
