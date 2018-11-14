@@ -128,11 +128,24 @@
 #news-grid .grid {
 
   //set item and image layout,sizing
-  .news-item-image {
+  
+  .news-item-batch1 {
     &.news-item-link-none,
     &.news-item-link a {
       display: flex; 
       flex-direction: column;
+    } 
+  }
+  
+  //only set batch 2 and batch 3 on longer screens
+  @media(min-width: $screen-sm) {
+    .news-item-batch2,
+    .news-item-batch3 {
+      &.news-item-link-none,
+      &.news-item-link a {
+        display: flex; 
+        flex-direction: column;
+      } 
     }
   }
 
@@ -310,22 +323,6 @@
     flex-grow: 1;
   }
 
-    
-  //set background image with CSS
-  #image-container-2 {
-    background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg);  
-  }
-
-  #image-container-3 {
-    background-image: url(/_images/grid/selfie2.jpg);
-    background-position: top;  
-  }
-
-  #image-container-4 {
-    background-image: url(/_images/grid/breadpuppet.jpg);
-    //background-position-y: 75%;
-  }
-
   .news-item-image-none {
     .item-text {
       height: 100%;
@@ -385,6 +382,8 @@ body#newslisting {
     }
   }
 }
+
+//news page
 body#newslisting{
   .grid {
     row-gap: 20px;
@@ -392,5 +391,10 @@ body#newslisting{
   }
   .item-text {
     padding-bottom: 1em;
+  }
+
+  //set image only to fill space
+  .news-item-image-only .image-container {
+    height: 100%;
   }
 }
