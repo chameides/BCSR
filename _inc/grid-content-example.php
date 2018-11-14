@@ -46,7 +46,7 @@
         <!-- image with heading -->
         <div class="news-item news-item-link news-item-image" tabindex="6">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2 class="caption">Everyone Has a Story To Tell</h2>
             </div>
@@ -55,7 +55,7 @@
         <!-- image with caption -->
         <div class="news-item news-item-link news-item-image" tabindex="7">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <p class="caption">Austria on a Fullbright</p>
             </div>
@@ -64,7 +64,7 @@
         <!-- 2 x 2 image and headline -->
         <div class="news-item news-item-link news-item-image" tabindex="8">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">Teen Vogue Writer and Political Activist Lauren Duca to Deliver Commencement Speech at Bard College at Simon's Rock</h2>
             </div>
@@ -80,7 +80,7 @@
         <!-- image with longer small text -->
         <div class="news-item news-item-batch1 news-item-link" tabindex="10">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
             </div>
@@ -126,7 +126,7 @@
                     " 
             tabindex="14">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">Lauren Duca to Deliver Commencement Speech</h2>
             </div>
@@ -177,7 +177,7 @@
                     " 
             tabindex="19">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">caption</h2>
             </div>
@@ -190,7 +190,7 @@
                     "
             tabindex="20">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">caption</h2>
             </div>
@@ -203,7 +203,7 @@
                     " 
               tabindex="21">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">caption</h2>
             </div>
@@ -216,7 +216,7 @@
                     " 
             tabindex="22">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
               <h2 class="caption">caption</h2>
             </div>
@@ -230,7 +230,7 @@
                     news-item-link" 
               tabindex="23">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2 class="caption">caption</h2>
             </div>
@@ -242,7 +242,7 @@
                     news-item-link" 
               tabindex="24">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2 class="caption">caption</h2>
             </div>
@@ -254,7 +254,7 @@
                     news-item-link" 
               tabindex="25">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2 class="caption">caption</h2>
             </div>
@@ -266,7 +266,7 @@
                     news-item-link" 
               tabindex="26">
           <a href="https://simons-rock.edu/news">
-            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+            <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2 class="caption">caption</h2>
             </div>

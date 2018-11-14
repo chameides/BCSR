@@ -7,7 +7,7 @@
         </div>
         <!-- image with heading -->
         <div class="news-item news-item-link-none news-item-image" tabindex="2">  
-          <img src="/_images/grid/breadpuppet.jpg">
+          <img src="/_images/grid/breadpuppet.jpg" alt="alt text here">
           <div class="item-text">
             <h2>Bread and Puppet</h2>
             <p>Thursday, September 13 5:30 PM</p>
@@ -18,7 +18,7 @@
         <!-- image with heading -->
         <div class="news-item news-item-link news-item-image" tabindex="3">
           <a href="https://simons-rock.edu/news">
-           <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg">
+           <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
               <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
