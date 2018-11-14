@@ -16713,8 +16713,7 @@ body.no-mobile-nav nav#mainnav .section-nav.initial, .no-mobile-nav.wufoo nav#ma
     flex: 0 1 33.3%; }
 
 body#home .grid .news-item, #home.wufoo .grid .news-item {
-  height: 400px;
-  height: 50vh; }
+  height: 400px; }
 
 #news-grid .rockers_btn {
   display: none; }
