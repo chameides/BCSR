@@ -911,7 +911,7 @@ $(document).ready(function() {
 			
 			/* Events Carousel functionality is located in app.js */
 			
-			/* News and Updates */
+			/* News and Updates
 			$('#updates_alumni, #updates_students, #updates_facultystaff').fadeOut();
 			function updates_init() {
 				var updates_alumni_height = $('#updates_alumni').height();
@@ -974,7 +974,7 @@ $(document).ready(function() {
 				sizeCallout(); // - scrolling causes this to fire.
 				updates_init();
 			});
-
+		 */
 
 		}); // end of the $(document).ready()
 

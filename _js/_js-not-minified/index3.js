@@ -133,7 +133,12 @@
             
             /* Events Carousel functionality is located in app.js */
             
-            /* News and Updates */
+            /* 
+
+            deprecated: old news time duration highlight slides
+            replaced by horizontal carousel
+
+            News and Updates 
             $('#updates_alumni, #updates_students, #updates_facultystaff').fadeOut();
             function updates_init() {
                 var updates_alumni_height = $('#updates_alumni').height();
@@ -197,5 +202,5 @@
                 updates_init();
             });
 
-
+            */
         }); // end of the $(document).ready()
