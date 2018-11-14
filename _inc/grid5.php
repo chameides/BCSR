@@ -177,7 +177,7 @@
 
       </div><!--end grid-->
     </div><!--end grid wrapper-->
-      <button class="btn btn-link rockers_btn leftbtn" id="news-carousel-left"><i class="fa fa-chevron-left"></i></button>
-      <button class="btn btn-link rockers_btn rightbtn" id="news-carousel-right"><i class="fa fa-chevron-right"></i></button>
+      <button class="btn btn-link rockers_btn leftbtn" id="news-carousel-left"><i class="fa fa-chevron-left" aria-hidden="true" title="Reveal previous news items"></i></button>
+      <button class="btn btn-link rockers_btn rightbtn" id="news-carousel-right"><i class="fa fa-chevron-right" aria-hidden="true" title="Reveal next news items"></i></button>
   </div><!--end container fluid-->
 </section>
