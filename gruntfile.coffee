@@ -73,6 +73,7 @@ module.exports = (grunt) ->
           '_js/_js-not-minified/index5.js',
           '_js/_js-not-minified/index6-factoids.js',
           '_js/_js-not-minified/index7.js',
+          '_js/_js-not-minified/index8-news.js',
           ]
         dest: 
           '_js/_js-not-minified/index-concat.js'
