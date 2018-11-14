@@ -251,6 +251,19 @@
 		
 		header("Location: " . CalRoot . "/index.php?com=submit&msg=1");
 	} else {
-		exit($hc_lang_submit['ValidFail']);
+		/*error: 
+		1. trigger error message
+		2. add query data to URL. Should appear in analytics then use this data to troubleshoot.
+		*/
+		header("Location: " . CalRoot . "/index.php?com=submit&msg=submit-error&description=" . $eventDesc . 
+			"&eventtitle=" . $eventTitle . 
+			"&email=" . $subEmail . 
+			"&name=" . $subName .
+			"&date=" . $eventDate .
+			"&start=" . $startTimeHour .
+			"&end=" . $endTimeHour .
+			"&locationID=" . $locID .
+			"&locationName=" . $locName
+		);
 	}
 ?>

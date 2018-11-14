@@ -21,6 +21,14 @@
 <body onload="map_init()" id="top" class="bcsr-cal no-hero" itemscope itemtype="http://schema.org/WebPage">
 	<?php include('head.php');?>
 	<a name="top"></a>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 <?php
 	$crumbs = array_merge(array(cal_url().'/index.php?com=digest' => 'Home', cal_url() => 'Calendar'),$crmbAdd);
 	build_breadcrumb($crumbs);?>

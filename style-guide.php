@@ -584,6 +584,11 @@
 				<input type="file" id="exampleInputFile">
 				<p class="help-block">Example block-level help text here.</p>
 			  </div>
+			  <div class="form_pages">
+			  	<div class="form_label">
+			  		<legend>Let us know if you are an:</legend>
+			  	</div>
+			  </div>
 				<div class="checkbox">
 				  <label>
 					<input type="checkbox" value="">

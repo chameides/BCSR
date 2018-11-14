@@ -133,3 +133,13 @@
     height: inherit;
   }
 }
+
+
+/*label, 
+.wufoo label.desc {
+  display: inline-block;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: $padding-small-vertical2;
+  font-weight: bold;
+}
+*/

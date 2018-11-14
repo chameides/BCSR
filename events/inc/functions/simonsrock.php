@@ -19,6 +19,9 @@
         <p><a href="' . CalRoot . '/">' . $hc_lang_submit['ClickToBrowse'] . '</a></p>';
                     return -1;
                     break;
+                case "submit-error" :
+                    include 'datalayer-error.php';
+                    break;
             }
         }
         echo '

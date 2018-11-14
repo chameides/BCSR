@@ -29,8 +29,7 @@ legend {
   border-bottom: 1px solid $legend-border-color;
 }
 
-label, 
-.wufoo label.desc {
+label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: $padding-small-vertical2;
@@ -127,7 +126,6 @@ output {
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid $input-border;
-  -webkit-appearance: none;
   border-radius: 0;
   /*
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
@@ -155,6 +153,10 @@ output {
   }
 
   // [converter] extracted textarea& to textarea.form-control
+}
+
+select.form-control {
+  -webkit-appearance: menulist;
 }
 
 // Reset height for `textarea`s
