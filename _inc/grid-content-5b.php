@@ -1,20 +1,18 @@
       <!-- 1x1 full image -->
-        <div class="news-item news-item-link news-item-image news-item-image-only" tabindex="1">
+        <div class="news-item news-item-link-none news-item-image news-item-image-only" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-3">
             </div> 
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-link news-item-image" tabindex="2">
-          <a href="https://simons-rock.edu/news">
-            <img src="/_images/grid/breadpuppet.jpg">
-            <div class="item-text">
-              <h2>Bread and Puppet</h2>
-              <p>Thursday, September 13 5:30 PM</p>
-              <p>Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
-            </div>
-          </a>
+        <div class="news-item news-item-link-none news-item-image" tabindex="2">  
+          <img src="/_images/grid/breadpuppet.jpg">
+          <div class="item-text">
+            <h2>Bread and Puppet</h2>
+            <p>Thursday, September 13 5:30 PM</p>
+            <p>Featuring giant dwarves, celestial grasshoppers, and the hot sounds of the Bread and Puppet Circus Band.</p>
+          </div>
         </div>
 
         <!-- image with heading -->

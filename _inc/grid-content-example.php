@@ -37,7 +37,7 @@
             </div>
           </a>
         </div>
-        <div class="news-item news-item-link news-item-image" tabindex="5">
+        <div class="news-item news-item-link news-item-image-only" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -71,7 +71,7 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-image news-item-link" tabindex="9">
+        <div class="news-item news-item-image-only news-item-link" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -87,7 +87,7 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-image  news-item-link" tabindex="11">
+        <div class="news-item news-item-image-only  news-item-link" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2">
             </div> 
@@ -134,9 +134,9 @@
         </div>
         
         <!--2x2 full image -->
-        <div class="news-item news-item-image news-item-link news-item-image-only" tabindex="15"><a href="https://simons-rock.edu/news"><div class="image-container" id="image-container-2"></div></a></div>
+        <div class="news-item news-item-link news-item-image-only" tabindex="15"><a href="https://simons-rock.edu/news"><div class="image-container" id="image-container-2"></div></a></div>
         <!--1x2 full image -->
-        <div class="news-item news-item-image  news-item-link news-item-image-only" tabindex="16">
+        <div class="news-item news-item-link news-item-image-only" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2"></div>
           </a>
@@ -144,7 +144,6 @@
         <!-- 1x2 full text -->
         <div class="news-item news-item-link 
         news-item-image-none
-        
         " tabindex="17">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">

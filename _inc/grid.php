@@ -12,13 +12,11 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="2">
-          <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>Leading the Way for Women in STEM</h2>
-              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
-            </div>
-          </a>        
+        <div class="news-item news-item-batch1 news-item-link-none news-item-image-none" tabindex="2">
+          <div class="item-text">
+            <h2>Leading the Way for Women in STEM</h2>
+            <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+          </div>
         </div> 
         <!-- headline and text -->
         <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="3">
@@ -267,13 +265,11 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="2">
-          <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>Leading the Way for Women in STEM</h2>
-              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
-            </div>
-          </a>        
+        <div class="news-item news-item-batch2 news-item-link-none news-item-image-none" tabindex="2"> 
+          <div class="item-text">
+            <h2>Leading the Way for Women in STEM</h2>
+            <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+          </div>
         </div> 
         <!-- headline and text -->
         <div class="news-item news-item-batch2 news-item-link news-item-image-none" tabindex="3">
@@ -521,13 +517,11 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-batch3 news-item-link news-item-image-none" tabindex="2">
-          <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>Leading the Way for Women in STEM</h2>
-              <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
-            </div>
-          </a>        
+        <div class="news-item news-item-batch3 news-item-link-none news-item-image-none" tabindex="2">
+          <div class="item-text">
+            <h2>Leading the Way for Women in STEM</h2>
+            <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
+          </div>      
         </div> 
         <!-- headline and text -->
         <div class="news-item news-item-batch3 news-item-link news-item-image-none" tabindex="3">

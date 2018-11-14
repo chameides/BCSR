@@ -1,12 +1,10 @@
         <!-- headline and text -->
         <div class="news-item
-                    news-item-link news-item-image-none" tabindex="1">
-          <a href="https://simons-rock.edu/news">
-            <div class="item-text">
-              <h2>Everyone Has a Story To Tell</h2>
-              <p>Professor Jennifer Browdy’s guide to writing memoir wins Nautilus Award</p>
-            </div>
-          </a>        
+                    news-item-link-none news-item-image-none" tabindex="1"> 
+          <div class="item-text">
+            <h2>Everyone Has a Story To Tell</h2>
+            <p>Professor Jennifer Browdy’s guide to writing memoir wins Nautilus Award</p>
+          </div>
         </div> 
          <!-- headline and text -->
         <div class="news-item
