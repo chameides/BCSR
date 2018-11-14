@@ -21,22 +21,23 @@
 
 @supports (display: grid) {
 
-	/*If 6 items, set number of items for small viewport*/
-	@media (max-width: 524px) {
+	/*If 8 items, set number of items for small viewport*/
+	@media (max-width: 700px) {
     .grid {
-    	grid-template-columns: repeat(3, 175px);
+    	grid-template-columns: repeat(4, 175px);
     }
   }
 
-  /*3x2 grid */
-  @media (min-width: 525px) and (max-width: 767px) {
-    .grid-5 {
-      grid-template-columns: repeat(3, 1fr);
+  /*4x2 grid */
+  @media (min-width: 701px) and (max-width: 767px) {
+    .grid {
+      grid-template-columns: repeat(4, 25%);
     }
   }
-	
+
 	.grid.grid-5b {
-    grid-template-areas: "item3  item4 item1 item5" "item2  item2 item1 itemcta"; 
+    grid-template-areas: "item3  item4 item1 item5" 
+    										 "item2  item2 item1 itemcta"; 
  	}
   @media (min-width: 768px) {
     .grid.grid-5b {
@@ -86,6 +87,19 @@
     grid-area: itemcta3; }
 
 }/*end @support */
+
+
+/*set background images for grid*/
+.grid #image-container-2 {
+  background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg); }
+
+.grid #image-container-3 {
+  background-image: url(/_images/grid/selfie2.jpg);
+  background-position: top; }
+
+.grid #image-container-4 {
+  background-image: url(/_images/grid/breadpuppet.jpg); }
+
 
 </style>
 

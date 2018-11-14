@@ -21,7 +21,7 @@
 
 @supports (display: grid) {
 
-	/*set number of items for small viewport*/
+	/*If 6 items, set number of items for small viewport*/
 	@media (max-width: 524px) {
     .grid {
     	grid-template-columns: repeat(3, 175px);
@@ -30,7 +30,7 @@
 
   /*3x2 grid */
   @media (min-width: 525px) and (max-width: 767px) {
-    .grid-5 {
+    .grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -92,6 +92,17 @@
         grid-area: itemcta3; }
 
 }/*end @support */
+
+/*set background images for grid*/
+.grid #image-container-2 {
+  background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg); }
+
+.grid #image-container-3 {
+  background-image: url(/_images/grid/selfie2.jpg);
+  background-position: top; }
+
+.grid #image-container-4 {
+  background-image: url(/_images/grid/breadpuppet.jpg); }
 
 </style>
 
