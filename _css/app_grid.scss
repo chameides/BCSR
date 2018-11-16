@@ -129,8 +129,8 @@
   //set item and image layout,sizing
   
   .news-item-batch1 {
-    &.news-item-link-none,
-    &.news-item-link a {
+    &.news-item-link-none.news-item-image,
+    &.news-item-link.news-item-image a {
       display: flex; 
       flex-direction: column;
     } 
@@ -140,8 +140,8 @@
   @media(min-width: $screen-sm) {
     .news-item-batch2,
     .news-item-batch3 {
-      &.news-item-link-none,
-      &.news-item-link a {
+      &.news-item-link-none.news-item-image,
+      &.news-item-link.news-item-image a {
         display: flex; 
         flex-direction: column;
       } 
