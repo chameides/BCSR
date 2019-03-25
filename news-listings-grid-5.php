@@ -58,7 +58,7 @@
         <!-- CENTER COLUMN -->
        
           <section id="news-grid">
-            <div class="grid grid-all-news-5"> 
+            <div class="grid grid-news grid-all-news-5"> 
               <div class="news-hero page-hero-container page-hero-container-min news-bg">
                 <div class="page-hero page-hero-news-alt text-center">
                   <h1 class="hero-title">Simon's Rock News</h1>

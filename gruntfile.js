@@ -55,7 +55,7 @@
           files: ['_css/**/*.scss'],
           tasks: ['sass', 'autoprefixer'],
           options: {
-            spawn: false
+            spawn: true
           }
         },
         grunticon: {

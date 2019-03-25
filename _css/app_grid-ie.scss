@@ -1,0 +1,800 @@
+//position grid inside side scroller
+.grid-wrapper {
+  //position:relative;
+  overflow-x:scroll;
+  background-color:$dark-gray;
+  @media(max-width: $screen-xs-max) {
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: none;
+    }
+  }
+  @media(min-width: $screen-sm-min) {
+    overflow-x: hidden;
+  }
+  overflow-y:hidden;
+}
+
+//Set up grid
+@supports (display: grid) {
+  //set height for horizontal scroll
+  .grid-wrapper .grid {
+    height: $section-height-xs;
+    @media (min-width: $screen-sm-min) {
+      height: $section-height-news;
+      position: relative;
+    }
+    @media (min-width: $screen-xl-min) {
+      height: $section-height-sm;
+    }
+  }
+
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1px;   
+    
+    //typography  
+    h2,
+    h3, 
+    h4 {
+      display: block;
+    }
+    
+    
+   //assign grid layout
+    -ms-grid-columns: (175px)[90]; //set width so next column peaks out from offscreen
+    grid-template-columns: repeat(90, 175px); //set width so next column peaks out from offscreen
+    -ms-grid-rows: ($section-height-xs/2)[2];
+    grid-template-rows: repeat(2, $section-height-xs/2);
+
+    @media (min-width: $screen-sm-min) {
+      -ms-grid-columns: ($section-height-news/2)[90];
+      grid-template-columns: repeat(90, $section-height-news/2);
+      -ms-grid-rows: ($section-height-news/2)[2];
+      grid-template-rows: repeat(2, $section-height-news/2);
+    }
+    @media (min-width: $screen-xl-min) {
+      -ms-grid-columns: ($section-height-sm/2)[90];
+      grid-template-columns: repeat(90, $section-height-sm/2);
+      -ms-grid-rows: ($section-height-sm/2)[2];
+      grid-template-rows: repeat(2, $section-height-sm/2);
+    }
+
+    //set dimensions for vertical scroll
+    &.grid-all-news {
+      -ms-grid-columns: 0px (1fr)[2] 0px;
+      grid-template-columns: 0px repeat(2, 1fr) 0px;
+      -ms-grid-rows: auto (minmax(80px, auto))[24];
+      grid-template-rows: auto repeat(24, minmax(80px, auto));
+      @media (min-width: $screen-sm-min) {
+        -ms-grid-columns: 0px (1fr)[3] 0px;
+        grid-template-columns: 0px repeat(3, 1fr) 0px;
+        -ms-grid-rows: auto (minmax(80px, auto))[14];
+        grid-template-rows: auto repeat(14, minmax(80px, auto));
+      }
+      @media (min-width: $screen-md-min) {
+        -ms-grid-columns: 0px (1fr)[4] 0px;
+        grid-template-columns: 0px repeat(4, 1fr) 0px;
+        -ms-grid-rows: auto (minmax(80px, auto))[10];
+        grid-template-rows: auto repeat(10, minmax(80px, auto));
+      }
+    }
+
+    &.grid-all {
+      grid-template-areas:
+        "item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item23 item25 itemctaplaceholder1"
+
+        "item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item24 item26 itemcta";
+
+      
+      @media (min-width: $screen-sm-min) {
+        grid-template-areas:
+          "itemctaplaceholder1 item1  item3 item6 item7 item8 item8 item9 item11   item11  item13  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item23 item25 item1b  item3b item6b item7b item8b item8b item9b item11b   item11b  item13b  item14b item15b  item15b item16b item17b item18b item18b item19b item20b item21b item22b item23b item25b itemctaplaceholder2 item1c  item3c item6c item7c item8c item8c item9c item11c   item11c  item13c  item14c item15c  item15c item16c item17c item18c item18c item19c item20c item21c item22c item23c item25c itemctaplaceholder3"
+
+          "itemcta2 item2  item4 item5 item5 item8 item8 item10 item10  item12  item12  item14 item15  item15 item16 item17 item18 item18 item19 item20 item21 item22 item24 item26 item2b  item4b item5b item5b item8b item8b item10b item10b  item12b  item12b  item14b item15b  item15b item16b item17b item18b item18b item19b item20b item21b item22b item24b item26b itemcta item2c  item4c item5c item5c item8c item8c item10c item10c  item12c  item12c  item14c item15c  item15c item16c item17c item18c item18c item19c item20c item21c item22c item24c item26c itemcta3";
+      }
+
+
+      .news-item:nth-child(1)  { grid-area: item1; }
+    .news-item:nth-child(2)  { grid-area: item2; }
+    .news-item:nth-child(3)  { grid-area: item3; }
+    .news-item:nth-child(4)  { grid-area: item4; }
+    .news-item:nth-child(5)  { grid-area: item5; }
+    .news-item:nth-child(6)  { grid-area: item6; }
+    .news-item:nth-child(7)  { grid-area: item7; }
+    .news-item:nth-child(8)  { grid-area: item8; }
+    .news-item:nth-child(9)  { grid-area: item9; }
+    .news-item:nth-child(10) { grid-area: item10; }
+    .news-item:nth-child(11) { grid-area: item11; }
+    .news-item:nth-child(12) { grid-area: item12; }
+    .news-item:nth-child(13) { grid-area: item13; }
+    .news-item:nth-child(14) { grid-area: item14; }
+    .news-item:nth-child(15) { grid-area: item15; }
+    .news-item:nth-child(16) { grid-area: item16; }
+    .news-item:nth-child(17) { grid-area: item17; }
+    .news-item:nth-child(18) { grid-area: item18; }
+    .news-item:nth-child(19) { grid-area: item19; }
+    .news-item:nth-child(20) { grid-area: item20; }
+    .news-item:nth-child(21) { grid-area: item21; }
+    .news-item:nth-child(22) { grid-area: item22; }
+    .news-item:nth-child(23) { grid-area: item23; }
+    .news-item:nth-child(24) { grid-area: item24; }
+    .news-item:nth-child(25) { grid-area: item25; }
+    .news-item:nth-child(26) { grid-area: item26; }
+    
+    
+      .news-item:nth-child(27) { grid-area: item1b; }
+      .news-item:nth-child(28) { grid-area: item2b; }
+      .news-item:nth-child(29) { grid-area: item3b; }
+      .news-item:nth-child(30) { grid-area: item4b; }
+      .news-item:nth-child(31) { grid-area: item5b; }
+      .news-item:nth-child(32) { grid-area: item6b; }
+      .news-item:nth-child(33) { grid-area: item7b; }
+      .news-item:nth-child(34) { grid-area: item8b; }
+      .news-item:nth-child(35) { grid-area: item9b; }
+      .news-item:nth-child(36) { grid-area: item10b; }
+      .news-item:nth-child(37) { grid-area: item11b; }
+      .news-item:nth-child(38) { grid-area: item12b; }
+      .news-item:nth-child(39) { grid-area: item13b; }
+      .news-item:nth-child(40) { grid-area: item14b; }
+      .news-item:nth-child(41) { grid-area: item15b; }
+      .news-item:nth-child(42) { grid-area: item16b; }
+      .news-item:nth-child(43) { grid-area: item17b; }
+      .news-item:nth-child(44) { grid-area: item18b; }
+      .news-item:nth-child(45) { grid-area: item19b; }
+      .news-item:nth-child(46) { grid-area: item20b; }
+      .news-item:nth-child(47) { grid-area: item21b; }
+      .news-item:nth-child(48) { grid-area: item22b; }
+      .news-item:nth-child(49) { grid-area: item23b; }
+      .news-item:nth-child(50) { grid-area: item24b; }
+      .news-item:nth-child(51) { grid-area: item25b; }
+      .news-item:nth-child(52) { grid-area: item26b; }
+      
+      .news-item:nth-child(53) { grid-area: item1c; }
+      .news-item:nth-child(54) { grid-area: item2c; }
+      .news-item:nth-child(55) { grid-area: item3c; }
+      .news-item:nth-child(56) { grid-area: item4c; }
+      .news-item:nth-child(57) { grid-area: item5c; }
+      .news-item:nth-child(58) { grid-area: item6c; }
+      .news-item:nth-child(59) { grid-area: item7c; }
+      .news-item:nth-child(60) { grid-area: item8c; }
+      .news-item:nth-child(61) { grid-area: item9c; }
+      .news-item:nth-child(62) { grid-area: item10c; }
+      .news-item:nth-child(63) { grid-area: item11c; }
+      .news-item:nth-child(64) { grid-area: item12c; }
+      .news-item:nth-child(65) { grid-area: item13c; }
+      .news-item:nth-child(66) { grid-area: item14c; }
+      .news-item:nth-child(67) { grid-area: item15c; }
+      .news-item:nth-child(68) { grid-area: item16c; }
+      .news-item:nth-child(69) { grid-area: item17c; }
+      .news-item:nth-child(70) { grid-area: item18c; }
+      .news-item:nth-child(71) { grid-area: item19c; }
+      .news-item:nth-child(72) { grid-area: item20c; }
+      .news-item:nth-child(73) { grid-area: item21c; }
+      .news-item:nth-child(74) { grid-area: item22c; }
+      .news-item:nth-child(75) { grid-area: item23c; }
+      .news-item:nth-child(76) { grid-area: item24c; }
+      .news-item:nth-child(77) { grid-area: item25c; }
+      .news-item:nth-child(78) { grid-area: item26c; }
+      .news-item-cta1 { grid-area: itemcta; }
+      .news-item-cta2 { grid-area: itemcta2; }
+      .news-item-cta3 { grid-area: itemcta3; }
+      .news-item-cta-placeholder1 { grid-area: itemctaplaceholder1; }
+      .news-item-cta-placeholder2 { grid-area: itemctaplaceholder2; }
+      .news-item-cta-placeholder3 { grid-area: itemctaplaceholder3; }  
+
+    }
+
+
+    //grid layout for vertical scroll
+    &.grid-all-news {
+      grid-template-areas:
+        "hero hero hero hero "
+        " . item1 item2 . "
+        " . item3 item4 . "
+        " . item6 item5 . "
+        " . item7 item9 . "
+        " . item8 item8 . "
+        " . item8 item8 . "
+        " . item11 item10 . "
+        " . item13 item12 . "
+        " . item14 item14 . "
+        " . item15 item15 . "
+        " . item15 item15 . "
+        " . item15 item15 . "
+        " . item16 item16 . "
+        " . item17 item17 . "
+        " . item18 item18 . "
+        " . item18 item18 . "
+        " . item19 item19 . "
+        " . item20 item20 . "
+        " . item21 item21 . "
+        " . item22 item22 . "
+        " . item23 item24 . "
+        " . item23 item24 . "
+        " . item25 item26 . "
+        " . item25 item26 . ";
+
+
+        @media (min-width: $screen-sm-min) {
+          grid-template-areas:
+          "hero hero hero  hero  hero"
+          " . item1 item2 item3 . "
+          " . item4 item6 item12 . "
+          " . item9 item7 item12 . "
+          " . item8 item8 item5 . "
+          " . item8 item8 item5 . "
+          " . item11 item10 item13 . " 
+          " . item11 item10 item14 . "
+          " . item15 item15 item14 . "
+          " . item15 item15 item17 . "
+          " . item18 item18 item17 . "
+          " . item18 item18 item19 . "
+          " . item16 item20 item21 . "
+          " . item22 item22 item25 . "
+          " . item23 item24 item26 . ";
+        }
+
+        @media (min-width: $screen-md-min) {
+          grid-template-areas:
+          "hero hero hero   hero   hero   hero"
+          ". item1  item3 item6 item7 . " 
+          ". item2  item5 item5 item4 . "
+
+          " . item8 item8 item10 item11  . " 
+          " . item8 item8 item10 item11 . "   
+
+          " . item13  item9  item14 item16 . "
+          " . item13  item9  item12 item12 . "  
+
+          " . item15 item15 item17 item19 . " 
+
+          " . item18 item18 item20 item26  . " 
+
+          " . item22 item25 item25 item21  . "
+          " . item23 item25 item25 item24  . ";
+
+        }
+
+
+      .news-hero               { grid-area: hero; }
+      .news-item:nth-child(2)  { grid-area: item1; }
+      .news-item:nth-child(3)  { grid-area: item2; }
+      .news-item:nth-child(4)  { grid-area: item3; }
+      .news-item:nth-child(5)  { grid-area: item4; }
+      .news-item:nth-child(6)  { grid-area: item5; }
+      .news-item:nth-child(7)  { grid-area: item6; }
+      .news-item:nth-child(8)  { grid-area: item7; }
+      .news-item:nth-child(9)  { grid-area: item8; }
+      .news-item:nth-child(10)  { grid-area: item9; }
+      .news-item:nth-child(11) { grid-area: item10; }
+      .news-item:nth-child(12) { grid-area: item11; }
+      .news-item:nth-child(13) { grid-area: item12; }
+      .news-item:nth-child(14) { grid-area: item13; }
+      .news-item:nth-child(15) { grid-area: item14; }
+      .news-item:nth-child(16) { grid-area: item15; }
+      .news-item:nth-child(17) { grid-area: item16; }
+      .news-item:nth-child(18) { grid-area: item17; }
+      .news-item:nth-child(19) { grid-area: item18; }
+      .news-item:nth-child(20) { grid-area: item19; }
+      .news-item:nth-child(21) { grid-area: item20; }
+      .news-item:nth-child(22) { grid-area: item21; }
+      .news-item:nth-child(23) { grid-area: item22; }
+      .news-item:nth-child(24) { grid-area: item23; }
+      .news-item:nth-child(25) { grid-area: item24; }
+      .news-item:nth-child(26) { grid-area: item25; }
+      .news-item:nth-child(27) { grid-area: item26; }
+    
+    }
+
+
+
+
+    &.grid-5 {
+      grid-template-areas:
+        "item1  item3 item5"
+        "item2  item4 itemcta";
+
+
+      @media (min-width: $screen-sm-min) {
+        grid-template-areas:
+          "item1c item4c item5c item5c     item1b item4b item5b item5b          item1 item4 item5 item5"
+          "item2c item2c item3c itemcta3   item2b item2b item3b itemcta2        item2 item2 item3 itemcta";
+      }
+
+      @media (min-width: $screen-lg-min) {
+        grid-template-areas:
+          "item1c item1c item2c item3c item3c item5c item5c     item1b item1b item2b item3b item3b item5b item5b   item1  item1  item2 item3 item3 item5 item5"
+          "item1c item1c item2c item3c item3c item4c itemcta3   item1b item1b item2b item3b item3b item4b itemcta2 item1  item1  item2 item3 item3 item4 itemcta";
+      }
+
+      .news-item:nth-child(1)  { grid-area: item1; }
+      .news-item:nth-child(2)  { grid-area: item2; }
+      .news-item:nth-child(3)  { grid-area: item3; }
+      .news-item:nth-child(4)  { grid-area: item4; }
+      .news-item:nth-child(5)  { grid-area: item5; }
+      .news-item:nth-child(6)  { grid-area: item1b; }
+      .news-item:nth-child(7)  { grid-area: item2b; }
+      .news-item:nth-child(8)  { grid-area: item3b; }
+      .news-item:nth-child(9)  { grid-area: item4b; }
+      .news-item:nth-child(10) { grid-area: item5b; }
+      .news-item:nth-child(11) { grid-area: item1c; }
+      .news-item:nth-child(12) { grid-area: item2c; }
+      .news-item:nth-child(13) { grid-area: item3c; }
+      .news-item:nth-child(14) { grid-area: item4c; }
+      .news-item:nth-child(15) { grid-area: item5c; }
+      .news-item-cta1 { grid-area: itemcta; }
+      .news-item-cta2 { grid-area: itemcta2; }
+      .news-item-cta3 { grid-area: itemcta3; }
+      
+
+    }
+
+    //grid layout for vertical scroll
+    &.grid-all-news-5 {
+    -ms-grid-columns: 0px (1fr)[2] 0px;  
+    grid-template-columns: 0px repeat(2, 1fr) 0px;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    @media (min-width: $screen-sm-min) {
+      ms-grid-columns: 0px (1fr)[3] 0px;  
+      grid-template-columns: 0px repeat(3, 1fr) 0px;  
+    }
+    @media (min-width: $screen-md-min) {
+      ms-grid-columns: 0px (1fr)[4] 0px; 
+      grid-template-columns: 0px repeat(4, 1fr) 0px;
+    }
+
+      
+
+
+      grid-template-areas:
+        "hero hero hero hero"
+        ". item1 item2 ." 
+        ". item3 item3 ."
+        ". item4 item5 .";
+
+      @media (min-width: $screen-sm-min) {
+        grid-template-areas:        
+          "hero hero  hero  hero hero"
+          ". item1 item3 item4 ."
+          ". item2 item5 item5 .";
+      }
+
+      @media (min-width: $screen-md-min) {
+        grid-template-areas:        
+          "hero hero  hero  hero  hero hero"
+          ". item4 item4 item1 item2 ."
+          ". item5 item3 item3 item2 .";
+      }
+
+      .news-hero               { grid-area: hero; }
+      .news-item:nth-child(2)  { grid-area: item1; }
+      .news-item:nth-child(3)  { grid-area: item2; }
+      .news-item:nth-child(4)  { grid-area: item3; }
+      .news-item:nth-child(5)  { grid-area: item4; }
+      .news-item:nth-child(6)  { grid-area: item5; }
+    }
+
+    &.grid-5b {
+      grid-template-areas:
+        "item3  item4 item1 item5"
+        "item2  item2 item1 itemcta";
+
+        @media (min-width: $screen-sm-min) {
+          grid-template-areas:
+            "item3  item4 item1 item5     item3b  item4b item1b item5b          item3c  item4c item1c item5c"
+            "item2  item2 item1 itemcta   item2b  item2b item1b itemcta2        item2c  item2c item1c itemcta3";
+        }
+
+        @media (min-width: $screen-lg-min) {
+          grid-template-areas:
+            "item2  item2 item1 item3 item3 item5  item5     item2b  item2b item1b item3b item3b item5b item5b   item2c  item2c item1c item3c item3c item5c item5c"
+            "item2  item2 item1 item3 item3 item4  itemcta   item2b  item2b item1b item3b item3b item4b itemcta2 item2c  item2c item1c item3c item3c item4c itemcta3";
+        }
+
+        .news-item:nth-child(1)  { grid-area: item1; }
+        .news-item:nth-child(2)  { grid-area: item2; }
+        .news-item:nth-child(3)  { grid-area: item3; }
+        .news-item:nth-child(4)  { grid-area: item4; }
+        .news-item:nth-child(5)  { grid-area: item5; }
+        .news-item:nth-child(6)  { grid-area: item1b; }
+        .news-item:nth-child(7)  { grid-area: item2b; }
+        .news-item:nth-child(8)  { grid-area: item3b; }
+        .news-item:nth-child(9)  { grid-area: item4b; }
+        .news-item:nth-child(10) { grid-area: item5b; }
+        .news-item:nth-child(11) { grid-area: item1c; }
+        .news-item:nth-child(12) { grid-area: item2c; }
+        .news-item:nth-child(13) { grid-area: item3c; }
+        .news-item:nth-child(14) { grid-area: item4c; }
+        .news-item:nth-child(15) { grid-area: item5c; }
+        .news-item-cta1 { grid-area: itemcta; }
+        .news-item-cta2 { grid-area: itemcta2; }
+        .news-item-cta3 { grid-area: itemcta3; }
+      }
+
+      &.grid-all-news-5b {
+
+        -ms-grid-columns: 0px (1fr)[2] 0px;
+        grid-template-columns: 0px repeat(2, 1fr) 0px;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        @media (min-width: $screen-sm-min) {
+          ms-grid-columns: 0px (1fr)[3] 0px;
+          grid-template-columns: 0px repeat(3, 1fr) 0px;
+        }
+        @media (min-width: $screen-md-min) {
+          ms-grid-columns: 0px (1fr)[4] 0px;
+          grid-template-columns: 0px repeat(4, 1fr) 0px; 
+        }
+
+        grid-template-areas:
+          "hero hero hero hero"
+          ". item2 item2 ."
+          ". item3 item1 ."
+          ". item4 item5 .";
+
+        @media (min-width: $screen-sm-min) {
+          grid-template-areas:
+            "hero hero hero hero hero"
+            ". item2  item2 item1 ."
+            ". item5  item3 item4 .";
+        }
+
+        @media (min-width: $screen-md-min) {
+          grid-template-areas:
+            "hero hero   hero  hero  hero hero"
+            ". item2  item5 item1 item3 ."
+            ". item2  item4 item1 item3 .";
+        }
+
+        .news-hero               { grid-area: hero; }
+        .news-item:nth-child(2)  { grid-area: item1; }
+        .news-item:nth-child(3)  { grid-area: item2; }
+        .news-item:nth-child(4)  { grid-area: item3; }
+        .news-item:nth-child(5)  { grid-area: item4; }
+        .news-item:nth-child(6)  { grid-area: item5; }
+      
+      }
+    }
+  }
+
+
+/* flexbox fallback is the browser does not support display:grid */
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+    padding: 0;
+    .news-item-batch2,
+    .news-item-batch3 {
+      display: none;
+    }
+  }
+
+  .grid .news-item {
+    min-height: 20vh;
+    margin: 0vw;
+  }
+  
+  .grid .news-item { 
+    flex: 0 1 33.3%; height: 50vh; 
+  }
+
+  #news-grid .rockers_btn {
+    display: none;
+  }
+  
+}
+
+#news-grid .grid .news-item-image {
+  &.news-item-link-none,             //add option for news-item-link-none
+  &.news-item-link a {
+    display: flex;
+    flex-direction: column;
+  }
+} 
+  
+
+#news-grid .grid .news-item {
+  //assign rotating colors (no orange)
+  &:nth-child(4n+1)  { 
+    background-color: $blue-sky;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( $blue-sky, 10% ); 
+        .image-container,
+        img {
+          opacity: .9;
+        }
+      }
+    }
+  }
+  &:nth-child(4n+2) { 
+    background-color: $medium-gray;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+       background: darken( $medium-gray, 10% );
+        .image-container,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  }
+  
+  &:nth-child(4n+3) { 
+    background-color: $orange;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( #27556f, 10% ); 
+        .image-container,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  } 
+  &:nth-child(4n+4)  { 
+    background-color: black;
+    &.news-item-link {
+      &:focus,
+      &:hover { 
+        background: lighten( black, 20% );
+        .image-container, 
+        img {
+          opacity: .9;
+        }
+      }
+    }  
+  }
+}
+
+#newslisting .grid .news-item{
+  //assign rotating colors (no orange)
+  &:nth-child(3n+1)  { 
+    background-color: $blue-sky;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+        background: darken( $blue-sky, 10% ); 
+        .image-container,
+        img {
+          opacity: .9;
+        }
+      }
+    }
+  }
+  &:nth-child(3n+2) { 
+    background-color: $medium-gray;
+    &.news-item-link {
+      &:focus,
+      &:hover {
+       background: darken( $medium-gray, 10% );
+        .image-container,
+        img {
+          opacity: .9;
+        }
+      }
+    } 
+  }
+  &:nth-child(3n+3)  { 
+    background-color: black;
+    &.news-item-link {
+      &:focus,
+      &:hover { 
+        background: lighten( black, 20% );
+        .image-container, 
+        img {
+          opacity: .9;
+        }
+      }
+    }  
+  }
+}
+
+
+#news-grid, 
+#news-listing {
+  .grid {
+    .news-item {
+      transition-property:background-color, opacity;
+      transition-duration:0.5s;
+      img {
+        opacity: 1;
+      } 
+      //color overrides
+      &.background-blue { 
+        background-color: $blue-sky;
+        &.news-item-link:hover {
+         background: darken( $blue-sky, 10% ); 
+        } 
+      }
+      &.background-gray { 
+        background-color: $medium-gray;
+        &.news-item-link:hover {
+         background: darken( $medium-gray, 10% ); 
+        } 
+      }
+      &.background-orange { 
+        background-color: $orange;
+        &.news-item-link:hover {
+         background: darken( $orange, 10% ); 
+        } 
+      }
+      &.background-black { 
+        background-color: black;
+        &.news-item-link:hover {
+         background: darken( black, 10% ); 
+        } 
+      }
+      &.background-red { 
+        background-color: $red;
+        &.news-item-link:hover {
+         background: darken( $red, 10% ); 
+        } 
+      }
+    }    
+  }
+}
+
+
+.grid {
+  //link fills space
+  .news-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  //text-style
+  .news-item, 
+  .news-item a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+//override page-container default on vertical scroll
+.page-container #news-grid{
+  font-size: 1.5rem; 
+}
+
+body#home, 
+body#newslisting {
+  .grid { //override defaults
+    h2 {
+      font-size: 1.2em;
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.5em;
+      } 
+      margin: 0 .8em;
+    }
+    .news-item h2.caption { //small text version
+      font-size: 1.1em;
+      line-height: 1.1em;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.1em;
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.3em;
+      }
+      margin: .5em .8em 0 .8em;
+      @media (max-width: $screen-md-max) {
+        &.item-extra {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.grid {  
+  //image fills space
+  .image-container {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    flex-grow: 1;
+   }
+
+    
+  //set background image with CSS
+  #image-container-2 {
+    background-image: url(https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg);  
+  }
+
+  #image-container-3 {
+    background-image: url(/_images/grid/selfie2.jpg);
+    background-position: top;  
+  }
+
+  #image-container-4 {
+    background-image: url(/_images/grid/breadpuppet.jpg);
+    //background-position-y: 75%;
+  }
+
+
+
+
+  //---VERTICAL ALIGN TEXT---
+
+  .item-text{
+    //display: grid;
+    //align-content: center;
+  }
+
+
+
+
+
+  .news-item-image-none {
+    .item-text {
+      height: 100%;
+      display: -ms-grid;
+      display: grid;
+      align-content: center;
+    }
+  }
+
+ 
+
+  //no image, 2 tall
+  //.news-item-[size]-[option-][value]
+
+
+}//close grid
+
+body#home .grid {
+  .news-item-image-none {
+    .item-text {
+      display: -ms-grid;
+      display: grid;
+      align-content: center;
+    }
+  }
+}
+
+
+body#home, 
+body#newslisting {
+  .grid  {
+    .item-text {
+      padding: 1em 0;
+    }
+  }
+}
+body#newslisting{
+  .grid {
+    //grid-gap: 2% 2%;
+    row-gap: 20px;
+    column-gap: 20px;
+    .news-item-image-only{
+      /*overflow: hidden;
+      a {
+        display: block;  
+      }
+      max-height: $section-height-xs/1.3;
+      @media (min-width: $screen-sm-min) {
+        max-height: $section-height-news;
+      }
+      @media (min-width: $screen-xl-min) {
+        max-height: $section-height-sm;
+      }*/
+    }
+    p.item-extra {
+      display: block;
+    }
+  }
+  .item-text {
+    padding-bottom: 1em;
+  }
+}
+
+
