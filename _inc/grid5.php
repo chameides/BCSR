@@ -3,7 +3,7 @@
     <div class="grid-wrapper row">
       <div class="grid grid-index grid-5">
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="1">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-black" tabindex="1" >
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -12,14 +12,14 @@
           </a>        
         </div> 
          <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link-none news-item-image-none" tabindex="2">
+        <div class="news-item news-item-batch1 news-item-link-none news-item-image-none background-black" tabindex="2">
           <div class="item-text">
             <h2>Leading the Way for Women in STEM</h2>
             <p>Phyu Hninn Nyein ’05 Honored by Women of the Future Awards, South East Asia</p>
           </div>
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="3">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-black" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -28,7 +28,7 @@
           </a>        
         </div>  
          <!-- event -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="4">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-black" tabindex="4">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Berkshire Pulse Performance</h2>
@@ -39,7 +39,7 @@
           </a>
         </div>
         <!-- headline and text -->
-        <div class="news-item news-item-batch1 news-item-link news-item-image-none" tabindex="5">
+        <div class="news-item news-item-batch1 news-item-link news-item-image-none background-black" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Item 5</h2>
