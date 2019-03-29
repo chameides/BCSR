@@ -341,19 +341,16 @@ body#home,
 body#newslisting {
   .grid { //override defaults
     h2 {
-      font-size: 1.2em;
       @media (min-width: $screen-sm-min) {
         font-size: 1.5em;
-      } 
+      }
       margin: 0 .8em;
     }
     .news-item h2.caption { //small text version
-      font-size: 1.1em;
       line-height: 1.1em;
       margin-top: 0;
     }
-    p {
-      font-size: 1.1em;
+    p {  
       @media (min-width: $screen-sm-min) {
         font-size: 1.3em;
       }
@@ -361,8 +358,17 @@ body#newslisting {
     }
   }
 }
-
+body#home,
 .grid-index {
+  h2 {
+    font-size: 1.2em;
+  }
+  .news-item h2.caption { //small text version
+    font-size: 1.1em;
+  }
+  p {
+    font-size: 1.1em;
+  }
   .news-item-image-none {
     .item-text {
       display: grid;
@@ -385,6 +391,15 @@ body#newslisting {
 .grid-news{
   row-gap: 20px;
   column-gap: 20px;
+  h2 {
+    font-size: 1em;
+  }
+  .news-item h2.caption { //small text version
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
   .item-text {
     padding-bottom: 1em;
   }
