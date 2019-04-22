@@ -388,6 +388,7 @@ body#newslisting {
 }
 
 //news page
+body#newslisting,
 .grid-news{
   row-gap: 20px;
   column-gap: 20px;
@@ -403,7 +404,6 @@ body#newslisting {
   .item-text {
     padding-bottom: 1em;
   }
-
   //set image only to fill space
   .news-item-image-only .image-container {
     height: 100%;
