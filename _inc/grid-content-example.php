@@ -1,6 +1,6 @@
 
         <!-- headline and text -->
-        <div class="news-item news-item-link news-item-image-none" tabindex="1">
+        <div class="news-item news-item-link news-item-image-none background-black" tabindex="1">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Everyone Has a Story To Tell</h2>
@@ -9,7 +9,7 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-link news-item-image-none" tabindex="2">
+        <div class="news-item news-item-link news-item-image-none background-black" tabindex="2">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Leading the Way for Women in STEM</h2>
@@ -18,7 +18,7 @@
           </a>        
         </div> 
         <!-- headline and text -->
-        <div class="news-item news-item-link news-item-image-none" tabindex="3">
+        <div class="news-item news-item-link news-item-image-none background-black" tabindex="3">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Austria on a Fulbright</h2>
@@ -27,7 +27,7 @@
           </a>        
         </div> 
         <!-- event -->
-        <div class="news-item news-item-link news-item-image-none" tabindex="4">
+        <div class="news-item news-item-link news-item-image-none background-black" tabindex="4">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
               <h2>Berkshire Pulse Performance</h2>
@@ -37,23 +37,23 @@
             </div>
           </a>
         </div>
-        <div class="news-item news-item-link news-item-image-only" tabindex="5">
+        <div class="news-item news-item-link news-item-image-only background-black" tabindex="5">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2" role="img" aria-label="alt text here">
             </div> 
           </a>
         </div>
         <!-- image with heading -->
-        <div class="news-item news-item-link news-item-image" tabindex="6">
+        <div class="news-item news-item-link news-item-image background-black" tabindex="6">
           <a href="https://simons-rock.edu/news">
             <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
-              <h2 class="caption">Everyone Has a Story To Tell</h2>
+              <h2 class="caption">Everyone Has a Story To Tell (small)</h2>
             </div>
           </a>
         </div>
         <!-- image with caption -->
-        <div class="news-item news-item-link news-item-image" tabindex="7">
+        <div class="news-item news-item-link news-item-image background-black" tabindex="7">
           <a href="https://simons-rock.edu/news">
             <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
@@ -62,7 +62,7 @@
           </a>
         </div>
         <!-- 2 x 2 image and headline -->
-        <div class="news-item news-item-link news-item-image" tabindex="8">
+        <div class="news-item news-item-link news-item-image background-black" tabindex="8">
           <a href="https://simons-rock.edu/news">
             <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text"> 
@@ -71,14 +71,14 @@
           </a>
         </div>
         <!-- 1x1 full image -->
-        <div class="news-item news-item-image-only news-item-link" tabindex="9">
+        <div class="news-item news-item-image-only news-item-link background-black" tabindex="9">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2" role="img" aria-label="alt text here">
             </div> 
           </a>
         </div>
         <!-- image with longer small text -->
-        <div class="news-item news-item-batch1 news-item-link" tabindex="10">
+        <div class="news-item news-item-batch1 news-item-link background-black" tabindex="10">
           <a href="https://simons-rock.edu/news">
             <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
             <div class="item-text">
@@ -87,7 +87,7 @@
           </a>
         </div>
         <!--2x1 full image -->
-        <div class="news-item news-item-image-only  news-item-link" tabindex="11">
+        <div class="news-item news-item-image-only news-item-link background-black" tabindex="11">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2" role="img" aria-label="alt text here">
             </div> 
@@ -96,7 +96,8 @@
         <div class="news-item 
                     news-item-batch1
                     news-item-link 
-                    news-item-image-none 
+                    news-item-image-none
+                    background-black 
                     "
               tabindex="12">
           <a href="https://simons-rock.edu/news">
@@ -110,7 +111,8 @@
         <div class="news-item 
                     news-item-batch1 
                     news-item-link 
-                    news-item-image-none" 
+                    news-item-image-none
+                    background-black" 
             tabindex="13">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
@@ -122,7 +124,8 @@
 
         <!-- image 2 tall-->
         <div class="news-item news-item-image 
-                    news-item-link        
+                    news-item-link
+                    background-black        
                     " 
             tabindex="14">
           <a href="https://simons-rock.edu/news">
@@ -134,20 +137,20 @@
         </div>
         
         <!--2x2 full image -->
-        <div class="news-item news-item-link news-item-image-only" tabindex="15">
+        <div class="news-item news-item-link news-item-image-only background-black" tabindex="15">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2" role="img" aria-label="alt text here"></div>
           </a>
         </div>
         <!--1x2 full image -->
-        <div class="news-item news-item-link news-item-image-only" tabindex="16">
+        <div class="news-item news-item-link news-item-image-only background-black" tabindex="16">
           <a href="https://simons-rock.edu/news">
             <div class="image-container" id="image-container-2" role="img" aria-label="alt text here"></div>
           </a>
         </div>
         <!-- 1x2 full text -->
         <div class="news-item news-item-link 
-        news-item-image-none
+        news-item-image-none background-black
         " tabindex="17">
           <a href="https://simons-rock.edu/news">
             <div class="item-text">
@@ -159,11 +162,11 @@
         <!-- 2x2 full text -->
         <div class="news-item
                     news-item-link
-                    news-item-image-none
+                    news-item-image-none background-black
                     " 
               tabindex="18">
           <a href="https://simons-rock.edu/news">
-            <div class="item-text">
+            <div class="item-text background-black">
               <h2>Everyone Has A Story To Tellb</h2>
               <p>Professor Jennifer Browdy's guide to writing memroir wins Nautilus Award</p>
             </div>
@@ -174,6 +177,7 @@
         <!-- image 2 tall-->
         <div class="news-item news-item-image
                     news-item-link
+                    background-black
                     " 
             tabindex="19">
           <a href="https://simons-rock.edu/news">
@@ -187,6 +191,7 @@
         <!-- image 2 tall-->
         <div class="news-item news-item-image
                     news-item-link
+                    background-black
                     "
             tabindex="20">
           <a href="https://simons-rock.edu/news">
@@ -200,6 +205,7 @@
         <div class="news-item
                     news-item-image
                     news-item-link
+                    background-black
                     " 
               tabindex="21">
           <a href="https://simons-rock.edu/news">
@@ -212,6 +218,7 @@
         <!-- image 2 tall-->
         <div class="news-item news-item-image
                     news-item-link
+                    background-black
                      
                     " 
             tabindex="22">
@@ -226,6 +233,7 @@
         <!-- image with heading -->
         <div class="news-item
                     news-item-image
+                    background-black
                     
                     news-item-link" 
               tabindex="23">
@@ -238,7 +246,7 @@
         </div>
         <!-- image with heading -->
         <div class="news-item news-item-image
-                    
+                    background-black
                     news-item-link" 
               tabindex="24">
           <a href="https://simons-rock.edu/news">
@@ -250,7 +258,7 @@
         </div>
         <!-- image with heading -->
         <div class="news-item news-item-image
-                    
+                    background-black
                     news-item-link" 
               tabindex="25">
           <a href="https://simons-rock.edu/news">
@@ -263,7 +271,8 @@
         <!-- image with heading -->
         <div class="news-item 
                     news-item-image
-                    news-item-link" 
+                    news-item-link
+                    background-black" 
               tabindex="26">
           <a href="https://simons-rock.edu/news">
             <img src="https://simons-rock.edu/_images/why-simons-rock/the-rocker-community/individual-alumni-profiles/hninn/hninn-action.jpg" alt="alt text here">
