@@ -266,32 +266,58 @@
       //color overrides
       &.background-blue { 
         background-color: $blue-sky;
-        &.news-item-link:hover {
-         background: darken( $blue-sky, 10% ); 
-        } 
+        &.news-item-link:hover, 
+        &.news-item-link a:focus {
+          background: darken( $blue-sky, 10% ); 
+          .image-container, 
+          img {
+            opacity: .9;
+          }
+        }
+
       }
       &.background-gray { 
         background-color: $medium-gray;
-        &.news-item-link:hover {
-         background: darken( $medium-gray, 10% ); 
+        &.news-item-link:hover, 
+        &.news-item-link a:focus  {
+          background: darken( $medium-gray, 10% );
+          .image-container, 
+          img {
+            opacity: .9;
+          } 
         } 
       }
       &.background-orange { 
         background-color: $orange;
-        &.news-item-link:hover {
-         background: darken( $orange, 10% ); 
+        &.news-item-link:hover, 
+        &.news-item-link a:focus  {
+          background: darken( $orange, 10% ); 
+          .image-container, 
+          img {
+            opacity: .9;
+          }
         } 
       }
       &.background-black { 
         background-color: black;
-        &.news-item-link:hover {
-         background: darken( black, 10% ); 
+        &.news-item-link:hover, 
+        &.news-item-link a:focus  {
+          background: darken( black, 10% ); 
+          .image-container, 
+          img {
+            opacity: .9;
+          }
         } 
       }
       &.background-red { 
         background-color: $red;
-        &.news-item-link:hover {
-         background: darken( $red, 10% ); 
+        &.news-item-link:hover, 
+        &.news-item-link a:focus  {
+          background: darken( $red, 10% ); 
+          .image-container, 
+          img {
+            opacity: .9;
+          }
         } 
       }
     }    
