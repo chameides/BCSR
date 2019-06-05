@@ -5,8 +5,8 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
-          
-          outputStyle: 'compressed'          
+          outputStyle: 'compressed'
+          force: true          
           ### 
           if testing, remove comments for viewing CSS as nested 
           outputStyle: 'nested'
