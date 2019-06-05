@@ -34,7 +34,7 @@ nav#mainnav {
 		padding-right:0;
 	}
 	.container {
-		@if $cec {
+		@if $cec-nav {
 			@media screen and (min-width:$screen-md) {
 				margin-left: 1em;
 			}
@@ -104,7 +104,7 @@ nav#mainnav {
 		}
 	}
 	.navbar-mobile-header {
-		@if $cec {
+		@if $cec-nav {
 			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position: center;
 			height: 75px;
@@ -121,7 +121,7 @@ nav#mainnav {
 		margin: auto;
 		@media (min-width: $screen-sm-min) {
 			background-position: center 16px;
-			@if $cec {
+			@if $cec-nav {
 			}
 			@else {
 				background-size: auto 190px;
@@ -132,7 +132,7 @@ nav#mainnav {
 		}
 	}
 	.navbar-brand {
-		@if $cec {
+		@if $cec-nav {
 			height:75px;
 			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position:center;
@@ -168,7 +168,7 @@ nav#mainnav {
 		}
 		@media (min-width: $screen-md-min) {	
 			background-color:transparent;
-			@if $cec {
+			@if $cec-nav {
 				width: 230px;
 				height: 53px;
 				background-image:url(/_images/logos/cec-logo-sprite-leftaligned.png);
@@ -190,7 +190,7 @@ nav#mainnav {
 			transition-duration:0s, 0s;
 			transition-delay:0s,0s;
 			&.initial {
-				@if $cec {
+				@if $cec-nav {
 					width: 255px
 				}
 				@else {
@@ -207,7 +207,7 @@ nav#mainnav {
 				
 				z-index:3;
 				position:absolute;
-				@if $cec {
+				@if $cec-nav {
 					top: 0px;
 				}
 				@else {
@@ -223,7 +223,7 @@ nav#mainnav {
 			}
 		}
 	}
-	@if $cec {
+	@if $cec-nav {
 		#navsearchform {
 			@media (max-width: $screen-sm-max) {
 				.input-group {
@@ -389,7 +389,7 @@ nav#mainnav {
 							border:solid 1px $dark-gray;
 							background-color:$dark-gray;
 							color:$white;
-							@if $cec {
+							@if $cec-nav {
 
 							}
 							@else {
@@ -427,7 +427,7 @@ nav#mainnav {
 	.section-nav {
 		@media (max-width: $screen-sm-max) {
 			padding:0;
-			@if $cec {
+			@if $cec-nav {
 				margin:0px 0 20px 0;	
 				a, .search-form {
 					padding: 10px 14px;
@@ -453,7 +453,7 @@ nav#mainnav {
 			position:fixed;
 			left:0px;
 			right:0px;
-			@if $cec {
+			@if $cec-nav {
 				//set outline of search to be same size and width as adjacent search button on hover
 				.search-form .form-control:focus { 
 					outline: none;
@@ -470,7 +470,7 @@ nav#mainnav {
 				body.has-hero & {
 					background-color:transparent;
 				}
-				@if $cec {
+				@if $cec-nav{
 					height: 75px;
 				}
 				@else {
@@ -489,7 +489,7 @@ nav#mainnav {
 			a,button.btn-link {
 				transition: background-color 0.25s;
 				color:$white;
-				@if $cec {
+				@if $cec-nav {
 					height: 45px; //set height to be the same for text and icons
 				}
 				&:hover,
@@ -498,7 +498,7 @@ nav#mainnav {
 					background-color:$red;
 				}
 			}
-			@if $cec {
+			@if $cec-nav {
 				button.btn-link {
 					padding-top: 0px; //align height to be the same for text and icons
 				}
@@ -651,7 +651,7 @@ nav#mainnav {
 
 
 @media (max-width: $screen-md-max) {
-	@if $cec {
+	@if $cec-nav {
 	}
 	@else {
 		.navbar-brand {
@@ -693,7 +693,7 @@ nav#mainnav {
 
 @media (max-width: $screen-sm-max) {
 	.navbar-brand {
-		@if $cec {
+		@if $cec-nav {
 			height: 75px;
 			background-image:url(/_images/logos/cec-logo-stacked-white.png);
 			background-position:center;

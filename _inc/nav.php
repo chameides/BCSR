@@ -74,18 +74,6 @@
 				<div id="navbar_l2" class="container">
 					<ul class="nav navbar-nav">
 						<li class="dropdown hidden-xs hidden-sm">
-						  <a href="#drop" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info for <span class="fa fa-caret-down"></span></a>
-						  <ul class="dropdown-menu" role="menu">
-						  	<!-- First place the "info for" links need to be written: -->
-						
-								<li><a href="#e" id="PrimaryNav_InfoFor_ProspectieStudentsParentsAndCounselors">Prospective Students, <br class="mbo">Parents, and Counselors</a></li>
-								<li><a href="#f" id="PrimaryNav_InfoFor_CurrentStudentsAndFamilies">Current Students and Families</a></li>
-								<li><a href="#g" id="PrimaryNav_InfoFor_Alumni">Alumni</a></li>
-							
-								<li><a href="#h" id="PrimaryNav_InfoFor_CommunityMembers">Community Members</a></li>
-								<li><a href="#i" id="PrimaryNav_InfoFor_AdmittedStudents">Admitted Students</a></li>
-				
-						  </ul>
 						</li>
 						<li><a class="nav-cta" href="#a" id="PrimaryNav_RequestInformation">Request info</a></li>
 						<li><a class="nav-cta" href="#b" id="PrimaryNav_AskAStudent">Ask a Student</a></li>
