@@ -14,6 +14,7 @@ module.exports = (grunt) ->
         files:
           '_css/app.css': '_css/app.scss'
           '_css/app-cec.css': '_css/app-cec.scss'
+          '_css/app-academy.css': '_css/app-academy.scss'
           '_css/iframe-compiled.css': '_css/iframe.scss'
     concat:   
       radius: 
@@ -160,7 +161,7 @@ module.exports = (grunt) ->
       dist:
         options:
           hostname: '127.0.0.1',
-          port: 9000,
+          port: 3000,
           
           ###
           customize directory
