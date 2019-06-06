@@ -5,6 +5,16 @@
   ol {
     max-width: $paragraph-width
   }
+
+  p, 
+  cite, 
+  ul, 
+  ol {
+    &.full-width {
+      max-width: 100%;
+    }
+  }  
+  
   blockquote {
     p, 
     cite {

@@ -106,7 +106,7 @@
           <!-- /Subnav -->
         </div><!-- /Sidbar Mobile Nav-->
       </div><!--row-full-width-->
-      <?php include '_inc/footer-cec.php'; ?>   
+      <?php include '_inc/footer-academy.php'; ?>   
       <?php include '_inc/bottom-js-cec.php' ?>
     </div><!--content-wrapper-->
   </body>

@@ -6,7 +6,7 @@ footer#globalfooter {
 	background-color:#000000;
 	color:$white;
 	padding-top:30px;
-	@if $cec {
+	@if $cec-nav {
 		padding-bottom:30px;
 		text-align: center;
 	}
@@ -14,7 +14,7 @@ footer#globalfooter {
 		padding-bottom:40px;
 	}
 	position:relative;
-	@if $cec {
+	@if $cec-nav {
 		@media (max-width: $screen-xs-max) {
 			padding-top:10px; 
 		}
@@ -53,13 +53,13 @@ footer#globalfooter {
 	}
 	.footer-logo {
 		//CEC uses a standard src image, while BCSR uses a background image
-		@if $cec {
+		@if $cec-nav {
 			@media (min-width: $screen-sm-min) {
 				display: inline;
 			}
 		}
 		a {
-			@if $cec {
+			@if $cec-nav {
 				img {
 					max-width: 175px;
 				}
@@ -75,7 +75,10 @@ footer#globalfooter {
 				box-shadow: 
   				1px 0px 0px 10px black, 
   				1px 0px 0px 12px black;
-  			border-bottom: 0 black;
+  				border-bottom: 0 black;
+  				@if $academy {
+  					margin-bottom: .2em;
+  				}
 
 			}
 			&:hover {
@@ -96,7 +99,7 @@ footer#globalfooter {
 			}
 		}
 	}
-	@if $cec {
+	@if $cec-nav {
 		//bard logo
 		.footer-logo-secondary {
 			text-align: center; 
@@ -147,7 +150,7 @@ footer#globalfooter {
 		text-align:center;
 	}
 	ul.contact-info-list {
-		@if $cec { 
+		@if $cec-nav { 
 			padding-top: 0;
 			max-width: 100%;
 		}
@@ -164,7 +167,7 @@ footer#globalfooter {
 				margin-left:1rem;
 				margin-right:1rem;
 			}
-			@if $cec {
+			@if $cec-nav {
 				&.footer-logo-secondary {
 					display: block;
 					padding-top: .25rem;
