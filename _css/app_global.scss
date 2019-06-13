@@ -1,6 +1,6 @@
 // General Styles
 body {
-  @if $cec {
+  @if $cec-nav {
     margin-top: $navbar-height2;
     @media screen and (min-width:$screen-xl) { 
       background: $light-gray;
@@ -18,7 +18,7 @@ body {
     margin-top: 0;
   }
   @media screen and (max-width:$screen-sm-max) { 
-    @if $cec {
+    @if $cec-nav {
       margin-top: $navbar-height2-xs;
     }
     @else {
