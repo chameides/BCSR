@@ -26,7 +26,11 @@ Note: therse are messy.
 */
 @import "app_home.scss"; //Home page
 @import "app_global.scss",
+	
+
 	"app_secondary-nav.scss",
+	
+
 	"app_forms.scss",
 	"app_images.scss",
 	"app_iframe.scss",
@@ -34,8 +38,10 @@ Note: therse are messy.
 	"app_typography.scss", /*pulled blockquote from giving landing into separate partial*/
 	"app_giving-landing.scss",
 	"app_campus-landing.scss",
+	"app_profile.scss",
 	"app_basic-profile.scss",
 	"app_student-life.scss",
 	"app_search.scss",
 	"app_patterns-layout.scss";
+@import "app_modals.scss"; //Global, modular elements
 @import "app_print.scss"; //print
