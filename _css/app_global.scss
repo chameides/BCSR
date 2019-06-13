@@ -1,7 +1,23 @@
 // General Styles
+
+
+
 body {
   @if $cec-nav {
     margin-top: $navbar-height2;
+  }
+  @if $academy {
+    margin-top: 0;
+    @media screen and (min-width:$screen-md) { 
+      .container-fluid.page-container {
+        padding-top: 175px;
+      }
+    }
+  }
+  @else {
+    margin-top: 200px;
+  }
+  @if $cec {
     @media screen and (min-width:$screen-xl) { 
       background: $light-gray;
       &.has-hero {
@@ -9,9 +25,7 @@ body {
       }
     }
   }
-  @else {
-    margin-top: 200px;
-  }
+  
   
   //no top-margin for templates with hero graphic or pages triggering gatekeeper parameter
   &.has-hero, &.gatekeeper {
