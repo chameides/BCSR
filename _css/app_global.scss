@@ -1,18 +1,26 @@
 // General Styles
 
 
+//set height for academy
+@if $academy {
+  @media screen and (min-width:$screen-md) { 
+    .container-fluid.page-container {
+      padding-top: 175px;
+    }
+  }
+  body.has-hero .container-fluid.page-container {
+    padding-top: 0px;
+  }
+}
+
+
 
 body {
   @if $cec-nav {
     margin-top: $navbar-height2;
   }
-  @if $academy {
-    margin-top: 0;
-    @media screen and (min-width:$screen-md) { 
-      .container-fluid.page-container {
-        padding-top: 175px;
-      }
-    }
+  @if $cec {
+
   }
   @else {
     margin-top: 200px;
